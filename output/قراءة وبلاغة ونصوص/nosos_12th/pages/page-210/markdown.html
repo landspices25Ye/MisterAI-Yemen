@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>حمل الأطفال في الرجال القادمين كانوا يسبحون في عرقهم، وسمعوا صوت أنين خافت من على النعش.</p><p>سأل الصغير بقلق :</p><p>– من هو أبونا؟</p><p>كان الكبير حائراً، إنه لا يتذكر وجه أبيه فقد غاب عنه ذلك الوجه منذ أن انعطف قبل سنوات من إحدى منحدرات الجبل، وكان أخوه لا يزال قابعاً في بطن أمه.</p><p>نظر الرجال بصمت إلى الأطفال وتجمعت نسوة فوق منازل القرية. وحمل النسيم أصوات نساء :</p><p>– لقد عاد.</p><p>– يقولون إنه مريض.</p><p>– إنه محمول على جنازة.</p><p>– لقد أصابه شيطان البحر..</p><p>كانت توقد المدفأة وتعد بقلب راجف قهوة للرجل القادم. نظرت إلى نفسها صدفةً في مرآة محطمة.. كانت خائفة، لقد عجزت ولم تشعر.. بدا من فوق دارها خيط من الدخان ستعدله عشاءً دافئاً. ذهبت تجري إلى ديمتها.. أخرجت من تحت سريرها الخشبي القديم وعاء أسود، احتفظت فيه بكل ما جمعته من السمن.. حرمت نفسها وطفليها للعائد الذي اقترب موعد وصوله.</p><p>كان الأطفال يتهامسون :</p><p>– لماذا هو على النعش؟</p><p>أجاب الكبير :</p><p>– لأنه متعب..</p><p>سُمعت أصوات رجال على السلم :</p><p>– أحمل من تحت.</p><p>– بهدوء.</p><p>– لا تجعله يهتز..</p><p>لعلهم يحملون أشياءه التي أتى بها معه.</p><p>وسمعت صوت طفلها من خلفها :</p><p>– إنه مريض.. إنه محمول على جنازة.</p><p>٢٠٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

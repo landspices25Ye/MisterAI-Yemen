@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>نق ١ ، ٤ نق ١ ، ٩ نق ١ ، ١٦ نق ١ ...</p><p>وهي المدارات المسموحة التي يمكن أن يتواجد فيها الإلكترون في ذرة الهيدروجين وليس في أي مدار، إذاً مدارات الإلكترون هي مدارات مكممة ولهذا يدعى العدد (ن) بالعدد الكمي الرئيسي .</p><p>أما سرعة الإلكترون على المدار رقم (ن) فتعطى بالعلاقة الآتية :</p><p>$‫\text{ع}_0 = \frac{\text{ي س م}^2}{\text{ن م}} \quad (8)‬$‫</p><p>وسرعته في المدار الأول أي عند : ن = ١ هي</p><p>‬$‫\text{ع}_1 = \frac{\text{ي س م}^2}{\text{ن م}} \quad (9)‬$‫</p><p>وبالتعويض عن قيم الثوابت ي، س م، م نجد أن قيمة ع ١ = ٢.٢ × ١٠⁸ سم/ث وبتعويض العلاقة (٩) في العلاقة (٨) نجد سرعة الإلكترون في أي مدار (ع) بدلالة سرعته في المدار الأول (ع) وهي :</p><p>‬$‫\text{ع}_0 = \frac{1}{\text{ن}} \cdot \frac{\text{ي س م}^2}{\text{ن م}}‬$‫</p><p>أي إن :</p><p>‬$‫\text{ع}_0 = \frac{\text{ع}}{\text{ن}} \quad (10)‬$‫</p><p>ونرى أن سرعة الإلكترون في المدار رقم (ن) تتناسب عكسياً مع العدد (ن)، فكلما ابتعد الإلكترون عن النواة (أي كبر نصف قطر المدار)، قلت سرعته، فعند : ن = ١، ٢، ٣، ٤، ٥ تكون السرعة المناظرة هي :</p><p>‬$‫\text{ع}_1 = \frac{\text{ع}}{1} \text{ ، ع}_2 = \frac{\text{ع}}{2} \text{ ، ع}_3 = \frac{\text{ع}}{3} \text{ ، ع}_4 = \frac{\text{ع}}{4}‬$</p><p>١٢٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>٣- تأكّد من سلامة الأجهزة بواسطة عدد تردد المصدر العام للكهرباء بالمعمل (٥٠ ذبذبة في الثانية مثلاً).</p><p>٤- أضبط مصدر فرق الجهد بحيث يغذي الكشاف بقيمة فرق جهد مساوية لجهد التشغيل الذي قمت بتعيينه في التجربة السابقة.</p><p>٥- سجّل عدد الإشعاعات التي يعدّها الكشاف بدون وجود المصدر المشع الذي يراد قياسه أمام الكشاف، وذلك خلال فترة زمنية (٤-٥ دقائق) وعلى فترات مختلفة قبل بدء التجربة حتى تتأكد من عدم وجود مصدر مشع آخر. اللهم إلا ما أتى من الأشعة الكونية.
+- سجّل هذا العدد لأهميته.</p><p>٦- ضع المصدر المشع المراد قياسه على بعد مناسب من الكشاف وسجّل عدد الإشعاعات التي تصله خلال فترة زمنية (٤-٥ دقائق).</p><p>٧- عيّن عدد الإشعاعات المنبعثة من المصدر المشع في الثانية الواحدة بعد أن تطرح منه عدد الإشعاعات المسجّلة في الثانية الواحدة والتي قيست بدون وجود المصدر في الخطوة رقم (٥).</p><p>٨- كرّر الخطوتين رقم (٦، ٧) عدّة مرات واحسب المتوسط الحسابي لهذه القيم، هذا المتوسط الحسابي يدلّ على كمية الإشعاع المنبعثة من المصدر في الثانية الواحدة. أي على قوة المصدر المشع.</p><h1><strong>ثانياً: التمييز بين الأنواع المختلفة للإشعاع:</strong></h1><p>١- ضع المصدر المشع الذي تنبعث منه إشعاعات ألفا فوق القاعدة الخاصة به على بعد معيّن من الكشاف.</p><p>٢- سجّل عدد الإشعاعات المسجّلة بالعداد في فترة زمنية معينة (٤-٥ دقائق)</p><p>٣- ضع لوحاً رقيقاً من الورق فوق المصدر المشع على أحد الأرفف المخصّصة لذلك.</p><p>٤- سجّل عدد الإشعاعات التي تصل الكشاف بواسطة العداد في نفس الفترة الزمنية التي قيست في الخطوة السابقة (٤-٥ دقائق).</p><p>- لاحظ أن هذا العدد قد قلّ بنسبة كبيرة جداً عنه في الخطوة (١) مما يدلّ على أن معظم إشعاعات ألفا المنبعثة من المصدر المشع قد امتصت</p><p>٢٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

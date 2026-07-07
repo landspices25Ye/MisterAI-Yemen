@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>مبدأ العد ومبرهنة ذات الحدين</p><h1>مبرهنة ذات الحدين</h1><p>٢ - ٤</p><p>يتكون المقدار الجبري (١ + ب) من حدين هما : ١ ، ب ؛ وبإمكاننا أن نرفع هذا المقدار إلى قوة صحيحة موجبة ، ثم نستخدم خاصية التوزيع والضرب المتكرر نحصل على مفكوك لهذا المقدار ، فمثلاً :</p><p>$‫(١ + ب) = (١ + ب)‬$‫</p><p>‬$‫(١ + ب)^2 = (١ + ب)(١ + ب) = ١ + ٢ + ٢ + ٢ .‬$‫</p><p>‬$‫(١ + ب)^3 = (١ + ب)(١ + ب)^2 = ١ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ .‬$‫</p><p>‬$‫(١ + ب)^4 = (١ + ب)(١ + ب)^3 = ١ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ .‬$‫</p><p>وكذلك يمكن فك المقادير (١ + ب) ، (١ + ب) ، ... الخ .</p><p>ولكن هل يوجد قانون عام لفك مثل هذه المقادير . هذا ما توضحه المبرهنة الآتية :</p><h1>مبرهنة ذات الحدين (٢ - ١)</h1><p>إذا كانت و عدداً صحيحاً موجباً فإن :</p><p>‬$‫(١ + ب)^5 = ١ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + 2‬$‫</p><p>‬$‫\text{موجب ١} + \text{موجب ٢} + \dots + \text{موجب ١} + \text{موجب ٢}‬$‫</p><p>‬$‫= \text{موجب ١} + \text{موجب ٢} + \dots‬$</p><p>يمكن استنتاج من مفكوك (١ + ب) ما يأتي :</p><p>1. أول حد في المفكوك يساوي ١ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + 2
+2. الحد الثاني هو ١ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + 2
+3. الحد الأخير هو ١ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + 2
+4. عدد حدود المفكوك يساوي (١ + ٢) حداً .
+5. مجموع أسي ١ ، ب في كل حد يساوي و .
+6. معاملات الحدود المتناظرة متساوية ، بمعنى أن معامل الحد الأول يساوي معامل الحد الأخير ومعامل الحد الثاني يساوي معامل الحد قبل الأخير ... وهكذا .</p><p>٦٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

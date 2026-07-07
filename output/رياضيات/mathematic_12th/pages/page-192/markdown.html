@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-162.jpeg" alt="img-162.jpeg" /><p>الوحدة السادسة</p><h1>مثال (٦ - ٣٥)</h1><p>بين أن الدالة $‫x(m) = m + \text{جاس تزايدية على الفترة } [\frac{\pi}{2}, 0]‬$ .</p><h1>الحل :</h1><p>د : دالة متصلة على $‫[\frac{\pi}{2}, 0]‬$ وقابلة للاشتقاق على $‫[\frac{\pi}{2}, 0]‬$ ،</p><p>$‫x(m) = 1 + \text{جاس}‬$ ؛ ويوضع $‫x(m) = 0 \iff \text{جاس} = 1 - 1‬$</p><p>$‫\therefore m = \pi \Rightarrow [\frac{\pi}{2}, 0]‬$</p><p>$‫\therefore‬$ ليس للدالة نقطة حرجة في الفترة $‫[\frac{\pi}{2}, 0]‬$ ، لذا نبحث عن إشارة $‫x(m)‬$ فنجد أن :</p><p>$‫\text{جاس} < 0, \forall m \subseteq [\frac{\pi}{2}, 0] \iff 1 + \text{جاس} < 0‬$ أي أن :</p><p>$‫x(m) < 0, \forall m \subseteq [\frac{\pi}{2}, 0]‬$ .</p><p>$‫\therefore‬$ الدالة $‫x$ تزايدية على الفترة ‬$[\frac{\pi}{2}, 0]$‫ .</p><h1>ثانياً : القيم القصوى :</h1><p>إذا تذكرت سلاسل الجبال في منطقتك أو مناطق أخرى قمت بزيارتها ، فإنك لا شك قد لاحظت أنها تبدو على شكل منحنى ، لها قمم شاهقة الارتفاع ، تنحدر بأوديتها نحو أدنى نقطة في أسفلها [انظر الشكل (٦-٥)] نموذج لدالة افتراضية . لتكن ‬$x(m)$‫ تمثل تلك السلاسل على الفترة ‬$[t, n]$‫ عندئذ يلاحظ من الشكل ما يلي :</p><img src="img-163.jpeg" alt="img-163.jpeg" /><p>الشكل (٦-٥)</p><p>1. يوجد للدالة ‬$x$‫ قيمة عظمى محلية عند ‬$m$‫ هي : ‬$x(m)$‫ وذلك لأنها أكبر من القيم التي حولها .
+2. للدالة ‬$x$‫ قيمة عظمى محلية عند ‬$n$‫ وهي : ‬$x(n)$‫ وذلك لأنها أكبر من القيم التي حولها ، مع ملاحظة أن ‬$x(n)$‫ أكبر قيم الدالة على الفترة ‬$[t, n]$‫ لذلك تسمى بالقيمة العظمى المطلقة .
+3. للدالة ‬$x$‫ قيمة صغرى محلية عند ‬$t$‫ وهي : ‬$x(t)$ وذلك لأنها أصغر من القيم التي حولها .</p><p>١٩٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

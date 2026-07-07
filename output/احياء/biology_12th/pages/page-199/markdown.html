@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-156.jpeg" alt="img-156.jpeg" /><p>الشكل (١٩) تتابع أحفوري</p><p>وعلى هذا الأساس يمكن التعرف على زمن تكوين الطبقة أو عمرها من دراسة أنواع الأحافير فيها، كما يمكن التعرف على ترتيبها بين الطبقات الأخرى.</p><h3>٣- المضاهاة بين الطبقات (Correlation)</h3><p>ما المقصود بالمضاهاة؟ وما أنواعها؟
+المضاهاة: هي مطابقة أو مقارنة الطبقات الصخرية في أماكن مختلفة على سطح الأرض عبر مسافات جغرافية قريبة أو بعيدة، وهناك نوعان من المضاهاة هما:</p><h4>أ- المضاهاة الصخرية (Lithocorrelation)</h4><p>هي عملية مضاهاة أو مطابقة بين الطبقات في أماكن مختلفة لتحديد أعمارها النسبية بالاعتماد على التشابه الصخري من حيث التركيب المعدني والخصائص الفيزيائية: كالنسيج، واللون، والتراكيب الداخلية لهذه الطبقات، ولإجراء عمليات المضاهاة الصخرية يمكن اتباع الخطوات الآتية:</p><img src="img-157.jpeg" alt="img-157.jpeg" /><p>الشكل (٢٠) المضاهاة الصخرية</p><p>١- دراسة الخواص والمميزات الحجرية لكل طبقة من طبقات قطاع ما، وليكن (س) كما يظهر بالشكل (٢٠).</p><p>٢- تعيين العمر الزمني للطبقات الحجرية في القطاع (س) بتطبيق قانون تعاقب الطبقات، أي بتسجيل ترتيب الطبقات على حسب تتابعها في القطاع من الأقدم إلى الأحدث.</p><p>٣- تعيين الطبقات الحجرية المشابهة للطبقات السابقة في قطاع آخر (ص).</p><p>٤- ربط الطبقات المشابهة ببعضها ببعض، وتحديد الأعمار النسبية والتعاقب الزمني لطبقات القطاع (ص). كما يلاحظ في (الشكل ٢٠).</p><p>الأحياء للصف الثالث الثانوي</p><p>١٩٩</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

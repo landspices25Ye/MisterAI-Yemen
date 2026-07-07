@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الأعداد المركبة</p><p>ثانياً : مقياس وسعة خارج قسمة عددين مركبين :</p><p>$‫\frac{ع_1}{ع_2} = \frac{س_1 (جتا هـ + ت جا هـ)}{س_2 (جتا هـ + ت جا هـ)} \quad [ \text{بضرب البسط والمقام في مرافق المقام} ]‬$‫</p><p>‬$‫= \frac{س_1 (جتا هـ + ت جا هـ) (جتا هـ - ت جا هـ)}{س_2 (جتا هـ + ت جا هـ) (جتا هـ - ت جا هـ)}‬$‫</p><p>‬$‫= \frac{س_1 (جتا هـ + جتا هـ - ت جتا هـ جا هـ + ت جا هـ جتا هـ - ت جتا هـ جا هـ)}{س_2 (جتا هـ + جتا هـ)}‬$‫</p><p>‬$‫= \frac{س_1 (جتا هـ + جتا هـ + جا هـ جا هـ) + ت (جا هـ + جتا هـ - جتا هـ جا هـ)}{س_2 (جتا هـ + جتا هـ)}‬$‫</p><p>بما أن : جتا هـ + جا هـ = ١ .</p><p>جتا ( هـ - هـ ) = جتا هـ + جا هـ + جا هـ</p><p>جا ( هـ - هـ ) = جا هـ + جتا هـ - جا هـ + جتا هـ</p><p>‬$‫\therefore \frac{ع_1}{ع_2} = \frac{س_1}{س_2} \quad [ \text{جتا ( هـ - هـ) + ت جا ( هـ - هـ) } = \frac{س_1}{س_2} \text{ ، هـ - هـ} ]‬$‫</p><p>‬$‫\text{مقياس } \left( \frac{ع_1}{ع_2} \right) = \left| \frac{ع_1}{ع_2} \right| = \frac{س_1}{س_2} = \left| \frac{ع_1}{ع_2} \right| \text{ ، ع ٢}‬$‫</p><p>‬$‫\text{سعة } \left( \frac{ع_1}{ع_2} \right) = هـ - هـ .‬$‫</p><p>مقياس خارج قسمة عددين مركبين يساوي خارج قسمة مقياسيهما وسعة خارج القسمة تساوي الفرق بين سعتيهما .</p><p>ثالثاً : حاصل ضرب عدد مركب ع في مرافقه يساوي مربع مقياس هذا العدد .</p><p>أي أن : ع = س ٢ + ص ٢ = |ع| ٢ .</p><p>رابعاً : مقلوب العدد المركب ع :</p><p>‬$‫\frac{1}{ع} = \frac{\bar{e}}{ع} = \frac{1}{2 |ع|} \text{ .}‬$</p><p>تدريب (١ - ٦)</p><p>قارن بين سعة العددين ( ٤ + ٥ ت ) ، ٧ ( ٤ + ٥ ت ) .</p><p>مثال (١ - ١٧)</p><p>إذا كان ع = [ س ، هـ ] . فاكتب بالصورة نفسها كلاً من الأعداد التالية ومثلها بيانياً :</p><p>أ ) - ع ب ) ع ج ) ١ / ع</p><p>٢٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

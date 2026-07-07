@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-113.jpeg" alt="img-113.jpeg" /><p>شكل (٦) النبات ذو الأوراق الكبيرة تم إنتاجه بواسطة الهندسة الوراثية</p><p>قيمة منتجاتها الغذائية، أو تكبير أوراقها كما في الشكل (٦). ويرى العلماء أن هذه التقنية ستساعدهم على اكتشاف وظائف آلاف الجينات للنباتات منتجة الغذاء، مما يجعل بالإمكان تحديد الجينات التي ينبغي حذفها من الكروموسومات أو إضافتها إليها،</p><p>كان تنتقل جينات من نبات إلى آخر لتحسين إنتاجه، مثل نقل جينات من البطاطس إلى الذرة. ولهذا فإن علماء التقنية الحيوية يشرون فقراء العالم بمنتجات غذائية رخيصة ولكنها تحمل قيمة غذائية عالية، إلا أن هناك معارضة قوية لاستخدام الأغذية المعدلة وراثياً خوفاً من أن يكون لها آثار ضارة على مستهلكيها.</p><img src="img-114.jpeg" alt="img-114.jpeg" /><p>شكل (٧) تحسين الإنتاج الحيواني</p><p>ويمكن أيضاً استخدام التقنية الحيوية في زيادة إنتاج الغذاء الحيواني، كان يتم نقل الجينات المسؤولة عن الإنتاج الوفير من الحليب من نوع من الأبقار يتميز بهذه الخاصية إلى نوع آخر يتميز</p><p>بإنتاج حليب أقل، فيزيد إنتاج الحليب لديها، أو لزيادة إنتاج اللحوم فيها. وجعلها أكثر وفرة وذات نوعية جيدة.</p><h3>استخدام التقنية الحيوية في إنتاج الدواء:</h3><p>تساهم التقنية الحيوية هذه الأيام في إحداث تطور متسارع في الرعاية الصحية وتوفير الأدوية والمضادات الحيوية لمقاومة الأمراض. ومنذ أن تمكن الإنسان من اكتشاف تأثير البنسلين على أنواع من البكتيريا الممرضة واستخدامه كمضاد حيوي وإنتاجه بكميات تجارية في الأربعينيات من القرن العشرين، حصل تطور كبير في</p><p>١٥٢</p><p>الأحياء للصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

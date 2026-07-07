@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>$‫\therefore \sqrt{3} \cdot (\frac{3}{2}) + \frac{3}{2} = 2 \quad , \quad \leftarrow 3 \cdot \frac{3}{2} + \frac{3}{2} = 2‬$‫
+$\therefore 4 \cdot \frac{3}{2} = 2 \quad \text{ومنها } \frac{1}{2} = \frac{1}{2} \text{ م/ث}‬$$‫</p><p>وبالتعويض بقيمة ‬$\frac{3}{2}$‫ في المعادلة (٣) نجد أن :</p><p>‬$‫\frac{3}{2} = \frac{1}{2} \times \frac{3}{2} = \frac{3}{2} \text{ م/ث}‬$‫</p><h2>مثال: (٢)</h2><p>سيارة كتلتها ١٥٠٠ كجم تسير في اتجاه الشرق بسرعة ٢٥ م/ث. اصطدمت في التقاطع بسيارة أخرى (شاحنة) كتلتها ٢٥٠٠ كجم تسير نحو الشمال بسرعة ٢٠ م/ث. كما هو موضح بالشكل (٣).</p><p>أوجد مقدار السرعة (‬$\frac{3}{2}$‫) والزاوية (هـ) التي يصنعها الحطام مع اتجاه الشرق بعد التصادم باعتبار أن التصادم غير مرن.</p><h2>الحل :</h2><p>‬$‫ك_1 = 1500 \text{ كجم} ، \frac{3}{2} = 25 \text{ م/ث} ، \frac{3}{2} = 2500 \text{ كجم} ، \frac{3}{2} = 20 \text{ م/ث} .‬$‫</p><p>إذا اخترنا الشرق كاتجاه موجب لمحور السينات والشمال كاتجاه موجب لمحور الصادات نلاحظ قبل التصادم أن الجسم الذي له كمية تحرك في اتجاه محور السينات هو السيارة الصغيرة فقط.</p><p>‬$‫\therefore \text{ك}_1 = 1500 \text{ كجم} \times 25 \text{ م/ث} \dots\dots\dots (1)‬$‫</p><p>وحيث إن التصادم غير مرن، فإن الحطام سيتحرك بسرعة (‬$\frac{3}{2}$‫) بعد التصادم صانعاً زاوية (هـ) مع محور السينات.</p><p>∴ كمية التحرك الكلية في اتجاه محور السينات بعد التصادم هي :</p><p>‬$‫(\text{ك}_1 + \text{ك}_2) \text{ ع} \text{ جتاها} = (1500 + 2500) \text{ ع} \text{ جتاها} \dots\dots\dots (2)‬$</p><p>١٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

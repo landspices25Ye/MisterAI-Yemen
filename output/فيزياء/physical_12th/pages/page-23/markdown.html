@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>حساب سرعة القمر الصناعي اللازمة لاستمراره في مداره</h2><p>لكي يدور القمر الصناعي حول الأرض في مدار ثابت لا بد له من توازن قوة جذب الأرض له مع قوة الطرد المركزية الناشئة عن دورانه.</p><p>$‫\therefore \text{قوة الجذب المركزي (ق)} = \text{ج} \frac{\text{ك}_{\text{أرض}} \times \text{ك}_{\text{قمر}}}{\text{ن}_{\text{ق م}}^2} \dots \dots \dots (1)‬$‫</p><p>حيث (نق م) نصف قطر المدار، و(ج) ثابت الجذب العام (١٠ × ٦,٦٧ × ١٠⁻¹¹ نيوتن م² / كجم²)</p><p>علماً بأن : نق م = نق أرض + الإرتفاع فوق سطح الأرض (ل)</p><p>‬$‫\therefore \text{القوة الطاردة المركزية للقمر (ق)} = \text{ك}_{\text{قمر}} \times \frac{\text{ع}^2}{\text{ن}_{\text{ق م}}^2} \dots \dots \dots (2)‬$‫</p><p>حيث (ع) هي السرعة المدارية للقمر. وحيث أن قوة الجذب المركزي للقمر تساوي قوة الطرد المركزي له، إذاً من المعادلة (١)، (٢) نجد أن :</p><p>‬$‫\text{ع} = \sqrt{\frac{\text{ج}}{\text{ن}_{\text{ق م}}^2} \text{ك}_{\text{أرض}}}‬$‫</p><p>– على ماذا تعتمد السرعة المدارية ؟</p><h3>مثال: (٥)</h3><p>قمر صناعي يدور حول الأرض على ارتفاع ٢٠٠ كيلو متر فوق سطح الأرض. احسب السرعة المدارية للقمر إذا كان نصف قطر الأرض ٦٤٠٠ كيلو متر وكتلة الأرض ١٠ × ٦ كيلو جرام.</p><p>الحل :</p><p>ج = ١٠ × ٦,٦٧ × ١٠⁻¹¹ نيوتن م² / كجم² ، نق م = ٢٠٠ كيلو متر + ٦٤٠٠ كيلو متر ، نق م = ٦٦٠٠ كيلو متر = ١٠ × ٦,٦ م² ، ك أرض = ١٠ × ٦ كيلو جرام .</p><p>‬$‫\therefore \text{ع} = \sqrt{\frac{\text{ج}}{\text{ن}_{\text{ق م}}^2} \text{ك}_{\text{أرض}}}‬$‫</p><p>‬$‫\therefore \text{ع} = \sqrt{\frac{10 \times 6 \times 10^{-11} \times 6 \times 10^2}{10 \times 6,6}} = 7786,9 \text{ م/ث}‬$</p><p>٢١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

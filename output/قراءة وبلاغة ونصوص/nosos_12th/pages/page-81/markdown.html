@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>ويعلمه كيف يكون رجلاً في ألعابه، فيعدل بين أقرانه في اللعب كما يحب أن يعدلوه معه، ويلاعبهم بروح الرجولة من حب ومساواة ومرح في صدق وإخلاص.</p><p>ويسير مع التلميذ في مدرسته، فيعلمه كيف يحترم نفسه، وكيف لا يفعل الخطأ وإن غفلت عنه أعين الرقباء، ولا يغش في الامتحان ولو تركه المعلم وحده مع كتبه، وكيف يعطف على الضعفاء ويبدل لهم ما استطاع من معونة.</p><p>ويتمشى مع الطالب في جامعته فيعوده الاعتزاز بنفسه، والاعتزاز بجامعته، والاعتزاز بأمته، ويبعثه على أن يفكر في غرض شريف له في الحياة يسعى لتحقيقه - حتى إذا أتم دراسته كان قاضياً رجلاً، أو معلماً رجلاً، أو سياسياً رجلاً، وعلى الجملة إنساناً رجلاً..</p><p>من يبادلني فيأخذ كل برامج التعليم، وكل ميزانية الدولة، ويسلمني برنامجاً للرجولة وميزانية لتنفيذه ليس غير؟</p><p>ولي كَبِدْ مَقْرُوحَةً من يَبِيعُنِي بها كَبِداً لَيْسَتْ بَدَاتُ قُرُوح</p><h3>معاني المفردات والتراكيب اللغوية</h3><p>نَصَبَ: التعب، الضيم: الظلم، لا يعبأ: لا يبالي، العناء: التعب والجهد، ازدراء: احتقار، صادفت هوى الناس: أعجبتهم، ذروتها: قمتها، أقرانه: من هم في سنه.</p><h3>إضافة</h3><p>يبدأ النص بتعريف للرجولة فيصورها بأنها صفة تجمع كل الفضائل، ولكي لا يكون الحديث نظرياً مجرداً، يضرب الكاتب أمثلة مختلفة لأناس في الحياة وكيف يمكن أن تتحلى فيهم قيمة الرجولة، فكل إنسان مهما كان موقعه ودوره في الحياة يستطيع أن يكون رجلاً، فالوزير يكون رجلاً بوطنيته وتفانيه في خدمة الأمة ورفضه أن يكون عوناً للأجنبي، والعالم به بدأ في سبيل العلم وتواضعه وعدم اللهث وراء الجاه والمال وشجاعته في قول الحق، والصانع بتجويد صناعته ومنافسة الأمم والصدق وعدم الخداع.</p><p>يطالب بعد ذلك أو يتمنى أن يكون هنالك برنامج لصناعة الرجال وتنمية الرجولة، يبدأ من الطفل في بيته إلى أن يتخرج من الجامعة، فيكون رجلاً في وظيفته وعمله أو موقعه، مهما صرفت من أموال في برنامج كهذا.</p><p>٧٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

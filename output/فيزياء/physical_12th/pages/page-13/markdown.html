@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-9.jpeg" alt="img-9.jpeg" /><p>شكل (٢)</p><p>الكرتين في كل حالة؟ إن الأشكال السابقة تدل على أن الكرتين بعد أن تصادمتا فإنهما تسيران في خط مستقيم واحد قبل التصادم وبعده ويعرف هذا النمط من التصادم بالتصادم ذي البعد الواحد.</p><p>والآن انظر الشكل (٢): من الملاحظ أن الكرتين اصطدمتا وابتعدتا</p><p>عن بعضهما في اتجاهين مختلفين بحيث تصنعان زاويتين هـ، هـ مع اتجاه خط الحركة الابتدائي (محور السينات)، وأن هذا النمط من التصادم يسمى بالتصادم ذي البعدين.</p><p>دعنا نعتبر أن الكرة الأولى كتلتها (ك) وسرعتها (ع) تسير في خط مستقيم واصطدمت مباشرة بكرة ساكنة كتلتها (ك) وسرعتها ع = ٠، وبعد التصادم مباشرة تتحرك الكرة الأولى بسرعة (ع) في اتجاه يصنع زاوية (هـ) مع محور السينات، أما الكرة الثانية فتتحرك بسرعة (ع) وتصنع زاوية (هـ) مع المحور نفسه.</p><p>وبتطبيق قانون حفظ كمية التحرك مرتين، مرة على المحور السيني، ومرة على المحور الصادي، قبل وبعد التصادم نجد الآتي:</p><h3>أولاً: على المحور السيني:</h3><p>مجموعة كمية تحرك الكرتين قبل التصادم = مجموع كمية تحرك الكرتين بعد التصادم.</p><p>$‫\therefore \text{ك ع} + \text{ك ع} = \text{ك ع} \text{ جتا هـ} + \text{ك ع} \text{ جتا هـ}‬$‫</p><p>وحيث أن ع = صفر (لأن الكرة الثانية كانت في حالة سكون)</p><p>‬$‫\therefore \text{ك ع} + \text{صفر} = \text{ك ع} \text{ جتا هـ} + \text{ك ع} \text{ جتا هـ}‬$‫</p><p>‬$‫\therefore \text{ك ع} = \text{ك ع} \text{ جتا هـ} + \text{ك ع} \text{ جتا هـ} \dots\dots\dots (١)‬$‫</p><h3>ثانياً: على المحور الصادي:</h3><p>وحيث أنه لا توجد حركة على المحور الصادي قبل التصادم فإن :-</p><p>‬$‫\text{صفر} = \text{ك ع} \text{ جا هـ} - \text{ك ع} \text{ جا هـ} \text{ ومنها ك ع} \text{ جا هـ} = \text{ك ع} \text{ جا هـ} \dots (٢)‬$</p><p><strong>ملاحظة:</strong> العلاقتين (١)، (٢) حالة خاصة فقط من التصادم في بعدين.</p><p>١١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

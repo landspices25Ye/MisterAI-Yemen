@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>٤ - اختزنت ذاكرة الكاتب معالم أثرية كانت تزخر بها مدينة صنعاء القديمة.
+ما هذه المعالم؟
+٥ - تبرز ذكريات الكاتب عن مدينة صنعاء وعلاقته بها من خلال ثلاث حالات من الدهشة. فما التحديد الزمني لهذه الحالات الثلاث؟
+٦ - أسهب الكاتب في وصف معالم صنعاء القديمة بأقسامها وأبوابها المختلفة. وضح ذلك، وبين الغرض من هذا الإسهاب.
+٧ - كانت ذكريات الكاتب عن صنعاء في الحالة الثالثة خليطاً من الدهشة والحسرة، بم تفسر ذلك؟
+٨ - ما مظاهر التشويه الذي أصاب مدينة صنعاء في رأي الكاتب؟ بم فسر الكاتب مظاهر التشويه الذي أصاب مدينة صنعاء؟
+٩ - كيف استطاعت مدينة صنعاء القديمة أن تقف في وجه الزمن؟
+١٠ - ما سر الجمال الذي تتمتع به مدينة صنعاء القديمة في رأي الكاتب؟</p><h3>التدريبات اللغوية</h3><p>١ - اكشف في معجمك عن معاني الكلمات الآتية:
+(التوهج - تجعدت - تستدق - تبدد - بهت).
+٢ - هات مفرد الكلمات الآتية:
+(سجاجيد - المآذن - الغزاة - الأزقة - ممتلكات).
+٣ - يقول الكاتب:
+«وأزعم أن كل ما في اللغة من مفردات وما في الكتب من عبارات لا تستطيع أن ترسم أبعاد الدهشة التي تملكتني عند رؤية صنعاء عن قرب، وهي مغمورة بشمس الظهيرة، وما يتدفق على واجهات المنازل من كميات الضوء. لحظتها كانت المآذن المستقيمة البيضاء ونوافذ البيوت المطلية بجص يشبه الفضة في أزهي حال من التوهج واللمعان».
+أ - هات مرادف كلمة (أزهي)، وضد (اللمعان)، وجمع (رؤية).
+ب - (تملكتني الدهشة) - (ملكتني الدهشة).</p><p>٢٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

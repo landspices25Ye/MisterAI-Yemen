@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><h1>صرخة على الظلم</h1><p>محمد محمود الزبيري</p><h2>التعريف بالشاعر</h2><p>محمد محمود الزبيري، شاعر أديب، ثائر، ولد في حي بستان السلطان بصنعاء عام ١٩١٠م، تلقى بدايات تعليمه فيها، ثم سافر إلى القاهرة، والتحق هناك بكلية دار العلوم، لكنه عاد إلى صنعاء. قبل إكمال دراسته الجامعية.</p><p>برزت مواهبه الشعرية والنثرية في سن مبكرة، وقد سخرها لخدمة وطنه وقضايا أمته:</p><p>أحارب الظلم مهما كان طابعه الـ برأق أو كيفما كانت أساميه</p><p>بدأ الزبيري الكفاح بشعره ضد الإمام يحيى، فسجنه عدة مرات، وحاول الزبيري استعطافه بالشعر، ودفعه إلى إصلاح البلاد، لكنه لم يفلح، فهاجمه، ثم اتجه إلى ولي عهده أحمد يمدحه، عسى أن يجد عنده مالم يجده عند أبيه، إلا أن أمل الشاعر لم يتحقق، فواصل مسيرته في إثارة الوعي لدى جماهير الشعب، يرافقه في ذلك أصدقاء الكلمة والعديد من الثوار الأحرار، الذين لم يأمنوا على أنفسهم من البطش والتنكيل. اضطر الزبيري إلى أن يلجأ إلى عدن المستعمرة – آنذاك – ليتخذ منها مقاماً، ويبدأ كفاحه الوطني من هناك. فسجل ميلاد هذا الحدث بقصيدة جاء فيها:</p><p>سجل مكانك في التاريخ يا قلم
+فها هنا تبعث الأجيال والأمم
+هنا البراكين هبت من مضاجعها
+تطغى وتكسح الطاغي وتلتهم</p><p>وقد نجح مع بعض زملائه في إصدار صحيفة (صوت اليمن) لكشف الأحوال في مملكة الإمام، وفي دعوة الشعب إلى الثورة. ولم يمض على ظهورها عام ونصف حتى قامت ثورة ٤٨ وأطاحت بالإمام يحيى.</p><p>عاد الزبيري ليتولى وزارة المعارف، ثم سافر ضمن أعضاء وفد يمني إلى جدة للتباحث مع وفد الجامعة العربية، بشأن مساندة الثورة، غير أنها وُثِّدت بعد أيام من نجاحها، فصار مطارداً، ولم يجد له ملجأ في الوطن العربي، فلجأ إلى باكستان والهند وفيها رثى شعبه بقصيدة جاء فيها:</p><p>٥٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

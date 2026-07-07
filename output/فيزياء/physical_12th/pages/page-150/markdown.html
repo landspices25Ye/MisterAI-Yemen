@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-143.jpeg" alt="img-143.jpeg" /><h1>خطوات التجربة ونتائجها :</h1><p>١ - دراسة العلاقة بين شدة تيار الخلية (ت) وشدة الضوء الساقط (ش) :
+يُثَبَّت فرق الجهد (ج) بين المهبط (C) والمصعد (A)، وكذلك تردد الضوء (باستخدام مرشح ضوئي معين)، أي أن يكون الضوء الساقط على المهبط وحيد اللون. فإذا تغيرت الشدة الضوئية الساقطة (ش) - وذلك يجعل المصدر الضوئي (المصباح) على مسافات مختلفة من سطح المهبط - فإن شدة تيار الخلية الكهروضوئية (ت) تزداد طردياً مع زيادة الشدة الضوئية (ش) الساقطة على الخلية. والشكل (٤) يبين هذا التناسب.</p><h1>٢ - دراسة العلاقة بين شدة</h1><h1>التيار (ت) وفرق</h1><h1>الجهد (ج) :</h1><p>يُثَبَّت تردد الضوء الساقط (f)، وكذلك شدته الضوئية (ش)، وذلك بوضع المصدر الضوئي على بعد ثابت من مهبط الخلية الكهروضوئية، وتدرس العلاقة بين فرق</p><img src="img-144.jpeg" alt="img-144.jpeg" /><p>شكل (٤)</p><p>جهد (ج) الخلية الكهروضوئية وشدة تيارها (ت). فعندما يسقط الضوء على السطح المعدني للمهبط (C) تنبعث الإلكترونات الضوئية منه، وإذا كان جهد المصعد (A) موجباً بالنسبة للمهبط (C) فإن الإلكترونات المنبعثة من المهبط تنطلق نحو المصعد الموجب مسببة بذلك مرور تيار كهربائي (ت) يدل على مقدار شدته انحراف مؤشر الجلفانومتر. وتزداد شدة التيار (ت) بازدياد فرق الجهد (ج) حتى تصل شدة التيار إلى قيمة ثابتة لا تتغير بعدها مهما زاد جهد المصعد، لأن المجال الكهربائي بين المصعد والمهبط يصبح كافياً لجذب كل الإلكترونات المنبعثة من المهبط،</p><p>١٤٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

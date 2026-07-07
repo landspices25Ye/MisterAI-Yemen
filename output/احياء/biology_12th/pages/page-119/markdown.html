@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>ويتحكم في توارث العامل الرايزيسي زوج من الجينات، فالجين D يكون سائداً ويعمل على تكوين مولد الإلصاق الرايزيسي بينما الجين d يمنع تكون مولد الإلصاق للعامل الرايزيسي، والشخص الموجب للعامل الرايزيسي يكون تركيبه الجيني DD (صفة نقية) أو Dd (صفة هجينة)، بينما يكون التركيب الجيني للشخص سالب العامل الرايزيسي (dd).</p><h1>- مسألة محلولة:</h1><p>تزوج رجل موجب العامل الرايزيسي (صفة نقية) من امرأة موجبة العامل الرايزيسي (صفة هجينة) فما التركيب الجيني لابنائهما؟.</p><p>ستلاحظ أن جيل الأبناء كلهم موجبي العامل الرايزيسي بنسبة ٥٠٪ يحملون الصفة النقية و ٥٠٪ يحملون الصفة الهجينة.</p><img src="img-90.jpeg" alt="img-90.jpeg" /><p>الشكل (١٥)</p><h1>النقاط (١٠)</h1><p>توصل إلى احتمالات توارث فصائل الدم والعامل الرايزيسي لدى الأبناء لأب فصيلة دمه (A) موجب العامل الرايزيسي (هجين) وأم فصيلة دمها AB سالبة العامل الرايزيسي، موضحاً نسبة كل فصيلة وعاملها الرايزيسي (AB⁻, B⁻, A⁻, AB⁺, B⁺, A⁺).</p><p>وللعلم فإنه يجب مراعاة نوع العامل الرايزيسي للدم عند نقل دم شخص إلى آخر. فمثلاً عند نقل دم من شخص فصيلة دمه A موجب العامل الرايزيسي إلى شخص فصيلة دمه A سالب العامل الرايزيسي، فإن جسم الشخص المستقبل يبدأ بإنتاج أجسام مضادة لمولد الإلصاق (Rh) مما يؤدي إلى تراكم الأجسام المضادة في</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p><p>١١٩</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

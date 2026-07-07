@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>الطاقة الكهربائية و تفاعلات الأكسدة والاختزال</h1><h2>الوحدة الثالثة</h2><img src="img-29.jpeg" alt="img-29.jpeg" /><h3>الأهداف</h3><p>نتوقع منك بعد الانتهاء من دراسة هذه الوحدة أن تكون قادراً على أن :</p><p>١ - تُعرّف التاكسد والاختزال وفقاً للنظرية الإلكترونية.
+٢ - تميّز بين العوامل المؤكسدة والعوامل المختزلة.
+٣ - توضّح المقصود بعدد التاكسد.
+٤ - تحسب أعداد التاكسد للذرات في الصيغ المختلفة.
+٥ - تصنّف الخلايا الكهروكيميائية.
+٦ - توضّح مزايا السلسلة الكهروكيميائية.
+٧ - تذكر أنواع الخلايا الجلفانية.
+٨ - تشرح التفاعلات الحادثة في المركم الرصاص.
+٩ - تقارن بين الخلية الجلفانية والخلية الإلكترونية.
+١٠ - توضّح بعض التطبيقات على التحليل الكهربائي للمحاليل ومصاهر الأملاح.
+١١ - تُطبّق قانوناً فارادياً في حل المسائل المتعلقة بهما.
+١٢ - تعطي أمثلة للتفاعلات غير المرغوبة للتاكسد.</p><p>٤٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

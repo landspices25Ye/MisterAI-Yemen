@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><p>لن أتكلم كثيراً عن صنعاء الحديثة، المدينة التي أكلت الحقول والضواحي المحيطة بها، والتي لا تزال تتمدد وتترهل، بل سأكتفي بالكلام عن صنعاء القديمة مدينتي الصغيرة النائمة خلف سورها الطيني العتيق، والمُحْمِيَّة بـ (غيمان)، الجبل المُطِلُّ عليها من الشرق الذي اعتدى الأحباش على اسمه القديم، واختاروا له اسماً آخر هو «نُقْم» وإذا كنا لا نمتلك من الشواهد ما يكفي لإثبات التسمية القديمة «غيمان» فإنَّ الدليل التاريخي الوحيد أنَّ الأحباش هم الذين أطلقوا عليه اسمه الحالي؛ انتقاماً منه.</p><p>فقد كانت كهوفه مأوى للمقاومة الوطنية التي أرهقت ذلك الاحتلال. وتُحيط بصنعاء سلسلة من الجبال العالية والمنخفضة، لكن نقماً أو غيمان يظل أبرزها وأهمها بوصفه الحارس التاريخي الذي يحتوي صنعاء من جهة الشرق، ويبدو في مكانه – بعد أن تَجَعَّدَت ملامحه – كشيخ عجوز يَحْنُو على أبنائه وأحفاده، ويدفع عنهم غائلة كل الغزاة وأطماع المعتدين.</p><p>بعد أيام من استقرار العائلة في منزل صنعاني لا تختلف مواصفاته عن المنازل الأخرى التي يقف إلى جوارها، أو يتداخل معها في اصطفاف أو تَلَاصُق فريد، بدأ شَغَفٌ غامض يقودني يومياً إلى سطح هذا المنزل كلما جاء ضيوف، أو انشغل أفراد العائلة بشؤونهم الخاصة لأمارس دهشتي الطفولية، يَشُدُّني منظر المآذن وسطوح بعض البيوت العالية، وتثيرني الجبال المحيطة بالمدينة من قرب أو من بعد. لم يكن صعودي إلى السطح يرتبط بوقت معين. وإن كان وقت الظهيرة المشبع بالضوء هو الوقت الأكثر إثارة، كما أنَّ لوقت الغروب أيضاً إثارته الخاصة عندما يبدأ اللون البنفسجي يَلُفُّ المدينة، وتبدأ السحب البيضاء تأوي إلى ما وراء الجبال.</p><p>وفي زمن لاحق، حين اكتمل الوعي بجمال المكان وبهاء العمارة، وأخذ الشعر يقود الشعور للإحساس ببساطة صنعاء وعمق جمالها، اختزنت الذاكرة والبصر ما تزخر به المدينة من شَوَاحِص ثَرِيَّة، فهنا حفرة (القُلَيْس) التي يقال: إنها بقايا الكنيسة التي بناها أبرهة، وهنا مسجد (أروى) الذي يعود تاريخه إلى العام السادس الهجري الموافق ٦٢٧م. وهناك الحَمَّامَات التي تسمى بالتركية وهي عربية الأصل، ولا تزال</p><p>٢٠</p><p><http://www.e-learning-moe.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

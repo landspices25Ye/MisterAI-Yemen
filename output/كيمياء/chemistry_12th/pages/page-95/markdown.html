@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-71.jpeg" alt="img-71.jpeg" /><img src="img-72.jpeg" alt="img-72.jpeg" /><p>٤- ميثيل - ٣ - N - ميثيل أمينو الهكسان</p><p>وإلى جانب الاسم المنهجي (IUPAC) اشتهر كثير من الأمينات بأسماء شائعة، مثل:</p><img src="img-73.jpeg" alt="img-73.jpeg" /><h3>تحضير الأمينات:</h3><p>١ - تحضر الأمينات من خلال تفاعل الأمونيا مع هاليدات الألكيل، وهذا التفاعل يؤدي إلى مزيج من الأمينات والملح الرباعي، ولذلك فإن فائدته في الاصطناع محدودة؛ لما يعترضه من صعوبات في الفصل، لكن يمكن اللجوء إليه أحياناً باستخدام كميات وافرة من الأمونيا، والمعادلات الآتية توضح ذلك.</p><img src="img-74.jpeg" alt="img-74.jpeg" /><p>التفاعل الكلي : $‫R - X + 2NH_3 \longrightarrow R - NH_2 + NH_4X‬$</p><p>٢ - كما تُحضر الأمينات من خلال اختزال مجموعة نيترو إلى أمين أولي بالهدرجة أو بالهيدروجين المحضر من تفاعل معدن نشط وحمض معدني أو بهيدريد الليثيوم والألومنيوم، كما في المعادلة الآتية:</p><img src="img-75.jpeg" alt="img-75.jpeg" /><p>٩٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

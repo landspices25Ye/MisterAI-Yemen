@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-201.jpeg" alt="img-201.jpeg" /><p>الوحدة السابعة</p><p>[٣٠] جَنَاعٌ جَاعٌ وَع [٣١] ( ٢ ه ٢ س + ٣ ه ٢ س ) وس .</p><p>[٣٢] س ( ٢ س + ٣ س ) [٣٣] جَاس ( ١ + جَنَاس ) ٢ س .</p><p>[٣٤] ( ١ س ( س ٢ س ) ) [٣٥] ه ٢ قَنَاعٌ ه ٢ س</p><p>[٣٦] ه ٢ قَنَاعٌ ( ٢ ه ٢ س + ٥ ) وس [٣٧] ظَاعٌ س وس .</p><h2>التكامل بالتجزئة ٧ - ٤</h2><p>تذكر أن :</p><p>(١) . . . . . . . . . . . . . . . . . . . .</p><p>و ( ف و ) = ف و و + و و ف</p><p>كما تعلم أن هذا القانون هو تفاضل حاصل ضرب دالتين .</p><p>واستناداً إلى تعريف التكامل غير المحدد ، فإن مشتقة التكامل غير المحدد يساوي الدالة المكملة .
+ومكاملة الصيغة (١) نجد أن :</p><p>و ( ف و ) = ف و و + ف و ف .
+ف و = ف و + ف و ف .</p><p>(٦ - ٧) . . . . . . . . . . . . . . . . . . . .</p><p>ف و و = ف و - ف و ف</p><p>تسمى هذه الصيغة طريقة التكامل بالتجزئة ، وتشير إلى أنه لحساب ف و و فإنه ينبغي فرض مناسب لكل من ف ، و و .</p><p>وتستخدم الصيغة (٧ - ٦) لإيجاد تكامل دالة على صورة حاصل ضرب دالتين ، إحداهما على الأقل غير قياسية مثل دالة الجيب وجيب التمام ، أو أسية ، أو لوغاريتمية ، ... إلخ .</p><h2>مثال (٧ - ٢٢)</h2><p>احسب كلاً من التكاملات التالية :</p><p>أ) ( س + ١ ) جَاس وس . ب) ( س ٢ + ٢ س ) جَنَاس وس .</p><p>الحل :</p><p>أ) نضع ف = س + ١ ← و ف = وس</p><p>٢٤٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

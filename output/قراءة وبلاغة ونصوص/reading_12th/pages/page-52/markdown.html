@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><p>والسياسية والثقافية والتعليمية والصحية وغيرها، تستهويها في ذلك الإنجازات العلمية الضخمة في عالم الإلكترونيات، والسيطرة على الفضاء المحيط بالكرة الأرضية بواسطة الأقمار الصناعية مختلفة الأغراض والتخصصات، وإلغاء المسافات الزمانية والمكانية بين سكان الكوكب الأرضي بفعل وسائل الاتصالات والمواصلات، وغزو بعض الكواكب المجاورة، وما تملكه من قوة تدميرية، فإنها تتخذ من الاقتصاد مركزها المحوري وميدانها الفسيح؛ لتصل منه في الأخير إلى إملاء وتعميم ما تريده من مصطلحات وقيم ومفاهيم وسلوكيات بمنطق القوة، وفرض الأمر الواقع، وهو ما بدأت ملامحه تظهر في مجموعة من المعطيات مع عدد من الشعوب الضعيفة.</p><p>ونتيجة لهذه الأضرار التي أصيب بها العالم الثالث – على الأقل – ودرءاً لأخطار أشد كارثية متوقعة من سطوة النظام العالمي الجديد (العولمة) يرى بعض المهتمين بالشأن العالمي أن الشعوب في العالم – ومنهم العالم العربي والإسلامي – يمكن أن يُحَوَّلوا بين البشر وبين الأخطار التي تهدد مستقبلهم بالتحوُّلات الرئيسة الآتية:</p><p>أولاً – تحوُّل اقتصادي يقوم على نظام إنساني عادل، يهتم بالإنتاج، ويحترم الإبداع، ويحافظ على التنوع، ويمنع الاحتكار، بعد أن يتَّخذ المعنيون به مجموعة من القرارات السياسية الشجاعة تجاه الديون المتراكمة على الشعوب، وتجاه العلاقات بالنظام الحالي.</p><p>ثانياً – تحوُّل سياسي يقوم على حرية الإنسان المنطلقة من تكريم الله إياه كإنسان، وعلى الديمقراطية القائمة على العدل، والحدّ من استبداد الأثرياء، وعلى المساواة في الحقوق الديمقراطية بين كل الشعوب والأجناس والطوائف والديانات والأغنياء والفقراء، في ظل إعلان عالمي لحقوق الإنسان، تحدِّد فيه الحقوق والواجبات التي تعمل على خدمة الوحدة الإنسانية، وتنميتها في نطاق التنوع المتكامل لبناء هذه الوحدة.</p><p>ثالثاً – تحوُّل تربوي ذو ملامح إنسانية سوية يسمو بإنسانية الإنسان، ويجعل منه إنساناً مبدعاً طموحاً إلى أفضل القيم وأرقاها.</p><p>رابعاً – تحوُّل إعلامي هادف يعمل تحت رقابة اجتماعية واسعة، بعيداً عن الاستغلال السياسي، أو التجاري، ليقدم رسالته الإعلامية: إفادةً وإمتاعاً في ضوء</p><p>٥٠</p><p><http://www.e-learning-moe.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-138.jpeg" alt="img-138.jpeg" /><p>الوحدة الخامسة</p><h1>مثال (٥ - ١١)</h1><p>م دائرة في المستوى س ، قطرها ب ج ، ا نقطة على محيطها ، و س ، رسم و ا ا ج [ شكل (٥ - ٢٥) ] .
+المطلوب : أولاً : حدد الزاوية الخطية للمستويين ( ا ج و ) ، س .</p><p>ثانياً : أثبت أن المستويين ( ا ب و ) ، س متعامدان .</p><p>ثالثاً : أثبت أن المستويين ( ا ب و ) ، ( ا ج و ) متعامدان .</p><p>المعطيات : الدائرة ( م ) واقعة في المستوى س ، و س</p><p>و ا ا ج ، ب ج قطر الدائرة ( م )</p><p>ا نقطة على الدائرة ( م ) .</p><p>المطلوب : أولاً : حدد الزاوية الخطية للمستويين ( ا ج و ) ، س .</p><p>ثانياً : أثبت أن ( ا ب و ) ا س .</p><p>ثالثاً : أثبت أن ( ا ب و ) ا ( ا ج و ) .</p><p>البرهان : $‫\therefore \text{و م (ب ا ج) = ٩٠}‬$‫ (محيطية في نصف دائرة)</p><p>‬$‫\therefore \text{ب ا ا ج}‬$‫</p><p>‬$‫\therefore \text{و ا ا ج}‬$‫ (معطى)</p><p>‬$‫\therefore ( ا ج و ) \cap \text{س = ا ج}‬$‫</p><p>‬$‫\therefore \text{و ا ب هي الزاوية الخطية للمستويين ( ا ج و ) ، س}‬$‫ (وهو المطلوب أولاً) .</p><p>‬$‫\therefore \text{ج ا ا ا و}‬$‫ ، ‬$‫\therefore \text{ج ا ا ا ب}‬$‫</p><p>‬$‫\therefore \text{ج ا ا المستوى ( ا ب و )}‬$‫ [مبرهنة (٥-١)]</p><p>‬$‫\therefore \text{ج ا ا س}‬$‫</p><p>‬$‫\therefore ( ا ب و ) \text{ ا س}‬$‫ [مبرهنة (٥-٨)] (وهو المطلوب ثانياً)</p><p>‬$‫\therefore \text{ج ا ا ا ( ا ج و )}‬$‫</p><p>‬$‫\therefore \text{ج ا ا ا ( ا ب و )}‬$‫ (إثباتاً)</p><p>‬$‫\therefore ( ا ج و ) \text{ ا ( ا ب و )}‬$ [مبرهنة (٥-٨)] (وهو المطلوب ثالثاً) .</p><img src="img-139.jpeg" alt="img-139.jpeg" /><p>شكل (٥ - ٢٥)</p><p>١٥٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

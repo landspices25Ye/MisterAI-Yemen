@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>جيولوجية الجمهورية اليمنية</h2><p>تقع الجمهورية اليمنية في الجزء الجنوبي من شبه الجزيرة العربية والتي تكون جزءاً من الدرع العربي - النوبي الذي يقع على جانبي أخدود البحر الأحمر، ومن جنوب الأردن حتى اليمن. (شكل ٣٧).</p><img src="img-172.jpeg" alt="img-172.jpeg" /><p>ويتكون الدرع العربي من صخور القاعدة النارية والمتحولة، وترتكز عليه وحدات من الصخور الرسوبية بتراوح عمرها ما بين الأردوفيشي والحديث، إلا أن أكثرها انتشاراً وتمثيلاً هي رواسب العصر الجوارسي ورواسب العصر الكريتاسي (الطباشيري) ورواسب العصر الثلاثي والرباعي في المناطق الشرقية والشمالية الشرقية.</p><p>الشكل (٣٧) خريطة تبين امتداد الدرع العربي</p><p>انظر الخريطة الجيولوجية للجمهورية اليمنية، الموضحة بالشكل (٣٨)، ولأحظ أعمار الصخور التي تشير إليها الألوان المختلفة، فماذا ترى؟</p><img src="img-173.jpeg" alt="img-173.jpeg" /><p>الشكل (٣٨) الخريطة الجيولوجية للجمهورية اليمنية</p><p>٢١٤</p><p>الأحياء: النصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

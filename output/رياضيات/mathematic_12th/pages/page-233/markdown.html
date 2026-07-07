@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التكامل</p><h1>الحل :</h1><p>أ)  $‫\left[ (3 \text{ س}^4 + \text{جاس} + \text{جنا} \text{ س}) \right] \text{ وس} = \frac{3}{5} \text{ س}^5 - \text{جنا} \text{ س} + \frac{1}{5} \text{ جا} \text{ س} + \text{ث} \text{ .}‬$</p><p>ب)  $‫\left[ \frac{\text{ه}^2 - 9}{\text{ه}^2 - 3} \right] \text{ وس} = \left[ \frac{\text{ه}^2 - 3 (\text{ه}^2 + 3)}{\text{ه}^2 - 3} \right] \text{ وس}‬$</p><p>$‫= \left[ (\text{ه}^2 + 3) \text{ وس} = (\text{ه}^2 + 3 \text{ س}) \right]‬$</p><p>$‫= 1 - 3 + \text{ه} = 2 + 2 \text{ .}‬$</p><p>ج)  $‫\left[ (\text{ه}^2 - 9) + \text{جا} (1 - 7) \text{ س} + \text{قنا}^2 \text{ س}) \right] \text{ وس}‬$</p><p>$‫= \frac{-\text{ه}^2 - 9}{5} + \frac{1}{7} \text{ جنا} (1 - 7) - \frac{1}{3} \text{ ظنا} 3 \text{ س} + \text{ث} \text{ .}‬$</p><p>د)  $‫\left[ \frac{\pi}{2} \right] \left( \text{س} + \frac{1}{\text{جا}^2 \text{ س}} \right) \text{ وس} = \left[ \frac{\pi}{2} \right] \left( \text{س} + \text{قنا}^2 \text{ س}) \right) \text{ وس} \text{ .}‬$</p><p>$‫= \left( \frac{\text{س}^2}{2} - \text{ظنا} \text{ س} \right) \left| \frac{\frac{\pi}{2}}{8} = \frac{\pi}{8} - 0 - \left( \frac{\pi}{2} - 3 \sqrt{3} \right) \right. \text{ .}‬$</p><p>$‫= \frac{\pi}{2} + \frac{\pi}{9} =‬$</p><p>هـ)  $‫\left[ \frac{\pi}{2} \right] \left( \text{س} - \text{قاس ظاس}) \right) \text{ وس} = \left( \frac{\text{س}^2}{2} - \text{قاس} \right) \left| \frac{\frac{\pi}{2}}{2} \right. \text{ .}‬$</p><p>$‫= \frac{\pi}{2} - 1 + 2 - \frac{\pi}{18} = 1‬$</p><h1>مثال (٧ - ١٦)</h1><p>احسب مايلي :</p><p>أ)  $‫\left[ \text{ظنا}^2 \text{ س} \right] \text{ وس} \text{ .}‬$  ب)  $‫\left[ \frac{\pi}{2} - \text{جنا}^2 \text{ س} \right] \text{ وس} \text{ .}‬$  ج)  $‫\left[ (3 \text{ ع}^3 - 3 \text{ ظنا}^2 \text{ ع}) \right] \text{ ع} \text{ .}‬$</p><p>٢٣١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

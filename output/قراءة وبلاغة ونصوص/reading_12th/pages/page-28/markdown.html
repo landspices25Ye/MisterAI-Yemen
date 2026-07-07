@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-9.jpeg" alt="img-9.jpeg" /><p>أيُّ التعبيرين أكثر دلالة ؟ ولماذا ؟</p><p>جـ - بين أثر الصورة البلاغية التالية في المعنى</p><p>(وما يتدفق على واجهات المنازل من كميات الضوء).</p><p>(كانت نوافذ البيوت المطلية بجص يشبه الفضة في أزهي حال من التوهج).</p><p>دـ - انسب إلى الكلمات الآتية مبيناً ما حدث من تغيير فيها:</p><p>(اللغة - صنعاء - الضوء - البيضاء).</p><p>هـ - اضبط بالشكل آخر ما تحته خط.</p><p>٤ - وضح نوع المصادر الآتية، واذكر وزن كل منها:</p><p>(التوهج - استرجاع - الدهشة - الترهل - الانكماش).</p><p>٥ - يقول الكاتب: «حين توارب النساء النوافذ الخشبية صباحاً، تدخل الريح بنعومة</p><p>عبر شقوق هذه النوافذ، ويسترجع الناس صدى أغنيات كأنها قادمة من الماضي البعيد، ويصغون إلى موسيقى مُتْرَعَة بالشجن العميق، وبقايا حكايات ترجع في أصولها إلى أقدم الأزمان».</p><p>أ - املا الفراغ بالإجابة المناسبة مقابل كل ما يأتي:</p><p>- مرادف كلمة (متزعة): (...)</p><p>- ضد كلمة (شجن): (...)</p><p>- مفرد كلمة (بقايا): (...)</p><p>ب- يرسم الكاتب بكلماته في هذه الفقرة لوحة رائعة الجمال. ما مكونات</p><p>هذه اللوحة الفنية؟ وما سر الجمال فيها؟</p><p>جـ - استخرج من الفقرة السابقة:</p><p>- ظرف زمان، وبين إعرابه.</p><p>- حرفاً ناسخاً، وبين اسمه وخبره.</p><p>- جمع مؤنث سالماً، واذكر علامة إعرابه.</p><p>- فعلاً يعرب بعلامات فرعية، وبين نوعه، وإعرابه.</p><p>دـ - لمَ كتبت الألف في كلمتي: (صدى) و«مأوى» ياء غير منقوطة؟</p><p>٢٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

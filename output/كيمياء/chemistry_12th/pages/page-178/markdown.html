@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning moeg]()</p><h2>الآثار الناجمة عن تلوث الهواء :</h2><h3>١- المطر الحمضي Acid Rain :</h3><p>في الآونة الأخيرة بدأت تظهر بعض الظواهر الغريبة في العالم الصناعي مثل اختفاء الأسماك في البحيرات الكبيرة، وتعرض الكثير من التماثيل والمنحوتات التي ظلت صامدة لآلاف السنين للتلف والتشوه السريع، وكذلك انحسار الغابات الشائعة، وموت النباتات الصغيرة، وكان المتهم بظهور مثل هذه الظواهر ما يطلق عليه اسم المطر الحمضي. وكما نعرف أن قيمة الرقم الهيدروجيني (pH) لماء المطر تساوي ٥.٦ ولكن ما الذي يجعل هذا المطر حامضياً؟</p><p>هناك العديد من ملوثات الهواء والتي ذكرناها سابقاً ( $‫\text{NO}‬$‫ , ‬$‫\text{SO}_2‬$‫ , ‬$‫\text{CO}_2‬$ ) تجعل قيم الرقم الهيدروجيني (pH = 3) منخفضة عن طريق تفاعلاتها مع جزيئات الماء.</p><p>$‫\begin{aligned} \text{CO}_2 + \text{H}_2\text{O} & \longrightarrow \text{H}_2\text{CO}_3 \\ \text{SO}_2 + \text{H}_2\text{O} & \longrightarrow \text{H}_2\text{SO}_3 \\ \text{SO}_3 + \text{H}_2\text{O} & \longrightarrow \text{H}_2\text{SO}_4 \\ 2\text{NO}_2 + \text{H}_2\text{O} & \longrightarrow \text{HNO}_3 + \text{HNO}_2 \end{aligned}‬$‫</p><p>وكما نرى فإن نواتج هذه الملوثات ( ‬$\text{NO}_2$‫ , ‬$\text{SO}_3$ , $\text{SO}_2$ , $\text{CO}_2$‫ ) مع الماء هي حموض وهي تسبب خفض قيمة الرقم الهيدروجيني لماء المطر.</p><p>وعندما تسقط مثل هذه الأمطار الحمضية على البحيرات فإنها تعمل على خفض قيمة الرقم الهيدروجيني لهذه البحيرات أيضاً مؤدية إلى موت الأسماك في هذه البحيرات.</p><img src="img-157.jpeg" alt="img-157.jpeg" /><p>شكل (٩-٤) تأثير المطر الحمضي على التمثال</p><p>أما تأثير المطر الحمضي على التماثيل والمنحوتات فيرجع إلى أن المطر الحمضي يتفاعل مع كربونات الكالسيوم الموجودة في حجارة هذه التماثيل مكوناً كبريتات الكالسيوم الذائبة في الماء، كما في الشكل (٩-٤).</p><p>‬$‫\text{H}_2\text{SO}_4 + \text{CaCO}_3 \longrightarrow \text{CaSO}_4 + \text{H}_2\text{O} + \text{CO}_2‬$</p><p>١٧٦</p><p><http://www.e-learning-moeg.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-171.jpeg" alt="img-171.jpeg" /><p>٧ - ما هي الظاهرة الكهروضوئية ؟ وما هي الإلكترونات الضوئية ؟
+٨ - ارسم مخططاً للجهاز الذي استخدمه مليكان لدراسة الظاهرة الكهروضوئية .
+٩ - اشرح معادلة إينشتاين في تفسيرها لظاهرة الكهروضوئية .
+١٠ - اعط تفسيراً للطيف الخطي والطيف المتصل للأشعة السينية .
+١١ - ارسم مستويات الطاقة لعنصر الكروم في بلورة الياقوت وبين عليها الانتقالات التلقائية والحثية بين مستويات الطاقة في عملية توليد الليزر .
+١٢ - اشرح عملية توليد ليزر الياقوت بالاستعانة بمخطط مستويات الطاقة لعنصر الكروم .
+١٣ - اذكر استخداماً واحداً لكل من :
+أ - الخلية الكهروضوئية ب - الأشعة السينية ج - أشعة ليزر الياقوت .
+١٤ - إذا علمت أن الطاقة اللازمة لنزع إلكترون من سطح معدن هي ( ٣,٥٤ ) إلكترون فولت ، وأسقط على هذا السطح ضوء وحيد اللون طول موجته ٤٠٠٠ أنجستروم ، هل تنبعث إلكترونات من سطح المعدن ؟
+١٥ - أضيء سطح الصوديوم بضوء طول موجته ٣٠٠٠ أنجستروم فإذا علمت أن دالة الشغل لمعدن الصوديوم = ٢,٤٦ ( أ . ف ) .
+احسب ما يلي :
+أ - الطاقة الحركية للإلكترونات المتحررة .
+ب - سرعتها .
+ج - الطول الموجي الحرج .
+د - جهد الإيقاف .
+١٦ - احسب فرق الجهد الذي يجب أن يعجل به إلكترون بحيث يكون أقصر الأطوال الموجية في طيف الأشعة السينية يساوي واحد أنجستروم .
+١٧ - إذا كان فرق الجهد بين طرفي أنبوب الأشعة السينية هو ٢٥ × ١٠³ فولت .
+احسب أعلى تردد للأشعة السينية المنبعثة .
+١٨ - احسب أقصر الأطوال الموجية للأشعة السينية المنبعثة إذا كانت كمية التحرك للإلكترون عند اصطدامه بالهدف تساوي ٧,٦٣ × ١٠⁻²⁵ كجم . م / ث .
+علماً بأن كتلة الإلكترون ( ك ) = ٩,١ × ١٠⁻³¹ كجم .</p><p>١٧٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

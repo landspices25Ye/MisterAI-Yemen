@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الوحدة الثانية</p><h2>تمارين ومسائل (٢-٢)</h2><p>[١] أوجد قيمة كل ما يأتي :</p><p>٧ ل م ، ١٢ ل م ، ٢٠ ل م ، ٢٥ ل م</p><p>[٢] عبر عن كل ما يأتي بالشكل م ل م :</p><p>أ) ١١ × ١٢ × ١٣ ب) ١ × ٦ × ٢ × ٥ × ٣ × ٤ ج) ٢٤
+د) ٢١٠ هـ) (١-٢) (٣-٤) (٢-٥) (٣-٦) (٤-٧) (٥-٨) (٦-٩) (٧-١٠)</p><p>[٣] أوجد قيمة م في كل ما يأتي :</p><p>أ) ل م = ٥٠٤٠ ب) م ل م = ٧٢٠
+ج) ٧ ل م = ٣٥٢٨٠ د) م ل م = ٧٥
+هـ) م ل م = ١٤ م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م</p><p>[٤] أثبت صحة الآتي :</p><p>أ) (أ م + ٢) = م + ٢ + ٣ + ٢
+ب) (أ م + ١) = م + ١ - م
+ج) م ل م = ١ - م + ١ - م</p><p>[٥] إذا كان ل م = ٢٤ ، فأوجد م ل م</p><p>[٦] أوجد م ل م = ٦٧٢٠ حيث م ل م = ١</p><p>[٧] لتكن م ل م = ٧٢ : م ل م = ٧٢ ، أوجد م ل م + ١ - م</p><p>[٨] إذا كان م ل م = ٦٠٤٨٠ ، م ل م = ٧٢٠ ، فأوجد قيمة م ل م = ١</p><p>[٩] لتكن م ل م = ٥ : ٧٢ : م ل م = ٥ : ٧٢ ، فأوجد م ل م</p><p>[١٠] إذا كان :</p><p>س + ص ل م = ٣٦٠ ، م ل م = ٥٠٤٠ ، فأوجد م ل م</p><p>٥٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

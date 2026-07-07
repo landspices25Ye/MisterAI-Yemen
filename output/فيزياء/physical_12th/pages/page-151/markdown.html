@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-145.jpeg" alt="img-145.jpeg" /><p>شكل (٥)</p><p>وأي زيادة في جهد المصعد لا تؤدي إلى وصول مزيد من الإلكترونات إلى المصعد، وتسمى قيمة التيار عندها بتيار التشبع. وإذا قللنا فرق الجهد بين المصعد والمهبط حتى الصفر تنخفض شدة التيار بالتدريج ولكنها لا تنعدم عندما يكون فرق الجهد صفراً، انظر الشكل (٥).</p><p>ويعني ذلك أن الضوء الساقط على المهبط لا يكتفي بتحرير الإلكترون من سطح المعدن فحسب، بل ويعد بعضها (بالإضافة إلى تحريرها) بطاقة حركية تمكنها من الوصول إلى المصعد. وعندما يعكس توصيل موزع الجهد بواسطة المفتاح المزدوج في شكل (٣) بحيث يتصل المهبط بالقطب الموجب لموزع الجهد والمصعد بالقطب السالب، تلاحظ تناقص شدة التيار بزيادة فرق الجهد السالب (-ج)، بسبب تنافر الإلكترونات المنطلقة من المهبط مع المصعد السالب، ولا تصل إليه إلا تلك الإلكترونات التي طاقتها الحركية ($‫\frac{1}{2}‬$ كغ) أكبر من الطاقة الكهربائية ج س م (حيث ع سرعة الإلكترون، ك كتلته و س م شحنته). وعندما يصبح فرق الجهد السالب قادراً على منع أسرع هذه الإلكترونات من الوصول إلى المصعد، تنعدم شدة التيار المار في دائرة الخلية، ويسمى عندئذ هذا الجهد (ج) بجهد الإيقاف ونرمز له بالرمز (ج). وتكون الطاقة الكهربائية المناظرة لهذا الجهد (ج س م) مساوية للطاقة الحركية ($‫\frac{1}{2}‬$ كغ) لأسرع الإلكترونات.</p><p>وهي الطاقة العظمى (طغ) لحركة الإلكترونات. أي إن:</p><p>$‫طغ = \frac{1}{2} كغ = ج س م \dots\dots\dots (1)‬$</p><p>١٤٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>الطيف الشمسي المرئي</h1><h1>التجربة السابعة</h1><h1>الهدف</h1><p>١- تتعرّف على مكوّنات الطيف الشمسي المرئي .</p><h1>الأدوات والمواد المطلوبة</h1><p>تحتاج لتنفيذ هذه التجربة الأدوات والمواد الآتية :
+- منشور من الزجاج ، أو الكوارتز .
+- حاجز مثقوب من منتصفه .
+- حائل ( شاشة عرض أو جدار أبيض نظيف ) .</p><h1>خطوات تنفيذ التجربة</h1><p>١- استقبل حزمة رفيعة من أشعة الشمس على حاجز أبيض كبير به ثقب ضيق .</p><p>- ماذا تشاهد على الحائل ؟
+- بماذا تفسر ذلك ؟
+٢- ضع منشوراً من الزجاج ، أو الكوارتز ، بحيث تسقط حزمة الأشعة على أحد جوانبه .
+- ماذا تشاهد على الحائل ؟
+- كم عدد الألوان التي تشاهدها ؟
+- ما تفسيرك لذلك ؟
+- ماذا تلاحظ ؟
+- ماذا تستنتج ؟</p><img src="img-20.jpeg" alt="img-20.jpeg" /><p>٢١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

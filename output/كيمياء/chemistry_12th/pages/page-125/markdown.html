@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>الذهب الأسود</h1>
+<h2>The Black Gold</h2><h1>الوحدة السابعة</h1><img src="img-113.jpeg" alt="img-113.jpeg" /><h1>الأهداف</h1><p>نتوقع منك بعد الانتهاء من دراسة هذه الوحدة أن تكون قادراً على أن:</p><p>١ - توضح المقصود بالذهب الأسود.
+٢ - توضح خصائص المركبات الموجودة في خام البترول.
+٣ - تذكر أهم العناصر التي تدخل في تركيب النفط.
+٤ - تقارن بين النظريات التي حاولت تفسير أصل النفط وطريقة تكوينه.
+٥ - تشرح أهم الطرق الحديثة المستخدمة للكشف عن النفط.
+٦ - تفسر المبدأ الذي يتم على أساسه تكرير البترول في برج التقطير.
+٧ - توضح أهم نواحٍ عملية تكرير البترول واستخداماتها.
+٨ - تستنتج العلاقة بين عدد ذرات الكربون في جزئيات المركبات الموجودة في البترول ودرجة الغليان.
+٩ - توضح بالمعادلات الكيميائية الموزونة أهم العمليات المستخدمة لزيادة إنتاج الجازولين.
+١٠ - توضح بالأمثلة أهمية النفط كمصدر للطاقة وكمصدر للمنتجات الصناعية.</p><p>١٢٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

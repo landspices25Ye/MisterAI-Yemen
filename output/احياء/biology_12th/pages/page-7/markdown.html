@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>الوحدة الخامسة: الوراثة الجزيئية</h2><p>١٣١ ... الكروموسومات والجينات
+١٣٢ ... دورة حمض (DNA) في نقل الصفقات الوراثية
+١٣٥ ... الحمض النووي الرايبوزي
+١٣٦ ... خطوات بناء البروتين
+١٣٨ ... تعليقات في الوراثة الجزيئية
+١٤٠ ... تقويم الوحدة</p><h2>الوحدة السادسة: التقانة الحيوية</h2><p>١٤٤ ... التقانة الحيوية
+١٤٦ ... الهندسة الجينية أو الوراثية
+١٤٧ ... استخدام التقانة الحيوية في إنتاج الغذاء
+١٥٢ ... استخدام التقانة الحيوية في إنتاج الدواء
+١٥٥ ... استخدام التقانة الحيوية في إنتاج الوقود
+١٥٦ ... استخدام التقانة الحيوية في معالجة المخلفات المنقولة
+١٥٨ ... استخدام التقانة الحيوية في إنتاج بعض المواد الصناعية
+١٥٨ ... الإستنساخ
+١٦١ ... تقويم الوحدة</p><h2>الوحدة السابعة: البيئة ومشكلاتها</h2><p>١٦٢ ... المقصود بالبيئة
+١٦٣ ... مشكلات التلوث لمكونات البيئة
+١٦٤ ... ملوثات الهواء
+١٦٥ ... تلوث الماء
+١٧١ ... التلوث الضوئي
+١٧٣ ... التلوث الإشعاعي
+١٧٦ ... ملوثات الغذاء
+١٧٨ ... تلوث التربة
+١٨٠ ... مشكلات استنزاف الموارد البيئية
+١٨١ ... تقويم الوحدة</p><h2>الوحدة الثامنة: تاريخ الأرض</h2><p>١٨٧ ... الصخور الرسوبية
+١٨٨ ... الأحافير
+١٩١ ... التاريخ المطلق للصخور
+٢٠٢ ... التقسيم الحديث للسجل الجيولوجي
+٢٠٧ ... نبذة عن تاريخ الأرض
+٢٠٩ ... جيولوجيا الجمهورية اليمنية
+٢١٤ ... تقويم الوحدة
+٢٢٠ ... المصطلحات العلمية</p><p>٧</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

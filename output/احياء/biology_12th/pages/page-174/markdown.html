@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>– ما مصادر الضجيج؟</p><p>للضجيج مصادر مختلفة منها ما يرتبط بأنشطة الإنسان، ومنها ما يرتبط بمصادر طبيعية. إلا أن مصادر الضجيج المرتبطة بالإنسان هي السبب الرئيس لهذه المشكلات في هذه الأيام. ويمكن توضيح هذه المصادر كما يأتي:</p><p>أ – عوامل النشاط الإنساني:</p><p>يعتبر النشاط الإنساني في المجالات المختلفة عاملاً رئيساً في زيادة مشكلة الضجيج وتلوث البيئة به. ومن مصادرها ما يأتي:</p><p>١- المصانع والمعامل مثل مصانع الطوب والبلاط، ومناشير الحجارة وورش الحدادة والألمنيوم، والنجارة والخراطة، وورش صيانة السيارات المنتشرة في الأحياء السكنية ووسط المدن بسبب التخطيط العشوائي وغياب إنشاء المناطق الصناعية بعيدة عن المدن.</p><p>٢- وسائل النقل مثل الدراجات النارية والسيارات والطائرات، نتيجة لعدم الاهتمام بالصيانة السليمة لها، ومرور طرق المواصلات الرئيسية وسط الأحياء السكنية، وعند استخدام المنبهات بطريقة غير سليمة.</p><p>٣- عملية البناء والتشييد العمراني نتيجة استخدام الآلات والمعدات الثقيلة الخاصة بتشييد البناء.</p><p>٤- الأجهزة الكهربائية المستخدمة في المنازل مثل المكتسة الكهربائية والراديو والتلفزيون .. إلخ.</p><p>٥- مكبرات الصوت والمسجلات في محلات بيع أشرطة الموسيقى والفيديو، وكذا المستخدمة في المناسبات والحفلات الموسيقية الصاخبة مثل حفلات الزفاف.</p><p>٦- التفجيرات أثناء الحروب أو في الأعمال الإنشائية أثناء السلم.</p><p>ب – عوامل طبيعية:</p><p>قد تصدر الضوضاء من عوامل طبيعية مثل الانفجارات البركانية، والرعد، والزلازل، وأمواج البحر العالية، وغيرها. إلا أن العوامل المرتبطة بأنشطة الإنسان هي المصدر الرئيس لهذه المشكلة في هذا العصر.</p><h2>الآثار المترتبة على الضجيج:</h2><p>– ما التأثيرات الناتجة عن الضوضاء؟</p><p>الضجيج العائلي يؤثر سلباً على الحالة النفسية للإنسان، وعلى الأداء الوظيفي للجسم عند تعرضه لأصوات عالية تزيد شدتها عن (٩٠) ديسيبل لفترة طويلة من الزمن</p><p>١٧٤</p><p>الأحياء: النصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

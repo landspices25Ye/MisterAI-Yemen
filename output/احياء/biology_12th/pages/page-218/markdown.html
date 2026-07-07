@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الجرائنية والمنبثقة من الفواصل والصدوع، ويبلغ سمك طبقات الصخور النارية والبركانية أكثر من ١٥٠٠ متر.</p><p>ب - عمليات تعرية.</p><p>ج - تكون رواسب مياه عذبة (أنهار - بحيرات) تحتوي على حفريات، وكذلك تربة اللاتريت بين طبقات الصخور البركانية. وهذا يؤكد أن الصخور البركانية قد تكونت في فترات غير متصلة تخللتها فترات هدوء مطيرة تكونت أثناءها مثل هذه الرواسب، وقد استخدمت الحفريات الموجودة بهذه الرواسب في تحديد عمر الصخور البركانية بالأوليجوسين - الميوسين. تلا حركة التقوس (Arching) هذه، وما صاحبها من عمليات، تصدع الدرع العربي النوبي بصدوع عادية موازية لشاطئ البحر الأحمر وخليج عدن، والتي أحالت المنطقة إلى كتل صدعية عديدة على شكل تراكيب الأغوار (Grabens) والظهور (Horsts)، وصدوع ذات زحزحة مضريبة (Strike-Slip Faults) عمودية على اتجاه الصدوع العادية، ونشأ عن كلا النوعين (انفلاق) خسفي لوادي البحر الأحمر الأخدودي (Red sea Rift valley) وخليج عدن في حين الميوسين المبكر والأوسط. وصاحب ذلك نشاطات بركانية متجددة مكونة لصخور قشرة أرضية محبطة حديثة على شكل حافة بحرية. ونتيجة لانبثاق وانتشار الحمم البركانية على طول محور الوادي الخسيف للبحر الأحمر وخليج عدن، تباعد اللوح العربي (Arabian Plate) في اتجاه الشمال الشرقي، عن اللوح النوبي (Nubian Plate) والذي تباعد في اتجاه الجنوب الغربي. وتميزت فترة بداية منشأ البحر الأحمر بتكون رواسب ملحية وجبسية كتلك التي تنتشر في منطقة الصليف، ويصل سمك طبقات الملح إلى أكثر من ١٠٠٠ متر.</p><p>٢١٨</p><p>الأحياء للصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

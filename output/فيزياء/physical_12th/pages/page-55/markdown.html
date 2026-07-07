@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الذبذبات بسبب تحول الطاقة الكهربائية إلى طاقة حرارية في أسلاك التوصيل والمقاومة الأومية للملف، ولكن إذا شحن المكثف مرة أخرى يتم تكرار العمليات السابقة لتوليد ذبذبات كهرومغناطيسية تنتشر في الفضاء بسرعة الضوء.</p><h3>العوامل المؤثرة في تردد الدائرة المهتزة</h3><p>علينا أن نتعرف على العوامل التي تؤثر في تردد الدائرة المهتزة وذلك من العلاقة التالية:</p><p>$‫f = \frac{1}{\sqrt{\pi} \sqrt{2 \text{ حث سع}}} \dots \dots (1)‬$‫</p><p>حيث (f) تردد الموجات الكهرومغناطيسية المتولدة في الدائرة، ويمكن استنتاج العوامل المؤثرة في تردد الدائرة المهتزة من العلاقة السابقة وهذه العوامل هي سعة المكثف (سع) ومعامل الحث الذاتي (حث) للملف الحثي كما يلاحظ من العلاقة السابقة حيث إن التردد (f) يتناسب عكسياً مع الجذر التربيعي لكل من سعة المكثف (سع) ومعامل الحث الذاتي للملف (حث). ويتوقف معامل الحث الذاتي للملف على طول الملف (ل) متر، وعدد لفاته (ن) لفة ومساحة مقطعه (س) ونوع المادة الموضوعة في قلب الملف أي أن:</p><p>‬$‫\text{حث} = \frac{\mu \times 2 \times \mu}{\text{ل}} \dots \dots (2)‬$‫</p><p>حيث (μ) هو معامل النفاذية المغناطيسية لقلب الملف ويساوي للهواء 4π × 10⁻⁷ ويبر/أمبير متر، ولعرفة العلاقة التي تربط بين التردد والخواص الفيزيائية للملف نعوض عن قيمة (حث) من العلاقة (2) في العلاقة (1) نجد أن:</p><p>‬$‫f = \frac{\sqrt{\text{ل}}}{\sqrt{\pi \times \mu \times \mu \times \text{سع}}} \dots \dots (3)‬$</p><p>ومن هذه العلاقة يمكن معرفة تردد الموجات الكهرومغناطيسية المتولدة بدلالة طول الملف، عدد لفاته، مساحة مقطعه وسعة المكثف. وتستخدم هذه الدائرة في بعض أجهزة الإرسال اللاسلكية.</p><p>وهناك أنواع من الموجات منها ما يسمى بالموجات المكيفة السعة (A. M. Amplitude Modulation)، ومنها ما يسمى بالموجات المكيفة التردد (F. M. Frequency Modulation) وهذه الرموز يمكن ملاحظتها على أجهزة الاستقبال الإذاعي المذيع (الراديو).</p><p>٥٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

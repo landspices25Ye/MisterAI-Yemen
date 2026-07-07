@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>٢- الإنبعاث التلقائي : (Spontaneous Emission)</h2><p>ولكن سرعان ما تعود الذرة المثارة تلقائياً من المستوى المثار (طأ) إلى حالتها الأرضية ويحدث ذلك عندما تعود إلكتروناتها إلى مستواها السابق (طأ) باعثة بالطاقة التي امتصتها على شكل شعاع ضوئي، أي فوتون له نفس تردد الفوتون الساقط (f). أما طوره واتجاهه فغير محددين. تسمى هذه العملية بالإنبعاث التلقائي شكل (أ ب).</p><h2>٣- الإنبعاث المستحث : (Induced or Stimulated Emission)</h2><p>في الحقيقة أن الذرات المثارة يمكن أن تعود إلى حالتها المستقرة (إلى المستوى الأرضي طأ) بعمليتين مختلفتين :</p><p>إما تلقائياً وهو الشيء الذي ذكرناه، وفي هذه العملية التلقائية تعود الذرات إلى المستوى الأرضي بشكل عشوائي باعثة إشعاعاتها في كل الاتجاهات، لأن كل ذرة من ملايين الذرات تبعث بأشعتها مستقلة عن الذرات الأخرى، فتكون الأشعة المنبعثة غير مترابطة، شكل (أ ب)، وهذا الإنبعاث هو الإنبعاث الطبيعي للذرات الذي يحدث في المنابع الضوئية الطبيعية أو في المصابيح الكهربائية.</p><img src="img-160.jpeg" alt="img-160.jpeg" /><p>شكل (١٦)</p><p>١٦٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

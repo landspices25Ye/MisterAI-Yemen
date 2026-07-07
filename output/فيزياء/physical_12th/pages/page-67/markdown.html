@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>المجموعة الخامسة وعناصر المجموعة الثالثة شوائب، ويمكن لهذه الشوائب أن تلعب دوراً هاماً في إضافة خصائص مميزة لأشباه الموصلات منها الحصول على نوعين من أشباه الموصلات غير النقية هما شبه موصل غير نقي من النوع السالب وشبه موصل غير نقي من النوع الموجب، وبذلك تزداد قدرة أشباه الموصلات على توصيل التيار الكهربائي كما سيأتي شرحه.</p><h3>النوع الأول: شبه موصل من النوع السالب (الشائبة المانحة للإلكترونات) (Donor Impurity) : N-Type Semiconductor</h3><p>لاحظ الشكل (٣)، الذي يبين التركيب البلوري لشبه موصل من النوع السالب، ثم سمّ العنصر (الشائبة) الذي طُعمت به هذه البلورة.</p><p>- كم عدد الإلكترونات الموجودة في مستوى طاقته الأخير (مستوى التكافؤ).
+- وما تكافؤه؟</p><p>وجد أنه عند تطعيم بعض ذرات الجرمانيوم (Ge) رباعية التكافؤ، بذرات من عنصر خماسي التكافؤ مثل الزرنيخ (As)، فإن كل ذرة من ذرات الزرنيخ تسهم بأربعة إلكترونات من إلكتروناتها الخمسة لترتبط مع أربع ذرات من ذرات الجرمانيوم المحيط بها، بينما يظل الإلكترون الخامس غير مشارك في هذا الترابط [انظر إلى الشكل (٣)]، ويترتب على ذلك أن يكون الإلكترون الخامس ضعيف الارتباط بذرات الزرنيخ، ولا يتطلب تحريره منها سوى قدر ضئيل جداً من الطاقة، وهذا</p><img src="img-62.jpeg" alt="img-62.jpeg" /><p>الشكل (٣)</p><p>يجعل بلورة الجرمانيوم المطعمة بشائبة الزرنيخ محتوية على نسبة لا بأس بها من الإلكترونات الحرة التي تتجول في البلورة من موضع إلى آخر، ومن ثم تصبح موصلة للكهرباء بدرجة أكبر، وحاملات الشحنة السائدة (الأساسية) في هذه البلورة هي الإلكترونات، ولهذا يرجع سبب تسمية بلورة هذا النوع بالبلورة السالبة (Type N-) من كلمة (Negative).</p><p>٦٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

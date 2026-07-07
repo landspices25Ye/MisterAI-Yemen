@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>لم تشعر بأنَّ يدها كانت تلمس ناراً، تجمدت عيونها على الظلام، وفي أعماقها كان يتفجر شيء غامض .. مخيف لا تعرفه.</p><p>صوت الرجال لا يزال على الدَّرَج المظلمة:</p><p>– أين نضعه؟</p><p>– هناك في غرفة النوم.</p><p>– لا .. لا .. الأفضل في الفرش.</p><p>هناك الهواء أكثر.</p><p>وصاح أحدهم:</p><p>– أين أنت يا زوجة؟</p><p>لم تكن هناك .. أحقاً إنه لم يعد .. ؟ أحقاً أن ما يحدث هناك تحت هو شيء واقعي؟</p><p>غاب كل شيء عنها .. حتى عيون طفلها الفضوليين .. عاد الرجال إلى القرية</p><p>وكانت النساء يتحدثن عن أزمة القرية:</p><p>– ماذا ستصنع الآن زوجته؟</p><p>– لعلها ستعتني بزوجها.</p><p>– يقولون إنه لا يملك شيئاً.</p><p>– لقد سرق الأطباء كل نقوده.</p><p>همست عجوز:</p><p>– لقد سحرته امرأة في المدينة.</p><p>نظرت إلى الزاوية حيث مددوه، كان عظيماً أسمر، لا شيء من ذلك الرجل.</p><p>عيناه فقط تدلان على أن الوجه له.</p><p>حمل الأطفال في الجسد الممدود ..</p><p>لم يتخيل الصغير أن هذا أبوه .. لقد رسم له في أعماقه صورة أخرى عملاقة</p><p>قوية، عاطفية .. كان كالأغنية التي كانت أمه ترددها وهي تطحن مساء حبوب الشعير.</p><p>أما الكبير فلم يكن يعرف ماذا يفعل .. ظل مبهوراً لساعات، أبوه الذي قبله لم</p><p>يكن هو هذا الممدود هنا، لعل الرجال في الوادي أخطؤوا ونقلوا إليهم شخصاً آخر.</p><p>ولكن أمه صامتة لا تتحدث أنها تنظر إليه، لعلها لم تتبين الخطأ ..</p><p>– أماه .. إنه .. ليس.</p><p>وقاطعه صوت أنين:</p><p>– أريد ماء .. ماء .. ماء</p><p>٢٠٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

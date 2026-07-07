@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>استشراف المستقبل *</h1><p>ظل التفكير في المستقبل أحد أهم الهواجس التي شغلت فكر الإنسان منذ بداية</p><p>ظهوره على سطح الأرض، وظل ملازماً له خلال مراحل حياته المتعاقبة، وكانت</p><p>مواجهة ذلك الهاجس وراء كل ما أحرزه الجنس البشري من تقدم وتطور.</p><p>فقد كان للجماعة الإنسانية منذ القديم، وعلى امتداد الأزمنة ولعٌ شديدٌ بتعرف</p><p>مستقبلها، واستطلاع ما يخبئه القدر لأعضائها. وكانت لها وسائلها البسيطة التي تُعَدُّ -حالياً- وسائل ساذجة وغيبية مثل: التنجيم، والكهانة والسحر، والشعوذة، والتحديق في الكرات البلورية، وغيرها من الوسائل التي لم تُعَدَّ تتفق مع العلم الموضوعي الحديث.</p><p>أما اليوم فقد أضحى الاهتمام بالمستقبل يشكل أحد مجالات المعرفة العلمية،</p><p>بمبادئها وأساليبها، يفسره تقدم هذه المعرفة ونموها المتسارع، وتنامي الوعي الجاد بالواقع، وما يحوطه من مشكلات الطفرة التكنولوجية والتسلح النووي، والانفجار السكاني، والتلوث البيئي، والأمراض المستعصية، والتلاعب البيولوجي والسيكولوجي بالكائن البشري. وكلها حالات ضاعفت من الواجب المُلح الذي يتعين بمقتضاه اتخاذ قرارات مرتبطة بالمستقبل.</p><p>ولقد أسفرت الجهود المتواصلة للكشف عن أسرار الحياة، والمواطن المجهولة من</p><p>تكوين العالم، وارتياد مناطق ومجالات جديدة من العلم والمعرفة عن نتائج تفوق كل التوقعات التي كان يحلم بها كثير من المفكرين والمثقفين المهتمين بالوضع الإنساني بشكل عام، وهي نتائج تشير في نفوسهم غير قليل من الخوف والقلق على مصير الإنسان ومكانته من الكون، بل وعلى مفهوم الإنسانية ذاته.</p><p>وكان من الطبيعي أن يُكرَّس كثيرٌ من هؤلاء المفكرين والباحثين أنفسهم لتتبع مسار هذه الكشوفات، ورصد النتائج التي سوف تترتب عليها، وتأثيرها في الثقافة</p><p>* مقتبس بتصرف من مجلة العربي، الأعداد : (٤٨٩)، (٤٩٩)، (٥٣٤)، (٥٤٦).</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

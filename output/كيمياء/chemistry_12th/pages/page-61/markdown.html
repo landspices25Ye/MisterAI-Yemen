@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>– من خلال دراستك السابقة، وضّح المقصود بخاصية التوصيل الكهربائي؟</p><p>افترض أننا وصلنا قطبي بطارية بقطبين مغمورين في محلول إلكتروني مثل (CuCl₂) فإن ما يحدث هو قيام المحلول بتوصيل التيار الكهربائي، وينتج عن ذلك إضاءة المصباح الموصّل بهذه الدائرة.</p><p>– كيف يمكن تفسير ما حدث؟</p><p>عرفت أن مركب (CuCl₂) أيوني، ويمكن أن يتفكّك عند ذوبانه في الماء مكوناً محلول إلكتروني يحتوي على أيونات النحاس الموجبة وأيونات الكلور السالبة على النحو الآتي:</p><p>$‫\text{CuCl}_2 \xrightarrow{\text{(aq)}} \text{Cu}^{2+} + 2\text{Cl}^-_{\text{(aq)}}‬$</p><p>فعند توصيل الساقين أحدهما بالقطب السالب للبطارية والآخر بالقطب الموجب، فإن التيار يسري في الدائرة وذلك لأن القطب السالب يدفع الإلكترونات نحو الساق المتصل بها محوَّلاً إياه إلى قطب سالب، بينما يقوم القطب الموجب للبطارية بسحب الإلكترونات من القطب المتصل به محوَّلاً إياه إلى قطب موجب، ونتيجة لإضاءة المصباح فإن هذا يدل على استمرار سريان الإلكترونات عبر الدائرة.</p><img src="img-45.jpeg" alt="img-45.jpeg" /><p>شكل (٣-١١) التحليل الكهربائي لمحلول CuCl₂</p><p>- كيف حدث ذلك؟
+- إلى أين تتجه أيونات النحاس Cu²⁺ وأيونات الكلور Cl⁻
+- ما التفاعلات التي تحدث عند كل من المصعد والمهبط؟</p><p>ومن التطبيقات على التحليل الكهربائي ما يلي:</p><p>١- التحليل الكهربائي لمصاهر الأملاح: تتميز الأملاح الأيونية بأنها مكونات صلبة تنصهر بالتسخين إلى أيونات موجبة وسالبة وتصبح موصلة للتيار الكهربائي.</p><p>■ مثال : التحليل الكهربائي لمصهور كلوريد الصوديوم:</p><p>يحتوي مصهور كلوريد الصوديوم على أيونات الصوديوم (Na⁺) وأيونات</p><p>٥٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

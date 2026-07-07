@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>ثم قام مورجان بإجراء تلقيح اختباري بين ذكر رمادي اللون طويل الأجنحة من أفراد الجيل الأول وأنثى سوداء قصيرة الأجنحة كما في الشكل (١٩) ولأحظ صفات اللون وطول الأجنحة بين الأبناء فوجد أن ٥٠٪ من الأفراد كانت رمادية اللون طويلة الأجنحة و ٥٠٪ منها كانت سوداء اللون وقصيرة الأجنحة (بنسبة ١:١).
+- قارن بين هذه النتائج والنتائج المتوقعة تبعاً لقانون التوزيع المندلي؟
+- ما سبب ظهور الصفات بنسبة ١:١ مختلفة عن نسب قانون التوزيع الحر؟
+وضع مورجان تفسيراً لهذه النتائج بأن كلاً من جين لون الجسم الرمادي وجين الأجنحة الطويلة موجود على أحد الكروموسومات، بينما توجد جينات لون الجسم الأسود والأجنحة القصيرة على الكروموسوم الآخر المقابل، ولهذا ينتقل الجينان معاً كما في الشكل (١٩).</p><h2>٢- الارتباط غير التام للجينات : Incomplete Linkage</h2><p>عندما كرر العالم مورجان التلقيح الاختباري، يتزوج أنثى هجينة رمادية اللون وطويلة الأجنحة مع ذكر أسود اللون وقصير الأجنحة كما في الشكل (٢٠)، لاحظ أن النتائج كانت أيضاً مخالفة للنسب التي اقترحتها قانون التوزيع الحر المندل.</p><img src="img-95.jpeg" alt="img-95.jpeg" /><p>- ما الأشكال الظاهرية للون الجسم وطول الأجنحة في أفراد الجيل الأول من ذباب الفاكهة؟
+- ما مدى تشابه أفراد الجيل الأول مع الأبوين؟
+لقد وجد مورجان أن نسبة الأفراد التي تشبه الأبوين في صفتي</p><p>الشكل (٢٠) توارث لون الجسم وطول الأجنحة في ذباب الفاكهة</p><p>١٢٩</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

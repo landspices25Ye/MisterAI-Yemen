@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>٩- لعمري لقد طال النوى وتقطعت وسائل كانت قبل شتى المواقف
+١٠- فإن تكن الأيام ساءت صروفها فإني بحمد الله أول واثق</p><h3>معاني المفردات والتراكيب اللغوية</h3><p>سلة سيف: السلة اسم مرة من سل السيف أي أخرجه من غمده، البارق: سحاب ذو برق، عقيقة بارق: ما تبقى في السحاب من شعاعه، وهنا: الوهن الضعف وساعة تمضي من الليل، سماوة بارق: اسم مكان، لوى: أمال وثنى، الركب: الجماعة من المسافرين، وزفرة: الزفرة إخراج النفس ومده، وامق: محب، جنه: ستره، تفري: تشق، لدن: عند، شفني: أنحلني، وله: الوله حزن المحبين، سورة الوجد: سطوته، ماحق: متلف، سرنديب: الاسم القديم للجزيرة الواقعة جنوبي الهند، وقد سميت بعد ذلك سيلان ثم غير اسمها إلى سريلانكا أي جزيرة الزهر.</p><h3>إضاءة</h3><p>يتساءل الشاعر أهذا وميض سيف أخرج من غمده أم هو شعاع برق بدا باهتا من خلال السحاب فنقل لنا صورة سماوة بارق؟ وقد ثنى المسافرون أعناق إيلهم نحوها لوداعها بتنهدات المخزون ونظرة العاشق المتيم. وما وميض البرق إلا علامة للشوق، تدل على ما يكنه العشاق في صدورهم، مما تسح له العيون، وتتفتت له القلوب التي في الصدور، ومثل ذلك لا يدركه إلا أهل الهوى، ومن لم يحب ولم يفارق لا يعرف للشوق معنى. فوالله إني منذ فارقت وطني وأهلي لفي شوق مضن. وقد أقمت في جزيرة سرنديب وقتاً طويلاً أضاع شبابي، ولكن من طلب العز ورفض العيش الذليل لابد له من الصبر على لقاء الموت ومواجهة الأخطار. ولئن ساءت الأيام وأصابتني بالحن فإني مؤمن بالله، واثق بأن كل اعوجاج سيقوم.</p><h3>تحليل وتذوق</h3><p>مع أن البارودي كان مقلداً للقدماء إلا أن خلجات نفسه وتأثيرات عصره لابد أن تفرض نفسها في شعره كما في النص الذي بين أيدينا، وغيره مما يعد من مظاهر الأصالة في شعره.</p><p>يبدأ الشاعر بوصف البرق وما يشعل من نيران الشوق في قلب كل مفارق، ثم يذكر أنه أحد هؤلاء المفارقين، مسوغاً ما يلقاه في غربته، متفائلاً بالخلاص من محنته.</p><p>٤٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

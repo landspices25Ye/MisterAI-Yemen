@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>القطع الخروطية</p><h1>مثال (٤ - ٢١)</h1><p>ماذا تمثّل كلٌّ من المعادلات التالية :</p><p>أ) س² + ٢ س ص + ص² - ٨ س + ٨ ص = ٠
+ب) س ص = ٥</p><h1>الحل :</h1><p>أ) بما أن Δ = ب² - ٤ ج = ٤ - ٤ × ١ × ١ = صفراً ، فالمعادلة تمثل إما قطعاً مكافئاً ، أو مستقيمين متوازيين أو منطبقين أو تكون مجموعة خالية . وللمعرفة ماذا تمثّل المعادلة لا بد من حذف الحد (س ص) بدوران المحاور بزاوية مناسبة .</p><p>وبما أن f = ج = ١ ، فإن زاوية الدوران هـ = ٤٥° ومعادلتا الدوران هما :</p><p>س = س - ص / ٢٧ ، ص = س + ص / ٢٧</p><p>وبالتعويض في المعادلة المفروضة تكون معادلة القطع الخروطي بالنسبة للمحورين الجديدين هي :</p><p>س² + س² / ٢٧ = ٢ + س² - ص / ٢٧ (س + ص / ٢٧) + س² + ص / ٢٧ - ٨ (س - ص / ٢٧) + ٨ + س² + ص / ٢٧ = ٠ .</p><p>⇐ ٢ س² + ٨ ص = ٠</p><p>⇐ س² = ٢ - ٤ ص</p><p>وهذه معادلة قطع مكافئ .</p><p>ب) بما أن Δ = (٠ - ١) = ١ < ٠ ، المعادلة تمثل إما قطعاً زائداً أو مستقيمين متقاطعين .</p><p>وبما أن f = ج = ٠ ، لذلك تكون هـ = ٤٥°</p><p>∴ معادلتا الدوران هما : س = س - ص / ٢٧ ، ص = س + ص / ٢٧</p><p>وبالتعويض في المعادلة المفروضة نجد أن :</p><p>س² - ص / ٢٧ (س + ص / ٢٧) = ٥</p><p>⇐ (س - ص / ٢٧) (س + ص / ٢٧) = ١٠</p><p>⇐ س² - ص² = ١٠</p><p>وهذه تمثل معادلة قطع زائد .</p><p>١٣١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

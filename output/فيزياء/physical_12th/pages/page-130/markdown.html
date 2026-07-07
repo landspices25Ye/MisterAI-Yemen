@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-130.jpeg" alt="img-130.jpeg" /><h2>الحسابات النظرية :</h2><p>انطلاقاً من الفرضيتين الأولى والثانية استطاع بوهر أن يحسب نصف قطر (نق) مدار الإلكترون في ذرة الهيدروجين وسرعته (ع) وطاقته (ط) في المدار رقم (ن) ونوردها بدون برهان (سيدرسها الطالب في المرحلة الجامعية) وهي :</p><p>$‫نق = \frac{\pi^2}{4 \pi} \frac{1}{\text{ك}^2} \quad (5)‬$‫</p><p>حيث (ن) عدد صحيح موجب = ١ ، ٢ ، ٣ ، ٥٥٠٠٠ ، و(س) شحنة نواة الهيدروجين أو شحنة الإلكترون ، (ك) كتلته و(ى) ثابت العزل الكهربائي وقيمته بالنسبة للفراغ أو الهواء = ٩ × ١٠⁹ نيوتن . متر² / كولوم² .</p><p>عند : ن = ١ نحصل على نصف قطر المدار الأول (نق) للإلكترون ويسمى نصف قطر بوهر وهو أقرب موضع للإلكترون من النواة ويساوي :</p><p>‬$‫نق = \frac{\pi^2}{4 \pi} \frac{1}{\text{ك}^2} \quad (6)‬$‫</p><p>نلاحظ أن الكميات التي تدخل في هذه العلاقة البسيطة هي ثوابت طبيعية وهي :</p><p>‬$‫\pi = \frac{h}{\pi r} = 10 \times 1.054 \times 10^{-34} \text{ جول.ث}‬$‫</p><p>‬$‫ك = 9.1 \times 10^{-31} \text{ كجم}‬$‫</p><p>‬$‫س = 1.6 \times 10^{-19} \text{ كولوم}‬$‫</p><p>وعند التعويض في العلاقة (٦) نحصل على قيمة نق = ٠.٥٢٨ (إنجستروم) وهذه القيمة النظرية على وفاق مع القيمة التجريبية. وبتعويض قيمة العلاقة (٦) في العلاقة (٥) نحصل على (نق) بدلالة (نق) أي :</p><p>‬$‫نق = 2 \text{ نق} \quad (7)‬$</p><p>نلاحظ أن نصف قطر المدار (نق) يتناسب طردياً مع مربع رقم المدار (ن) وبإعطاء (ن) القيم ١ ، ٢ ، ٣ ، ٤ ، ٥٥٠ نجد قيم أنصاف أقطار المدارات المناظرة وهي :</p><p>١٢٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-187.jpeg" alt="img-187.jpeg" /><p>الوحدة السابعة</p><p>- يمكن أن تأخذ الصيغة (٧ - ١٢) الشكل التالي :</p><p>$‫\sum_{1}^{n} (m) \cdot m = \text{نهما } \frac{n-1}{n} \cdot \text{مجه } \frac{1}{n-1} \cdot (m^*) \dots (7-2n)‬$‫</p><h1>تعريف (٧ - ٢)</h1><p>إذا كانت النهاية (٧ - ٢) بالنسبة للدالة x موجودة يقال عندئذ أن الدالة x قابلة للتكامل على الفترة [١، ب].</p><h1>مبرهنة (٧ - ١)</h1><p>إذا كانت الدالة x متصلة على الفترة [١، ب]، فإن: x قابلة للتكامل على الفترة [١، ب]؛ أي أن:</p><p>‬$‫\sum_{1}^{n} (m) \cdot m \text{ موجود.}‬$‫</p><p>فمثلاً التكاملات التالية موجودة لأن جميع الدوال متصلة على فترة التكامل :</p><p>‬$‫(1) \sum_{1}^{n} (m^2) \cdot m \quad (2) \sum_{1}^{n} (m^2) \cdot m \quad (3) \sum_{1}^{n} (m^2) \cdot m‬$‫</p><h1>مثال (٧ - ٣)</h1><p>باستخدام تعريف التكامل المحدد، احسب ‬$\sum_{1}^{n} m^2 \cdot m$‫.</p><h1>الحل:</h1><p>نقسم الفترة [١، ب] إلى و فترة جزئية متساوية الطول بحيث يكون:</p><p>‬$‫\Delta m = \frac{n-1}{n}‬$‫</p><p>نختار ‬$m^* = m$‫ في أي موضع من الفترة ‬$[m, n]$‫.</p><p>‬$‫\text{لتكن } m^* = 1 + \frac{n-1}{n} m‬$‫</p><p>‬$‫(m^*) = (1 + \frac{n-1}{n} m) = (1 + \frac{n-1}{n} m)^2‬$‫</p><p>‬$‫= 2 + 12 \left( \frac{n-1}{n} m \right) + \left( \frac{n-1}{n} m \right)^2‬$</p><p>٢١٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

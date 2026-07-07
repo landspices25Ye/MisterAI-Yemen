@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>التكاثر Reproduction</h2><p>ما سبب استمرار بقاء الكائنات الحية على الأرض منذ ملايين السنين؟
+خلق الله تعالى الكائنات الحية وأودع فيها آلية إنتاج أفراد جديدة منها.
+لتضمن استمرار حياة نوعها، وهذه الآلية تعرف بالتكاثر. فتخيل ماذا يحدث إذا لم تستطع هذه الكائنات الحية التكاثر؟ إن استمرارية بقاء الكائنات المختلفة على سطح الأرض تعتمد على التكاثر الذي يحدث بطريقتين رئيسيتين هما: التكاثر الجنسي والتكاثر اللاجنسي الذي يحدث في معظم الكائنات الحية، وهناك كائنات حية أخرى تعتمد على الطريقتين في تكاثرها.</p><h3>التكاثر اللاجنسي: Asexual Reproduction</h3><p>– ما المقصود بالتكاثر اللاجنسي؟</p><p>تكون الأفراد الناجمة عن هذا التكاثر مماثلة في جميع صفاتها للأصل. ويتم التكاثر اللاجنسي عادة بالانقسام المتساوي لخلايا الأصل ويمكن أن يحدث هذا الانقسام على مستوى عضيات الخلايا. ولهذا التكاثر أشكال عديدة منها:</p><h4>١- الإنشطار الثنائي: Binary Fission</h4><p>– ماذا يقصد بالإنشطار؟</p><p>انظر الشكل (١) ولاحظ كيفية انقسام البراميسيوم حيث تنقسم الخلية إلى خليتين، كما يحدث ذلك أيضاً في البكتيريا والأوليات مثل البوجلينا وبعض الفطريات.</p><h4>٢- التبرعم: Budding</h4><p>لاحظ الشكل (٢). ماذا يظهر على الجدار الخلوي في فطر الخميرة؟ وماذا يحدث للنواة؟</p><p>بعد ظهور بروز في الجدار الخلوي تنقسم النواة انقساماً متساوياً لتعطي نواتين تتجه إحداهما إلى البروز، وتبقى الأخرى في الخلية الأم.</p><img src="img-48.jpeg" alt="img-48.jpeg" /><p>الشكل (١) الإنشطار في البراميسيوم</p><img src="img-49.jpeg" alt="img-49.jpeg" /><p>الشكل (٢) التبرعم في الخميرة</p><p>٦٢</p><p>الأحياء: النصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

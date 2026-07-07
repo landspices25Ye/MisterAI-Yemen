@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-192.jpeg" alt="img-192.jpeg" /><p>الوحدة السابعة</p><h1>مبرهنة (٧ - ٨) :</h1><p>$‫(١) \frac{4}{5} = (د(س) و س) = (د(س)) \quad (٢) \quad (د(س) و س) = (د(س)) + ث.‬$‫</p><p>‬$‫(٣) \quad (د(س) و س) = (د(س)) + ث.‬$‫</p><p>‬$‫(٤) \quad (د(س) \pm د(س)) = (د(س)) + ث \quad (د(س)) + س.‬$‫</p><h1>مثال (٧ - ٨)</h1><p>احسب كلٌّ من التكاملات التالية :</p><p>‬$‫(أ) \quad (ب) \quad (س^2 - 3س + 5س) \text{ و س.} \quad (ج) \quad (س^2 - \frac{3}{2س}) \text{ و ص.}‬$‫</p><p>‬$‫(ب) \quad (س^2 - \frac{5}{2س}) + \sqrt{3} \text{ و س.}‬$‫</p><h1>الحل :</h1><p>‬$‫(أ) \quad (ب) \quad (س^2 - 3س + 5س) \text{ و س} = (س^2 - 3س) \text{ و س} + 5 \text{ و س.}‬$‫</p><p>‬$‫= 6 \frac{3}{2} - 3 \frac{2}{2} + 5 \text{ س} + ث = 2 \frac{3}{2} - 2 \frac{2}{2} + 5 \text{ س} + ث.‬$‫</p><p>‬$‫(ب) \quad (س^2 - \frac{5}{2س}) + \sqrt{3} \text{ و س} = (س^2 - 5س) + \frac{1}{2} \text{ و س}‬$‫</p><p>‬$‫= \frac{4}{4} - 5 \frac{1}{2} + \frac{4}{3} \text{ و ث} =‬$‫</p><p>‬$‫= \frac{1}{4} \text{ و س} + \frac{5}{2} \text{ و س} + \frac{3}{4} \text{ و ث}‬$‫</p><p>‬$‫(ج) \quad (س^2 - \frac{3}{2س}) \text{ و ص} = (س^2 - \frac{6}{2س}) + \frac{9}{2س} \text{ و ص}‬$‫</p><p>‬$‫= (س^2 - 6س) + 9س - 2 \text{ و ص} = \frac{2}{2} - 6 \frac{1}{2} + 9 \frac{1}{2} - 1 \text{ و ث}‬$‫</p><p>‬$‫= \frac{1}{2} \text{ و س} - 12 \sqrt{2} \text{ و ص} = \frac{9}{2} \text{ و ث.}‬$</p><p>٢٢٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

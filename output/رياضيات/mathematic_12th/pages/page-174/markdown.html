@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-150.jpeg" alt="img-150.jpeg" /><p>الوحدة السادسة</p><h1><strong>مثال (٦ - ١٩)</strong></h1><p>أوجد مشتقة الدالتين التاليتين :</p><p>أ) ص = $‫\frac{m}{m+1}‬$ ب) ص = $‫m^2‬$</p><p><strong>الحل :</strong></p><p>أ) باستخدام خواص اللوغاريتمات لإيجاد مشتقة الدالة المعطاة نجد أن :</p><p>ص = $‫\frac{m}{m+1}‬$ $‫\Leftarrow‬$ لو ص = لو $‫\frac{m}{m+1}‬$ = لو س - لو (س + ١)</p><p>$‫\therefore \frac{1}{m} \times \text{ص} = \frac{1}{m} - \frac{1}{m+1} \Leftarrow \text{ص} = \text{ص} \left( \frac{1}{m} - \frac{1}{m+1} \right)‬$‫</p><p>وبالتعويض عن ص = ‬$\frac{m}{m+1}$‫ نجد أن : ص = ‬$\frac{m}{m+1}$‫ ( ‬$\frac{1}{m} - \frac{1}{m+1}$‫ )</p><p>‬$‫= \frac{1}{(m+1)} - \frac{1}{(m+1)^2} = \frac{1}{(m+1)^2} = \frac{1}{(m+1)^3}‬$‫</p><p>ب) لكون الأساس والأس متغيرات في الدالة ص = ‬$m^2$‫ لا نستطيع تطبيق قواعد الاشتقاق ولذلك نقوم</p><p>بأخذ لوغاريتم طرفي المعادلة : لو ص = لو س = س لو س ،</p><p>وبتطبيق قاعدة الاشتقاق للدالة اللوغاريتمية نجد أن :</p><p>( لو ص ) = ( س لو س )</p><p>‬$‫\Leftarrow \frac{1}{m} \times \text{ص} = \text{ص} \times \frac{1}{m} + 1 \times \text{لو س} = 1 + \text{لو س}‬$‫</p><p>‬$‫\Leftarrow \text{ص} = \text{ص} ( 1 + \text{لو س}) = \text{ص} ( 1 + \text{لو س})‬$‫</p><h1><strong>ثانياً : مشتقة الدالة الأسية :</strong></h1><p>لإيجاد مشتقة الدالة الأسية ص = ‬$l^2$‫ ، المعرفة من ح ‬$\leftarrow$‫ ح + ‬$\rightarrow$‫ ح ‬$\leftarrow$‫ ح + ‬$\rightarrow$‫ ح ‬$\leftarrow$‫ / ‬$\leftarrow$‫ } يمكن كتابة</p><p>الدالة بالصورة س = لو ص وباشتقاق طرفي المعادلة بالنسبة لـ س نحصل على :</p><p>‬$‫1 = \frac{1}{m} \times \frac{5}{m} \times \text{لو ه} \Leftarrow \frac{5}{m} \times \frac{1}{m} = \text{ص} \times \frac{1}{\text{لو ه}} = \text{ص لو ه}‬$</p><p>لذلك فإن قاعدة الاشتقاق للدالة الأسية تُعطى بالقاعدة التالية :</p><p>١٧٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

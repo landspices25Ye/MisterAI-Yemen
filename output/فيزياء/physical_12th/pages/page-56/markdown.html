@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>المفاعلة الحثية للتيار المتردد في عدة ملفات متصلة معاً :</h2><h3>أولاً : توصيل الملفات على التوالي :</h3><p>عند توصيل عدة ملفات حثية في دائرة كهربائية على التوالي كما يوضحه الشكل</p><img src="img-53.jpeg" alt="img-53.jpeg" /><p>شكل (١٧)</p><p>(١٧) فإن المفاعلة الحثية الكلية لها = مجموع المفاعلة الحثية لكل الملفات كما في حالة المقاومات الأومية أي أن :</p><p>$‫\text{المفاعلة الحثية الكلية} = \text{م حث}_1 + \text{م حث}_2 + \text{م حث}_3 + \dots‬$‫</p><p>‬$‫\text{م حث الكلية} = \text{م حث}_1 + \text{م حث}_2 + \text{م حث}_3 + \dots‬$‫</p><p>‬$‫\text{م حث} = \text{م حث}_1 + \text{م حث}_2 + \text{م حث}_3 + \dots‬$‫</p><p>‬$‫\therefore \text{م حث الكلية} = \text{م حث} \times \text{م حث الكلية} .‬$‫</p><p>‬$‫\text{حيث : حث الكلية} = \text{حث}_1 + \text{حث}_2 + \text{حث}_3 + \dots‬$‫</p><h3>ثانياً : توصيل الملفات على التوازي :</h3><p>توصل كما في الشكل (١٨) وينطبق على المفاعلة الكلية لها ما ينطبق على المقاومات الأومية التي درستها في السنوات الماضية أي أن :</p><img src="img-54.jpeg" alt="img-54.jpeg" /><p>شكل (١٨)</p><p>‬$‫\text{المفاعلة الكلية الحثية} = \frac{1}{\text{م حث}_1} + \frac{1}{\text{م حث}_2} + \frac{1}{\text{م حث}_3} + \dots‬$‫</p><p>‬$‫\text{أو م حث الكلية} = \text{م حث} \times \text{م حث الكلية}‬$‫</p><p>‬$‫\text{حيث : } \frac{1}{\text{حث الكلية}} = \frac{1}{\text{حث}_1} + \frac{1}{\text{حث}_2} + \frac{1}{\text{حث}_3} + \dots‬$</p><h3>نشاط (٧)</h3><p>استنتج العلاقة الرياضية لحساب المفاعلة الحثية الكلية لعدة ملفات متصلة معاً على التوازي كما هو موضح في الشكل (١٨) .</p><p>٥٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

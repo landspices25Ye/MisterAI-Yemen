@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-24.jpeg" alt="img-24.jpeg" /><h2>النص</h2><p>١ - إني تذكرت والذكرى مؤرقة
+٢ - ويح العروبة كان الكون مسرحها
+٣ - بالله سل خلف بحر الروم عن عرب
+٤ - سل الحضارة ماضيها وحاضرها
+٥ - هي الحنيفة عين الله تكلؤها
+٦ - هل تطلبون من المختار معجزة؟
+٧ - من وحد العرب حتى صار وأترهم
+٨ - ورحب الناس بالإسلام حين رأوا
+٩ - سنوا المساواة لا عرب ولا عجم
+١٠ - يا من رأى عمراً تكسوه بردته
+١١ - يهتز كسرى على كرسيه فرقاً
+١٢ - سل المعالي عنا إننا عرب
+١٣ - هي العروبة لفظ إن نطقت به
+مجدداً تليداً بأيدينا أضعناه
+فأصبحت تتوارى في زواياه
+بالأمس كانوا هنا ما بالهم تاهوا
+هل كان يتصل العهدان لولاه
+فكلما حاولوا تشويهها شاهوا
+يكفيه شعب من الأجداث أحياء
+إذا رأى ولد الموتور أخاه؟
+أن الإخاء وأن العدل مغزاه
+ما لا مروء شرف إلا بتقواه
+والزيت آدم له والكوخ مساواه
+من بأسه وملوك الروم تخشاه
+شعارنا المجد يهوانا ونهواه
+فالشرق والضاد والإسلام معناه</p><h2>معاني المفردات والتراكيب اللغوية</h2><p>مؤرقة: الأرق السهر وذهاب النوم بالليل، التليد: القديم الأصيل، ويح: كلمة ترحم وتوجع، تتوارى: تتخفى وتنكمش، تكلؤها: تحفظها وترعاها، الأجداث: القبور مفرده جدث، وأترهم: وتره قتل حميمه، الموتور: من قتل حميمه، البردة: كساء مخطط يلتحف به جمعه برد وبرد، الكوخ: بيت من قصب، بلا كوة، فرقاً: خوفاً، آدم: الأدم ما يؤكل به الخبز.</p><h2>إضاءة</h2><p>يكتسب النص أهميته من الفكرة التي ينبثق منها، وقد أوضحها الشاعر بعدد من التعبيرات والصور الموحية، وخلاصة ما أراد الشاعر قوله: أنه استعرض التاريخ الإسلامي المشرق، فأصابه الأرق، وما زاد في أرقه أن العروبة والإسلام انحسرا في زاوية</p><p>٥٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

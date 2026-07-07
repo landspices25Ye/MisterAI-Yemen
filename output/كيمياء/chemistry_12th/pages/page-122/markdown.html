@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>وجود ضغط داخلي بسيط في الخلايا الحية إلا أن إتمام العمليات الحيوية يتطلب تحفيزاً داخلياً بواسطة بعض المواد التي يطلق عليها الأنزيمات.</p><p>ومن هنا يتضح أن الأنزيمات تؤدي دور العامل الحفاز للتفاعلات الحيوية بداخل الخلية، حيث تعمل على تسريع حدوث تلك التفاعلات الحيوية بطاقة أقل وبسرعة عالية جداً مقارنة بتفاعلات العمل.</p><p>ولك أن تتخيل أن جزئياً واحداً من أنزيم مفرد بداخل دمك يستطيع أن يحفز تكسير ٦٠٠,٠٠٠ جزيء من حمض الكربونيك ($‫H_2CO_3‬$) في ثانية واحدة فقط، وفقاً للمعادلة الآتية:</p><p>$‫H_2CO_3 \xrightarrow[\text{(aq)}]{\text{أنزيم}} H_2O + CO_2 \quad (g)‬$‫</p><p>وهناك أنزيم آخر موجود في لعابك يستطيع تحرير ١٨,٠٠٠ جزيء جلوكوز من النشا.</p><p>‬$‫\text{نشا} \xleftarrow{\text{أنزيم}} \text{جلوكوز} + \text{ما تبقى من سلسلة النشا}‬$</p><p>طبيعة الأنزيمات:</p><p>تتركب معظم الأنزيمات من جزء بروتيني، وجزء غير بروتيني يسمى بالأنزيم المعاون أو التميم Coenzyme، وتتأثر الأنزيمات بدرجة الحرارة والرقم الهيدروجيني (pH) فبعضها لا تعمل إلا في وسط حامضي وبعضها لا تعمل إلا في وسط قاعدي، وبعضها تتطلب وسطاً متعادلاً.</p><p>ويمكن تمثيل آلية عمل الأنزيم بالمفتاح اللازم لفك القفل، شكل (٦-٦).</p><img src="img-112.jpeg" alt="img-112.jpeg" /><p>شكل (٦-٦) يوضح نموذج لآلية عمل الأنزيم</p><p>١٢٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

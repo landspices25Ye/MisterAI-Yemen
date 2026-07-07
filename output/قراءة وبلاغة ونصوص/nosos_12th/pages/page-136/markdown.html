@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-47.jpeg" alt="img-47.jpeg" /><h2>النص</h2><p>لنكن أصدقاءً
+إن صوتاً وراء الدماء
+في عروق الذين تساقوا كؤوس العداء
+في عروق الذين يظنون كالثملين
+يطعنون الرجاء
+يطعنون أعزاءهم باسمين
+في عروق الحبين.. والهاربين
+من أحبائهم، من نداء الحنين
+في جميع العروق
+إن صوتاً وراء جميع العروق
+هامساً في قرارة كل فؤاد خفوق
+يجمع الإخوة النافرين
+ويشد قلوب الشقيين والضاحكين
+ذلك الصوت صوت الإخاء
+فلنكن أصدقاءً</p><h2>معاني المفردات والتراكيب اللغوية</h2><p>تساقوا كؤوس العداء: تعادوا، الثملين: السكارى، قرارة الفؤاد: قاعه وأسفله،
+خفوق: يبالغ في الخفقان، النافرين: المتفرقين.</p><h2>إضاءة</h2><p>يتناول النص فكرة واحدة هي الصداقة والإخاء، حيث تدعو الشاعرة لأن نكون
+أصدقاء، فصوت الإخاء يكمن في دماء كل البشر، حتى أولئك الذين يتعادون،
+والذين يعملون على قتل الأمل في النفس بغير تفكير، أو الذين يعملون على إيذاء</p><p>١٣٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

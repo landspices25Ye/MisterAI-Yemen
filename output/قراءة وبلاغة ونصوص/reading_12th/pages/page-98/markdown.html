@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><p>وفوائده، والسعي وثمراته، ولا دَفْعَ به في طريق المغامرة والمخاطرة، والدَّابِّ والمثابرة، مثل دموع الزوجة المُنْهَلَة، ويدها الضارعة المبسوطة.</p><p>ولا يستطيع الشيخ الفاني أن يجد في أُخريات أيامه في قلب ولده الفتى من الحنان والعطف، والحب والإيثار، ما يجد في قلب ابنته الفتاة؛ فهي التي تمنحه يدها عَكَّازاً لشيخوخته، وقلبها مستودعاً لأسراره، وهواجس نفسه، وهي التي تسهر بجانب سرير مرضه ليلها كله تتسمَّع أنفاسه، وتُصْغِي إلى أُنَاثِه، وتحرص الحرص كله على أن تفهم من حركات يده، ونظرات عينيه حاجاته وأغراضه، فإذا نزل به قضاء الله كانت هي من دون ورثته جميعاً الوارثة الوحيدة التي تُعَدُّ موته نكبة عظمى، لا يُهَوِّنُها عليها، ولا يَخْفِفُ من لوعتها في نفسها، أنه قد ترك من بعده ميراثاً عظيماً.</p><p>وجملة القول إن الحياة مسرَّات وأحزان، أمَّا مسرَّاتها فنحن مدينون بها للمرأة؛ لأنها مصدرها وينبوعها الذي تتدفق منه، وأمَّا أحزانها فالمرأة هي التي تتولَّى تحويلها إلى مسرات، أو ترويحها عن نفوس أصحابها على الأقل، فكأننا مدينون للمرأة بحياتنا كلها.</p><p>أستطيع أن أقول – وأنا على ثقة مما أقول – : إن الأطفال الذين استطاعوا في هذا العالم أن يعيشوا سعادةً مَعْنِيّاً بهم، وبتربيتهم، وتخريجهم على أيدي أمهاتهم بعد موت آبائهم أضعاف الذين نالوا هذا الحظَّ على أيدي آبائهم بعد فقد أمهاتهم، ولرحمة الأمومة الفضل العظيم في ذلك.</p><p>فليت شعري! هل شكرنا للمرأة تلك النعمة التي أسدتها إلينا، وجازيناها بها خيراً؟</p><p>٩٦</p><p><http://www.e-learning-moe.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

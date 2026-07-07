@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>عاطفة، فينظر إلى الأمور من خلال الصالح العام، لا من خلال شهواته الخاصة.</p><p>وقد حرم الإسلام الحسد، وأمر الله رسوله أن يستعيذ من شرور الحاسدين، لأن الحسد جمرة تتقد في الصدر فتؤذي صاحبها، وتؤذي الناس به. وقد قال رسول الله صلى الله عليه وسلم: «لا يجتمع في جوف عبد غبار في سبيل الله وفيح جهنم، ولا يجتمع في جوف عبد الإيمان والحسد» (١) وقال: «إياكم والحسد، فإن الحسد يأكل الحسنات كما تأكل النار الحطب» (٢).</p><p>ثم إن الحاسد شخص واهن العزم، كليل اليد، جاهل بربه وبسنته في كونه. ذلك أنه لما فاته الخير لأمر ما تحول يكيد للناجحين! وكان أجدى عليه أن يتحول إلى ربه، يسأله من فضله، فإن خزائنه ليست حكراً على واحد بعينه، ثم يستأنف السعي في الحياة بعدئذ.</p><p>والبؤن بعيد بين الحسد والطموح، وبين الحسد والغبطة، وبين الحسد واستنكار العوج في الأوضاع، والخلط في المنع والعطاء...! فالطموح رغبة في الرفعة، وسعي إليها؛ وذلك شأن الصالحين من عباد الله. والتطلع إلى فضل الله مع الأخذ بأسباب اكتسابه شيء غير كراهية فضل الله عندما ينزل بإنسان معين. والغبطة رغبة المرء في الحصول على نعمة مماثلة لما أكرم الله به الآخرين.</p><p>ولما كان تطلع الإنسان إلى غيره، قد يكون فتحاً لأبواب الفتنة، وتعلقاً بالمُنى الباطلة، واشتهاءً لما يحسبه الشخص نافعاً له، وهو -في الحقيقة- ضارٌّ به، أرشد الإسلام إلى ما ينبغي طلبه، والتنافس فيه؛ فقال رسول الله -صلى الله عليه وسلم-: «لا حسد إلا في اثنتين: رجل آتاه الله مالاً فسلطه على هلكته في الحق، ورجل آتاه الله الحكمة فهو يقضي بها ويعلمها» والحسد في الحديث تمنى مثيل النعمة لا تمنى زوالها. وأما استنكار العوج في الأوضاع، فهو إقرار العدالة الواجبة، وليس من قبيل الحسد المذموم. فإذا غضبنا لأن هذا أخذ الكثير على جهد قليل، أو رفع إلى درجة لا ترشحه لها كفايته، فهذا الغضب مفهوم ومحمود، وهو ضرب من رعاية المصالح العامة، لا صلة للحقد الشخصي به.</p><p>(١) - رواه البيهقي. (٢) - رواه أبو داود.</p><p>٦٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التفاصيل</p><h1>مشتقة الدوال المثلثية</h1><p>٦ - ٦</p><p>بعد أن تعرفت على نهايات واتصال الدوال المثلثية ، وبالاستناد إلى ذلك تستطيع استنتاج قواعد اشتقاق الدوال المثلثية .</p><p>فمثلاً : لتكن د (س) = جاس .</p><p>باستخدام تعريف المشتقة نجد أن :</p><p>$‫\text{د (س)} = \text{نهي} \quad \text{د (س + Δ س) - د (س)} \quad \text{نهي} \quad \text{نهي} \quad \text{نهي} \quad \text{نهي} \quad \text{نهي} \quad \text{نهي}‬$‫</p><p>وباستخدام قاعدة التحويل للفرق بين جيبي الدالة إلى حاصل ضرب نحصل على :</p><p>‬$‫\left[ \frac{\frac{(س - س \Delta + س)}{2} \text{ جا } \frac{(س + س \Delta + س)}{2}}{\Delta س} \right] \text{ د (س)} = \text{نهي} \quad \text{نهي}‬$‫</p><p>‬$‫= \frac{\text{جا } \Delta \text{ س}}{\Delta \text{ س}} \quad 2 \text{ جتا } (س + \Delta \text{ س}) \times \text{نهي} \quad \text{نهي} \quad \text{نهي}‬$‫</p><p>وبوضع ‬$\Delta \text{ س} = \text{س}$‫ و ‬$\Delta \text{ س} = 2$‫ و نجد أنه عندما ‬$\Delta \text{ س} \leftarrow 0$‫ ، فإن :</p><p>و ‬$\leftarrow 0$‫ . وتصبح العلاقة بالصورة :</p><p>‬$‫\text{د (س)} = \text{نهي} \quad 2 \text{ جتا } (س + \text{س}) \times \text{نهي} \quad \text{نهي} \quad \text{نهي} \quad 2 \text{ جتا } \times \frac{1}{2} = \text{جتا س}‬$‫</p><p>وبالمثل إذا كانت د (س) = جتا س ، فإن : د (س) = - جاس</p><p>قاعدة (٦ - ٤) :</p><p>٧ س ‬$\subseteq$‫ ح (س مقدرة بالراديان) .</p><p>‬$‫1) \frac{5}{5} (\text{جاس}) = \text{جتا س} \quad , \quad 2) \frac{5}{5} (\text{جتا س}) = - \text{جاس}‬$‫</p><h1>مثال (٦ - ٢٢)</h1><p>أوجد د (س) لكل من الدالتين التاليتين :</p><p>‬$‫1) \text{ د (س)} = 1 + \text{س جاس} \quad \text{ب) د (س)} = \frac{\text{جتا س}}{\text{س}} \text{ ، س} \neq 0‬$‫</p><p>الحل :</p><p>‬$‫1) \text{ د (س)} = 0 + \text{س جتا س} + \text{جاس} \times 1 = \text{س جتا س} + \text{جاس}‬$</p><p>١٧٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

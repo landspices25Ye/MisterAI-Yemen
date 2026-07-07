@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الاحتمالات</p><h1><strong>مبرهنة (٣ - ٤)</strong></h1><p>لأي حادثتين ١ ، ب ٢ ، فإن :</p><p>$‫حا (١ \cap ب) = حا (١) + حا (ب) - حا (١ ب) .‬$‫</p><p>البرهان : بالاستفادة من الشكل (٣ - ١) في مبرهنة (٣ - ٣) نلاحظ أن :</p><p>‬$‫\therefore ١ \cap ب = ١ \cap (ب \overline{1})‬$‫</p><p>‬$‫\therefore ١ \cap ب \overline{1} = \emptyset‬$‫</p><p>‬$‫\therefore حا (١ \cap ب) = حا (١) + حا (ب \overline{1})‬$‫</p><p>‬$‫\therefore حا (ب \overline{1}) = حا (ب) - حا (١ ب)‬$‫</p><p>‬$‫\therefore حا (١ \cap ب) = حا (١) + حا (ب) - حا (١ ب)‬$‫</p><h1><strong>مثال (٣ - ٢)</strong></h1><p>أُلقي حجراً نرد متمايزان مرة واحدة عشوائياً، ولوحظ العدد الظاهر على الوجه العلوي لكل من الحجرين، وعرفنا الحادثتين ١ ، ب على النحو التالي :</p><p>١ : حادثة أن يكون مجموع العددين على الوجهين العلويين للحجرين هو ٨</p><p>ب : حادثة أن يكون العددان على الوجهين العلويين للحجرين متساويين .</p><p>فما احتمال حدوث ١ أو ب ؟</p><h1><strong>الحل :</strong></h1><p>‬$‫\therefore (ع) = ٣٦‬$‫ زوجاً مرتباً (عنصراً) .</p><p>والاحتمال المطلوب هو : حا (١ \cap ب)</p><p>‬$‫\therefore ١ = \{(٦, ٢) ، (٥, ٣) ، (٤, ٤) ، (٣, ٥) ، (٢, ٦)\}‬$‫</p><p>‬$‫ب = \{(١, ١) ، (٢, ٢) ، (٣, ٣) ، (٤, ٤) ، (٥, ٥) ، (٦, ٦)\}‬$‫</p><p>‬$‫١ ب = \{(٤, ٤)\}‬$‫</p><p>‬$‫\therefore حا (١) = \frac{٥}{٣٦} ، حا (ب) = \frac{٦}{٣٦} ، حا (١ \cap ب) = حا (١ ب) = \frac{١}{٣٦}‬$‫</p><p>‬$$‫\therefore حا (١ \cap ب) = حا (١) + حا (ب) - حا (١ ب)‬$$‫</p><p>‬$‫\therefore حا (١ \cap ب) = \frac{٥}{٣٦} + \frac{٦}{٣٦} - \frac{١}{٣٦} = \frac{١٠}{٣٦} = \frac{٥}{١٨}‬$</p><p>٧٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

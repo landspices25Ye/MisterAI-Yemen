@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>تقويم الوحدة</h2><p>١ - عَرِّفْ كَلًّا مِنْ:</p><p>الأمينات - الأميدات - الحمض الأميني.</p><p>٢ - وَضِّحْ بالمعادلات الكيميائية الموزونة تحضير الأمينات، والأميدات.</p><p>٣ - أُعْطِيتْ لَكَ مجموعة من الأمينات المختلفة. ما القاعدة التي على ضوئها تصنِّف الأمينات إلى أولية وثانوية وثالثية؟</p><p>٤ - بَيِّنْ بالمعادلات الكيميائية الموزونة تفاعلات الأميدات مع المحاليل القاعدية والمحاليل الحمضية.</p><p>٥ - ما الخواص الفيزيائية للأمينات؟</p><p>٦ - سَمِّ المركبات النيتروجينية الآتية:</p><img src="img-90.jpeg" alt="img-90.jpeg" /><img src="img-91.jpeg" alt="img-91.jpeg" /><img src="img-92.jpeg" alt="img-92.jpeg" /><p>$‫R - CHCOOH‬$‫</p><p>‬$‫\begin{array}{c} | \\ NH_2 \end{array}‬$</p><img src="img-93.jpeg" alt="img-93.jpeg" /><p>٧ - اكتب التركيب البنائي للمركبات الآتية:</p><p>أمين أولي ، أمين ثالثي ، بروبيل أمين</p><p>ميثيل أمين ، أسيتيانيليد ، أسيتياميد</p><p>يوريا ، نيكوتيناميد ، جلايسين</p><p>٨ - كيف تستنتج العلاقة بين الأمينات والأميدات؟</p><p>٩ - ما القاعدة التي تصنِّف الحموض الأمينية؟</p><p>١٠ - حدِّد تفاعلات الحموض الأمينية من خلال وجود مجموعة الأمين ومجموعة الكربوكسيل.</p><p>١١ - وَضِّحْ المقصود بالخاصية الأمفوتيرية.</p><p>١٠٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

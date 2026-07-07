@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>٤- أن لا تتعرض الطبقات التي تحتفظ بالأحافير لحركات أرضية عنيفة تؤدي إلى تحولها، وبالتالي إلى طمس معالمها أو محوها.</p><h1>- طرائق التحفر:</h1><p>توجد طرائق عدة لحفظ بقايا الكائنات الحية وآثارها أهمها:</p><h1>١- الحفظ الكامل:</h1><p>وهي طريقة نادرة في التحفر حيث يحفظ الكائن بكل أجزائه أو الأجزاء الصلبة دون تغير في التركيب الكيميائي مثل حفريّة حيوان الماموث الذي وجد بكامله محتفظاً بنحمه وشعره، وغذائه داخل أمعائه في ثلوج سيبيريا انظر (الشكل ٦)، وحفريّة وحيد القرن الصوفي انظر (الشكل ٧) الذي وجد محفوظاً في الطبقات الإسفلتية في جبال الكاريات في أوروبا الشرقية.</p><p>- حفظ بعض الحشرات وحببات النقاط النباتية في الصمغ النباتي حيث التصقت به وانطمر الصمغ في الأرض وتحول بمرور الزمن إلى كهرمان كما في (الشكل ٨).</p><p>- حفظ الأجزاء الصلبة الأصلية يمضي وقت بين موت الكائن الحي وحفظه، وهذا يسمح بتحلل الأجزاء الرخوة وحفظ الأجزاء الصلبة دون أن يتغير تركيبها الكيميائي، فقد تكون الأحفورة عظاماً أو أسناناً أو أصدافاً وقواقع أو جذوعاً وأغصاناً وحبوب لقاح. انظر (الشكل ٩) ترى بقايا أجزاء صلبة لأصداف محفوظة</p><img src="img-143.jpeg" alt="img-143.jpeg" /><p>الشكل (٦) حفريّة الماموث الصوفي</p><img src="img-144.jpeg" alt="img-144.jpeg" /><p>الشكل (٧) حفريّة وحيد القرن الصوفي</p><img src="img-145.jpeg" alt="img-145.jpeg" /><p>الشكل (٨) حشرات محفوظة في الكهرمان</p><p>١٩٢</p><p>الأحياء للصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

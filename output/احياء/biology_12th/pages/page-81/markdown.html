@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>- الخلايا المنوية الأم :</p><p>Spermatogonia</p><p>تنشأ منها الحيوانات المنوية، وترتبط الأنابيب المنوية بنسيج يحتوي على أوعية دموية، وخلايا بينية تسمى خلايا ليدج Leydig Cells والتي تفرز هرمون النستوستيرون Testosterone الذي يعمل على إظهار الصفات الجنسية الثانوية في الذكر.
+- ما هي هذه الصفات ؟</p><img src="img-64.jpeg" alt="img-64.jpeg" /><img src="img-65.jpeg" alt="img-65.jpeg" /><p>الشكل (١٨) الجهاز التناسلي الذكري في الإنسان</p><p>٢- الأعضاء التناسلية الثانوية (المساعدة) :</p><p>لاحظ الشكل (١٨) وادرس الجدول (٣)، لتتعرف على الأعضاء التناسلية الثانوية في ذكر الإنسان، ثم أجب على الأسئلة التي تليه :</p><p>٨١</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

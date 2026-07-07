@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>التطوع المخروطية</h1><h1>الوحدة الرابعة</h1><h1>تمهيد</h1><h1>٤ - ١</h1><p>سميت كل من الدائرة ، القطع المكافئ ، القطع الناقص والقطع الزائد قطع مخروطية لأنها ناتجة عن تقاطع مستوى مع مخروط دائري قائم مزدوج شكل ( ٤ - ١ ) .</p><img src="img-70.jpeg" alt="img-70.jpeg" /><p>شكل ( ٤ - ١ )</p><p>ويكون :</p><p>١ - منحنى التقاطع دائرة عندما يكون المستوى القاطع عمودياً على المحور .
+٢ - منحنى التقاطع قطعاً مكافئاً عندما يكون المستوى القاطع موازياً لأحد رواسم المخروط .
+٣ - منحنى التقاطع قطعاً ناقصاً عندما يكون المستوى القاطع مائلاً على المحور ولا يوازي أي راسم من رواسم المخروط .
+٤ - منحنى التقاطع قطعاً زائداً عندما يكون المستوى القاطع موازياً لمحور المخروط .</p><p>وسندرس في هذه الوحدة القطوع الثلاثة الأخيرة في نظام الإحداثيات الكارتزية المتعامدة ، ولأنك سبق أن درست معادلة الدائرة القياسية ، وهي :</p><p>$‫(س - ١) + (ص - ب) = نعه‬$‫</p><p>ومنها يمكن تحديد إحداثي مركز الدائرة م ( ١ ، ب ) وطول نصف قطرها نعه ؛ وهي معادلة من الدرجة الثانية ، وبفك الأقواس وجمع الحدود المتشابهة نحصل على الصورة العامة لمعادلة دائرة ، وهي :</p><p>‬$‫س + ص - ٢ - ١ - ٢ - ب - ص - ج = ٠‬$</p><p>١٠٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

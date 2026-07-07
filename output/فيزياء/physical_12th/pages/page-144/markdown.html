@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-138.jpeg" alt="img-138.jpeg" /><h2>تقويم الوحدة</h2><p>١ - أ) عندما يسخن الحديد يظهر في بداية التسخين معتماً ثم يبدأ بالإحمرار (إعط تفسيراً لذلك).</p><p>ب) هل يمكن لذرة الهيدروجين وهي في حالتها الأرضية (أي إلكترونها في المستوى الأول) أن تطلق إشعاعاً، أو تمتص إشعاعاً مقدار طاقته ٦ إلكترون فولت (إعط تفسيراً لجوابك).</p><p>ج) هل يمكن أن تكون طاقة الربط لإلكترون ذرة الهيدروجين (أي طاقة الإلكترون داخل الذرة) موجبة و (لماذا)؟</p><p>٢ - ضع العلامة (✓) أمام العبارة الصحيحة والعلامة (X) أمام العبارة الخاطئة.</p><p>أ - الجسم الأسود هو ذلك الجسم الذي يمتص جميع الأطوال الموجية ( ).</p><p>ب - طيف عنصر الصوديوم هو طيف خطي ( ).</p><p>ج - طيف الإشعاع الحراري هو طيف متصل ( ).</p><p>د - العنصر الكيميائي لا يشع نفس الأطوال الموجية التي يمتصها ( ).</p><p>و - مقدار طاقة التاين لذرة الهيدروجين هي (٦,١٣ - ) إلكترون فولت ( ).</p><p>هـ - في ذرة الهيدروجين، تقل طاقة الإلكترون كلما ابتعد عن النواة حتى</p><p>تصبح طاقته في المدار الأخير = صفراً التي تناظر (ن = ∞) ( ).</p><p>ي - تقل سرعة الإلكترون في ذرة الهيدروجين كلما اقترب من النواة ( ).</p><p>ز - يزداد نصف قطر المدار المسموح للإلكترون في ذرة الهيدروجين بزيادة</p><p>مربع العدد الكمي الرئيسي (ن) ( ).</p><p>٣ - ما هي معضلة الجسم الأسود؟</p><p>٤ - ما هو مبدأ بلانك في التكميم؟</p><p>٥ - ما المقصود بالطيف المتصل والطيف الخطي، ثم إعط مثلاً لكل منهما؟</p><p>٦ - اذكر عيوب نموذج رذر فورد.</p><p>٧ - ما هي فرضيات بوهر وما هي مبرراتها؟</p><p>١٤٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>– مرادف كلمة (صناعته) في الفقرة السابقة:</p><p>( ) – إنتاجه.</p><p>( ) – فنه.</p><p>( ) – تصميمه.</p><p>– معنى كلمة (طابعه):</p><p>( ) – خُلقه.</p><p>( ) – سماته.</p><p>( ) – ختمه.</p><p>ب – إلى من يعود الضمير في كلمة (واضعيها)؟ وما إعراب هذه الكلمة؟</p><p>ج – بِمَ يوحي كل من كلمتي (ذاكرة) و (مصنع)؟</p><p>د – (كأنها شبت في نفسه شباباً) هل تعجبك هذه الصورة؟ بين سبب ما تقول.</p><p>هـ – في قول الكاتب: (تخرج كما دخلت) كناية. وضحها، وبين قيمتها الفنية.</p><p>٦ – يمثل الموضوع نموذجاً للمقال الأدبي. وضح الخصائص المميزة لأسلوب الكاتب فيه.</p><h3>نشاط ذاتي</h3><p>اكتب ترجمة موجزة عن الرافعي موضحاً فيها: نشأته، وثقافته، وأبرز مؤلفاته وآثاره الأدبية.</p><p>١٠٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

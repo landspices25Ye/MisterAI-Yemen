@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-13.jpeg" alt="img-13.jpeg" /><p>الوحدة الأولى</p><p>ج) $‫3\sqrt{5} \times 4\sqrt{2}‬$‫ .
+د) ‬$‫(3\sqrt{5})^2 + (3\sqrt{5})^3‬$‫ .
+هـ) ‬$‫(3\sqrt{2})^4‬$‫ .
+و) ‬$‫(3\sqrt{2})^5 - (2\sqrt{3})^5‬$ .
+ز) $‫3\sqrt{5} - 3\sqrt{2} - 3\sqrt{4} + 3\sqrt{5} - 3\sqrt{2} + 3\sqrt{5} - 3\sqrt{2} + 3\sqrt{5} - 3\sqrt{2} + 3\sqrt{5} - 3\sqrt{2} + 3\sqrt{5} - 3\sqrt{2} + 3\sqrt{5} - 3\sqrt{2} + 3\sqrt{5} - 3\sqrt{2} + 3\sqrt{5} - 3\sqrt{2} + 3\sqrt{5} - 3\sqrt{2} + 3\sqrt{5} - 3\sqrt{2} + 3\sqrt{5} - 3\)</p><p>[٤] أثبت صحة ما يلي :</p><p>أ) ‬$1 + 2 + 3 + 4 + 5 = 1$‫
+ب) ‬$1 + 2 + 3 + 4 + 5 = 1$‫
+ج) ‬$(1 + 2 + 3 + 4 + 5) = 1$‫
+د) ‬$1 + 2 + 3 + 4 + 5 = 1$‫
+عدد حقيقي صرف .
+(ب) ‬$1 + 2 + 3 + 4 + 5 = 1$‫
+(ج) ‬$1 + 2 + 3 + 4 + 5 = 1$‫
+عدد حقيقي صرف .</p><p>[٥] أوجد قيمتي س ، ص التي تحقق ما يلي :</p><p>أ) ‬$2 + س + 3 = 3$‫
+ب) ‬$2 + س + 3 = 3$‫
+ج) ‬$2 + س + 3 = 3 + 3$‫
+(ب) ‬$2 + س + 3 = 3 + 3 + 3$‫ .</p><p>[٦] مثل الأعداد التالية بمنح قياسي في مستوى أرجاند :</p><p>أ) ‬$3 - 5$‫ .
+ب) ‬$-2 - 3$‫ .
+ج) ‬$-5 - 5$ .
+د) $6$ .
+هـ) $-3 + 3$ .
+و) $5$‫ .</p><h2>جمع وطرح الأعداد المركبة</h2><p>١ - ٢</p><p>كما في الأعداد الحقيقية ، فإنه يمكن أن نجري عمليات حسابية على الأعداد المركبة ، وبالتالي يمكن أن نكون أنظمة عددية بواسطتها .</p><h3>تعريف (١ - ٣)</h3><p>إذا كان ‬$ع_1$‫ ، ‬$ع_2$‫ ، ‬$ع_3$‫ حيث ‬$ع_1 = س_1 + ت$‫ ، ‬$ع_2 = س_2 + ت$‫ ، ‬$ص_2$‫ ، فإن :
+(١) ‬$ع_1 + ع_2 = (س_1 + س_2) + ت$‫ (ص ١ + ص ٢) .
+(٢) ‬$ع_1 - ع_2 = (ع_1 + ع_2) = (س_1 - س_2) + ت$ (ص ١ - ص ٢) .</p><p>أي أنه عند جمع عددين مركبين نجمع الجزأين الحقيقيين معاً والتخيليين معاً وبطريقة مشابهة نجري عملية الطرح .</p><p>١٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

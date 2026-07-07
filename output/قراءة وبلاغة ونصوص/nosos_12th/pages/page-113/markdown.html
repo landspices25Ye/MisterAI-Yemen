@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>لو أحسن الناس ..</h1><h2>مصطفى لطفي المنفلوطي</h2><h3>التعريف بالكاتب</h3><p>مصطفى بن محمد لطفي المنفلوطي، ولد في منفلوط من صعيد مصر ١٢٨٩هـ/١٨٧٢م، من أسرة مشهورة بالعلم والتقوى. ودرس في الكُتَّاب ببلدته إذ حفظ القرآن وهو ابن أحد عشر عاماً، ثم سافر إلى القاهرة، ودخل الأزهر، فتلقى فيه علوم الدين واللغة خلال عشر سنوات، وكانت نفسه تهفو إلى الأدب، فأخذ يطالع منه ما يقع تحت يده من الكتب، حتى خرج من الأزهر فلزم حلقة المصلح الكبير الشيخ محمد عبده.</p><p>وكان لجريدة (المؤيد) الفضل - بعد استعداد فطرته وإرشاد والده - في تألق نجمه منذ أن بدأت تنشر له المقالات الأسبوعية عام ١٩٠٧م، تحت عنوان النظرات، فنبه ذكره والتفت إليه جمهرة القراء، وكانت لأفكار الإمام محمد عبده وقع بليغ في نفس المنفلوطي، فوجهته إلى الإصلاح الخلقي والاجتماعي، ووافقها ما كان يراه في مصر من سوء الحال وانتشار المفاسد، فكتب المقالات الاجتماعية والسياسية والأدبية، بلغته الأنيقة وأسلوبه الجميل.</p><p>وله أبحاث إسلامية تبدو فيها حميته وغيرته في الدفاع عن الدين، والدعوة إلى تطهيره من الشوائب التي دخلت عليه وليست منه، ودعوة المصلحين أن يدخلوا إلى الإصلاح من باب الدين لا من باب الفلسفة.</p><p>ومن كتبه: (النظرات)، جمع فيه ما نشره في (المؤيد) في النقد والاجتماع والوصف والقصص، و(في سبيل التاج) و(مختارات المنفلوطي) من أشعار المتقدمين ومقالاتهم، و(العبرات) وهو مجموعة من الأقاصيص الموضوعة والمنقولة عن الفرنسية، ولم يكن يحسنها، وإنما كان بعض العارفين يترجم له القصة إلى العربية، فيتولى هو وضعها بقالبه الإنشائي، ومن ذلك (مجدولين) و(الفضيلة) و(الشاعر). وهي قصص صاغها بأسلوبه، ولم يتقيد بالأصل، فأضافت إلى ثراء الأدب العربي، وكانت للفن القصصي قوة وقدوة.</p><p>١١١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

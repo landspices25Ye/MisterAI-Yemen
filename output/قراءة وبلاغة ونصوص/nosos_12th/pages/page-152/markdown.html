@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>وفي القسم الثاني من النص نجد أسلوباً حوارياً متنامياً تنامي القصة أو المسرحية، مشتملاً على عناصرهما، فالشخصيات ثلاث هي الأب العجوز، والبنات ورفيقهما، وفي المقابل حرس الحدود. وتوحي القصيدة بأن الحوار تم على مرحلتين: حوار الذات وحوار الآخر، فحوار الذات دار بين العائدين الذين غمرتهم الفرحة، وتخيلوا ما سيؤولون إليه بعد لحظات، وبعد عبور الجسر، مفترضين عبوره والعودة إلى منازلهم.</p><p>لكن هذا الحوار لم يدم بل قطعه حوار آخر لا يعرف لغة الحوار بل لغة السلاح، لأنه لا يعترف بالآخر أصلاً، ولا يفرق بين شاب وشيخ، ولا بين طفل وامرأة، وهذا التنويع في الأسلوب هدفه إيصال رسالة إلى الشعوب العربية مفادها هذا ما يعانيه إخوانكم في فلسطين. وتتضح في النص ملامح الشعر الحر على النحو الآتي:</p><p>- فالشاعر يبدو ملتصقاً بواقعه معبراً عنه بوجوه مختلفة من صدق وزيف وتقدم وتخلف وفرح ويأس. بما في ذلك الصراع بين العدل والظلم والحرية والعبودية.</p><p>- وتتوافر في النص قضية من أهم قضايا النقد المعاصر، وهي الوحدة الموضوعية، فقد تضافرت فيه الأفكار والمعاني والموسيقى والصور والعواطف، وكونت في مجموعها بناءً شعرياً متطوراً ومتنامياً تنامي القصة ذاتها.</p><p>فالأحداث متصاعدة، والصراع قائم، والشخصيات التي تدور حولها الأحداث محددة، والحوار متواصل بين الشخصيات، وموضوع الحوار واضح ومحدد وهو العودة أو لا عودة، فالشيخ وابنته يريدان العودة بإصرار، وحرس الحدود لديهم أوامر صارمة بمنع العودة، ولو كلفت دماء وضحايا، يوحي بذلك استخدام الشاعر لعبارة (أمر بإطلاق الرصاص) فالأوامر لدى حرس الحدود ثابتة ومع جميع حالات العودة، وهذا يعني أن قضية عودة اللاجئين إلى وطنهم أمر لا يقبل التفاوض، يدل على ذلك عبارتا (يحمي الحدود من الحنين) و(يحلم بالوطن) لأن مجرد الحنين أو الحلم بالوطن أمر محظور جزاؤه الموت في نظر الكيان المحتل.</p><p>- ملمح الرمز أحد ملامح الشعر الجديد عامة، وقد برز بروزاً ظاهراً عند محمود</p><p>١٥٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

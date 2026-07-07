@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-93.jpeg" alt="img-93.jpeg" /><p>شكل (٦) محطة رادار</p><p>كي يمسح أوسع منطقة من الجو المحيط بالمحطة... فإذا صادفت هذه الموجات المرسلة جسمًا (مثلاً طائرة)، فإنها تصطدم به وتنعكس مرتدة إلى المحطة ليستقبلها المستقبل.</p><p><strong>المستقبل :</strong> وهو عبارة عن هوائي (صحن) مشابه لهوائي المرسل، قابل للحركة في اتجاهات مختلفة، لاستقبال الموجات اللاسلكية المنعكسة، يقوم الهوائي (الصحن)</p><p>باستقبال هذه الموجات المنعكسة (الصدى) وتجميعها وتركيزها في بؤرة الهوائي حيث يوجد موصل معدني (ملف معدني) يحول الموجات اللاسلكية إلى تيارات كهربائية تأثيرية مترددة لها نفس تردد الموجات المستقبلية أو المرتدة، ثم يتم تكبيرها، بواسطة جهاز تكبير ثم ترسل إلى الكاشف.</p><p><strong>الكاشف :</strong> عبارة عن أنبوبة أشعة الكاثود تسمى (كينوسكوب) (Kinescope) بها مجموعة حارفة للشعاع الإلكتروني وتتكون هذه المجموعة من زوجين من</p><img src="img-94.jpeg" alt="img-94.jpeg" /><p>شكل (٧) تركيب الكينوسكوب</p><p>الألواح المعدنية (س₁، س₂)، (ص₁، ص₂). ألواح أحد الزوجين وهما (س₁، س₂) موضوعان رأسياً فإذا تولد بينهما مجال كهربائي فإنه يكون أفقياً ويحرف الشعاع الإلكتروني في الاتجاه الأفقي، ولوحا الزوج الآخر</p><p>(ص₁، ص₂) موضوعان بشكل أفقي فإذا تولد بينهما مجال كهربائي فإنه يكون رأسياً ويحرف الشعاع الإلكتروني في الاتجاه الرأسي انظر الشكل (٧).</p><p>٩٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

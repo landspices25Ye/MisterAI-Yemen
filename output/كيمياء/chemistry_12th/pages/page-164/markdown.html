@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-150.jpeg" alt="img-150.jpeg" /><h1>ملاحظة</h1><p>هذا النوع من المنظفات يُعد من أكثر المنظفات الصناعية استخداماً في المنازل وفي المطاعم لتنظيف الصحون والأواني لامتيازه بقدرة تنظيفية عالية، كما أنه لا يؤثر على بشرة الإنسان، إضافة إلى ذلك فهو اقتصادي، حيث إن كمية بسيطة منه يمكن أن تساعد على تنظيف عدد كبير من الصحون والأواني.</p><h1>٣) صناعة الشامبو :</h1><p>يُعدُّ الشامبو من المواد الأكثر تعقيداً من الصابون أو بقية المنظفات، وذلك لأن صناعته تتطلب إضافة العديد من المواد التي تعمل على توفير قدر من المتطلبات المختلفة التي تساعد على إعطاء الشامبو قدرة على تنظيف الشعر واكتسابه خصائص تجعله يبدو أكثر صحة وجمالاً، ومن المواد الأساسية التي تدخل في صناعة الشامبو هو ثنائي إيثانول أمين وحمض اللوريك، حيث ينتج عن تفاعلهما مادة منظفة هي عبارة عن أميد، وفقاً للمعادلة الآتية:</p><p>$‫\text{H} - \text{N} \begin{array}{c} \text{CH}_2\text{CH}_2\text{OH} \\ \text{CH}_2\text{CH}_2\text{OH} \end{array} + \text{CH}_3(\text{CH}_2)_{10}\text{COOH} \longrightarrow \text{H}_2\text{O} +‬$‫
+حمض اللوريك
+‬$‫\text{CH}_3(\text{CH}_2)_{10} - \text{C} - \text{N} \begin{array}{c} \text{O} \\ || \\ \text{CH}_2\text{CH}_2\text{OH} \\ \text{CH}_2\text{CH}_2\text{OH} \end{array}‬$
+أميد منظف</p><p>إلى جانب المادة المنظفة والتي تكون في الغالب غير أيونية (لأن تأثيرها على العين أقل ما يمكن) فإن مواد أخرى تضاف مثل مادة (EDTA) التي تساعد على منع تكون رواسب من أيونات الكالسيوم أو الماغنيسيوم التي قد تكون موجودة في الماء.</p><p>هناك مواد أخرى تحتوي على زيوت معدنية تساعد على تعويض الزيوت الطبيعية التي تفرزها فروة الرأس والتي تزال عند استخدام الشامبو. كما أن مواد معطرة ومواد أخرى تضاف لتساعد على إعطاء الشعر قواماً ولمعاناً مناسبين.</p><h1>٤- صناعة الطلاء (الدهان) :</h1><p>ينقسم الطلاء الموجود في الأسواق إلى نوعين وفقاً لنوع المذيب، وهما: الطلاء المائي، والطلاء الزيتي، ولعلك قد تتساءل عن المواد الكيميائية التي يصنع منها الطلاء بنوعيه، وعن الآلية التي تساعد على جفاف الطلاء، وسيتم مناقشة ذلك على النحو الآتي:</p><p>١٦٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

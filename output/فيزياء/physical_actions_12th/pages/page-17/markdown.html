@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>رسم المنحنى المميّز لوصلة ثنائية PN</p><p>التجربة الخامسة</p><h1>الهدف</h1><p>– ترسم المنحنى المميّز لوصلة ثنائية من خلال التجربة العملية .</p><h1>الأدوات والمواد المطلوبة</h1><p>تحتاج لتنفيذ هذه التجربة
+الأدوات والمواد الآتية :
+– بطارية ٦ فولت .
+– ريوستات ( ٢٠٠ – ٣٠٠ أوم ) .
+– مفتاح عاكس .
+– فولتميتر ١٠ فولت .
+– مللي أميتر .
+– ميكرو أميتر .
+– أسلاك توصيل .
+– وصلة ثنائية .</p><h1>خطوات تنفيذ التجربة</h1><p>١- كوّن دائرة كهربائية كما تلاحظها في الشكل أدناه .</p><img src="img-13.jpeg" alt="img-13.jpeg" /><p>٢- أقفل الدائرة الكهربائية مع مراعاة استخدام الوصلة الثنائية في حالة التوصيل الأمامي، وعندئذٍ إبدأ في زيادة فرق الجهد تدريجياً، وفي كل مرة غيّر فرق الجهد مع تعيين قيمته بواسطة الفولتميتر .
+٣- عيّن شدة التيار بواسطة المللي أميتر ودوّن النتائج في جدول كالآتي :</p><p>|   |  |  |  | فرق الجهد ( ج ) ( فولت )  |
+| --- | --- | --- | --- | --- |
+|   |  |  |  | شدة التيار ( ت ) ( مللي أمبير )  |</p><p>٣- اعكس اتجاه التيار الكهربائي في دائرة الوصلة الثنائية ليصبح التوصيل خلفي ( عكسي )، ومنه استبدل المللي أميتر بالميكرو أميتر .
+٤- غيّر فرق الجهد عدة مرات وفي كل مرة سجّل قيمته وقيمة شدة التيار المناظر، وبعد ذلك دوّن النتائج في الجدول كالآتي :</p><p>١٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

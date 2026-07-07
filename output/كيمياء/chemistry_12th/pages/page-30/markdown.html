@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-20.jpeg" alt="img-20.jpeg" /><h1>ملاحظة</h1><p>الرمز $‫\Delta‬$ ينطق دلتا ، وهو يشير إلى التغير في المحتوى الحراري.</p><p>من خلال ما سبق يتضح أن حرارة التفاعل تعبّر عن الفرق بين المحتوى الحراري للنواحي والمتفاعلات، ولذلك يمكن التعبير عنها باستخدام المعادلة الآتية:</p><p>حرارة التفاعل $‫(\Delta H) =‬$ مجموع المحتوى الحراري للنواحي - مجموع المحتوى الحراري للمتفاعلات</p><p>$‫\therefore \quad \Delta H = \sum H_{\text{للمتفاعلات}} = (\Delta H) \quad \therefore‬$‫</p><p>ومن خلال المعادلة السابقة يمكن تقسيم التفاعلات الكيميائية إلى قسمين رئيسيين هما:</p><h1>١ - تفاعلات طاردة للحرارة : Exothermic Reactions</h1><p>وهي التفاعلات الكيميائية التي يصاحبها انطلاق طاقة حرارية كناج من نواحي التفاعل.</p><p>وفي هذا النوع من التفاعلات يكون مجموع المحتويات الحرارية للمتفاعلات أكبر من مجموع المحتويات الحرارية للنواحي، أي أن:</p><p>‬$‫\sum H_{\text{للمتفاعلات}} - \sum H_{\text{للمتفاعلات}} = (\Delta H)‬$‫
+(أكبر) (أقل)</p><p>- ماذا تتوقع أن تكون إشارة ‬$\Delta H$‫ للتفاعل الطارد للحرارة؟</p><h1>٢ - تفاعلات ساصة للحرارة : Endothermic Reactions</h1><p>وهي التفاعلات الكيميائية التي يصاحبها امتصاص طاقة حرارية. وفي هذا النوع من التفاعلات يكون مجموع المحتويات الحرارية للنواحي أكبر من مجموع المحتويات الحرارية للمتفاعلات، أي أن:</p><p>‬$$‫\sum H_{\text{للمتفاعلات}} - \sum H_{\text{للمتفاعلات}} = (\Delta H)‬$$‫
+(أقل) (أكبر)</p><p>- ماذا تتوقع أن تكون إشارة ‬$\Delta H$ للتفاعل الماص للحرارة؟</p><p>٢٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-118.jpeg" alt="img-118.jpeg" /><p>الوحدة الخامسة</p><h1>مثال (٥ - ٣)</h1><p>يبيّن الشكل (٥ - ١٠) مكعباً ب ج و ا ب ج و طول حرفه (س) . أوجد ا ج ا .</p><p>المعطيات : ب ج و ا ب ج و مكعب ،</p><p>طول حرفه س .</p><p>المطلوب : إيجاد ا ج ا .</p><p>البرهان : ج ج ا و ج</p><p>ج ج ا ب ج ( لأن الأوجه مربعات )</p><p>∴ ج ج ا المستوى ( ب ج و )</p><p>∴ ج ج ا ج</p><p>نطبق مبرهنة فيثاغورث على $‫\Delta‬$ ج ج ا القائم في ج</p><p>$‫\therefore |\text{ج ا}| = |\text{ج ا}| + |\text{ج ج}|‬$ (١) ...</p><p>∴ ب ب ج نطبق مبرهنة فيثاغورث على $‫\Delta‬$ ب ج</p><p>$‫\therefore |\text{ج ا}| = |\text{ب ا}| + |\text{ب ج ا}|‬$ (٢) ...</p><p>من (١) ، (٢) نحصل على :</p><p>$‫|\text{ج ا}| = |\text{ب ا}| + |\text{ب ج ا}| + |\text{ج ج ا}|‬$</p><p>$‫\therefore |\text{ج ا}| = |\text{س ا}| + |\text{س ا}|‬$ .</p><p>$‫\therefore |\text{ج ا}| = |\text{س ا}|‬$ .</p><p>$‫\therefore |\text{ج ا}| = |\text{س ا}|‬$ وحدة طولية .</p><p>( وهو المطلوب ) .</p><h1>مثال (٥ - ٤)</h1><p>ب ج مثلث قائم في ب ، أقيم العمود و ب على مستواه . أثبت أن : ب المستوى ( و ب ج )</p><p>المعطيات : $‫\Delta‬$ ب ج قائم في ب ، و ب المستوى ( ب ج ) . [ شكل (٥ - ١١) ] .</p><p>المطلوب : إثبات أن ب المستوى ( و ب ج ) .</p><p>١٤٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

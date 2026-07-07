@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>تطبيقات قانون أوم في دوائر التيار المتردد</h2><h3>دوائر التيار المتردد : A.C. Circuits</h3><p>درست في السنوات الماضية التيار المستمر وبعض دوائر التيار المستمر، وعرفت ماذا يحدث للتيار المستمر عند توصيل مكثف إلى مصدر قوة دافعة مستمرة .
+وهنا سنتناول بعض دوائر التيار المتردد، ولدراسة بعض هذه الدوائر عليك القيام بتنفيذ النشاط التالي :</p><h3>نشاط (٥)</h3><p>أحضر مكثفاً كهربائياً ذا سعة محدودة ولتكن ١٠٠٠ ميكروفاراد ومصباح كهربائي صغير يعمل على فرق جهد حوالي ٣ فولت، وبطارية قوتها الدافعة ما بين (٣-٦) فولت، وأميتر حراري، ومفتاح كهربائي، وقاعدة مصباح، وأسلاك توصيل .</p><h3>قم بالخطوات الآتية :</h3><p>١- صل الأدوات السابقة معاً على التوالي كما يوضحه الشكل (٦) .</p><p>٢- أقفل الدائرة الكهربائية بواسطة المفتاح .</p><p>لاحظ إضاءة المصباح . هل سيضيء المصباح الكهربائي ؟ فسر ذلك .</p><p>لا يضيء المصباح لان التيار المستمر لن يمر في الدائرة الكهربائية إلا لفترة زمنية قصيرة جداً، وهي مدة شحن المكثف، وبعد ذلك يتوقف مروره .</p><p>وهذه الفترة القصيرة جداً ليست كافية لتسخين فتيل المصباح حتى يضيء .</p><img src="img-39.jpeg" alt="img-39.jpeg" /><img src="img-40.jpeg" alt="img-40.jpeg" /><p>٣٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

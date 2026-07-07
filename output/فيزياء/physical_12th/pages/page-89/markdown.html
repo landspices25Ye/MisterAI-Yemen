@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>إن تأين الغازات وبالتالي قدرتها على التوصيل الكهربائي يُفسر بزيادة درجة الحرارة، فذرات أو جزيئات الغاز الساخنة تتحرك أسرع عند ارتفاع درجة حرارتها، وعند ذلك فإن عدداً من الجزيئات أو الذرات تبدأ بالحركة السريعة بشكل يجعل قسماً منها يتحلل إلى الكترونات وأيونات موجبة عند تصادمها مع الذرات أو الجزيئات الأخرى ويصبح الغاز بذلك موصلاً للكهرباء لوجود حاملات الشحنة (الإلكترونات والأيونات).</p><h3>التوصيل الكهربائي في الغازات Electric Conduction in Gases</h3><p>عند دراسة التوصيل الكهربائي في الغازات تحت ضغط منخفضة ومختلفة، نحتاج إلى أنبوبة زجاجية ذات قطبين معدنيين عند طرفيها يسمى أحدهما الأنود (المصعد) Anode وهو القطب الموجب والآخر يسمى الكاثود (المهبط) Cathode وهو القطب السالب، فعند تطبيق فرق جهد عال حوالي ( ١٠ × ٥ فولت ) بين طرفي الأنبوبة (بين قطبي الأنبوبة) وعندما يكون ضغط الغاز الذي فيها منخفضاً، فإن الغاز يصبح موصلاً للتيار الكهربائي، ويأخذ شكل ضياء متوهج يملأ الأنبوبة وقد يختفي، وذلك يعتمد على ضغط الغاز داخل الأنبوبة. أنظر الشكل (٢).</p><img src="img-86.jpeg" alt="img-86.jpeg" /><p>شكل (٢)</p><p>في عام (١٨٠٨م) اكتشف العالم الألماني بلوكر بأنه عند ضغط منخفض مقداره ( ١٠ × ١,٣ ) ضغط جوي ( أي ( ١٠ × ١,٣ ) بار ) أي حوالي ( ٠,١ ملم زئبق ) تحدث ظاهرة جديدة في الأنبوبة وهي أن المهبط ( الكاثود ) يبعث بأشعة غير مرئية تسرى خلال الأنبوبة ، وبالرغم من أن هذه الأشعة غير مرئية إلا أنه يستدل</p><p>على وجودها بظهور وميض يميل إلى الزرقة عند اصطدام هذه الأشعة بجدار الأنبوبة أو بالأنود الموجب، سميت هذه الأشعة في البداية بالأشعة المهبطية استناداً إلى مصدرها، وقد سميت فيما بعد بالإلكترونات.</p><p>ماذا سيحدث داخل الأنبوبة إذا استمرت زيادة فرق الجهد بين قطبي الأنبوبة أكثر مما وصلت إليه؟ الذي سيحدث أن الطاقة الحركية للإلكترونات تزداد إلى حد معين على حساب شغل قوة المجال الكهربائي الناتج عن فرق الجهد بين القطبين، فإذا</p><p>٨٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

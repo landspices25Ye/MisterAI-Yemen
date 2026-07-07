@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>جرت الأم إلى زير الماء .. اقترب الطفلان من الجسد . حتى العيون أغمضت .. لم تترك الأم مكاناً لولي إلا زارته، ولا سيداً إلا نذرت له، ولا مسجداً إلا وأعطت من يقرأ فيه القرآن حبوباً وسمناً ولبناً. ولكنه ظل على السرير، لا تتحرك عيناه، تزوجت بالسقف، ورأسه لا تتحرك ولكنه لم يمت .</p><p>• • •</p><p>يتمثل السرد في القصة بـ: حمل النعش، وتأوه المحمول فوق النعش، وعمل المرأة وولديها في الحقل (زوجة المحمول)، وفرحة الطفلين وركض الأطفال الآخرين لرؤية العائد، واستعداد المرأة لاستقبال زوجها، وغياب صورة الأب عند الولدين وخيبة أملهما لمعرفة أنه مريض، وصدمة الزوجة بهذه المعرفة، وحديث نساء القرية عن المريض. ومن الوصف في القصة: القرية تحتويها شمس كئيبة وريح تصر، والأرض ظمأى تنتظر المطر .. كان الرجل عظيماً أسمر .. رسم له الولد صورة عملاقة قوية عاطفية .. أما الحوار فقد كان أولاً بين النساء، وثانياً بين الأطفال، في حين كانت الزوجة في حالة مناجاة داخلية أو حوار داخلي .</p><p>والسرد والوصف والحوار عناصر لا تنفصل عن بعضها؛ فالوصف يدعم السرد ويتداخل معه، والحوار لا يخلو من تتابع الأحداث .. أي إن الحوار يكون صورة أخرى من صور السرد .</p><p>ويمكن أن يكون السرد في الحاضر، كما يمكن أن يكون استرجاعاً لما حدث في الماضي . ففي قصة «ليته لم يعد» كان السرد واضحاً كما سلف، أما الاسترجاع فيتمثل في تذكر الولد الأكبر انعطافة أبيه قبل سنوات في إحدى منحدرات الجبل في طريقه للسفر والغربة .</p><p>وقد يكون السرد مباشراً (بغير ضمير المتكلم) أي أن يكون الكاتب خارج الأحداث . ويكون ذاتياً تساق الأحداث فيه بضمير المتكلم . وقصة «ليته لم يعد» تأخذ طابع السرد المباشر .</p><h2>٢- الرواية:</h2><p>تعد «الرواية» بوصفها -جنساً أدبياً نثرياً معاصراً- إبداعاً خيالياً نثرياً، طويلاً عادة، يقوم على رسم الشخصيات، ثم تحليل نفسياتها وأهوائها وتقصي مصيرها ووصف مغامراتها .</p><p>غير أن هذا التعريف ليس تعريفاً جامعاً مانعاً، يلتقي النقاد عنده، بل إنهم</p><p>٢١٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

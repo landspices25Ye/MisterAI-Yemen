@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>قانون بقاء الكتلة والطاقة، حيث إن الطاقة والكتلة صورتان لشيء واحد، حسب ما تدل عليه نظرية إينشتاين. ولذلك يمكن أن تتحوّل الطاقة إلى كتلة والكتلة إلى طاقة. ولذا يكون مقدار النقص في الكتلة يعادل كمية الطاقة المطلوبة للتغلب على قوة التنافر الكهروستاتيكية بين مكونات النواة، وتُسمّى هذه الطاقة «بطاقة الترابط النووي».</p><p>∴ تُعرّف طاقة الترابط النووي بأنها مقدار الطاقة اللازمة لربط مكونات النواة ببعضها.</p><p>كما تُعرّف أيضاً بأنها عبارة عن الطاقة اللازمة لتفتيت مكونات النواة تفتيتاً تاماً.</p><h1>ملاحظة</h1><p>كلما زاد عدد النيوكليونات في النواة زادت طاقة الترابط النووي التي تحفظ هذه المكونات.</p><p>ويمكن استخدام معادلة إينشتاين لحساب طاقة الترابط لذرة الهيليوم على النحو التالي:</p><p>الطاقة (ط) = ك × ع²</p><p>حيث: ط = الطاقة. ك = الكتلة (كجم).</p><p>ع = سرعة الضوء، ويساوي (١٠ × ٣ × ١٠²/ث²).</p><p>∴ طاقة الترابط للهيليوم = الكتلة المفقودة</p><p>= ٠.٠٣٠٣٨ (و.ك.ذ).</p><p>يتم بعد ذلك تحويل الكتلة الذرية إلى (كجم) لتكافئ وحدة الطاقة، وهي: كجم م²/ث²</p><p>∴ كل وحدة كتل ذرية = ٠.٠٣٠٣٨ (و.ك.ذ) × ١٠ × ١.٦٦٠٥ × ١٠² كجم / ١ (و.ك.ذ)</p><p>= ١٠ × ٥.٠٤٤٦ × ١٠² كجم</p><p>∴ طاقة الترابط للهيليوم = (١٠ × ٥.٠٤٤٦ × ١٠² كجم) × (١٠ × ٣ × ١٠²/ث²)</p><p>= ١٠ × ٤.٥٤ × ١٠² كجم م²/ث²</p><p>= ١٠ × ٤.٥٤ × ١٠² جول</p><p>وهذه الطاقة هي عبارة عن الطاقة التي تنطلق عند تكوين نواة الهيليوم، كما أنها تمثل الطاقة اللازمة لتفتيت نواة ذرة الهيليوم، ولذلك فإن طاقة الترابط هي عبارة عن مقياس لمدى استقرار الأنوية.</p><p>٧٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

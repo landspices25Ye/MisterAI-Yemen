@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>- يا أعضاء الديوان.. إن مكانكم ليس هنا.. اذهبوا إلى ساري عسكر وقدّموا له فروض الطاعة والولاء.. إن قراراتكم واجتماعاتكم لا تُلزمنا بشيء..</p><p>ورد أحد أعضاء الديوان بصوت واهن:</p><p>- يعلم الله كم نبغض هؤلاء الغزاة الأجاس.. فلينصرنكم الله وليؤيدكم بقوته التي لا تُقهر.. وسارت الحشود الهادرة تدوس تحت أقدامها أية مقاومة أو اعتراض، وأمام بيت القاضي التركي «أدهم أفندي» توقفوا، وطلبوا من القاضي أن يصحبهم إلى نابليون، ليتكلم بلسانهم، ويعلن احتجاجهم على تصرفاته الجائرة.. ولم يكن القاضي من السذاجة بحيث يجهل معنى تجمعهم حوله، وإجباره على الانخراط في سلك الثورة المنتظرة.. وأدرك القاضي أن الأمر أكبر من التحدث باسمهم، إنه شيء آخر يعرفه الناظر في وجوه أولئك المندفعين كالطوفان.. وحاول القاضي التركي الإفلات، فتناثرت التعليقات من حوله:</p><p>- أنت جبان رعديد..</p><p>- أنت لا تمثل الحق الذي تبناه، ولا الشريعة الغراء التي تزعم أنك تحكم بها..</p><p>- أنت تمثل السلطان في تخاذله عنا..</p><p>- أنت متخلف عن الجهاد..</p><p>- لست قاضياً، وإنما أنت أشبه ما تكون بشاهد الزور المأجور..</p><p>كلمات كثيرة كوقع السياط تنطلق من هنا وهناك، وعلى الرغم من بساطتها، إلا أنها كانت تمثل - في رأي البشتيلي - محاكمة عابرة للقاضي التركي وأمثاله.. ولم يطل الموقف بهم، إذ سرعان ما أصدرت الجماهير الثائرة حكمها، فضربوا القاضي ورجاله، وصادروا ممتلكاته وتركوه مجرداً من كل مجد أو مال أو كرامة.. فارقوا جانب الطريق واهن القوى، ينظر إلى الزحف الباسل في عجز ويأس وأسى.</p><p>ولم يكن هناك من أمل في أن يتجهوا إلى ساري عسكر.. إن المقاومة المسلحة هي الحل بالنسبة لقوة غاشمة لا تدعن لحق أعزل.. وظهرت السيوف والبنادق، وأخذ الرجال يسارعون بإتمام المتاريس، وخوض المعركة...</p><p>١٦٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

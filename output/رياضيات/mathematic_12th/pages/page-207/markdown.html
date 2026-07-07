@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التفاصيل</p><img src="img-179.jpeg" alt="img-179.jpeg" /><p>الشكل (٦-١٧)</p><p>٦) نلخص ما سبق في الجدول التالي :</p><p>جدول (٦-٩)</p><p>|  س | +∞ | ١ | ٠ | ١-∞ | ∞-  |
+| --- | --- | --- | --- | --- | --- |
+|  د(س) | + | ٠ | - | - | +  |
+|  د(س) | + | ٠ | + | ٠ | -  |
+|  د(س) | +∞ | ٢- | ٠ | ٢ | ∞-  |
+|   |  | (٢-١) | (٠-٠) | (٢-١) |   |
+|   |  | صغرى | انعطاف | عظمى |   |</p><p>٧) نرسم بيان الدالة كما في الشكل (٦-١٧) .</p><h1>مثال (٦-٤٥)</h1><p>ادرس تغيرات الدالة د(س) = | - س² + ٥ س | - ٤ .</p><h1>الحل :</h1><p>١) د(س) = | - س² + ٥ س | - ٤ . م . ت = ح</p><p>نجد قيم س التي يتغير عندها تعريف الدالة</p><p>بوضع - س² + ٥ س = ٠</p><p>س (س - ٥) = ٠ ← س = ٠ ، أو س = ٥</p><p>جدول (٦-١٠)</p><p>|  س | +∞ | ٥ | ٠ | ∞-  |
+| --- | --- | --- | --- | --- |
+|  د(س) | س² - ٥ س - ٤ | س² + ٥ س - ٤ | س² - ٥ س - ٤ |   |
+|  د(س) | ٢ س - ٥ | ٢ - ٥ س + ٢ | ٢ س - ٥ |   |
+|  د(س) | ٢ | ٢ - ٢ | ٢ |   |</p><p>نعيد تعريف الدالة ، ثم نوجد</p><p>د(س) ، د(س) .</p><p>كما في الجدول (٦-١٠) .</p><p>٢) الفروع اللانهائية</p><p>نهي س = د(س) = ∞ + ∞ ،
+نهي س = د(س) = ∞ + ∞</p><p>إذن للدالة فرعان لانهائيان وليس لها مستقيمات مقارنة لأنها كثيرة حدود</p><p>٣) وبوضع د(س) = ٠ . أما ٢ س - ٥ = ٠ ← س = ٥/٢ [∞ - ∞ ، [∞] ، [∞]</p><p>أو ٢ س + ٥ = ٠ ← س = ٥/٢ [∞ ، [∞] ، كما أن كل من د(س) ، د(س) غير موجودتان .</p><p>٢٠٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>معاني المفردات والتراكيب اللغوية</h1><p>|  الكلمة | معناها  |
+| --- | --- |
+|  الضَّغِينَة | الحقد الشديد .  |
+|  داء عَيَاء | مرض لا دواء له ولا بُرَّة منه .  |
+|  المثلوم | المكسور من طرفه .  |
+|  الفردية | نزوع الفرد إلى التحرر من سلطان الجماعة .  |
+|  الكنود | يقصد بها : كل من يخفي النعم ويذكر المصائب .  |
+|  تتدلى بهم | تجرهم .  |
+|  عوادي الانقسام | مصائبه ونوائبه .  |
+|  غراً | الغر : هو من ينخدع ويجهل الأمور ويغفل عنها .  |
+|  لا تقاطعوا ولا تدابروا | لا يهجر أحدكم أخاه ولا يعاديه .  |
+|  يرسب الغل | تغوص العداوة والحقد في أعماق النفس .  |
+|  الصَّغَار | الذل والحقارة .  |
+|  يمنع رفده | الرفد : العطاء والصلة . والمقصود يمنع خيره عن الآخرين .  |</p><h1>المناقشة</h1><p>١ - كيف يمكن للمسلم أن يعيش ناصع الصفحة، راضياً عن الله وعن الحياة ؟
+٢ - نظرة الإسلام إلى القلب خطيرة . اشرح ذلك كما فهمت من الموضوع .
+٣ - ما النتائج الوخيمة المترتبة على اشتعال نيران الخصومة بين المسلمين ؟
+٤ - شرع الإسلام من المبادئ ما يرد عن المسلمين عوادي الانقسام والفتنة . هات من الموضوع حديثاً شريفاً يؤكد ذلك .
+٥ - شرار الناس الذين يتمكن الحقد من نفوسهم عدة فئات ، كما وصفهم النبي - صلى الله عليه وسلم - ما صفات كل فئة منهم ؟
+٦ - لِمَ كان استحلال عرض امرئ مسلم من أربى الربا عند الله ؟</p><p>٦٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

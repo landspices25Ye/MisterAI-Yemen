@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الاحتمالات</p><p>مثال (٣ - ١٠)</p><p>صندوق يحتوي على ٣ كرات حمراوات ، ٧ كرات بيضاوات . سحبت - عشوائياً - كرة من الصندوق وأضيفت إليه كرة من اللون المخالف للكرة المسحوبة . وخلطت مع بقية الكرات الموجودة في الصندوق ، ثم سحبت منه - عشوائياً - كرة .</p><p>أولاً : أوجد احتمال الحوادث التالية :</p><p>١ ) أن تكون الكرة المسحوبة الثانية حمراء .
+٢ ) أن تكون الكرتان المسحوبتان بيضاوان .
+٣ ) أن تكون الكرتان المسحوبتان من لون واحد .
+ثانياً : إذا كانت الكرتان المسحوبتان من لون واحد ، فما احتمال أن تكون الكرتان من اللون الأبيض ؟</p><h1>الحل :</h1><p>أولاً : سوف نحل هذا المثال باستخدام طريقة الشجرة ، حيث هذه الطريقة تسهل حل الكثير من التمارين والمسائل من هذا النوع .</p><p>ولكي نميز بين ألوان الكرات نرمز لسحب كرة حمراء من الصندوق بالرمز ( ح ) ولسحب كرة بيضاء بالرمز ( ب ) مع مراعاة أن الكرة المضافة إلى الصندوق هي من اللون المخالف للكرة المسحوبة منه أولاً .</p><p>نرسم الشجرة البيانية وفقاً للمعلومات المعطاة في المثال . كما في الشكل (٣ - ٣) التالي :</p><img src="img-60.jpeg" alt="img-60.jpeg" /><p>نفترض أن :</p><p>أ : هي حادثة الكرة الثانية حمراء .</p><p>ب : هي حادثة الكرتان المسحوبتان بيضاوان .</p><p>ج : هي حادثة الكرتان المسحوبتان من لون واحد .</p><p>د : هي الحادثة ( ب | ج )</p><p>١) احتمال أن تكون الكرة الثانية حمراء هو :</p><p>$‫\text{حا (أ)} = \frac{3}{10} \times \frac{2}{10} + \frac{7}{10} \times \frac{4}{10} = \frac{6}{100} + \frac{28}{100} = \frac{17}{50}‬$</p><p>( لأن هناك مسارين من الشجرة يؤدي إلى كرة حمراء ) .</p><p>٨٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

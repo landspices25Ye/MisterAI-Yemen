@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الموجبة لتكوين ذرات متعادلة مرة أخرى ونتيجة لهذا تشع ذرات الغاز الطاقة التي اكتسبتها عند تأييدها على شكل فوتونات (ضوء) وهذا هو سبب توهج أنبوبة التفريغ.</p><h2>أنبوبة أشعة الكاثود Cathode Rays Tube</h2><img src="img-88.jpeg" alt="img-88.jpeg" /><img src="img-89.jpeg" alt="img-89.jpeg" /><p>شكل (٣)</p><p>الشكل (٣) يبين أنبوبة أشعة الكاثود والأجزاء التي تتكون منها ..
+م تتركب أنبوبة أشعة الكاثود كما تشاهدها في هذا الشكل؟</p><p>- من أي جزء من الأنبوبة تنطلق الإلكترونات؟</p><p>- ما فائدة الملفات أو الألواح الحارفة؟</p><p>تتركب أنبوبة أشعة الكاثود من أنبوبة زجاجية مفرغة تماماً من الهواء، ويحتوي الطرف الضيق لها على بندقية إلكترونات (Electrons Gun)، كما في الشكل (٣)، ويُغطى طرفها</p><p>المتسع بمادة فلوريسية مثل كبريتيد الخارصين (ZnS)، وهذا الطرف هو شاشة أنبوبة أشعة الكاثود، وتقوم بندقية الإلكترونات بإرسال أشعة إلكترونية تسقط على الشاشة محدثةً نقطة مضيئة عليها.</p><p>وتحتوي أنبوبة أشعة الكاثود على مجموعة حارفة قرب منتصفها .. تتكون هذه المجموعة الحارفة إما من زوجين من الملفات التي تولد مجالين مغناطيسيين متعامدين، أو من زوجين من الألواح المعدنية التي تولد مجالين كهربائيين متعامدين.</p><p>عندما تطلق البندقية الإلكترونية الأشعة الإلكترونية (أشعة الكاثود) إلى الشاشة، ينتقل جزء من طاقة حركة الإلكترونات إلى المادة الفلوريسية التي على الشاشة، فتشع ضوءاً ذا لون معين يتوقف على نوع المادة الفلوريسية وعلى طاقة حركة الإلكترونات، فتظهر بذلك نقطة مضيئة لها لون معين، هذه النقطة تحدد موضع سقوط الأشعة الإلكترونية على الشاشة.</p><p>٨٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

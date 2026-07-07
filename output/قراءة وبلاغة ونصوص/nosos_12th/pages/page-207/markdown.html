@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>القصة</h1><p>عندما يكتب الأديب القاص قصته فإنه يعايش أحداثاً تتمكن من وجدانه، وتكون نتيجة هذه المعايشة كتابة نثرية قائمة على السرد والوصف والحوار بلغة أدبية وقدرة لغوية وفكرية وبلاغية؛ أي إن التجربة الأدبية في القصة شبيهة بالتجربة الأدبية في الشعر من حيث معايشة الأديب موضوعاً ما عند كتابته. والفرق هو أن القصة تقوم على السرد وتسلسل الأحداث وليس على الأحاسيس التجريدية والعواطف المتأججة والخيال الجامح كما في الشعر. ولذلك تحتاج القصة مساحة أكبر على الورق. تقوم القصة على عدة أمور هي: ١- الأحداث، ٢- الشخصيات، ٣- الزمان والمكان، ٤- الحبكة، ٥- العقدة، ٦- الحل.</p><p>وقد يتخذ الكتاب طريقة إبراز بعض الجوانب الفنية وتغليبها على الجوانب الأخرى مثل: التركيز على الأحداث، أو الشخصيات أو البيئة وليس معنى ذلك أن الجوانب الأخرى مغفلة.</p><p>والأحداث في القصة تنمو وتتعدد، ثم تنفرج فيما يسمى بلحظة التنوير .. أي لحظة حل هذا التعقيد، الذي يتفاعل معه القارئ، بل إنه يحس بأحاسيس القاص إذا كان مستوى الصدق الفني عالياً في القصة.</p><p>والمقصود بالصدق الفني تفاعل القاص ومعايشته الوجدانية الصادقة للحدث الذي يشكل العمود الفقري لقصته. والقول: «ما يخرج من القلب يصل إلى القلب» يؤكد على ضرورة صدق المعايشة، وأن الأدب الصادق هو الأدب الخالد شعراً ونثراً، يقرؤه الناس ويتفاعلون معه على مر العصور.</p><p>وعندما نقول: إن القصة تقوم على معايشة القاص للأحداث، فليس معنى ذلك أن ينقل الأحداث كما هي، وكما تسجل كتب التاريخ والسير. إن القصة عمل فني يقوم على الخيال. صحيح أن القاص يعتمد على الواقع ويجعله المادة الأساسية، ويتبع الشخصيات في المجتمع ويسجل أحوالها وتطوراتها، ولكنه يحور ويبدل في الأحداث وفي رسم الشخصيات كما يملي عليه خياله.</p><p>وعلى الرغم من أن شخصيات القصة ليست شخصيات واقعية خالصة، فبعض</p><p>٢٠٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

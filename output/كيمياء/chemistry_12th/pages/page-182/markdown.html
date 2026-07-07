@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-160.jpeg" alt="img-160.jpeg" /><p>- بالأسمدة المستخدمة لتخصيب التربة والمحتوية على نسبة من مركبات النيتروجين أو الفوسفات والتي تعتبر سامة.
+- التلوّث بالفلزات الثقيلة القادمة من مخلفات الصناعة أو الجسيمات العالقة والتي تؤدي إلى موت الأشجار.
+- التلوّث الناتج عن الأسلحة الكيميائية المستخدمة في الحروب والتي تفسد الأراضي الزراعية.
+- التلوّث النووي: وينتج عن الإشعاعات المنبعثة من هذه المواد ويستمر أثرها لسنوات طويلة، ومثال على ذلك انفجار مفاعل تشرنوبل في أوكرانيا والذي نجم عنه تلوّث الأراضي المجاورة، واستمرت آثاره لفترة طويلة سواء على التربة أو على الإنسان.</p><h1>نشاط (٩-١)</h1><p>اكتب تقريراً ناقش فيه قضية سوء استخدام المبيدات الزراعية في اليمن وأخطارها الجسيمة.</p><h1>الحلول المقترحة للحدّ من تلوّث البيئة:</h1><h1>■ إزالة الملوّثات من المواد الخام ومثال ذلك:</h1><p>- معالجة الفحم بطرق مغناطيسية لإزالة الكبريت الموجود فيه على هيئة كبريتيد الحديد FeS وأيضاً معالجته لإزالة مادة البنزوبيرين.
+- معالجة زيت البترول لإزالة الكبريت أثناء عملية التكرير وذلك بإمرار زيت البترول على أكسيد الكالسيوم والذي يتفاعل مع الكبريت ليكوّن كبريتيد الكالسيوم، والذي يسخن في وجود الأوكسجين ليعطي أكسيد الكالسيوم وثاني أكسيد الكبريت.</p><p>$‫2\text{S} + 2\text{CaO} \longrightarrow 2\text{CaS} + \text{O}_2‬$‫
+$2\text{CaS} + 3\text{O}_2 \xrightarrow{\text{heat}} 2\text{CaO} + 2\text{SO}_2‬$$</p><h1>■ إزالة أو معالجة الملوّثات الناتجة عن احتراق الوقود:</h1><p>تتمّ المعالجة باستخدام المحوّلات الحفزية التي تلحق بشكمنات السيارات وعلى أسطح المحوّلات الحفزية المغطاة بعوامل حفازة تساعد على إتمام عمليات الأكسدة والاختزال، حيث يتمّ اتحاد غاز أكسيد النيتريك مع أول أكسيد الكربون لإعطاء غاز</p><p>١٨٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

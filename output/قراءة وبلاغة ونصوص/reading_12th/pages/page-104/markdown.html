@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><p>أ – عيّن نوع المشتق ووزنه فيما يأتي:</p><p>( الفاني – قوّامون – مستودع ).</p><p>ب – ( هي التي تمنحه يدها عكازاً لشيخوخته ) ما نوع هذه الصورة؟ وما قيمتها الفنية ؟</p><p>ج – بمَ يوحي قول الكاتب ( تتسمع أنفاسه، وتصغي إلى أناته ) ؟</p><p>د – وضح إعراب ما تحته خط في الفقرة السابقة .</p><p>٦ – بيّن سبب كتابة الهمزة على واو في الكلمات الآتية:</p><p>( تكلؤه – نساؤه – شؤبوب – شؤون – مسؤولة ).</p><h2>التعبير</h2><h3>١- التعبير الشفهي</h3><p>أقم مناظرة مع زملائك في الفصل عن المرأة في مجتمعنا اليمني، والمكانة الاجتماعية التي تحظى بها، والمعاملة التي تلقاها. مراعيًا آداب الحوار والمناظرة.</p><h3>٢- التعبير الكتابي</h3><p>اكتب رسالة إلى أمك واصفًا مشاعرك نحوها، وفضلها في تربيتك وإعدادك.</p><h3>نشاط ذاتي</h3><p>قُم بإعداد بحث موجز عن « المرأة ومكانتها في الإسلام »، واعرضه على مدرسك.</p><p>١٠٢</p><p><http://www.e-learning-moe.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

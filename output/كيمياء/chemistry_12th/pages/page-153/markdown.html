@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التعامل مع المبيدات والأسمدة.</p><p>٣ - يجب أن يكون القائمون على الرش في صحة جيدة وأجسامهم خالية من الجروح.
+٤ - يجب ارتداء الملابس الواقية من مخاطر المبيدات مثل: البدلات الخاصة، والقفازات، والكمامات، والنظارات.
+٥ - يُنصَح العاملون بالامتناع عن الأكل والشرب والتدخين ومضغ القات أثناء الرش، أو أثناء تحضير المبيدات.
+٦ - يجب إبعاد الأطفال والحيوانات والطيور من المنطقة التي سيتم رشها بالمبيدات.
+٧ - يُمنع الرش عند الإزهار أو عند نضج الثمار.
+٨ - يُمنع الرش بالقرب من خلايا النحل.
+٩ - يُمنع قطف الثمار أو جني المحاصيل الزراعية قبل انتهاء فترة الأمان التي ينصح بها المختصون.</p><h1>الأضرار الناجمة عن استخدام الأسمدة والمبيدات:</h1><p>رغم الفوائد التي يجنيها الإنسان من مكافحته للحشرات واستخدامه للمخصبات والأسمدة، إلا أنه ثبت أن الإسراف في استخدام هذه المواد بدون دراسة قد أدى إلى ظهور الكثير من المشاكل البيئية والصحية. فقد تسببت المبيدات مثلاً في الإخلال بالتوازن البيئي بسبب قتلها الكثير من الحيوانات والحشرات والطيور المفيدة، كما أدت إلى تلوث المياه والتربة. ويؤدي الإسراف في استخدام المخصبات إلى إفساد التربة والمياه، وبالتالي إصابة الإنسان بالعديد من الأمراض، وخاصة في المناطق التي تنتشر فيها الأمية ويقل فيها الوعي. ويؤدي استخدام المبيدات المحرمة دولياً التي تهرب إلى الدول النامية إلى تسمم الكثير من البشر من جراء استخدام هذه المركبات. وفي اليمن مثلاً تستخدم المبيدات وبعض المخصبات في زراعة القات مما يترتب على ذلك انتشار العديد من الأمراض بين مزارعي القات ومن يمارسون عادة مضغ القات.</p><h1>صناعات كيميائية في مجال الكساء:</h1><p>لم تقتصر أهمية الكيمياء على تقديم الخدمات للإنسان في مجال الزراعة وفي مجال حماية الثروات النباتية والحيوانية، بل وقدمت الكيمياء خدمات جليلة للإنسان في مجال توفير الكساء الذي يقيه شدة الحر وقساوة البرد. كما أن الألوان الزاهية التي تميز الألياف الصناعية أتاح المجال لصناعة ألوان متعددة من الملابس الجميلة التي تميز بها الإنسان المعاصر.</p><p>١٥١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

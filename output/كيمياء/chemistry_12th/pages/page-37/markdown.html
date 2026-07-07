@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>وعند حدوث الاحتراق تنتقل الحرارة إلى الماء المحيط بوعاء التفاعل والذي يُحرك باستمرار لضمان تساوي درجة الحرارة في المسعر كله.</p><p>ويمكن معرفة كمية الحرارة المنطلقة عن طريق قياس الزيادة في درجة حرارة الماء والمسعر، ومن خلال ثابت المسعر يمكن حساب حرارة الاحتراق القياسية للمادة.</p><h4>أهمية معرفة حرارة الاحتراق القياسية للمواد:</h4><p>يستفيد الكيميائيون من القيم المحسوبة لحرارة الاحتراق للتعرف على حرارة التكوين لبعض المركبات العضوية التي لا يمكن قياس حرارة تكوينها مباشرة، كما أن خبراء الوقود يحرصون على معرفة حرارة الاحتراق للمواد المستخدمة كوقود واختيار الأفضل منها، كما يهتم خبراء التغذية في حساب القيم الحرارية للأغذية المختلفة.</p><h3>حرارة التكوين القياسية $‫\Delta H_f^\circ‬$ Standard Heat of Formation</h3><p>تعرف حرارة التكوين القياسية لمركب ما بأنها: كمية الحرارة المنطلقة أو المستصقة عند تكوين مول واحد من المركب من عناصره الأولية في حالتها القياسية، ويرمز لها بالرمز $‫\Delta H_f^\circ‬$.</p><h4>علاقة حرارة التكوين القياسية بثبات المركب من حيث التحلل الحراري.</h4><p>إن معرفتنا لحرارة التكوين القياسية للمركبات تساعد على تحديد مدى استقرارها أو ميلها للتحلل إلى عناصرها الأولية عند درجة حرارة الغرفة.</p><p>وقد لاحظ الكيميائيون من خلال نتائج التجارب ما يلي:</p><p>1. المركبات التي تمتلك حرارة تكوين كبيرة وسالبة تكون أكثر ثباتاً واستقراراً عند درجة حرارة الغرفة ولا تميل إلى الانحلال.
+2. المركبات التي تملك حرارة تكوين كبيرة وموجبة تميل عادة إلى الانحلال التلقائي إلى عناصرها الأولية عند درجة حرارة الغرفة.</p><p>- استخدم البيانات الموضحة في الجدول (٢-٢) لترتيب المركبات الآتية تنازلياً من الأكثر إلى الأقل ثباتاً بالنسبة لقدرتها على التحلل.</p><p>الماء السائل، غاز كلوريد الهيدروجين، البنزين، حمض الخليك، كربونات الكالسيوم، أكسيد النيتريك.</p><p>٣٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

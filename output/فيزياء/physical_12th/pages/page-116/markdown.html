@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>[LOGO]</p><h1>الفيزياء الذرية</h1><p>Atomic Physics</p><p>الوحدة
+الخامسة</p><img src="img-111.jpeg" alt="img-111.jpeg" /><h2>أهداف الوحدة</h2><p>يتوقع من الطالب بعد الانتهاء من دراسة هذه الوحدة أن يكون قادراً</p><p>على أن:</p><p>١- يوضح ما المقصود بكل من: الطيف المتصل، والطيف الخطي، وخطوط</p><p>الامتصاص، وسلاسل الطيف لذرة الهيدروجين، والجسم الأسود.</p><p>٢- يعرف نماذج تومسون ورذرفورد ويذكر عيوبهما.</p><p>٣- يشرح مبدأ بلانك في تكميم طاقة الإشعاع.</p><p>٤- يشرح فرضيات بوهر ومبرراتها.</p><p>٥- يوضح نجاحات وإخفاقات نظرية بوهر.</p><p>٦- يحل التمارين المتعلقة بمواضيع هذه الوحدة.</p><p>١١٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

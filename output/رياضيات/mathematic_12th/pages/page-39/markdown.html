@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الأعداد المركبة</p><h1>ثانياً: الطريقة الجبرية :</h1><p>نضع $‫\sqrt{2} - 2\sqrt{3} = \text{ص} + \text{ص ت}‬$‫ (ويتربع الطرفين)</p><p>‬$‫2 - 2\sqrt{3} = (\text{ص} + \text{ص ت})^2‬$‫</p><p>‬$‫2 - 2\sqrt{3} = \text{ص} - 2\text{ص} + 2\text{ص ت}‬$‫</p><p>بمساواة الجزأين الحقيقي والتخيلي في الطرفين نحصل على :</p><p>‬$‫(1) \dots\dots\dots‬$‫</p><p>‬$‫(2) \dots\dots\dots‬$‫</p><p>‬$‫2 = 2\text{ص} - 2\text{ص}‬$‫</p><p>‬$$‫2 = 2\text{ص} - 2\text{ص}‬$$‫</p><p>ويتربع المعادلتين (١) ، (٢) وجمعهما ينتج أن :</p><p>‬$‫(2\text{ص} + 2\text{ص}) = 16‬$‫</p><p>‬$‫(3) \dots\dots\dots‬$‫</p><p>‬$‫\therefore 2\text{ص} + 2\text{ص} = 4‬$‫</p><p>بجمع المعادلتين (١) ، (٣) ينتج أن : ‬$‫2\text{ص} = 6‬$‫</p><p>‬$‫\text{ص} = 3\text{ص}‬$‫</p><p>بطرح (٣) من (١) ينتج أن : ‬$‫2\text{ص} = 2 - 2‬$‫</p><p>من المعادلة (٢) نرى أن حاصل ضرب س في ص سالب ، وعليه فإنما أن يكون س سالباً عندما ص موجباً أو العكس .</p><p>∴ جذر العدد المركب هما : ‬$‫\pm (\sqrt{3} - 2)‬$‫ .</p><h1>مثال (١ - ٢٧)</h1><p>حل المعادلة : ‬$‫\text{ع} = 64 + 6‬$‫</p><h1>الحل :</h1><p>‬$‫\text{ع} = 64 - 6 = 64‬$‫ (جتا ‬$‫\pi‬$‫ + ت جا ‬$$‫\pi‬$$‫)</p><p>‬$$‫\text{ع} = 64 - 6 = 64‬$$‫ (جتا ‬$‫\frac{\pi}{2} + \frac{\pi}{6}‬$‫ + ت جا ‬$$‫\frac{\pi}{2} + \frac{\pi}{6}‬$$‫ ، ك = ٠ ، ١ ، ٠ ، ٥)</p><p>‬$‫\text{ك} = 0 \iff \text{ع} = 2‬$‫ (جتا ‬$‫\frac{\pi}{6}‬$‫ + ت جا ‬$$‫\frac{\pi}{6}‬$$‫ ) = ‬$‫\sqrt{3}‬$‫ + ت</p><p>‬$‫\text{ك} = 1 \iff \text{ع} = 2‬$‫ (جتا ‬$‫\frac{\pi}{2}‬$‫ + ت جا ‬$$‫\frac{\pi}{2}‬$$‫ ) = 2 ت</p><p>‬$‫\text{ك} = 2 \iff \text{ع} = 2‬$‫ (جتا ‬$‫\frac{\pi}{6}‬$‫ + ت جا ‬$$‫\frac{\pi}{6}‬$$‫ ) = ‬$$‫\sqrt{3}‬$$ + ت</p><p>٣٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

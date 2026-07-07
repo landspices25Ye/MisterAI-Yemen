@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>التوارث غير المندلي للصفات :</h2><p>أظهر التطور العلمي أن بعض الصفات تخضع في توارثها لقوانين مندل، إلا أن هناك صفات أخرى يتم توارثها عبر الأجيال وفق قوانين وآليات أخرى. فمثلاً توصل مندل إلى مفهوم السيادة التامة فقط في توارث بعض الصفات فيما توصل العلماء لاحقاً إلى مفهوم السيادة المشتركة ونقص السيادة في نقل الصفات من جيل إلى آخر. وعلى كل فإن من أهم آليات التوارث غير المندلي للصفات هي كما يأتي.</p><h3>أولاً: نقص السيادة أو السيادة غير التامة : Incomplete Dominance :</h3><p>وجد علماء الوراثة أن هناك حالات لتوارث بعض الصفات ويختلف فيها الشكل الظاهري للفرد الهجين عن الفرد النقي للصفة المتوارثة، ويكون سبب هذا الاختلاف أن سيادة أحد العوامل الوراثية ليست سيادة تامة على العامل الآخر وإنما تكون سيادة ناقصة إلى حد ما. ومن أمثلة حالة السيادة الناقصة أو غير التامة في الإنسان توارث بعض أمراض فقر الدم مثل مرض فقر الدم المنجلي Sickle Cell Anaemia وفقر دم البحر الأبيض المتوسط Thalassemia (الثلاسيميا)، وينتشر مرض الثلاسيميا في بلادنا بشكل ملحوظ.</p><h3>النقاط [٧]</h3><p>قم بزيارة إلى أقرب مستشفى أو مركز صحي وقابل الطبيب المختص واحصل منه على عدد حالات المرضى المصابين بمرض الثلاسيميا، وعدد مرضى فقر الدم المنجلي (إن وجد) الذين يتم علاجهم في المستشفى أو المركز. ثم احصل منه على معلومات حول أسباب ظهور حالات المرض وأعراضه، وما هي الطرق للوقاية منه، ثم اكتب ذلك في تقرير وقدمه إلى مدرسك.</p><p>ينتج مرض الثلاسيميا ومرض فقر الدم المنجلي في الأطفال نتيجة لوجود الجينات المسؤولة عن المرض في الأب والأم، فالجتين الطبيعي والخالي من المرض يكون له نوع خاص من هيموجلوبين الدم يسمى الهيموجلوبين الجيني (HbF) Fetus Haemoglobin ويعد ولادة الطفل يتكون نوع آخر من الهيموجلوبين يسمى هيموجلوبين البالغين (HbA) Adult Haemoglobin وذلك خلال الستة الأشهر الأولى من عمر الطفل، ولكن في الأطفال المصابين بمرض</p><p>١١٤</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

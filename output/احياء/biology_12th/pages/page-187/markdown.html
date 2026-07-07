@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>تاريخ الأرض</h1><h1>الوحدة الثامنة</h1><img src="img-137.jpeg" alt="img-137.jpeg" /><h1>أهداف الوحدة</h1><p>يتوقع منك بعد دراستك لهذه الوحدة أن تكون قادراً على أن:</p><p>١- توضح المقصود بكل من: - الطبقة. - سطح عدم التوافق الأحفوري.
+- الأحفورة المرشدة. - مبدأ تعاقب الطبقات. - مبدأ تعاقب الحياة.
+- المضاهاة. - السجل الجيولوجي. - سطح عدم التوافق.
+٢- تبين أهمية دراسة الأحافير، وطرائق حفظها.
+٣- توضح دور العلماء في بناء سلم الزمن الجيولوجي.
+٤- تفسر بعض الأحداث الجيولوجية بناء على دراسة سلم الزمن الجيولوجي.
+٥- تشرح أهم الأحداث الجيولوجية التي مرت بها الجمهورية اليمنية عبر الزمن.</p><p>الأحياء للصف الثالث الثانوي</p><p>١٨٧</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

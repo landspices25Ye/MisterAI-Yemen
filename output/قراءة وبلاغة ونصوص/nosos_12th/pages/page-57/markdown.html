@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>حضارة ومجد</h1><h2>محمود غنيم</h2><h3>التعريف بالشاعر</h3><p>ولد محمود غنيم في محافظة المنوفية في مصر سنة ١٩٠٢م، تعلم في مدرسة قريته، وحفظ القرآن الكريم وهو في الثالثة عشرة من عمره، التحق بالمعهد الأحمدي بطنطا سنة ١٩١٥م. ثم بمدرسة القضاء الشرعي، وأتم دراسته بالمعاهد الدينية سنة ١٩٢٤م. عين بعدها مدرساً في المدارس الأولية عام ١٩٢٥م، ثم التحق بدار العلوم وتخرج فيها عام ١٩٢٩م، عين عقب ذلك مدرساً بمدرسة البحيرة. وفي هذه الفترة نظم أعذب قصائده، وفي عام ١٩٣٨م نقل إلى القاهرة وعين مدرساً في مدرسة الأورمان. وفي القاهرة اتصل بالشعراء والأدباء ودور النشر والصحف والمجلات، ونشر إنتاجه الأدبي من خلالها. ترقى بعدها إلى مفتش أول للغة العربية، ثم عميداً لها بوزارة التربية والتعليم. اختير عضواً في لجنة الشعر بالمجلس الأعلى لرعاية الفنون والآداب، ونال جائزة الدولة التشجيعية للشعر على ديوانه «في ظلال الثورة»، ونال -كذلك- جائزة من المجمع اللغوي على ديوانه «صرخة في واد»؛ وله العديد من المؤلفات. وفي عام ١٩٧٢م ودع الشاعر الكبير الحياة عن عمر بلغ سبعين عاماً وكان في طليعة الشعراء أصالة وصدقاً والتزاماً، وهو من جيل الأعلام في الشعر العربي المعاصر. نظم الشعر في أغراض كثيرة، في الأحداث الوطنية، وفي حضارة الإسلام وأمجادِه، وفي الموضوعات الاجتماعية، وفي وصف الطبيعة، وتصوير حياة الريف.</p><h3>مناسبة النص</h3><p>زار الشاعر بلاد الأندلس، وشاهد عن كتب آثار المسلمين الخالدة، كما زار العراق والشام، ورأى أمجاد العرب والمسلمين التاريخية التي خلفها الأجداد، وفي المقابل نظر إلى واقع العرب والمسلمين القاسي المريب، وما آلت إليه أحوالهم في ظل الاحتلال، والتآمر على مقدساتهم وخيراتهم، فأثار ذلك عواطفه الجياشة؛ فنظم هذه القصيدة من بحر البسيط، اخترنا منها هذا النص.</p><p>٥٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

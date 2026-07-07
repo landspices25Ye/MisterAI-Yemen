@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>د - كان يحرص على تغطية الأزهار الملقحة بغطاء مناسب لضمان عدم وصول حبوب لقاح أخرى إليها بواسطة الهواء أو الحشرات (تلقيح ذاتي).
+٤ - جمع مندل البذور الناضجة من النباتات ذات الأزهار الوردية وذات الأزهار البيضاء والناتجة عن التلقيح الخلطي، ثم زرعها في موسم جديد. ولاحظ ألوان الأزهار في النباتات الجديدة بعد اكتمال نموها فوجد أن لون الأزهار في جميع النباتات الناتجة وردي، واعتبرت هذه النباتات أفراد الجيل البنيوي الأول (First Filial Generation) أو (F1)، واستنتج أن أزهار أفراد الجيل الأول وردية اللون، سواء كانت الأمهات تحمل أزهاراً وردية أم بيضاء.
+٥ - ترك نباتات الجيل الأول تتلقح ذاتياً حتى نضجت بذورها ثم جمعت وزرعت للحصول على أفراد الجيل الثاني (Second Filial Generation) (F2)،
+٦ - عند حساب عدد النباتات ذات الأزهار الوردية والنباتات ذات الأزهار البيضاء من نباتات الجيل الثاني وجد أن النسبة الممددة بين النوعين ١:٣ بمعنى أن النباتات تحمل أزهاراً وردية و ١/٢ النباتات تحمل أزهاراً بيضاء.
+٧ - كرر نفس خطوات التجربة لدراسة بقية الصفات المتضادة كطول الساق وقصره مثلاً: فتوصل إلى أن إحدى الصفتين تختفي في الجيل الأول (F1) ثم تظهر الصفتان معاً في الجيل الثاني (F2) بنسبة ١:٣، وقد توصل مندل من خلال هذه النتائج إلى مبدأ السيادة التامة في الوراثة.</p><p>- ما المقصود بالسيادة التامة؟</p><h2>السيادة التامة ( Complete Dominance )</h2><p>أطلق مندل اسم الصفة السائدة ( Dominant trait ) على الصفة التي تظهر في جميع أفراد الجيل الأول (F1)، وسمى الصفة التي تختفي في الجيل الأول الصفة المتنحية (Recessive trait). فمثلاً اعتبر أن اللون الوردي لأزهار نبات البازلاء صفة سائدة، بينما اللون الأبيض صفة متنحية، وكذلك طول ساق البازلاء صفة سائدة بينما، قصر الساق صفة متنحية. وعلى هذا الأساس فقد أطلق مندل مبدأ السيادة التامة على ظهور صفة وراثية سائدة في جميع أفراد الجيل الأول عند تزاوج فردان يحملان الصفات المتبادلة بصورة نقية.</p><p>- كيف فسر مندل النتائج التي توصل إليها؟</p><p>١٠٢</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التكامل</p><p>إذن المساحة المحصورة ببيان الدالة ومحور السينات والمستقيمين س = ١ ، س = ب تساوي تقريباً مجموع مساحات المستطيلات . أي أن :</p><p>$‫\text{سط}_1 \approx \text{د} (\text{س}_1) \Delta \text{س}_1 + \text{د} (\text{س}_2) \Delta \text{س}_2 + \text{د} (\text{س}_3) \Delta \text{س}_3 + \dots + \text{د} (\text{س}_4) \Delta \text{س}_4 .‬$‫</p><p>أي أن سط ‬$1 \approx \text{مج}_1 \text{س}_1 \text{س}_2 \text{س}_3 \text{س}_4$‫ (يسمى هذا المجموع مجموع ريمان) .</p><p>وفي حالة يكون التجزئ للفترات متساوي ؛ يكون ‬$\Delta \text{س}_1 = \frac{1-\text{ب}}{\text{س}_1} + \text{س}_2 = 1 + \frac{1-\text{ب}}{\text{س}_2}$‫ .</p><p>أي أن : سط ‬$1 \approx \text{مج}_1 \text{س}_1 \text{س}_2 \text{س}_3 \text{س}_4$‫</p><p>وعندما يزداد عدد الفترات إلى مالا نهاية فان طول كل فترة يقترب من الصفر .</p><p>أي أن : ‬$\Delta \text{س}_1 \leftarrow 0 \Leftrightarrow \text{س}_2 \leftarrow \infty$‫ .</p><p>(١ - ٧)...</p><p>‬$‫\text{سط}_1 = \text{نهاية } \text{س}_2 \leftarrow \text{مج}_1 \text{س}_2 \text{س}_3 \text{س}_4 \text{س}_5 .‬$‫</p><p>تذكر أن :</p><p>‬$‫\text{مج}_1 = 1 + \text{مَج}_1‬$‫</p><p>‬$$‫\text{مج}_1 = 1 + \text{مَج}_1‬$$‫</p><p>‬$‫\text{مج}_1 = (\text{س}_1 \pm \text{ص}_1) = \text{مج}_1 = \text{س}_1 \pm \text{ص}_1‬$‫</p><p>‬$‫\text{مج}_1 = \frac{\text{مَج}_1}{2} = \frac{\text{مَج}_1}{2}‬$‫</p><p>‬$‫\text{مج}_1 = \frac{\text{مَج}_1}{2} = \frac{\text{مَج}_1}{2} = \frac{\text{مَج}_1}{2}‬$‫</p><p>‬$$‫\text{مج}_1 = \frac{\text{مَج}_1}{2} = \frac{\text{مَج}_1}{2} = \frac{\text{مَج}_1}{2}‬$$</p><p>مثال (١ - ٧)</p><p>أوجد المساحة المحصورة ببيان الدالة د (س) = س + ١ ومحور السينات وفوق الفترة [ ٤٠٠ ] .</p><p>الحل :</p><p>تجزئ الفترة [ ٤٠٠ ] إلى م فترة جزئية متساوية الطول بحيث يكون :</p><p>٢١١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التكامل</p><p>|  [٨] | [٧] (٧ - ٢ س²) س و س | [٨] | $‫\frac{٣}{١ - ٢} \frac{٣}{٢}‬$‫  |
+| --- | --- | --- | --- |
+|  [١٠] | [٩] ‬$‫\frac{(ص + ٢ + ص) و ص}{٧ + ٢ + ٣ + ٢ + ٧}‬$‫ | [١٠] | ‬$‫\frac{١}{٢}‬$‫ (١ + ١) ‬$‫\frac{٣}{٢}‬$‫ و ‬$$‫\frac{٣}{٢}‬$$‫  |
+|  [١٢] | [١] (س³ + ٢) ‬$‫\frac{٣}{٥}‬$‫ س⁵ و س | [١٢] | [١] جا⁷ س جتا س و س  |
+|  [١٤] | [١٣] ‬$‫\frac{(٣) \sqrt{٤} + ٤}{٢} \sqrt{٢}‬$‫ و س | [١٤] | ‬$‫\frac{٣}{٢}‬$‫ س جتا س² و س  |
+|  [١٦] | [١٥] ‬$‫\frac{١ - ١}{١ + ١}‬$‫ و س | [١٦] | ‬$$‫\frac{١}{٢}‬$$‫ جا ‬$‫\frac{١}{٢}‬$‫ و س  |
+|  [١٨] | [١٧] ‬$‫\sqrt{٢}‬$‫ و س | [١٨] | [١] ظتا س و س  |
+|  [٢٠] | [١٩] جتا ٥ س و س | [٢٠] | [١] جا⁷ س و س  |
+|  [٢٢] | [٢] جا س ه - جتا س و س | [٢٢] | [١] ظا س و س  |
+|  [٢٤] | [٢٣] و س (١ + ٧ س) س | [٢٤] | [١] ‬$‫\frac{(لوس)}{2}‬$‫ و س  |
+|  [٢٦] | [٢٥] جتا (لوس) و س | [٢٦] | ‬$$‫\frac{١}{٢}‬$$‫ ه ‬$‫\frac{١}{٢}‬$‫ و س  |
+|  [٢٨] | [٢٧] جتا ٢ ص و ص | [٢٨] | ‬$$‫\frac{١}{٢}‬$$‫ ه ‬$‫\frac{١}{٢}‬$ و س  |</p><p>٢٣٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

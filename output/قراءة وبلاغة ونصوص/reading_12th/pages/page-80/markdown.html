@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><p>نتيجة عدم الصبر والتحمل في الحياة، والتشاؤم في الحياة أمارة الفشل، أو أمارة عدم صلاحية الإنسان للحياة الإنسانية.</p><p>إنَّ أخص ما يدعوك إليه الإسلام –أيها الشباب– أن تكونوا أقوياء في أخلاقكم فتترفعوا عن أثرة الأطفال وأنانيتهم، وتتغلبوا على ما يخامركم، أو يسيطر عليكم من هوى النفس وسلطانه، كما يدعوك إلى أن تكونوا أقوياء في معارفكم، وأصحاء في عقولكم، بالجد في تحصيل ما تدرسون، وبالمنافسة الشريفة في التميُّز بصفات العقلاء والعلماء والمبدعين.</p><p>أنتم –أيها الشباب– بين مرحلة مضت هي مرحلة الطفولة، وأخرى آتية لاشك فيها هي مرحلة الرجولة، والرجولة قوة ومروءة واكتمال. ومن هنا تسعون نحو القوة، والنخوة، وتؤمنون بما هو قوي، وتُضْحُون – في يُسْر – بأعز ما تملكون في سبيل ما تؤمنون به.</p><p>وليس أهون على الشباب من تقديم المثل الأعلى في التضحية فداءً لما يؤمن به ويعتقده. وتاريخ الإسلام مليء بالنماذج البشرية للشباب، هذه النماذج التي ضُحَّت في سبيل الإيمان به بأعظم ما تملك، وبأعز ما تحرص عليه، وفي طليعتهم علي بن أبي طالب – رضي الله عنه – فقد عُرِّضَ نفسه لفتك المشركين به ليلة الهجرة من مكة إلى المدينة، ليفدي رسول الله صلى الله عليه وآله وسلم بنفسه، إذ بات في فراشه تلك الليلة، مع علمه بأنهم قد بَيَّنُوا قتله على أثر اجتماعهم في يوم سابق، وتدبيرهم أمر هذا القتل، وتوقيته بهذا الوقت. وقد قال رضي الله عنه عن نفسه: «والله ما أبالي أسقطت على الموت أم سقط الموت عليّ». شاب يعلم هذا الخطر، ويعلم تصميم الأعداء على اقترافه، ومع ذلك يتقدم إلى الموت، ويقدم نفسه قرباناً في سبيل إيمانه بالحق وبصاحب الدعوة إليه، هو نموذج ومثل للمؤمن القوي، وما أكثر هذه النماذج من الصحابة رضوان الله عليهم ومن غيرهم. ولذلك يقول رسول الله صلى الله عليه وآله وسلم إشادة بقوة الإيمان: «المؤمن القوي خير وأحب إلى الله من المؤمن الضعيف».</p><p>فيا أيها الشباب: اجعلوا سعيكم نحو القوة إلى قوة الحق والإيمان به، واجعلوا ميلكم إلى التضحية والفداء في سبيل هذا الحق، وفي سبيل الداعي إليه. إنَّ الحياة مرَّة واحدة، فأولى بها أن تكون في نصرة الحق، ونصرة قائده، وأنتم الذين تضربون المثل في التضحية عن يسر وعن رضا.</p><p>٧٨</p><p><http://www.e-learning-moe.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

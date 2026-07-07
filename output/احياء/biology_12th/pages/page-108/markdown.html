@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>– كيف تحدد فيما إذا كان التركيب الجيني للصفة السائدة نقياً أم هجيناً؟
+يمكنك تحديد ذلك عن طريق التلقيح الاختباري.</p><h3>التلقيح الاختباري : Test Cross</h3><p>يعتبر التلقيح الاختباري أفضل الطرق للتفرقة بين الصفات السائدة النقية (Homozygous) والصفات السائدة الهجينة (Heterozygous) في النباتات أو الحيوانات، حيث يتم التلقيح الخلطي بين الفرد المراد معرفة ما إذا كان سائداً نقياً أم سائداً هجيناً مع فرد آخر يحمل الصفة المتنحية المضادة لها كما في الشكل (١٠). فإذا كان كل الناتج يحمل الصفة السائدة (الشكل الظاهري السائد) كان ذلك دليلاً على نقاء الصفة السائدة للفرد، أما إذا كان الناتج خليطاً بين الشكل الظاهري السائد والشكل الظاهري المتنحي (بنسبة ١:١ أو ٥٠٪ وردية و ٥٠٪ بيضاء) كان ذلك دليلاً على عدم نقاوة التركيب الجيني للصفة السائدة للفرد الذي يتم اختباره.
+وتلاحظ أنه من خلال معرفة صفات الأبناء الناتجة يمكن تحديد التركيب الجيني للصفة السائدة، وتحديد ما إذا كانت نقية أم هجينة.</p><img src="img-85.jpeg" alt="img-85.jpeg" /><h3>قانون مندل الثاني (التوزيع الحر للصفات) Law of Independent Assortment</h3><p>استطاع مندل التوصل إلى قانونه الثاني من خلال تجاربه على نبات البازلاء لدراسة السلوك الوراثي لزوجين من الصفات المتضادة في النبات مثل زهرة وردية إبطية وزهرة بيضاء قمية.</p><p>– اذكر أمثلة أخرى لزوجين من الصفات المتضادة في نبات البازلاء.</p><p>١٠٨</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>٣ - تجاربه الذاتية، وتأملاته العاطفية والوجدانية.</p><p>يقول عن دوره في الدفاع عن الإسلام في كتابه وحي القلم: بأنه وُجد للدفاع عن القرآن ولغته وبيانه. وقد ألف كتاباً في إعجاز القرآن أثنى عليه كثير من المفكرين والكتاب، حيث يرى بعضهم أن على كل مسلم أن يقتني نسخة من هذا الكتاب ويقرأه، بغية الاستعانة على فهم اللغة العربية، وإدراك الكثير من أسرار إعجاز القرآن، مما يوجد في هذا الكتاب.</p><p>وما قاله الرافعي في الإنسان المؤمن إن فيه «صدق المبدأ، وصدق الكلمة، وصدق الأمل، وصدق النزعة، وهو الذي ينفجر في التاريخ كلما احتاجت الحياة الوطنية إلى إطلاق قنابلها للنصر».</p><p>وما قاله في اللغة: «لاجرم وأن العرب كانوا أهل هذه اللغة المعجزة التي ناسبتهم بأوضاعها في معاني التركيب، كأنما كتب لها أن تكون دين الألسنة الفطري، لتصلح بعد ذلك أن تكون لسان دين الفطرة».</p><p>ويقول محذراً من هجران هذه اللغة، أو التهاون بشأنها: «وما ذُلَّت لغة شعب الأذل، ولا انحطت إلا كان أمره في ذهاب وإدبار، وليس في العالم أمة عزيزة الجانب تقدم لغة غيرها على لغة نفسها».</p><p>يعتمد الأديب الكاتب مصطفى صادق الرافعي في كتابته على أسلوب خاص، ليس بالمرسل، ولا بالمسجوع المقيد بقيد السجع، أو التكلف الشكلي باللفظ، إنما هو أسلوب خاص متميز في اختيار اللفظ، والبناء، وبعد المجازات، واستخدام الاستعارات، وتشقيق المعاني. فجاءت عباراته قوية، سليمة المبنى، عميقة المعنى، ناصعة البيان، محررة الألفاظ.</p><p>من أشهر كتبه «وحي القلم» في ثلاثة مجلدات، و«تاريخ آداب العرب» في ثلاثة مجلدات كذلك، له كتب أدبية أخرى مثل: كتاب المساكين، وأوراق الورد، وحديث القمر، ورسائل الأحزان وغيرها. توفي عام ١٩٣٧م بمصر -رحمه الله.</p><h2>النص</h2><p>قصة الإسراء والمعراج هي من خصائص نبينا محمد -صلى الله عليه وسلم-، هذا النجم الإنساني العظيم، وهو النور المتجسد لهداية العالم في حيرة ظلماته النفسية؛ فإن سماء الإنسان تظلم وتضيء من داخله بأغراضه ومعانيه. والله تعالى قد</p><p>٦٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

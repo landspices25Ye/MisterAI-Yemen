@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>الحل :</h2><p>ك₁ للغاز = ١٣٠٠ كيلو جرام، و ١ ثانية، ع₁ للغازات = -٥ × ١٠ م³/ث، لأن السرعة لأسفل، ك₂ للصاروخ = ١٠ كجم، ق = ؟؟ ، كتس = ؟؟</p><p>أ) دفع الصاروخ = - دفع الغازات</p><p>ق محرك × و = - ك كت للغازات</p><p>ق محرك × ١ = - ك₁ ع₁ = - ١٣٠٠ × ( - ٥ × ١٠ م³ )</p><p>∴ ق محرك = ٦٥ × ١٠ نيوتن .</p><p>ب) ك كت للصاروخ = - ك كت للغازات</p><p>∴ ك كت للصاروخ = - ك₁ × ع₁</p><p>= - ١٣٠٠ × ( - ٥ × ١٠ م³ )</p><p>∴ ك كت للصاروخ = ٦٥ × ١٠ كجم. م³/ث أو (نيوتن . ث) .</p><h2>سرعة الإفلات من الجاذبية : Escape Velocity From Gravity</h2><p>عندما نتحدث عن وضع جسم يدور حول الأرض باستخدام صاروخ ذاتي الدفع (نفشي)، فإن هناك شيئين اثنين يجب أن نضعهما في الاعتبار وهما سرعة واتجاه الصاروخ. وللوصول إلى مدار حول الأرض فإن ذلك يتطلب إطلاق صاروخ بشكل أفقي وليس بشكل رأسي وبسرعة ٨ كم/ث تقريباً لأن هذه السرعة ستتمكن الجسم المحمول على الصاروخ من اكتمال دورته حول الأرض.</p><p>أما إذا أردنا للجسم أن يفلت من نطاق الجاذبية فلا بد من إعطائه سرعة رأسية عند إطلاقه مباشرة تسمى سرعة الإفلات، وهي تساوي ١١,٢ كم/ث على الأقل، وفي هذه السرعة يطلق الجسم بشكل رأسي، وينبغي أن تكون طاقة الحركة للجسم مساوية لطاقة الوضع له بعد الانطلاق مباشرة أو تزيد قليلاً، وهذه الطاقة تساوي ٦٢,٧٢ مليون جول لكل كيلو جرام منطلق، وإذا أعطى الصاروخ الحامل للجسم سرعة أكبر من ١١,٢ كم/ث فإن الجسم سوف يفلت من الجاذبية الأرضية ولن يعود ثانية، وكلما ابتعدنا خارجاً فإن طاقة وضع الجسم تزداد إلى حد معين بينما تقل طاقة الحركة له، وبعد فترة زمنية من صعوده تقل كل من طاقة وضعه وطاقة حركته</p><p>١٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

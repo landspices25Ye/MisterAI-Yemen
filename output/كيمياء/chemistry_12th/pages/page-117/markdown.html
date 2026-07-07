@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>- وضع كيف ترتبط ثلاثة جزئيات جلايسين.</p><p>من المثال السابق نلاحظ أن تكاثف حمضين أمينيين يعطي جزئياً يسمى ثنائي الببتيد، كما أن تكاثف ثلاثة حموض أمينية تعطي جزئياً يسمى ثلاثي الببتيد، ويتكرر العملية نحصل على عديد الببتيد (بوليمر) أو ما يسمى بالبروتين.</p><h1>ملاحظة</h1><p>البروتين: عبارة عن بوليمر يحتوي على ٥٠-٥٠٠٠ حمض أميني مرتبطة بروابط ببتيدية.</p><h1>نشاط (٦-٥)</h1><p>اكشف عن الزلال في البول.</p><h1>ثالثاً: الليبيدات Lipids</h1><p>تعتبر الليبيدات (الدهون والزيوت) جزءاً مهماً من غذائنا، وتعتبر من المصادر الغنية بالطاقة، فالطاقة الناتجة من احتراقها تعادل ضعف الطاقة الناتجة من احتراق الكربوهيدرات أو البروتينات وذلك لاحتوائها على نسب عالية من الكربون والهيدروجين، وتوجد في اللحوم والأسماك والحبوب وبعض الليبيدات تدخل في تكوين أغشية الخلايا وبعضها يدخل في تركيب بعض الهرمونات.</p><h1>تركيب الليبيدات:</h1><p>الليبيدات عبارة عن إستر مكون من كحول ثلاثي الهيدروكسيل (الجليسرول) مع ثلاثة جزئيات من حمض دهني (Fatty Acid)، الذي هو عبارة عن سلسلة هيدروكربونية طويلة أو قصيرة، وقد تكون مشبعة (رابطة أحادية)، أو غير مشبعة (رابطة مزدوجة) تنتهي بمجموعة كربوكسيل (COOH -)، كما هو موضح في الشكل (٦-٥).</p><p>١١٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

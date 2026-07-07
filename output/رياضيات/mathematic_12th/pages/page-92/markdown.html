@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-61.jpeg" alt="img-61.jpeg" /><p>الوحدة الثالثة</p><p>٢) احتمال أن تكون الكرتان بيضاوين هو: حا (ب) = $‫\frac{71}{50} \times \frac{6}{10} = \frac{21}{50}‬$‫ ( من تتبع المسارات في الشجرة )</p><p>٣) احتمال أن تكون الكرتان من لون واحد هو: حا (ج) = ‬$‫\frac{12}{25} \times \frac{21}{50} + \frac{6}{10} \times \frac{7}{10} + \frac{2}{10} \times \frac{3}{50} =‬$‫ ( هناك مساران أن تكون الكرتان بيضاوين أو حمراوين )</p><p>ثانياً : احتمال وقوع ب بشرط وقوع ج هو : حا (ج) = حا (ب) | ج = ‬$‫\frac{\text{حا (ب ج)}}{\text{حا (ج)}}‬$‫</p><p>وحيث إن : حا (ب ج) = حا (ب) ( لأن : ج = كرتان حمراوان ، كرتان بيضاوان ) ، ( ب = كرتان بيضاوان ) .</p><p>‬$‫\therefore \text{حا (ج)} = \frac{\text{حا (ب)}}{\text{حا (ج)}} = \frac{\frac{21}{50}}{\frac{12}{25}} \times \frac{21}{50} = \frac{7}{10}‬$‫ .</p><h3>ثالثاً : الحوادث المستقلة :</h3><p>يقال عن حادثتين t ، ب أنهما حادثتان مستقلتان إذا كان حدوث إحداهما لا يتأثر بحدوث (أو عدم) حدوث الأخرى ، أي أن استقلال حادثتين t ، ب يعني أن : حا (t | ب) = حا (t) أو حا (ب | t) = حا (ب) وبالتعويض في قانون حاصل الضرب نحصل على القانون : حا (t | ب) = حا (t) × حا (ب) وهو أيضاً شرط أساسي لكون t ، ب حادثتين مستقلتين .</p><h3>تعريف (٣ - ٥)</h3><p>إذا كانت t ، ب حادثتين مستقلتين فإن : حا (t | ب) = حا (t) × حا (ب) .</p><h3>مثال (٣ - ١١)</h3><p>إذا كان حا (t | ب) = حا (t) | حا (ب) + حا (ب) . أثبت أن : t ، ب حادثتان مستقلتان .</p><h3>الحل :</h3><p>نبحث في تحقق الشرط : حا (t | ب) = حا (t) | حا (ب) ؛ فإذا تحقق : كانت t ، ب حادثتين مستقلتين ، وإذا لم يتحقق : كانت t ، ب حادثتين غير مستقلتين .
+‬$‫\therefore \text{حا (t | ب) = حا (t) | حا (ب) + حا (ب) (معطي)}‬$‫
+$\therefore \text{حا (t | ب) = حا (t) + حا (ب) - حا (t) [مبرهنة (٣ - ٤) ]}‬$$ .</p><p>٩٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><p>وهكذا يصنع التقاء مرأتين، وهكذا يصنع التقاء قلبين.. فكيف بالتقاء العشرات من المرائي النفسية في نطاق واحد؟! وكيف بالتقاء العشرات من الضمائر والأفكار؟! إنَّ الفكرة الواحدة جدول منفصل. أمَّا الأفكار المتلاقية فهي المحيط الذي تتجمع فيه الجداول جميعاً، والفرق بينهما وبين الفكرة المنفصلة كالفرق بين الأفق الواسع والتيار الجارف، وبين الشطُّ الضيق والموج المحصور. وقد تختلف الموضوعات ظاهراً، أو على حسب العناوين المصطلح عليها، ولكنك إذا رددتها إلى هذا الأصل كان أبعد الموضوعات كأقرب الموضوعات من وراء العناوين.</p><p>أين غرائز الحشرات مثلاً من ثقافات الأديان؟</p><p>وأين ثقافات الأديان من قصيدة غزل وقصيدة هجاء؟</p><p>وأين هذه القصيدة أو تلك من تاريخ نهضة أو ثورة؟</p><p>وأين ترجمة فرد من تاريخ أمة؟</p><p>ظاهر الأمر أنَّها موضوعات تفتقر فيما بينها افتراق الشرق من الغرب، والشمال من الجنوب، وحقيقة الأمر أنَّها كلها مادة حياة، وكلها جداول تنبثق من ينبوع واحد وتعود إليه.</p><p>غرائز الحشرات بحث في أوائل الحياة.</p><p>وثقافات الأديان بحث في الحياة الخالدة الأبدية.</p><p>وقصيدة الغزل أو قصيدة الهجاء قبسان من حياة إنسان في حالي الحب والنقمة. ونهضة الأمم أو ثورتها هما جيشان الحياة في نفوس الملايين، وسيرة الفرد العظيم معرض لحياة إنسان ممتاز بين سائر الناس. وكلها أمواج تتلاقى في بحر واحد، وتخرج بنا من الجداول إلى المحيط الكبير.</p><p>٣٠</p><p><http://www.e-learning-moe.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

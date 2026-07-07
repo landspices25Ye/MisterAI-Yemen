@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الهندسة الفضائية</p><p>المطلوب : حساب قياس الزاوية الزوجية بين المستويين ( ا ب و ) ، ( ج ب و )</p><p>الحل : نصف ب و في النقطة و</p><p>$‫\therefore | ب ج | = | و ج | \quad (معطى)‬$‫</p><p>‬$‫\therefore \overline{ج و ل و ب} \quad (خواص المثلث المتساوي الساقين)‬$‫</p><p>‬$‫\therefore | ج | \quad (معطى) \quad (ب ج و)‬$‫</p><p>‬$‫\therefore \overline{ج و ل و ب} \quad (استنتاجاً)‬$‫</p><p>‬$‫\therefore | و | \quad (مبرهنة الأعمدة الثلاثة)‬$‫</p><p>‬$‫\therefore \text{المستوى } ( ا ب و ) \cap \text{المستوى } ( ج ب و ) = \overline{ب و}‬$‫</p><p>‬$‫\therefore \text{ (ا و ج) هي الزاوية الخطية للزاوية الزوجية بين المستويين (ا ب و) ، (ج ب و)}‬$‫</p><p>لنرمز لها بالرمز هـ .</p><p>‬$‫\therefore \text{ ب ج و } \Delta \text{ متساوي الساقين وقائم في ج } \quad \therefore \text{ و } ( \text{ب ب } ) = \text{ و } ( \text{و ب } ) = ٤٥‬$‫</p><p>‬$‫\text{جا } ( \text{و ب } ) = \frac{| و ج |}{| و ج |} \Leftarrow \frac{1}{\sqrt{7}} = \frac{| و ج |}{10}‬$‫</p><p>‬$‫\therefore | و ج | = \frac{10}{\sqrt{7}} \Leftarrow | و ج | = 5 \sqrt{7} \text{ سم}‬$‫</p><p>‬$‫\therefore | ج | = 5 \sqrt{7} \text{ سم}‬$‫</p><p>‬$‫\therefore \text{ظاه} = \frac{| ج |}{| و ج |}‬$‫</p><p>‬$‫\therefore \text{ظاه} = \frac{5 \sqrt{7}}{5 \sqrt{7}} =‬$‫</p><p>‬$‫\therefore \text{ظاه} = \sqrt{7}‬$‫</p><p>‬$‫\therefore \text{هـ} = 6‬$</p><h1>تعريف ( ٥ - ٤ )</h1><p>يتعاهد مستويان إذا كانت زاويتهما الخطية قائمة .</p><p>١٤٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

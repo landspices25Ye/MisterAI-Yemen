@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><p>أ - ما جمع كلمة شراب وما المقصود به في الآية ﴿يُخْرِجُ مِنْ بَطُونِهَا شَرَابًا﴾.</p><p>ب - بِمَ يُوحِي وَصْفَ الشَّرَابِ بِأَنَّهُ «مُخْتَلِفُ أَلْوَانِهِ»؟</p><p>ج - استخرج من الآيتين السابقتين:</p><p>- ما نوع المشتق: «مختلف»؟</p><p>- فعلاً مبنياً، وآخر معرباً.</p><p>د - أعرب ما تحته خط في الآيتين السابقتين.</p><p>٥ - يأتي الفعل (ضرب) بمعانٍ متعددة. استخدمه في ثلاث جمل من إنشائك على أن يكون له في كل جملة معنى مختلف.</p><p>٦ - وضح الغرض البلاغي من الاستفهام في الآيتين الآتيتين:</p><p>قال تعالى: ﴿أَفَبِنِعْمَةِ اللَّهِ يَجْحَدُونَ﴾ (٧١).</p><p>قال تعالى: ﴿أَفَبِالْبَاطِلِ يُؤْمِنُونَ وَبِنِعْمَتِ اللَّهِ هُمْ يَكْفُرُونَ﴾ (٧٢).</p><p>٧ - بين سبب كتابة الهمزة المتطرفة على السطر في الكلمات الآتية:</p><p>(السماء - ماء - شفاء - سواء).</p><p>٨ - في ضوء فهمك لآيات النص القرآني، اكتب مقالة علمية عن حياة النحل، وما أودعه الله فيه من أسرار الخلق، وعجيب المنافع للبشر.</p><h3>نشاط ذاتي</h3><p>ارجع إلى بعض كتب التفسير المتاحة لك، واكتب تفسيراً موجزاً لآيات النص القرآني.</p><p>١٠</p><p><http://www.e-learning-moe.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

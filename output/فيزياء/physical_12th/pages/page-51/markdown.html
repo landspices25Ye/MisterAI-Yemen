@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>$‫\text{ج}_\text{م} = \text{ت}_\text{ع} \times \text{م} \text{جا} \text{ج}_\text{ز} = \text{ج}_\text{م} \text{جا} \text{ج}_\text{ز} \dots \dots \dots (٣)‬$‫</p><p>‬$‫\text{ج}_\text{ح} = \text{ت}_\text{ع} \times \text{م} \text{ح} \text{جا} (\text{ج}_\text{ز} + \frac{\pi}{2}) = \text{ج}_\text{ح} \text{ج} \text{جا} (\text{ج}_\text{ز}) \dots (٤)‬$‫</p><p>‬$‫\text{ج}_\text{س} = \text{ت}_\text{ع} \times \text{م} \text{س} \text{ج} \text{جا} (\text{ج}_\text{ز} - \frac{\pi}{2}) = \text{ج}_\text{س} \text{ج} \text{جا} (\text{ج}_\text{ز}) \dots (٥)‬$‫</p><p>حيث (ج، ج، ج) هي رموز الجهود العظمى بين طرفي كل من المقاومة الأومية، والملف الحثي والمكثف، المتصلة معاً على التوالي بالدائرة المترددة وتحسب من العلاقات التالية:</p><p>‬$‫\text{ج}_\text{م} = \text{ت}_\text{ع} \times \text{م}‬$‫</p><p>‬$‫\text{ج}_\text{ح} = \text{ت}_\text{ع} \times \text{م} \text{ح}‬$‫</p><p>‬$‫\text{ج}_\text{س} = \text{ت}_\text{ع} \times \text{م} \text{س}‬$</p><img src="img-49.jpeg" alt="img-49.jpeg" /><p>شكل (١٤)</p><p>بما أن التيار المتردد المار خلال المكونات الثلاثة السابقة في الدائرة هونفس تيار المصدر المتردد في أية لحظة من الزمن ومن الممكن</p><p>رسم مخطط أطوار العناصر الثلاثة السابقة مجتمعة كما يوضحه شكل (١٤) في (أ، ب، ج)، والشكل الكلي (د) يمثل محصلة المتجهات الدوارة لكل من: (ج، ج، ج) والذي يكون مساوياً لمتجه دوار طوله يساوي القيمة العظمى لجهد مصدر الدائرة المتردد (ج) ويصنع زاوية طور (Φ) مع المتجه الدوار (ت)، والمتجهين (ج، ج، ج) باتجاهين متعاكسين وعلى نفس الخط ومن السهل حساب (ج، ج، ج) العمودي على المتجه (ج، م) كما في شكل (١٤هـ)</p><p>٤٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

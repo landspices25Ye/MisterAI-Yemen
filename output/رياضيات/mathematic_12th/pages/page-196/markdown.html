@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-170.jpeg" alt="img-170.jpeg" /><p>الوحدة السادسة</p><p>من الجدول (٦ - ٤) تلاحظ أن :</p><p>١ - للدالة د قيمة عظمى مطلقة عند س = ٢ ، وهي د (٢) = ٢ ، أي أن النقطة (٢ ، ٢) عظمى مطلقة .
+٢ - للدالة د قيمة صغرى مطلقة عند س = -١ ، وهي د (١) = -٤ ، أي أن النقطة (١ ، ٤) صغرى مطلقة .
+٣ - للدالة د قيمة عظمى محلية عند س = ١/٣ ، وهي د (١/٣) = ٤/٢٧ ، أي أن النقطة (١/٣ ، ٤/٢٧) عظمى محلية .
+٤ - للدالة د قيمة صغرى محلية عند س = ١ ، وهي د (١) = ٠ ؛ أي أن النقطة (١ ، ٠) صغرى محلية .</p><h1>مثال (٦ - ٣٧)</h1><p>أثبت أن للدالة د (س) = | س | + ٢ نقطة حرجة عند س = ٠ موضحاً نوعها .</p><h1>الحل :</h1><p>باستخدام تعريف المقياس نعيد تعريف الدالة بالصورة :</p><p>د (س) = { س + ٢ ، س ≤ ٠ ، د (س) = { ١ ، س < ٠ ، ٢ - س ، س ≥ ٠ }</p><p>∴ د (٠) = ١ ، د (٠) = -١</p><p>∴ د (٠) غير موجودة ، لأن د (٠) ≠ د (٠) .</p><p>أي عند س = ٠ يوجد للدالة د نقطة حرجة .</p><p>ولإيضاح نوع النقطة الحرجة يمكن دراسة الدالة عندما</p><p>س < ٠ ، س > ٠ كما يلي :</p><p>∴ د (س) = { ١ - ٠ ، ١ - ٠ ، ١ - ٠ ، ١ - ٠ ، ١ - ٠ ، ١ - ٠ ، ١ - ٠ ، ١ - ٠ ، ١ - ٠ ، ١ - ٠ ، ١ - ٠ ، ١ - ٠ ، ١ - ٠ ، ١ - ٠ ، ١ - ٠ ، ١ - ٠ ، ١ - ٠ }</p><p>∴ الدالة تتناقص قبل الصفر وتزايد بعده وهذا يعني أن النقطة (٠ ، ٢) صغرى مطلقة .</p><h1>تدريب (٦ - ٤)</h1><p>أوجد القيم القصوى للدالة :</p><p>د (س) = { س² ، ١ - ٠ ، ٢ - ٠ ، ٣ - ٠ ، ٢ - ٠ ، ٢ - ٠ ، ٢ - ٠ ، ٢ - ٠ ، ٢ - ٠ ، ٢ - ٠ }</p><p>على الفترة [١ - ٣] موضحاً نوعها .</p><h1>ملاحظة :</h1><p>يمكن التعرف على نوع القيم القصوى المحلية باختبار المشتقة الثانية إذا كانت الدالة قابلة للاشتقاق حتى المرتبة</p><p>الثانية تبعاً لشروط المبرهنة التالية :</p><p>١٩٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

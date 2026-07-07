@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>دمه، وإذا تكرر نقل نفس فصيلة الدم إليه فإن الأجسام المضادة تعمل على تخثير خلايا الدم الحمراء في الدم المنقول إليه مما قد يتسبب في وفاته، انظر الجدول (٣) الذي يوضح حالات نقل الدم بين المعطي والمستقبل.</p><p>جدول (٣)</p><p>|  الشخص المعطي | الشخص المستقبل | عدد مرات نقل الدم  |
+| --- | --- | --- |
+|  Rh^{+} | Rh^{+} | عدة مرات  |
+|  Rh^{-} | Rh^{+} | عدة مرات  |
+|  Rh^{+} | Rh^{-} | مرة واحدة فقط  |
+|  Rh^{-} | Rh^{-} | عدة مرات  |</p><p>- ما تأثير العامل الرايزيسي على الجنين في بطن أمه؟</p><p>عند تزاوج رجل موجب العامل الرايزيسي (صفة نقية) بامرأة سائبة العامل الرايزيسي فإن جميع الأجنة التي تحمل بهم الزوجة يكونون موجبي العامل الرايزيسي، وغالباً ما يولد الجنين الأول سليماً، ولكن أثناء ولادته ينتقل جزء من دمه الموجب العامل الرايزيسي إلى دم الأم السالب فيستجيب دم الأم مكوناً أجساماً مضادة، فيصبح دم الأم حاملاً لهذه الأجسام المضادة، وعندما تحمل الأم بالجنين الثاني تنتقل الأجسام المضادة من دمها إلى دم الجنين عبر المشيمة، فتعمل هذه الأجسام على إلصاق كريات الدم الحمراء في الجنين وتحليلها، فيصاب الجنين بفقر الدم وقد يؤدي إلى وفاته، وتزداد خطورة الأجسام المضادة في دم الأم على الأجنة في مرات الحمل التالية.</p><p>وقد ساعد التقدم الطبي الحديث في إنتاج مصل تحقن به الأم سائبة العامل الرايزيسي خلال الثلاثة أيام من ولادتها للجنين، فيعمل هذا المصل على إبطال مولدات الإلصاق المتسربة إلى الأم من الجنين مما يؤدي إلى عدم تكوين أجسام مضادة في دم الأم، وأيضاً أصبح بالإمكان تغيير دم الجنين وهو في رحم أمه كحل للمشكلة.</p><p>١٢٠</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

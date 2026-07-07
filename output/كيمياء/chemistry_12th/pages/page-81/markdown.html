@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>الجسيمات والإشعاعات الصادرة من الأنوية غير المستقرة</h2><p>تم اكتشاف عملية النشاط الإشعاعي الطبيعي في عام ١٨٩٦م على يد العالم الفرنسي هنري بيكريل (H. Becquerel)، الذي لاحظ أن بعض أملاح اليورانيوم تُصدِّر إشعاعات بدون وجود أي مؤثر خارجي، واتضح له أن هذه الأشعة تشبه الأشعة السينية التي اكتشفها «رونتيجن» عام ١٨٩٥م من حيث قدرتها على النفاذ خلال الأوساط المادية.</p><p>إلا أن العلماء توصلوا إلى تحديد بعض الخواص الأخرى التي تميّز هذه الإشعاعات، منها:</p><p>١ - لها تأثير على الألواح الحساسة.
+٢ - لا يتأثر معدل صدور هذه الإشعاعات بالضغط ودرجة الحرارة.
+٣ - لها القدرة على تأين الغازات.
+٤ - لها تأثيرات خطيرة ومدمرة على جسم الكائن الحي.
+٥ - تُحدِّث وميضاً عند سقوطها على بعض المواد الكيميائية مثل كبريتيد الخارصين.
+وقد اتضح بعد ذلك أن النشاط الإشعاعي يكون مصحوباً إما بانطلاق جسيمات مثل جسيمات ألفا ويرمز لها بالرمز ($‫\alpha‬$)، وجسيمات (بيتا) ويرمز لها بالرمز ($‫\beta^0‬$)، وجسيمات البوزيترون أو بيتا الموجبة ويرمز لها بالرمز ($‫\beta^0‬$). كما أن النشاط الإشعاعي قد يكون مصحوباً بانطلاق أشعة جاما ويرمز لها بالرمز ($‫\gamma^+‬$).
+ويمكن مقارنة خواص هذه الجسيمات والأشعة مع بعضها، كما يوضّحه الجدول (٢-٤).</p><p>|  م | اسم الجسيم أو الإشعاع | الرمز | الدرجة | القدرة على تأين الغازات | السرعة | القدرة على النفاذ  |
+| --- | --- | --- | --- | --- | --- | --- |
+|  ١ | جسيم ألفا $‫\text{He}_2^4‬$ | $‫\alpha‬$ | + | عالية | $‫\frac{1}{10}‬$ سرعة الضوء | محدودة فهي لا تستطيع النفاذ خلال قطعة من الورق  |
+|  ٢ | جسيم بيتا | $‫\beta^0‬$ | - | قليلة | تقارب سرعة الضوء | عالية إلى حد ما فهي تخترق قطعة من الورق  |
+|  ٣ | أشعة جاما | $‫\gamma‬$ | ليس لها شحنة | ضعيفة جداً | تساوي سرعة الضوء | عالية جداً فيمكنها اختراق قطعة سميكة من الرصاص أو الزجاج  |</p><p>جدول (٢-٤) بعض خواص الجسيمات والإشعاعات</p><p>٧٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

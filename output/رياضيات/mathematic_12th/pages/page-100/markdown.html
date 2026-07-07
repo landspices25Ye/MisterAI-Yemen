@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-65.jpeg" alt="img-65.jpeg" /><p>الوحدة الثالثة</p><h1>السحب مع الإعادة وبدون إعادة</h1><p>٣ - ٥</p><p>أولاً: السحب مع الإعادة :</p><p>السحب مع الإعادة هو السحب مرة أخرى بعد إعادة الشيء المسحوب في المرة السابقة بحيث لا تتأثر أي سحبة بالتي قبلها ، عندئذٍ تصبح الحوادث مستقلة عن بعضها بعضاً . وفي هذه الحالة يمكن أن نستخدم ما قد درسناه في متتالية التكرارات المستقلة وقانون الاحتمال الثنائي ( توزيع ذي الحدين ) ، والأمثلة التالية توضح ذلك .</p><p>مثال (٣ - ١٧)</p><p>صندوق يحتوي على ٦ كرات حمراوات ، ٤ كرات بيضاوات ، سحبت منه - عشوائياً - ٣ كرات مع الإعادة .
+احسب احتمال كلٍّ من الحوادث التالية :
+١) الثلاث الكرات المسحوبة حمراوات .
+٢) كرة واحدة حمراء .
+٣) كرة واحدة على الأقل بيضاء .</p><p>الحل : مجموع الكرات في الصندوق = ٦ + ٤ = ١٠ كرات .</p><p>نفرض أن : ١ هي حادثة سحب كرة حمراء
+$‫\therefore \text{حا}(١) = \frac{٦}{١٠} = ٠,٦‬$‫</p><p>وإذا اعتبرنا أن : ح = حا (١) = ٠,٦ ← ف = ١ - ح = ١ - ٠,٦ = ٠,٤ ، وحيث إن السحب من الصندوق هو ٣ كرات ← و = ٣ .</p><p>١) نفرض أن : ب هي حادثة الكرات الثلاث المسحوبة حمراوات (أي س = ٣) .</p><p>‬$‫\therefore \text{حا}(ب) = ٣ \times ٣ \times (٠,٦) \times (٠,٤) = ١ \times ٠,٢١٦ \times ١ = ٠,٢١٦ .‬$‫</p><p>٢) نفرض أن : ج هي حادثة سحب كرة واحدة حمراء (أي س = ١) .</p><p>‬$‫\therefore \text{حا}(ج) = ٣ \times ٣ \times (٠,٦) \times (٠,٤) = ٣ \times ٠,٦ \times ٠,١٦ = ٠,٢٨٨ .‬$‫</p><p>٣) نفرض أن : و هي حادثة سحب كرة واحدة على الأقل بيضاء .</p><p>‬$‫\therefore \text{حا}(و) = ١ - \text{حا}(\text{جميعهم حمراوات})‬$‫</p><p>‬$‫= ١ - \text{حا}(س = ٣)‬$‫</p><p>‬$‫= ١ - ٠,٢١٦‬$‫</p><p>‬$‫= ٠,٧٨٤‬$</p><p>٩٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

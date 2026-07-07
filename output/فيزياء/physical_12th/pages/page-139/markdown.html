@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>$‫R_H = \left( \frac{1}{\infty} - \frac{1}{2} \right) R_H = \frac{1}{\lambda}‬$‫</p><p>‬$‫\lambda = \frac{1}{R_H} = \frac{1}{10.9737,31} = 9,112,671 \times 10^{-6} \text{ سم}‬$‫</p><p>أو ‬$\lambda = 9,112,671$‫ أنجستروم، وهي أقصر الأطوال الموجية في سلسلة ليمان وأطولها هي :</p><p>‬$‫\frac{1}{\lambda} = \frac{1}{R_H} = \frac{1}{\frac{1}{2}} - \frac{1}{2} R_H = \frac{1}{\frac{1}{4}} = R_H‬$‫</p><p>‬$‫\lambda = \frac{4}{R_H 3} = 10 \times 1,215,023 \times 10^{-5} \text{ سم} = 1,215,05 \text{ أنجستروم} .‬$‫</p><p>انظر الشكل (١٧) .</p><h2>مثال (٢)</h2><p>أثيرت ذرات غاز الهيدروجين في الأنبوب المهبطي بقذفها بحزمة من الإلكترونات المنطلقة من المهبط بطاقة مقدارها ١٢,٠٩ إلكترون فولت . احسب ما يلي :</p><p>أ) طاقات المستويات المثارة في الذرة ( ط ن ) .</p><p>ب) الأعداد الكمية الرئيسية ( ن ) المناظرة لهذه المستويات .</p><p>ج) الأطوال الموجية التي يمكن أن تبعثها الذرة نتيجة لهذه الإثارة .</p><p>واذكر إلى أية سلسلة تنتمي هذه الأطوال الموجية، علماً بأن قيمتي</p><p>طاقة المستوى الأرضي ط‬$_{1}$‫ = - ١٣,٦ (إلكترون فولت) وثابت</p><p>ريدبيرج ‬$R_H = 10.9677,58 \text{ سم}^{-1}$‫ .</p><h2>الحل :</h2><p>المعطيات : ط‬$_{1}$‫ = - ١٣,٦ إلكترون فولت ، ‬$R_H = 10.9677,58 \text{ سم}^{-1}$‫</p><p>، ط‬$_{1}$ = ١٢,٠٩ (إلكترون فولت) هي الطاقة الخارجية التي أعطيت للذرة .</p><p>أ) في ذرة الهيدروجين غير المثارة يكون الإلكترون في المستوى الأرضي، ويمتلك</p><p>١٣٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

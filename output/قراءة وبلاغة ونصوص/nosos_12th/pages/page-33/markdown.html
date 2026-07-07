@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>أنهم أدخلوا على هذا الغرض شيئاً من التغيير والتطوير إذ تجاوزوا وصف المظاهر الشكلية إلى الانفعال بأسرار الجمال، والبحث عن جمال النفس؛ أي البحث عن جوانب عاطفية حقيقية.</p><p>٤- الوصف: لم يعد الوصف عند شعراء هذه المدرسة قاصراً على التصوير الحسي لمظاهر الطبيعة، بل تجاوز ذلك إلى بعث الحركة والحياة في الجمادات، ووصف معارك التحرير، وشهادتها.</p><h2>٢- الأغراض الجديدة:</h2><p>مرت بالوطن العربي أحداث وظروف أملت على الشعراء التفاعل مع تلك الأحداث، وظهرت أغراض جديدة تلائم التوجهات الإسلامية والقومية، وهي توجهات رأى فيها الشعراء وقوداً لمعارك التحرير ضد المحتل الأجنبي، وربما كان لثقافتهم الأجنبية أثر في إذكاء روح التجديد، ومن أهم هذه الأغراض ما يأتي:</p><h3>١- الشعر التاريخي:</h3><p>فالعرب في هذه الفترة بحاجة إلى إحياء ذكر أمجادهم والارتباط بماضيهم العريق؛ ولذلك كان لابد أن يحظى التاريخ بعناية الشعراء لإيقاظ الهمم وبعث الثقة بذلك الماضي الذي عاشت الأمة أجل أيامه.</p><h3>٢- الشعر الوطني:</h3><p>نشأت هذه النزعة الوطنية مصاحبة لتقل كاهل الاحتلال على الأمة، فنما وعي قومي، ووطني تمثل في كثير من قصائد شعراء هذه الحقبة الزمنية، من أمثال أحمد شوقي، وحافظ إبراهيم، وأحمد محرم، والزهاوي، والرصافي، وكان لهؤلاء دور بارز في كراهة الاحتلال، ومقاومته والتحريض عليه، كقول شوقي:</p><p>وللمستعمرين - وإن ألنوا - قلوب كالحجارة لاترق</p><p>وقول الرصافي متهكماً بحال الأمة:</p><p>يا قوم لا تتكلموا إن الكلام محرم
+ناموا ولا تستيقظوا ما فاز إلا النوم</p><h3>٣- دعوة الإصلاح الاجتماعي الإسلامي: الشعر الاجتماعي الإسلامي:</h3><p>صاحب الاتجاهين السابقين اتجاه ثالث، يرى أن الإصلاح الاجتماعي والسياسي، لا يستقيم إلا بإذكاء الروح الإسلامية لدى الشعوب العربية، ولذلك عني الشعراء مثل البارودي، وشوقي، وحافظ، ومحمود غنيم، وغيرهم بالتاريخ الإسلامي، والمدائح النبوية، وإصلاح وضع</p><p>٣١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

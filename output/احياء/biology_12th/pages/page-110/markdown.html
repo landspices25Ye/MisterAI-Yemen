@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>جدول (١) الصفات المتضادة في نبات البازلاء</h1><p>|  الشكل الظاهري | الشكل الجيني | هل الصفة نقية أم هجينة؟ | العدد | النسبة للشكل الظاهري  |
+| --- | --- | --- | --- | --- |
+|  مستدير أصفر | RRYY | مستدير (نقي) أصفر (نقي). | ١ | ٩  |
+|   |  RRYy | مستدير (نقي) أصفر (هجين). | ٢  |   |
+|   |  RrYY | مستدير (هجين) أصفر (نقي). | ٢  |   |
+|   |  RrYy | مستدير (هجين) أصفر (هجين). | ٤  |   |
+|  مستدير أخضر | RRyy | مستدير (نقي) أخضر (نقي). | ١ | ٣  |
+|   |  Rryy | مستدير (هجين) أخضر (نقي). | ٢  |   |
+|  مجعد أصفر | rrYY | مجعد (نقي) أصفر (نقي). | ١ | ٣  |
+|   |  rrYy | مجعد (نقي) أصفر (هجين). | ٢  |   |
+|  مجعد أخضر | rryy | مجعد (نقي) أخضر (نقي). | ١ | ١  |</p><p>من خلال دراستك لأفراد الجيل البتوي الثاني في الشكل (١١) والجدول (١):</p><p>- ما نسبة البذور الصفراء إلى الخضراء في الجيل البتوي الثاني؟</p><p>- ما نسبة البذور المستديرة إلى المجعدة؟</p><p>لاحظ أنه عندما تحسب عدد البذور التي تحمل اللون الأصفر ستجد أنها (١٢)، وأن عدد البذور التي تحمل اللون الأخضر (٤) مما يعني أن نسبة اللون الأصفر إلى اللون الأخضر (١:٣)، وعندما تحسب أعداد البذور المستديرة والمجعدة ستجد أن النسبة بينهما أيضاً (١:٣)، وهذا ما توصل إليه مندل، فقد لاحظ أن النسبة في توارث الصفات المتضادة هي نفسها التي حصل عليها في تجاربه السابقة على زوج واحد من الصفات (١:٣)، وهذا يعني أن توارث لون البذرة لا يرتبط بتوارث شكلها، أي إن توارث صفتي اللون الأصفر والأخضر المتضادتين يتم بشكل مستقل عن توارث صفتي الشكل المستدير والمجعد للبذور. وقد ساعدت هذه النتائج مندل للتوصل إلى قانون التوزيع الحر للصفات الذي ينص على أن:</p><p>العاملين الوراثيين للصفة ينفصلان عن بعضهما ويتوزعان في الأمشاج بصورة مستقلة عن العاملين الوراثيين للصفة الأخرى.</p><p>١١٠</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

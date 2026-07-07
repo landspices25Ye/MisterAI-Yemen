@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>كذلك عند استخدام المطياف Spectroscope في تحليل الطيف الشمسي نحصل على نفس الألوان كما يوضحه الشكل (٤). وقد ثبت أن ما يصل إلى سطح الأرض من إشعاعات شمسية تنقسم إلى منطقتين أساسيتين هما :</p><p><strong>المنطقة الأولى :</strong> النافذة الضوئية وتحتوي على</p><img src="img-186.jpeg" alt="img-186.jpeg" /><p>شكل (٤) الطيف الشمسي المرئي</p><p>١- الأشعة المرئية أو الطيف المرئي والتي تضم المنطقة الطيفية ذات الأطوال الموجية من (٠,٤ ميكرو متر) إلى (٠,٧ ميكرو متر) وما يصل منها إلى</p><p>الأرض هو جزء ضئيل جداً من الطيف الشمسي، وهي التي تبث النور وتهب الحياة لكل الكائنات الحية. كما يصل إلى سطح الأرض جزء ضئيل أيضاً من أشعة المنطقة القريبة من الأشعة فوق البنفسجية ذات الأطوال الموجية :</p><p>$‫(٠,٤ \text{ ميكرو متر} > ٠,٣ \text{ ميكرو متر})‬$</p><p>وعلى الرغم من قلة هذه الأشعة إلا أن التعرض لها لمدة طويلة يؤدي إلى حروق جلدية.</p><p>٢- الأشعة غير المرئية : وتضم المنطقة الطيفية ذات الأطوال الموجية من (٠,٧ ميكرو متر) إلى (١٠٠ ميكرو متر)، وهي خارج حدود الطيف المرئي في منطقة ما قبل الأحمر والمعروفة باسم منطقة الأشعة تحت الحمراء Infrared Region، أو الأشعة الحرارية وهي التي تعطينا الدفء والحرارة، كما تضم الأشعة غير المرئية منطقة</p><p>ما بعد البنفسجي والمسمى الأشعة فوق البنفسجية Ultraviolet Region</p><p><strong>المنطقة الثانية :</strong> منطقة الأمواج الراديوية Radio Waves Region</p><img src="img-187.jpeg" alt="img-187.jpeg" /><p>شكل (٥)</p><p>وتضم الأطوال الموجية من واحد ملليمتر إلى عشرة أمتار. هل تصل الإشعاعات الشمسية إلى الأرض بصورة مباشرة ؟</p><p>يتضح من الشكل (٥) أن الإشعاع الشمسي الذي يصل إلى الأرض ينقسم وفقاً للطريقة التي يصل بها إلى :</p><p>١٩٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

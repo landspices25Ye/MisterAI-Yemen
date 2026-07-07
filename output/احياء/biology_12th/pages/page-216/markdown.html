@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>وترتكز هذه الرواسب مباشرة على صخور القاعدة النارية والمتحولة، وتعتبر أقدم الرواسب، وتتكون من الحجر الرملي الأبيض المكون من حبيبات جيدة الاستدارة من الكوارتز المحتوي على عدسات رقيقة من الكولجلويميرات، كما تحتوي على عقد حديدية وشوائب طينية.</p><p>وقد أمكن تحديد عمرها بالاردوفيشي - البرمي بمضاهاتها بمثيلاتها في السعودية حيث إنها لا تحتوي على حفريات.</p><p>٢ - قرب نهاية هذه الحقبة في أواخر عصر البرمي تكون الجليد على قمم الجبال، وعند ذوبانه نقلت بعض الرواسب الجليدية إلى بحيرات عميقة، فترسبت صخور الطفل الوريقية الداكنة اللون، والتي تحتوي على جلاميد جليدية، ومواد عضوية، وأكاسيد حديدية، بالإضافة إلى معادن طينية، وتتركز صخور الطفل هذه في مناطق محدودة للغاية في غرب صعدة ومنطقة كحلان. وتتواجد الصخور الترسيبية من العصر الكمبري إلى العصر البرمي تحت الطبقة السطحية للمناطق الشرقية من اليمن.</p><h3>- ثانياً : حقبة الحياة المتوسطة (Mesozoic Era) :</h3><p>تميزت بداية هذه الحقبة (الجوارسي المبكر) بمناخ دافئ وهبوط في سطح الأرض في شمال اليمن فتكونت أحواض ترسيبية ثانوية، ترسبت فيها راوسب قارية رملية حصوية حمراء اللون إلى شاطئية، بالإضافة إلى رواسب طينية خضراء ورمادية اللون بها بعض الحفريات النباتية.</p><p>ومع بداية العصر الجوارسي الأوسط غمر البحر معظم الأرض اليمنية وغمرت تماماً في العصر الجوارسي المتأخر، فترسبت صخور جيرية ودولوميتية بحرية غنية بالحفريات كالرخويات والمرجان والرخويات (الفورا منيفرا) والجلد شوكيات، بالإضافة إلى الطفل والحجر الرملي، وبيئة هذه الرواسب بحرية غير عميقة (رصيف قاري).</p><p>وفي أواخر العصر الجوارسي بدأ تفهقر (انحسار) البحر ونشأ عن ذلك تكون عدد من البحيرات (Lagoons) الشبيهة معزولة عن الشاطئ برواسيه الجبسية والملحية المميزة : كالملح والجبس في صافر (مارب) وفي رملة السبعتين (شبوة)، والجبس كما في الغراس (صنعاء).</p><p>٢١٦</p><p>الأحياء للصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>الشعر العربي في العصر الحديث</h2><p>في الدرس السابق تحدثنا عن تاريخ عصر النهضة، وعوامل نهضة الأدب العربي، ومظاهر تلك النهضة، وعرفنا كذلك اتجاهات الأدب وميادين الإصلاح الديني والسياسي والاجتماعي.</p><p>وستتناول هنا تطور الشعر العربي الحديث ومدارسه وسماته.</p><p>إن نضوج عوامل الوعي ونموها قد أتى أكله، وظهرت آثاره، إذ ساد التطور مناحي الحياة جميعاً منذ أن انبثق عصر النهضة، وقد نال الأدب نصيبه من التطور ولا سيما الشعر؛ فالشعراء ليسوا بمعزل عن الحياة، بل كانوا -دوماً- من صناعها.</p><p>لذلك نقول: إن الشعر منذ أواخر القرن التاسع عشر الميلادي حتى منتصف القرن العشرين قد مر بمرحلتين: الأولى مرحلة الإحياء التي اصطلح على تسميتها بالمدرسة الكلاسيكية، الثانية مرحلة التجديد، وتشمل مدارس التجديد الرومانسي المتمثلة في (مدرسة الديوان، ومدرسة المهجر، ومدرسة أبولو)، بيد أن شعراء المرحلة الأولى قد تباينوا ثقافة وأغراضاً وأساليب. لذلك استحسن النقاد تصنيفهم إلى طائفتين:</p><h3>الطائفة الأولى: الكلاسيكية القديمة:</h3><p>الشعراء الذين عاشوا على تراث العصرين المملوكي والعثماني، وهو ما يعرف بعصر الجمود الأدبي، وقد اقتصر شعرهم على المدح والرثاء والأحاجي والتهاني، وهي الأغراض التي هيمنت على شعر العصرين المذكورين؛ إذ كان الشعر آنذاك -في معظمه- يتخذ وسيلة للتكسب، والتقرب من ذوي الجاه والسلطان، وكان بدهياً والحالة هذه أن يغلب على أساليبهم التكلف والمحسنات اللفظية التي ازدحمت بها قصائدهم، فصارت هدفاً في ذاتها، ولم تعد وسيلة إلى تحسين الأسلوب، وكان من أبرز شعراء هذه الطائفة، الشيخ علي (أبو النصر)، والشيخ حسن العطار، والشيخ علي درويش وغيرهم.</p><h3>الطائفة الثانية: مدرسة الإحياء "الكلاسيكية":</h3><p>وأصحاب هذه الطائفة أولئك الشعراء الذين أتيح لهم قدر من الثقافة الجديدة، واستيقظت فيهم المشاعر النفسية والوطنية والاجتماعية والسياسية، فظهرت في شعرهم بعض ملامح التجديد. وهؤلاء يمثلون مدرسة البعث والإحياء؛ إذ كانوا يرون</p><p>٢٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

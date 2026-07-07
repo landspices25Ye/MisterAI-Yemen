@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-134.jpeg" alt="img-134.jpeg" /><p>الوحدة الخامسة</p><img src="img-135.jpeg" alt="img-135.jpeg" /><p>شكل (٥-٢٢)</p><p>تأمل الشكل (٥-٢٢)</p><p>$‫\text{ق} \times (\text{ب} \times \text{ج}) = 90^\circ‬$‫</p><p>وهي زاوية خطية للزاوية الزوجية (س ١ ل س ٢)</p><p>‬$‫\therefore \text{ق} \times [\text{س} \times \text{ج}] = 90^\circ‬$‫</p><p>‬$‫\therefore \text{س} \times \text{ج} = 2\pi‬$‫</p><h1>تعريف (٥-٥)</h1><p>الزاويتان الزوجيتان المتطابقتان هما زاويتان قياسا زاويتيهما الخطيتين متساويان .</p><h1>ملاحظة :</h1><p>١) إذا تقاطع مستويان فإننا نحصل على أربع زوايا زوجية وكل زاويتين متقابلتين بالحرف متساويتان بالقياس وكل زاويتين متجاورتين متكاملتان .
+٢) الزاوية الزوجية بين مستويين غير منطبقين هي الزاوية الأصغر بينهما .</p><h1>مبرهنة (٥-٨)</h1><p>إذا كان ل مستقيما عموديا على مستوى  ‬$\text{ح}$‫  ؛ فإن كل مستوى ك ماراً بالمستقيم ل يكون عموديا على  ‬$\text{ح}$‫  .</p><img src="img-136.jpeg" alt="img-136.jpeg" /><p>شكل (٥-٢٣)</p><p>المعطيات : ل ل ح ، ل ح ك ، ل ح = { ب } .</p><p>‬$‫\text{ك} \text{ح} = \text{ق} \text{ [شكل (٥-٢٣) ]}‬$‫</p><p>المطلوب : إثبات أن ح ل ك .</p><p>البرهان : نرسم في ح القطعة المستقيمة ا ب ل ق</p><p>‬$‫\therefore \text{ل} \text{ح} \text{ح} \text{ح} \text{ح} \text{ح} \text{ح} \text{ح} \text{ح} \text{ح}‬$‫</p><p>‬$‫\therefore \text{ل} \text{ح} \text{ق} \text{ [عكس حقيقة (٥-١) ]}‬$‫</p><p>‬$‫\therefore \text{ا ب ل ق} \text{ (عملاً)}‬$‫</p><p>‬$‫\therefore \text{ج} \text{ (ا ب ج) هي الزاوية الخطية للزاوية الزوجية (ح ق ك) .}‬$</p><p>١٥٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

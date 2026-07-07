@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-46.jpeg" alt="img-46.jpeg" /><h2>أسئلة وتدريبات</h2><p>١ - أين أكمل الشاعر دراسته العليا؟ وما الميزة التي توفرت له دون غيره من الشعراء؟
+٢ - اذكر أهم أعمال الشاعر الأدبية.
+٣ - بم تميز أسلوب الشاعر؟
+٤ - ما الفكرة الأساسية التي تضمنتها الأبيات؟
+٥ - تميز النص بتكرار بعض الكلمات، اذكر أمثلة لهذا التكرار مبيناً الغرض البلاغي منه.
+٦ - صور الشاعر تفرد اليمنيين بوحدتهم، استدل على ذلك من النص.
+٧ - حدّد من العبارة الآتية صورة بلاغية، وبيّن نوعها.
+( كبرياء النهار العتيد تميل اختياراً بأفواجنا ).
+٨ - ما المعنى الذي أراده الشاعر بقوله:
+( على هامة النجم صك الكفاح وسام انتصاراتنا ).
+٩ - اختر الإجابة الصحيحة من بين الأقواس:
+أ - يعد لطفي أمان من الشعراء:
+( الرومانسيين - الكلاسيكيين - الواقعيين ).
+ب - تأثر لطفي أمان تأثراً بالغاً بالشاعر:
+( حافظ إبراهيم - محمود درويش - علي محمود طه ).
+ج - إضافة كلمة (أخ) إلى المتكلم توحي بـ:
+( الانتماء - الاحتماء - الانتقاء ).</p><p>١٢٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

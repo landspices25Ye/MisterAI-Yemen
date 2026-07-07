@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>- المترسبات : وتشمل المواد التي تنجرف مع المياه من سطح التربة لتترسب في قيعان الأنهار والبحيرات ويتراكمها تؤدي إلى اختناق الكائنات الحية.</p><h1>تلوث المياه الجوفية :</h1><p>المياه الجوفية أقل تلوثاً من المياه السطحية، وذلك لأن طبقات التربة تقوم بترشيح المياه وتخليصها من المواد العضوية العالقة والبكتيريا، كما أن التربة تساعد على إزالة بعض المواد الكيميائية، قبل وصولها إلى باطن الأرض عن طريق الامتصاص أو التبادل الأيوني ولكن إذا زادت كمية المواد الكيميائية وتعددت فإن قدرة التربة على تنقية المياه تقل.</p><h1>ملوثات المياه الجوفية :</h1><p>- الكميات الكبيرة من الأسمدة الكيميائية والمبيدات التي تذوب وتتخلل مسام التربة إلى أن تصل إلى المياه الجوفية.
+- مياه المجاري والبيارات : والتي قد تتسرب خلال الشقوق الموجودة في الأرض أو نتيجة لقرب هذه المياه من مصادر التلوث.
+- آبار الحقن : والتي تستخدم للتخلص من النفايات الصناعية والإشعاعية وذلك عن طريق حقنها في آبار تمتد لأعماق كبيرة في جوف الأرض وبذلك تكون قريبة من مصادر المياه الجوفية، وقد يحدث تلفاً في أنابيب الآبار فيؤدي إلى تسرب الملوثات إلى المياه الجوفية القريبة.
+- برك التخزين : والمستخدمة للتخلص من النفايات الصلبة أو السائلة وذلك بدفنها في برك خاصة في باطن الأرض والتي قد تتسرب منها الملوثات إلى المياه القريبة.</p><h1>ملوثات التربة:</h1><h1>التلوث الكيميائي، ويشمل :</h1><p>- التلوث بالمبيدات الحشرية والتي تقتل الحشرات المستهلكة للمحاصيل أو الناقلة للأمراض إلى البشر والمواشي، وكذلك المبيدات الفطرية (لقتل الفطريات) أو مبيدات الأعشاب. وكل هذه المبيدات تسبب اختلالاً في التوازن البيئي وأحياناً تقتل الضار والنافع معاً من الحشرات أو الفطريات، وتؤدي أيضاً لتلوث الغذاء لأنها تمتص إلى داخل المحاصيل الزراعية.</p><p>١٧٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

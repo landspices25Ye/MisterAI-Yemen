@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>الخلايا الكهروكيميائية Electrochemical Cells</h2><p>تتضمَّن تفاعلات الأكسدة والاختزال انتقال الإلكترونات من المادة التي تأكسدت إلى المادة التي اختزلت، وإذا كانت المادة المختزلة والمؤكسدة على اتصال، صاحب انتقال الإلكترونات طاقة حرارية.</p><img src="img-32.jpeg" alt="img-32.jpeg" /><p>شكل (١-٣) الخلايا الكهروكيميائية</p><p>الشكل (١-٣) يظهر ساقاً من الزنك (الخارصين) موضوعة في محلول من كبريتات النحاس، ونتيجة لهذا الاتصال يفقد الزنك إلكترونات تنتقل إلى أيونات النحاس الموجودة في المحلول والتي تكتسبها وتترسب على شكل ذرات نحاس في قاع الإناء وتصاحب عملية انتقال الإلكترونات بين النحاس والزنك انطلاق طاقة على هيئة حرارة.</p><p>أما إذا فصلنا بين المادة المتأكسدة والمادة المختزلة فإن انتقال الإلكترونات يكون مصحوباً بانطلاق طاقة كهربية بدلاً عن الطاقة الحرارية.</p><p>وقد توضع المادة المتأكسدة والمادة المختزلة في إناء واحد ويُفصَّل المحلولان الإلكتروليتان عن بعضهما بواسطة حاجز مسامي، وقد توضع المادتان في إنائين منفصلين ويتصلان بواسطة قنطرة ملحية تسمح بمرور الأيونات بين المحلولين.</p><p>٤٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

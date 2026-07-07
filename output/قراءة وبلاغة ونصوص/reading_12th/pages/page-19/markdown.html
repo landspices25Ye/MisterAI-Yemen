@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>ويحرر وجودها ومصيرها، جاء هؤلاء وراء رسولهم العظيم ثواراً ومحررين..
+وحين كانت تهيب بمن يستشرف للحضارة الإنسانية مطالع جديدة ورشيدة جاء
+هؤلاء روَّاداً ومستشرفين..».</p><p>أ – تكررت كلمتا «جاء وحين». ماذا أفاد تكرارهما في السياق؟</p><p>ب – ابحث في المعجم عن معاني الكلمات الآتية:</p><p>(أوان - ناسكين - يستشرف - روَّاد).</p><p>ج – استخرج من الفقرة السابقة صورتين بلاغيتين، وبين نوع كل منهما،
+وقيمتها الفنية.</p><p>د – استعمل الفعل (يضع) في ثلاث جمل من إنشائك على أن يكون له في
+كل جملة معنى مختلف.</p><p>٤ – وضح سبب كتابة الألف اللينة نهاية الكلمة على هذه الصورة في الكلمات الآتية:
+(الدنيا - تناهى - الكبرى - يحيا).</p><p>٥ – اقرأ الفقرة الآتية، ثم أجب عن الأسئلة التي تليها:</p><p>«مهما تَتَبَارَى القرائح والأفهام والأقلام متحدثة عنه، عازفة أناشيد عظمته،
+فستظل جميعاً كأن لم تبرح مكانها، ولم تحرك بالقول لسانها. وحسبنا – إذن –
+أن نبصر في ضوء شعاع من ضيائه الغامر بعض سمات عظمته النادرة التي نادت
+إليه ولاء المؤمنين، وجعلتهم يرون فيه الهدف والطريق.. والمعلم والصديق..».</p><p>أ – هات مرادف كلمة (تتبارى) وضد كلمة (ولاء) وجمع كلمة (لسان).</p><p>ب – عيّن نوع كل مشتق، في الكلمات التالية:</p><p>(عازفة - مكانها - المؤمنين).</p><p>ج – وضح جمال الصورة الآتية:</p><p>– (عازفة أناشيد عظمته).</p><p>د – أعرب ما تحته خط من الكلمات في الفقرة السابقة.</p><p>١٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

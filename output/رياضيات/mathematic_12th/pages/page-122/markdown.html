@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-96.jpeg" alt="img-96.jpeg" /><p>الوحدة الرابعة</p><h1>تعريف (٤ - ٦)</h1><p>١- المستقيم المار بالبورتين م، و م يُسمَّى المحور القاطع (أو المحور البؤري).
+٢- النقطتان هـ (١، ٠)، هـ (٠، ١)، (نقطتا تقاطع القطع مع محوره القاطع) تسميان <strong>رأسي القطع</strong>. ويُدعى الطول هـ، هـ بطول المحور القاطع.
+٣- المنصف العمودي للقطعة المستقيمة م، م يُسمَّى المحور المرافق. ويُدعى الطول ع، ع بطول المحور المرافق.
+٤- تسمَّى النقطة و، (نقطة تقاطع هذين المحورين) <strong>مركز القطع الزائد</strong>.</p><h1>ملاحظات :</h1><p>في معادلة القطع الزائد $‫\frac{\text{ص}^2}{\text{ب}^2} - \frac{\text{ص}^2}{\text{ب}^2} = 1‬$‫ [ انظر شكل (٤ - ١٩) ] تلاحظ أن :</p><p>١- القطع الزائد متماثل بالنسبة لمحوري الإحداثيات.
+٢- طول المحور القاطع ١٢، وطول المحور المرافق ٢ ب.</p><p>٣- التحالف المركزي ‬$‫\text{ي} = \frac{\text{ج}}{\text{أ}} = \sqrt{\frac{\text{ب}^2}{\text{أ}}} = \text{حيث ي} < 1‬$‫.</p><p>٤- بؤرتي القطع الزائد هما (± ١، ± ٠) = (± ٠، ± ٠).</p><p>٥- معادلتي الدليلين هما : ‬$‫\text{س} = \pm \frac{1}{\text{ي}} = \pm \frac{1}{\text{ج}}‬$‫.</p><p>وإذا أخذنا محور الصادات ماراً ببؤرتي القطع الزائد، فعندئذ تكون البؤرتان م، (٠، ج)، م، (٠، ج) وتصبح معادلة القطع الزائد، هي :</p><p>‬$‫(٨ - ٤) \dots \dots \dots‬$‫</p><p>‬$‫\text{ص}^2 / \text{ب}^2 = 1‬$‫</p><p>حيث ب = ج² - ٢ ويكون شكل القطع كما في شكل (٤ - ٢٠)، حيث محوره القاطع على محور الصادات ومحوره المرافق على محور السينات ورأساه النقطتين (٠، ± ١) ومعادلتا</p><p>الدليلين ‬$‫\text{ص} = \pm \frac{1}{\text{ي}}‬$،</p><p>وهكذا فهناك وضعان للقطع الزائد : الأول كما في شكل (٤ - ١٩)، والآخر كما في شكل (٤ - ٢٠).</p><img src="img-97.jpeg" alt="img-97.jpeg" /><p>١٢٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

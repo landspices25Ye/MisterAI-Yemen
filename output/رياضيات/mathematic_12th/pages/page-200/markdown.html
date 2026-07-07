@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-172.jpeg" alt="img-172.jpeg" /><p>الوحدة السادسة</p><h1>ولحل المسائل التطبيقية على القيم القصوى يمكن اتباع الخطوات التالية :</h1><p>١) اقرأ المسألة وحدد المتغيرات ، وارسم شكلاً تخطيطياً للمسألة .
+٢) حدد المتغير المطلوب إيجاد قيمته القصوى وكتابة المعادلة التي تربط هذا المتغير بالمتغيرات الأخرى .
+٣) كتابة المتغير المطلوب إيجاد قيمته القصوى كدالة في متغير واحد بدلالة البيانات المعطاة في المسألة .
+٤) حدد مجال الدالة الناتجة ( إن أمكن ) .
+٥) استخدم المعلومات التي سبق دراستها في تحديد القيمة القصوى المطلوبة .</p><h1>مثال (٦ - ٤١)</h1><p>يُراد صنع مستطيل من سلك طوله ٢٠ سم ، أوجد بُعدي هذا المستطيل بحيث تكون مساحته أكبر ما يمكن .</p><h1>الحل :</h1><p>نفرض أن عرض المستطيل = س سم
+∴ طول المستطيل = ( ١٠ - س ) سم</p><p>فتكون : مساحة المستطيل = ( ١٠ - س ) × س = ١٠ س - س²</p><p>ولإيجاد النقطة الحرجة نجد أن :</p><p>د (س) = ١٠ - ٢ س = ٠
+س = ٥</p><p>وبالتالي فإن : د (٥) = ٢٥ ، د (٠) = ٠ ، د (١٠) = ٠</p><p>∴ طول المستطيل = ٥ سم ، وعرضه = ٥ سم لكي تكون مساحة المستطيل أكبر ما يمكن .</p><h1>مثال (٦ - ٤٢)</h1><p>متوازي مستطيلات قاعدته مربع طول ضلعه = س سم ،</p><p>ومجموع أطوال أحرفه تساوي ٣٠٠ سم .</p><p>أثبت أن حجمه يساوي س² (٧٥ - ٢) ، ثم أوجد</p><p>أبعاد متوازي المستطيلات عندما يكون حجمه أكبر ما يمكن .</p><img src="img-173.jpeg" alt="img-173.jpeg" /><h1>الحل :</h1><p>نفرض أن حجم متوازي المستطيلات ح = س² ل (١)...</p><p>[ انظر الشكل (٦ - ١٣) ] .</p><p>وللتعبير عن ل بدلالة س نستخدم المعادلة :</p><p>١٩٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

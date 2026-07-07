@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>نشاط (٧)</p><p>لاحظ العلاقة (٣) السابقة المستخدمة لتعيين المفاعلة الحثية، ثم أجب عن الآتي:
+١ - مانوع التناسب بين المفاعلة الحثية وكل من: تردد التيار ومعامل الحث الذاتي للملف؟
+٢ - اشرح المنحنيات في الرسم البياني الموضح في شكل (١١) بالنسبة لزاوية الطور لكل منهما، ثم قَدَّمَ إجابتك لمدرسك.</p><p>مثال (٤) وصل ملف حثي بمصدر تيار متردد تردده (٥٠) هيرتز والحث الذاتي للملف ٠,٧ هنري. فإذا كانت القيمة العظمى لشدة التيار المار في الدائرة هي ٢,٢ أمبير. احسب القوة الدافعة العظمى لمصدر التيار المتردد.</p><p>الحل : $‫\therefore \sigma = f \pi z‬$‫</p><p>‬$‫\therefore \sigma = 2 \times \frac{22}{7} \times 0,7 \times 220 \text{ أوم}‬$‫</p><p>‬$‫\text{وبما أن : } \sigma = \frac{d_e}{d_s}‬$‫</p><p>‬$‫\therefore d_e = 2 \times \sigma = 2,2 \times 220 = 484 \text{ فولت.}‬$</p><h1>مقاومة أومية وملف حثي ومكثف متصلة معاً على التوالي بمصدر تيار كهربائي متردد:</h1><p>في الشكل (١٢) وصلت مقاومة أومية (م) وملف حثي، ومكثف كهربائي بمصدر تيار متردد على التوالي، وهذه الدائرة تعاني من مقاومة للتيار ناتجة من أسلاك التوصيل والمقاومة الأومية بالإضافة إلى المفاعلة الحثية والمفاعلة السعوية نتيجة لوجود الملف الحثي والمكثف،</p><img src="img-47.jpeg" alt="img-47.jpeg" /><p>شكل (١٢)</p><p>٤٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

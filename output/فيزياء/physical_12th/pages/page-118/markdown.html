@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-112.jpeg" alt="img-112.jpeg" /><img src="img-113.jpeg" alt="img-113.jpeg" /><p>شكل (١)</p><p>١- الذرة متعادلة كهربائياً .
+٢- الأيونات الموجبة لها تقريباً نفس كتلة الذرة .
+٣- الإلكترونات السالبة أخف بكثير من الأيونات الموجبة .
+هذه الملاحظات والحقائق العلمية أدت بالعالم تومسون إلى إعلان أول نموذج للذرة عام ١٩٠٤م، وينص على أن :</p><p>«الذرة شبيهة بكرة مصمتة تتوزع بداخلها الشحنات الموجبة بانتظام وتتخللها الإلكترونات السالبة بحيث يكون مجموعها مساوياً للشحنة الموجبة» .</p><img src="img-114.jpeg" alt="img-114.jpeg" /><p>شكل (٢)</p><p>وقد سمي هذا النموذج بفطيرة البرقوق، شكل (١)، ويمكن تصوره أيضاً كالبطيخة، المادة الحمراء فيها هي الشحنة الموجبة والبذور السوداء التي تتخللها هي الإلكترونات انظر الشكل (٢) .</p><p>وكان لهذا النموذج الذري آنذاك بعض المزايا، منها أن تصور الذرة على أنها عبارة عن كرة صغيرة مصقولة مرنة كانت خاصية ضرورية لتفسير النظرية الحركية للغازات .</p><p>وقد عهد تومسون لأحد طلابه وهو (رذر فورد) أن يختبر صلاحية هذا النموذج . وقبل التعرف على عيوب (هذا النموذج) لا بد أن نتعرف أولاً على بعض المشاهدات التجريبية لبعض العناصر الكيميائية .</p><h3>إثارة العناصر الكيميائية :</h3><p>عندما يُقذف غاز العنصر في أنبوب الأشعة المهبطية بحزمة من الإلكترونات ذات طاقة معينة فإن ذراته قد تمتص جزءاً من طاقة الإلكترون أو كل طاقته نتيجة للتصادم . في هذه الحالة نقول إن ذرات العنصر قد أثبتت بطريقة الصدمة الإلكترونية . وقد تُثار الذرة بطريقة امتصاص الإشعاع أو بطريقة التسخين . ثم ما يلبث العنصر المثار (أي ذراته المثار) أن يعود تلقائياً إلى حالته الأولى وذلك بإطلاق الطاقة التي امتصها على شكل إشعاع ضوئي .</p><p>١١٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-203.jpeg" alt="img-203.jpeg" /><p>الوحدة السابعة</p><h1>تكامل الدوال الكسرية</h1><p>٥ - ٧</p><p>تدريب</p><p>أوجد $‫\left\lfloor \frac{m \cdot s}{m^2 - 5} \right\rfloor‬$‫ .</p><p>لاشك أنك قد توصلت للحل وهو ‬$‫\frac{1}{2}‬$‫ لو ‬$‫\left| m^2 - 5 \right| + \varepsilon‬$‫ ، ونلاحظ هنا أن الدالة الكسرية قد احتوت على بسط هو عبارة عن مشتقة المقام نفسه ( وقد يكون مضروباً في عدد حقيقي ) .</p><p>في هذا البند سوف تتعرف على تكامل دوال كسرية ( لا يكون بسطها هو مشتقة المقام ) مختلفة .
+أولاً : إذا كانت درجة البسط أصغر من درجة المقام ، والمقام يحلل إلى حاصل ضرب عوامله الأولية من الدرجة الأولى ( غير مكررة ) .</p><p>نضع الكسر ‬$‫\frac{\text{هـ}(m)}{\text{م}(m)}‬$‫ بالصورة :</p><p>‬$‫\frac{\text{هـ}(m)}{\text{م}(m)} = \frac{\text{هـ}(m)}{(m - \text{م}^1)(m - \text{م}^2) \dots (m - \text{م}^s)}‬$‫ .</p><p>ونقوم بتجزئة المقام في الطرف الأيسر إلى صورة مجموع كسور جزئية كالتالي :</p><p>‬$‫\frac{\text{هـ}(m)}{\text{م}(m)} = \frac{1}{m - \text{م}^1} + \frac{1}{m - \text{م}^2} + \dots + \frac{1}{m - \text{م}^s}‬$‫ .</p><p>ثم نوجد قيم الثوابت ‬$‫1, 1, 1, \dots, 1‬$‫ وبالتالي يمكننا أن نجري التكامل على النحو الآتي :</p><p>‬$‫\left\lfloor \frac{\text{هـ}(m)}{\text{م}(m)} \right\rfloor = \left\lfloor \frac{1}{m - \text{م}^1} \right\rfloor + \left\lfloor \frac{1}{m - \text{م}^2} \right\rfloor + \dots + \left\lfloor \frac{1}{m - \text{م}^s} \right\rfloor + \dots‬$‫ .</p><p>مثال (٧ - ٢٦)</p><p>أوجد ‬$‫\left\lfloor \frac{m^2}{(m^2 - 1)(m - 2)} \right\rfloor‬$‫ .</p><p>الحل : ‬$‫\therefore \left\lfloor \frac{m^2}{(m - 1)(m + 1)(m - 2)} \right\rfloor‬$‫ .</p><p>نجزئ المقام على الصورة :</p><p>‬$‫\frac{m^2}{(m - 1)(m + 1)(m - 2)} = \frac{1}{m - 1} + \frac{1}{m + 1} + \frac{1}{m - 2} \dots \dots \dots (1)‬$</p><p>نوحد مقامات الطرف الأيسر كما يلي :</p><p>٢٤٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>- الترقيد : Layering</h2><p>لاحظ الشكل (٧) الذي يبين كيفية
+إستخدام طريقة دفن سيقان وأفرع بعض
+النباتات كالعنب والياسمين في التربة على
+عمق ٢٥ سم، وهو لا يزال متصلاً بالنباتات
+الأصل ثم ثني طرف الفرع إلى أعلى فوق
+سطح التربة ويثبت في وضع قائم فتنمو له
+جذور عرضية وتنمو البراعم كذلك،
+ويترك الفرع النامي متصلاً بالنباتات الأصل
+فترة قصيرة من الزمن ثم يفصل عنه
+ليستقل بنفسه.</p><h2>- التطعيم : Grafting</h2><p>تستعمل هذه الطريقة لتحسين أشجار
+الفواكه، وفيها يتم نقل قطعة من ساق
+نبات معين عليه براعم، وتعرف بالطعم،
+وتلصق بساق نبات آخر من نفس النوع أو
+الجنس، ويعرف بالأصل ليستفيد الطعم
+من المجموع الجذري للأصل بينما يستفيد
+الأصل من المجموع الخضري للطعم. وهناك
+طرق مختلفة للتطعيم ويوضح (الشكل ٨)
+بعضها، ومنها:</p><h3>- التطعيم بالبرعم :</h3><p>ويتم بأخذ برعم كامن تام النمو من
+نبات ذي صفات مرغوبة يراد إكثاره
+ويوضع في شق على شكل حرف T في
+النباتات المطعم الشكل (٨)، بحيث تنطبق
+أنسجة كامبيوم البرعم على كامبيوم الأصل
+ثم يربط عليهما برباط محكم، وبعد مدة
+ينمو البرعم ليكون النبات الجديد.</p><img src="img-54.jpeg" alt="img-54.jpeg" /><p>الشكل (٧) الإكثار بالترقيد</p><img src="img-55.jpeg" alt="img-55.jpeg" /><p>الشكل (٨) الإكثار بالتطعيم</p><p>٦٨</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

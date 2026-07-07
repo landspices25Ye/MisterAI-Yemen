@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>٣- تبدأ في الخطوة الثالثة عملية بناء سلسلة الببتيد العديد، وذلك بأن يلتقي كل من حمض RNA الراسل مع أول حمض RNA ناقل ووحدتي الرايبوسوم، حيث يقوم حمض RNA الناقل بقراءة الشفرة من الحمض RNA الراسل.
+٤- تبدأ في الخطوة الرابعة عملية الاستطالة وفيها يحدث تتابع وحدات حمض RNA الناقل لإضافة حموض أمينية جديدة إلى سلسلة الببتيد العديد المتكونة، بينما يتحرك حمض RNA الراسل تباعاً خلال الرايبوسوم بمعدل حركة واحدة لكل شفرة وراثية.
+٥- في الخطوة الخامسة يتم إنهاء بناء السلسلة بإشارة قف، انظر (الشكل ٨)، فينتهي بذلك بناء الببتيد العديد (جزيء البروتين).
+٦- يتحرر جزيء البروتين المتكون إلى سيتوبلازم الخلية ليبدأ وظيفته في الجسم. ويمكنك الآن من الشكل (٨) فهم توريث الصفات ومكونات جسم الإنسان حيث تتولى الجينات وشفراتها الوراثية مهمة إنتاج البروتين الذي يجعل لون العين أزرقاً مثلاً أو إنتاج جين جديد للدم أو تحديد لون جلد الإنسان أو طوله أو مقدار ذكائه وغير ذلك من الصفات.</p><h3>تطبيقات في الوراثة الجزيئية:</h3><p>لقد استفاد الإنسان من نتائج الدراسات والأبحاث على حمض DNA والوراثة، الحزيمية في عدة تطبيقات، نذكر منها ما يأتي:</p><p>١- بصمة الحمض النووي الرايبوزي منقوص الأكسجين DNA Finger Print.
+لقد عرف الإنسان بصمة الأصابع وأهميتها، حيث إنها صفة مميزة لكل فرد، وتستخدم في تحديد هوية الشخص، وقد اتضح أن هناك بصمة أخرى لدى الإنسان تتعلق بحمضه النووي، فقد توصل العلماء إلى أن لكل إنسان تسلسل محدود في شريط الحمض النووي DNA في خلاياه، ويمكن أن تتشابه بعض أجزاء هذا الشريط بين الأبناء وآبائهم، وقد استفاد العلماء من هذه الحقيقة واستعملوا بصمة الـ DNA في التعرف على هوية الشخص وكذلك في إثبات أو نفي العلاقة بين الأب وابنه. فإذا ادعى أو أنكر شخص أنه أب لطفل فإنه يمكن التحقق من ذلك باستعمال بصمة حمض DNA.</p><p>١٤٠</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

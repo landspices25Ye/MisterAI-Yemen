@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>جذاباً خالياً من صرامة المنهج العلمي في إيراد الحقائق، ويؤثر الألفاظ والتعبيرات المألوفة متجاوزاً الألفاظ الاصطلاحية التي لا تستعمل إلا في نطاق علمي محدود.
+والغرض من هذا الأسلوب تيسير العلم، وتخفيف ما في الأسلوب العلمي من جفاف، على ألا يزري بمقامه ولا يذهب بوقاره، ونجده غالباً في الدراسات الإنسانية التي لا تخلو عناصر الأسلوب من عاطفة الكاتب، وميوله الوجدانية، وللأسلوب الأدبي عناصر ثلاثة هي: الفكرة – العاطفة – التعبير.</p><h2>الخلاصة</h2><p>الأسلوب: هو الطريقة التي يعبر بها الأديب عن أفكاره وعواطفه.
+وينقسم إلى ثلاثة أنواع: الأسلوب العلمي، والأسلوب الأدبي، والأسلوب العلمي المتأدب.
+■ الأسلوب العلمي: يعرض الأفكار العلمية عرضاً منهجياً، وألفاظه صريحة المعنى دقيقة الدلالة وتعبيره خالٍ من العاطفة والخيال، والغرض منه مخاطبة العقل لإدراك الحقائق.
+■ الأسلوب الأدبي: يمزج الفكرة بالعاطفة لإحداث المتعة والتأثير وذلك بألوان من الخيال والتصوير، وهدفه الإقناع والتأثير الوجداني الذي يولد الإحساس والشعور بالعبارة، وألفاظه إيحائية مؤثرة.
+■ الأسلوب العلمي المتأدب: هو الأسلوب الذي يجمع بين خصائص الأسلوب العلمي والأسلوب الأدبي، لتخفيف ما في الأسلوب العلمي من جفاف، ونقل الحقائق مصحوبة بالامتاع والتأثير مع الاهتمام بالدقة والوضوح.
+■ عناصر الأسلوب الأدبي ثلاثة: الأفكار – العاطفة – التعبير.</p><p>١٨٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

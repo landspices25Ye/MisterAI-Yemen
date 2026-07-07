@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>قوائم المصطلحات</h2><p>|  Absorption | امتصاص  |
+| --- | --- |
+|  AC circuits | دوائر التيار المتردد  |
+|  Agimutbal quantum number | العدد الكمي السمتي  |
+|  Angular momentum | كمية التحرك الزاوي  |
+|  Alarm bell | جرس إنذار  |
+|  Alpha particles | جسيمات ألفا  |
+|  Amplification | معامل التكبير  |
+|  Andromeda galaxy | مجرة المرأة المسلسلة  |
+|  Anode | أنود ( المصعد )  |
+|  Antenna circuit | دائرة هوائي  |
+|  Atomic spectrum | الطيف الذري  |
+|  Audio circuit | دائرة السماعة  |
+|  Audio waves | موجات مسموعة  |
+|  Bolmer series | سلسلة بالمر  |
+|  Base | قاعدة  |
+|  Beta particles | جسيمات بيتا  |
+|  Big Bang theory | نظرية الانفجار العظيم  |
+|  Biomass Energy | طاقة الكتلة الحيوية  |
+|  Black Hole | الثقب الأسود  |
+|  Black body radiation | اشعاع الجسم الأسود  |
+|  Brachett series Capacitive reactance | المفاعلة السعوية لسلسلة براكيت  |
+|  Carrier current | التيار الحامل  |
+|  Cathode | كاثود ( المهبط )  |
+|  Cathode rays tube | أنبوبة أشعة الكاثود  |
+|  Chain reaction | التفاعل المتسلسل  |
+|  Characteristic - X-rays lines | طيف الأشعة السينية المميزة  |
+|  Common Emitter Amplification | التكبير بالباعث المشترك  |
+|  Common Base Amplification | التكبير بالقاعدة المشتركة  |
+|  Conductors | مواد موصلة  |
+|  Coloured lights | أضواء ملونة  |</p><p>٢١١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

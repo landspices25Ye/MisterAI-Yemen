@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-46.jpeg" alt="img-46.jpeg" /><p>الوحدة الثانية</p><h1><strong>مثال (٢ - ١٥)</strong></h1><p>إذا كان $‫r^2 = r^2 - 5r^2‬$ فأوجد قيمة $‫r$ .</p><p><strong>الحل :</strong></p><p>‬$r^2 = r^2 - 5r^2$‫ .</p><p>إما أن تكون : ‬$r = r - 5$‫ $\Leftarrow r = 5‬$ .</p><p>أو أن تكون : $‫r = r + 5r - 5‬$ $‫\Leftarrow r = 5 - 30‬$ $‫\Leftarrow r = 6‬$ .</p><h1><strong>تدريب (٢ - ٥)</strong></h1><p>تحقق من حل مثال (٢ - ١٥) .</p><p><strong>ملاحظة :</strong></p><p>عدد طرق تقسيم $‫r$ من العناصر المتماثلة إلى مجموعتين جزئيتين تتضمن الأولى ‬$r_1$‫ عنصراً ، وتتضمن الثانية ‬$r_2$‫ عنصراً هو :</p><p>‬$‫r = r_1 + r_2 \text{ ، حيث : } \frac{r_1}{r_2} = \left( \frac{r_1}{r_2} + \frac{r_2}{r_1} \right) = \left( \frac{r_1}{r_2} + \frac{r_2}{r_1} \right)‬$‫</p><p><strong>بصورة عامة :</strong> إذا كان لدينا ‬$r$‫ من العناصر المتماثلة ؛ وأردنا تقسيمها إلى ‬$r$‫ من المجموعات الجزئية المنفصلة ، بحيث تتضمن المجموعة الأولى ‬$r_1$‫ عنصراً متماثلاً ، وتتضمن المجموعة الثانية ‬$r_2$‫ عنصراً متماثلاً ، ... ، وتتضمن المجموعة الأخيرة ‬$r_3$‫ عنصراً متماثلاً فإن عدد طرق هذا التقسيم هي :</p><p>‬$‫r = r_1 + \dots + r_2 + r_3 \text{ ، حيث : } \frac{r_1}{r_2} = \left( \frac{r_1}{r_2} + \dots + \frac{r_2}{r_1} \right)‬$</p><h1><strong>مثال (٢ - ١٦)</strong></h1><p>بكم طريقة يمكن ترتيب حروف كلمة ( لا إله إلا الله ) ؟</p><p><strong>الحل :</strong> عدد حروف كلمة ( لا إله إلا الله ) = ١٢ ( حرفاً ) .</p><p>عدد تكرار حرف اللام = ٥ ( حروف ) .</p><p>عدد تكرار حرف الألف = ٥ ( حروف ) .</p><p>عدد تكرار حرف الهاء = ٢ ( حرفين ) .</p><p>٦٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

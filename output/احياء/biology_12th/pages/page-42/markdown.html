@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>المختلفة، وهذه العمليات ونشاطاتها الفسيولوجية تتم بواسطة الهرمونات النباتية وهي مواد كيميائية تفرزها خلايا النباتات الحية مثل خلايا القمم النامية والبراعم، والأوراق حديثة السن، والبذور بتركيزات ضئيلة، وتُنقل بواسطة الحزم الرعائية إلى أماكن تأثيرها في أجزاء النبات المختلفة.</p><p>- ما أنواع الهرمونات النباتية؟ وما وظيفة كل منها؟
+لتتعرف على أنواع الهرمونات النباتية، ووظائفها، وأماكن إفرازها ادرس الجدول (١) وأجب عن الأسئلة التي تليه:</p><p>جدول (١) الهرمونات النباتية ووظائفها</p><p>|  اسم الهرمون | مكان الإفراز | الوظيفة  |
+| --- | --- | --- |
+|  الأوكسينات Auxins | ١- القمم النامية. ٢- البذور. ٣- الأوراق حديثة السن. | ١- تنشط استطالة الخلايا. ٢- تسيطر على الانتحاء الضوئي والأرضي. ٣- تنشط نمو الجذور الثانوية، وتمايزها. ٤- تسيطر على تفرع الساق.  |
+|  السيتركيبينات Cytokinins | - الجذور. | ١- تنشط انقسام الخلايا. ٢- تنشط عملية نمو البذور. ٣- تؤثر في نمو الجذور، وتمايزها. ٤- تؤثر شيوخة النبات (مضاد للشيخوخة).  |
+|  الجبريليينات Gibberellins | ١- القمم النامية في البراعم والجذور والأوراق حديثة السن. ٢- الجنين (في البذرة). | ١- تشجع استطالة الساق. ٢- تشجع نمو البراعم والأوراق. ٣- تحفز على نمو الثمار، ويستعمل ثمر العنب فيزداد حجم ثماره، وتزداد مقاومته للقطريات. ٤- تؤثر في نمو الجذور، وتمايزها بقلة. ٥- تنشط عملية إنبات البذور.  |
+|  حامض الأيسيسك Abscisic Acid | ١- الأوراق. ٢- السيقان. | ١- تثبط النمو. ٢- تشجع كمنون البراعم والبذور. ٣- إغلاق الثغور أثناء فترات الجفاف.  |
+|  الإيثيلين Ethylene | ١- الثمار الناضجة. ٢- العقد في السيقان. ٣- الأوراق المسنة. | ١- تسريع نضج الثمار، وإسقاطها. ٢- تثبط استطالة الساق. ٣- إسقاط الأوراق المسنة.  |</p><p>٤٢</p><p>الأحياء: النصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

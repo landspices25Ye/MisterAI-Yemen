@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>التكاثر الجنسي في الطلائعيات:</h2><p>ويمكن توضيح بعض أنواع التكاثر الجنسي في الكائنات الطلائعية كما يأتي:</p><h3>١- الاقتران في طحلب الأسبيروجيرا: Conjugation In Spirogyra</h3><p>– ماذا يُسمى الاقتران بين خليتين متقابلتين في خيطين من خيوط الأسبيروجيرا؟
+لاحظ الشكل (٩) وتتبع ما يحدث في هذا الاقتران في الخطوات المرقمة في الشكل والتي يمكن توضيحها كما يأتي:</p><p>أ – في الظروف غير الملائمة تنمو قناة اقتران بين خليتين متقابلتين في خيطين من خيوط طحلب الأسبيروجيرا.</p><p>ب – تنتقل محتويات خلية أحد الخيطين، ويسمى الخيط الموجب إلى الخلية المقابلة في الخيط الآخر، ويسمى الخيط السالب.</p><p>ج – تندمج نواة خلية الخيط الموجب مع نواة خلية الخيط السالب لتكوين اللاحقة (Zygot) 2n.</p><p>د – يستدير السيتوبلازم حول اللاحقة وتحاط الخلية بجدار سميك مكوناً الجرثومة الملقحة Zygospore تستقر في الوحل بعد موت النبات الأصلي.</p><p>هـ – بعد فترة كمون وعندما تصبح الظروف مناسبة تنقسم نواة الجرثومة الملقحة انقساماً منصفاً لينتج أربع أنوية (n) تبقى منها واحدة تنقسم عدة مرات إنقساماً متساوياً لتكون خيطاً طحلياً جديداً.</p><p>يسمى الاقتران بين خليتين متقابلتين في خيطين مختلفين اقتراناً ملمساً، وإذا حدث بين خليتين متجاورتين في الخيط نفسه يسمى اقتراناً جانبياً.</p><p>الشكل (٩) الإقتران السلمي في طحلب الأسبيروجيرا</p><p>٧٥
+الأحياء للصف الثالث الثانوي
+http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

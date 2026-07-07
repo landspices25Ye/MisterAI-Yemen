@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>- التطعيم بالقلم:</h1><p>يؤخذ الطعم وعليه برعمان أو ثلاثة ويبرئ كالقلم، الشكل (٨). لماذا؟
+يُقطع ساق النبات المراد تطعيمه أفقياً بالقرب من سطح التربة ويعمل به شق
+يوضع فيه الطعم بحيث تنطبق أنسجة الكامبيوم في الطعم ونبات الأصل على
+بعضها، ثم يربط بعد ذلك مكان الطعم ويطلي بالشمع. لماذا؟
+ويمكن إستعمال أكثر من طعم واحد إذا كان ساق الأصل كبيراً.
+- ما شروط نجاح التطعيم؟</p><p>لنجاح عملية التطعيم يجب أن يكون بين الطعم والأصل صفات متشابهة، أي
+يُطعم نباتان من الصنف نفسه، أو يُطعم صنف على صنف آخر من النوع نفسه،
+أو يُطعم نوع على نوع آخر من الجنس نفسه. فمثلاً يمكن تطعيم البرتقال على
+الليمون، والتفاح على الكمثرى.</p><p>ويلجأ المزارعون إلى طريقة التطعيم لعدة أسباب منها:</p><p>- المحافظة على بعض أنواع من النباتات التي لا تنمو في بيئة معينة مثل إرتفاع نسبة
+الأملاح أو حموضة التربة.
+- المحافظة على الصفات المرغوبة مثل حجم الثمار وطعمها ومقاومة النبات للأمراض.</p><h1>٦- التكاثر العذري: Parthenogenesis</h1><p>ويقصد به إنتاج أفراد من بويضات غير مخصبة، ويحدث ذلك في بعض
+الحشرات والزواحف والبرمائيات والأسماك. فملكة النحل تضع نوعين من البيض،
+مخصب ينمو ويتطور إلى إناث (الملكات أو الشغالات) وغير مخصب يتطور إلى
+ذكور. ولهذا تحتوي خلايا إناث النحل على مجموعة ثنائية من الكروموسومات
+(2n)، بينما الذكور فيها تحتوي خلاياها على المجموعة الأحادية من الكروموسومات
+(n). كما يحدث هذا النوع من التكاثر في النمل، وقد أمكن إحداثه صناعياً في بيوض
+الضفادع وقنافذ البحر.</p><h1>التكاثر الجنسي: Sexual Reproduction</h1><p>تحدث عملية التكاثر الجنسي بصفة عامة عند وجود نوع من الكائنات الحية يمكن
+لأفراده إنتاج أمشاج مذكرة وأمشاج مؤنثة؛ حيث تندمج محتويات المشيجين لتكوين
+اللاقحة (البويضة المخصبة) التي تنمو لتعطي في النهاية فرداً جديداً. ما نوع الإنقسام
+الذي يؤدي إلى تكوين الأمشاج؟ غير أن التكاثر الجنسي في الكائنات الراقية يختلف عنه
+في الكائنات البدائية.</p><p>٦٩</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

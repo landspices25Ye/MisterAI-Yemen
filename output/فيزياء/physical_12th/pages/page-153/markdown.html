@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>للإلكترون المحرر المعطاة بالمعادلة ( ١ )، بالرغم من ثبات الشدة الضوئية للأضواء المختلفة التي لها نفس تيار التشبع .</p><p>٥- وجد أنه لكي تنبعث الإلكترونات من سطح معدني معين، ينبغي أن يكون تردد الضوء الساقط ( f ) على ذلك السطح أكبر أو يساوي قيمة معينة ( f₀ ) لا تقل عن حد معين يسمى بالتردد الحرج ( Threshold Frequency ) .</p><p>٦- لوحظ أن الإلكترونات تنبعث خطياً تقريباً خلال أقل من ١٠-٩ من الثانية بعد سقوط الضوء على السطح، أي أن الفاصل الزمني بين سقوط الضوء على سطح المهبط وانبعاث الإلكترونات منه صغيراً جداً يمكن إهماله .</p><p>٧- دراسة العلاقة بين الطاقة الحركية للإلكترون المحرر وتردد الضوء الساقط :</p><p>تدل التجربة على وجود علاقة خطية بين الطاقة الحركية العظمى [ كع ع ك ١ / ٢ ] للإلكترونات المنبعثة وتردد الضوء الساقط ( f ) كما يبينها الشكل ( ٨ ) الذي تظهر فيه ثلاثة منحنيات مستقيمة لثلاثة سطوح معدنية مختلفة وهي السيزيوم ( Cs ) والبوتاسيوم ( K ) والتنجستن ( W )، ويُعبّر رياضياً عن هذه المنحنيات التجريبية بالمعادلة التالية :</p><p>$‫\frac{1}{2} \text{ كع ع ك}^2 = \text{hf} - \text{w}_0 \dots ( ٢ )‬$</p><p>حيث ( h ) ثابت بلانك ويساوي ميل الخط المستقيم وهو نفسه للسطوح الثلاثة، بينما w₀ مقدار ثابت يختلف باختلاف معدن السطح ويقطع الجزء السالب لمحور الطاقة، ويسمى دالة الشغل، وهو أقل طاقة لازمة لتحرير الإلكترون من سطح المعدن ( دون إعطائه طاقة حركية ) .</p><img src="img-148.jpeg" alt="img-148.jpeg" /><h3>التفسير التقليدي ( الكلاسيكي ) للظاهرة الكهروضوئية</h3><p>يتوافق تنبؤ النظرية التقليدية مع النتيجة الأولى ( ١ ) للتجربة وهي أن شدة تيار الخلية الكهروضوئية يتناسب طردياً مع الشدة الضوئية ولكن بقية تنبؤاتها تتناقض مع النتائج التجريبية الأخرى .</p><p>١٥١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

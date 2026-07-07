@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>معاني المفردات والتراكيب اللغوية</p><p>مُطَرَّقٌ: ناكس النظر إلى الأسفل، <strong>المُنصَرِمُ</strong>: الماضي، <strong>وَتَرِي</strong>: الوتر: جبل يشد من طرفيه والمراد هنا المشاعر، <strong>يَتِيمُ النِّعَمُ</strong>: النعم النادر الذي لا نظير له في جماله، <strong>تَخَطَّيْتُ</strong>: تجاوزت، <strong>مغنى الشَّمَمُ</strong>: مكان الإباء والأنفة، <strong>غُصَّةٌ</strong>: ما يتعثر في الحلق فيُسَبِّبُ الاختناق، <strong>رَاعِفٌ</strong>: نازف، <strong>الآسي</strong>: الطبيب، <strong>حمى المهد</strong>: موطن ميلاد المسيح، <strong>أَغْضَيْتُ</strong>: أرخيت الجفون، والمراد خضعت، <strong>النخوة</strong>: الفخر والاعتزاز، والمراد هنا: النجدة والحمية، <strong>غَصَصُ الجِدِّ</strong>: منغصاته، <strong>الظَّمَى</strong>: العطشان.</p><h3>إِضَاءَة</h3><p>تدور أبيات النص حول أربع فكر هي: الأمة بين ماض مشرق وحاضر كئيب (الأبيات من ١-٤) - عار على الأمة التغاضي عن احتلال أرضها (في الأبيات ٥-٩) - صرخات استغاثة ولا معتصم لها (في البيتين ١٠، ١١) - المقاومة هي الحل (في الأبيات ١٢-١٤).</p><p>يقول أبو ريشة: أمتي العربية والإسلامية أخبريني هل لك في هذا العالم منزلة ومكانة وحضور في مجال العلم والكلمة والريادة؟ لتتالي احترام الأمم؟ وتسهمي في بناء الحضارة الإنسانية. إنني أنظر إلى حياتك الحاضرة الممزقة، فأشعر بالخجل من تاريخك الماضي المجيد، إذ لا يصح لأمة كان لها مجد أن تصل إلى هذا المستوى.</p><p>أين حضارتك العظيمة التي كانت تظل العالم بالعدل والخير والهدى، وجعلتني أطرب، فأبدع أروع الأنغام الشعرية الجميلة؟ وكم كانت تهزني نشوة ذلك الغناء بماضيك العظيم، فأشعر بالزهو، وأتخيل أنني أنتقل بين مباهج العزة والكرامة والسؤدد، ومغاني الإباء والشمم والرفعة، إلا أن هذا الحلم لا يطول!</p><p>أمتي.. لقد تجرعت من حالتك الرديئة غصصاً مؤلمة كثيرة أصابتني بالشرق، ومنعتني عن التحدث إليك، واستنهاض همم أبنائك! لقد أصبت بجرح عميق في كبريائي، دماؤه نازفة لم تنقطع! استعصى على الأطباء وما زال! إذ كيف تقوم دولة إسرائيل الصهيونية على ثرى فلسطين الحبيبة، وعلى المقدسات الإسلامية والمسيحية؟ إنه لخطب جَلَل، ووصمة عار الأبد أن تُسلب أرض ومقدسات من أيدي أمة كثيرة العدد!! فبالله عليك كيف قبلت الذل؟ وغضضت الطرف عن المحتل؟! ولم تترفعي عن مواطن العجز؟ ألم تكوني أمة النجدة والنخوة والرجولة؟ وموطن العزة والكرامة؟</p><p>٦٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

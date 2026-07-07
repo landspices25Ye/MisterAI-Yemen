@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-122.jpeg" alt="img-122.jpeg" /><p>وهذه الملوثات إما أن تلوث الهواء أو الماء أو التربة أو الغذاء، وذلك كما يأتي:</p><h3>أولاً: ملوثات الهواء Air Pollution</h3><p>وأهم الغازات التي تلوث الهواء هي:</p><h4>١- أكاسيد الكبريت والنيتروجين.</h4><p>يحتوي الوقود كمشتقات النفط والفحم الحجري، على الكبريت والنيتروجين، وعندما يحترق في آلات المصانع أو السيارات تنطلق إلى الهواء أكاسيد الكبريت مثل $‫SO_2‬$ وأكاسيد النيتروجين مثل $‫NO_2‬$.</p><p>لاحظ (الشكل ٣).</p><img src="img-123.jpeg" alt="img-123.jpeg" /><p>الشكل (٣) انطلاق الأكاسيد من مداخن المصانع</p><p>الأحياء للصف الثالث الثانوي</p><p>١٦٥</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

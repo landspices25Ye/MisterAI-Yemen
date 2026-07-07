@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><p>$‫\begin{array}{c} \text{CH}_2\text{OH} \\ | \\ \text{C} = \text{O} \\ | \\ \text{HO} - \text{C} - \text{H} \\ | \\ (\text{H} - \text{C} - \text{OH})_2 \\ | \\ \text{CH}_2\text{OH} \end{array} \xrightarrow[4[\text{O}]]{\text{HIO}_4} \begin{array}{c} \text{CH}_2\text{OH} \\ | \\ \text{COOH} \end{array} + (\text{H} - \text{C} - \text{OH})_2 + \text{H}_2\text{O} + \text{HI} \\ \text{COOH} \\ \text{COOH} \\ \text{CH}_2\text{OH} \\ \text{مركتوز} \end{array}‬$‫</p><p>نظراً لأن السكريات الأحادية تتأكسد في محاليلها بواسطة محلول فهلنج الذي يحتوي على أيون النحاس (II) في ‬$\text{CuSO}_4$ ، لذلك يستخدم هذا التفاعل للكشف عن هذه السكريات.</p><img src="img-100.jpeg" alt="img-100.jpeg" /><h2>٢ - السكريات المحدودة Oligosaccharides</h2><p>كلمة Oligo تعني قليل، وهي تدل على أن هذا النوع من السكريات يتراوح عدد وحدات السكر فيها من ٢-١٠ وحدات من السكر الأحادي.</p><p>وسنقتصر في دراستنا على السكريات الثنائية Disaccharides ، وهذا النوع يتكون من وحدتين من السكر الأحادي، ومن أشهر السكريات الثنائية ما يأتي:</p><h3>أ - السكروز (سكر القصب) Sucrose</h3><p>ويوجد في قصب السكر وفي البنجر، ويتكون من وحدة جلوكوز + وحدة فركتوز.</p><h3>ب - المالتوز (سكر الشعير) Maltose</h3><p>ويوجد في بذور الشعير، ويتكون من وحدتي (جلوكوز + جلوكوز).</p><h3>ج- اللاكتوز (سكر اللبن) Lactose</h3><img src="img-101.jpeg" alt="img-101.jpeg" /><p>شكل (٦-٣) الصيغة التركيبية لسكر اللبن</p><p>ويتكون من جلوكوز + جلاكتوز. وهو من أهم السكريات الحيوانية، ويوجد في لبن جميع الثدييات، ونسبته في حليب الأبقار ٥% تقريباً، وفي حليب الأم يتراوح بين ٥% إلى ٨%، ومن مميزاته أنه لا يتخمر بواسطة إنزيمات الخميرة مما</p><p>١١٠</p><p><http://www.e-learning-moe.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

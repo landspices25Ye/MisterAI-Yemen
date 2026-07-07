@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التفاضل</p><h2>تمارين ومسائل (٦-٩)</h2><p>ادرس تغيرات كل من الدوال التالية ، ثم ارسم بيانها :</p><p>[١] د (س) = س³ - ٣ س + ٢ . [٢] د (س) = ٣ س⁴ - ٤ س³ .</p><p>[٣] د (س) = س³/٦ + س²/٢ + س - ٢ . [٤] د (س) = (س - ١) (س + ١) (س + ٢) .</p><p>[٥] د (س) = | س² - ٤ س + ٣ | . [٦] د (س) = | (س + ١) (س + ٥) | .</p><p>[٧] د (س) = س⁴ + س³/٣ - س² . [٨] د (س) = ٢ س²/١ - ١ .</p><p>[٩] د (س) = س² + س/٢ - س . [١٠] د (س) = س (س + ١)/س .</p><p>[١١] د (س) = س² + س⁴ + س³/٢ + س . [١٢] د (س) = ١/١ - س² - س + ١ .</p><p>[١٣] د (س) = √[٤ - س²] . [١٤] د (س) = ٤/١ - س² .</p><p>[١٥] ص = ١/٢ + س . [١٦] ص = س + ١/س .</p><p>[١٧] ص = س - ١ + ١/١ - س - ١ .</p><p>٢٠٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

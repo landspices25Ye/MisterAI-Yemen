@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>– ما أعراض مرض الملاريا ؟</p><p>لاحظ في دورة حياة البلازموديوم تعاقب التكاثر الجنسي في البعوضة واللاجنسي في البعوضة والإنسان، ويعرف ذلك بتبادل الأجيال.</p><h1>النشاط (٦)</h1><p>• نفذ النشاط الخاص بفحص مجهري لتحضيرات من أطوار دورة حياة البلازموديوم المتضمن في كتاب الأنشطة والتجارب العملية.</p><h1>Sexual Reproduction In Plants : التكاثر الجنسي في النباتات</h1><p>يمكن للنباتات أن تتكاثر لاجنسياً – كما درست سابقاً – كما يمكنها أن تتكاثر جنسياً. وبعض الكائنات النباتية بسيطة التركيب، كالسرخسيات والحرزيات تتكاثر بالطريقتين (ظاهرة تبادل الأجيال)، ويمكن توضيح بعض أنواع التكاثر الجنسي في النبات كما يأتي:</p><h1>١ – التكاثر في نبات الفيوناريا : Reproduction in Funaria</h1><p>– صف نبات الفيوناريا ؟ وأين يوجد ؟</p><p>يوجد هذا النبات على شكل نمو كثيف في الأماكن الرطبة والظليلة وينمو رأسياً ويصل طوله إلى ٢ سم. ولكن كيف يتكاثر نبات الفيوناريا ؟</p><p>تتكون الأعضاء الجنسية المذكورة والمؤنثة في نهاية الساق كما في الشكل (١١). وهذه الأعضاء هي : الأنثريدة تنتج الأمشاج المذكورة (سابحات ذكرية)، والأرشيجونة تنتج الأمشاج المؤنثة (البويضة) وعندما تنضج خلية البويضة تتحرك السابحات الذكرية في الماء أو الرطوبة لتصل إلى البويضة فتخصبها.</p><p>ما نوع الانقسام الذي يحدث في البويضة الخصبة (اللائحة) بعد ذلك ؟</p><p>يؤدي انقسامات اللائحة إلى تكوين نبات بوغي مختلف عن النبات المشيجي، فهذا الأخير يتكون من شبه ساق وأشباه أوراق وأشباه جذور، بينما النبات البوغي يتكون من القدم المتصل بخلايا شبه الساق والعنق والعلبة وبها خلايا مولدة للأبواغ. وعندما تنقسم هذه الخلايا تعطي أبواغاً تتحرر عند النضج، ويبدأ كل بوغ بالإنبات ليكون خيطاً أولياً أخضر متفرعاً يسمى بروتونيما Protonema تنمو منه براعم مكونة الطور المشيجي الجديد.</p><p>٧٢</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

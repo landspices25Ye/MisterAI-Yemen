@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التفاصيل</p><p>٢) الفروع اللانهائية والمستقيمات المقاربة :</p><p>$‫\therefore \text{نه} \frac{3+1}{1-1} \text{ د (س)} = \frac{3+1}{1-1} = \infty + \infty‬$‫</p><p>‬$‫\text{نه} \frac{3+1}{1-1} \text{ د (س)} = \frac{3+1}{1-1} = -\infty \quad \therefore \text{س} = 1 \text{ مستقيم مقارب رأسي .}‬$‫</p><p>‬$‫\text{نه} \frac{\text{نه}}{\infty \pm \infty} \text{ د (س)} = \infty \text{ للدالة أربعة فروع لانهائية ولها مستقيم مقارب مائل معادلته :}‬$‫
+$\text{ص} = \text{س} + \text{ب}‬$$‫</p><p>لإيجاد معادلة المستقيم المقارب المائل تتبع التالي :</p><p>‬$‫\text{نه} \frac{\text{نه}}{\infty \pm \infty} \text{ د (س)} = \frac{\text{د (س)}}{\infty} = \frac{\text{د (س)}}{\infty \pm \infty} = 1‬$‫</p><p>‬$‫\text{نه} \frac{\text{نه}}{\infty \pm \infty} \text{ ب = } [\text{د (س) - س}] = \frac{\text{د (س)}}{\infty \pm \infty} = \frac{\text{س} + \text{س} - \text{س} + \text{س}}{\text{س} - 1} = 1‬$‫</p><p>∴ المستقيم المقارب المائل معادلته : ص = س + ١ .</p><p>٣) نبحث عن القيم القصوى وفترات التزايد والتناقض :</p><p>‬$‫\text{د (س)} = \frac{(1-2)(2-2)(3-2)}{(1-2)(1-2)} = \frac{(1-2)(2-2)(3-2)}{(1-2)(1-2)}‬$‫</p><p>‬$‫= \frac{\text{س} - \text{س} - \text{س}}{2} = \frac{\text{س} - \text{س} - \text{س}}{(1-2)(1-2)}‬$‫</p><p>أولاً : بوضع د (س) = ٠ ⇐ (س - ٣) (س + ١) = ٠ ⇐ س = ٣ ، أو س = ١ -</p><p>د (٣) = ٦ ، النقطة (٣ ، ٦) قصوى</p><p>د (١-٢) = ٢ ، النقطة (١-٢) ، قصوى</p><p>ثانياً : عند د (س) غير معرفة ⇐ (س - ١) = ٠ ⇐ س = ١ ( لكن الدالة غير معرفة عند س = ١)</p><p>٤) نبحث عن نقاط الانعطاف وفترات التقعر :</p><p>‬$‫\text{د (س)} = \frac{(2-2)(2-2)(3-2)-(3-2)(3-2)}{(1-2)(1-2)} \times (1-2)‬$‫</p><p>‬$‫= \frac{(2-2)(2-2)(3-2)-(3-2)(3-2)}{(1-2)(1-2)} = \frac{(2-2)(2-2)(3-2)-(3-2)(3-2)}{(1-2)(1-2)} = \frac{8}{2(1-2)}‬$</p><p>٢٠٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

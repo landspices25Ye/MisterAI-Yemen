@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>تقويم الوحدة</h2><p>١ - ما الأسباب التي تدفع المزارعين لاستخدام الأسمدة والمخصبات؟
+٢ - وضّح بالأمثلة المقصود بالأسمدة المباشرة وغير المباشرة؟
+٣ - ما أهم الاحتياطات الواجب اتخاذها للوقاية من أخطار المبيدات؟
+٤ - وضّح الأضرار التي يمكن أن تنجم عن الاستخدام العشوائي للمبيدات الحشرية والأسمدة.
+٥ - ما أهم الألياف التي تستخدم لصناعة الكساء؟
+٦ - وضّح الآلية التي يتمكن بها الصابون من إزالة الأوساخ.
+٧ - ما الفرق بين المنظفات والصابون؟
+٨ - ما الفرق بين الطلاء المائي والزيئي من حيث التركيب؟
+٩ - علّل لما يأتي:</p><p>أ) الزراعة المكثّفة للأراضي تؤدي إلى ضعف النباتات وذبولها.
+ب) كثير من المركبات التي كانت تستخدم كمبيدات حشرية في السابق لم يُعدّ لها تأثير كبير على الحشرات.
+ج) تُعدّ المبيدات الحشرية المشتقّة من الكلور من أخطر المبيدات الحشرية.
+هـ) كثير من الدول حرّمت استخدام أكاسيد الرصاص في صناعة الطلاء.
+١٠ - أكمل المعادلات الآتية بحيث تصبح صحيحة وموزونة:</p><p>$‫\text{N}_{2(\text{g})} + \dots \rightleftharpoons \text{NH}_{3(\text{g})}‬$‫</p><p>‬$‫(\text{NH}_4)_2\text{CO}_3 + \dots \longrightarrow \text{CaCO}_3 + (\text{NH}_4)_2\text{SO}_4‬$‫</p><p>‬$‫\text{Ca}_3(\text{PO}_4)_2 + 2\text{H}_2\text{SO}_4 \longrightarrow \dots + 2\text{CaSO}_4‬$‫</p><p>‬$‫\text{CH}_3(\text{CH}_2)_{10} - \text{CH}_2 - \text{SO}_3\text{H} + \text{NaOH} \longrightarrow \dots‬$‫</p><p>‬$‫\text{CH}_3 - (\text{CH}_2)_{10} - \text{CH}_2 - \text{OH} + 10 \text{CH}_2 - \text{CH}_2 \longrightarrow \dots‬$‫
+$\text{O}‬$$</p><p>١٦٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

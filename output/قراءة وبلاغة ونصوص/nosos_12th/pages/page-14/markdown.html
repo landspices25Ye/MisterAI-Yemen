@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-9.jpeg" alt="img-9.jpeg" /><p>كُلَّمَا قُلْتُ قَالَ أَحْسَنْتَ قَوْلًا وَبِأَحْسَنْتَ لَا يُبَاعُ الدَّقِيقُ</p><p>وقد كان الشاعر بعيداً عن الاكتساب المعرفي، يضيع وقته في الأحاجي والألغاز، أو جعل البيت يقرأ من اليمين واليسار دون أن يختلف معناه، مثل:</p><p>مَسْوَدَتُهُ تَدُومُ لِكُلِّ هَوْلٍ وَهَلْ كُلُّ مَسْوَدَتُهُ تَدُومُ؟</p><p>ثم ظهر شعراء لجؤوا إلى نظم المدائح في النبي صلى الله عليه وسلم وآل البيت، وربما كان ذلك تعزية لهم عند الشدائد.</p><h1>٢- النثر:</h1><p>على الرغم من أننا لا نستطيع أن ننكر على أبرز كُتَّاب هذا العصر -ولاسيما المؤرخين منهم- نثرهم الرشيق وذلك في الحقبة الأولى من هذا العصر. حيث ظهرت طائفة جعلت من الكتابة وسيلة للزخرف، ومعرضاً للأساليب الإنشائية، فشاعت طريقة تكثر من إطالة الجمل وحشوها بالمحسنات اللفظية. أما في ظل الحكم العثماني، فتدنى النثر إلى درجة كبيرة، وأصبح الكتاب عاجزين عن الإتيان برسالة يسيرة.</p><p>ومن أظهر الأسباب التي أدت إلى ضعف الأدب النثري في العصرين المملوكي والعثماني: أن المماليك لم يكن لهم ميل إلى الأدب أو حس لغوي يتذوقون الجمال الفني فيه، فانصرفوا عنه أو كادوا؛ إذ إن الأتراك والجراكسة كانوا لا يجيدون العربية، فضلاً عن تذوق الشعر والأدب العربي.</p><p>يضاف إلى ذلك أن الأدب فقد جمهوره فتحول ذلك الجمهور إلى الأدب الشعبي من مثل قصص سيف بن ذي يزن، وأبي زيد الهلالي، والزبير سالم.</p><p>وقد أراد العثمانيون أن يوفروا للآستانة(١) مظاهر التحضر ولو على حساب الأقاليم، فنقلوا إليها العلماء والأدباء وأصحاب الفن والحرف، كما نقلوا إليها نفائس الكتب وذخائر التراث، ثم زادوا فألغوا ديوان الإنشاء، وجعلوا اللغة الرسمية للدولة هي اللغة التركية، فانزوت العربية في الأزهر في مصر، وبعض أديرة الرهبان في لبنان، وزوايا المساجد في العالم الإسلامي.</p><p>والخلاصة أن هذا العصر على طوله كان أضعف عصور الأدب العربي، تسلط فيه الخمول على العقول، والتقليد على الابتكار، والصناعة على الطبيعة، والابتذال على الأساليب الرفيعة.</p><p>(١) الآستانة: الاسم القديم لمدينة إسطنبول التركية.</p><p>١٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

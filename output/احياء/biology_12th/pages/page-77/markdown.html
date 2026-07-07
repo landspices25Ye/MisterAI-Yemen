@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>٣- تصل أنبوبة اللقاح إلى الكيس الجنيني عبر فتحة النقير.
+٤- في أثناء نمو أنبوبة اللقاح تتحرك النواة الأنبوبية في أسفلها أولاً ثم تنقسم النواة المولدة لتعطي نواتين ذكريتين كلاهما أحادية المجموعة الكروموسومية، انظر الشكل (١٥).</p><p>• نفذ النشاط الخاص بدوامة أنواع وتركيب البويضة في كتاب الأنشطة.</p><h1><strong>النقاط (١):</strong></h1><img src="img-60.jpeg" alt="img-60.jpeg" /><p>الشكل (١٥) عملية الإخصاب في النبات الزهري</p><p>كيف تتم عملية الإخصاب؟</p><p>عندما تنتقل النواتان الذكريتان إلى داخل الكيس الجنيني تتحد إحداهما مع نواة خلية البويضة فتتكون اللاقحة ثنائية المجموعة الكروموسومية وتتحد النواة الأخرى مع النواتين القطبيتين لتكون نواة الأندوسبيرم الأولية ثلاثية المجموعة الكروموسومية (3n) ويطلق على عملية الإخصاب هذه الإخصاب المضاعف</p><p>Double Fertilization</p><p>أو المزدوج وهي إحدى خواص النباتات مغطاة البذور.</p><h1>١- البذرة والثمر:</h1><p>بعد عملية الإخصاب تنقسم اللاقحة عدة مرات ليشكل الجنين وتستمر عملية النمو حتى تتكون البذرة.
+- تم تركيب البذرة؟</p><p>الأحياء للصف الثالث الثانوي</p><p>٧٧</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

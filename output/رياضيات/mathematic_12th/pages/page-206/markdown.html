@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-178.jpeg" alt="img-178.jpeg" /><p>الوحدة السادسة</p><h1>عند دراسة تغيرات الدوال تتبع الخطوات التالية :</h1><p>١ - إيجاد مجموعة التعريف .
+٢ - إيجاد القيم القصوى (العظمى والصغرى) والاطراد .
+٣ - إيجاد النقاط المساعدة .
+٤ - إيجاد نقاط الانعطاف وفترات التقعر .
+٥ - تكون جدولاً يلخص النقاط السابقة .
+٦ - نرسم بيان الدالة .</p><h1>مثال (٦ - ٤٤)</h1><p>ادرس تغيرات الدالة د (س) = س³ - ٣ س ، وارسم بيانها .</p><h1>الحل :</h1><p>(١) د (س) = س³ - ٣ س
+م. ت = ح .</p><p>(٢) الفروع اللانهائية :</p><p>نهيًا (س³ - ٣ س) = ∞ ، نهيًا (س³ - ٣ س) = ∞ + ∞ ، وبالتالي للدالة فرعان
+لانهائيان ، ولا توجد مستقيمات مقارنة لأنها كثيرة حدود .</p><p>جدول (٦ - ٧)</p><p>|  س | ∞ + | ١ | ١ - | ∞ -  |
+| --- | --- | --- | --- | --- |
+|  د (س) | + | ٠ - | ٠ + |   |
+|  د (س) | ٢ - | ٢ - | ٢ - |   |
+|   | (١ - ٢) | (١ - ٢) |  |   |</p><p>(٣) د (س) = ٣ س² - ٣ س</p><p>نضع د (س) = ٠ = ٣ س² - ٣ س</p><p>س = ± ١</p><p>د (١) = ١ - ٣ = ٢ = (١ - ٢) نقطة قصوى ،</p><p>د (١) = ١ - ٣ = ٢ = (١ - ٢) نقطة قصوى .</p><p>(٤) د (س) = ٦ س</p><p>نضع د (س) = ٠ = ٦ س =</p><p>س = ٠</p><p>نجد أن : د (س) تُغير إشارتها جوار الصفر ،</p><p>نقطة انعطاف .</p><p>(٥) عند س = ٠ = ص = ٠
+المنحنى يمر بالنقطة (٠ ، ٠) .</p><p>وعند ص = ٠ = ٣ س² - ٣ س = ٠ = س (س² - ٣) =</p><p>إما س = ٠ ، أو س = ٣ ، أو س = ٣</p><p>المنحنى يقطع محور السينات في النقاط (٠ ، ٠) ، (٣ ، ٠) ، (٣ ، ٠) .</p><p>٢٠٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

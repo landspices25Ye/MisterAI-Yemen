@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>Transistor الترانزستور</h2><p>الشكل (١٠) يبين رسماً توضيحياً لتركيب الترانزستور (الوصلية الثلاثية) في أبسط صوره كما يبين نوعيه. معتمداً على هذا الشكل، صف تركيب الترانزستور وحدد نوعيه. سمّ البلورات التي يتكون منها كل نوع من أنواعه.</p><img src="img-71.jpeg" alt="img-71.jpeg" /><p>الشكل (١٠)</p><p>إن الترانزستور في أبسط صوره عبارة عن ثلاث بلورات متلاصقة من مادة شبه موصلة مثل الجرمانيوم أو السيليكون وهي من نوع (P)،</p><p>(N) تعالج بطريقة معينة بحيث يكون الجزء الأوسط (البلورة الوسطى) من النوع المخالف للبلورتين الطرفيتين لذلك يتكون نوعان من الترانزستور هما النوع (P-N-P) والنوع (N-P-N)، ويطلق على الترانزستور أحياناً اسم وصلة الساندويش Sandwich Junction، وقد اخترع الترانزستور العالمان الأمريكيان براتينيان وباردين عام ١٩٤٨م.</p><p>وتسمى البلورة الوسطى القاعدة (Base B)، وتسمى إحدى البلورتين الطرفيتين الباعث (Emitter E) وهي البلورة التي تتحرك منها الإلكترونات الحرة أو الفجوات الموجبة باتجاه القاعدة، والبلورة الطرفية الأخرى التي تجذب الإلكترونات أو الفجوات إليها تسمى المجمع (Collector C)، ويطلق عليها أقطاب أو (أطراف) التوصيل في الترانزستور، وللتمييز بين أقطاب الترانزستور، تكون القاعدة أقرب إلى الباعث منها إلى المجمع أو توضع دائرة ملونة عند طرف المجمع، كما يكون سمك بلورة القاعدة صغيراً جداً، ونسبة الشوائب فيها قليلة جداً بالنسبة لشوائب الباعث وشوائب المجمع، أما نسبة الشوائب في بلورة الباعث فتكون أكبر كثيراً من نسبة الشوائب في بلورة المجمع.</p><h3>الرموز الاصطلاحية للترانزستور</h3><img src="img-72.jpeg" alt="img-72.jpeg" /><p>الشكل (١١)</p><p>الرمز الاصطلاحي للترانزستور من النوع (P-N-P) يوضحه الشكل (١١-أ)، والرمز الاصطلاحي للترانزستور من النوع (N-P-N) يوضحه الشكل (١١-ب).</p><p>٧١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

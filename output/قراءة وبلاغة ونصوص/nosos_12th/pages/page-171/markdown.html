@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>وجنسياتهم، وما تخلل هذا الحشد من هتافات وتعليقات وتوجيهات من شيخ العلم، ثم الانطلاق الهادر في شوارع القاهرة، مع ما صاحبه من تحذير الثوار لأولئك المعنيين من المحتل، مروراً بما أصاب القاضي الشرعي، وصولاً إلى المواجهة المسلحة. فالحبكة واضحة، والأحداث الجزئية مترابطة ومتسلسلة وكلها تؤدي إلى تحقيق هدف المواجهة ضد المحتل، في نطاق الصراع العام الذي تحكيه الرواية.</p><p>- العقدة: وهي المنطقة التي تتأزم فيها الأمور، وقد تكون للقصة بكاملها عقدة واحدة، إلا أن روعة الإبداع تكمن في أن يكون لكل حدث، أو فصل عقدة خاصة به في نطاق توجه الأحداث نحو العقدة العامة للقصة. والعقدة الخاصة في هذا الفصل هي وصول الجماهير إلى طريق مسدود للمناشدات والمسيرات السلمية.</p><p>- الحل: وهو الذي ينتظره القارئ أو السامع بفارغ الصبر، وقد يكون الحل مفرحاً وقد يكون مأساوياً؛ إذ تشتد الأمور وتتأزم حتى تبلغ ذروتها في العقدة، فيأتي الحل لينهي هذا التأزم، وذلك ما يجعل المتابع مشدوداً حتى يصل إلى الحل، والحل في هذا الفصل هو اللجوء إلى العمل المسلح في وجه المحتل؛ كحل خاص، في نطاق صراع القصة بشكل عام.</p><p>فضلاً عن براعة الكاتب في القواعد الفنية لهذا النص، فقد استطاع أن يكشف لنا أدق التفاصيل المرئية، أو القلبية من خلال السرد أو الحوار، بأسلوب رشيق جذاب يتميز بالسهولة والوضوح.</p><p>بقي أن نعرف أن هذا النص القصصي ينتمي إلى المدرسة الواقعية لأنه يتحدث ويصف أحداثاً وصراعاً تاريخياً واقعياً وفق الطبيعة الإنسانية وما فيها من نوازع الخير والشر دون مثالية أو مغالاة، من وجهة نظر إسلامية.</p><p>١٦٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

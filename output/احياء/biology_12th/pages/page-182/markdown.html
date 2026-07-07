@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-134.jpeg" alt="img-134.jpeg" /><p>الشكل (١٤) مضخة ارتوازية تسحب الماء من جوف الأرض</p><p>وتعاني بلادنا حاليًا من الاستنزاف الشديد للمياه؛ حيث نضبت كثير من مصادرها الجوفية مثل حوض مدينة تعز.</p><p>ويتوقع أن تنضب أحواض جوفية أخرى مثل: حوض صنعاء، وحوض صعدة، إذا استمرت سلوكياتنا السلبية تجاهها.</p><p>- كيف تكونت أحواض المياه الجوفية؟</p><p>- لماذا يتوقع أن تنضب المياه الجوفية في بلادنا؟</p><p>لقد توصلت الدراسات إلى أن أهم عامل لانخفاض منسوب أحواض المياه الجوفية في اليمن هو الاستنزاف الشديد لمحتواها المائي؛ حيث إن ما يستهلك منها سنويًا لا يعوض من مياه الأمطار. وبدأ تناقص منسوب المياه في الأحواض الجوفية خلال النصف الثاني من القرن العشرين وحتى الآن نتيجة التوسع في حفر الآبار الارتوازية لري حقول القات، حيث بلغ عدد الآبار في حوض صنعاء فقط أكثر من (١٣) ألف بئر حتى الآن.</p><p>- لماذا لم يحصل تناقص في أحواض المياه الجوفية قبل هذه الفترة؟</p><p>إن الاستنزاف الشديد لأحواض المياه الجوفية في هذه الأيام لا يتم تعويضه مما يؤدي إلى حصول عجز سنوي ينتج عنه تناقص مستمر في الأحواض الجوفية حتى ينتهي محتواها من الماء. والجدول الآتي يوضح العجز السنوي الناتج:</p><p>|  حالة الماء | كمية الماء  |
+| --- | --- |
+|  - المياه الجوفية المستهلكة سنويًا. | ٢٨٠٠ - ٣٤٠٠ مليون متر مكعب.  |
+|  - المياه المتجددة في الأحواض سنويًا. | ٢١٠٠ - ٢٥٠٠ مليون متر مكعب.  |
+|  - العجز السنوي في الأحواض. | ٧٠٠ - ٩٠٠ مليون متر مكعب.  |</p><p>وتزداد خطورة هذا الاستنزاف على بلادنا من حقيقة أن اليمن تعد من أفقر الدول في الجانب المائي، إذ لا يتعدى تصيب الفرد السنوي من الماء (١٣٧) مترًا مكعبًا فقط، بينما حدد خط الفقر المائي بمقدار ١٠٠٠ م³ سنويًا على مستوى دول العالم، وحددت حاجة الفرد السنوية من الماء كل عام بمقدار ١٤٠٠ م³.</p><p>١٨٢</p><p>الأحياء النصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

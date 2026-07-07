@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>١- تصل الروائح بموادها الكيميائية على شكل غاز، أودقائق صغيرة عالقة في الهواء إلى بطانة الأنف أثناء التنفس.</p><p>٢- تذوب هذه المواد في السائل الخاطي للبطن للتجويف الأنفي.</p><p>٣- تتأثر الخلايا الشمية بالرائحة وترتبط المادة الكيميائية بالمستقبلات الشمية.</p><p>٤- تتولد السبالات العصبية الحسية وينقلها العصب الشمي إلى مركز الشم في الدماغ المسؤول عن إدراك وتمييز الروائح المختلفة.</p><h2>٢- مستقبلات التذوق Taste Receptors</h2><p>- أين يوجد اللسان ؟ ما وظيفته ؟</p><p>- هل تساءلت كيف يمكن للسان تذوق الأطعمة المختلفة ؟</p><p>ادرس الشكل ( ٢٠ )، ولاحظ مستقبلات التذوق في اللسان، وهي نوع من المستقبلات الكيميائية، وكيف تبدو على شكل براعم تذوقية تنتشر بكثرة على اللسان، كما توجد في مناطق أخرى تلامس الطعام كالبلعوم، وسقف الحلق، ولسان المزمار. ويتكون كل برعم من براعم التذوق من مجموعة خلايا تسمى خلايا التذوق، وخلية التذوق مغزلية الشكل يمتد من طرفها الخارجي شعرة تذوقية تبرز على سطح اللسان في الطبقة الخاطئة ويتصل طرفها الداخلي بليغة عصبية حسية، وهناك أربع مناطق متخصصة في الإحساس بمذاقات الطعام ( الحلو والمر والحامض والمالح ) " حدد مواقعها في اللسان من الشكل ( ٢٠ ) " .</p><h3>آلية التذوق :</h3><p>تتم عملية التذوق وفق الخطوات الآتية :</p><p>١- يذوب الطعام الواصل إلى الفم في اللعاب، وترتبط جزئياته مع المستقبلات الكيميائية الموجودة على شعيرات الخلية التذوقية.</p><p>٢- تتأثر الشعيرة التذوقية بالمادة الذائبة في اللعاب نتيجة ارتباطها بمستقبلات التذوق وينتج عنها سيالات عصبية حسية تنتقل عبر الشعيرة إلى الليفة العصبية الحسية.</p><p>٣- ترسل السبالات العصبية عبر الخلايا العصبية الحسية إلى مراكز التذوق في الدماغ المسؤولة عن تمييز مذاقات ونكهات الأطعمة المختلفة.</p><p>٣١</p><p>الأحياء الصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

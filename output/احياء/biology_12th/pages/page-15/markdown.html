@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-8.jpeg" alt="img-8.jpeg" /><p>الشكل (٦) تركيب العصب.</p><p>بتسيج ضام، غني بالأوعية الدموية مكونة حزمة عصبية، ومجموعة الحزم العصبية المحاطة بغلاف سميك تسمى العصب. الشكل (٦).</p><h1>- السيل العصبي: Nerve Impulse</h1><p>عرفت سابقاً أن الخلايا العضلية تقوم بالانقباض، والخلايا الغدية بالإفراز، بينما الخلايا العصبية تخصصت في توليد السيلالات العصبية ونقلها. والسيل العصبي هو لغة التفاهم بين الخلايا العصبية، وهو الشكل الذي تترجم إليه أنواع المؤثرات جميعها التي يتأثر بها الجسم، وقد تم معرفة آلية تكوين السيل العصبي وانتقاله من خلال دراسات تجريبية على محاور عصبية لحيوان الخبار (Sepia).</p><p>- كيف يتكون السيل العصبي؟ وكيف ينتقل؟</p><p>يتولد السيل العصبي عند حدوث مؤثر ما في الخلية العصبية، ولكي نفهم كيفية تكونه علينا التعرف على وضع غشاء الخلية العصبية قبل حدوث أي مؤثر؛ عندما تكون في وضع يسمى جهد الراحة. بالمعنى الكهربائي لكمية الجهد.</p><p>- فما المقصود بجهد الراحة؟</p><h1>- جهد الراحة</h1><h1>:Resting Potential</h1><p>لاحظ الشكل (٧) حيث ستجد أن الخلية العصبية محاطة بغشاء ذو نفاذية اختيارية يفصل بين البيئة الداخلية والخارجية لهذه الخلية.</p><img src="img-9.jpeg" alt="img-9.jpeg" /><p>الشكل (٧) قياس جهد الراحة.</p><p>- ما نوع الشحنات داخل وخارج الخلية العصبية؟ تختلف الشحنات داخل الخلية عن الشحنات خارجها، ويرجع اختلاف توزيع الشحنات على جانبي غشاء الخلية العصبية إلى الآتي:</p><p>الأحياء للصف الثالث الثانوي</p><p>١٥</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

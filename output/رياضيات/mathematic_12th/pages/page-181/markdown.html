@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التفاصيل</p><p>من (١) ، (٢) نجد أن :</p><p>معادلة المماس هي :</p><p>$‫\text{ص} - \text{د} (\frac{\pi}{4}) = \text{د} (\frac{\pi}{4}) \text{ (س} - \frac{\pi}{4}) \Leftarrow \text{ص} - 5 = 4 \text{ (س} - \frac{\pi}{4})‬$‫
+$\text{ص} + 4 \text{ س} = \pi + 5‬$$‫</p><p>ومعادلة الناظم هي :</p><p>‬$‫\text{ص} - 5 = \frac{1}{4} \text{ (س} - \frac{\pi}{4}) \Leftarrow 16 \text{ ص} - 4 \text{ س} = 80 - \pi‬$‫</p><p>‬$‫\text{ب) } -2 \text{ جتا س جا س} + 2 \text{ جا ص جتا ص } \frac{5 \text{ ص}}{5 \text{ س}} = 0 \Leftarrow -\text{جا 2 س} + \text{جا 2 ص } \frac{5 \text{ ص}}{5 \text{ س}} = 0‬$‫
+$\text{ص } \frac{5 \text{ ص}}{5 \text{ س}} = \frac{\text{جا 2 س}}{5 \text{ ص}} \Leftarrow‬$$‫</p><p>‬$‫\therefore \frac{5 \text{ ص}}{5 \text{ س}} \left| \frac{\pi}{4}, 0 \right| = \frac{\frac{\pi}{4} \times 2 \text{ جا}}{\text{جا 2 (0)}} = \frac{\frac{\pi}{2}}{\text{جا 2 (0)}} = \frac{1}{0} \text{ (غير معرفة).}‬$‫</p><p>∴ معادلة المماس هي : س = ‬$\frac{\pi}{4}$‫ ، ومعادلة الناظم هي : ص = 0</p><h3>المشتقات ذات الرتب العليا :</h3><p>تعلم أنه إذا كانت ص = د (س) قابلة للاشتقاق وكانت ‬$\frac{5 \text{ ص}}{5 \text{ س}}$‫ دالة في المتغير س وقابلة للاشتقاق أيضاً ،</p><p>فإن المشتقة الثانية تكتب بالصورة ‬$\frac{5 \text{ ص}}{5 \text{ س}} (\frac{5 \text{ ص}}{5 \text{ س}}) = \frac{5 \text{ ص}}{5 \text{ س}} \text{ هي أيضاً دالة في المتغير س، وهكذا بالنسبة للاشتقاق}$‫</p><p>ذي الرتب العليا ‬$\frac{3 \text{ ص}}{5 \text{ س}}, \frac{5 \text{ ص}}{5 \text{ س}}, \dots, \frac{5 \text{ ص}}{5 \text{ س}} \text{، أي باشتقاق الدالة ص (و من المرات) ، و } \text{ص} \text{ ص}^+$‫</p><p>لتدل على رتبة المشتقة ، وعن ذلك يُعبر رمزياً بصورة أخرى بالرمز ص ، ص ، ... ، ص (٥)</p><p>فمثلاً : الدالة ص = س‬$^{٥}$‫ نجد أن : ص = ٥ س‬$^{٤}$‫ ، ص = ٥ × ٤ س‬$^{٣}$‫ ، ص = ٣ × ٤ × ٥ س‬$^{٢}$‫ ،</p><p>ص (٤) = ٢ × ٣ × ٤ × ٥ س ، ص (٥) = ١ × ٢ × ٣ × ٤ × ٥ س = ٥ ، ص (٦) = ٠</p><p>وعلى ذلك فإن ‬$\text{و} \text{و} \leq 6$‫ نجد أن : ص (٥) = ٠ ، ومن ذلك نستنتج بصورة عامة :</p><p>‬$‫\text{إذا كانت ص = س} \text{ فإن : ص (٥) = ٥} \text{ ، و} \text{و} \text{و} \text{ص}^+‬$</p><p>١٧٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

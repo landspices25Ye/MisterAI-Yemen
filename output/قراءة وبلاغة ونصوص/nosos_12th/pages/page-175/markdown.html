@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التشبيث بشيء لا نفع له فيه.</p><p>- جحا: يا سيدي الحاكم إن حماداً ليس ابن أخ لي بل خصماً لا يفترق عن أي خصم آخر. وإذا لم يكن للقاضي أن يتحيز لقربه فليس له كذلك أن يتحامل عليه غير أني سأجتهد بعد في إقناعه بالحسنى عسى أن يرضى. ائتوني بالخصمين.</p><p>- كاتب الديوان: (ينادي) تقدم يا حماد تقدم يا غائم.</p><p>(يتقدم حماد وغانم حتى يقف أمام المنصة)</p><p>- جحا: يا هذان أما أن لكما أن تفيئا إلى الصلح فإن الصلح خير؟ أنت يا حماد ألا تنزل عن مسمارك لخصمك فتكسب الأجر والثواب؟</p><p>- حماد: كلا لا أنزل عن حقي أبداً.</p><p>صوت: (يرتفع من بين الحاضرين) انزع يا حماد انزع مسمارك</p><p>صوتان آخران: انزع يا حماد انزع مسمارك.</p><p>(يبدو الغضب في وجه الحاكم فيشير لعبد القوي)</p><p>- عبد القوي: (يصيح بأعلى صوته) صه أخرجوا هؤلاء من هنا!</p><p>(تتقدم الشرطة فيخرجون الهاتفين الثلاثة بين مهمة السخط من سائر الحاضرين).</p><p>- جحا: (بعد أن يعود السكون إلى المجلس) ها أنت ذا قد رأيت يا حماد كيف أن الخلق كلهم عليك، فكن سمحا وانزل عن مسمارك الذي لا خير لك فيه.</p><p>- حماد: مالي وللناس. والله لا أنزل عن حقي أبداً إلا إذا أكرهتموني على ذلك بالقوة.</p><p>- جحا: (يلتفت إلى غائم) وأنت يا غائم كن سمحاً واغتم أنت الفضل خيراً لك، كم تدفع لحماد حتى ينزل لك عن مسماره؟</p><p>- غائم: لا أدفع له شيئاً، إنها داري اشتريتها منه ودفعت له ثمنها فليس له عندي شيء.</p><p>- جحا: لكنه اشترط عليك أن يبقى له حق التمتع بمسماره هذا، وأنت رضيت بذلك.</p><p>- غائم: زعم لي أن لهذا المسمار مكانة في نفسه وأنه حريص على بقائه في مكانه في جدار الحجرة، فعددتها نزوة من نزواته، وقبلت شرطه هذا، وما كنت أحسب قط أنه سيتردد على داري ليل نهار ليطمئن بزعمه على هذا المسمار.</p><p>«تُسمع أصوات الجماهير من بعد تردد هذا الهتاف»</p><p>يارب المسمار انزع مسمارك!</p><p>من دار الأحرار إذ ليست دارك!</p><p>(تبدو الحماسة في وجوه الحاضرين، ويتململ الحاكم في مجلسه ولكنه يظهر التجلد</p><p>١٧٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

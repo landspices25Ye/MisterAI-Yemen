@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>القطع الخروطة</p><p>$‫\therefore 12 = \frac{4}{\left(\frac{1}{3}\right)} = \frac{5}{2} = 1 \therefore‬$‫</p><p>‬$‫\text{أيضاً } 128 = 16 - 144 = 5 - 2 = 2 \text{ ب}‬$‫</p><p>معادلة القطع الناقص هي :</p><p>‬$‫1 = \frac{2}{144} + \frac{2}{128} \iff 1 = \frac{2}{2} + \frac{2}{2}‬$‫</p><h1><strong>مثال (٤ - ١٠)</strong></h1><p>أوجد معادلة القطع الناقص الذي محوره هما محورا الإحداثيات ويمر القطع بالنقطتين (٦ ، ٢) ، (٤ - ٣) .</p><h1><strong>الحل :</strong></h1><p>بما أن محوري القطع هما محورا الإحداثيات ، فإن معادلته تكتب بإحدى الصورتين القياسيتين للقطع الناقص ولتكن :</p><p>‬$‫1 = \frac{2}{2} + \frac{2}{2} = 1‬$‫</p><p>وبما أن القطع يمر بالنقطة (٦ ، ٢) ؛ فهي تحقق معادلته ، أي أن :</p><p>‬$‫(1) \dots \dots \dots \left( \frac{9}{2} - \frac{1}{4} \right) = \frac{1}{2} \iff 1 = \frac{4}{2} + \frac{36}{2}‬$‫</p><p>وبما أن القطع يمر بالنقطة (٤ - ٣) ؛ فهي تحقق معادلته ، أي أن :</p><p>‬$‫(2) \dots \dots \dots \left( \frac{16}{2} - \frac{1}{9} \right) = \frac{1}{2} \iff 1 = \frac{9}{2} + \frac{16}{2}‬$‫</p><p>من (١) ، (٢) ينتج أن :</p><p>‬$‫\frac{1}{13} = \frac{1}{2} \quad , \quad \frac{1}{52} = \frac{1}{2}‬$‫</p><p>‬$‫\therefore \text{المعادلة المطلوبة هي : } 1 = \frac{2}{13} + \frac{2}{52} = 1‬$‫</p><p>نلاحظ أن : ٥٢ < ١٣ إذن المحور الأكبر للقطع يقع على محور السينات .</p><h1><strong>مثال (٤ - ١١)</strong></h1><p>أوجد معادلة القطع الناقص الذي يؤثرناه ( ٥ ± ٠ ) ، وأحد دليليه هو المستقيم س = ٣٦/٥ .</p><h1><strong>الحل :</strong></h1><p>إحداثيات البؤرتين ( ٥ ± ٠ ) ، ٥ = ٥</p><p>‬$‫\text{معادلة الدليل } \frac{1}{2} = \frac{1}{2} = \text{س}‬$</p><p>١١٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

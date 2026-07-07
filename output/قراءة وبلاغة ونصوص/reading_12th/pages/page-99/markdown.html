@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>لا، لا، لأننا إن منحناها شيئاً من عواطف قلوبنا وخوالج نفوسنا، فإننا لا نمنحها أكثر من عواطف الحب والود، ونضنُّ عليها كل الضنِّ بعاطفة الاحترام والإجلال، وهي إلى نَهْلَةٍ واحدة من نهلات الإجلال والإعظام أحوج منها إلى شُؤُوبٍ متدفق من الحب والغرام.</p><p>قد نحنو عليها ونرحمها، ولكنها رحمة السيد بالعبد، لا رحمة الصديق بالصديق. وقد نصفها بالعفة والطهارة، ومعنى ذلك عندنا أنها عفة الخدر والخباء، لا عفة النفس والضمير. وقد نهتم بتعليمها وتخريجها، ولكن لا باعتبار أنها إنسان كامل لها الحق في الوصول إلى ذروة الإنسانية التي تريدها، والتمتع بجميع صفاتها وخصائصها؛ بل لنعهد إليها بوظيفة المربية، أو الممرضة، أو لنتخذ منها مَلْهَأةً لأنفسنا، وندباً لسمرنا، ومؤنساً لوحشتنا، لا نُسدي إليها من النعم، ولا نخلع عليها من الحُلل، إلا ما ينعكس منظره على مرآة نفوسنا، فيملؤها غبطة وسروراً.</p><p>إنها لا تريد شيئاً من ذلك، إنها لا تريد أن تكون سَرِيَّةَ الرجل ولا حَظِيَّتَهُ، ولا أداةَ لَهْوِهِ ولعبه، بل شريكة حياته ورفيقة دربه.</p><p>إنها تفهم معنى الحياة كما يفهمها الرجل، فيجب أن يكون حظها منها مثل حظّه.</p><p>إنها لم تُخلق من أجل الرجل، بل من أجل نفسها، فيجب أن يحترمها الرجل لذاتها لا لنفسه.</p><p>يجب أن يُنفَّس عنها قليلاً من ضائقة سجنها لتفهم أنَّ لها كياناً مستقلاً، وحياة ذاتية، وأنها مسؤولة عن ذنوبها وآثامها أمام نفسها وضميرها، لا أمام الرجل.</p><p>يجب أن تعيش في جوِّ الحرية الفسيح، وتستروح رائحته الأريجة، ليستيقظ</p><p>٩٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

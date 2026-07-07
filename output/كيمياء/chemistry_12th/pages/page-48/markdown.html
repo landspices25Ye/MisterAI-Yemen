@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-31.jpeg" alt="img-31.jpeg" /><p>للشحنة الكهربائية الموجودة على هذا الأيون.</p><p>٤ - عدد التاكسد للأكسجين في أي مركب يساوي (٢-) باستثناء حالة فوق الأكسيد يكون عدد التاكسد له يساوي (١-) كما في فوق أكسيد الهيدروجين H₂O₂ ، وكذلك حالة فلوريد الأكسجين OF₂ حيث يكون عدد التاكسد له يساوي (٢+).
+٥ - عدد التاكسد للهيدروجين في أي مركب يساوي (١+) ما عدا هيدريدات الفلزات مثل NaH حيث يكون عدد التاكسد له يساوي (١-).
+٧ - المجموع الجبري لأعداد التاكسد لجميع الذرات في أي جزء أو صيغة كيميائية متعادلة يساوي صفراً.</p><h1>■ مثال :</h1><p>احسب عدد التاكسد للكربون في سكر القصب C₁₂H₂₂O₁₁ .
+• المجموع الجبري لأعداد التاكسد لجميع الذرات في أي جزء أو صيغة كيميائية متعادلة يساوي صفراً.</p><p>$‫\therefore \text{مجموع عدد التاكسد للكربون} + \text{مجموع عدد التاكسد للهيدروجين} + \text{مجموع عدد التاكسد للأكسجين} = \text{صفر}‬$‫</p><p>‬$‫(١٢ \times س) + (١ + ٢٢) + (٢ - ١١) = \text{صفر}‬$‫</p><p>‬$‫١٢ س + ٢٢ - ٢٢ = \text{صفر}‬$‫</p><p>‬$‫١٢ س = \text{صفر}‬$‫</p><p>‬$‫س = \text{صفر}‬$‫</p><p>‬$‫\therefore \text{عدد التاكسد للكربون في سكر القصب} = \text{صفر}‬$</p><h1>تفاعلات الأكسدة والاختزال :</h1><p>سوف ندرس نوعين من تفاعلات الأكسدة والاختزال ، كما يأتي :
+- النوع الأول : تفاعل أكسدة واختزال يحدث بشكل تلقائي مستمر ونحصل منه على تيار كهربائي ( كما في الخلايا الجلفانية ).
+- النوع الثاني : تفاعل أكسدة واختزال لا يحدث بشكل تلقائي ونحتاج إلى طاقة كهربائية لإحداث هذا التفاعل ويستمر باستمرار وجود الطاقة ( كما في التوصيل الإلكتروني ).</p><p>٤٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

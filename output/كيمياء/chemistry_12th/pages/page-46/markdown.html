@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-30.jpeg" alt="img-30.jpeg" /><p>نلاحظ أن عملية التاكسد يصاحبها دائماً عملية اختزال، وبالتالي فهما عمليتان متلازمتان تحدثان في آن واحد في التفاعل نفسه. - كم عدد الإلكترونات المفقودة أو المكتسبة في عملية الأكسدة والاختزال في التفاعل السابق؟ وماذا تستنتج؟</p><p>الأكسدة : عملية كيميائية يتم فيها فقد إلكترونات.</p><p>الاختزال : عملية كيميائية يتم فيها اكتساب إلكترونات.</p><p>- يتفاعل الفلور مع الصوديوم لتكوين فلوريد الصوديوم، مثل ذلك في تفاعل إلكتروني موضحاً عمليتي التاكسد والاختزال.</p><p>وتحدث عملية التاكسد والاختزال في عمليات التحلل الكهربائي، فعند إمرار تيار كهربائي في مصهور كلوريد الصوديوم، يحدث تفاعل كيميائي يمثل إلكترونياً على النحو الآتي:</p><p>$‫2\text{Na}^+ \xrightarrow{\text{تيار كهربائي}} 2\text{Na} + \text{Cl}_2 \xrightarrow{\text{مصهور}} \text{مستمر (s)} \text{ (g)}‬$‫</p><p>وفي هذا التفاعل تكتسب أيونات الصوديوم الموجبة إلكترونات وتتحول إلى ذرات متعادلة، وتعتبر عاملاً مؤكسداً، بينما تفقد أيونات الكلور السالبة إلكترونات وتتحول إلى جزيئات وبذلك تعتبر عاملاً مختزلاً.</p><p>ومن هنا نعرف العامل المختزل بأنه: المادة التي تفقد إلكتروناً أو أكثر في التفاعل الكيميائي، والعامل المؤكسد هو المادة التي تكتسب إلكتروناً أو أكثر في التفاعل الكيميائي.</p><p>وتعتبر اللافلزات عوامل مؤكسدة قوية، بينما الفلزات عوامل مختزلة قوية، وهناك علاقة قوية بين قوة العامل المؤكسد أو العامل المختزل وبين سالبتيه الكهربائية، فالفلور أعلى العناصر في السالبة الكهربائية؛ ولذا فهو أقواها كعامل مؤكسد، كما أن عناصر أدنى العناصر السالبة الكهربائية؛ وبالتالي فهي من العوامل المختزلة القوية.</p><h3>بعض أهم العوامل المؤكسدة والعوامل المختزلة الشائعة :</h3><p>|  عوامل مؤكسدة | عوامل مختزلة  |
+| --- | --- |
+|  ١ - برمنجنات البوتاسيوم | ١ - كبريتات الحديد (II) ‬$‫\text{FeSO}_4‬$‫  |
+|  ٢ - يودات البوتاسيوم | ٢ - حمض الأكساليك اللامائي ‬$‫\text{H}_2\text{C}_2\text{O}_4‬$‫  |
+|  ٣ - برومات البوتاسيوم | ٣ - كبريتيد الهيدروجين ‬$‫\text{H}_2\text{S}‬$‫  |
+|  ٤ - ثاني أكسيد المنجنيز | ٤ - ثيوكبريتات الصوديوم ‬$‫\text{Na}_2\text{S}_2\text{O}_3‬$‫  |
+|  ٥ - الهالوجينات | ٥ - الهيدروجين ‬$‫\text{H}_2‬$‫  |
+|  ٦ - الأكسجين |   |
+|  ‬$‫\text{Cl, Br...}‬$‫ |   |
+|  ‬$‫\text{O}_2‬$ |   |</p><p>جدول (١-٣)</p><p>٤٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

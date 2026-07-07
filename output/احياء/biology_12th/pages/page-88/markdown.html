@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>– ما الهرمونات الحافزة لأطوار دورة المبيض؟ ومن أين تفرز؟
+لاحظ أن هرموني الجسم الأصفر يعملان على تثبيط الهرمونات الحافزة لأطوار المبيض لمنع نضج حوصلة جديدة.</p><h1>٢- دورة الرحم:</h1><p>ما أطوار هذه الدورة؟ ماذا يحدث فيها؟
+لاحظ أنه في طور النمو والإفراز يزداد سمك بطانة الرحم وتصبح غنية بالأوعية الدموية والإفرازية لتوفير بيئة ملائمة لنمو الجنين، ويحدث ذلك بتأثير هرموني البروجسترون والإستروجين.</p><p>ماذا يحدث إذا لم تخصب البويضة؟
+يضم الجسم الأصفر في اليوم (٢٤ للدورة تقريباً) وينخفض تركيز هرموناته مما يسبب انسلاخ بطانة الرحم وخروجها مع نزيف من الشعيرات الدموية يستمر من (٣-٥) أيام ويسمى ذلك طور الحيض.</p><img src="img-69.jpeg" alt="img-69.jpeg" /><p>الشكل (٢٢) عملية الإخصاب</p><h1>الإخصاب Fertilization</h1><p>– ما المقصود بعملية الإخصاب وكيف تتم؟</p><p>لاحظ الشكل (٢٢). وكيف تتم عملية الإخصاب في الثلث الأول من قناة فالوب وفقاً للخطوات الآتية:
+١- يخترق الحيوان المنوي المنطقة الشعاعية للخلية البيضية الثانوية ليصل للمنطقة الشفافة. ما الذي يساعده في تحليل هذه الطبقة؟
+٢- يلتحم الغشاء البلازمي في الحيوان المنوي مع غشاء الخلية البيضية، مما يساعد على إفراز انزيمات من خلايا قشرية تقع تحت غشاء الخلية، لتكون طبقة قاسية تقلل من احتمال دخول أكثر من حيوان منوي واحد.</p><p>٨٨</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

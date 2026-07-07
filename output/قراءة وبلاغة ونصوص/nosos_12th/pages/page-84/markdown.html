@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![LOGO]</p><h1>المدرسة الرومانسية</h1><p>الرومانسية (الرومانتيكية) مشتقة من كلمة «رومانيوس» التي أطلقت على اللغات والآداب التي تفرعت عن اللغة اللاتينية القديمة. وهي حركة أدبية وفنية عرفتها أوروبا في مطلع القرن التاسع عشر، وغلبت على الشعر العربي وزاد نطاقها اتساعاً في الحقبة الواقعة بين الحربين العالميتين الأولى والثانية.</p><h2>نشأتها في الأدب العربي</h2><p>مع استمرار جيل الكلاسيكية الجديدة في بعث الشعر وإحيائه وتطويره، في وقت اشتدت فيه معاول الهدم من قبل الاستعمار، الذي حاول بغزوه الفكري طمس الشخصية العربية والإسلامية، ظهر جيل جديد نظر إلى الشعر العربي نظرة تختلف عن نظرة مدرسة الإحياء، ورأى ضرورة ملحة لتطويره. وقد جاء ظهور ذلك التيار نتيجة لما يأتي:
+1- اتصال العرب بالثقافة الغربية عن طريق البعثات والترجمة للأدب الرومانسي الغربي.
+2- رفض النهج التقليدي السائد في مدرسة الإحياء الكلاسيكية.
+3- الرغبة في التعبير عن الذاتية والوجدانية والشخصية الفنية المستقلة.
+4- الهروب من الواقع العربي الأليم في ظل مفاسد النظم الاستعمارية إلى عالم الأحلام والخيال.
+5- كان للحرب العالمية الأولى أثرها في تفجير أحزان شعراء الرومانسية العربية.</p><h2>خصائصها الفنية</h2><p>1- التعبير عن تجربة شعورية ذاتية صادقة منتزعة من الوجدان يطغى عليها الشعور بالحزن والألم والحنين والحرمان.
+2- الوحدة العضوية المتمثلة في وحدة الموضوع، وترابط الأفكار ووحدة الجو النفسي.
+3- الاهتمام بالخيال والتصوير الكلي والجزئي.
+4- الامتزاج بالطبيعة ومناجاتها وتصويرها.</p><p>٨٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

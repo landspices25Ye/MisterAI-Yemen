@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-141.jpeg" alt="img-141.jpeg" /><p>شكل (٢)</p><img src="img-142.jpeg" alt="img-142.jpeg" /><p>شكل (٣)</p><p>ويكون مجمعاً للإلكترونات المنبعثة من صفيحة المهبط. هذا الجهاز يسمى بالخلية الكهروضوئية. إذا وصل مصعد الخلية (A) على التوالي، مع جلفانومتر (G) وبالقطب الموجب لمصدر جهد كهربائي (ج) (بطارية) ثم ربط القطب السالب للجهد بمهبط الخلية (C)، فإن هذه الدائرة تسمى بدائرة الخلية الكهروضوئية شكل (٢).</p><p>عندما يُسلط ضوء بتردد مناسب على صفيحة المهبط (C) يؤدي ذلك إلى انبعاث إلكترونات ضوئية يلتقطها المصعد الموجب (A)، وبالتالي إلى مرور تيار بدائرة الخلية يدل عليه انحراف مؤشر الجلفانومتر (G). أما إذا حجب سقوط الضوء عن صفيحة المهبط فستلاحظ عدم انحراف مؤشر الجلفانومتر مما يدل على عدم مرور تيار كهربائي بدائرة الخلية وذلك بسبب توقف انبعاث الإلكترونات من سطح المهبط.</p><h2>تجربة مليكان لدراسة الظاهرة الكهروضوئية :</h2><p>لقد قام العالم الأمريكي روبرت مليكان عام ١٩١٦م بدراسة تجريبية وافية للظاهرة الكهروضوئية وتحقق من تفسير إنشائيين لها. ويبين الشكل (٣) مخطط</p><p>الجهاز الذي استخدمه لدراسة هذه الظاهرة. وتظهر على جدار الأنبوب الزجاجي للجهاز نافذة من الكوارتز يتم إسقاط الضوء من خلالها، لأن الزجاج العادي يمتص الأشعة فوق البنفسجية، بينما يسمح الكوارتز بمرورها.</p><p>١٤٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-181.jpeg" alt="img-181.jpeg" /><h2>الطاقة</h2><p>للطاقة صور مختلفة كالطاقة الحرارية، والكهربائية، والميكانيكية، والكيميائية ... الخ، وقد سبق لك دراسة أن الطاقة تحت ظروف معينة يمكنها أن تنجز شغلاً، كذلك للطاقة مصادر متعددة، ويبين المخطط التالي أهم هذه المصادر :</p><img src="img-182.jpeg" alt="img-182.jpeg" /><p>اذكر بعض فوائد مصادر هذه الطاقة للإنسان، وما أثر ذلك على البيئة ؟
+وقد صنفت الطاقة وفقاً لمصادرها إلى نوعين هما :</p><h3>١- الطاقة غير المتجددة « الناضبة » : Non-Renewable Energy</h3><p>وهي الطاقة التي يمكن الحصول عليها من مصادر محدودة الاحتياطي مثل : الوقود الأحفوري (النفط والفحم الحجري)، والوقود النووي، وهي ذات تأثير ضار بالبيئة بسبب مخلفاتها الناتجة أو بسبب الغازات السامة المنبعثة أثناء احتراقها.</p><h3>٢- الطاقة المتجددة « غير الناضبة » : Renewable Energy</h3><p>وهي الطاقة التي يمكن الحصول عليها من مصادر طبيعية، مستمرة مثل : أشعة الشمس، وينابيع المياه الدافئة المتدفقة من باطن الأرض أو من مياه الشلالات والأنهار الجارية، والرياح، وطاقة الكتلة الحيوية، ومياه البحار والمحيطات، ويسمى هذا النوع بالطاقة النظيفة لأنها غير ملوثة للبيئة.</p><p>١٨٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

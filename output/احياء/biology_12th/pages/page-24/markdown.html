@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>ثانياً: الجهاز العصبي الطرقي: (Peripheral Nervous System)</h2><p>ويتكون من الأعصاب التي تخرج من الدماغ، والحبل الشوكي وتنتشر في أجزاء الجسم المختلفة لتنظيم عملها، وحركتها، وتتميز هذه الأعصاب بتوعين هما:</p><p>١- أعصاب تخرج من الدماغ: وتتكون من (١٢) زوجاً من الأعصاب، وتسمى الأعصاب الجمجمية (Cranial Nerves)، لأنها تخرج من الجمجمة لتنظيم عمليات الإبصار، والسمع، والتذوق، ومضغ الطعام، وحركات اللسان، وحركات عضلات الوجه.</p><p>- اذكر أمثلة لبعض الأعصاب الجمجمية.</p><p>من أهم الأعصاب التي تخرج من الدماغ العصب البصري، والعصب السمعي، وأعصاب الشم، وأعصاب التذوق. كما يخرج من الدماغ العصب الحائر الذي يقوم بتنظيم النشاط اللاإرادي للأحشاء الداخلية في الجسم كالقلب، والرئتين، وقناة الهضم.</p><p>٢- أعصاب تخرج من الحبل الشوكي: وتتكون من (٣١) زوجاً من الأعصاب، وتسمى الأعصاب الشوكية، وتقوم بعملية استقبال الإحساس من مناطق الجسم المختلفة كالجلد، وتنظيم حركات الذراعين، والساقين، والعضلات الإرادية في أطراف الجسم، وعادة ما تنتج الحركة في العضو عن طريق التنسيق بين المركز المنظم لها في الدماغ والأعصاب الشوكية المتصلة بالعضلات التي تنقيض، وتنبسط لإحداث الحركة المطلوبة للعضو.</p><h2>ثالثاً: الجهاز العصبي الذاتي: (Autonomic Nervous System)</h2><p>ويقوم بعملية التحكم، والتنظيم للحركات اللاإرادية التي تتم في أجزاء الجسم الداخلية، مثل عملية تنظيم ضربات القلب وضغط الدم، وينقسم هذا الجهاز إلى جزئين رئيسيين.</p><p>لاحظ الشكل (١٦) ولاحظ كيف أن كل جزء من أجزاء الجهاز العصبي الذاتي يعمل عكس الآخر، وهذا الجزءان هما:</p><p>١- الجهاز العصبي السميثاوي: ويقوم بعملية تنشيط وزيادة عمل أعضاء الجسم الداخلية كزيادة ضربات القلب عند حاجة الجسم إلى ذلك أو رفع ضغط الدم، أو توسيع حدقة العين، أو تثبيط إفراز اللعاب، أو ارتخاء الحويصلات الهوائية لزيادة الأكسجين فيها.</p><p>٢٤</p><p>الأحياء: النصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-66.jpeg" alt="img-66.jpeg" /><p>الوحدة الثالثة</p><h2>ثانياً: السحب بدون إعادة :</h2><p><strong>السحب بدون إعادة هو</strong> السحب مرة أخرى بدون إعادة الشيء المسحوب وبذلك تصبح كل سحبة متأثرة بالتي قبلها ؛ وعندئذٍ تصبح الحوادث غير مستقلة عن بعضها . في هذه الحالة لا يمكن أن نستخدم ما قد درسناه في متتالية التكرارات المستقلة وقانون الاحتمال الثنائي ، وإنما نبحث عن قانون آخر نستخدمه في حالة السحب بدون إعادة وقبل أن نستنتج هذا القانون نقدم الآتي :</p><p>نفرض أن لدينا صندوقاً يحتوي على « و » شيئاً منها و١ من النوع الأول، و٢ = و - و١ من النوع الثاني، وإذا سحبنا - عشوائياً - وبدون إعادة « م » شيئاً . فما هو احتمال الحصول على « س » شيئاً من النوع « الأول » ؟
+ولحساب هذا الاحتمال نوجد :</p><p>١) عدد الحالات الممكنة = ٥ و ٧</p><p>٢) عدد الحالات الملائمة = ١٥ و ٢٠ و ٢٥ و ٣٠ = ( ١٥ ) و ( ٢٠ ) و ( ٣٠ ) و ( ٤٠ ) و ( ٥٠ ) و ( ٦٠ ) و ( ٨٠ )</p><p>وعليه يكون احتمال الحصول على « س » شيئاً من النوع و١ هو :</p><img src="img-67.jpeg" alt="img-67.jpeg" /><p>شكل (٣ - ٤)</p><p>$‫\text{حا ( س )} = \frac{١٥ و ٢٠ و ٢٥ و ٣٠}{٥ و ٧}‬$‫</p><p>وهو قانون السحب بدون إعادة، ويمكن كتابة هذا القانون هندسياً بطريقة المعين كما في [ الشكل (٣ - ٤ ) ] .</p><h3>مثال (٣ - ١٩)</h3><p>صندوق يحتوي على ٢٥ كرة ، منها ١٧ حمراوات ، ٨ بيضاوات . سحبت من الصندوق - عشوائياً - ٣ كرات معاً بدون إعادة . فما احتمال أن تكون كرتان منها حمراوين ؟</p><h3>الحل :</h3><p>من الشكل (٣ - ٥) :</p><p>نفرض أن : ١ هي حادثة سحب كرتين حمراوين :</p><img src="img-68.jpeg" alt="img-68.jpeg" /><p>شكل (٣ - ٥)</p><p>‬$‫\therefore \text{حا ( س = ٢ )} = \text{حا ( ١ )} = \frac{١٧ و ٢٠ و ٢٥ و ٣٠}{٢٥ و ٣٠} = \frac{١٠٨٨}{٢٣٠٠} = ٠,٤٧٣٠‬$</p><p>١٠٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

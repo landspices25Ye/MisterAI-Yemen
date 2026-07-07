@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-152.jpeg" alt="img-152.jpeg" /><p>الشكل (١٥) آثار زحف ميدان</p><p>الزواحف وبعض اللافقاريات على شكل قنوات أو ممرات في الرواسب الطرية، وتتملىء بالرواسب فيما بعد، وعندما تتصل هذه الرواسب تحفظ آثار الزحف والحفر كنوع من أنواع الأحافير كما في (الشكل - ١٥).
+ج- إفرازات الحيوانات: تترك بعض الحيوانات برازها الذي يتصل</p><p>ويحفظ كنوع من أنواع الأحافير مثل براز الطيور الذي يتراكم أثناء هجرتها الجماعية عند تغيير الفصول السنوية، وكذلك مخلفات الديناصورات التي وجدت مراقبة لبقاياها المتحجرة.</p><h4>٤- القوالب والنماذج (Molds & Casts):</h4><p>تتكون القوالب والنماذج عند دفن القواقع والأصداف أو العظام.</p><img src="img-153.jpeg" alt="img-153.jpeg" /><p>الشكل (١٦) القالب والنموذج</p><p>انظر (الشكل - ١٦) ولاحظ كيف يتكون القالب والنموذج. تلاحظ أنه إذا طمرت قوقعة في رسوبيات كما في (الشكل - أ) تتحلل مادتها الرخوة أولاً (الشكل - ب)، ثم تعرضت لاحقاً لتخلل المحاليل التي تعمل على إذابة الصدفة (الشكل - ج)، فتتكون فجوه داخل الرسوبيات أو الصخرة تسمى قالباً (أحفورة القالب). وتلاحظ أن القالب أخذ الشكل الخارجي للقوقعة.</p><p>ويمكن أن تتكون القوالب أيضاً بأجزاء صلبة أخرى كعظام الفقاريات. أما إذا امتلا القالب فيما بعد برسوبيات طينية أو جيرية (الشكل - د)، أو ترسبت فيه معادن ناتجة من تخلل الصخرة بمحاليل مشبعة بعناصر تلزم لتكوين القالب، تنتج أحفورة تسمى نموذجاً تحمل جميع التفاصيل الداخلية للقوقعة.</p><h4>- فوائد الأحافير:</h4><p>تظهر أهمية دراسة الأحافير في النتائج التي توصل إليها العلماء، وهي:</p><p>الأحياء للصف الثالث الثانوي</p><p>١٩٥</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

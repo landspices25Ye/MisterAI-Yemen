@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>قصة محمد عبد الولي:</h2><p>ترددت الصرخات من جانب الجبل .. ولم يكن في القرية سوى أطفال ونساء مُسَنَّاتٍ أمَّا الرجال والنساء القادرون على العمل فكانوا في الحقول، وردد الصدى أصواتاً مبهمة .. ومن الوادي كان رجال يحملون نعشاً تمدد عليه شبح إنسان .. لم يكن قدمات بعد .</p><p>القرية تحتويها شمس كئيبة .. وريح تصر، والأرض ظمأى تنتظر المطر والسماء لا تنذر بشيء .. العام عام آخر من القحط .. تهز العجائز رؤوسهن :</p><p>– لم أر أشد من هذه الأعوام .</p><p>– كانت أيامنا أيام خير .</p><p>وتهمس نساء :</p><p>– لقد هاجر الرجال ..</p><p>وكانوا يعودون، ولكن على أكتاف رجال آخرين .. الآن النعش يزحف في عوارض الجبل ببطء .. العرق يتصبب من وجوه الرجال .. وكانت أصوات لا تزال تسمع .. قالت إحداهن :</p><p>– هل تسمعون الصوت ..</p><p>ولم يحمل الهواء سوى مقاطع مبهمة، العرق لا يشبع عطش الأرض، ولكن الرجال يستمرون بإصرار في منح الأرض اليابسة مزيداً من عرقهم .</p><p>وردد الجبل الصدى :</p><p>– أوه .. أواه .</p><p>كان المنزل مغلقاً ، حتى الطفلين كانا مع أمهما في الأرض اليابسة . كانوا ثلاثة .. أمَّا وطفلين أرهقهم العمل .. جلست لتمسح عرق جبينها وشرب الطفلان ماء .</p><p>وصل سمعهم النداء ...</p><p>– هل عاد ؟ ...</p><p>صاح الطفلان :</p><p>– إنه أبونا .. يقولون إنه أبونا في الطريق إلى القرية .</p><p>ركض الأطفال نحو الجبل .</p><p>وجمعت المرأة أشياءها القليلة وعادت لتستقبل زوجها العائد، في أعماقها ضربات سرور . لقد عاد أخيراً في رحلة استمرت أعواماً لم تعد تذكرها .. إنها بعمر صغيرها الذي راح يركض نحو الجبل لا يعرف حتى شكل أبيه .</p><p>٢٠٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>ومن التشبيهات المبتكرة التشبيه الموحى بالحزن: تشبيه الدمع بالضباب الرمادي، والتشبيه «ها أنتم كصخر بلادنا» يوحي بثبات شعراء الأرض المحتلة.</p><p>والموسيقى الخارجية في النص ممثلة بالوزن والقافية وقد تأثرت الموسيقى الخارجية مع صور الشاعرة وألفاظها، ومع الموسيقى الداخلية المتمثلة بتكرار الكلمات والعبارات الشعرية، وتوالي أساليب الاستفهام، ودلالات الكلمات وإيقاعها، وشيوع بعض حروف الجهر والاستعلاء.</p><p>ولقد اختتمت الشاعرة القصيدة بجواب القسم «لن أبكي» وجعلته عنواناً، فجاء موقفاً لما فيه من إحياء بعنفوان التحدي والصمود، كطريق وجدته الشاعرة بعد ألم الضعف والبكاء.</p><h3>أسئلة وتدريبات</h3><p>1. ١ – أين ولدت فدوى طوقان؟ وما الجو الذي عاشت فيه؟
+2. ٢ – ما روافد تجربتها الشعرية؟
+3. ٣ – مر شعر فدوى طوقان بمرحلتين. وضعهما.
+4. ٤ – لماذا بكت الشاعرة في المقطع الأول، ثم أقسمت بالآتيكي في المقطع الثاني؟
+5. ٥ – ما غرض الأساليب الخبرية في النص؟
+6. ٦ – لماذا قدمت الشاعرة كلمة (هنا) في قولها: «هنا كانوا.. هنا حلموا»؟
+7. ٧ – ما غرض النداء «يا مصابيح الدجى»؟
+8. ٨ – وضع الحركة واللون في صورة المقطع الثاني.
+9. ٩ – بم يوحي تشبيه الدمع بالضباب الرمادي؟
+10. ١٠ – بم تتمثل الموسيقى الداخلية في النص؟</p><p>١٥٩</p><p><http://www.e-learning-moe.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><p>– من الشكل (٦-٤) استخرج الحموض الأمينية الأساسية وغير الأساسية؟</p><p>وتعتبر الحموض الأمينية من مشتقات الحموض العضوية، فأبسط أنواع الحموض الأمينية حمض الجلايسين، وهو مشتق من حمض الأسيتيك (الخليك) العضوي بعد إحلال مجموعة أمين (-NH) محل ذرة الهيدروجين الموجودة على ذرة الكربون الثانية (كربون الفا)، كما هو موضح أدناه.</p><img src="img-105.jpeg" alt="img-105.jpeg" /><p>وبالنظر إلى أبسط الحموض الأمينية نجد أن الحمض الأميني يحتوي على مجموعتين وظيفيتين هما: مجموعة الكربوكسيل -COOH التي تعطيه الخاصية الحمضية، ومجموعة الأمين -NH₂ وتعطيه الخاصية القاعدية، وهاتان المجموعتان تكسبان الحمض الأميني طبيعة مترددة، أي إنه يتفاعل مع الحموض كقاعدة ومع القواعد كحمض.</p><p>وعند تكاثف حمضين أمينيين مع بعضهما تتكون رابطة بين مجموعة الكربوكسيل لأحد الحموض الأمينية وبين مجموعة الأمين لحمض أميني آخر بعد فقد جزيئة ماء وتسمى هذه الرابطة بالرابطة الببتيدية.</p><img src="img-106.jpeg" alt="img-106.jpeg" /><p>■ مثال:</p><p>عند تكاثف حمض الجلايسين مع حمض الأنين لتكوين جلايسيل الأنين ثنائي الببتيد تتكون رابطة ببتيدية على النحو الآتي:</p><img src="img-107.jpeg" alt="img-107.jpeg" /><p>١١٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-154.jpeg" alt="img-154.jpeg" /><p>تُعجَّل الإلكترونات المنبعثة من المهبط (C) عبر الأنبوب المفرغ بواسطة فرق الجهد العالي (ج) المطبق بين طرفيه، وتصطدم بالهدف (مادة المصعد (A)) بسرعة عالية (ع)، وينتج عن هذا التصادم انبعاث إشعاع ذي ترددات عالية في كل الاتجاهات يُسمى بالأشعة السينية.</p><p>هذه الأشعة ذات نفاذية كبيرة، بسبب طاقتها العالية، فهي خطرة على الصحة ولهذا يحاط عادة أنبوب الأشعة السينية بدرجة واق من الرصاص لحماية الباحثين أو العاملين من التعرض لهذه الأشعة. وتُوجه الحزمة المطلوبة من هذه الأشعة بدقة من خلال نافذة صغيرة على هذا الدرع. انظر الشكل (١٢).</p><h3>تفسير سبب انبعاث الأشعة السينية:</h3><p>يمكن تفسير انبعاث الأشعة السينية بالاعتماد على نموذج بوهر الذري، إذ تتفاعل الإلكترونات المصطدمة بالهدف مع مادته ويحدث أحد الاحتمالين أو كلاهما.</p><p>الاحتمال الأول: تنفذ بعض الإلكترونات ذات الطاقة العالية داخل ذرات مادة الهدف مخترقة مداراتها الإلكترونية فتصطدم بأحد إلكتروناتها الداخلية، أي بأحد مستويات الطاقة القريبة من النواة (المناظرة لـ ١ = ١ مثلاً)، فيؤدي ذلك إلى اقتلاعه من مستوى الطاقة الخاص به تاركاً وراءه فراغاً، ما يلبث أن يقفز إليه إلكترون آخر من مستويات الطاقة العليا (البعيدة عن النواة وليكن ن = ٣) ليملأ هذا الفراغ وينتج عن ذلك إشعاع تردده f وطاقته (hf) تساوي الفرق بين طاقتي المستويين اللذين انتقل بينهما الإلكترون. وهذا الإلكترون الأخير يترك بدوره فراغاً عند انتقاله</p><img src="img-155.jpeg" alt="img-155.jpeg" /><p>١٥٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the E-Learning (Maoe) featuring a stylized 'M' and 'E' with the word 'e-learning' below it.]()</p><h2>مبدأ توليد الأشعة الليزرية :</h2><p>عرفت من دراستك السابقة أن للذرة مستويات طاقة أدناها هو المستوى الأرضي الذي توجد فيه الذرات وهي في حالتها المستقرة العادية . وسبق أن رمزنا للمستوى الأرضي بالرمز طاء ، طاء ، طاء .. وتسمى هذه المستويات بالمستويات المثارة أو بالحالات المثارة . وتتفاعل الذرة مع الإشعاع الساقط عليها بثلاث عمليات أساسية مبنية في الشكل ( ١٥ ) وهي :</p><img src="img-159.jpeg" alt="img-159.jpeg" /><h3>١- الإمتصاص المستحث : Induced or Stimulated Absorption</h3><p>نفترض عينة من الذرات تتميز بمستويين للطاقة، المستوى الأرضي طاء والمستوى المثاري طاء . فإذا فرضنا أن فوتونا من الضوء طاقته ( $‫hf‬$ ) = طاء - طاء سقط على الذرة وهي في حالتها المستقرة، فإن الذرة سوف تمتص طاقته، وهذا يؤدي إلى انتقال بعض إلكتروناتها من المستوى الأرضي ( طاء ) إلى المستوى الأعلى ( طاء ) ويقال عندئذ أن الذرة انتقلت إلى المستوى المثاري شكل ( ١٥ ) . وتسمى هذه العملية بالامتصاص المستحث .</p><p>١٦٤</p><p><http://www.e-learning-moe.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

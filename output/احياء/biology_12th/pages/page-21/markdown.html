@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>جـ - غشاء الام الحنون ( Pia Mater ) ويتميز بأنه نسيج رقيق يغلف الدماغ بشكل مباشر، ويوجد سائل بين الام العنكبوتية والام الحنون يعمل على الزيادة في امتصاص الصدمات، وقد وجد ان الاغشية السحائية قد تتعرض لبعض الالتهابات الخطيرة، والتي قد تسبب الوفاة للإنسان إذا لم يتم معالجتها بسرعة.</p><h2>النقاط (٢)</h2><p>• قم ومجموعة من زملائك بزيارة إلى أقرب مستشفى أو مركز صحي لجمع المعلومات عن الالتهاب السحائي في منطقتك.</p><p>ويتكون الدماغ من الاجزاء الآتية:</p><p>أ - المخ ( Cerebrum ) ويشكل الجزء الأكبر من الدماغ؛ حيث يتركب من نسيج مخي مكون من طبقتين هما:</p><p>١- الطبقة الخارجية (القشرة)، وهي طبقة رقيقة تحتوي على أجسام الخلايا العصبية واللياف عصبية غير محاطة بأغماد نخاعية بحيث يبدو لونها رمادي، ولهذا تسمى المادة الرمادية Grey Matter.</p><p>٢- الطبقة الداخلية (النخاع)، وتتكون من مجموعة من الالياف العصبية المحاطة بأغماد نخاعية بحيث يبدو لونها أبيض؛ ولهذا فإنها تسمى</p><img src="img-15.jpeg" alt="img-15.jpeg" /><p>الشكل (١٣) مقطع طولي بين اجزاء الدماغ.</p><p>المادة البيضاء White Matter. الشكل (١٣).</p><p>وينقسم الدماغ إلى نصفين متشابهين هما النصف الايمن، والنصف الايسر، وتظهر في كل نصف عدد من الاخاديد، أو الشقوق يمكن بواسطتها تمييز فصوص الدماغ في كل نصف، وهذه الفصوص هي الفص الجبهي (الامامي)، والفص الجداري، والفص الصدغي، والفص الخلفي، وقد وجد ان كل فص يتخصص بوظائف محددة سواء حسية أم حركية، كما اتضح ان المراكز القصية للنصف الايمن تتحكم بالجانب الايسر من الجسم، بينما المراكز القصية للنصف الايسر تتحكم بالجانب الايمن من الجسم.</p><p>٢١</p><p>الاجزاء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

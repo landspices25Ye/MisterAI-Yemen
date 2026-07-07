@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>طاقة مقدارها ط₁ = -١٣,٦ (إلكترون فولت). ونتيجة لاصطدام الذرة بالإلكترون القادم من المهبط يمتص إلكترون ذرة الهيدروجين طاقة هذا الإلكترون القادم وينتقل إلى مستوى مثار تحسب طاقته (ط ن) من العلاقة التالية:</p><img src="img-136.jpeg" alt="img-136.jpeg" /><p>طاقة المستوى الذي سينتقل إليه الإلكترون
+= ط₁ + طاقة الإثارة
+ط ن = ط₁ + ١٢,٠٩
+= -١٣,٦ + ١٢,٠٩ = -١,٥١ (إ.ف)
+وهي طاقة الإلكترون في المستوى المثار، انظر الشكل (١٩ أ).</p><p>ب) العدد الكمي الرئيسي (ن) المناظر لهذا المستوى نحسبه من العلاقة (١٣):</p><p>$‫ط ن = \frac{ط ن}{ن^2} \text{ ومنه } ن = \frac{ط ن}{ط ن}‬$‫</p><p>‬$‫ن = \sqrt{\frac{ط ن}{ط ن}} = \sqrt{\frac{١٣,٦}{١,٥١}} = ٣,٠٠١ \approx ٣‬$‫</p><p>∴ ن = ٣ ، فالمستوى المثار الذي انتقل إليه الإلكترون هو المستوى الثالث وطاقته هي (-١,٥١ إلكترون فولت) والذي يليه من أسفل هو بالطبع سيكون المستوى الثاني وطاقته نحسبها من العلاقة (١٣) أيضاً.</p><p>‬$‫ط ن = \frac{ط ن}{ن^2} = \frac{١٣,٦}{٤} = -٣,٤ (\text{إلكترون فولت}) \text{ (حيث ن = ٢).}‬$
+انظر الشكل (١٩ ب).</p><p>ج) الأطوال الموجية المحتملة التي يمكن أن تبعثها ذرة الهيدروجين نتيجة انتقال الإلكترون من المستوى الثالث إلى المستويات الأخفض المختلفة هي:</p><p>١٣٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-146.jpeg" alt="img-146.jpeg" /><p>الشكل (٩) أحافير أصداف ثنائية المصاريع</p><img src="img-147.jpeg" alt="img-147.jpeg" /><p>الشكل (١٠) أحفورة مستبدلة من فوات المصراعين</p><img src="img-148.jpeg" alt="img-148.jpeg" /><p>الشكل (١١) أحفورة ساق شجرة متصخرة</p><p>كما هو الحال في الخشب، حيث تحل مادة السيلكا محل السليلوز، وتدعى هذه العملية تصخر الخشب (Petrification) كما في الشكل (١١).</p><p>ب - التشرب بالمعدن أو التمعدن (Permineralization) :</p><p>تحدث هذه العملية نتيجة ترسب بعض المعادن من المحاليل المتخللة للصخور</p><p>في حجر جيري مارلي كما هي محتفظة بتركيبها الأصلي دون تغير.</p><p>٢- تصخر الأجزاء الصلبة الأصلية :</p><p>وفيها تتحول المادة الأصلية لهياكل الحيوان أو النبات إلى مادة حجرية أو معدنية مع بقاء الشكل الخارجي والتفاصيل الأخرى دون تغيير.</p><p>وتعد هذه الطريقة من أهم طرائق حفظ الأحافير وتتم بإحدى الطرائق الآتية :</p><p>أ - الاستبدال أو الإحلال (Replacement)</p><p>يتم ذلك بأن تحل بعض المواد المعدنية الذائبة في المياه - التي تتخلل الصخور المحتوية على بقايا الكائنات كالسيليكا وأكاسيد الحديد وكربونات الكالسيوم وغيرها - إحلالاً كاملاً أو جزئياً محل المادة الصلبة الأصلية المكونة لهيكل الكائن الحي بحيث تحتفظ بشكلها وبجميع التفاصيل الدقيقة دون حدوث تغيير في شكل هيكل الكائن وحجمه. انظر الشكل (١٠) لأحفورة ذات مصراعين تغير التركيب الكيميائي للصدفة من الكالسييت إلى معدن الكوارتز مع بقاء شكل وحجم الصدفة كما هو. وإذا حل معدن ما محل المادة العضوية،</p><p>١٩٣</p><p>الأحياء للصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

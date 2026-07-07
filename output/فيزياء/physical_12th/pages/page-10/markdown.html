@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![LOGO]</p><p>الصفحة</p><p>الموضوع</p><p>|  ١٥٧ | الأشعة السينية  |
+| --- | --- |
+|  ١٦٣ | الليزر  |
+|  ١٦٧ | جهاز ليزر الياقوت  |
+|  ١٧١ | تقويم الوحدة  |
+|  ١٧٣ | <strong>الوحدة السابعة : الفيزياء النووية</strong>  |
+|  ١٧٤ | تركيب النواة  |
+|  ١٧٥ | النشاط الإشعاعي  |
+|  ١٧٩ | التحلل الإشعاعي وعمر النصف  |
+|  ١٨٠ | طاقة الربط النووية  |
+|  ١٨١ | التفاعل المتسلسل  |
+|  ١٨٢ | المفاعلات النووية السلمية  |
+|  ١٨٣ | تقويم الوحدة  |
+|  ١٨٥ | <strong>الوحدة الثامنة : الطاقة الشمسية</strong>  |
+|  ١٨٦ | الطاقة  |
+|  ١٨٧ | أعظم مصدر للطاقة  |
+|  ١٨٩ | أنواع الإشعاعات الشمسية  |
+|  ١٩٢ | تطبيقات لاستغلال الطاقة الشمسية في الحياة  |
+|  ١٩٣ | توليد الطاقة الحرارية  |
+|  ١٩٤ | توليد الطاقة الكهربائية  |
+|  ١٩٧ | تقويم الوحدة  |
+|  ١٩٨ | <strong>الوحدة التاسعة : الفيزياء الكونية</strong>  |
+|  ١٩٩ | الكون  |
+|  ٢٠١ | الكون الممتد  |
+|  ٢٠٢ | المجرات  |
+|  ٢٠٤ | النجوم  |
+|  ٢٠٥ | نشوء وتطور النجوم  |
+|  ٢٠٨ | المسافات بين النجوم  |
+|  ٢١٠ | تقويم الوحدة  |
+|  ٢١١ | قوائم المصطلحات  |</p><p>٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

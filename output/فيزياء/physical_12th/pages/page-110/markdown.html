@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-108.jpeg" alt="img-108.jpeg" /><p>- عملية التوفيق بين تردد دائرة الرنين وتردد موجات المحطة المراد سماعها تسمى عملية...
+- تتوقف قدرة محطة الإذاعة على ... المصاحبة للموجات اللاسلكية المرسلة.
+- في كاميرا التلفاز، تطلق البندقية الإلكترونية الشعاع الإلكتروني على لوح الخلايا... عند نقطة تسمى نقطة...
+- عند اختلاط التيار المعبر عن الصوت (أو الصورة) بالتيار الحامل ينتج تيار يسمى التيار...
+- إن الضوء المنعكس من الجسم، أو المشهد المراد تصويره إلى كاميرا التلفاز الملون يتوزع إلى ثلاثة ألوان أساسية هي : ... و ... و ... وتستخدم لذلك أنواع خاصة من المرآيا و ...
+- إن الضوء في التلفاز الملون ينقسم إلى ثلاثة ألوان أساسية هي ... و ... و ... ويستخدم في ذلك أنواع خاصة من المرآيا و ...
+- في أنبوبة أشعة الكاثود الموجودة في جهاز الاستقبال التلفازي الملون تتجمع الأشعة الإلكترونية على لوحة فيها عدد كبير من الثقوب تسمى ...</p><p>س ٢) ضع علامة (✓) أمام العبارة الصحيحة، وعلامة (X) أمام العبارة الخاطئة مما يأتي :</p><p>١- الأشعة المهبطية هي عبارة عن جسيمات ذات شحنة سالبة . ( )
+٢- عند اصطدام الإلكترونات بكاثود أنبوبة التفريغ تنطلق منه أيونات موجبة . ( )
+٣- يغطي الجدار الداخلي لشاشة أنبوبة أشعة الكاثود بمادة فلوريسية مثل كبريتيد الخارصين . ( )
+٤- إذا وصل اللوحان الأفقيان في كاشف الذبذبات بمصدر للتيار المتردد فإنهما يولدان مجالاً كهربائياً في الاتجاه الرأسي مما يجعل النقطة المضيئة تتحرك رأسياً . ( )</p><p>١٠٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

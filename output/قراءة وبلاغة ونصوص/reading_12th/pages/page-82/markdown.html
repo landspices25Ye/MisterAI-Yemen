@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-18.jpeg" alt="img-18.jpeg" /><p>٨- «والله ما أبالي أسقطت على الموت، أم سقط الموت عليّ» وضح المراد بهذه العبارة.
+٩- لِمَ اختار الكاتب الشباب دون غيرهم ليوجه إليهم إرشاداته ونصائحه؟</p><h2>التدريبات اللغوية</h2><p>١ - هات أضداد الكلمات الآتية:</p><p>( أنانية - الظفر - عشرة - أخفق ).</p><p>٢ - ابحث في المعجم عن معاني الكلمات الآتية:</p><p>( الحمى - ترفع - بيت - اقترافه - يصادف ).</p><p>٣ - اقرأ الفقرة الآتية، ثم أجب عن الأسئلة التي تليها:</p><p>« ومن أشق ما يصادفكم من صعاب، وأشد ما يواجهكم من عقبات هوى النفس، ونزوعها إلى الانطلاق، ورغبتها في عدم التقيد بما في المجتمع من عرف وعادة وقانون، وليس أمامكم من سبيل لاجتياز هذه الصعاب والعقبات إلا بترويض النفس وحملها على طاعة الله، والإذعان لما في مجتمعكم من عُرْف وقانون...»</p><p>أ - ( نزوع - إذعان - هوى ).</p><p>هات مرادف الكلمة الأولى، وضد الثانية، وجمع الثالثة.</p><p>ب - وضح نوع الصورة البلاغية، وقيمتها الفنية في العبارة الآتية:</p><p>( ليس أمامكم من سبيل إلا بترويض النفس ).</p><p>ج - ( أشق - أشد ). ما نوع الاسم المشتق في هاتين الكلمتين؟ وما الفعل</p><p>الماضي من كل منهما؟</p><p>د - استعمل كلمة ( عُرْف ) في جملتين من إنشائك على أن يكون لها معنى</p><p>مختلف في كل جملة.</p><p>هـ - أعرب ما تحته خط في الفقرة السابقة.</p><p>٤ - « إنَّ الإيمان - أيها الشباب - هو أول حجر تبنون عليه مستقبلكم ».</p><p>- ما معنى الإيمان في اللغة؟ هات الفعل الماضي من هذه الكلمة، ثم زنه.</p><p>- بِمَ شبه الكاتب الإيمان في هذه العبارة؟ وما القيمة الفنية لهذا التشبيه؟</p><p>٨٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

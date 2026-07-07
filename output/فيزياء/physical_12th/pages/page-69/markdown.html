@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>إن من شأن هذه الخصائص التي تمتلكها أشباه الموصلات أن جعلتها تفتح آفاقاً واسعة في الصناعات الإلكترونية مثل صناعة الوصلة الثنائية والترانزستور. فماذا يقصد بالوصلة الثنائية ؟</p><h2>الوصلة الثنائية P-N Junction</h2><p>استعن بالشكل ( ٥ ) في وصف ما ينتج عند التحام بلورة من النوع الموجب ( P- Type ) مع بلورة من النوع السالب ( N- Type ).</p><p>– من أي البلورتين تنتقل</p><p>الإلكترونات الحرة إلى البلورة الأخرى ؟</p><p>لقد وجد أنه من الممكن تكوين بلورة واحدة من مادة شبه موصلة تشتمل على منطقتين</p><img src="img-64.jpeg" alt="img-64.jpeg" /><p>الشكل ( ٥ )</p><p>متجاورتين إحداهما من النوع السالب ( N- Type )</p><p>والأخرى من النوع الموجب ( P- Type )، وتعرف البلورتين الملتحمتين من نوعين مختلفين من أشباه الموصلات باسم الوصلة الثنائية P-N Junction . انظر إلى الشكل ( ٥ ) الذي يتبين من خلاله أن بعض إلكترونات المنطقة السالبة تتحرك عبر المنطقة الفاصلة لتملأ بعض الفجوات في المنطقة الموجبة وتتكون نتيجة لذلك منطقة صغيرة على جانبي المنطقة الفاصلة سمكها تقريباً ( ٢ ) ميكرومتر تسمى منطقة حاجز الجهد Potential Barrier ( أو الجهد الحاجز ) أنظر الشكل ( ٦ ) .</p><p>كيف تنشأ منطقة حاجز الجهد ؟ من المعروف أنه قبل التحام البلورتين تكون البلورة السالبة والبلورة الموجبة متعادلة كهربائياً، وبعد التحامهما ونتيجة لفقد بعض الإلكترونات من البلورة السالبة، واكتساب البلورة الموجبة لتلك الإلكترونات تصبح البلورة السالبة ذات جهد موجب والبلورة الموجبة ذات جهد سالب وينشأ</p><img src="img-65.jpeg" alt="img-65.jpeg" /><p>الشكل ( ٦ )</p><p>٦٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

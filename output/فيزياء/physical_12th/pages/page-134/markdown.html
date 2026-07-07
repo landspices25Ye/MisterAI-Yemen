@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><img src="img-132.jpeg" alt="img-132.jpeg" /><p>انظر الشكل (١٦). ونلاحظ من العلاقة (١١) أن طاقة الإلكترون (ط) سالبة (-) وتزداد جبرياً بازدياد العدد الكمي الرئيسي (ن) إلى أن تصل إلى الصفر عندها يتحرر</p><p>الإلكترون من مجال نواة الذرة وعندما: ن = ١ يكون الإلكترون في أدنى مستوى له في الطاقة ويسمى بالمستوى الأساسي (أو المستوى الأرضي) وتسمى المستويات الأخرى بالمستويات المشارية شكل (١٦). وكلما كبرت (ن) أي كلما ابتعد الإلكترون عن النواة ازدادت طاقته جبرياً حتى تصل إلى الصفر (ط = صفر) عند: ن = ∞، في هذه الحالة يكون الإلكترون حراً خارج الذرة وغير مرتبط بالنواة، ونقول عندئذ أن الذرة قد فقدت إلكتروناً لها وأصبحت متأينة. ومقدار الطاقة اللازمة لتأمين ذرة الهيدروجين، أي الطاقة التي يجب أن يمتصها الإلكترون في ذرة الهيدروجين لإخراج الإلكترون من المستوى الأرضي ط، الذي طاقته = (-١٣,٦) إلكترون فولت إلى خارج الذرة حيث ط = صفر هو:</p><p>ط = ط = (-١٣,٦) (إلكترون فولت) وهي تساوي طاقة المستوى الأرضي ولكن بإشارة موجبة، وتسمى هذه الطاقة، طاقة التأمين.</p><p>خارج الذرة تكون طاقة الإلكترون موجبة لأنها عبارة عن طاقة حركية. (حركة مستمرة) ويكون للإلكترون -نتيجة ذلك- طيف إشعاعي متصل، بينما داخل الذرة فطاقته مكممة كما صاغتها نظرية بوهر، وبالتالي فانتقاله داخلها يعطي طيفاً خطياً. الإلكترون الأكثر بعداً من النواة يمتلك طاقة أكبر فهو إذاً أكثر نشاطاً وفعالية، وهو المسؤول عن التفاعلات الكيميائية أو الإشعاعات الطيفية نتيجة لانتقاله</p><p>١٣٢</p><p><http://www.e-learning-moe.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

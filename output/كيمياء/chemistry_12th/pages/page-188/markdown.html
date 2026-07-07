@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![LOGO]</p><p>|  Catalytic Cracking | التكسر الحفزي  |
+| --- | --- |
+|  Reforming | إعادة التشكيل  |
+|  Chemistry and Environment | الكيمياء والبيئة  |
+|  Global Warming | الاحتباس الحراري  |
+|  Green House | البيت الأخضر  |
+|  Energy | الطاقة  |
+|  Aldehydes | الألدهيدات  |
+|  Ketones | الكيتونات  |
+|  Benzopyrene | البنزوبيرين  |
+|  Acid Rain | المطر الحمضي  |
+|  Smog | الضباب الدخاني  |
+|  Pelution | التلوّث  |
+|  Organic Nitrogen Compounds | مركبات النيتروجين العضوية  |
+|  Amines | الأمينات  |
+|  Nomenclature | التسمية  |
+|  Tertiary Amine | أمين ثالثي  |
+|  Secondary Amine | أمين ثانوي  |
+|  Primary Amine | أمين أولي  |
+|  Aniline | الأنيلين  |
+|  Pyridine | البيريدين  |
+|  Piperidine | البيبيريدين  |
+|  Amino acid | الحمض الأميني  |
+|  Amides | الأميدات  |
+|  ( IUPAC ) | النظام المنهجي  |
+|  Hoffman Degradation | خسف هوفمان  |
+|  Nitriles | النيتريلات  |
+|  Monosaccharides | السكريات الأحادية  |
+|  Carbohydrates | الكربوهيدرات  |</p><p>١٨٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

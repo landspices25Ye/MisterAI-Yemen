@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-39.jpeg" alt="img-39.jpeg" /><h2>أسئلة وتدريبات</h2><p>١- كيف نشأ أبو القاسم الشابي؟ وأين كان تعليمه؟
+٢- ما الأسباب التي ساعدت في بروز موهبة الشابي الشعرية مبكراً؟
+٣- اذكر ثلاثاً من المؤثرات التي صبغت كثيراً من قصائد الشابي بالحزن والألم.
+٤- كيف توصل الشاعر إلى رؤية الحزن في أعماق الحياة كما في الأبيات (١-٣)؟
+٥- لم جاءت الأبيات الثلاثة الأولى بأساليب خبرية دون مؤكدات؟
+٦- ما قيمة السؤال الموجه إلى الحياة في البيت الخامس من الناحية الفنية؟
+٧- بم أجابت الحياة عن سؤال الشاعر؟
+٨- في البيت التاسع تعميم للحزن كيف يُفهم ذلك؟
+٩- اختر الإجابة الصحيحة من بين الأقواس:
+أ - يتعجب الشاعر من فرح الناس بـ (مباهج الحياة - أحزانها - منجزاتها).
+ب - الأسلوب في البيت السابع أسلوب قصر جاء (للتخصيص - للنفي - للاستثناء).
+ج - الغرض من التأكيد في البيت الرابع: (رفع الحرج - رفع الجهل - رفع الشك).
+د - في العبارة (بالدمع والدم): (سجع - جناس - مقابلة).
+هـ - في قوله: «أجنحة الأيام» صورة تسمى: (استعارة - كناية - تشبيه).
+و - الموقع الإعرابي لقوله: «أن تنكر» في البيت الرابع: (فاعل - نائب فاعل - مفعول به).
+ز - في كلمة (طائر) كتبت الهمزة على نبرة لأنها جاءت (مكسورة - بعد ألف - متوسطة).
+ح - الفعل «سدّد» وزنه الصرفي: (فَعْلَل - فَعَّل - فَلَّل).
+١٠- يقال: إن عاطفة الشاعر تُلَوِّن شعره بلونها.. كيف توضح ذلك في هذا النص؟
+١١- ما الفكرة التي تحملها الأبيات (٥-١٠)؟
+١٢- اشرح البيت التاسع موضحاً ما فيه من صور بلاغية.</p><p>٩٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

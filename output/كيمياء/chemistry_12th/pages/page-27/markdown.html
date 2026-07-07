@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>ولكن ما المقصود بكل من النظام والوسط المحيط؟</h2><p>النظام (System): هو جزء معين من الكون محدود بحدود معينة قد تكون حقيقية أو تخيلية.</p><p>الوسط المحيط: وهو ذلك الجزء المتبقي خارج حدود النظام.</p><img src="img-18.jpeg" alt="img-18.jpeg" /><p>شكل (٢-٤) يوضح النظام</p><p>الشكل (٢-٤) يعطي مثالاً للنظام والذي يمثل أحد التفاعلات الكيميائية التي حدثت داخل الدورق.</p><p>- ما عناصر هذا النظام؟</p><p>- ما حدود هذا النظام؟</p><p>- ما الوسط المحيط بهذا النظام؟</p><p>إذا حدث تغير في النظام الموضح في الشكل (٢-٤)، بحيث أن الحرارة لا يمكن نقلها عبر الحدود الفاصلة بين النظام والوسط المحيط به، فإننا نسمي هذه العملية (عملية أديباتية، Adiabatic) ومثال ذلك التفاعل الذي يحدث في وعاء معزول حرارياً.</p><p>ومن الممكن أن نحفظ النظام في درجة حرارة معينة أثناء حدوث التغير، وفي هذه الحالة تسمى العملية (أيزو ثيرمي، Isothermal).</p><p>تسمى المتغيرات الفيزيائية للنظام والتي يمكن ملاحظتها أو قياسها خواص النظام، مثل: الحجم، والضغط، ودرجة الحرارة. وبتحديد خواص النظام، يمكن تحديد حالته؛ فإذا كانت قيم خواص النظام لا تتغير مع الزمن، فإن النظام يكون في حالة اتزان.</p><h3>العلاقة بين الحرارة ودرجة الحرارة:</h3><p>تعتبر الحرارة (Heat) أحد أشكال الطاقة، ويمكن أن تنتقل الطاقة على هيئة حرارة من النظام أو إليه عبر عملية التوصيل الحراري، أو عبر عملية الإشعاع الحراري.</p><p>∴ الحرارة: طاقة تنتقل من جسم إلى آخر نتيجة للاختلاف في درجة حرارة الجسمين، وتنتقل الحرارة تلقائياً من المادة الأعلى إلى الأقل في درجة الحرارة، وتقاس بوحدات الطاقة، وهي الجول.</p><p>٢٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>ووظيفة الأنود تركيز وتسارع الإلكترونات نحو طبقة الخلايا الكهروضوئية كحزمة ضيقة جداً ومركزة تسمى الشعاع الإلكتروني.</p><p>٤ - ملفات (أو ألواح) تحريك شعاع الكاثود: وتسمى كذلك بالملفات الحارقة Deflection coils، وهي عبارة عن زوجين من الملفات (أو الألواح) المتعامدة</p><p>(س₁، س₂)، ومحورهما المشترك رأسي و (ص₁، ص₂)، ومحورهما المشترك أفقي.</p><p>فإذا مرَّ في هذه الملفات تيار كهربائي يتولد عنه مجال مغناطيسي يعمل على تحريك الشعاع الإلكتروني بالكيفية المطلوبة لمسح لوح الصورة.</p><p>ويقصد بعملية الإرسال التلفازي بأنها عملية إرسال صور الأشياء المراد مشاهدتها بعد تحويل هذه الصور (من طاقة ضوئية) إلى طاقة كهربائية وتحميلها على موجات كهرومغناطيسية عالية التردد تنتشر في الهواء الجوي في جميع الاتجاهات، فكيف تتم عملية الإرسال؟</p><h3>عملية إرسال الصور تلفازياً</h3><img src="img-101.jpeg" alt="img-101.jpeg" /><p>عند تصوير الشيء أو المنظر المراد إرسال صورته تلفازياً، يضاء هذا الشيء أو المنظر أو المشهد إضافة شديدة فتقوم العدسات الموجودة في كاميرا التصوير بتكوين صورة ضوئية له على لوح الخلايا الكهروضوئية التي بدورها تثار ضوئياً وتبعث بعدد من الإلكترونات، وتختلف عدد الإلكترونات المنبعثة باختلاف كمية الضوء الساقط عليها، وعندئذ تشحن الخلايا بشحنات موجبة مساوية لما فقدته من إلكترونات، فتؤثر هذه الشحنات على الصفيحة المعدنية الموجودة على الوجه</p><p>١٠١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

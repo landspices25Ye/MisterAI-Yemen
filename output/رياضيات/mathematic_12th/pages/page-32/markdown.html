@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-31.jpeg" alt="img-31.jpeg" /><p>الوحدة الأولى</p><p>ولتحويل العدد $‫\sqrt{3} - ت‬$ إلى الصورة القطبية نتبع الآتي :</p><p>$‫س = \sqrt{3} - ص = 1 \iff \sqrt{3} - س = 2‬$</p><p>$‫جتا هـ = \frac{س}{\sqrt{3}} = \frac{\sqrt{3}}{2}‬$ ، جا هـ = $‫\frac{ص}{\sqrt{3}} = \frac{1}{2}‬$</p><p>هـ تقع في الربع الرابع</p><p>$‫هـ = \pi 2 - \frac{\pi}{6} = \frac{\pi 11}{6} = \frac{\pi}{6}‬$</p><p>$‫\therefore ع = 2 (جتا \frac{\pi 11}{6} + ت جا \frac{\pi 11}{6})‬$ أو $‫ع = 2 (جتا \frac{\pi}{6} - ت جا \frac{\pi}{6})‬$</p><h1><strong>مثال (١ - ٢٠)</strong></h1><p>ليكن $‫ع = [\infty, 8]‬$ ، $‫ع = [\infty, 4, 120]‬$ . أوجد بالصورة القطبية كلاً ما يأتي :</p><p>$‫أ) ع 1 ع 2 . \quad ب) \frac{4}{ع 2} .‬$</p><p><strong>الحل :</strong></p><p>$‫أ) ع 1 = [\infty, 8]‬$ $‫\Leftarrow‬$ $‫ص = 8‬$ ، $‫هـ = 60‬$ .</p><p>$‫ع = [\infty, 4, 120]‬$ $‫\Leftarrow‬$ $‫ص = 4‬$ ، $‫هـ = 120‬$ .</p><p>$‫\therefore ع 1 ع 2 = ص 2 ص 2 [جتا (هـ + هـ) + ت جا (هـ + هـ) = 4 \times 8 (جتا 180 + ت جا 180) = [180, 32]‬$ .</p><p>$‫ب) \therefore 4 ت = 4 (جتا 90 + ت جا 90) = [90, 4]‬$</p><p>$‫\therefore \frac{4}{ع 2} = \frac{[90, 4]}{[120, 4]} = \frac{4}{4} = [120, 90] = [1, 30]‬$ .</p><h1><strong>مثال (١ - ٢١)</strong></h1><p>ليكن $‫ع = [2, هـ]‬$ ، حيث $‫هـ = [\frac{\pi 3}{2}, \frac{\pi 3}{2}]‬$ ، ظا هـ = $‫\frac{3}{4}‬$ .</p><p>أوجد الصورة القطبية والجبرية لكل من : $‫أ) (ع) 2‬$ ، $‫ب) \frac{1}{ع}‬$ .</p><p><strong>الحل :</strong></p><p>$‫أ) \therefore ع = [2, هـ] = 2 (جتا هـ + ت جا هـ) .‬$</p><p>٣٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

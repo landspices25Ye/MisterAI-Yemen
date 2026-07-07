@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الأعداد المركبة</p><p>$‫= m_1 m_2 + (m_1 m_2 + m_1 m_2) - m_1 m_2 \quad (\text{ت}^2 = 1)‬$‫
+$= (m_1 m_2 - m_1 m_2) + (m_1 m_2 + m_1 m_2) \quad .‬$$‫</p><h1>تعريف (١ - ٤)</h1><p>‬$‫(m_1 + m_2) + (m_1 m_2 + m_2) = (m_1 m_2 - m_1 m_2) + (m_1 m_2 + m_2 m_1)‬$‫</p><h1>مثال (١ - ٩)</h1><p>أوجد ما يلي :</p><p>أ) ‬$(3 + 2\text{ت}) (5 + 4\text{ت}) \quad .$‫
+ب) ‬$(1 + 2\sqrt{2}) (2\sqrt{2} - \text{ت}) \quad .$‫</p><h1>الحل :</h1><p>أ) نفرض أن ‬$3 + 2\text{ت} = m_1 + m_2 \Leftarrow m_1 = 3$‫ ، ‬$m_1 = 2$‫</p><p>وبالمثل ‬$5 + 4\text{ت} = m_2 + m_2 \Leftarrow m_2 = 5$‫ ، ‬$m_2 = 4$‫</p><p>‬$(m_1 + m_2) + (m_1 m_2 + m_2) = (m_1 m_2 - m_1 m_2) + (m_1 m_2 + m_1 m_2) \quad (3 + 2\text{ت}) (5 + 4\text{ت}) = (3 \times 5 - 2 \times 4) + (3 \times 4 + 5 \times 2) \text{ت}$‫</p><p>‬$‫= (15 - 8) + (12 + 10) \text{ت} = 7 + 22 \text{ت} \quad .‬$‫</p><p>ب) ‬$(1 + 2\sqrt{2}) (2\sqrt{2} - \text{ت}) = [1 - 2\sqrt{2} - 2\sqrt{2} \times 1] + [1 - 2\sqrt{2} \times 2\sqrt{2} + 1 \times 1] - (1 - 2\text{ت}) \text{ت}$‫</p><p>‬$‫= (2\sqrt{2} + 2\sqrt{2}) + (2 - 1) \text{ت} = 2 \sqrt{2} + \text{ت}‬$‫</p><h1>مثال (١ - ١٠)</h1><p>حل المعادلة التالية :</p><p>٧ ت = (س + ٣ ت) (ص - ت) - ٩ .</p><h1>الحل :</h1><p>٧ ت = (س + ٣ ت) (ص - ت) - ٩</p><p>= (س ص - ٣ ت) + (ت ٣ ص - س) - ٩ [ تعريف الضرب ]</p><p>= س ص + ٣ - ٩ + (ت ٣ ص - س) =</p><p>= س ص - ٦ + (ت ٣ ص - س) ، ومن تساوي عددين مركبين ينتج أن :</p><p>س ص - ٦ = ٠ ‬$\Leftarrow$‫ س ص = ٦ ... (١)</p><p>٣ ص - س = ٧ ‬$\Leftarrow$ س = ٣ ص - ٧ ... (٢)</p><p>١٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-119.jpeg" alt="img-119.jpeg" /><p>بواسطة أجهزة تسمى جيوفونات (Geophones) يتم تثبيتها في أماكن متباعدة على سطح الأرض وعلى مسافات محددة من مركز التفجير، وبعد ذلك يتم نقل الموجات الصوتية من أجهزة الاستقبال إلى جهاز يقوم برسم الهزات، ويسمى جهاز السيزموجراف (Seismograph)، وهذا الجهاز يقوم بتسجيل فرق الزمن بين انفجار الشحنة وزمن وصول موجات الصوت المرتدة إلى أجهزة الاستقبال وجهاز راسم الهزات.</p><p>وبما أن النفط يوجد في مكامن من الصخور الرسوبية المسامية التي تتصف بأنها تعمل على إبطاء انعكاس الموجات الصوتية مقارنة بغيرها من الصخور، فإن احتواء هذه الصخور على النفط يؤدي إلى زيادة الفرق الزمني بين انفجار الشحنة وزمن وصول موجات الصوت المنعكسة إلى أجهزة الاستقبال وجهاز راسم الهزات.</p><h3>استخراج النفط:</h3><p>بعد استكمال المسوحات وتحديد الأماكن المحتملة لوجود النفط باستخدام الطرق التي سبق شرحها تلجأ الشركات النفطية إلى إجراء عمليات الحفر الاستكشافية، ومنها تستخدم معدات ثقيلة وأجهزة معقدة للحفر إلى مسافة قد تزيد عن الميلين، وإذا نجحت عملية الاستكشاف وظهر النفط فإن الشركات تقوم بتحديد سعة الحقل الذي تم اكتشافه وذلك عن طريق حفر عدة آبار تحدد أماكنها بدقة، ومن خلال ذلك يتم تحديد الجدوى الاقتصادية لاستخراج النفط من هذا الحقل.</p><p>وعند وصول الحفريات إلى مكامن النفط هناك ثلاثة احتمالات يمكن أن تؤدي إلى اندفاع النفط تلقائياً إلى سطح الأرض، وهي:</p><p>- أ - اندفاع النفط بواسطة الغازات المتحللة منه، والتي تتمدد عندما يقل الضغط فوقها فتندفع إلى الخارج حاملة النفط معها.
+- ب - اندفاع النفط بواسطة الماء الذي قد يوجد تحت النفط.
+- ج - اندفاع النفط بواسطة الغاز الطبيعي الذي قد يوجد فوق طبقة النفط.
+ولكن مع مرور الزمن يضعف اندفاع النفط بواسطة هذه الطرق، ولذلك يتم ضغط الهواء أو الغاز الطبيعي بكميات كبيرة إلى داخل الآبار فيندفع ما تبقى من النفط إلى الخارج.</p><p>١٣٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

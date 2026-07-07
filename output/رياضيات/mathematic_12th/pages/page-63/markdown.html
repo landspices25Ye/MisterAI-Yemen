@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>مبدأ العد ومبرهنة ذات الحدين</p><p>$‫\therefore \text{عدد الطرق} = \left( \frac{12}{2,5,0} \right) = \frac{12}{2 \times 5 \times 5}‬$‫</p><p>‬$‫= \frac{12 \times 11 \times 10 \times 9 \times 8 \times 7 \times 6 \times 5}{5 \times 4 \times 3 \times 2 \times 1 \times 2 \times 1 \times 2 \times 3 \times 4 \times 5} = 16632 \text{ طريقة.}‬$‫</p><h1><strong>تدريب (٢ - ٦)</strong></h1><p>بكم طريقة يمكن ترتيب حروف كلمة «باب اليمن»؟</p><h1><strong>مثال (٢ - ١٧)</strong></h1><p>بكم طريقة مختلفة يمكن توزيع ١٥ كتاباً مختلفاً على ٤ طالبات. بحيث تأخذ الطالبة الأولى ٤ كتب، والطالبة الثانية ٦ كتب، والثالثة كتابين، والرابعة ٣ كتب؟</p><h1><strong>الحل :</strong></h1><p>حيث إن الكتب جميعها سيتم توزيعها على الطالبات الأربع، فإن العملية هي تجزئة مجموعة مؤلفة من ١٥ عنصراً إلى ٤ مجموعات جزئية منفصلة، أعداد عناصرها ٤، ٦، ٢، ٣ على الترتيب، وعليه فإن:</p><p>‬$‫\text{عدد الطرق الممكنة لتوزيع الكتب على الطالبات الأربع} = \left( \frac{15}{3,2,6,4} \right)‬$‫</p><p>‬$‫= \frac{15}{15 \times 2 \times 6 \times 4} = \frac{15 \times 14 \times 10 \times 7 \times 6}{7 \times 2 \times 3 \times 1 \times 2 \times 1 \times 2 \times 3 \times 4} = 6306300 \text{ طريقة.}‬$‫</p><h1><strong>تدريب (٢ - ٧)</strong></h1><p>أثبت أن : ‬$2^8 \text{ في} = 35^8 \text{ في}$‫</p><h1><strong>مثال (٢ - ١٨)</strong></h1><p>‬$‫\text{أثبت أن : } \frac{2^8 \text{ في}}{2 \text{ في} - 1} = \frac{2^8 - 2^8 + 1}{2 \text{ في} - 1}‬$‫</p><h1><strong>الحل :</strong></h1><p>‬$‫\therefore \text{في} = \frac{2^8}{2 \text{ في} - 1} = \frac{2^8}{2 \text{ في} - 1} = \frac{2^8}{2 \text{ في} - 1}‬$</p><p>٦١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

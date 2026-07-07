@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-209.jpeg" alt="img-209.jpeg" /><p>الوحدة السابعة</p><h1><strong>مثال (٧ - ٣٢)</strong></h1><img src="img-210.jpeg" alt="img-210.jpeg" /><p>شكل (٧ - ٨)</p><p>أوجد المساحة المحصورة بين منحنى الدالة : د(س) = جتا س ،
+ومحور السينات والمستقيمين س = ٠ ، س = π .</p><p><strong>الحل :</strong> نوجد نقاط تقاطع المنحنى مع محور السينات بوضع ص = ٠</p><p>$‫\Leftrightarrow \text{جتا س} = ٠ \Leftrightarrow \text{س} = \frac{\pi}{2} \Rightarrow [\pi, 0]‬$‫</p><p>فترات التكامل هي : ‬$[\pi, \frac{\pi}{2}, \frac{\pi}{2}, \pi]$‫ ،</p><p>ومن الشكل (٧ - ٨) نجد أن : ‬$\text{سط} = \sqrt{\frac{\pi}{2}} [\text{جتا س} - 0] \text{ و س} + \sqrt{\frac{\pi}{2}} [\text{جتا س} - 0] \text{ و س} = \sqrt{\frac{\pi}{2}} \text{ جتا س} \text{ و س} - \sqrt{\frac{\pi}{2}} \text{ جتا س} \text{ و س} = \text{جتا س} \sqrt{\frac{\pi}{2}} - \text{جتا س} \sqrt{\frac{\pi}{2}} = 1 + 1 = 2$‫ وحدات مربعة.</p><p><strong>ملاحظة :</strong> عندما يكون بيان الدالة أسفل محور السينات فإننا نغير إشارة الدالة عند إيجاد مساحة المنطقة المحصورة بين بيان الدالة ومحور السينات .</p><h1><strong>تمارين ومثال (٧ - ٦ - ١)</strong></h1><p>[١] أوجد المساحة المحددة بالمنحنيات والمستقيمات التالية :</p><p>- أ) ص = لو س ، ص = هـ ، ص = ١ ، ص = ٣ .
+- ب) ص = ‬$\sqrt{1 + m}$‫ ، ص = ٠ ، ص = ٠ .
+- ج) س = (ص - ١) ، ص = ٠ ، ص = ٢ .</p><p>[٢] احسب مساحة المنطقة المحصورة بمنحنى الدالة : ص = س² - س - ٦ ، والمستقيم ص = ٠ .</p><p>[٣] أوجد مساحة المنطقة المحددة بمنحنى القطع المكافئ : ص² = ٤ س والمستقيمات : س = ٤ ، س = ٩ .</p><p>[٤] احسب مساحة المنطقة بين القطع المكافئ : ص = ٤ - س² ومحور السينات .</p><p>[٥] بيّن أن مساحة المنطقة بين القطع المكافئ : ص² = س - ١ والمستقيم ص = س - ٣ تساوي ‬$\frac{9}{2}$‫ وحدة مربعة .</p><p>[٦] أوجد المساحة المحصورة بين القطع الزائد : س ص = ب² والمستقيمات ص = ٠ ، س = ١ ، س = ١٢ .</p><p>[٧] احسب المساحة المحصورة بين منحني الدالتين : ص = ‬$\frac{4}{2}$ ، ص = ٢ س والمستقيمين س = ١ ، س = ٢ .</p><p>[٨] احسب المساحة المحصورة بالمستقيم : ص + س = ١ والمحورين الإحداثيين .</p><p>[٩] أوجد مساحة المنطقة المحصورة بين المنحنى : ص = س² + ٢ س - ٨ والمستقيم : ص = ١٦ ، ومحور السينات السالب .</p><p>٢٥٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

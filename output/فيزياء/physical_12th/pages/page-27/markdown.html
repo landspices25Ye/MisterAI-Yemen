@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>- لحساب الأرواح الرأسية للمقذوف عند أي زمن يستخدم المعادلة (٣).
+- لحساب أقصى ارتفاع يصل إليه المقذوف يستخدم المعادلة (٤).</p><h1>ملحوظة هامة:</h1><p>يتحرك الجسم المقذوف في الهواء تحت تأثير قوة الجاذبية الأرضية، أي بتأثير وزنه فقط مع إهمال مقاومة الهواء لصغرها. والعجلة التي يتحرك بها الجسم المقذوف على المحور الأفقي (جس) = صفر، لعدم وجود قوة مؤثرة على المقذوف في الاتجاه الأفقي إذا أهملنا مقاومة الهواء، وحسب قانون نيوتن الأول يتحرك المقذوف في هذه الحالة بسرعة منتظمة (ثابتة)، والمركبة الأفقية لهذه السرعة تساوي عس = ع. جتاها [السرعة الابتدائية للجسم المقذوف (ع)].</p><p>أما الحركة الرأسية للمقذوف فتخضع لتأثير قوة الجاذبية الأرضية وتكون سرعتها (عس) متغيرة، وتتعمد عندما يصل الجسم المقذوف إلى أقصى ارتفاع من سطح الأرض. وسرعة الجسم المقذوف عند أية لحظة (ع) هي محصلة السرعتين المتعامدتين الأفقية الثابتة عس = ع. جتاها، والرأسية المتغيرة عس = ع. جتاها + ز. وتعطي بالعلاقة التالية: عس = ع + ع + ز. واتجاه سرعة المقذوف يعطي بالعلاقة هـ = ظا + عس = عس
+ملاحظة: تأخذ عجلة الجاذبية الأرضية إشارة سالبة عندما يكون القذف نحو الأعلى وتأخذ إشارة موجبة عندما يكون القذف نحو الأسفل.</p><h1>مثال (٦)</h1><p>قذف جسم بسرعة ابتدائية مقدارها ١٢م/ث في اتجاه يصنع زاوية ٣٠° مع المستوى الأفقي حسب ما يأتي: (اعتبر عجلة الجاذبية ١٠م/ث²).</p><p>أ - أقصى ارتفاع يصل إليه الجسم المقذوف.</p><p>ب - الزمن المستغرق للوصول المقذوف إلى أقصى ارتفاع (الذروة).</p><p>ج - المسافة الأفقية التي يقطعها الجسم المقذوف إلى الهدف (المدى الأفقي).</p><p>د - السرعة المحصلة للمقذوف بعد ثانية من قذفه.</p><img src="img-24.jpeg" alt="img-24.jpeg" /><p>شكل (١٢)</p><p>٢٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

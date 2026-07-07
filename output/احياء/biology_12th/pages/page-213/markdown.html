@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>واختفت الزواحف العملاقة قرب نهاية الحقبة، لكثرة الزلازل والبراكين، تاركة المجال للأنواع الصغيرة الحجم من الزواحف التي انتشرت في منتصف هذه الحقبة وأهمها: السلاحف والسحالي والتماسيح والأفاعي والتي بقيت أنواع منها حتى الآن.</p><img src="img-171.jpeg" alt="img-171.jpeg" /><p>الشكل (٣٦) أحفورة أركيوبتركس</p><p>أما الطيور فقد عثر على أحفورة الطائر ذي الأسنان (أركيوبتركس) وذلك في العصر الجوارسي الأسفل، ويعد من أوائل الطيور التي ظهرت وكان له أسنان في منفاره، وانقرضت في العصر الكريتاسي الأعلى، ويوضح الشكل (٣٦) أحفورة لهذا الطائر.</p><p>وفي نهاية هذه الحقبة ازداد عدد الثدييات في جميع البيئات.</p><h3>الحياة النباتية:</h3><p>تضاءلت النباتات اللازهرية في أوائل الترياسي؛ حيث ظهرت النباتات عاريات البذور كالصنوبر والأرز والتي كونت غابات كثيفة، كذلك ظهرت النباتات مغطاة البذور وخاصة ذوات الفلقة الواحدة، كالغاب والنخيل، في أواخر الكريتاسي.</p><h3>٤- حقبة الحياة الحديثة (Cenozoic):</h3><p>تمثل هذه الحقبة الفترة الزمنية التي تمتد منذ حوالي (٦٥) مليون سنة حتى الوقت الحالي. وقد تم تقسيمها إلى عصرين: الثلاثي والرباعي، وتعتبر حقبة سيادة الثدييات، وقد بدأت بالحسار البحار واتساع رقعة القارات، وفي بدايتها كان المناخ حاراً جداً ثم أخذ في البرودة حتى صار في أواخرها جليداً في أوروبا وأمريكا الشمالية. انقرضت كثير من الأنواع المميزة لحقبة الحياة الوسطى وظهرت أنواع جديدة كثيرة الشبه بالأنواع المعاصرة، وكذلك سادت النباتات الزهرية مغطاة البذور (Angiosperms) وكونت غابات من ذوات الفلقتين مثل أشجار الحور والزيتون والكافور إلى جانب النخيل.</p><p>الأحياء الصيف الثالث الثانوي</p><p>٢١٣</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

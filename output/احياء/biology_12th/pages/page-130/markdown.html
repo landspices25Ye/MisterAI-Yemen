@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>١٦- تزوج رجل فصيلته الدموية AB من امرأة فصيلتها الدموية O. ما هو احتمال التركيب الجيني للأبناء؟ وهل يجوز للأب أن يسعف أبناءه بكمية من دمه؟ وضح ذلك على أسس وراثية.</p><p>١٧- أجب زوجان أربعة أطفال فصيلة كل منهم مختلفة عن الآخر.</p><p>- ما زمرة الدم في كل من الزوج والزوجة. وضح ذلك على أسس وراثية.</p><p>١٨- امرأة فصيلتها الدموية O وزوجها فصيلته الدموية AB.</p><p>- هل يمكنهما وراثياً إيجاب طفل فصيلته الدموية O؟</p><p>١٩- تزوج رجل موجب بالنسبة لعامل رايزيس Rh+ من امرأة سالبة لهذا العامل Rh، فأجباً طفلاً سالباً لعامل رايزيس Rh-.</p><p>- ما التركيب الجيني للرجل بالنسبة لعامل رايزيس؟ وما نسبة احتمال أن يكون الطفل الثاني موجباً لهذا العامل؟</p><p>٢٠- في نبات حنك السبع سلالتان الأولى ذات أزهار حمراء (R) والثانية ذات أزهار بيضاء (W) وبتهجين السلالتين معاً كانت جميع أفراد الجيل الأول ذات أزهار وردية اللون. وعندما هجنت أفراد الجيل الأول فيما بينها توزعت أفراد الجيل الثاني بين فئات مظهرية ثلاث كالآتي:</p><p>أحمر، وردي، أبيض.</p><p>- أعط تحليلاً لوراثة صفة لون أزهار نبات حنك السبع؟</p><p>٢١- تزوج رجل مصاب بعمى اللونين الأحمر والأخضر بأثنى حاملة للمرض؟</p><p>- ما هي احتمالات ظهور هذا المرض في الأبناء؟</p><p>٢٢- لدى إجراء دراسة لنسب إحدى العائلات، تبين أن أنثى رؤيتها طبيعة للألوان، كان والدها مصاباً بمرض عمى الألوان وأمها طبيعية، فإذا تزوجت رجلاً رؤيته طبيعية، ما هي التركيب الجينية المحتملة لأبنائهما؟ وما نسبة الإصابة بمرض عمى الألوان بين الذكور والإناث؟</p><p>٢٣- إذا كانت خصلة الشعر البيضاء في الإنسان صفة متحنية مرتبطة بالجنس، فما هي احتمالات توريث هذه الصفة في الأبناء الناتجين عن زواج رجل ذي شعر عادي، بامرأة ذات خصلة بيضاء؟</p><p>٢٤- استنتج نوع الجين المميت (سائد أم متسح) وعدد الأشكال المظهرية للأفراد الناتجة التي تعيش وتسيتها في وراثة لون الغفران ووراثة لون بادرات نبات الذرة؟</p><p>١٣٠</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>تقويم الوحدة</h2><p>١ - عرف كلاهما يأتي : - الوارثة - الصفة - الصفة السائدة - الهجين (الخليط)
+- قانون إنعزال الصفات - قانون التوزيع المستقل (الحر)
+٢ - ما الفرق بين المظهر الخارجي والتركيب الجيني للفرد ؟
+٣ - لماذا كان مندل موقفاً في اختياره لنبات البازلاء لإجراء تجاربه عليه ؟ ولماذا لا يعتبر الإنسان مادة صالحة للتجارب الوراثية ؟
+٤ - ماذا يقصد بالتلقيح الاختياري ؟ وما أهميته ؟
+٥ - لما يعد مرض عمى اللونين الأحمر والأخضر نادراً بين النساء ؟
+٦ - اشرح على أسس وراثية علاقة الكروموسومات بتحديد الجنس ؟
+٧ - ما هو الدور الذي يلعبه في الإنسان ؟
+٨ - وضح المقصود بكل من الارتباط والعبور ؟
+٩ - اشرح على أسس وراثية وراثة الصلع ؟
+١٠ - ما الفرق بين صفة مرتبطة بالجنس وصفة متأثرة بالجنس ؟
+١١ - تزوج رجل بني العينين كان أبوه أزرق العينين بإمرأة زرقاء العينين ما هو احتمال لون العينين أبنائهم ؟ إذا علمت أن اللون البني سائد على اللون الأزرق .
+١٢ - نتيجة لقيام مندل بتهجين نباتات بازلاء مستديرة البذور مع بعضها البعض فقد حصل على (٧٣٢٤) بذرة موزعة كالاتي : (٥٤٧٤) بذرة مستديرة الشكل و (١٨٥٠) بذرة مجعدة . وضح على أسس وراثية التركيب الجيني للأباء والأبناء ؟
+١٣ - ينشأ اللون الأسود في حيوان الوبر عن جين سائد يرمز له بالرمز B واللون الأبيض عن جين منتج يرمز له بالرمز b وكذلك ينشأ الشعر الخشن عن جين سائد R والشعر الناعم عن جين منتج r ما هو احتمال ناتج اخصاب ذكر الوبر تركيبه الجيني BbRr لأنثى الوبر تركيبها الجيني BbRr ؟
+١٤ - إذا حدث تزاوج بين ذكر من الفئران أصغر اللون وأنثى صفراء اللون وكلاهما هجين كان الناتج من هذا التزاوج فئران سوداء وصفراء بنسبة ١ : ٢ ، علماً بأن اللون الأصغر في الفئران سائد على غيره من الألوان . - علل ذلك على أسس وراثية .
+١٥ - ثلاثة أطفال فضيلتهم الدموية كانت على النحو الآتي : AB, O, B وكل طفل ينتمي لعائلة مختلفة ، وكانت الزمر الدموية لأبوي كل عائلة هي :
+- العائلة الأولى : الأب : O والأم : AB - العائلة الثانية : الأب : A والأم : A
+- العائلة الثالثة : الأب : A والأم : B (نقية) . - هل يمكن تعيين كل طفل للعائلة التي ينتمي إليها ؟</p><p>١٢٩</p><p>الأحياء الصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

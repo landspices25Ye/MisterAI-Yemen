@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>وتكون مميزة لمادته، لأن لكل عنصر مستويات طاقة خاصة به. ولهذا تسمى هذه الإشعاعات بالأشعة السينية المميزة، أنظر الشكل (١٤ أ). حيث يظهر عليه الطيف الخطي المميز لعنصر التنجستن.</p><img src="img-156.jpeg" alt="img-156.jpeg" /><p>شكل (١٤)</p><p>الاحتمال الثاني : بعض الإلكترونات المعجلة (المتسارعة) تواصل سيرها داخل ذرات الهدف دون الاصطدام بإلكتروناتها، ولكنها تتأثر بمجالها الكهربائي فتتباطأ وتتناقص سرعتها نتيجة لتنافسها مع إلكترونات ذرات الهدف، فتقل طاقتها الحركية بشكل مستمر، ويظهر النقص في طاقتها على شكل إشعاع تردده يتناقص باستمرار مع استمرار تباطؤ الحركة فينتج عن ذلك إشعاع ذو طيف متصل يحوي جميع الترددات (أي جميع الأطوال الموجية)، أنظر الشكل (١٤ ب). وقد يفقد الإلكترون المقذوف كل طاقته الحركية ($‫\frac{1}{2} \text{ك} \text{ع} \text{ع}^2‬$) دفعة واحدة وعندئذ تكون طاقة الإشعاع المنبعث ($‫\text{hf}‬$) ذي التردد ($‫\text{f}‬$) مساوية تماماً للطاقة الحركية التي فقدها الإلكترون أي إن:</p><p>$‫\text{hf} = \frac{1}{2} \text{ك} \text{ع} \text{ع}^2 \quad \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots‬$‫</p><p>‬$‫\text{وبما أن : } \frac{1}{2} \text{ك} \text{ع} \text{ع}^2 = \text{ج} \text{س} \text{م} \quad \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots‬$‫</p><p>حيث ج هو فرق الجهد المطبق بين طرفي أنبوبة الأشعة السينية، س م هي شحنة الإلكترون فمن العلاقتين (٤)، (٥) نجد أن:</p><p>‬$‫\text{hf} = \text{ج} \text{س} \text{م} \quad \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots‬$‫</p><p>‬$‫\therefore \text{f} = \frac{\text{س}}{\text{h}} \text{ج} \quad \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots \dots‬$</p><p>١٥٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

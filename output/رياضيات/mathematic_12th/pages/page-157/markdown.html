@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التفاصيل</p><p>جدول (٦ - ١)</p><p>|  س | ١ | ٠,١ | ٠,٠١ | ← | ← | ٠,٠١ | ٠,١ | ١  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  جاس س | ٠,٨٤١٤٧ | ٠,٩٩٨٣٣ | ٠,٩٩٩٩٨ | ← ١ | ← | ٠,٩٩٩٩٨ | ٠,٩٩٨٣٣ | ٠,٨٤١٤٧  |</p><p>لذا نلاحظ من الجدول (٦ - ١) أن : $‫\frac{\text{جاس}}{\text{س}} \leftarrow ١‬$‫ عندما س ←.</p><p>نتيجة (١) :</p><p>‬$‫1) \text{ نهياً } \frac{\text{جاس}}{\text{جاس}} = ١ \quad (2) \text{ نهياً } \frac{\text{جاس}}{\text{جاس}} = ١‬$‫</p><p>‬$‫3) \text{ نهياً } \frac{\text{ظاس}}{\text{س}} = ١ \quad (4) \text{ نهياً } \frac{\text{جاس}}{\text{س}} = ١‬$‫</p><h1>مثال (٦ - ٢)</h1><p>أوجد أ) نهياً ‬$‫\frac{\text{جاس}}{\text{س}} = ٦‬$‫</p><p>ب) نهياً س ظناس</p><p>الحل :</p><p>أ) بفرض أن : ص = ٥ س ← س = ‬$‫\frac{\text{ص}}{٥}‬$‫ ، أي أن : عندما س ← ، فإن ص ←.</p><p>‬$‫\therefore \text{ نهياً } \frac{\text{جاس}}{\text{س}} = \frac{\text{جاس}}{\text{س}} = \frac{\text{جاس}}{\text{ص}} = \frac{\text{جاس}}{\text{ص}} = \frac{٥}{٦} \times ٦ = \frac{٥}{٦}‬$‫</p><p>‬$‫\text{ب) نهياً س ظناس} = \text{نهياً } \frac{\text{ب}}{\text{ص}} = ١‬$‫</p><h1>تدريب (٦ - ١)</h1><p>أوجد نهاية الدوال التالية وفق الشروط المرافقة لكل منها :</p><p>‬$‫1) \text{ د(س)} = \frac{\text{جاس}}{\text{ب س}} \rightarrow \text{س} \leftarrow \text{س}‬$‫</p><p>‬$‫2) \text{ د(س)} = \text{س قنا س} \rightarrow \text{س} \leftarrow \text{س}‬$‫</p><p>‬$‫3) \text{ د(س)} = \text{س جاس} \frac{1}{\text{س}} \rightarrow \text{س} \leftarrow \infty‬$‫</p><p>‬$‫4) \text{ د(س)} = \frac{1 - \text{جنا س}}{\text{س}} \rightarrow \text{س} \leftarrow \text{س}‬$</p><p>١٥٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>أعضاء الحس Sense Organs</h2><p>يتفاعل الإنسان مع البيئة المحيطة به، ويتأثر بمؤثراتها المختلفة كالصوت، والضوء، والحرارة، والرائحة، ويستقبل هذه المؤثرات عن طريق تراكيب تسمى المستقبلات الحسية Sensory Receptors التي توجد في أعضاء الحس Sense Organs والمستقبلات الحسية متنوعة، منها: المستقبلات الضوئية، والكيميائية، والآلية.</p><h3>أولاً: المستقبلات الضوئية : Photoreceptors</h3><p>تحتوي العين على مستقبلات ضوئية تعمل على امتصاص الطاقة الضوئية للجسم المرئي وتكون له صورة على شبكة العين، وتنتقل منها على هيئة سيالات عصبية بواسطة العصب البصري إلى مركز الإبصار حيث يتم ترجمتها وإدراكها.</p><h4>● تركيب العين :</h4><p>العين هي عضو الإبصار في الحيوانات الفقارية، ومنها الإنسان وتتكون العين في الإنسان من المقلة، والعضلات المحركة لها.</p><p>ادرس الشكل (١٧) الذي يمثل تركيب العين.</p><p>– ما الطبقات المكونة للعين؟</p><img src="img-19.jpeg" alt="img-19.jpeg" /><p>الشكل (١٧) تركيب عين الإنسان.</p><p>٢٦</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

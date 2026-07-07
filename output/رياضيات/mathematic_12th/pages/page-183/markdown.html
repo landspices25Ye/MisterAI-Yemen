@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التفاصيل</p><h1><strong>تمارين ومسائل (٦-١)</strong></h1><p>[١] أوجد $‫\frac{ص}{س}‬$ لكل من الدوال التالية :</p><p>أ) ص = س³ قنا س
+ب) ص = $‫\frac{جنا س}{س}‬$</p><p>ج) ص = س² قنا س
+د) ص = $‫\frac{1}{س} + ٥ جنا س²</p><p>هـ) ص = ‬$\frac{٢ - جنا س}{٢ + جنا س}$‫
+و) ص = قنا س + قنا س جنا س</p><p>ز) ص = ٢ جا س</p><p>[٢] أوجد معادلتي المماس والناظم لمنحنى الدوال التالية عند النقاط الموضحة أمام كل منها :</p><p>أ) د (س) = جا س - جنا س ، س = ‬$\frac{\pi}{4}$‫ ،
+ب) د (س) = ‬$\frac{جا س}{س + ١ + جنا س}$‫ ، س = ‬$\frac{\pi}{2}$‫ ،</p><p>ج) د (س) = ٣ س + س ظا س ، س = ‬$\frac{\pi}{3}$‫ ،</p><p>د) ٢ س ص + ‬$\pi$‫ جا ص = ‬$\pi$‫ ، عند النقطة ( ‬$\frac{\pi}{2}$ ، ١)</p><p>[٣] أثبت أن :</p><p>أ) إذا كانت ص = جا س ، ١ ثابتا ، فإن : ص + ١ ص = ٠</p><p>ب) إذا كانت ص = ١ جا س ، ١ ثابت ، جا س = ٠ ، فأوجد قيمة ١ التي تحقق المعادلة :
+ص + ٢ ص - ٤ جا س = ٠</p><p>ج) إذا كانت س ص = جا س ، فإن : ٢ ص + ص + س ص = (١ - س) ص</p><p>د) إذا كانت س = جا ص ، فإن : ص = س قنا ص</p><p>هـ) إذا كانت : ص + ص = س + ٥ س ، فإن : (١ + ٣ ص) ص + ٦ ص (ص) = ٢</p><p>و) إذا كانت ص = هـ ص ، فإن : ص - ٥ ص + ٦ ص = ٠</p><p>١٨١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-17.jpeg" alt="img-17.jpeg" /><p>الوحدة الأولى</p><h2>تمارين ومسائل (١-٢)</h2><p>[١] أوجد ناتج ما يلي :</p><p>- أ) (١-٢ ت) + (٥-٣ ت) .
+- ب) (٥/٢ + ٢/٣ ت) + (١/٤ - ٥/٦ ت) .
+- ج) (٣ + ١٦-٧) - (٤-١ + ٩-٧) .
+- د) (٣-٢ ت) + (٢ + ٢٧ ت) - (٤-١ + ٢٧ ت) .</p><p>[٢] بسط ما يلي :</p><p>- أ) ٧/٤ + ٥-٩-٣ - ٧/٨١ .
+- ب) ٢-٧/٣٦ - ٤٩ ت + ٧ .
+- ج) (١-٢ ت) - (٤-٥ ت) + (٨-٣ ت) .
+- د) (٤+٣ ت) + (١-١ + ٦٤) .</p><p>[٣] أوجد قيمتي س، ص التي تحقق ما يلي :</p><p>- أ) ٢ + س + ت ص = ٥ - ت .
+- ب) ٢ س + ٤ ت ص = ٣ - ص + ٢ ت س .
+- ج) (س + ت ص) + (٣ - ٢ ت) = ١ + ٤ ت .
+- د) (س، ص) - (٧، ٤) = (٣، ٥) .
+- هـ) ٣ س + (٢ س - ص) ت = ٦ - ٣ ت .</p><p>[٤] لتكن ع₁ = ٣ + ت ، ع₂ = ٧ - ٣ ت ، ع₃ = ٥ + ٩ ت ؛</p><p>أوجد : أ) ع₁ + ع₂ .
+ب) ع₃ - ع₁ .
+ج) ع₁ + ع₂ - ع₂ .</p><h2>ضرب وقسمة الأعداد المركبة</h2><p>١ - ٣</p><p>أولاً : ضرب الأعداد المركبة :</p><h3>تدريب (١ - ٤)</h3><p>أوجد (س + ص) (أ + ب)</p><p>لاشك أنك قد حصلت على حاصل الضرب التالي : أ س + ب س + أ ص + ب ص بطريقة ضرب مقدارين جبريين</p><p>وبنفس الأسلوب إذا كان ع₁ = س₁ + ت ص₁ ، ع₂ = س₂ + ت ص₂ ؛ فإن :</p><p>ع₁ + ع₂ = (س₁ + ت ص₁) (س₂ + ت ص₂) = س₁ س₂ + ت ص₂ س₁ + ت ص₁ س₂ + ت ص₂ ص₁ ص₂</p><p>١٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

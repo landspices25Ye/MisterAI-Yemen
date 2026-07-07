@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-180.jpeg" alt="img-180.jpeg" /><p>الوحدة السادسة</p><p>$‫\text{قصوى } (\frac{9}{4}, \frac{5}{2}) \text{ ، النقطه } \frac{9}{4} = 4 - \frac{25}{2} + \frac{25}{2} = (\frac{5}{2})‬$‫</p><p>‬$‫\text{قصوى } (4 - 5) \text{ ، النقطه } 4 - 4 - 25 - 25 = (5)‬$‫</p><p>‬$‫\text{قصوى } (4 - 0) \text{ ، النقطه } 4 - 4 - 0 - 0 = (0)‬$‫</p><p>‬$‫\text{عندما } \text{ق(س)} > 0 \text{ ، فالدالة } \text{د تناقصية على الفترة } [0, \infty - \infty, 0] \cup [0, \infty - \infty]‬$‫</p><p>‬$‫\text{وعندما } \text{ق(س)} > 0 \text{ ، فالدالة } \text{د تزايدية في الفترة } [0, \infty - \infty, 0] \cup [0, \infty - \infty]‬$‫</p><p>‬$‫(4) \text{ وبوضع } \text{ق(س)} = 0 \text{ ، } \text{ق(س)} = 2 - \infty‬$‫</p><p>∴ كل من ق(0) ، ق(5) غير موجودين ، فإن النقطتين (4 - 0) ، (4 - 0) نقطتا انعطاف.</p><p>‬$‫(5) \text{ عند } \infty = 0 \Leftarrow \infty = 4 - \infty \text{ ، بيان الدالة يقطع } \infty \text{ في النقطه } (4 - 0)‬$‫</p><p>‬$‫\text{وعند } \infty = 0 \Leftarrow | - \infty + 5 \infty | = 4 - 0‬$‫</p><p>‬$‫\text{أما } - \infty + 5 \infty = 4 - 0 \Leftarrow \text{إما } \infty = 4 \text{ أو } \infty = 1‬$‫</p><p>‬$‫\text{أو } \infty + 5 \infty = 4 - 0 \Leftarrow \text{إما } \infty = \frac{\sqrt{4} + 5}{2} \text{ أو } \infty = \frac{\sqrt{4} - 5}{2}‬$‫</p><p>‬$‫\therefore \text{النقاط المساعدة هي : } (0, 4 - 0) \text{ ، } (0, 4 - 0) \text{ ، } (0, 1 - 0) \text{ ، } (\frac{\sqrt{4} + 5}{2}, 0) \text{ ، } (\frac{\sqrt{4} - 5}{2}, 0)‬$‫</p><p>(6) نلخص ما سبق في الجدول التالي :</p><p>جدول (6 - 11)</p><p>|  س | ∞ + | 5 | 5 | 0 | ∞ -  |
+| --- | --- | --- | --- | --- | --- |
+|  ق(س) | + | - | 0 | + | -  |
+|  ق(س) | ⊕ | ⊖ | ⊖ | ⊖ | ⊕  |
+|  ق(س) | ∞ + | 4 - 1 | 4 | 4 - 1 | ∞ +  |</p><p>(7) نرسم بيان الدالة كما في الشكل (6 - 18).</p><h1>مثال (6 - 46)</h1><p>‬$‫\text{ادرس تغيرات الدالة } \text{ق(س)} = \frac{\infty + 3}{2 - 1} \text{ ، وارسم بيانها.}‬$‫</p><p>الحل :</p><p>‬$‫(1) \text{ م.ت = ح} / \{1\}‬$</p><img src="img-181.jpeg" alt="img-181.jpeg" /><p>206</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

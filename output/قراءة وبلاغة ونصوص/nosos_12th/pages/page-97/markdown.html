@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>(٥) قد سألَتِ الحياةَ عن نغمةِ الفجْهِرِ، وعن وَجْهِمَةِ المساءِ القُطُوبِ
+(٦) فسمعتُ الحياةَ في هيكلِ الأحْـ    زَانٍ تشدُّو بلحنها المحبوبِ
+(٧) ما سكوتُ السماءِ إلا وجومٌ    ما نشيدُ الصباحِ غيرُ نحيبِ
+(٨) ليس في الدهرِ طائرٌ يتغنَّى    في ضفافِ الحياةِ غيرُ كئيبِ
+(٩) خضبُ الاكتئابِ أجنحةَ الأيْـ    دام بالدَّمعِ والدَّمِ الأسكوبِ
+(١٠) وعجيبٌ أن يفرحَ الناسُ في كهْـ    ف الليالي بحزنها المشبوبِ</p><h3>معاني المفردات والتراكيب اللغوية</h3><p>لَحْظاً: نظرة تأمل، بعيد الرسوب: عميق البعد والمرمى، شغاف: أصله غلاف القلب والمراد هنا العمق، مهجة: في الأصل دم القلب، والمراد هنا حقيقة الظلام، الهبوب: الخيف، صميمها: عمقها، الشجو: الهم والحزن، وجمة: من الوجوم وهو شدة الحزن، القلوب: العابس، هيكل: معبد، نحيب: بكاء، ضفاف: جمع ضفة وهي جانب النهر والمقصود جوانب الحياة وأطرافها، خضب: لون، الأسكوب: المسكوب، المشبوب: المشتعل.</p><h3>إضافة</h3><p>تتمحور أبيات النص حول فكرة عامة هي: أن هذا الكون وما فيه ماهو إلا مآتم كبير، وقد حاول الشاعر فيه أن يدل على صدق نظرته الحزينة من جانبين: من جانب خبرته هو بها، ومن جانب إفادة الحياة ذاتها بذلك المعنى.</p><p>يقول الشابي: لقد تأملت هذا الكون بعمق، وأطلقت نظراتي إلى أبعد أعماقه، فوقفت على أسراره من خلال نظرة ثاقبة مزقت أستار الليالي المظلمة، حتى وصلت إلى أعماقها، وكشفت عن ضمير الظلام وأصل مادة تكوينه، فرأيت في جوهره المخزون فيه ألم الحزن، وأتين البؤس والحرمان، وسمعت صرخات القلوب الأليمة المنبعثة من أعماق مهجة الظلام؛ فلا تحاول - أيها السامع - إنكار الحزن من هذه الحياة، لأنني خبير بها خبرة مجرب متفحص عاقل.</p><p>لقد جرى بيني وبين الحياة تعايش وتواصل، فسألتها عن ألحان الفجر الطروب، وعن كآبة المساء العابس؛ فسمعتها تُنشِد ألحاناً عذبة في محراب الأحزان، وكأنها</p><p>٩٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

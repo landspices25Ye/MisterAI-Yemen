@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>٥ - سهولة الألفاظ وعذوبتها وحيويتها.
+٦ - الدعوة إلى تجديد الأوزان وتنويع القوافي.
+٧ - التجديد في الموضوعات الشعرية.</p><h1>روادها وجماعاتها في الأدب العربي</h1><h1>١- خليل مطران:</h1><p>يُعدّ مطران رائداً للرومانسية في الوطن العربي، متأثراً بالرومانسية الفرنسية عند (موسيه) و(هيجو) و(لامارتين).</p><p>وقد ظهر مذهبه الشعري في مقدمة الجزء الأول من ديوانه، الذي نشره عام ١٩٠٨م، بما تضمنه من آراء تجديدية أرست الدعائم لهذا الاتجاه، ومثّلت الخصائص العامة للمدرسة الرومانسية.</p><p>وكان قد تنكر له المقلّدون المتشددون، ووجّهوا له النقد اللاذع، إذ رأوا أنه قد شقّ عصا الطاعة على البحتري وأبي تمام والمتنبي، ومن سار في ركابهم من الشعراء؛ فدافع مطران عن منهجه في تلك المقدمة أيضاً، لكنه لم يواجه الإحيائيين مواجهة جماعة الديوان لهم من بعده.</p><p>ولأن مطران يُعدّ مرحلة انتقالية بين الكلاسيكية الجديدة والرومانسية؛ فقد ظلّ مرتبطاً ببعض خصائص شعرهم، كالحافظة على الوزن والقافية، وطرق بعض الموضوعات التقليدية كالمديح والرثاء والتهاني.</p><h1>٢- جماعة الديوان:</h1><p>روّادها عبد الرحمن شكري وعباس محمود العقاد، وإبراهيم عبد القادر المازني وقد جمعوا بين التراث العربي، والأدب الإنجليزي وبدؤوا - بعد مطران - عام ١٩٠٩م، ينشرون آراءهم ويدعون إلى مذهبهم من خلال مقالات في الصحف والمجلات، وفي مقدمات دواوينهم وفي مناقشاتهم، ومساجلاتهم الأدبية.</p><p>وقد هاجم الشعراء الثلاثة روّاد الكلاسيكية الجديدة من الإحيائيين وعلى رأسهم أحمد شوقي، وحافظ إبراهيم، ومصطفى صادق الرافعي. وكان أكثر كتب هذه</p><p>٨٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

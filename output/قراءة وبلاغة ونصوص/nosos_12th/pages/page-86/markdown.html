@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الجماعة شهرة وقسوة كتاب «الديوان» في الأدب والنقد، الذي أصدره العقاد والمازني، معلنين أن هدفهم من هذا الكتاب تحطيم الأصنام الباقية في الأدب. ويبدو أن تسمية هذه الجماعة جاءت نسبة إلى ذلك الكتاب.</p><p>وقد تفرّدت جماعة الديوان بالنزعة الفكرية الذهنية والتأملات الفلسفية، واهتمت بوضع عنوان للقصيدة وللديوان يدل على محتواه مثل: ديوان «عابر سبيل» و«أعاصير مغرب» للعقاد، وديوان شكري «أزهار الخريف» خلافاً لما كان من قبلهم مثل «ديوان البارودي» و«ديوان حافظ» و«الشوقيات».</p><h3>٣- جماعة أبولو:</h3><p>أبولو: اسم مأخوذ من «أبولون» إله النور والفنون والجمال عند اليونان، وهي إحدى الجماعات الرومانسية التي مهد لها شعر الرواد الأوائل ونقدهم وهم مطران وجماعة الديوان. فقد تأثر شعراء أبولو بمذهب خليل مطران الرومانسي، ورأوا فيه نموذجاً للتجديد، وعدّوه الأب الروحي للرومانسيين. فضلاً عن تأثرهم بالديوانيين وما قدموه من مترجمات وكتب نقدية. وكذا قراءاتهم للرومانسية الأوروبية والإنجليزية خاصة، وأدب المهجر ولاسيما شعر جبران خليل جبران، وبذلك فقد احتضنت هذه الجماعة الشعر الوجداني ورحّبت بالأدب الغربي، وضمّت إليها كل حركة تجديدية، ولذا نجد في مجلتها «مجلة أبولو» الشعر الأوروبي المترجم، والأسطورة اليونانية المنظومة.</p><p>ويُعد أحمد زكي أبو شادي رائداً لهذه الجماعة، ومعه من مصر إبراهيم ناجي وعلي محمود طه، وصالح جودت، وغيرهم، ومن السودان التيجاني يوسف بشير ومن تونس أبو القاسم الشابي، ومن اليمن لطفي جعفر أمان، وعلي محمد لقمان وأحمد الشامي، وكثيرون غيرهم من شعراء العالم العربي، حتى قيل: إن جميع شعراء الوطن العربي انضموا إلى جماعة «أبولو» عند قيامها.</p><p>وقد أضافت هذه الجماعة إلى خصائص المدرسة ما يأتي:</p><p>١- الشعور بالغربة حتى مع الإقامة في الوطن.</p><p>٢- استعمال بعض الكلمات الأجنبية والأسطورية.</p><p>٨٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

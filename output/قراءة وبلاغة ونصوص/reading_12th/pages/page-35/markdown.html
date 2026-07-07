@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الأخرى. فإذا أطلع القارئ على كتاب في الحشرات، فليس من اللازم اللازم أن يطلع عليه ليكتب في موضوعه، ولكنه يطلع عليه لينفذ إلى بواطن الطباع وأصولها الأولى.»</p><p>أ - (تتراءى - اللازم - الطباع).</p><p>هات مرادف الكلمة الأولى، وضد الثانية، ومفرد الثالثة.</p><p>ب - وضح الفرق في المعنى بين كلمتي «يَنْفُذُ» و«يَنْفُذُ» فيما يأتي:</p><p>- قال تعالى: ﴿مَا عِنْدَكُمْ يَنْفُذُ وَمَا عِنْدَ اللَّهِ بَاقٍ﴾ [النحل: ٤٩-٩٦]</p><p>- يستطيع المرء من خلال القراءة عن الحشرات أن يَنْفُذَ إلى بواطن الطباع وأصولها الأولى.</p><p>ج - بين القيمة الفنية للمحسن البديعي فيما تحه خط مما يلي:</p><p>- ليس من اللازم اللازم أن يكتب القارئ في جميع الموضوعات التي يطلع عليها.</p><p>د - زن الفعل (أطلع)، وبين ما حدث فيه من إبدال.</p><p>٣ - اضبط بالشكل أواخر الكلمات التي تحتها خط فيما يأتي، واذكر سبب الضبط:</p><p>«لا أحب القراءة لأنني زاهد في الحياة، ولكنني أحب القراءة لأن حياة واحدة لا تكفيني.. ومهما يأكل الإنسان فإنه لن يأكل بأكثر من معدة واحدة.»</p><p>٤ - بين سبب كتابة الهمزة على النحو المائل في الكلمات الآتية:</p><p>(القارئ - يتراءى - الطباع).</p><p>٥ - اقرأ الفقرة الآتية، ثم أجب عن الأسئلة التي تليها:</p><p>«إن الفكرة الواحدة جدول منفصل، أما الأفكار المتلاقية فهي المحيط الذي تتجمع فيه الجداول جميعاً، والفرق بينهما وبين الفكرة المنفصلة كالفرق بين الأفق الواسع والتيار الجارف، وبين الشط الضيق والموج المحصور. وقد تختلف الموضوعات ظاهراً، أو على حسب العناوين المصطلح عليها، ولكنك إذا رددتها إلى هذا</p><p>٣٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

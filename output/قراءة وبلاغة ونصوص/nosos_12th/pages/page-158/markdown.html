@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-57.jpeg" alt="img-57.jpeg" /><h2>إضافة</h2><p>في النص فكرتان رئيسيتان هما: الوقوف على أطلال مدينة يافا، والبكاء على ما حل بها من دمار، ورفض البكاء، والثورة على واقع الاحتلال.</p><p>تتحدث الشاعرة عن مأساة وطن، وتشريد شعب، وضياع هوية، وانطلاق ثورة، وهي معان سياسية ووطنية تناولها الشعراء في العصر الحديث.</p><p>تقول في المقطع الأول: «وجدت يافا محطمة مردومة تبعث على الأسى والحسرة بعد أن هجرها أهلها، وتركوا تحت أنقاضها إرثاً عربياً إنسانياً، فقلت لعيني: قفا نبك على أطلال من كانوا هنا ورحلوا بسبب العصابات الصهيونية، فقلبي يئن من الألم لما وصل إليه حال المدينة، التي يبدو أنها قد أضاعت الحلم والمستقبل.</p><p>وفي المقطع الثاني تجد الشاعرة في الشعراء الذين التقتهم جذوة لا تنطفئ، وحماسة لا تخبو ونوراً يضيء جنبات نفسها الحزينة، تقول: مسحت - يا أحبائي الشعراء - دمعي لأواجهكم بالحب والعزم، لأنه من الخجل أن أقابلكم ضعيفة باكية. أجدني أمامكم آخذ من قوتكم وعزمكم وطاقتكم، أمد يدي مع أيديكم، ومع رؤوسكم رأسي مرفوع نحو الشمس. إنكم أقوياء كالصخر، ومن هذا التراب تصعدون كالزهر. وتترك الشاعرة الضعف والبكاء إلى الثورة والتحدي والتفاؤل.</p><h2>تحليل وتذوق</h2><p>تنقلنا الشاعرة من السبب الذي فجر في نفسها الحزن والأسى، وهو مشاهد الدور المحطمة والخرائب إلى النتيجة التي توصلت إليها بعد لقائها الحافل بإخوانها الشعراء في الأرض المحتلة، وأثر هذا اللقاء في خلق معاني الصمود والتحدي والثورة في نفسها. وتكمن قيمة النص في تجاوز الشاعرة ذاتها الضعيفة والإيمان بقيم البطولة كعمل جماعي لشعب يرسف بالأغلال، لكنه يتحدى ممارسات العدو الصهيوني اليومية في سلب الأرض، وطمس الهوية الوطنية فيقف محارباً وثائراً.</p><p>١٥٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

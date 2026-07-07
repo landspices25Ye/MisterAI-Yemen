@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>إذ شبه السفينة بالجمل الذي يركبه فارس مسرع، وهو تشبيه لإبراز الضخامة والسرعة، وقوله أيضاً: (أو تمساح، أو أرقم، أو ظليم نفر في الظلام، أو جواد فر مستنكفاً) وكل هذه التشبيهات يراد بها تصوير سرعة السفينة، لذلك أخذ من التمساح، ومن الحية، وذكر النعام، والجواد، سرعتها في الجري وأسقطها على سرعة السفينة.</p><p>وفي قوله: (عقرب شائلة) إذ شبه السفينة وهي ترفع مؤخرتها في البحر، وتتحدر في مقدمتها بالعقرب الرافعة لذنبها، وهو تشبيه جميل لحركة السفينة في الماء.</p><p>ونلاحظ السجع في معظم جمل النص كقوله: (ياها سفينة على الأموال أمينة) (ذات دسر وألواح تجري مع الرياح)، (وتطير بغير جناح، وتعتاض عن الحادي بالملاح). وهذا التنميق اللفظي كان الغرض الأول للكاتب، فضلاً عن أن هذا الترابط اللفظي والجرس الصوتي المتتابع قد شكل عبئاً ثقيلاً على تذوق السامع وأدى إلى ضعف المعاني بشكل عام.</p><p>ونلاحظ بعض المحسنات البديعية الأخرى التي نالت من روعة الأسلوب وجماله، كالجناس في قوله: (لها قلاع كالقلاع)، (وشراع يحجب الشعاع)، (وسكينة وسكان)، (الخير كالحيل)، إذ لم يستعمل استعمالاً بليغاً وذلك لضعف المعنى وعدم توضيحه، بل جاء متكلفاً ليتناسق ويتوافق مع الجرس الصوتي للسجع الذي التزمه الكاتب، والمقابلة في قوله: (لا تمل من سير النهار ولا من سرى الليل)، ونلاحظ الطباق في قوله: (أهلها أيقاظاً وهم رقود) الذي جاء متكلفاً ولم يضاف إلى الأسلوب أي جمال أو قوة في المعنى، ونرى الكناية في قوله: (من أحسن الجواري المنشآت في البحر) وهي كناية عن السفينة وجمالها وتدل على تأثير الكاتب بالقرآن الكريم.</p><p>والنص في مجمله صورة صادقة للعصر الذي عاشه الكاتب، وهو عصر الانحطاط الذي انحدر الأدب فيه إلى غاية الضعف والركاكة، حيث أسرف الأدباء والكتاب بالصناعة اللفظية، وغلب عليهم طابع التقليد للعصور السابقة، فكانوا يصوغون المعاني القديمة صياغة ضعيفة، ويصفون الطبيعة وصفاً خالياً من العاطفة والوجدان.</p><p>٢١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

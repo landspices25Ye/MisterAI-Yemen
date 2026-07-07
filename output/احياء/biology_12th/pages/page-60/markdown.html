@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>تقويم الوحدة</h2><p>١- علل لما يلي: تلقى البذور عشوائياً عند زراعتها في التربة.
+- انحناء ساق النبات نحو الضوء.
+- يستعمل هرمون الفازوبرسين علاجياً لرفع ضغط الدم.
+- يعتبر هرمون الأدرينالين هرمون النجدة في جسم الإنسان.
+- تعد البنكرياس غدة قنوية وصماء.
+- وجود ثمار الكمثرى خالية من البذور.
+- زيادة سرعة نبضات القلب أثناء الغضب.
+- تستجيب الغدة الدرقية لهرمون (TSH) دون غيره من الهرمونات.
+٢- الغدد في جسم الحيوان نوعان ما هما؟ أعط أمثلة لكل نوع.
+٣- عرف الهرمون؟.
+٤- ارسم مخططاً لجسم الإنسان وبين عليه مواقع الغدد الصماء.
+٥- اذكر أسماء أربعة من الهرمونات النباتية.
+٦- ما الدور الذي يلعبه كل من هرمون البرولاكتين والأوكسيتوسين في الغدد الثديية؟
+٧- أثبت بتجربة عملية الانتحاء الضوئي؟.
+٨- ما الهرمونات التي تفرزها القشرة الكظرية؟
+٩- من أين يفرز هرمون الانسولين؟ وما وظيفته؟
+١٠- وضح بجدول هرمونات القناة الهضمية وأجزاءها الفارزة، ووظيفة كل هرمون.
+١١- ما وظيفة الهرمونات الآتية:
+- الاستروجين.
+- الأوكسينات.
+١٢- ماذا تعرف عن:
+- التضخم الدرقي.
+- هرمون البروجسترون.
+- السكري.
+١٣- ارسم مخططاً يبين علاقات السيطرة والتحكم بين (تحت المهاد)، والنقص الخلفي للغدة النخامية فيما يتعلق بإفراز الهرمونات.
+١٤- ما أسماء الغدد التي تفرز:
+١- هرمون الثيروكسين.
+٢- الباراثورمون.
+٣- المانع لإدرار البول.
+١٥- ارسم مخططاً يبين تنظيم مستوى الجلوكوز في الدم.</p><p>٦٠</p><p>الأحياء: النصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

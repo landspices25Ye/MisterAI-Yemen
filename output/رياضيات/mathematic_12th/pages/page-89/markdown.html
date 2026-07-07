@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الاحتمالات</p><p>نوجد حا (أ) كما يلي :</p><p>$‫\therefore \text{حا (أ) ب} = \text{حا (أ)} + \text{حا (ب)} - \text{حا (ب)}‬$‫</p><p>‬$‫\therefore 0.4 = \text{حا (أ)} + 0.2 - 0.1‬$‫</p><p>‬$‫\therefore \text{حا (أ)} = 0.3 \quad (2) \dots\dots\dots‬$‫</p><p>وبالتعويض عن حا (أ) من (٢) في (١) نجد أن:</p><p>‬$‫\text{حا (ب) | أ} = \frac{0.1}{0.3} = \frac{1}{3}‬$‫</p><p>‬$‫(3) \text{ حا (ب) | أ} = \frac{\text{حا (ب) أ}}{\text{حا (أ)}} = \frac{\text{حا (ب) - حا (أ) ب}}{\text{حا (ب) - 1}} = \frac{0.1 - 0.2}{0.3 - 1} = \frac{0.1}{0.7} = \frac{1}{7}‬$‫</p><p>‬$‫(4) \text{ حا (أ) | ب} = \frac{\text{حا (ب) أ}}{\text{حا (ب)}} = \frac{\text{حا (أ) ب}}{\text{حا (ب)}} = \frac{1 - \text{حا (أ) ب}}{1 - \text{حا (ب)}} = \frac{0.4 - 1}{0.2 - 1} = \frac{0.6}{0.8} = \frac{3}{4}‬$‫</p><h1><strong>مثال (٣ - ٨)</strong></h1><p>أوجد حا (ب) | أ) إذا كان :</p><p>(١) أ ⊃ ب . (٢) أ ، ب حادثتين متنافيتين .</p><h1><strong>الحل :</strong></h1><p>(١) إذا كانت أ ⊃ ب فلا بد أن تقع «ب» كلما وقعت «أ»</p><p>‬$‫\therefore \text{أ} \supset \text{ب} \text{،} \quad \therefore \text{أ} \supset \text{ب} = \text{أ} \Leftarrow \text{حا (أ) ب} = \text{حا (أ)}‬$‫</p><p>‬$‫(1) \dots\dots\dots \text{وحيث أن : حا (ب) | أ} = \frac{\text{حا (أ) ب}}{\text{حا (أ)}}‬$‫</p><p>وبالتعويض عن (١) في (٢) نحصل على :</p><p>‬$‫\text{حا (ب) | أ} = \frac{\text{حا (أ)}}{\text{حا (أ)}} = 1‬$‫</p><p>‬$‫(2) \therefore \text{أ} \text{، ب حادثتان متنافيتان} \Leftarrow \text{أ} \text{ب} = \emptyset‬$‫</p><p>‬$‫\therefore \text{حا (أ) ب} = \text{حا (ب) \emptyset} = 0‬$‫</p><p>‬$‫(3) \dots\dots\dots \therefore \text{حا (ب) | أ} = \frac{\text{حا (ب)}}{\text{حا (أ)}}‬$‫</p><p>وبالتعويض عن (٣) في (٤) نحصل على :</p><p>‬$‫\text{حا (ب) | أ} = \frac{0}{\text{حا (أ)}} = 0‬$</p><p>وهذا يعني إذا كانت أ ، ب حادثتين متنافيتين فلا يمكن أن تقع «ب» إذا وقعت «أ» .</p><p>٨٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>المحتويات</h1><p>|  الصفحة | الموضوع  |
+| --- | --- |
+|  ٧ | <strong>الوحدة الأولى : الأعداد المركبة</strong>  |
+|  ٧ | ١ - ١ العدد المركب  |
+|  ١٢ | ٢ - ١ جمع وطرح الأعداد المركبة  |
+|  ١٦ | ٣ - ١ ضرب وقسمة الأعداد المركبة  |
+|  ٢٣ | ٤ - ١ الصورة القطبية للعدد المركب  |
+|  ٣٣ | ٥ - ١ القوى والجذور  |
+|  ٤٠ | ٦ - ١ حل المعادلة من الدرجة الثانية  |
+|  ٤٥ | <strong>الوحدة الثانية : مبدأ العد ومبرهنة ذات الحدين</strong>  |
+|  ٤٥ | ١ - ٢ مبدأ العد  |
+|  ٤٩ | ٢ - ٢ التباديل  |
+|  ٥٥ | ٣ - ٢ التوافق  |
+|  ٦٥ | ٤ - ٢ مبرهنة ذات الحدين  |
+|  ٧٤ | <strong>الوحدة الثالثة : الاحتمالات</strong>  |
+|  ٧٤ | ١ - ٣ بعض المبرهنات الأساسية في الاحتمالات  |
+|  ٧٩ | ٢ - ٣ بناء النموذج الاحتمالي  |
+|  ٨٦ | ٣ - ٣ الاحتمال الشرطي وقانون الضرب والحوادث المستقلة  |
+|  ٩٣ | ٤ - ٣ متتاليات التكرارات المستقلة وقانون الاحتمال الثنائي  |
+|  ٩٨ | ٥ - ٣ السحب مع الإعادة وبدون إعادة  |
+|  ١٠٤ | <strong>الوحدة الرابعة : القطوع المخروطية</strong>  |
+|  ١٠٤ | ١ - ٤ تمهيد  |
+|  ١٠٥ | ٢ - ٤ القطع المكافئ  |
+|  ١١٠ | ٣ - ٤ القطع الناقص  |
+|  ١١٨ | ٤ - ٤ القطع الزائد  |
+|  ١٢٤ | ٥ - ٤ انسحاب المحاور الإحداثية  |
+|  ١٢٩ | ٦ - ٤ دوران المحاور الإحداثية  |</p><p>٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

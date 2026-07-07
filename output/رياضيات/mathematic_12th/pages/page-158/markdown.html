@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-141.jpeg" alt="img-141.jpeg" /><p>الوحدة السادسة</p><h1><strong>مثال (٦ - ٣)</strong></h1><p>أوجد ما يأتي: (أ) $‫\frac{1 - \text{جنا س}}{\text{س} \leftarrow \text{جنا س}}‬$ . (ب) $‫\frac{\text{جنا س}}{\text{س} \leftarrow \frac{\pi}{2}}‬$ .</p><h1><strong>الحل:</strong></h1><p>$‫\frac{2 \text{ جنا س}}{2 \text{ (س/2)}} \times \frac{\frac{\text{جنا س}}{2}}{2 \text{ (س/2)}} = \frac{\text{جنا س}}{\text{س} \leftarrow \text{جنا س}} = \frac{\text{جنا س}}{\text{س} \leftarrow \text{جنا س}} = \frac{\text{جنا س}}{\text{س} \leftarrow \text{جنا س}} \quad (1)‬$‫</p><p>‬$‫\frac{1}{2} = \frac{\frac{\text{جنا س}}{2}}{\frac{\text{جنا س}}{\text{س}}} = \frac{\frac{1}{2}}{\frac{\text{جنا س}}{\text{س}}}‬$‫</p><p>‬$‫\frac{\text{جنا س جنا س}}{\text{س (س - س/2)}} = \frac{\text{جنا س}}{\text{س} \leftarrow \text{جنا س}} = \frac{\text{جنا س}}{\text{س} \leftarrow \text{جنا س}} = \frac{\text{جنا س}}{\text{س} \leftarrow \text{جنا س}}‬$‫</p><p>‬$‫\frac{4 - \pi}{\pi} = \frac{1 \times \frac{\pi}{2} \text{ جنا س}}{\frac{\pi}{2} - \pi} = \frac{\left(\text{س} - \frac{\pi}{2}\right) \text{ جنا س}}{\left(\text{س} - \frac{\pi}{2}\right) \text{ جنا س}} = \frac{\text{جنا س}}{\text{س} \leftarrow \text{جنا س}}‬$‫</p><h1><strong>مبرهنة (٦ - ٢)</strong></h1><p>إذا كانت الدالة د محدودة على الفترة (ف) المحذوفة المركز (ب) وكانت:</p><p>‬$‫\text{نها س} \leftarrow \text{تا (س)} = \text{صفراً}‬$‫</p><p>‬$‫\text{فإنه يكون: نها س} \leftarrow \text{تا (س)} \times \text{تا (س)} = \text{صفراً}‬$‫</p><p>‬$‫\text{فمثلاً: نها س} \leftarrow \frac{3}{1 - \text{س}} \text{ جنا س} = 0 \text{، لأن:}‬$‫</p><p>دالة الجيب محدودة بالصورة | جنا س | ‬$\geq 1$‫ ، ‬$\forall$‫ س ‬$\subseteq$‫ ح.</p><p>‬$‫\text{والدالة: } \frac{3}{1 - \text{س}} \leftarrow 0 \text{ عندما س} \leftarrow \infty‬$‫</p><p>‬$‫\therefore \text{نها س} \leftarrow \frac{3}{1 - \text{س}} \text{ جنا س} = 0 \text{ [استناداً إلى المبرهنة (٦ - ٢)].}‬$</p><p>١٥٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

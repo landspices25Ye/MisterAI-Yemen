@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>٣) الموسيقى:</p><p>جاءت الأبيات على بحر الكامل، وتفعيلاته:</p><p>متفاعلن متفاعلن متفاعلن متفاعلن متفاعلن متفاعلن</p><p>ويقول النقاد عن هذا البحر: إنه أكثر بحور الشعر جلجلة وحركات، وفيه نوع خاص من الموسيقى يجعله – إن أريد الجد – فخما جليلاً، وإن أريد الغزل حلواً رقيقاً، مع صلصلة كصلصلة الأجراس، ودندنة تفعيلاته من النوع الجهير الواضح؛ الذي يهجم على السامع مع المعنى، والعواطف، والصور، حتى لا يمكن فصله عنها بحال من الأحوال.</p><p>وقد وظف البحتري هذه الخصائص حين دفعته تجربته إلى اختيار هذا البحر، فاعتمد على توظيف الكلمات الثلاثية وخاصة ما كان منها على وزن فعل: (ترك، نضا، دنا) وحرص على استعمال المصادر الثلاثية المنونة: (مرض، ديناً، أسفاً) وركز على تكرار صور صوتية معينة متماثلة أو متقاربة، مثل: (بيضا، نضا، مانضا) في البيت الأول، والاعتماد على صيغة «أفعل» في الأسماء والأفعال: (أغيد، أمرضا، أثرى، أنفضا، أساف) وكذا صيغة فعل: (بيضا).</p><p>وعلى العموم حرص الشاعر على إثراء الجانب الموسيقي بالتضعيف والجناس والطباق والإكثار من الحروف المتقاربة والمتماثلة كما يبدو من سيطرة حرف السين، وما أحدث ذلك من انسياب موسيقي مؤثر، وكما في البيت الثالث، الذي يركز فيه الشاعر على ترديد الدال: (جديده، دينا، دنا) وشي آخر زاد من هذا التنغيم في البيت المذكور، وهو أنه جعل الكلمات في البيت إزاء تفاعيل البحر فيما يسمى بحسن التقسيم: وكأنه / ألقى الصبا / وجديده / ديناً دنا / ميقاته / أن يقتضي.</p><p>ويقصد من وراء تكرار الكلمات والحروف وإيثاره لصيغ دون غيرها إلى إحداث نوع من التنغيم يناصر الموسيقى المنبعثة من البحر والقافية.</p><p>وهكذا نخلص إلى أن عناصر التجربة: فكرية وخيالية وعاطفية يتخذ منها الشاعر مواد تصويرية يستعين بها على جلاء صوره. والتجربة الفنية واحدة في جوهرها، وهي عند الناثر والشاعر على السواء، ولكن هذه العناصر تجتمع في الشعر، ولا يقوى النثر على أدائها كلها، وكل عنصر من هذه العناصر قد يؤلف نثراً ولكن لا يؤلف شعراً..</p><p>٢٠٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

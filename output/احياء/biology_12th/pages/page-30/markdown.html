@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>ثانياً: المستقبلات الكيميائية Chemoreceptors</h2><p>توجد هذه المستقبلات في الأنف، ووظيفتها التعرف على الروائح المختلفة، وكذلك توجد على سطح اللسان لمعرفة المداخلات المختلفة للأطعمة التي نأكلها، وتتأثر هذه المستقبلات بالمواد الكيميائية. والمستقبلات الكيميائية في جسم الإنسان نوعان هما:</p><h3>١- مستقبلات الشم Olfactory Receptors</h3><p>– أين توجد مستقبلات الشم؟</p><p>أدرس الشكل (٢٠) ولأحظ كيف تتكون خلايا الشم من عصبونات حسية متحورة، تسمى الخلايا الشمية التي تتشابك مع ألياف عصبية لتكون العصب الشمي، وتحيط بالخلايا الشمية خلايا داعمة وخلايا مفردة للمخاط، ويوجد في نهاية كل خلية شمية أهداف تقع عليها مستقبلات المواد الكيميائية المختلفة.</p><h3>آلية الشم Smell Sensation</h3><p>– هل تساءلت كيف يمكنك شم الروائح المختلفة والتمييز بينها.
+تتم عملية الشم للروائح وفق الخطوات الآتية:</p><img src="img-22.jpeg" alt="img-22.jpeg" /><p>٣٠</p><p>الأحياء: النصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

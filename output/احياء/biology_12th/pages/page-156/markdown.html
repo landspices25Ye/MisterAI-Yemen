@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>استخدام التقانة الحيوية في معالجة المخلفات الملوثة :</h2><p>تتواصل محاولات العلماء في استخدام الكائنات الدقيقة في تحليل كثير من المخلفات والمواد الملوثة للبيئة والتخلص من أضرارها البيئية مثل: مخلفات الصرف الصحي والمخلفات البلاستيكية والمخلفات النفطية وغيرها.</p><img src="img-117.jpeg" alt="img-117.jpeg" /><p>شكل (١٠) إنتاج غاز الميثان من مخلفات الصرف الصحي</p><p>فبالنسبة لمخلفات المجاري فإنه يتم استخدام الكائنات الدقيقة مثل البكتيريا بشكل فاعل لتحليل مخلفات الصرف الصحي في محطات معالجة مجاري مياه الصرف الصحي وتحويلها إلى مواد غير ضارة، بل يمكن الاستفادة منها في أغراض مختلفة، مثل الوقود. والأهم من كل ذلك أن تحليل مخلفات المجاري والصرف الصحي يساعد على تخليص البيئة</p><p>من ملوث رئيسي لها. ويتم التحليل الحيوي التخميري إما في وجود الأوكسجين أو في عدم وجوده. وتتمثل خطوات التحليل الحيوي لهذه المخلفات في عدم وجود الأكسجين، بأن يتم أولاً تجميع المخلفات في أحواض في صورة طينية بعد فصل الجزء الأكبر من الماء في أحواض أخرى، وتضاف الكائنات الحية الدقيقة إلى الأحواض التي تحوي المخلفات في شكلها شبه الصلب وترفع درجة الحرارة فيها إلى حوالي ٢٥ درجة مئوية، لتبدأ بكتيريا التحليل نشاطها الحيوي التخميري (تنفس لاهوائي)، حيث تعمل على تحويل المواد العضوية للمخلفات إلى حموض دهنية وحموض أمينية وسكريات أحادية، ثم تنشيط أنواع أخرى من البكتيريا لتحويل هذه النواتج إلى حموض عضوية ومواد كحولية، ومن ثم تنشيط أنواع أخرى من البكتيريا (Methanogenic) لتحويلها إلى غاز الميثان ($‫CH_4‬$) والماء، إذ يمكن استخدام الميثان كوقود.</p><p>١٥٦</p><p>الأحياء للصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

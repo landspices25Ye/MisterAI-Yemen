@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><p>والسهم في الرسمين يبين اتجاه التيار الكهربائي الاصطلاحي وهو يمثل اتجاه الفجوات الموجبة، ويوضع السهم دائماً على الباعث ويشير دائماً نحو البلورة السالبة ففي الرسم (١١-أ) يكون اتجاه التيار الاصطلاحي من الباعث إلى القاعدة، وفي الرسم (١١-ب) يكون اتجاه التيار من القاعدة إلى الباعث.</p><h3>مرور التيار الكهربائي في الترانزستور: Electric current flow across the transistor</h3><img src="img-73.jpeg" alt="img-73.jpeg" /><p>الشكل (١٢)</p><img src="img-74.jpeg" alt="img-74.jpeg" /><p>الشكل (١٣)</p><p>- إذا وصلنا بطارية ومللي أميتر (أو جلفانومتر) بين البلورة الموجبة (القاعدة) وإحدى البلورتين السالبتين، ولتكن بلورة الباعث كما في الشكل (١٢) بحيث يكون التوصيل أمامياً، فإن تياراً كهربائياً ضعيفاً نسبياً يمر بالرغم من أن التوصيل أمامي.. ما السبب في ذلك؟. إن السبب في ذلك هو صغر مساحة القاعدة وقلة الشوائب فيها.</p><p>- إذا وصلنا بطارية ومللي أميتر (أو جلفانومتر) بين البلورة الموجبة (القاعدة) والبلورة السالبة الأخرى</p><p>(المجمع)، بحيث يكون التوصيل خلفياً كما هو مبين في الشكل (١٣) فإن تياراً كهربائياً ضعيفاً أيضاً يمر، والسبب في ذلك هو التوصيل الخلفي.</p><p>ويتميز المجمع (C) بكبر مساحة سطحه وقلة الشوائب فيه بالنسبة للباعث، بينما يتميز الباعث (E) بصغر مساحة سطحه ووفرة الشوائب فيه. في هذه الحالة (أو الطريقة) القطب الموجب للبطارية يجذب نحوه إلكترونات المجمع ويمنعها من الانتقال عبر الوصلة، كما أن القطب السالب للبطارية يجذب نحوه الفجوات الموجبة للقاعدة، وبذلك لا يمر سوى تيار كهربائي ضعيف عبر الوصلة وقد لا يمر.</p><p>- إذا وصلنا القاعدة بالباعث توصيلاً أمامياً ووصلنا القاعدة بالمجمع توصيلاً خلفياً،</p><p>٧٢</p><p><http://www.e-learning-moe.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

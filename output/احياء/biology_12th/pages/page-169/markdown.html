@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>جدول (٢)</h1><p>|  الجسيمات | طبيعتها | تأثيراتها  |
+| --- | --- | --- |
+|  الغبار الساقط | – قطرها يزيد عن ١٠ ملي ميكرون. | – تحدث ضرراً على المنشآت والأبنية. – تعمل على إغلاق ثغور النباتات فتعيق نبات الغازات. – ذات تأثير خفيف على الإنسان.  |
+|  الغبار المعلق | – يتراوح قطرها بين ١,٠ و ١٠ ميكرون. | – تسبب التهاب الشعب الهوائية والانتفاخ الرئوي. – تؤدي إلى ارتفاع نسبة أمراض الصدر في سكان المناطق المحيطة بمصانع الأسمنت خاصة مرض السيليكوز الذي يحدث تلفاً رئوياً وألماً صدرياً وضيقاً في التنفس. – تترسب على مياسم الأزهار فتعيق جزيئاته عملية الإخصاب.  |
+|  الستاج | – يضاف على الوقود على هيئة رابع إيثيل الرصاص. – ينبعث من عوادم السيارات على شكل جزيئات دقيقة. – تشكل ٩٧٪ من الرصاص في الجو. | – له صفة سمية وتراكمية في الأنسجة. – يسبب صداعاً وضعفاً عاماً. – أحد أسباب التخلف العقلي وانخفاض مستوى الذكاء. – ذو علاقة تراكمية في الأغشية الجنينية وحالة التشوه الخلقي كالصمم والعمى وبعض الأمراض العصبية.  |</p><p>- بماذا تفسر التأثير الضار للغبار الساقط على الأجسام؟
+- ماذا يترتب عن تساقط الغبار المعلق على الأزهار في النبات؟
+- وينتج عن الجسيمات المعلقة في الهواء الجوي بعض الظواهر التي تشكل خطورة على الحياة مثل الانعكاس الحراري.
+- ما المقصود بالانعكاس الحراري؟</p><p>١٦٩</p><p>الأحياء للصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

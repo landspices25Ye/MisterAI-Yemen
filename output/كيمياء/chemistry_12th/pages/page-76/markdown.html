@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>طاقة الترابط النووي وعلاقتها بالكتلة المفقودة</h2><p>عرفت سابقاً بأن الذرة تحتوي على البروتونات والنيوترونات والإلكترونات، وربما نتوقع بأن كتلة الذرة تعادل مجموع كتل هذه الجسيمات وهي معزولة. إلا أن هذا التوقع يخالف تماماً نتائج القياسات الدقيقة لكتل ذرات العناصر المختلفة.</p><p>كما أن هناك تساؤلاً آخر شغل تفكير العلماء لفترة من الزمن، وهو ما يتعلق باستقرار النواة التي تحتوي على عدد من البروتونات الموجبة الشحنة والموجودة قريبة من بعضها داخل النواة. فكيف تتعايش البروتونات الموجبة وبينها قوى تنافر كهروستاتيكية كبيرة؟</p><p>ولفهم ذلك يمكن أخذ ذرة الهيليوم $‫H_2^4‬$ كأبسط ذرة تحتوي على البروتونات والنيوترونات والإلكترونات.</p><p>لقد وجد من خلال القياسات الدقيقة بأن كتلة نواة ذرة الهيليوم يساوي (٤,٠٠٢٦٠ وحدة كتل ذرية).</p><p>فهل تعادل هذه القيمة مجموع كتل الجسيمات الموجودة في ذرة الهيليوم (٢ بروتون + ٢ نيوترون + ٢ إلكترون)؟</p><p>وللتأكد من ذلك يمكنك تتبع الحسابات الآتية:</p><p>كتلة ٢ بروتون  $‫1,007276 \times 2 = 2,014552‬$  (و.ك.ذ).</p><p>كتلة ٢ نيوترون  $‫1,008665 \times 2 = 2,017330‬$  (و.ك.ذ).</p><p>كتلة ٢ إلكترون  $‫0,000,048 \times 2 = 0,001097‬$  (و.ك.ذ).</p><p>∴ مجموع كتل الجسيمات  $‫4,032979‬$  (و.ك.ذ).</p><p>ماذا تلاحظ عند مقارنة القيم الحسابية لمجموع كتل الجسيمات الموجودة في ذرة الهيليوم، والكتلة القياسية الفعلية لكتلة ذرة الهيليوم؟</p><h3>ملاحظة</h3><p>كتلة ذرة الهيليوم المقاسة تقل عن الكتلة المحسوبة للجسيمات وهي منفصلة.</p><p>ومقدار النقص في الكتلة  $‫= 4,032979 - 4,00260‬$</p><p>$‫= 0,030379‬$  (و.ك.ذ)</p><p>ومن خلال النتيجة السابقة يتضح أن قانون بقاء الكتلة التقليدي الذي سبق لك دراسته في الصف العاشر لا ينطبق على هذه الحالة. ولذلك كان لابد من تطبيق</p><p>٧٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

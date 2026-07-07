@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>استخدامات النايلون :</h2><p>يستخدم النايلون في صناعة أنواع مختلفة من الأقمشة والسجاد والبطانيات، وفرش الشعر، كما أنها تستخدم أيضاً في صناعة إطارات السيارات، وبعضها يستخدم في صناعة بعض الخيوط المستخدمة في الجراحة، كما يستخدم النايلون في صناعة مضارب التنس، والجرابات وملابس السيدات، انظر الشكل (٨-٤).</p><img src="img-141.jpeg" alt="img-141.jpeg" /><p>شكل (٨-٤) بعض الأقمشة التي تصنع من خيوط النايلون</p><h2>٢- البولي إستر : Polyester :</h2><p>وتُعدُّ ألياف البولي إستر من أهم الألياف الصناعية وأكثرها إنتاجاً وانتشاراً في العالم، فقد دخلت في صناعة الملابس الداخلية والخارجية وحلَّت محل الصوف والقطن لرخص ثمنها وجمال ألوانها وقدرتها على مقاومة العثة.</p><p>وتتمُّ صناعة البولي إستر عن طريق تفاعل البلمرة بالتكثيف، حيث يتمُّ تكاثف مادتين أساسيتين من مشتقات النفط إحداهما يحتوي على شق حمضي ثنائي القاعدة والأخرى تحتوي على شق كحولي، ونتيجة لذلك يحدث ما يسمى تفاعل الأسترة.</p><p>فكما عرفت سابقاً أن الأحماض الكربوكسيلية تتفاعل مع الكحولات مكونة الإستر، كما في المعادلة الآتية:</p><p>$‫\text{CH}_3 - \overset{\text{O}}{\underset{\text{||}}{\text{C}}} - \text{OH} + \text{CH}_3\text{CH}_2\text{OH} \xrightarrow[\text{مركز}]{\text{H}_2\text{SO}_4} \text{CH}_3 - \overset{\text{O}}{\underset{\text{||}}{\text{C}}} - \text{O} - \text{CH}_2\text{CH}_3 + \text{H}_2\text{O}‬$
+حمض اسيتيك إيثانول أسيتات الإيثيل (إستر)</p><p>١٥٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

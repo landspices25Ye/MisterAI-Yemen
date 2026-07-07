@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التفاصيل</p><h1>مبرهنتا رول والقيمة المتوسطة</h1><p>٦ - ٧</p><p>أولاً : مبرهنة رول :</p><p>ليس دائماً من السهل إيجاد قيم س التي تجعل المشتقة الأولى د(س) = ٠ ، لذا جاءت مبرهنة رول لتكون في مقدمة المبرهنات الهامة لإيضاح الشروط التي تتحدد بها مثل هذه القيم.</p><p>مبرهنة (٦ - ٤)</p><p>إذا كانت الدالة د متصلة على الفترة [t ، ب] ، وقابلة للاشتقاق على الفترة [t ، ب] ، وكان د(t) = د(ب) ؛ فإنه يوجد عدد واحد على الأقل ج = ٢ ، ب بحيث يكون د(ج) = ٠ .</p><p>المعنى الهندسي لمبرهنة رول :</p><p>من الشكل (٦-٢) لبيان منحنى دالة د (افتراضية) المتصلة على الفترة [t ، ب] والقابلة للاشتقاق على الفترة [t ، ب] تلاحظ ما يلي :</p><p>د(t) = د(ب) وبين العددين س = t ، س = ب
+يوجد ثلاثة أعداد هي : س₁ ، س₂ ، س₃ يناظرها ثلاث نقاط على الترتيب هـ ، و ، ط على منحنى الدالة ، المماس عند كل منها موازياً لمحور السينات من جهة ، والقاطع م و من جهة أخرى .</p><p>وهذا يعني بين النقطتين م ، و اللتين يتساوى إحداثيهما الصادي ، توجد نقطة واحدة على الأقل على المنحنى يكون عندها المماس موازياً للقاطع م و ، لذلك فإن المماس للمنحنى عند النقطة هـ (س₁ ، د (س₁) ) يساوي ميل القاطع م و</p><img src="img-156.jpeg" alt="img-156.jpeg" /><p>١٨٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>ففي عام (١٩٠٩م) قام العالم البريطاني (رذرفورد) بتجربته المشهورة وهي قذف صفيحة رقيقة جداً من الذهب سمكها ١٠⁻³م بحزمة من جسيمات ألفا (وقد عرفت فيما بعد بأنها أيونات الهيليوم الموجبة He⁺⁺) المطلقة بطاقة عالية من مصدر مشع، كالراديوم، موضوع في قالب من الرصاص (لماذا من الرصاص ؟). هذه الجسيمات عند اصطدامها بالصفيحة تتشتت وتضطدم بشاشة إسطوانية مطلية بطبقة رقيقة من</p><img src="img-121.jpeg" alt="img-121.jpeg" /><p>شكل (٩)</p><img src="img-122.jpeg" alt="img-122.jpeg" /><p>شكل (٨)</p><p>كبريتيد الزنك (ZnS) لها خاصية الوميض عند اصطدام جسيمات ألفا بها، انظر الشكل (٨).</p><p>في إطار نموذج تومسون الذري، الذي يفترض أن الكتلة والشحنة للذرات تتوزع بشكل منتظم داخل حجم الذرة، من المتوقع أن تعاني جسيمات ألفا انحرافاً مقداره حوالي ٠.٠١ من الدرجة إذا كان هذا الانحراف ناتجاً عن قوى التصادم بين جسيمات ألفا الموجبة والإلكترونات السالبة (لماذا ؟)، أما إذا كان الانحراف ناتجاً عن قوى التنافر الكهربائي بين شحنات ألفا الموجبة والشحنة الموجبة للذرة فإنه لا يمكن أن يتجاوز ٠.٢٥ من الدرجة.</p><p>ولكن التجربة دلت على نتائج مذهشة، إذ لوحظ أن معظم جسيمات ألفا تجتاز الصفيحة دون أن تقابل أي مانع في طريقها تضطدم به، وأن عدداً قليلاً منها حوالي واحدة من بين (٨٠٠٠) جسيمة هي التي تتشتت ضمن زوايا أكبر من ٩٠ درجة وقد تصل إلى ١٨٠ درجة أي ترتد على نفسها، انظر الشكل (٩).</p><h3>نموذج (رذرفورد) (Rutherford Nuclear Model of the Atom)</h3><p>نتيجة للتجربة التي أجراها العالم البريطاني إيرنست رذرفورد عام ١٩٠٩م والنتائج التي حصل عليها، فقد تصور نموذجاً للذرة قادراً على أن يفسر هذه النتائج، إذ فرض أن الشحنة الموجبة للذرة ومعظم كتلتها (لماذا لا تكون كل كتلتها ؟) تتركز</p><p>١٢١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

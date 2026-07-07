@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>مسألة محولة :</h2><p>توصل إلى احتمالات ظهور فصائل الدم المختلفة في جيل الأبناء لأب فصيلة دمه A وتركيبه الجيني I^A و أم فصيلة دمها B والتركيب الجيني لها I^B في (الشكل-١٤).</p><img src="img-89.jpeg" alt="img-89.jpeg" /><p>ستلاحظ أن 1/4 عدد الأبناء يحملون فصيلة الدم A وتركيبها الجيني (I^A i) و 1/4 العدد يحملون فصيلة الدم B وتركيبها الجيني (I^B i) و 1/4 العدد يحملون فصيلة الدم (O) وتركيبها الجيني (ii)، و 1/4 العدد يحملون فصيلة الدم AB وتركيبها الجيني (I^A I^B)، وهي :</p><p>الشكل (١٤)</p><p>الفصيلة التي تبدو فيها ظاهرة السيادة المشتركة للجينات. وقد وجد أن دراسة توارث فصائل الدم مهمة جداً في الطب الشرعي، إذ تساعد على نفي الأبوة ولكن لا تثبيتها، بل يثبتها الحامض النووي (DNA)، كما ستعرف ذلك في الوحدة اللاحقة.</p><p>– هل يمكن أن تكون فصيلة دم الطفل AB إذا كانت فصيلة أحد أبويه O ؟</p><h2>النقاط (١٩)</h2><p>توصل إلى احتمالات ظهور فصائل الدم لأبناء أبوين أحدهما يحمل فصيلة الدم A وتركيبه الجيني (I^A I^A) ويحمل الآخر فصيلة الدم O.</p><h2>وراثة العامل الرايزيسي Rhesus Factor.</h2><p>- – ما المقصود بالعامل الرايزيسي ؟ وما أهميته ؟
+- – كيف يتم توارث العامل الرايزيسي ؟</p><p>العامل الرايزيسي هو مولد التصاقّي يوجد على غشاء خلايا الدم الحمراء في الإنسان، ويرمز إليه بالرمز (Rh). وفي حالة وجوده يكون الشخص موجب العامل الرايزيسي (Rh^+)، وفي حالة عدم وجوده يكون الشخص سالب العامل الرايزيسي (Rh^-) ويمثل الأشخاص الذين يحملون العامل الرايزيسي حوالي ٨٥% من مجموع أفراد المجتمع، بينما تكون النسبة الباقية لأشخاص سالب العامل الرايزيسي.</p><p>١١٨</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

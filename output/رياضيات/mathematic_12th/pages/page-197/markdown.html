@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التفاصيل</p><h1>مبرهنة (٦ - ١٠)</h1><p>لتكن النقطة ب في مجال الدالة د ، د (ب) = ٠ ، وكان :</p><p>(١) د (ب) > ٠ فإن للدالة د عند س = ب قيمة عظمى محلية هي : د (ب) .</p><p>(٢) د (ب) < ٠ فإن للدالة د عند س = ب قيمة صغرى محلية هي : د (ب) .</p><h1>مثال (٦ - ٣٨)</h1><p>أوجد النقاط الحرجة التي عندها قيم قصوى محلية للدالة د(س) = س ٢ - س ٤ ، س ٢ س ٧ ح باستخدام اختبار المشتقة الثانية .</p><h1>الحل :</h1><p>الدالة د متصلة وقابلة للاشتقاق على ح لأنها كثيرة حدود .</p><p>$‫\therefore \text{د (س)} = ٤ \text{ س} - ٣ \text{ س}‬$‫</p><p>‬$‫\text{بوضع د (س)} = ٠ \quad \therefore \quad ٤ \text{ س} - ٣ \text{ س} = ٠ \quad \Leftarrow \quad ٤ \text{ س} (١ - ٢) = ٠‬$‫</p><p>‬$‫\text{إما س} = ٠ \text{ ، أو س} = ١ \pm ١‬$‫</p><p>إذن للدالة د ثلاث نقاط حرجة عند قيم س التي تساوي ١ - ٠ ، ١</p><p>‬$‫\therefore \text{د (س)} = ١٢ \text{ س} - ٤‬$</p><p>والجدول التالي يوضح اختبار المشتقة الثانية للنقاط الحرجة :</p><p>|  س | ∞ + | ١ | ٠ | ١- | ∞ -  |
+| --- | --- | --- | --- | --- | --- |
+|  د (س) |  | ٠ | ٠ | ٠ |   |
+|  د (س) |  | + | - | + |   |
+|  د (س) |  | ١- | ٠ | ١- | ١-  |
+|   |  | صغرى محلية | عظمى محلية | صغرى محلية |   |</p><p>جدول (٦ - ٥)</p><p>تلاحظ من الجدول (٦ - ٥) أنه ليس للدالة قيم قصوى مطلقة .</p><h1>مثال (٦ - ٣٩)</h1><p>ابحث عن القيم القصوى المحلية للدالة ص = س + ١/س في مجال تعريفها وبين نوعها (عظمى أم صغرى) .</p><p>١٩٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

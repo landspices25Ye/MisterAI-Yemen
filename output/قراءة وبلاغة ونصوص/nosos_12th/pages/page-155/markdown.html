@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>لن أبكي</h1><h2>فَدْوَى طُوقَان</h2><h3>التعريف بالشاعرة</h3><p>ولدت فدوى طوقان سنة ١٩١٧م في مدينة نابلس بفلسطين، في بيت أدب وعلم؛ فقد كان أخوها إبراهيم طوقان شاعراً، تعهد أخته بالرعاية والتثقيف.</p><p>تلقت فدوى دراستها الأولى في نابلس، ولم تسمح لها ظروفها الاجتماعية بإتمام تعليمها الجامعي في الخارج.</p><p>برز اسمها بوصفها شاعرة في الأوساط الأدبية حين رثت أخاها إبراهيم الذي مات في ريعان شبابه، وفجر موته في قلبها ينبوع ألم لا ينطفئ. وكان موت أخيها الدافع الأول لتجربتها الشعرية، وسبباً في وصف بعض النقاد لها بخنساء القرن العشرين. نظمت في أغراض شعرية مختلفة، لا سيما الرثاء والوطنيات، والتعبير عن همسات روحها الحائرة، وأنات قلبها الحزين المغلف بوشاح الألم.</p><p>أما الرافد الثاني الذي شكل معيناً لا ينضب لتجربتها الشعرية فهو النكبة التي حلت بوطنها فلسطين، ومثلت وجداناً دامياً في كيانها.</p><p>نظمت الشعر العمودي ذا النزعة الرومانسية كما يظهر ذلك من ديوانها «وحدي مع الأيام»، و«وجدتها». وفي مرحلة ثانية اتسم شعرها بالرمزية والواقعية وغلبة الشعر الحر، مواكبة لشعراء الأرض المحتلة ( محمود درويش، وسميح القاسم، توفيق زياد) بعد هزيمة ١٩٦٧م.</p><p>والنص الآتي من قصيدة بعنوان « لن أبكي» قالتها الشاعرة عام ١٩٦٨م، عندما التقت شعراء الأرض المحتلة في مدينة حيفا، وهي إحدى قصائد ديوان «الليل والفرسان».</p><p>١٥٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

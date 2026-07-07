@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>٥ - الحاجات الروحية المشتركة هي المقاييس الثابتة التي يجب أن تقاس بها قيمة الأدب. فما هذه الحاجات المشتركة؟ وبِمَ تكون قيمة الأدب في ضوئها؟
+٦ - لمفردات اللغة التي نصوغ بها منشوراتنا ومنظوماتنا صفات عجيبة، وميزات غريبة. اشرح ذلك، وبين كيف يتفاوت الكتاب والشعراء في استعمالهم لها.
+٧ - فِيمَ تتمثل مشكلتنا بالنسبة لمقاييسنا العربية التي نحكم بها على قيمة الأدب؟
+٨ - حاجتنا ليست إلى مقاييس أدبية ثابتة، فهي وافرة لدينا. فما الذي نحتاجه - إذن - في نظر الكاتب؟</p><h2>التدريبات اللغوية</h2><p>١ - وضح معنى كل كلمة من الكلمات الآتية:
+( صاع - تتكيف - يتعدى - منظومات ).
+٢ - « أو ليس في الأدب من أزياء لا تعتق مع الزمان، ولا تزيدها الأيام إلا جمالاً وهيبة؟ »
+- ما الغرض البلاغي من هذا الاستفهام؟
+- أجب عن السؤال السابق بالنفي مرة، وبالإيجاب مرة أخرى.
+٣ - «إذا كان في الأدب من آثار « خالدة » ففي خلودها برهان على أن في الأدب ما يتعدى الزمان والمكان. وَجَلِيٌّ أن المقاييس التي نقيس بها مثل هذه الآثار لا تتقيد بعصر، ولا تتعلق بمصر. في الأدب - إذن - مقاييس ثابتة تتجاوز الزمان والمكان، ولا تعبت بها أمواج الحياة المتقلبة، وأذواق العالم المتضاربة، وأزياء البشرية المتبدلة ».
+أ - املأ الفراغ بالإجابة المناسبة فيما يأتي:
+- معنى كلمة ( جَلِي ) : ( ... )
+- ضد كلمة ( خالدة ) : ( ... )
+- جمع كلمة ( برهان ) : ( ... )
+- مفرد كلمة ( أزياء ) : ( ... )</p><p>٥٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

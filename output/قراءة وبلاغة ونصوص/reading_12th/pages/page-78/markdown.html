@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><h2>الإيمان في حياة الشباب\*</h2><img src="img-17.jpeg" alt="img-17.jpeg" /><p>إن الإيمان – أيها الشباب – هو أول حجر تبنون عليه مستقبلكم، وهو متعدد الجوانب، فأعلى مراتبه وأوثق عراه الإيمان بالله والاعتصام بدينه، فهو أساس كل إيمان في هذه الحياة، وتعاليمه هي التي ترشدكم إلى الإيمان بأنفسكم، ومجتمعكم، وبأوطانكم، وهي التي تنمي فيكم هذا الإيمان، فتصبحون به سادة في الحياة، لا تشدُّ بكم أنانيتكم عن طريق القوة التي فيها تملكون أمر أنفسكم، وتتعاونون عن طريقها في تحقيق الخير لغيركم.</p><p>والإيمان بأنفسكم: معناه الاعتقاد بأن لدى كل واحد فيكم استعدادات لو عمل على تنميتها لكان ذا قوة وسيادة. وهذه الاستعدادات تتمثل في التفكير، والإرادة والوجدان؛ فالتفكير ينمو بالمعرفة الصحيحة، وبه يغدو الفرد ذا تدبير سليم في أمر نفسه، وكشف طريقه. وبتنمية الإرادة يكون ذا عزم وتصميم في مواجهة أزماته، وتحمل مشاق الحياة وتكاليفها. وبتنمية الوجدان يصبح المرء صاحب ذوق في أمر نفسه، وأديباً في عشرته لغيره، وعوناً للضعيف في أسرته ومجتمعه.</p><p>والإيمان بمجتمعكم: يعني شعوركم الصادق أنكم أعضاء فيه، وهو متكفل برعايتكم، والإيمان بالمجتمع على هذا النحو يتطلب منكم ترويض أنفسكم على الحدِّ من الأنانية، والنظر إلى الآخرين على أنهم شركاء لكم في المسؤولية، وتوجيه طاقة الحماس وقوة الشباب لخير المجتمع ورعايته.</p><p>أما الإيمان بالوطن: فيتطلب منكم النظر إليه على أنه دار تسكنونها، وأهل تأنسون بالعيش معهم، وحمى تحتمون به من أحداث الزمن، وتثقون به عدوان المعتدين. فإذا تمثّلتم الإيمان بالوطن في قرارة أنفسكم على هذا النحو، وجدتم فيه عوناً لكم أي عون على تأمين مستقبلكم، وضمان أمنكم وسلامتكم.</p><p>وهكذا فالإيمان بالله هو أصل كل إيمان آخر، وبدونه ينتفي وجود أي إيمان</p><p>\* من كتاب «الإسلام في حياة المسلم» للدكتور / : محمد البهي (بتصرف).</p><p>٧٦</p><p><http://www.e-learning-moe.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

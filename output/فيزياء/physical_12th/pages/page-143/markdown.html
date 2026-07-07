@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>حدود إمكانية نظرية بوهر :</h2><p>لقد استطاعت نظرية بوهر (مع التصحيحات التي أدخلت عليها) تفسير سلاسل الأطياف المختلفة لذرة الهيدروجين، بالإضافة إلى حساب قيمة طاقة التاين، وأنصاف أقطار المدارات المختلفة للإلكترون والسرعات المناظرة لها، انطلاقاً من أسس نظرية بحتة. وبالرغم من أن الأطوال الموجية للخطوط الطيفية التي تنبأ بها (أي التي تحسب بواسطة) نظرية بوهر كانت تتطابق مع تلك التي تشاهد تجريبياً إلا أن هذا التطابق لم يكن تاماً في كل الأحوال. هذا الاختلاف أصبح أكثر وضوحاً في الذرات متعددة الإلكترونات، بالإضافة إلى عدم تفسيرها لطيف الذرات الواقعة في مجال مغناطيسي خارجي، إذ كانت الخطوط الطيفية تتحلل إلى عدة خطوط فرعية.</p><p>هذه الحقائق التجريبية المشاهدة التي عجزت في تفسيرها نظرية بوهر كانت كافية في التفكير بضرورة إحداث تعديلات جوهرية في نموذج بوهر، أو البحث عن نموذج جديد يلبي متطلبات التجربة.</p><p>هذه المصاعب وغيرها تم التغلب عليها بفضل تطور ميكانيكا الكم الذي يمكن للطالب أن يدرسه في المرحلة الجامعية.</p><p>١٤١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

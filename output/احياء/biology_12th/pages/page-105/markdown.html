@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-82.jpeg" alt="img-82.jpeg" /><p>- كيف تعرف كل من الشكل الظاهري والشكل الجيني للصفة؟
+- لماذا تكون الصفة المتنحية دائماً نقية؟</p><p>الشكل (٦)</p><h1><strong>النقاط (٢)</strong></h1><p>ارسم مخططاً لتوارث صفة طول الساق لنبات البازلاء علماً بأن العاملين الوراثيين لصفة الطول النقية هما (TT) والعاملين الوراثيين لصفة القصر هما (tt)، موضحاً في المخطط الاشكال الظاهرية والاشكال الجينية للنبات.</p><h1><strong>استخدام الجداول في حل المسائل الوراثية:</strong></h1><p>يمكنك استخدام الجدول الذي يسمى مربع بونيت (Punnet Square)، نسبة إلى العالم الوراثي (Reginald Crundell Punnett) الذي ابتكره واستخدمه في حل المسائل الوراثية وإظهار الاحتمالات الممكنة لظهور الصفات الناتجة عن إخصاب الأمشاج الذكرية للأمشاج المؤنثة في الكائن الحي.
+وقد استخدم هذا الجدول في التعبير عن النتائج التي توصل إليها مندل في تجاربه؛ حيث يمكن استخدامه عند معرفة الاشكال الجينية للآباء للتنبؤ باحتمالات ظهورها في الاجيال المتعاقبة للآباء. فمثلاً يمكن التعبير عن احتمالات ظهور اللون الوردي واللون الأبيض للأزهار في نبات البازلاء حسب الخطوات الآتية:</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p><p>١٠٥</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

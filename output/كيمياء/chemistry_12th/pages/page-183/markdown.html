@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>النيتروجين وغاز ثاني أكسيد الكربون.</p><p>$‫2\text{CO} + 2\text{NO} \xrightarrow{\text{عوامل حفازة}} \text{N}_2 + 2\text{CO}_2‬$‫</p><p>أما غاز ثاني أكسيد الكبريت فيتحد مع أكسيد الكالسيوم الموجود بالمحولات الحفزية ليعطي كبريتات الكالسيوم.</p><p>‬$‫2\text{SO}_2 + 2\text{CaO} + \text{O}_2 \xrightarrow{\text{عوامل حفازة}} 2\text{CaSO}_4‬$</p><p>و الهيدروكربونات غير المحترقة فتتأكسد لتعطي ثاني أكسيد الكربون وثاني أكسيد الكبريت وماء، وللتخلص من المواد الصلبة الموجودة في الوقود تستخدم أنواع عديدة من المرشحات، بعضها يعمل على جذب المواد الصلبة مغناطيسياً، وبعضها يعمل على غسل العادم بالماء أو غيره للتخلص من المواد الصلبة.</p><p>■ استخدام بدائل أخرى للطاقة أقل خطراً على البيئة مثل:</p><p>- ● استخدام البترول الخالي من رابع إيثيل الرصاص.
+- ● التوسُّع في استخدام مصادر الطاقة النظيفة مثل الطاقة الشمسية والطاقة المائية والطاقة الكهربائية بدلاً عن مصادر الطاقة التقليدية مثل الفحم والبترول والغاز الطبيعي.
+- ● إنتاج الطاقة من الاندماج النووي بدلاً عن الانشطار النووي.
+  - — فسُر ذلك في ضوء دراستك للكيمياء النووية.
+- ● إنتاج محركات تعمل بالطاقة الهيدروجينية أو بخلايا الوقود.</p><p>■ معالجة مياه الصرف الصحي:</p><p>١- المعالجة الأولية: وتشمل إزالة المواد الطافية والعالية بمياه الصرف الصحي مثل قطع الخشب والأوراق والفضلات الكبيرة، كما تشمل إزالة الزيوت والشحوم الموجودة فيها، ويتم ذلك بإمرار مياه الصرف الصحي على مجموعة من صهاريج الترسيب والمرشحات وتكفي هذه الطريقة لإزالة ٦٠٪ من المواد العالقة.</p><p>٢- المعالجة الثانوية: وذلك بإمرار المياه الناتجة من المعالجة الأولية إلى صهاريج تهوية؛ حيث يتم فيها خلط هذه المياه مع نوع من البكتيريا تقوم بأكسدة المواد العضوية الذائبة (عملية الأكسدة البيولوجية) وذلك بعد إمرارها في طبقة من الصخور المجروشة.</p><p>١٨١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

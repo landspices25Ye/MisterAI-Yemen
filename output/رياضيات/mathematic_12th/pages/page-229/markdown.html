@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التكامل</p><p>$‫= [ ( ٢ - ٤ ) - ( ٢ + ٤ ) ] + [ ( ٨ - ٨ ) - ( ٢ - ٤ ) ]‬$‫
+$= ( ٢ - ٢ ) + ٢ = ١٠‬$$‫</p><h1>مثال (٧ - ١٢)</h1><p>أوجد قيمة ك الموجبة ، إذا كان : ‬$‫\sum_{1}^{2} ( ٢ - ٣ )‬$‫ و ‬$‫\sum_{1}^{2} ( ٣ - ٢ )‬$‫ و ‬$$‫\sum_{1}^{2} ( ٣ - ٢ )‬$$‫ .
+الحل :</p><p>‬$‫\therefore \sum_{1}^{2} ( ٢ - ٣ )‬$‫ و ‬$‫\sum_{1}^{2} ( ٣ - ٢ )‬$‫ و ‬$$‫\sum_{1}^{2} ( ٣ - ٢ )‬$$‫</p><p>‬$‫\therefore ( ٣ - ١ ) - ( ٣ - ٣ )‬$‫</p><p>أي أن : ‬$‫\sum_{2}^{2} - ٣‬$‫ و ‬$‫\sum_{2}^{2} + ٢ = ٦‬$‫</p><p>‬$$‫\sum_{2}^{2} - ٣‬$$‫ و ‬$‫\sum_{2}^{2} - ٤ = ٠‬$‫</p><p>‬$‫\Leftarrow ( ١ + \sum_{1}^{2} )‬$‫ و ‬$‫\left( ٤ - \sum_{1}^{2} \right)‬$‫</p><p>أما ‬$‫\sum_{1}^{2} = ٤‬$‫ ، أو ‬$‫\sum_{1}^{2} = ١‬$‫ (مرفوض)</p><p>فتكون قيمة ‬$$‫\sum_{1}^{2} = ٤‬$$‫</p><h1>مبرهنة ( ٧ - ١٠ ) : مبرهنة القيمة المتوسطة في حساب التكامل :</h1><p>إذا كانت الدالة د متصلة على [ ! ، ب ] فإنه يوجد على الأقل عدد ج [ ! ، ب ] بحيث ‬$‫\sum_{1}^{2} \leq \sum_{1}^{2} \leq \sum_{1}^{2} \leq \sum_{1}^{2} \leq \sum_{1}^{2} \leq \sum_{1}^{2} \leq \sum_{1}^{2} \leq \sum_{1}^{2} \leq \sum_{1}^{2} \leq \sum_{1}^{2} \leq 1‬$‫</p><p>يحقق العلاقة : ‬$‫\sum_{1}^{2} ( \sum_{1}^{2} )‬$‫ و ‬$$‫\sum_{1}^{2} ( \sum_{1}^{2} )‬$$‫ و ‬$‫\sum_{1}^{2} ( \sum_{1}^{2} )‬$‫ .</p><h1>البرهان :</h1><p>∴ د متصلة على [ ! ، ب ] من خواصها يوجد عددان ‬$‫\sum_{1}^{2} , \sum_{1}^{2} \leq [ ! , \sum_{1}^{2} ]‬$‫ بحيث يكون</p><p>‬$‫\sum_{1}^{2} ( \sum_{1}^{2} ) \leq ( \sum_{1}^{2} ) \leq ( \sum_{1}^{2} )‬$‫ .</p><p>استناداً إلى المبرهنة ( ٧ - ٦ ) نجد أن :</p><p>‬$‫\sum_{1}^{2} ( \sum_{1}^{2} ) \leq ( \sum_{1}^{2} ) \leq ( \sum_{1}^{2} ) \leq ( \sum_{1}^{2} ) \leq ( \sum_{1}^{2} ) \leq ( \sum_{1}^{2} )‬$ .</p><p>٢٢٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

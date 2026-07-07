@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-128.jpeg" alt="img-128.jpeg" /><h1>ملاحظة</h1><p>لاحظ المزارعون أن الزراعة المكثفة للأراضي لسنوات عديدة تؤدي إلى ضعف النباتات وذبولها. فما السبب في ذلك؟</p><h1>الأسمدة والمخصبات:</h1><p>عرفت سابقاً في دروس الأحياء أن النبات لا يمكن أن ينمو بشكل طبيعي إلا إذا حصل على الأملاح والعناصر الضرورية من التربة. وقد وجد العلماء أن أغلب النباتات تحتاج إلى ما يقارب من (١٨) عنصراً كيميائياً يمكن تصنيفها إلى أربعة أصناف، كما هي موضحة في الجدول (١-٨).</p><p>|  الصنف | العنصر | أسماء المركبات التي تحوي العناصر | رموز المركبات  |
+| --- | --- | --- | --- |
+|  عناصر أساسية للنبات | C H O | ثاني أكسيد الكربون الماء الماء | CO_{2} H_{2}O H_{2}O  |
+|  عناصر أسمدة أولية (أساسية) | N P K | الأمونيا، نيترات الأمونيوم، اليوريا ثنائي هيدرو فوسفات الكالسيوم كلوريد البوتاسيوم | H_{2}NCONH_{2}, NH_{4}NO_{3}, NH_{3} Ca(H_{2}PO_{4})_{2} KCl  |
+|  عناصر أسمدة ثانوية (بسيطة) | Ca Mg S | هيدروكسيد الكالسيوم، وكربونات الكالسيوم، وكبريتات الكالسيوم كبريتات المغنيسيوم، وكبريتات المغنيسيوم عنصر الكبريت، وكبريتيد الفلزات | CaCO_{3}, Ca(OH)_{2} CaSO_{4} MgCO_{3}, MgSO_{4} S, MgS  |
+|  عناصر أسمدة دقيقة (يحتاجها النبات بنسبة ضئيلة) | B Cl Cu Fe Mn Mo Na V Zn | بوراكس كلوريد البوتاسيوم كبريتات النحاس المائية كبريتات الحديد (II) كبريتات المنجنيز (II) موليبدات الأمونيوم كلوريد الصوديوم أكاسيد القانديوم كبريتات الخارصين | (Na_{2}B_{4}O_{7}, 10H_{2}O) KCl (CuSO_{4}, 5H_{2}O) FeSO_{4} MnSO_{4} (NH_{4})_{2}MoO_{4} NaCl V_{2}O_{5}, VO_{2} ZnSO_{4}  |</p><p>جدول (١-٨) أهم العناصر الموجودة في الأسمدة والتي يحتاج إليها النبات في غذائه</p><p>١٤٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>فالكربون (١٤) المشع يؤثر على الإنسان أثناء تغذيته على النبات، والبوتاسيوم (٤٠) عند تناوله منتجات الألبان. وتؤثر هذه الإشعاعات على الإنسان من الداخل وخاصة على نخاع العظام والرئتين.</p><h1>ب- مصادر صناعية:</h1><p>الإشعاعات الناتجة عن الأنشطة الصناعية للإنسان أصبحت منذ بداية الأربعينيات من القرن العشرين مصدراً لتلوث البيئة، وتشكل خطراً على صحة الإنسان وحياته إلى جانب الإشعاعات الطبيعية، وبذا ازدادت كمية الإشعاعات التي يتعرض لها الإنسان اليوم.</p><p>وتنتج الإشعاعات الصناعية من عدة مصادر منها:</p><p>١- التفجيرات النووية، وهي أكثر المصادر خطراً على البيئة، فكل تفجير نووي يؤدي إلى زيادة تلوث عناصر البيئة الأرضية مثل: الماء والهواء والسلاسل الغذائية، والتي تسبب بدورها تلوثاً داخلياً وخارجياً للإنسان. (الشكلان - ٩، ١٠).
+٢- المفاعلات النووية التي تستخدم لتوليد الطاقة الكهربائية.
+٣- الأشعة المستخدمة في الطب في عملية التشخيص والعلاج والتي يتعرض لها المريض والفنيون.
+٤- الإشعاعات الناتجة من استعمال المواد المشعة في بعض الأبحاث والدراسات في مجال الفيزياء والكيمياء والأحياء والطب والزراعة، إضافة إلى استخدام بعض الإشعاعات مثل: أشعة جاما - في حفظ الأغذية كالحوم والأسماك والفواكه، كما تدخل الإشعاعات في عدد من المجالات الصناعية مثل اكتشاف عيوب صناعة المعادن وصقلها، وفي قياس مقدار التسرب في أنابيب النفط.</p><h1>الآثار الصحية للإشعاعات:</h1><p>تؤثر الإشعاعات التي تصل إلى البيئة على الكائنات الحية بما فيها الإنسان، ويعتمد تأثيرها على عدد من العوامل أهمها:</p><p>١- نوعية الكائن الحي.
+٢- درجة الإشعاع.
+٣- الفترة الزمنية التي يتعرض لها الكائن.</p><p>إن تأثير الإشعاعات على الكائنات الحية في مرحلة الطفولة أكثر من تأثيرها في المراحل الأخرى، نظراً للنشاط الكبير للخلايا أثناء مرحلة الطفولة.
+ومن أشهر تأثيرات الأشعة على الإنسان ما يأتي:</p><p>الأحياء للصف الثالث الثانوي</p><p>١٧٧</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>(يتهامس الحاضرون معجبين)</p><p>- جحا: يا هذا أتدري ما أقدمت عليه ؟</p><p>- غائم: نعم .</p><p>- جحا: هل أكرهك أحد على ذلك أو هددك ؟</p><p>- الحاكم: ما هذا يا قاضي القضاة ؟ لقد نزل الرجل عن حقه خصمه فما تدخلك بينهما</p><p>وما شأنك أنت ؟</p><p>- جحا: يا سيدي على القاضي أن يتبصر فيما بين يديه . إن امرأ عاقلاً يأتي مثل هذا</p><p>العمل لا يمكن أن يكون حراً ، وإن قضاء يقر مثل هذا دون التثبت من حقيقته لا يمكن أن يكون عدلاً .</p><p>فدعني يا سيدي أعلم أولاً جلية أمره . . «لغائم» هل أكرهك أحد على فعلك هذا أو هددك ؟</p><p>- غائم : كلا لقد فعلته بمحض حريتي واختياري .</p><p>- جحا: ما حملك الآن على هذا التسامح البالغ ولم تكن كذلك منذ قليل ؟</p><p>- غائم: دفعني إلى ذلك حبي للسلام .</p><p>- جحا: حقاً إن السلام لثمين ولكن أثمن منه العدل والحرية .</p><p>- الحاكم: لقد أكد لك أنه فعله بمحض حريته واختياره فماذا تريد بعد ، عجباً لك . . . ما</p><p>زلت تدعوهما للصلح حتى إذا أمكنك أحدهما منه جعلت تعطله وتقف دونه .</p><p>- جحا: أي صلح هذا ؟ أينزل رب الدار لرب المسمار ؟ أليس صاحب المسمار أحق أن</p><p>ينزل لصاحب الدار عن مسماره ، أو ينزعه ويفرسه في عقر داره ؟</p><p>- الحاكم: فهل أقنعت بذلك ابن أخيك هذا العنيد المتعنت .</p><p>- جحا: الآن يا سيدي قلت الصواب «حماد» اسمع يا حماد إن الحق أحق أن يتبع وقد</p><p>ضرب لك هذا الرجل مثلاً بالغاً في التسامح والحسن . فمن اللؤم ألا تقابل إحسانه بإحسان .</p><p>ماذا عليك لو نزعت مسمارك من داره حتى يستمتع فيها بما للمالك من حرية وكرامة ؟</p><p>- حماد: كلا والله لا أنزل عن حقي أبداً .</p><p>- جحا: لا ينبغي أن يظلم صاحب الدار من أجل صاحب المسمار ، المسمار منقول والدار</p><p>ثابتة ، المسمار ينزع والدار باقية . صاحب الدار يملك الأرض التي تحتها إلى سابع أرضين ،</p><p>وصاحب المسمار لا يملك منها ولا حفنة من طين .</p><p>- الحاكم: « يخونه ثباته ووقاره » كفى يا شيخ المفسدين في الأرض !!</p><p>- جحا: « معرضاً عنه ومتوجهاً إلى الحاضرين » ماذا ترون يامعشر الحاضرين ؟ أليس على</p><p>١٧٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

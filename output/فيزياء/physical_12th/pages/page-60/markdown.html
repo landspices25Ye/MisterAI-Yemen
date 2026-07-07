@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-57.jpeg" alt="img-57.jpeg" /><h2>تقويم الوحدة</h2><p>١ - أكمل الفراغات بما يناسبها من كلمات في الفقرات الآتية:</p><p>أ) التيار المتردد ... هو التيار الأكثر استخداماً في الحياة .</p><p>ب) يتميز التيار الكهربائي المتردد عن التيار المستمر في:</p><p>...</p><p>ج) يتفق كل من التيار المتردد والتيار المستمر عند مرورهما في الموصلات الكهربائية في ... .</p><p>د) التغير الذي يحدث للتيار المتردد خلال دورة كاملة لملف مولده يسمى ... .</p><p>٢ - ضع علامة (✓) أمام الفقرة الصحيحة، وعلامة (X) أمام الفقرة الخطأ فيما يأتي:</p><p>أ - عند توصيل مكثف ومصباح في دائرة كهربائية مترددة فإن المصباح يضيء. ( )</p><p>ب - إذا وصل مصباح مع مكثف وبطارية فإن المصباح يضيء. ( )</p><p>ج - عندما تكون إضاءة مصباح متصل مع مكثف على التوالي لمصدر تيار</p><p>متردد قوية فهذا يدل على أن السعة الكهربائية للمكثف كبيرة. ( )</p><p>د - يمكن حساب شدة التيار المتردد المار في دائرة مكثف عند أية لحظة من</p><p>العلاقة: $‫\sigma = \sigma_e \times \sin \omega‬$‫ ( )</p><p>هـ - المقاومة الأومية تستنفد جزءاً من طاقة التيار المار بها على شكل مجال</p><p>مغناطيسي بينما المكثف أو الملف يستنفد منها جزءاً على شكل حرارة. ( )</p><p>و - الجهد المتردد بين لوحي مكثف والتيار المار فيه مختلفان في الطور</p><p>ويتقدم التيار عن الجهد بزاوية مقدارها ‬$‫\frac{\pi}{2}‬$ راديان. ( )</p><p>ز - يلقى التيار المتردد عند مروره في مكثف إعاقة في تحركه هذه الإعاقة</p><p>تسمى مقاومة أو ميه. ( )</p><p>٣ - اختر الإجابة الصحيحة للفقرات الآتية من بين الأقواس :</p><p>أ) عند مرور التيار المتردد في مقاومة أومية فإن هذه المقاومة...</p><p>٥٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

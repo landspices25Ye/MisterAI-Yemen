@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التفاصيل</p><h1>الحل :</h1><p>إذا حققت الدالة د المعطاة شروط مبرهنة رول على الفترة [ π ، ٠ ] يكون لمنحنى الدالة المعطاة مماس أفقي واحد على الأقل .</p><p>وبتطبيق شروط مبرهنة رول نجد أن :</p><p>الدالة د متصلة $‫\forall‬$ س $‫\subseteq‬$ ح ، أي أنها متصلة على الفترة [ π ، ٠ ] ، وقابلة للاشتقاق على الفترة [ π ، ٠ ] .</p><p>$‫\therefore (\pi) = 4 \text{ جا } (2 \times 0) = 0‬$ ، $‫(\pi) = 4 \text{ جا } 2 \pi = 0‬$ . $‫\therefore (\pi) = (\pi) = 0‬$</p><p>إذن تحقق الدالة د شروط مبرهنة رول وبذلك يكون للدالة مماساً أفقياً واحداً على الأقل عند س $‫\subseteq‬$ [ π ، ٠ ] بحيث يكون د (س) = ٠ .</p><p>$‫\therefore (\pi) = 8 \text{ جتا } 2 \text{ س} \Leftarrow (\pi) = 8 \text{ جتا } 2 \text{ س}‬$</p><p>$‫\therefore 8 \text{ جتا } 2 \text{ س} = 0‬$ ، وبحل هذه المعادلة نجد أن :</p><p>أما س $‫\subseteq‬$ [ π ، ٠ ] $‫\supseteq \frac{\pi}{4}‬$ ، أو س $‫\subseteq‬$ [ π ، ٠ ] $‫\supseteq \frac{\pi}{4}‬$</p><p>$‫\therefore‬$ لمنحنى الدالة د مماسان أفقيان على النحو الموضح في الشكل (٦ - ٣) ينشأ عند</p><p>س $‫\frac{\pi}{4}‬$ ، $‫\frac{\pi}{4} =‬$ س</p><img src="img-158.jpeg" alt="img-158.jpeg" /><p>الشكل (٦ - ٣)</p><h1>ملاحظة :</h1><p>عندما د (أ) $‫\Leftarrow‬$ د (ب) فإن مبرهنة القيمة المتوسطة توضح ذلك على النحو التالي :</p><h1>ثانياً : مبرهنة القيمة المتوسطة :</h1><h1>مبرهنة (٦ - ٥)</h1><p>إذا كانت الدالة د متصلة على [ أ ، ب ] ، وقابلة للاشتقاق على [ أ ، ب ] ؛ فإنه يوجد على الأقل عدد</p><p>واحد ج $‫\subseteq‬$ [ أ ، ب ] ، بحيث يكون : د (ج) = $‫\frac{(أ) - (ب)}{ب - 1}‬$</p><h1>المعنى الهندسي لمبرهنة القيمة المتوسطة :</h1><p>من الشكل (٦ - ٤) لبيان منحنى دالة د (افتراضية) المتصلة على الفترة [ أ ، ب ] ، والقابلة للاشتقاق على</p><p>الفترة [ أ ، ب ] تلاحظ ما يلي :</p><p>* يوجد بين العددين س = أ ، س = ب العددان س أ ، س ب يناظرهما النقطتان ه ، و على منحنى الدالة د عندئذٍ فإن :</p><p>١٨٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>e-learning</p><h1>التفريغ الكهربائي خلال الغازات</h1>
+( Electrical Discharge Through Gases )</p><h1>التجربة السادسة</h1><h1>الأهداف</h1><p>١- تجري تجربة لإنتاج أشعة المهبط ( أشعة الكاثود ).
+٢- تصف الظروف التي يحدث عندها التفريغ الكهربائي خلال الغازات .</p><h1>الأدوات والمواد المطلوبة</h1><p>تحتاج لتنفيذ هذه التجربة الأدوات والمواد الآتية :</p><p>- أنبوبة زجاجية طولها في حدود ( ١٥٠ سم ) وقطرها في حدود ( ٤ سم ) ، ( يوجد عند كل طرف من طرفيها قرص معدني يسميان قطبا الأنبوبة ) . أحدهما يُسمَّى المصعد ( الأنود ) ( أ ) والآخر يُسمَّى المهبط ( الكاثود ) ( ب ) .
+- توجد في الأنبوبة فتحة جانبية توصل بمضخة تفريغ ( أو مخلخلة هواء ) ( Vacuum Pump ) انظر إلى الشكل .
+- مخلخلة هواء ، أو مضخة تفريغ .
+- محول كهربائي خافض للجهد ( يحول من ٢٢٠ إلى ٦ ، أو ٩ ، أو ١٢ فولت ) .</p><p>- ملف رومكورف .
+- مقوم للتيار المتردد .</p><img src="img-16.jpeg" alt="img-16.jpeg" /><h1>خطوات تنفيذ التجربة</h1><p>١- صل المحوّل الكهربائي الخافض للجهد بالمصدر الكهربائي المتردد الموجود في المعمل .
+٢- صل مقوّم التيار الكهربائي بالمحوّل الكهربائي لتقويم التيار ( أو لتقويم الجهد )
+٣- صل طرفي مقوّم الجهد بملفي ملف رومكورف ، وذلك للحصول على فرق جهد عال بين طرفي ساقي النحاس لملف رومكورف .</p><p>١٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>تركيب البروتينات :</h2><p>البروتينات عبارة عن مركبات عضوية تحتوي على سلاسل من ذرات الكربون والهيدروجين والنيتروجين والأكسجين، وأحياناً يوجد الكبريت والفسفور بنسب ضئيلة، ويمثل النيتروجين ١٦٪ من وزن البروتين.</p><h2>الحموض الأمينية :</h2><p>تعتبر الحموض الأمينية الوحدة الأساسية لبناء البروتينات، وهناك عشرون نوعاً من الحموض الأمينية التي تدخل في تركيب كل البروتينات.</p><p>يستطيع جسم الإنسان أن ينتج (١٢) نوعاً من الحموض غير الأساسية، وهي مهمة جداً لأنها تعمل على تكوين بروتين الأنسجة، أما الثمانية أنواع الأخرى فإن الجسم لا يستطيع إنتاجها، ويحصل عليها من الغذاء المحتوي على البروتين، وتدعى هذه الحموض بالحموض الأمينية الأساسية، والتي تعدُّ ضرورية لنمو الإنسان، وتتواجد في البروتين الحيواني بنسب كبيرة.</p><img src="img-104.jpeg" alt="img-104.jpeg" /><p>شكل (٦-٤) يوضِّح بعض الحموض الأمينية</p><p>١١٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

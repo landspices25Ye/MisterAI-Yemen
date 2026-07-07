@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-153.jpeg" alt="img-153.jpeg" /><p>الوحدة السادسة</p><p>ج) ص = ٣ (جا ه) = ٣ جتا ه × (ه) = ٣ ه جتا ه</p><p>د) ص = (جتا ٢ س) = - جا ٢ س × (٢ س) = ٢ جا ٢ س</p><p>هـ) ص = [٢ (جاس) جتا س + جاس (جتا س) = [٢ جتا ٢ س - جا ٢ س] = ٢ جتا ٢ س</p><p>و) ص = $‫\frac{1 + (1 + جاس)}{2 + (1 + جاس)} = \frac{جتا س}{2 + (1 + جاس)}‬$‫ ، جاس = ١</p><p>ز) ص = ٥ جا ٣ س × جتا ٣ س × ٣ = ١٥ جا ٣ س جتا ٣ س</p><p>ح) ص = ٣ جتا ٢ (١ س + ب) [ - جا (١ س + ب) × ١ = ٣ جتا ٢ (١ س + ب) جا (١ س + ب) .</p><p>ط) ص جتا س + جاس ‬$‫\frac{ص}{س} + ص + ٢ ص = \frac{ص}{س} = ١‬$‫</p><p>‬$‫\Leftarrow (جاس + ٢ س ص) \frac{ص}{س} = ١ - ص - ص - جتا س \Leftarrow \frac{ص}{س} = \frac{ص - ١}{جاس + ٢ س ص}‬$‫</p><p>ي) نضع ص - جتا (س + ص) = ٠</p><p>‬$‫\therefore \frac{ص}{س} = \frac{ص - ( - - ) - ( - - ) - ( - - ) - ( - - ) - ( - - ) - ( - - ) - ( - - ) - ( - - ) - ( - - ) - ( - - ) - ( - - ) - ( - - ) - ( - - ) - ( - - ) - ( - - ) - ( - - ) - ( - - ) - ( - - ) - ( - - ) - ( - - ) - ( - - )‬$‫</p><h1><strong>مثال (٦ - ٢٦)</strong></h1><p>أوجد معادلتي المماس والناظم لكل من الدالتين التاليتين عند النقاط الموضحة أمام كل منها:</p><p>أ) د (س) = ٣ ظتا س + ٢٧ قاس ، عند النقطة ( ‬$‫\frac{\pi}{4}‬$‫ ، ٥ )</p><p>ب) جتا ٢ س + جا ٢ ص = ‬$‫\frac{1}{2}‬$‫ ، عند النقطة ( ‬$$‫\frac{\pi}{4}‬$$‫ ، ٠ )</p><h1><strong>الحل :</strong></h1><p>أ) نقطة التماس ( ‬$‫\frac{\pi}{4}‬$‫ ، ٥ ) . . . . . (١)</p><p>د (س) = ٣ - قتا ٢ س + ٢٧ قاس ظاس</p><p>‬$‫\therefore \text{د ( } \frac{\pi}{4} \text{) = } ٣ - \text{قتا ٢} \frac{\pi}{4} + \frac{\pi}{4} \text{ قا } \frac{\pi}{4} \text{ ظا } \frac{\pi}{4}‬$‫</p><p>‬$‫= ٣ - ٢ + ٦ - ١ \times \overline{٢} \times \overline{٢} + ٢ \times ٣ - = ٤ - ٢ + ٦ - ١ \times (٢) . . . . . (٢)‬$</p><p>١٧٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

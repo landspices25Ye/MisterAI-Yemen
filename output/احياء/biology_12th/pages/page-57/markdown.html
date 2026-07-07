@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>ادرس الجدول (٤) واجب عما يأتي:
+- ما الهرمونات التي تفرز من جزر لانجرهانز؟
+- ما نوع الخلايا المفرزة؟
+- ما وظيفة كل هرمون؟</p><p>جدول (٤) هرمونات جزر لانجرهانز</p><p>|  الهرمون | الخلايا المفرزة | الوظيفة  |
+| --- | --- | --- |
+|  الجلوكاجون Glucagon | - خلايا الفا α | - رفع نسبة السكر في الدم عن طريق تحويل الجلايكوجين في الكبد إلى سكر.  |
+|  الأنسولين Insulin | - خلايا بيتا β | - خفض نسبة السكر في الدم بتحويل الجلوكوز الفائض إلى جلايكوجين يخزن في الكبد، والعضلات. - يزيد من قدرة الخلايا على استخدام، وأكسدة الجلوكوز. - تنشيط عمليات بناء البروتين، والدهون والحد من استعمالها كمصدر للطاقة.  |</p><h1>٦- هرمونات القناة الهضمية:</h1><p>تحتوي بعض أجزاء القناة الهضمية على خلايا متخصصة في إفراز بعض الهرمونات، حيث تقوم بإفراز هرموناتها مباشرة إلى الدم، ويوضح الجدول (٥) هذه الهرمونات، ووظائفها، والخلايا التي تفرزها.</p><p>جدول (٥) هرمونات القناة الهضمية</p><p>|  الهرمون | مكان الإفراز | الوظيفة  |
+| --- | --- | --- |
+|  الجاسترين Gastrin | بعض خلايا جدار المعدة | - يعمل على تحفيز المعدة لإفراز عصارتها الهاضمة.  |
+|  السكريتين Secretin | بعض خلايا الاثني عشر. | - يحفز البنكرياس على إفراز عصارتها الهاضمة.  |
+|  كولستوكيتين Cholecystokinin | بعض خلايا الاثني عشر. | - يحفز الحوصلة الصفراوية على الانقباض، وإفراغ العصارة الصفراوية في الاثني عشر.  |
+|  الإنتيروكرين Enterocrinin | بعض خلايا اللفائفي | - ينبه خلايا جدار اللفائفي لإفراز انزيماتها الهاضمة.  |</p><p>٥٧</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

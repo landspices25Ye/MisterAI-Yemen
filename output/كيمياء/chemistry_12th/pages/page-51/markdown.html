@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-35.jpeg" alt="img-35.jpeg" /><p>شكل (٣-٣) الخلية الجلفانية</p><p>٢ - نصف خلية النحاس ($‫Cu^{2+}/Cu‬$) وتتكون من وعاء به لوح نحاس مغمور جزئياً في محلول مائي من كبريتات النحاس (ويطلق عليه المهبط وتحدث فيها عملية الاختزال).</p><p>$‫Cu^{2+}_{(aq)} + 2e^- \longrightarrow Cu_{(s)}‬$‫</p><p>٣ - قنطرة ملحية: أنبوبة على شكل حرف U مملوءة بمحلول مركز من ملح كلوريد البوتاسيوم أو كبريتات البوتاسيوم (‬$K_2SO_4$‫).</p><p>٤ - سلك يوصل بين القطبين عبر مقياس للجهد (فولتميتر) أو عبر مصباح كهربائي. فعند تشغيل الدائرة الكهربائية تنتقل الإلكترونات من قطب الخارصين إلى قطب النحاس عبر سلك التوصيل مما يؤدي إلى تحلل الخارصين وتحول ذراته إلى أيونات موجبة.</p><p>‬$‫Zn_{(s)} \longrightarrow Zn^{2+}_{(aq)} + 2e^-‬$‫</p><p>بينما تترسب أيونات النحاس على قطب النحاس:</p><p>‬$$‫Cu^{2+}_{(aq)} + 2e^- \longrightarrow Cu_{(s)}‬$$</p><p>٤٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

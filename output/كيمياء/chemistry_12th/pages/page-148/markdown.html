@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>ويمكن تحضير الأسمدة المركبة الثنائية والثلاثية عن طريق التفاعلات الكيميائية، فمثلاً لتحضير سماد مركب من عنصري النيتروجين والفسفور عن طريق تفاعل حامض الفسفوريك التجاري مع الأمونيا، وفقاً للتفاعل الآتي:</p><p>$‫\text{H}_3\text{PO}_4 + 3\text{NH}_3 \longrightarrow (\text{NH}_4)_3\text{PO}_4‬$‫</p><p>٢ - الأسمدة المخلوطة: حيث تخلط المركبات المختلفة مع بعضها لتشكل سماداً يحتوي على عنصرين أو أكثر بنسب معينة، وتنقسم هذه الأسمدة وفقاً لطريقة الخلط إلى نوعين، هما:</p><p>أ) أسمدة مخلوطة بطرق كيميائية: ومثال ذلك تفاعل حمض النيتريك مع الفوسفات الطبيعي، بحيث نحصل على مركبين أحدهما يحتوي على عنصر النيتروجين، والآخر يحتوي على عنصر الفسفور، وذلك كما يأتي:</p><p>‬$‫\text{Ca}_3(\text{PO}_4)_2 + 4\text{HNO}_3 \xrightarrow{\text{(I)}} \text{Ca}(\text{H}_2\text{PO}_4)_2 + 2\text{Ca}(\text{NO}_3)_2 \xrightarrow{\text{(s)}}‬$‫</p><p>ب) أسمدة مخلوطة ميكانيكياً (يدوياً): حيث يتم خلط مجموعة من الأسمدة عن طريق إضافة كمية معينة من كل نوع بحيث يحتوي السماد المخلوط على نسبة محددة من العناصر الأساسية (K, P, N). ويمكن معرفة هذه</p><img src="img-132.jpeg" alt="img-132.jpeg" /><p>شكل (٢-٨) يمثل السماد المخلوط</p><p>النسب عن طريق نظام الشفرة المكون من ثلاثة أرقام، حيث يشير الرقم الأول من اليسار إلى نسبة النيتروجين في هذا السماد، ويشير الثاني إلى نسبة الفسفور على هيئة (‬$\text{P}_2\text{O}_5$‫)، كما يشير الرقم الثالث إلى نسبة البوتاسيوم على هيئة (‬$\text{K}_2\text{O}$).</p><p>- انظر إلى الشكل (٢-٨) وحدد نسبة النيتروجين، والفسفور، والبوتاسيوم في السماد المخلوط.</p><p>١٤٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

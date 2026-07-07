@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>ويبرز شيء من الإطناب، كقوله: (خزائنه من الذهب، وصناديقه من الجواهر، وغرفه من الأثاث..) جاء من انفعال الكاتب، فزاد المعنى تأثيراً ورسوخاً.</p><h2>أسئلة وتدريبات</h2><p>١ - أين ولد المنفلوطي، وأين درس ؟
+٢ - إلى من يعود الفضل في ذيوع صيته ؟
+٣ - اذكر ثلاثة من أعمال المنفلوطي الأدبية .
+٤ - لماذا استهل الكاتب مقالته بسرد حادثة ؟
+٥ - ما الذي أراده من التمثيل بالفيلسوف اليوناني في نهاية المقالة ؟ وما رأيك في ذلك ؟
+٦ - لم أكثر الكاتب من استعمال الأفعال المضارعة ؟
+٧ - ضع علامة (✓) أمام العبارة الصحيحة فيما يأتي :
+- ألفاظ الكاتب جزلة قوية .
+- حرص الكاتب على السجع .
+- بالغ الكاتب في تصويره انعدام المحسنين .
+- تصنف هذه المقالة ضمن ( المقالة الصحفية ) .
+٨ - استخرج من النص صورة بلاغية، ووضحها مبيناً أثرها في المعنى .
+٩ - من هو الصنف الرابع من الناس بحسب تصنيف الكاتب ؟
+١٠ - اختر الإجابة الصحيحة من بين القوسين :
+- أسلوب المقالة : ( علمي - أدبي - علمي متأدب )
+- معنى كلمة ( مغالياً ) : ( مبالغاً - متكبراً - قاسياً )
+- ضد كلمة ( زواها ) : ( أظهرها - بسطها - بذلها ) .
+- وزن كلمة ( أنين ) : ( أفيل - فعيل - أعيل )
+١١ - وضح ما تركه النص من أثر في نفسك .</p><p>١١٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>ج- احتراق مول واحد من غاز البروبان $‫C_3H_8‬$ معطيًا حرارة مقدارها ٢٢١٩,٢ كيلو جول / مول.</p><p>١٠- باستخدام حرارة التكوين القياسية الموضحة في الجدول (٢)، احسب حرارة التفاعلات الآتية:</p><p>$‫\begin{array}{l} \text{NO}_{(g)} + \frac{1}{2} \text{O}_{2(g)} \longrightarrow \text{NO}_{2(g)} \quad \text{أ} \\ 2\text{C}_6\text{H}_6_{(l)} + 15\text{O}_{2(g)} \longrightarrow 12\text{CO}_{2(g)} + 6\text{H}_2\text{O}_{(l)} \quad \text{ب} \end{array}‬$‫</p><p>١١- عند احتراق غاز الميثان ينتج غاز ‬$\text{CO}_2$‫ والماء كما في المعادلة الآتية:</p><p>‬$‫\text{CH}_4_{(g)} + 2\text{O}_{2(g)} \longrightarrow \text{CO}_2 + 2\text{H}_2\text{O}_{(l)} \quad , \Delta H = -890.8 \text{ KJ/mole}‬$‫</p><p>فكيف يمكن استخدام قانون هس لحساب حرارة التفاعل إذا علم أن هناك ثلاث خطوات ممكنة للوصول إلى التفاعل السابق، وهي:</p><p>أ- تحلل ‬$\text{CH}_4$‫ إلى عناصره الأولية، وفقًا للمعادلة الآتية:</p><p>‬$‫\text{CH}_4_{(g)} \longrightarrow \text{C}_{(g)} + 2\text{H}_{2(g)} \quad , \Delta H = +74.3 \text{ KJ/mole}‬$‫</p><p>ب- تاكسد الكربون إلى ثاني أكسيد الكربون، وفقًا للمعادلة الآتية:</p><p>‬$‫\text{C}_{(s)} + \text{O}_{2(g)} \longrightarrow \text{CO}_{2(g)} \quad , \Delta H = -393.5 \text{ KJ/mole}‬$‫</p><p>ج- تفاعل الهيدروجين مع الأكسجين لتكوين الماء السائل، وفقًا للمعادلة الآتية:</p><p>‬$‫2\text{H}_{2(g)} + \text{O}_{2(g)} \longrightarrow 2\text{H}_2\text{O}_{(l)} \quad , \Delta H = -571.6 \text{ KJ}‬$</p><p>٤١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

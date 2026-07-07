@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-45.jpeg" alt="img-45.jpeg" /><p>الوحدة الثانية</p><h1><strong>مثال (٢ - ١٣)</strong></h1><p>من بين ٧ مدرسين و ١٢ طالباً يراد اختيار لجنة تمثل جماعة الرياضيات في مدرسة ما تتألف من ٥ مدرسين، ٦ طلاب . فيكم طريقة يمكن اختيار المدرسين والطلاب؟</p><h1><strong>الحل :</strong></h1><p>لتشكيل اللجنة نقوم بعمليتين هما :</p><p>الأولى : اختيار ٥ مدرسين من ٧ مدرسين وبما أن الترتيب غير مهم في الاختيار فإن :</p><p>$‫\text{عدد طرق اختيارهم} = \frac{٥}{٥١} \times ٧ = \frac{٧}{٥١} \times ٢ = ٢١ \text{ طريقة} .‬$‫</p><p>الأخرى : اختيار ٦ طلاب من بين ١٢ طالباً وأيضاً ليس للترتيب أهمية فيكون :</p><p>‬$‫\text{عدد طرق اختيارهم} = \frac{١٢}{٦} \times ٦ = \frac{١٢}{٦} \times ٦ = \frac{٧ \times ٨ \times ٩ \times ١٠ \times ١١ \times ١٢}{٦} \times ٢ \times ٣ \times ٤ \times ٥ \times ٦ = ٩٢٤ \text{ طريقة} .‬$‫</p><p>ووفق مبدأ العد يكون عدد طرق اختيار المدرسين والطلاب = ٩٢٤ × ٢١ = ١٩٤٠٤ طريقة .</p><h1><strong>مثال (٢ - ١٤)</strong></h1><p>بكم طريقة يمكن تشكيل لجنة مكونة من ثلاثة مدراء على الأقل من بين خمسة مدراء ؟</p><h1><strong>الحل :</strong></h1><p>اختيار ثلاثة مدراء على الأقل يعني أننا يمكن أن نختار ثلاثة مدراء أو أربعة أو خمسة ( دون ترتيب ) .</p><p>‬$‫\text{عدد الطرق الممكنة لاختيار ثلاثة مدراء} = \frac{٥}{٥١} \times ٥ = \frac{٥}{٥١} \times ٢ = ١٠ \text{ طرق} .‬$‫</p><p>‬$‫\text{عدد الطرق الممكنة لاختيار أربعة مدراء} = \frac{٥}{٥١} \times ٥ = \frac{٥}{٥١} \text{ طرق} .‬$‫</p><p>‬$‫\text{عدد الطرق الممكنة لاختيار خمسة مدراء} = \frac{٥}{٥١} \times ٥ = ١ \text{ طريقة واحدة} .‬$‫</p><p>وحيث إن الاختيار هو ٣ مدراء ، أو ٤ مدراء ، أو ٥ مدراء ، فإن :</p><p>‬$‫\text{عدد الطرق الممكنة} = ٣ \times ٣ + ٤ \times ٤ + ٥ \times ٥ = ١٠ + ٥ + ١ = ١٦ \text{ طريقة} .‬$</p><p>٥٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

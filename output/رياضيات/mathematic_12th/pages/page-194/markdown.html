@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-165.jpeg" alt="img-165.jpeg" /><p>الوحدة السادسة</p><p>فمثلاً :</p><p>$‫د (س) = س^3 \iff (د (س) = س^2 \Rightarrow 0 \Rightarrow س \Rightarrow ح)‬$‫</p><p>إذن الدالة د تزايدية ، ولا يوجد لها نقاط تكون عندها قيم عظمى أو صغرى محلية بالرغم من أن ‬$د (س) = 0$ ، لكن النقطة (٠ ، ٠) ليست قصوى . لأن المشتقة لا تغير إشارتها جوار س = ٠ [انظر الشكل (٦ - ٧) ] .</p><img src="img-166.jpeg" alt="img-166.jpeg" /><p>ملاحظة :</p><p>القيم القصوى تتحدد بشكل عام لأي دالة متصلة عند س = ب كما يلي :</p><img src="img-167.jpeg" alt="img-167.jpeg" /><p>١) للدالة قيمة عظمى محلية إذا تحولت إشارة المشتقة الأولى من موجب إلى سالب [انظر الشكل (٦-٨) ] ويكون للدالة قيمة صغرى محلية . إذا تحولت إشارة المشتقة الأولى من سالب إلى موجب [انظر الشكل (٦-٩) ] .</p><img src="img-168.jpeg" alt="img-168.jpeg" /><p>٢) كل قيمة قصوى مطلقة تكون محلية والعكس غير صحيح فيما عدا الحالة التي تكون عندها القيم القصوى المحلية وحيدة .</p><p>٣) عند أطراف الفترة الواقعة في المجال يوجد دائماً قيم قصوى .
+٤) كل نقطة لقيم قصوى تكون حرجة ولكن ليس بالضرورة أن تكون النقاط الحرجة قيماً قصوى . وعلى ذلك يمكن تعيين القيم القصوى المطلقة طبقاً لشروط مبرهنة القيمة القصوى المطلقة التالية :</p><p>مبرهنة (٦ - ٩)</p><p>إذا كانت د دالة متصلة على الفترة [أ ، ب] فإنها تبلغ قيمتها القصوى المطلقة (العظمى أو الصغرى) عند أعداد تنتمي إلى الفترة [أ ، ب] .</p><p>وعليه يمكن إيجاد القيم القصوى للدالة د باتباع الخطوات التالية :</p><p>١) تحقق من أن الدالة متصلة على الفترة المغلقة [أ ، ب] .</p><p>١٩٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>هامة في تطور عمليات الاستفادة من التقنية الحيوية لمساعدة الإنسان.</p><p>– من مكشوف البنسلين؟ وكيف تم اكتشافه؟</p><p>ويتم حالياً إنتاج البنسلين بصورة تجارية في أنحاء مختلفة من العالم.</p><p>استمرت عملية التطور لإنتاج مواد مختلفة اعتماداً على التقنية الحيوية،</p><img src="img-109.jpeg" alt="img-109.jpeg" /><p>الشكل (٢) حمض DNA في الكائنات الحية</p><p>خلال النصف الثاني من القرن العشرين، وبدأ التطور المتسارع للتقانة الحيوية منذ بداية عقد السبعينات نتيجة لتركيز العلماء والباحثين على الحمض النووي DNA والجينات المكونة له في الكائنات الحية، وخاصة الكائنات الحية الدقيقة كالبكتيريا، واستخدام الهندسة الوراثية أو الجينية في إضافة أو حذف جين أو أكثر من حمض DNA للكائن الحي، حتى يمكن الاستفادة منه في صناعة منتجات متنوعة وخاصة في مجال الغذاء والأدوية كإنتاج هرمون الانسولين وهرمون النمو مثلاً.</p><p>– لم يتكون حمض DNA؟</p><p>– كيف يتم إنتاج الحموض الأمينية؟ والبروتينات عن طريق الحموض النووية؟</p><h2>الهندسة الجينية أو الوراثية :</h2><p>تعد الهندسة الوراثية أو الجينية من أحدث التقنيات في مجال علوم الحياة في عصرنا الحديث. وقد بدأ العلماء تطوير هذه التقنية في السبعينات من القرن العشرين ومنذ ذلك الوقت تطورت الهندسة الوراثية تطوراً متسارعاً، وأخذت استخدامات التقنيات الحيوية المرتبطة بها في الانتشار والاتساع في مجالات متعددة، حتى أصبحت كثير من الصناعات والمنتجات الهامة لحياة الإنسان تعتمد اعتماداً كلياً على هذه التقنية.</p><p>وتستند الهندسة الوراثية على علم الحياة الجزيئي Molecular Biology</p><p>١٤٦</p><p>الأحياء النصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

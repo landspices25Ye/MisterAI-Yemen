@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>خطوط الامتصاص لذرة الهيدروجين :</h2><p>لو مررنا حزمة من الضوء الأبيض على حجم من غاز الهيدروجين، ثم حللنا الضوء الذي اجتاز الهيدروجين بواسطة مقياس الطيف، نلاحظ أننا نتلقى نفس طيف الضوء الأبيض الذي أسقطناه على غاز الهيدروجين، ولكن ضمن سلسلة من خطوط داكنة. هذه الخطوط هي الأطوال الموجية التي امتصها غاز الهيدروجين ولذلك تسمى هذه الخطوط بخطوط طيف الامتصاص.</p><p>والأطوال الموجية لهذه الخطوط تنطبق تماماً مع الأطوال الموجية لخطوط الانبعاث لذرات الهيدروجين، انظر الشكل (٥ ب) وقارنه بطيف الانبعاث الخطي لعنصر الهيدروجين في الشكل (٥ أ). إذاً، ذرات غاز الهيدروجين لا تمتص من طيف الضوء الساقط عليها إلا أطوال موجية محددة بدقة وتدع الأطوال الموجية الأخرى تمر وما تلبث أن تشع نفس الأطوال الموجية التي امتصتها.</p><h3>طيف ذرة الهيدروجين : The Hydrogen Spectrum</h3><p>لقد أحدث الانبعاث الطيفي للعناصر الكيميائية مشاكل مختلفة، إذ وجد العلماء أن الطيف لأي عنصر يتألف من أطوال موجية، توحي بانتظام وتناسق محددين بحيث يمكن أن تصنف في مجموعات سميت بسلاسل الأطياف. هذا الأمر جعل العلماء يجتهدون في صياغة النظريات حول البنية الداخلية للذرة. فبنظرة إلى طيف ذرة الهيدروجين نجد أن خطوطه تظهر في تراتيب معينة. إذاً، ما هي الخصائص المميزة لهذه التراتيب المتناظرة المنتظمة؟ فالفرق في الأطوال الموجية بين مختلف الخطوط يتناقص بسرعة كلما اتجهنا نحو الموجات الأقصر [انظر الشكل (٧) الذي يمثل طيف ذرة الهيدروجين].</p><img src="img-119.jpeg" alt="img-119.jpeg" /><p>شكل (٧)</p><p>هذا الأمر جعل العلماء يفكرون بأنه من الممكن التعبير عن هذه الخطوط الطيفية بسلسلة من نوع السلاسل الجبرية أو الهندسية ولكن لسوء الحظ لم توجد أية سلسلة</p><p>١١٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

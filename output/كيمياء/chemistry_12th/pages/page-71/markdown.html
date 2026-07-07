@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>الطاقة والتفاعلات النووية</h1>
+Nuclear Reactions and Energy</p><h1>الوحدة الرابعة</h1><img src="img-50.jpeg" alt="img-50.jpeg" /><h1>الأهداف</h1><p>نتوقع منك بعد الانتهاء من دراسة هذه الوحدة أن تكون قادراً على أن:</p><p>١ - تُوضِّح المقصود بالنواة.
+٢ - تقارن بين التفاعلات الكيميائية والنووية.
+٣ - تُعرِّف النظائر وأنواعها، وتُحدِّد علاقاتها بالتفاعلات الكيميائية.
+٤ - تُفسِّر العلاقة بين متوسط طاقة الترابط النووي واستقرار النواة.
+٥ - تُفسِّر سبب حدوث التفاعلات النووية.
+٦ - تكتب المعادلات الموزونة التي تُعبِّر عن التفاعلات النووية.
+٧ - تُوضِّح أنواع التفاعلات النووية والعوامل المؤثرة على نواتجها.
+٨ - تُوضِّح تفاعلات التحلُّل الإشعاعي وتأثيرها في النواة.
+٩ - تُحدِّد أهم الفروق بين الإشعاعات المختلفة والمبعثة من الأنوية غير المستقرَّة.
+١٠ - تقارن بين تفاعلي الانشطار والاندماج النووي.
+١١ - تذكر أهم الاستخدامات المفيدة والضارة للتفاعلات النووية.</p><p>٦٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

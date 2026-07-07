@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التحكُّم في حدوث التفاعلات النووية عن طريق امتصاص النيوترونات والسيطرة على سرعة وشدة التفاعل، كما تستخدم لإيقاف المُفاعل عن العمل.</p><p>٤ - المُهَدِّي: المواد النقية تعتبر أفضل المواد المهدئة، ويستخدم الجرافيت أو الماء الثقيل كمُهَدِّي لإبطاء سرعة النيوترونات.</p><p>٥ - الوقود النووي: عبارة عن عدد من قضبان اليورانيوم النقي الذي يحتوي على ٣-٤٪ يورانيوم (٢٣٥) قابل للانشطار، والباقي يورانيوم (٢٣٨).</p><img src="img-60.jpeg" alt="img-60.jpeg" /><p>شكل (٤-٦) رسم توضيحي للمفاعل النووي المستخدم لإنتاج الطاقة الكهربائية</p><img src="img-61.jpeg" alt="img-61.jpeg" /><p>شكل (٤-٧) يوضح استخدام العناصر المشعة لتشخيص سرطان العظام</p><p>من فوائد المفاعلات النووية:</p><p>١ - إنتاج النظائر المُشعَّة التي لها استخدامات عديدة.
+٢ - توليد الطاقة الكهربائية.
+٣ - تحلية مياه البحر.</p><p>فوائد النظائر المُشعَّة:</p><p>في مجال الطب: هناك العديد من التطبيقات الإيجابية للنظائر المُشعَّة، ومنها:
+- يستخدم التكنيتيوم - ٩٩ لتشخيص سرطان العظام، انظر الشكل (٤-٧).</p><p>٨٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

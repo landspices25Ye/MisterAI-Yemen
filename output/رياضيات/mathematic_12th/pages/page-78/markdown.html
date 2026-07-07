@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-52.jpeg" alt="img-52.jpeg" /><p>الوحدة الثالثة</p><h1><strong>تدريب (٣ - ٢)</strong></h1><p>برهن الفقرة (٢) من النتيجة (٢) .</p><h1><strong>مثال (٣ - ١)</strong></h1><p>إذا كان حا (أ) = ٠,٤ ، حا (ب) = ٠,٢ ، حا (أ) = ٠,٥ ، حا (ب) = ٠,١
+فأوجد احتمال :</p><p>- (١) عدم وقوع الحادثة أ
+- (٢) وقوع الحادثة أ دون وقوع الحادثة ب
+- (٣) وقوع إحدى الحادثتين أ أو ب على الأكثر
+- (٤) عدم وقوع أيٍّ من الحادثتين أ أو ب</p><h1><strong>الحل :</strong></h1><p>(١) احتمال عدم وقوع الحادثة أ هو حا (أ)</p><p>$‫\therefore \text{حا} (\bar{\text{أ}}) = 1 - \text{حا} (\text{أ})‬$‫
+$\therefore \text{حا} (\bar{\text{أ}}) = 1 - 0,4 = 0,6‬$$‫
+[ مبرهنة (٣-٢) ]</p><p>(٢) احتمال وقوع الحادثة أ دون ب هو حا (أب) (احتمال وقوع أ وعدم وقوع ب)</p><p>‬$‫\therefore \text{حا} (\text{أب}) = \text{حا} (\text{أ}) - \text{حا} (\text{أب})‬$‫
+$\therefore \text{حا} (\text{أب}) = 0,4 - 0,1 = 0,3‬$$‫
+[ مبرهنة (٣-٣) ]</p><p>(٣) احتمال وقوع إحدى الحادثتين على الأكثر يكافئ احتمال عدم وقوعهما معاً ويكون بذلك الاحتمال المطلوب هو: حا (أب)</p><p>‬$‫\therefore \text{حا} (\text{أب}) = 1 - \text{حا} (\text{أب})‬$‫
+$\therefore \text{حا} (\text{أب}) = 1 - 0,1 = 0,9‬$$‫</p><p>(٤) احتمال عدم وقوع أيٍّ منها يكافئ احتمال عدم وقوع أ وعدم وقوع ب ، أي أن :
+‬$‫\text{حا} (\bar{\text{أ}}) = \text{حا} (\text{أ}) - \text{حا} (\text{أ}) = 0,5 = 0,5‬$‫</p><h1><strong>نتيجة (٣) :</strong></h1><p>لأي حادثة ‬$\text{أ} \geq \text{يكون} : 0 \geq \text{حا} (\text{أ}) \geq 1$</p><h1><strong>تدريب (٣ - ٣)</strong></h1><p>برهن النتيجة (٣) .</p><p>المبرهنة (٣-٤) التالية تعتبر من أهم المبرهنات الأساسية في الاحتمالات، وتعرف بـ «قانون الاحتمال الكلي» .</p><p>٧٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الأعداد المركبة</p><h1>مثال (١ - ٢٤)</h1><p>بسط ما يلي : $‫\frac{(\text{جتا هـ} - \text{ت جا هـ})^{10}}{(\text{جتا هـ} + \text{ت جا هـ})^{12}}‬$‫</p><p><strong>الحل :</strong> البسط = [جتا هـ - ت جا هـ]‬$^{10}$‫ = [جتا (هـ) + ت جا (هـ)]‬$^{10}$‫</p><p>= جتا (١٠هـ) + ت جا (١٠هـ) (مبرهنة دي موافر)</p><p>المقام = [جتا هـ + ت جا هـ]‬$^{12}$‫ = جتا (١٢هـ) + ت جا (١٢هـ)</p><p>‬$‫\therefore \frac{\text{جتا (١٠هـ) + ت جا (١٠هـ)}}{\text{جتا (١٢هـ) + ت جا (١٢هـ)}} = \frac{[\text{١٠هـ}, 1]}{[\text{١٢هـ}, 1]} = [\frac{1}{1}, -10\text{هـ} - 12\text{هـ}] = [1, -22\text{هـ}]‬$‫</p><h1>مثال (١ - ٢٥)</h1><p>عبر عن جتا ٢ هـ ، جا ٢ هـ بدلالة جا هـ ، جتا هـ ؛ باستخدام مبرهنة دي موافر</p><p><strong>الحل :</strong> (جتا هـ + ت جا هـ)‬$^{2}$‫ = جتا‬$^{2}$‫ هـ - جا‬$^{2}$‫ هـ + ٢ ت جا هـ جتا هـ</p><p>وحسب مبرهنة دي موافر (جتا هـ + ت جا هـ)‬$^{2}$‫ = (جتا ٢ هـ + ت جا ٢ هـ)</p><p>ومن تساوي عددين مركبين ينتج أن:</p><p>جتا ٢ هـ = جتا‬$^{2}$‫ هـ - جا‬$^{2}$‫ هـ</p><p>جا ٢ هـ = ٢ جا هـ جتا هـ</p><h1>تدريب (١ - ٨)</h1><p>أوجد جتا ٣ هـ ، جا ٣ هـ بدلالة جا هـ ، جتا هـ .</p><h1>ثانياً : الجذور :</h1><p>إذا كان و ط / { ١, ٠ } ، وكان ا ، ع م ، فإن المعادلة ع = ا يوجد لها و من الجذور.</p><p>نفرض أن ا = م (جتا هـ + ت جا هـ) ، ع = م (جتا هـ + ت جا هـ)</p><p>بالتعويض في المعادلة ع = ا</p><p>م‬$_{1}$‫ (جتا هـ + ت جا هـ)‬$^{2}$‫ = م (جتا هـ + ت جا هـ)</p><p>م‬$_{2}$‫ [جتا (و هـ) + ت جا (و هـ)] = م (جتا هـ + ت جا هـ) ... لماذا ؟</p><p>‬$‫\Leftarrow \text{م} = \text{م} \quad \Leftarrow \text{م} = \text{م}‬$</p><p>٣٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

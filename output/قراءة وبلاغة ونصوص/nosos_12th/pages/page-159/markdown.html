@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>وقد أوجدت الشاعرة علاقة حميمة بين الأرض وأبنائها، فالدار والأرض والإنسان عندها هي المركز الذي تشع منه الدلالات، والدار لديها ليس كياناً مادياً جامداً، بل هي جسد وروح. وفدوى طوقان مغرمة بالأرض والدوران في فلكها، وعشق ما عليها من إنسان وأطلال وجبال وأزهار.</p><p>وتتضح في هذا النص سمات الشعر الحُرِّ في الألفاظ من حيث مجيئها سهلة ومعبرة عن هدف الشاعرة. فجو الوحشة والخراب في المقطع الأول أبرزته الألفاظ «فوضى، وحطام، والدور، والشوك، وأطلال، تنعي».</p><p>وفي المقطع الثاني تطلعا ألفاظ مشرقة مفعمة بالأمل مثل «نور، والحب، والإيمان، وأحبائي، ومصابيح، وزهر» ومن الألفاظ الغنية بالإيحاء قولها «مصابيح الدُّجَى» الذي يملأ النفس بالأمل في زوال ليل الظلم والاحتلال، وقولها «يسحقني» يُوحى بالانكسار، أما عبارة «في عيني نور الحب والإيمان» فإنها توحي بالتفاؤل والأمل في تحقيق الحرية.</p><p>وقد لجأت الشاعرة إلى استخدام الرمز دون مبالغة، مثل قولها «يامصابيح الدُّجَى» رمز لشعراء المقاومة، «الشمس» رمز للحرية والنور، «الدمع الرمادي» رمز للحزن والحسرة.</p><p>وتنوعت الأساليب في النص بين الخبر والإنشاء، فقد غلب الأسلوب الخبري في النص من أجل إظهار مشاعر الفرح والأمل والاعتراف بالسبق والريادة لشعراء المقاومة. أما الأساليب الإنشائية فهي: الاستفهامات «ما فعلت بك الأيام يا دار» لإظهار الألم، والإيحاء بالخراب «أين الحلم والآتي؟» للإيحاء بالضياع، «فكيف الجرح يسحقني» للإيحاء بالرفض والتحدي.</p><p>وهناك النداء في قولها «يا أحبائي» لإظهار الود والحب، «يا مصابيح الدُّجَى» لإظهار الإعجاب والتقدير. كما أن هناك الأمر «فقا نبك» لإفادة الحزن والأسى. ومن أساليب التعبير الأخرى المستخدمة التقديم والتأخير، فقدمت ما حقه التأخير لتحقيق التركيز وإثارة الاهتمام بثنائية المكان والإنسان.</p><p>١٥٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

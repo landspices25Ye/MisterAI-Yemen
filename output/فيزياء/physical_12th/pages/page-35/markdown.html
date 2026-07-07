@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>كيف يعمل الدينامو لتوليد (ق . د . ك) المترددة؟</h2><p>نفترض أن ملف المولد الموضح بالشكل (٤) يتكون من لفة واحدة، وأنه بدأ الدوران عندما كان مستواه عمودياً على إتجاه خطوط كثافة الفيض المغناطيسي (ب).</p><p>فإذا دار الملف بسرعة زاوية</p><p>منتظمة ( $‫\omega‬$ ) فإن الزاوية التي يقطعها الملف بعد مرور زمن مقداره (ز) ثانية = $‫\omega‬$ ز، وأن</p><p>الفيض المغناطيسي ( $‫\phi‬$ ) الذي يخترق الملف في هذا الوضع هو:</p><p>$‫\phi = \mu \times \text{ب} \text{ جتا } \omega \text{ ز} \dots\dots\dots (١)‬$‫</p><p>حيث المقدار (ب جتا ‬$\omega$‫ ز) هو مركبة كثافة الفيض المغناطيسي (ب) العمودية على مستوى ملف المولد، (س) مساحة أحد وجهي الملف مقاسة بالمتر المربع. ونتيجة لتغير الفيض المغناطيسي خلال الملف عند دورانه تتولد قوة دافعة كهربائية تأثيرية تعطي بالعلاقة التالية:</p><p>‬$‫\text{ق} = - \frac{\phi \text{ ز}}{\text{ب} \text{ ز}} \dots\dots\dots (٢)‬$‫</p><p>والإشارة السالبة تعني أن القوة الدافعة المتولدة تولد فيضاً مغناطيسياً يصاد التغير في الفيض المغناطيسي المولد له.</p><p>وبالتعويض عن قيمة ( ‬$\phi$‫ ) من العلاقة (١) في العلاقة (٢) تصبح العلاقة (٢) كما يلي:</p><p>‬$‫\text{ق} = - \frac{\text{ب} \text{ جتا } \omega \text{ ز}}{\text{ب} \text{ ز}} \dots\dots\dots (٣)‬$‫</p><p>وعندما نقوم باستخراج الاشتقاق التفاضلي للعلاقة السابقة تصبح:</p><p>‬$‫\text{ق} = \mu \text{ ب} \omega \text{ جا } \omega \text{ ز} \dots\dots\dots (٤)‬$</p><img src="img-35.jpeg" alt="img-35.jpeg" /><p>شكل (٤) تركيب المولد الكهربائي في أبسط صورة</p><p>٣٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

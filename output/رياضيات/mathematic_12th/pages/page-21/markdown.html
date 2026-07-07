@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الاعداد المركبة</p><h1>مثال (١ - ١١)</h1><p>أوجد النظير الضريبي للعددين التاليين :</p><p>أ) ٣ - ٤ ت ، ب) ٢ + ت .</p><p>الحل :</p><p>أ) بما أن النظير الضريبي للعدد (س + ت ص) = $‫\left( \frac{س}{٢ + ص} + \frac{ص}{٢} \right)‬$‫ .</p><p>ب) النظير الضريبي للعدد (٣ - ٤ ت) = ‬$‫\left( \frac{٣ - (٤ - ) + (٣ - )}{٢ (٤ - ) + (٣ - )} \right)‬$‫ .</p><p>‬$‫= \left( \frac{٣ - ١٦ + ٩}{١٦ + ٩} \right) = \left( \frac{٣ - ٢٥}{٢٥} \right) = \left( \frac{٤}{٢٥} \right)‬$‫</p><p>‬$‫= \frac{٣ - ٢٥}{٢٥} + \frac{٤}{٢٥} \text{ ت .}‬$‫</p><p>ب) النظير الضريبي للعدد (٢ + ت) = ‬$‫\left( \frac{٢}{١ + ٢} \right) = \left( \frac{١ - ١ + ٢}{١ + ٢} \right) = \frac{٢}{٣} - \frac{١}{٣} \text{ ت .}‬$‫</p><p>مرافق العدد المركب :</p><h1>تعريف (١ - ٥)</h1><p>يسمى العدد المركب ‬$‫\bar{e} = m - s‬$‫ . مرافقاً للعدد ‬$‫\bar{e} = m + s‬$ .</p><p>يلاحظ أن الاختلاف بين العدد المركب ومرافقه هو فقط إشارة الجزء التخيلي كما هو موضح في الشكل (١ - ٦) ، أي أن العددين المترافقين متماثلان حول محور السينات .</p><p>فمثلاً: مرافق العدد (٣ + ٤ ت) هو (٣ - ٤ ت) ،</p><p>مرافق العدد ٧ هو نفسه ٧ ،</p><p>مرافق العدد ٢ - ت هو ٢ ت ،</p><p>مرافق العدد (٢ ت - ٥) هو (٢ - ٥)</p><p>وليس (٢ ت + ٥) ... لماذا ؟</p><img src="img-19.jpeg" alt="img-19.jpeg" /><p>١٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

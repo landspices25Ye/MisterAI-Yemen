@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>المقالة:</h2><p>هي قطعة نثرية متوسطة الطول، مكتوبة بتلقائية، أو بمستوى لغوي مفهوم لقطاع كبير من الناس.</p><p>وقد ظهرت المقالة في العصر الحديث باعتبارها فناً نثرياً جديداً، وبعضهم يعدها امتداداً لما كان موجوداً في العصور القديمة من مصطلحات: خطاب، كتاب، رسالة ديوانية أو إخوانية. ومعلوم أن الخطاب والكتاب والرسالة وسواها كان الكاتب يوجهها لشخصية أو لأناس محدودين، أما مقالة العصر الحديث فإنها توجه لجميع القراء في ظل وجود الصحافة التي تصل إلى أيدي جماهير الناس.</p><p>والمقالة أنواع. فهناك المقالة السياسية، والمقالة الاجتماعية، والمقالة الأدبية. والمقالة بأنواعها وليدة ظهور الصحافة.</p><h2>القصة:</h2><p>القصة التي تعد المقامات نوعاً من أنواعها ظلت موجودة وما زالت على المستوى الشعبي. وهذا الوجود كان شفهيّاً في الغالب. غير أن هذه القصة ليست هي المقصودة عندما نذكر مصطلح القصة كفن أدبي.</p><p>فالقصة الفنية في العصر الحديث تعد أدباً جديداً على النثر العربي، وعلى الحياة الأدبية؛ رغم أن مقامات الهمداني والحريري وماشاكلها يمكن أن تعد أولى تجارب القصة في تاريخ الأدب العربي.</p><p>إن فن القصة المعتمد على السرد والوصف والحوار قد تطور -بعد ذلك- تطوراً سريعاً متلاحقاً، وأصبح فناً حضرياً يرتبط بالعمران والمدنية.</p><p>والقصة في العصر الحديث ثلاثة أنواع: القصة القصيرة أو الأقصوصة، القصة، الرواية.</p><p>ظهرت بواكير العمل القصصي والروائي العربي بكتابات اللبنانيين مثل: «فرانسيس مراش» المتوفى ١٨٧٣م، و «سليم البستاني» المتوفى ١٨٨٤م، و «جرجي زيدان» المتوفى ١٩١٤م. وظهرت هذه البواكير لدى اللبنانيين لسبقهم في مخالطة الأوربيين، ثم تبعهم المصريون.</p><p>٣٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

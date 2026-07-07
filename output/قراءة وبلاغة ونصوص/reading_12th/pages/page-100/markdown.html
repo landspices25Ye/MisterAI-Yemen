@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><p>ضميرها الذي أخمده السجن والاعتقال من رقدته، ويتولى بنفسه محاسبتها على جميع أعمالها، ومراقبة حركاتها وسكناتها، فهو أعظم سلطاناً، وأقوى يداً من جميع الوازعين المسيطرين.</p><p>يجب أن نحترمها لتتعود احترام نفسها، ومن احترام نفسه كان أبعد الناس عن الزلات.</p><p>لا يمكن أن تكون العبودية مصدراً للفضيلة، ولا مدرسة لتربية النفوس على الأخلاق الفاضلة، والصفات الكريمة، إلا إذا صح أن يكون الظلام مصدراً للنور، والموت علةً للحياة، والعدم سُلماً إلى الوجود.</p><p>لا أريد أن تتخلع المرأة وتستهتر، وتُمزق حجاب الصيانة والعفة المُسبل عليها، كذلك لا أحب أن تكون جارية مستعبدة للرجل، يملك عليها كل مادة من مواد حياتها، ويأخذ عليها كل طريق حتى طريق النظر والتفكير.</p><p>وبعد؛ فإن المرأة ما دامت مساوية للرجل في عقله وإدراكه، فإن عليه أن يعاملها معاملة الصديق للصديق، والنظير للنظير، ليستطيع أن يجد منها الصديق الوفي، والعشير الكريم؛ لتكفل حياتهما بالسعادة والهناء. قال تعالى:</p><p>﴿وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا تَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً﴾ [الروم: ٢١]</p><p>٩٨</p><p><http://www.e-learning-moe.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

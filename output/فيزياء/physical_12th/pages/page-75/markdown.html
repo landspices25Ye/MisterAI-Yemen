@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>مع توصيل مللي أمبير (أو جلفانومتر) بكل من الباعث والقاعدة والمجمع كما في الشكل (١٤) فماذا يلاحظ؟</p><p>– يلاحظ من خلال المللي أمبير أن الجزء الأكبر من تيار الباعث يمر في المجمع وما تبقى يمر في القاعدة... ما السبب في ذلك؟</p><img src="img-75.jpeg" alt="img-75.jpeg" /><p>الشكل (١٤)</p><p>إن السبب في ذلك هو أن اتصال بطارية الباعث وبطارية المجمع اتصال توالي، مما يسبب فرق جهد كبير وبالتالي مجالاً كهربائياً شديداً بين الباعث والمجمع وينتج عن ذلك مرور عدد كبير من الإلكترونات من الباعث إلى المجمع ثم إلى الدائرة الخارجية.</p><p>بالرغم من أن كلا من الباعث والمجمع مزود</p><p>ببطارية خاصة به، فإن تيار الباعث يتحكم في تيار المجمع، لذلك يسمى تيار الباعث بالتيار الحاكم أما تيار المجمع فيسمى بالتيار المحكوم. لتوضيح ذلك:</p><p>– افترض أن تيار الباعث $‫z_E = ٢٠‬$ مللي أمبير فإن تيار المجمع $‫z_C = ١٩‬$ مللي أمبير وبالتالي يكون وبحسب قانون كيرشوف تيار القاعدة $‫z_B = z_C - z_E = ٢٠ - ١٩ = ١‬$ مللي أمبير.</p><p><strong>مثال</strong> إذا كان تيار القاعدة يساوي (٥) مللي أمبير وتيار المجمع يساوي (٩٥) مللي أمبير فكم يكون مقدار تيار الباعث في هذا الترانزستور؟</p><p><strong>الحل :</strong> تيار الباعث = تيار المجمع + تيار القاعدة.</p><p>$‫z_E = z_C + z_B‬$‫</p><p>‬$‫\therefore z_E = ٩٥ + ٥ = ١٠٠ \text{ مللي أمبير.}‬$‫</p><p>ويمكن تطبيق نفس السلوك السابق للترانزستور NPN على الترانزستور PNP حيث يتم بهذه الحالة توصيل قطبي البطاريتين عكس ما هو مبين للترانزستور NPN مع الأخذ بالاعتبار أن الشحنات الناقلة للتيار هي الفجوات بدلاً من الإلكترونات، وتستخدم هنا أيضاً نفس العلاقة السابقة في حساب ‬$z_E$‫ ، ‬$z_B$‫ ، ‬$z_C$ .</p><h3>استخدامات الترانزستور :</h3><p>كانت معظم الأجهزة والدوائر الكهربائية تعتمد في تركيبها وعملها بشكل أساسي</p><p>٧٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

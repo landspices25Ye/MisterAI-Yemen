@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>شيئاً من الحركة واللون والإشراق، وفي قوله: «أو متنا على وجه الجدار» يوحي بأعلى درجات الشجاعة والتضحية؛ فالواجهة ليست سراً حتى يكون الموت خلف الجدار أو قريباً منه، وإنما هي معلنة مكشوفة، فكان الموت على وجه الجدار!</p><p>ونفي اليأس والملل عن المعاول: «لا يأس تدركه معاولنا...» كناية عن إصرار أصحابها على المضي في المقاومة حتى النهاية!</p><p>وفي قوله: «أجدبت سحب الخريف» استعارة مكنية أبرزت مدى ما قد يصل إليه الإنسان من فشل في تحقيق هدفه، وترمز إلى حدوث الفشل من مظنة النجاح، وكذلك فوات القطار في الصيف. وفي قوله: (ربيعنا) إشارة إلى فرحة النفوس وانتعاشها بالانعتاق والتحرر، وفي قوله: (حبلى) استعارة مكنية تجسد الاحتقان والتململ الذي يعيشه المجتمع المقهور من جهة، والآمال التي تمتلئ بها مشاعرهم في النصر من جهة أخرى، والأمطار كناية عن التخلص من المعاناة، ووصف الجدب بالعقم مبالغة في تصوير الشدائد القاسية التي يلاقيها الإنسان، وهو يوحي بالخبرة الطويلة، والتحمل الكبير الذي يتمتع به أولئك الشجعان!</p><p>وتقديم الظرف (غدا) مع التكرار للاهتمام والتأكيد، و(أل) في «الانتصار» للعهد الذهني، أي الانتصار المعهود الذي اتفق عليه طالبوه، فصار في أذهانهم معروفاً؛ فإذا ذكر لديهم عرفوه بواسطة (أل) العهدية.</p><p>لا زخارف لفظية في النص عدا ما جاء عفواً مثل: (الربيع - ربيعنا) جناس، و(حبلى - عقيم) طباق؛ كون هذا اللون من الأدب (شعر التفعيلة) لا يهتم بالشكل، وإنما بالتركيز والتكثيف للمعاني وتدفقها بشكل متتابع، إلا أن قافية الراء بعد حرف المد (الألف) في هذا النص أعطى نفساً واسعاً، وصوتاً مجلجلاً مسموعاً يتناسب مع ما تحمله الألفاظ والتراكيب في أبياته من الشجاعة الواثقة، والتحدي المعلن، والمواجهة السافرة، مما يدل على قدرة الشاعر الإبداعية، وتمكنه من اختيار الألفاظ والتراكيب القادرة على حمل مشاعره، وإيصال رسالته بأسلوب جميل.</p><p>١٤٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

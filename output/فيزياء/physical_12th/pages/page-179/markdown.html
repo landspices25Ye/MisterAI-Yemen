@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>وينتج البوزيترون $‫\beta^+‬$ من تحلل البروتون إلى نيوترون داخل النواة غير المستقرة كما يأتي:</p><p>$‫\beta^+ + \gamma \longrightarrow \beta^- + \gamma^+‬$‫</p><p>ويؤدي انبعاث ‬$\beta^+$‫ إلى نقصان العدد الذري للنواة الوليدة مع بقاء العدد الكتلي ثابت.</p><p>ومن النواخ المهمة التي ظهرت في عملية تحلل البروتون هو توليد جسيم صغير جداً متعادل كهربياً يسمى النيوترينو (Neutrino) ويرمز له بالرمز ‬$\gamma$‫، أما في حالة تحلل النيوترون فيظهر ما يسمى بالمضاد للنيوترينو أو (أنتيويترينو) (Antineutrino) ويرمز له بالرمز ‬$\gamma$‫، ومن خواص جسيمات بيتا أنها جسيمات دقيقة مشحونة إما بشحنة موجبة أو بشحنة سالبة، ولها قدرة عالية على الاختراق للأجسام، وتتحرف عند مرورها في مجال كهربائي أو مجال مغناطيسي، ولكن بزاوية أكبر من زاوية انحراف جسيمات ألفا، كما أن لها قدرة على تأيين الغازات التي تمر بها ولكن بدرجة أقل من تلك التي تمتلكها جسيمات ألفا.</p><h2>أشعة جاما : ( ‬$\gamma$ ) Gamma Rays</h2><p>وهي عبارة عن موجات كهرومغناطيسية (فوتونات) ذات تردد عالي وطول موجي قصير جداً، وتقع ضمن نطاق الطيف الكهرومغناطيسي الذي درسته سابقاً. إن من أكثر مكونات النشاط الإشعاعي الطبيعي أو التفاعلات النووية خطراً وفتكاً هي أشعة جاما والتي تسمى أحياناً بأشعة الموت، وتنتج هذه الأشعة من أنوية عناصر مشعة عند فقدانها بعض الطاقة، ويفسر ذلك بهبوط مستوى طاقة النواة إلى مستوى أدنى؛ وعند انبعاث فوتون جاما من النواة لا يتغير عددها الكتلي بل يهبط مستوى طاقتها فقط.</p><p>وبذلك سينتج من النواة فوتونات تحمل مقدار طاقة عال جداً وتردد عال جداً وطول موجي قصيراً جداً تسمى أشعة جاما، حيث تصل طاقتها أحياناً إلى عشرة ملايين إلكترون فولت.</p><p>وتمتلك أشعة جاما خواصاً تميزها عن باقي مكونات النشاط الإشعاعي، فهي أشعة على شكل موجات كهرومغناطيسية ذات طاقة وتردد عالين وطول موجي قصير جداً، وتكون فتاكة عند سقوطها على الأجسام وتتلف الخلايا الحية.</p><p>١٧٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

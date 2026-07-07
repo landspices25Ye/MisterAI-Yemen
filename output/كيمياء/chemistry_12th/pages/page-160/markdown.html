@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>ويمكن صناعة الصابون عن طريق عملية تصبُّن الدهون وهي المواد المسماة «جليسريدات الأحماض الدهنية»، ومن أمثلتها مادة التريسترين Tristearin والتي تحوي على ٥٧ ذرة كربون، حيث تتفاعل مع محلول هيدروكسيد الصوديوم NaOH وينتج عن ذلك تكوُّن الصابون ومادة الجليسيرول، وفقاً للمعادلة الآتية:</p><p>$‫\begin{array}{c} \text{CH}_3(\text{CH}_2)_{16} - \text{COO} - \text{CH}_2 \\ \text{CH}_3(\text{CH}_2)_{16} - \text{COO} - \text{CH} + 3\text{NaOH} \longrightarrow 3\text{CH}_3(\text{CH}_2)_{16} - \text{COO}^- \text{Na}^+ + \text{CH}_2 - \text{OH} \\ \text{CH}_3(\text{CH}_2)_{16} - \text{COO} - \text{CH}_2 \\ \text{مادة التريسترين (جليسريل تريسترين)} \end{array}‬$‫
+$\begin{array}{c} \text{CH}_2 - \text{OH} \\ \text{CH}_2 - \text{OH} \\ \text{ستيارات الصوديوم} \\ \text{جليسريل} \end{array}‬$$‫
+(الصابون)</p><h3>نشاط (٨-٢)</h3><p>قم بتحضير الصابون في المعمل.</p><p>- كيف يتمكن الصابون من إزالة الأوساخ؟</p><p>تتسخ الملابس التي يلبسها الإنسان نتيجة لالتقاطها للدهون التي تفرزها الغدد الدهنية وتساعد هذه الدهون على التصاق ذرات الغبار بها، فتظهر الأوساخ على الملابس، وبما أن الدهون لا تذوب في الماء لذلك لا يصلح الماء لتنظيف هذه الأوساخ. ويمتلك جزيء الصابون خاصية مهمة جداً تساعده على إزالة الأوساخ (الدهون وبما يلتصق بها من أتربة)، فلو نظرنا إلى جزيء الصابون نجد أنه يتكوَّن من جزئين أحدهما يمثل سلسلة طويلة من الهيدروكربونات تحوي (١٧) ذرة كربون، وهذا الجزء لا يتفاعل مع الماء أو يمتزج معه ويسمَّى بالجزء الكاره للماء، إلا أن هذا الجزء يمتزج مع المواد العضوية (الدهون). أما الجزء الآخر فيتكوَّن من المجموعة الوظيفية الممثلة للملح وهو ‬$‫\text{COO}^- \text{Na}^+‬$‫.</p><p>وبما أن هذا الجزء يتكوَّن من شقٍّ سالب وآخر موجب، لذلك فهو ينجذب نحو جزيئات الماء التي تملك هي الأخرى طرفاً سالباً وآخر موجباً، ولذلك يسمى بالجزء المحب للماء.</p><p>‬$‫\begin{array}{c} \text{CH}_3 - (\text{CH}_2)_{16} - \text{COO}^- \text{Na}^+ \\ \text{جزء محب للماء} \end{array}‬$
+جزء كاره للماء</p><p>ويمكن كتابة هذا الجزء بشكل غير مختصر كما يأتي:</p><p>١٥٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

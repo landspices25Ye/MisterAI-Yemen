@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>الجهاز العصبي</h1><p>Nervous System</p><h1>الوحدة الأولى</h1><img src="img-2.jpeg" alt="img-2.jpeg" /><h1>أهداف الوحدة</h1><p>يتوقع منك بعد دراستك لهذه الوحدة أن تكون قادراً على أن:</p><p>١- تتعرف على التنظيم العصبي في بعض اللافقاريات.
+٢- تبين تركيب الخلية العصبية في الإنسان، ووظائف أجزائها، وآلية انتقال السيل العصبي.
+٣- توضح الأجزاء الرئيسية في الجهاز العصبي للإنسان.
+٤- تميز بين عمليات التنظيم الإرادية واللاإرادية للجهاز العصبي.
+٥- تحدد الأنواع الرئيسية للمستقبلات الحسية، وأماكن وجودها.
+٦- تصف التركيب العام للمستقبلات الحسية، ووظائفها.
+٧- توضح آلية عمل المستقبلات الحسية، ووظائفها.</p><p>٨</p><p>الأحياء: النصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الاحتمالات</p><h1><strong>تمارين ومسائل (٣ - ٤)</strong></h1><p>[١] ألقيت قطعة نقود متجانسة عشوائياً ٣ مرات متتالية، ولوحظ الوجه الظاهر عليها عند استقرارها على الأرض؛</p><p>أوجد احتمالات الحوادث التالية :</p><p>- أ) ظهور الصورة ٣ مرات .
+- ب) ظهور الصورة مرتين .
+- ج) ظهور الصورة مرة واحدة .
+- د) عدم ظهور الصورة .</p><p>[٢] أطلق صياد ٧ رصاصات على هدف ، فإذا كان احتمال إصابة الهدف = $‫\frac{1}{4}‬$‫ ؛</p><p>ما احتمال أن يصيب الصياد الهدف على الأقل مرتين؟</p><p>[٣] ليكون احتمال أن يكسب الفريق « ١ » في أي مباراة يلعبها ‬$‫\frac{2}{3}‬$ ، فإذا لعب الفريق « ١ » أربع مباريات .</p><p>أوجد احتمال أن يكسب الفريق « ١ » :</p><p>- ١) مباراتين بالضبط .
+- ٢) مباراة واحدة على الأقل .
+- ٣) أكثر من نصف المباريات .</p><p>[٤] أسرة لها ٦ أطفال . ما احتمال أن يكون عدد الأولاد في الأسرة:</p><p>- ١) يساوي عدد البنات ؟
+- ٢) أقل من عدد البنات ؟</p><p>[٥] إذا كان أحد لاعبي البلياردو يصيب الكرة بمتوسط (احتمال ٠,٣) ، وحاول هذا اللاعب رمي الكرة أربع</p><p>مرات ؛ فما احتمال أن يصيب الكرة :</p><p>- أ) مرتين ؟
+- ب) مرة واحدة على الأقل ؟</p><p>[٦] إذا كان احتمال أن يتخرج طالب التحق بكلية هو ٠,٤ . أوجد احتمال :</p><p>- أ) ألا يتخرج أي طالب من بين ٥ طلاب .
+- ب) أن يتخرج طالب واحد على الأقل من بين ٥ طلاب .</p><p>٩٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

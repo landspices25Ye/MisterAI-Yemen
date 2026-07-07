@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>مبدأ العد ومبرهنة ذات الحدين</p><p>[١١] إذا كان :</p><p>$‫س+ص = ٥٠٤ \text{ ، } س-ص = ١٢٠ \text{ ، } \text{فأوجد } س = س \text{ .}‬$‫</p><p>[١٢] ليكن ‬$س = س + ١$‫ ، فأوجد :</p><p>‬$‫\frac{س+١}{س+٢} + \frac{س-١}{س+١} + \frac{س-٢}{س-١} \text{ .}‬$‫</p><p>[١٣] إذا كان لدينا أربعة كتب مختلفة، وعلى رف مكتبة يتوفر مكانان شاغران فقط، بكم طريقة يمكن ملء المكانين الشاغرين؟</p><p>[١٤] بكم طريقة يمكن ترتيب حرفين من حروف المجموعة ‬$س = \{ ١، ب، ج، و، هـ \}$‫ .</p><p>[١٥] من بين ثلاثون طالباً ، بكم طريقة يمكن تشكيل لجنة طلابية مؤلفة من : رئيس ومساعد وسكرتير وأمين صندوق ؟</p><p>[١٦] كم عدد التطبيقات المتباينة التي يمكن تكوينها من المجموعة ‬$س = \{ ١، ٢، ٣ \}$‫ ، إلى المجموعة ‬$ص = \{ ١، ب، ج، و، هـ \}$‫ ؟</p><p>[١٧] بكم طريقة يمكن تنظيم جلوس ٨ أشخاص في الحالتين التاليين:</p><p>أ) في صف مستقيم ؟ ب) على طاولة مستديرة ؟</p><p>[١٨] بكم طريقة يمكن تلوين علم يتكون من أربعة ألوان إذا كان لدينا تسعة ألوان ؟</p><p>[١٩] بكم طريقة يمكن أن يجلس أربعة طلاب وأربعة مدرسين على ٨ كراسي في صف واحد، بحيث يجلس كل طالب ومدرس بالتناوب ؟</p><h2>التوافق</h2><p>٢ - ٣</p><h3>تدريب (٢ - ٣)</h3><p>أوجد المجموعات الجزئية الثنائية ( المكونة من عنصرين ) للمجموعة ‬$س = \{ ١، ٢، ٣، ٤ \}$‫ .</p><p>لا شك أنك قد تمكنت من أن تجد ست مجموعات جزئية وهي :</p><p>‬$\{ ١، ٢ \}$‫ ، ‬$\{ ١، ٣ \}$‫ ، ‬$\{ ١، ٤ \}$‫ ، ‬$\{ ٢، ٣ \}$‫ ، ‬$\{ ٢، ٤ \}$‫ ، ‬$\{ ٣، ٤ \}$‫ . كل من هذه المجموعات</p><p>الجزئية يسمى توفيقاً أو اختياراً ذا عنصرين من مجموعة رباعية .</p><p>كذلك يمكن من هذه المجموعة نفسها أن نستخرج مجموعات جزئية ثلاثية ( كل منها مكون من ثلاثة</p><p>عناصر ) عدد هذه المجموعات الجزئية أربع مجموعات وهي :</p><p>‬$\{ ١، ٢، ٣ \}$‫ ، ‬$\{ ١، ٢، ٤ \}$‫ ، ‬$\{ ١، ٣، ٤ \}$‫ ، ‬$\{ ٢، ٣، ٤ \}$ .</p><p>كل من هذه المجموعات الجزئية ، يسمى توفيقاً أو اختياراً ثلاثي العناصر من مجموعة رباعية .</p><p>٥٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

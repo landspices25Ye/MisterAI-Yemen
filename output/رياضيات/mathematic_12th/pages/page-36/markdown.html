@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-33.jpeg" alt="img-33.jpeg" /><p>الوحدة الأولى</p><p>ب) تحويل البسط والمقام للعدد $‫\frac{\sqrt{27}}{\sqrt{1+2}}‬$ إلى الصورة القطبية :</p><p>$‫\sqrt{27} \text{ ت} = \sqrt{27} \text{ (جتا } \frac{\pi}{2} + \text{ت جا } \frac{\pi}{2} \text{)} = [\frac{\pi}{2}, \sqrt{27}]‬$‫</p><p>‬$‫1 + \text{ت} = \sqrt{27} \text{ (جتا } \frac{\pi}{4} + \text{ت جا } \frac{\pi}{4} \text{)} = [\frac{\pi}{4}, \sqrt{27}]‬$‫</p><p>‬$‫\therefore \frac{\sqrt{27}}{\sqrt{1+2}} = \frac{[\frac{\pi}{2}, \sqrt{27}]}{[\frac{\pi}{4}, \sqrt{27}]} = \frac{\sqrt{27}}{\sqrt{1+2}} = [\frac{\pi}{4}, 1] =‬$‫</p><p>‬$‫[\frac{\pi}{4}, 1] =‬$‫</p><p>‬$‫[\frac{\sqrt{27}}{\sqrt{1+2}} = [\frac{\pi}{4}, 1] = [\frac{\pi}{4}, 1] = [\frac{\pi}{4}, 1] = [\pi, 1] = [\pi, 1]‬$‫</p><p>‬$\therefore$‫ المقياس = 1 ، والسعة = 0 .</p><h1><strong>مثال (١ - ٢٣)</strong></h1><p>أوجد الجزء الحقيقي والجزء التخيلي للعدد المركب ‬$(1-\sqrt{27} \text{ ت})$‫ .</p><p><strong>الحل :</strong></p><p>‬$‫\therefore \text{ع} = 1-\sqrt{27} \text{ ت}‬$‫</p><p>‬$‫\therefore \text{س} = 1-\text{ص} = \sqrt{27} \Leftarrow \sqrt{27} = \sqrt{27} = 2‬$‫</p><p>‬$‫\therefore \text{جتا هـ} = \frac{\text{س}}{\sqrt{2}} = \frac{1}{2} \text{ ، جا هـ} = \frac{\text{ص}}{\sqrt{2}} = \frac{\sqrt{27}}{2}‬$‫</p><p>‬$\therefore$‫ هـ تقع في الربع الثاني .</p><p>‬$‫\text{هـ} = 120 = \frac{\pi}{2} \Leftarrow \text{ع} = [\frac{\pi}{2}, 2] = [\frac{\pi}{2}, 2]‬$‫</p><p>‬$‫\therefore \text{ع} = [\frac{\pi}{2}, 3] = [\frac{\pi}{2}, 8] = [\frac{\pi}{2}, 8]‬$‫</p><p>‬$‫8 = (\text{جتا } \pi + \text{ت جا } \pi)‬$‫</p><p>‬$‫8 = [\text{ت (0)} + 1] = 8‬$‫</p><p>‬$‫\therefore \text{س} = 8 \text{ ، ص} = 0‬$</p><p>الجزء الحقيقي = 8 ، الجزء التخيلي = 0 .</p><p>٣٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

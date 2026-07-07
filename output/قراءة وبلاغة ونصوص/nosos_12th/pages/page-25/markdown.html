@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>النهضة الأدبية في العصر الحديث</h2><p>منذ سقوط بغداد على يد التتار، والأدب العربي يشهد تراجعاً حثيثاً على مدى الأحقاب المتتابعة، حتى انطفأت شعلته، وبهت بريقه، إلا من وميض باهت ينبعث – من حين إلى آخر – من بين ديجور الظلام الذي عمَّ الحياة الأدبية بفنونها المختلفة، ولم تكن المجالات الأخرى للحياة أفضل حظاً منها، بل كان مصابها أشد وأنكى! واستناداً إلى حركة التاريخ، فقد تبدل هذا الحال في أواخر العقد الأخير من القرن الثامن عشر، إذ أفاق الأدب العربي من سباته، وتحرر من جموده، وألقى عن كاهله أغلال الركاكة، وأثقال الصنعة من محسنات بديعية متكلفة، وزخارف لفظية، وارتقى بمضمون الفكرة فجعلها أبعد عمقاً بعد أن كانت تنجح إلى السطحية، والتفت إلى لغة الأحاسيس، والمشاعر؛ فجعلها أكثر دفئاً بعد أن كانت باردة باهتة. وبفضل هذه النهضة استعاد الأدب حيويته ونضارته، وأصبح عاملاً من عوامل تكوين الأمة، ورافداً من روافد تقدمها، وازدهارها.</p><h3>عوامل النهضة الأدبية</h3><p>تقضي نواميس الكون، وسننه أن لكل حدث ذي بال عوامل تسهم في ظهوره، وتساعد على تطوره. واستناداً إلى هذا المفهوم فإن لهذه النهضة الأدبية – التي نحن بصدها – عوامل عدة أسهمت في بزوغ فجرها، وهيّأت البيئة القادرة على تسارع نموها، واتساع آفاقها. ويمكن إجمال هذه العوامل فيما يأتي:</p><h4>١- اليقظة الوطنية:</h4><p>استيقظت مصر، والأمة العربية بعد الحملة الفرنسية – بقيادة نابليون (١) من سبات عميق، وفُتحت عيونهم على حضارة جديدة لم يعهدوها من قبل، وتبيّن لهم أن غازي اليوم أكثر خطراً على قيم الأمة، ومعتقداتها.</p><p>(١) اكتسحت القوات الفرنسية مصر بقيادة نابليون في العام ١٧٩٨م.</p><p>٢٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

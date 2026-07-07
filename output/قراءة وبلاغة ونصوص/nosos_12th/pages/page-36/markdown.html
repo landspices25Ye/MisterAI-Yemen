@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><h2>النثر العربي في العصر الحديث</h2><p>النثر\*: هو الكلام غير المنظوم.</p><p>وإذا كان للشعر مكانته المهمة لدى العرب وكل أمم الأرض، فإن للنثر مكانة كبرى؛ فليس كل المشاعر الإنسانية يمكن أن تنظم شعراً.</p><p>لذلك يظل النثر فناً قادراً على تسجيل خلجات النفوس الإنسانية بشكل تلقائي لا تعوقه قواعد وشروط النظم.</p><p>والنثر عامة يلبي متطلبات الحياة من الكتابة الفنية، وغير الفنية في مختلف المجالات: رسائل، وعقود، وصكوك، ومواثيق، وخطب، وحوارات، وأخبار، ومعارف مكتوبة على الورق أو على الأشرطة الصوتية، وأقراص الحاسوب وإسطواناته، وشبكات الإنترنت.</p><h3>تطور النثر في العصر الحديث</h3><p>وصل إلينا النثر من العصرين المملوكي والتركي متقلاً بالصناعة، مقيداً، يركز فيه الكاتب على السجع والجناس والطباق والتورية على حساب الفكر والمعنى.</p><p>ويمكننا أن نسمي هذه المرحلة مرحلة التقليد.</p><p>وإذا كانت الدولة العثمانية لا تولي اهتماماً بالأدب العربي مما أدى إلى نضوب القرائح والعجز عن الابتكار، والإقبال على التقليد. فقد تراجع الازدهار الثقافي الذي عرفته الدولة العباسية، وضعفت قوة النثر التي اتسم بها الجاحظ وابن المقفع وغيرهما، حين كان النثر لديهم يتميز بسهولة العبارة وجزئتها، وتوارت هذه الخصائص، ولم يصل إلى العصر الحديث إلا النثر المقيد بالسجع المحافظ على الأنماط الشكلية القديمة، والمقدمات التي تهتم بالمظهر الشكلي الزائف.</p><p>وقد ظهر نوع من النثر عرف بـ (المقامات) التي اتسمت بدقة صناعتها وذيوع طريقتها مثل مقامات بديع الزمان الهمداني والحريري، ولذلك ظل الكتاب يتمثلون أسلوب هذه المقامات، فأوغلوا في الصناعة، وتشددوا في القياس، واختاروا الغريب من الألفاظ اللغوية.</p><p>\* من نثر الشيء بنثره: أي رماه بيده متفرقاً.</p><p>٣٤</p><p><http://www.e-learning-moe.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

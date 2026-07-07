@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التكامل</p><p>مثال (٧ - ١٤)</p><p>أوجد قيم ج التي تحقق مبرهنة القيمة المتوسطة للتكامل الآتي :</p><p>$‫\left. \begin{array}{l} ٣ \\ ٢- \end{array} \right\} (٣ \text{ س } ٢ + ٢ \text{ س}) \text{ وس} .‬$‫</p><p>الحل :</p><p>‬$‫\left. \begin{array}{l} ٣ \\ ٢- \end{array} \right\} (٣ \text{ س } ٢ + ٢ \text{ س}) \text{ وس} = (٣ \text{ ج } ٢ + ٢ \text{ ج}) (٣ - ٢ - ٢) .‬$‫</p><p>‬$‫(٣ \text{ س } ٢ + ٢ \text{ ج}) = \left. \begin{array}{l} ٣ \\ ٢- \end{array} \right\} (٣ \text{ س } ٢ + ٢ \text{ ج}) .‬$‫</p><p>‬$‫٢٧ + ٩ - (٨ - ٤) = ٥ (٣ \text{ ج } ٢ + ٢ \text{ ج}) .‬$‫</p><p>‬$‫٥ (٣ \text{ ج } ٢ + ٢ \text{ ج}) = ٤٠ \Leftarrow ٣ \text{ ج } ٢ + ٢ \text{ ج} = ٨ .‬$‫</p><p>‬$‫٣ \text{ ج } ٢ + ٢ \text{ ج} = ٨ = ٠ \Leftarrow (٣ \text{ ج } ٢ - ٤) (٣ \text{ ج } ٢ + ٢) = ٠ .‬$‫</p><p>‬$‫\therefore \text{ أما } \text{ ج} = \frac{4}{3} \text{ ، أو } \text{ ج} = -٢ .‬$‫</p><p>‬$‫\text{نلاحظ أن : } \frac{4}{3} \text{ و } [٣, ٢] \text{ و } [٣, ٢] \text{ و } [٣, ٢] \text{ و } [٣, ٢] .‬$‫</p><p>‬$‫\text{إذن ل ج قيمتان تحققان المبرهنة هما : } -٢, \frac{4}{3} .‬$‫</p><p>صيغ تكاملات بعض الدوال الشهيرة :</p><p>‬$‫[ \text{ هـ س و س} = \text{ هـ س} + \text{ ث} .‬$‫</p><p>‬$‫[ \text{ جاس و س} = - \text{ ج تاس} + \text{ ث} .‬$‫</p><p>‬$‫[ \text{ ج تاس و س} = \text{ جاس} + \text{ ث} .‬$‫</p><p>‬$‫[ \text{ ق ا س و س} = \text{ طا س} + \text{ ث} .‬$‫</p><p>‬$‫[ \text{ ق ا س و س} = - \text{ طا س} + \text{ ث} .‬$‫</p><p>‬$‫[ \text{ قاس طا س و س} = \text{ قاس} + \text{ ث} .‬$‫</p><p>‬$‫[ \text{ ق ا س طا س و س} = - \text{ ق ا س} + \text{ ث} .‬$</p><p>٢٢٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

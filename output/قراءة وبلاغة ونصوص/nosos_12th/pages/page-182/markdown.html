@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>النقد الأدبي</h1><h2>١- مفهومه</h2><p><strong>النقد لغة:</strong> التمييز بين الصحيح والزائف من العملات النقدية والورقية.
+والنقد الأدبي اصطلاحاً هو: دراسة الأعمال الأدبية: الشعرية والنثرية، والكشف عما فيها من عناصر الإبداع وجوانب الجمال أو الرداءة، والقوة أو الضعف، ثم إصدار الأحكام النقدية المناسبة على تلك الأعمال. وقد يتبادر إلى أذهاننا سؤال.. أو ليست البلاغة كذلك؟ فما الفرق إذن بين علمي البلاغة والنقد الأدبي؟!
+والجواب: أن هناك فروقاً بين المصطلحين نجملها فيما يأتي:</p><p><strong>أولاً-</strong> تُعنى البلاغة بفصاحة الكلمة المفردة وفصاحة الجملة من حيث الصياغة والسلامة من العيوب، ومطابقة مقتضى الحال؛ أي إنها تبحث عن مظاهر الجمال اللغوي والدلالي. أما النقد فاهتمامه منصب على دراسة النص الأدبي كله، مراعيًا التوقف عند المؤثرات العامة أو الخاصة، البيئية والنفسية، ومع ذلك فلا يهمل البلاغة بل يعدها أداة من أدوات النقد والتذوق.</p><p><strong>ثانياً-</strong> تتضمن البلاغة علوماً جمالية يفيد منها المبدع أو المنشئ قبل إنشاء النص، مثل أن يتعرف طرق القصر، والتقديم والتأخير، وصور البيان كالأستعارة والتشبيه، ونحو ذلك، أما النقد وإن كان قد تضمن أصولاً وقواعد نقدية مفيدة؛ فإنه يتجاوز هذه النظرة القبلية، ويزيد عليها النظرة البعدية وهي الأهم؛ حيث يقوم بقراءة النص قراءة تحليلية، والحكم عليه.</p><p><strong>ثالثاً-</strong> البلاغة علم استوعبه العلماء تحت مسميات ثلاثة هي:
+المعاني، والبيان، والبديع، أما النقد فلا يزال يجمع بين العلم وقواعده، والفن وسبل تذوقه؛ لأن قواعد النقد تتسم بكثير من المرونة. كذلك يستجيب النقد لحاسة الذوق الفني، وهذا ما جعله يصنف تارة في قائمة الفنون وتارة في قائمة العلوم.</p><p>١٨٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-11.jpeg" alt="img-11.jpeg" /><p>من (١) ، (٢)</p><p>$‫\therefore 3,75 \times 10^4 = 4000 \text{ ع} \text{ جتاه} \dots\dots\dots (3)‬$‫</p><p>بالمثل كمية التحرك للنظام ككل في اتجاه محور الصادات قبل وبعد التصادم هو</p><p>‬$‫\text{ك ع} = 4000 \text{ ع} \text{ جاه}‬$‫</p><p>‬$‫20 \times 2500 = 4000 \text{ ع} \text{ جاه} \dots\dots\dots (4)‬$‫</p><p>وبقسمة (٤) على (٣)</p><p>‬$‫\therefore \frac{4 \times 10^4 \text{ ع} \text{ جاه}}{4 \times 10^4 \text{ ع} \text{ جتاه}} = \frac{4 \times 10^4 \text{ ع} \text{ جاه}}{4 \times 10^4 \text{ ع} \text{ جتاه}}‬$‫</p><p>‬$‫1,33 = \text{ظاه}‬$‫</p><p>‬$‫\therefore 3,1 = \text{ه}‬$‫</p><p>بالتعويض في المعادلة (٤)</p><p>‬$‫\therefore 5 \times 10^4 = 4000 \text{ ع} \text{ حا} \text{ 53,1}‬$‫</p><p>‬$‫\therefore \text{ ع} = 15,6 \text{ م} / \text{ث}‬$</p><h2>الصواريخ ذاتية الدفع : Rockets Propulsion</h2><p>ظل ارتياد الفضاء هاجساً يراود العلماء لقرون عديدة حتى جاء يوم ٤ أكتوبر عام ١٩٥٧م حين أطلق الاتحاد السوفيتي أول قمر صناعي سمي (سبوتنيك ١) ، وفي ٣ نوفمبر من نفس العام ١٩٥٧م أطلق قمراً آخر سمي (سبوتنيك ٢) ، وكان يحمل أول كائن حي يدور حول الأرض هو الكلية لايكا.</p><p>أما الولايات المتحدة الأمريكية فكان أول إطلاق قمر صناعي لها في يناير ١٩٥٨م سمي المستكشف ( Discovery ) .</p><p>وفي العام ١٩٦٩م هبط الأمريكيان أرمستروخ وأدوين الدرين على سطح القمر، ولم يتوقف الاستكشاف عند القمر فقط بل واصل الإنسان ارتياده للفضاء، ووصلت مركباته إلى المريخ منذ سنوات .</p><p>١٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

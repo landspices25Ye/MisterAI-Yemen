@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-118.jpeg" alt="img-118.jpeg" /><p>شكل (١١) بعض الملوثات البلاستيكية</p><p>ويعمل العلماء حالياً على تطوير أنواع من الكائنات الحية الدقيقة التي يمكنها أن تنشط في وسط هذه المخلفات والعمل على تحليلها وتحولها إلى مواد غير ضارة أو مواد قد يستفيد منها الإنسان، مثل إنتاج غاز الميثان واستخدامه كوقود.</p><h3>استخدام التقانة الحيوية في إنتاج بعض المواد الصناعية:</h3><p>استطاع الإنسان الاستعانة ببعض الكائنات الحية الدقيقة في صناعة وإنتاج بعض المواد الضرورية لحياته، مثل الصابون والمواد المنظفة الأخرى والمواد المذبية والمواد الداخلة في صباغة الأقمشة وتلوينها والمواد الحافظة ومبيدات الحشرات والأعشاب الضارة، إضافة إلى صناعة الأدوية والمضادات الحيوية والهرمونات والانزيمات، وغيرها.</p><p>ويمكنك العودة إلى الوحدة السابقة (وحدة الوراثة الجزيئية) لمراجعة بعض التطبيقات للهندسة الوراثية في عالمنا المعاصر.</p><h3>الاستنساخ</h3><p>يعد الاستنساخ من أهم تطبيقات التقانة الحيوية وأخطرها في هذه الأيام، حيث يمكن استنساخ الكائن الحي من حيوان أو نبات. ويقصد بالاستنساخ إنتاج كائن حي من خلية جسدية لكائن حي آخر ويكون الكائن الجديد مشابهاً تماماً للكائن الذي أخذت منه الخلية الجسدية.</p><p>ولعلك قد سمعت عن استنساخ النعجة (دوللي) قبل عدة سنوات عندما اتبع العلماء خطوات محددة في عملية استنساخها كما هي مرقمة في الشكل (١٢). وتجرى هذه الخطوات كما يأتي:</p><p>١٥٨</p><p>الأحياء للصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

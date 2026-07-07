@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>والقافية، وفي بناء القصيدة من وحدة البيت والمقدمة الغزلية، وفي الأسلوب متانة البناء، واللغة القوية والمعجمية (زاد من قوتها وجزالتها في النص سيطرة حرف القاف).
+- الحكم التي ساقها تظهر خبرته ونظرته للأمور، وتمده بالصبر ومغالبة عناء الغربة وشجونها.
+- الصور قليلة وتقليدية غير متكلفة، والموسيقى تعتمد إلى جانب الوزن والقافية على رنين الألفاظ، وإن كان البحر الطويل قد أضفى على النص هدوءاً حزيناً زاد منه حرف الألف في القافية مما عكس روح الشاعر.</p><h2>أسئلة وتدريبات</h2><p>١ - ماذا تعرف عن البارودي؟
+٢ - كان البارودي رائد نهضة الشعر في العصر الحديث ومؤسس مدرسة الإحياء.
+ناقش هذه العبارة.
+٣ - استخلص فكرتين اشتمل عليهما النص.
+٤ - إيمان الشاعر قوي بالله. استخرج البيت الذي يدل على ذلك، ثم اشرحه.
+٥ - قال الشاعر:
+لا يعرف الشوق إلا من يكابده ولا الصباية إلا من يعانيها
+في أي بيت من أبيات النص تجد هذا المعنى؟
+٦ - الكلمات الآتية أدخلها في جمل من إنشائك تكشف عن معناها:
+جن، لدن، آية، رام، شتى.
+٧ - اختر الإجابة الصحيحة من بين الأقواس فيما يأتي:
+- سرنديب جزيرة في (جنوب بريطانيا، جنوب الهند، جنوب أسبانيا).
+- كلمة زفرة في البيت الثاني: (اسم مرة، اسم فاعل، اسم زمان).
+- المحسن البديعي في البيت الأول: (طباق، جناس، تورية).
+- وزن كلمة يصطبر: (يفتعل، يتفعل، يفعل).
+٨ - استخرج الحكمتين الواردتين في النص، واشرحهما.
+٩ - ما الغرض البلاغي من القسم في البيت السادس؟
+١٠ - اشرح البيت الأول، موضحاً ما فيه من جمال.</p><p>٤٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

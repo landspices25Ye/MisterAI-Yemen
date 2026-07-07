@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>أمتي</h1><h2>عمر أبو ريشة</h2><h3>التعريف بالشاعر</h3><p>ولد عمر أبو ريشة بمدينة عكا بفلسطين عام ١٩١٠م، وبها عاش طفولته وتربى في كنف جده، وتلقى دروسه الأولية، ثم أقام مع أسرته في حلب بسورية.
+التحق بالجامعة الأمريكية في بيروت، ونال (شهادة بكالوريوس) علوم عام ١٩٣٠م، ثم ذهب إلى (مانشستر) ليدرس صناعة النسيج، لكن الشعر كان أغلب في نفسه من دراسة النسيج.</p><p>نظم الشعر في سن مبكرة، وكان يعتمد على حسه الذاتي في تصوير الكثير من المظاهر.
+عكف على دراسة الأدب العربي، وشغف بالشعر الإنجليزي، عمل مديراً لدار الكتب الوطنية بحلب، حيث ألف مسرحيته الشعرية (رايات ذي قار).</p><p>انتخب عضواً مراسلاً في المجمع العلمي العربي عام ١٩٤٨م، وفي السنة التالية عين ملحقاً ثقافياً لسورية في الأمانة العامة لجامعة الدول العربية، وفي ١٩٥٠م عين سفيراً لسورية في البرازيل، ثم في الأرجنتين، ثم في تشيلي، ثم سفيراً للجمهورية العربية المتحدة في الهند، وبعدها عين في النمسا.</p><p>عُرف شاعرنا بجرأته وصلابة مواقفه الوطنية، وامتاز بقصائده القومية، وأشعاره الغزلية، والملحمية، والمسرحية.</p><p>كان حسن الأداء، خلاب الإلقاء، شعره مبثوث في مجموعات مطبوعة.
+من مسرحياته التي نظمها شعراً: (ذي قار) و(الطوفان) و(محكمة الشعراء) وغيرها، كذلك نظم ملاحم بطولة في تاريخ العرب وصلت إلى اثني عشر ألف بيت.
+يعد الشاعر عمر أبو ريشة من أبرز الشعراء المجددين في العصر الحديث، وهو من شعراء المدرسة الكلاسيكية الحديثة. توفي في ١٤ تموز من عام ١٩٩٠م، ودفن في مدينة حلب - رحمه الله.</p><h3>مناسبة النص</h3><p>كانت نكبة فادحة للأمة العربية والإسلامية عامة وللفلسطينيين خاصة عندما</p><p>٦١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

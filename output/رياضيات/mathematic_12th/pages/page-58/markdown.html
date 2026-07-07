@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-44.jpeg" alt="img-44.jpeg" /><p>الوحدة الثانية</p><p>وبصفة عامة إذا كان لدينا مجموعة $‫m$ عدد عناصرها ‬$s$‫ عنصراً فإن كل مجموعة جزئية ذات ‬$r$‫ عنصراً يسمى توفيقاً أو اختياراً ذا ‬$r$‫ عنصراً من ‬$s$‫ عنصراً حيث (‬$r \geq s$‫).</p><h1>تعريف (٢-٤)</h1><p>توفيق ‬$r$‫ عنصراً من مجموعة ‬$m$‫ عدد عناصرها ‬$s$‫، (‬$s \geq r$‫) هو عدد المجموعات الجزئية من ‬$m$‫ التي تتألف من ‬$r$‫ عنصراً، ونرمز لعدد هذه التوافيق (الاختيارات) بالرمز: ‬$s$‫، وتقرأ (نون توافيق راء)؛ أو بالرمز (‬$r$‫)، وتقرأ (s اختيار r).</p><p>والفرق بين التباديل والتوافيق هو أننا في التباديل نهتم بالترتيب لأننا لو أخذنا تباديل ‬$\{ 1, 2, 3, 4 \}$‫ مأخوذة اثنين اثنين سنجدها اثنا عشر زوجاً مرتباً: ‬$(1, 2, 3, 4)$‫، ‬$(1, 3, 4, 5)$‫، ‬$(2, 3, 4, 6)$‫، ‬$(3, 4, 5)$‫، ‬$(1, 2, 3, 4)$‫، ‬$(1, 3, 4, 5)$‫، ‬$(2, 3, 4, 6)$‫، ‬$s$‫، ‬$s$‫، ‬$s$‫، ‬$s$‫، ‬$s$‫، ‬$s$‫، ‬$s$‫، ‬$s$‫، ‬$s$‫، ‬$s$‫، ‬$s$‫، ‬$s$‫، ‬$s$‫، ‬$s$‫، ‬$s$‫، ‬$s$‫، ‬$s$‫، ‬$s$‫، ‬$s$‫، ‬$s$‫، ‬$s$‫، ‬$s$‫، ‬$s$‫، ‬$s$‫، ‬$s$‫، ‬$s$‫.</p><p>وفي المسائل العملية نحتاج أحياناً إلى إيجاد التباديل إذا كان الترتيب مهماً، وأحياناً نحتاج إلى إيجاد التوافيق إذا كان الترتيب لا يهمنا، وذلك حسب واقع الحالة التي نعالجها.</p><p>ولإيجاد عدد توافيق ‬$s$‫ من العناصر مأخوذة ‬$r$‫ في كل مرة، نوضح ذلك كالتالي:
+من المجموعة ‬$m = \{ 1, 2, 3, 4 \}$‫ حصلنا على ١٢ تبديلاً، أخذت اثنين اثنين يقابلها ستة توافيق (كل تبديلين يحصل منها على توفيق واحد) أي أن عدد التوافيق يمكن أن يستنتج من عدد التباديل بالقسمة على ‬$r$‫.</p><p>أي ‬$\frac{12 \text{ تبديلاً}}{2} = 6$‫ توفيقاً، والعدد ٢ هو في الحقيقة ‬$r = r + 2 = 1 \times 2 = 2$‫.</p><p>وبالمثل حصلنا على أربعة توافيق مأخوذة ثلاثة يقابلها ٢٤ تبديلاً (‬$r$‫).
+أي أن كل ست تبديلات يقابلها توفيق واحد ‬$\frac{24 \text{ تبديلاً}}{6} = 4$‫ توفيقاً، والعدد ٦ ما هو في الحقيقة إلا تباديل ثلاثة عناصر فيما بينها أي هو ‬$r = r + 3 = 1 \times 2 \times 3 = 6$‫.
+وبصفة عامة كل توفيق (اختيار) من ‬$r$‫ عنصراً يقابلها تبديلات عددها (‬$r$‫).
+لأن أي توفيقية منها يمكن أن تترتب عناصرها فيما بينها بطرق عددها ‬$r$‫.</p><p>‬$‫\therefore r = \frac{r}{r}‬$</p><p>وهذه هي العلاقة بين التباديل والتوافيق.</p><p>٥٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

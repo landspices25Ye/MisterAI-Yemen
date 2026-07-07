@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>جدول (٢) أنواع خلايا الغراء العصبي ووظائفها وأماكن وجودها.</h1><p>|  نوع الخلية | مكان وجودها | الوظيفة  |
+| --- | --- | --- |
+|  الخلايا النجمية. | الجهاز العصبي المركزي. | تصنيع النواقل العصبية. إبتلاع الأجسام الغريبة.  |
+|  الخلايا الدبقية قليلة التشجر. | الجهاز العصبي المركزي. | – تكوين الغمد الميليني حول محاور الخلايا العصبية، وتفرعاتها الشجرية.  |
+|  خلايا بطانة القناة الشوكية، وبطينات المخ. | الجهاز العصبي المركزي. | – تكوين السائل المخي الشوكي.  |
+|  الدبقيات الصغيرة. | الجهاز العصبي المركزي. | – التهام الأجسام الغريبة. – التحول إلى أنواع من خلايا الغراء العصبي.  |
+|  خلايا شقان. | خارج الجهاز العصبي المركزي. | – تكوين الغمد الميليني حول محاور الخلايا العصبية.  |
+|  الخلايا القمرية. | خارج الجهاز العصبي المركزي. | – دعم أجسام الخلايا العصبية.  |</p><h1>أنواع الألياف العصبية:</h1><p>– لماذا تختلف المحاور العصبية عن بعضها؟</p><p>يطلق على المحور العصبي وما يحيط به من أغلفة (الليفة العصبية Nerve Fiber)، وتختلف المحاور عن بعضها في القطر والطول، وبعض المحاور تكون مغطاة بمادة دهنية بروتينية تسمى غلاف الميلين Myelin Sheath، وتدعى هذه المحاور الألياف الميلينية Myelinated Fibers، ويعمل غلاف الميلين على:</p><p>١- عزل المحور كهربائياً.</p><p>٢- زيادة سرعة انتقال السيل العصبي ١٢٠ م/ث.</p><p>٣- مساعدة الخلية العصبية في ترميم محورها التالف ما عدا خلايا الجهاز العصبي المركزي. بينما بعضها الآخر غير مغطى وتدعى الألياف اللاميلينية Non-myelinated Fibers مثل الخلايا البينية الموجودة في الجهاز العصبي المركزي، وتصل سرعة السيل العصبي في هذه الألياف إلى ما يقرب من ٢,٣ م/ث. وكل ليفة عصبية تمثل محور الخلية العصبية التي يوجد جسمها في الجهاز العصبي المركزي، أو إحدى العقد العصبية، وكل مجموعة ألياف عصبية تحاط</p><p>١٤</p><p>الأحياء: النصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

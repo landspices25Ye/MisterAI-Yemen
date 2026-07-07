@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><h2>عيوب نظرية بوهر وظهور نموذج ( بوهر - سمر فيلد ) :</h2><img src="img-137.jpeg" alt="img-137.jpeg" /><p>شكل (٢٠)</p><p>لقد رأينا مدى النجاح الكبير الذي حققته نظرية بوهر في تفسيرها لأطياف الامتصاص أو الانبعاث لذرة الهيدروجين، إلا أن فحص مختلف الخطوط الطيفية بواسطة مطياف ذي قدرة تحليلية كبيرة، أظهر بأن هذه الخطوط هي أكثر تعقيداً، وأنها في الواقع تتركب من عدة خطوط دقيقة تبدو وكأنها خط واحد عند النظر إليها بمطياف تحليل عادي .</p><p>فمن أجل تفسير ذلك، اقترح ( سمر فيلد ) بعض التعديلات لتحسين نموذج بوهر لذرة الهيدروجين، ومن هذه التعديلات اعتبار مدارات الإلكترون حول النواة قطع ناقصة بشكل عام، وأن فرضية بوهر بأن الإلكترون يتحرك في مدار دائري، كان إفراطاً في التبسيط. ومن المعلوم أن مسار أي جسم يتحرك تحت تأثير قوة تتناسب عكسياً مع مربع المسافة ( كمثل القوة الكهربائية التي تؤثر بها النواة على الإلكترون ) . هو بشكل عام قطع ناقص والمسار الدائري هو حالة خاصة من الحالة العامة . هذا التصحيح أدى إلى فرض عدد كمي آخر يسمى بالعدد الكمي السمتي يرمز له بالرمز ( $‫0$ ) ويأخذ القيم  ‬$0 = 1$‫ ،  ‬$0 = 2$‫ ، وهذا بدوره يؤدي إلى أن كل مدار رئيسي ينقسم إلى ( ‬$0$‫ ) من المدارات الفرعية، فمثلاً المدار الذي يناظر ( ‬$0 = 2$‫ ) ينقسم إلى مدارين ( ‬$0 = 1$‫ ،  ‬$0 = 2$‫ ) شكل ( ‬$0$‫ ب) والمدار الذي يناظر ( ‬$0 = 3$‫ ) ينقسم إلى ثلاثة مدارات تناظر ( ‬$0 = 1$‫ ،  ‬$0 = 2$‫ ،  ‬$0 = 3$‫ ) شكل ( ‬$0$‫ ج) وهذه الثلاثة المدارات، أي مستويات الطاقة، تناظر ثلاثة خطوط طيفية بدلاً من خط طيفي واحد ، أما المدار الأول من أجل  ‬$0 = 1$‫  فلا ينقسم ومداره يمثل مسار دائري شكل ( ‬$1$  ) .</p><p>١٤٠</p><p><http://www.e-learning-moe.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

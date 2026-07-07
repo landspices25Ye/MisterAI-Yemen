@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الأعداد المركبة</p><h1>مثال (١ - ٢)</h1><p>ما الجزء الحقيقي والجزء التخيلي للأعداد المركبة التالية :</p><p>أ) ١٤ - ٥ ت . ب) ٥ - ت . ج) ٥٠ - ٧ . د) ٨ - ٧ × ٢ - ٧ .</p><h1>الحل :</h1><p>أ) ١٤ - ٥ ت = ١٤ + (٥ -) ت .</p><p>∴ الجزء الحقيقي = ١٤ ، والجزء التخيلي = ٥ - .</p><p>ب) ٥ - ت = ٥ - ت .</p><p>∴ الجزء الحقيقي = ٠ ، الجزء التخيلي = ٥ - (مثل هذا العدد يسمى عدداً تخيلياً صرفاً) .</p><p>ج) ٥٠ - ٧ = ٥ - ت = ٢ - ٥ = ٢ - ٥ + ٠ .</p><p>∴ الجزء الحقيقي = ٠ ، الجزء التخيلي = ٢ - ٥ (هل ٥٠ - ٧ تخيلي صرفاً ؟)</p><p>د) ٢ - ٧ × ٨ - ٢ = ٢ - ٧ × ٨ - ٢ = ١٦ - ٢ = ٤ - ٤ + (٠) ت .</p><p>∴ الجزء الحقيقي = ٤ - ، الجزء التخيلي = ٠ (مثل هذا العدد يسمى عدداً حقيقياً صرفاً) .</p><h1>مثال (١ - ٣)</h1><p>أثبت أن : (١ + ت) ٤ (١ + ١/ت) ٤ = ١٦ .</p><h1>الحل :</h1><p>∴ ١/ت = ت [ انظر مثال (١ - ١ ج) ] .</p><p>الطرف الأيمن = (١ + ت) ٤ (١ - ت) ٤ = [ (١ + ت) (١ - ت) ٤ = (١ - ت) ٢ = [ (١ - ١) ] ٤</p><p>= ٢ = ١٦ = الطرف الأيسر .</p><h1>تمثيل الأعداد المركبة في المستوى :</h1><p>من التعريف (١ - ١) نرى أن العدد المركب س + ت ص يتكون من جزأين هما الحقيقي (س) ، والتخيلي (ص) لذا يمكن كتابة العدد المركب بصورة زوج مرتب من الأعداد الحقيقية (س ، ص) المسقط الأول هو الجزء الحقيقي والمسقط الثاني هو الجزء التخيلي ، وعليه يمكن كتابة مجموعة الأعداد المركبة كالتالي :</p><p>م = { (س ، ص) : س ، ص ⊖ ح } .</p><p>٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

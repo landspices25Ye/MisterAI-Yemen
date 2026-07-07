@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>هرمونات الغدد الصماء في الإنسان:</h2><p>– أين تقع الغدد الصماء في جسم الإنسان؟</p><p>أدرس الشكل (٧)، والجدول (٢) لتتعرف على مواقع الغدد الصماء في جسم الإنسان. ستجد أنها منتشرة في الجسم، وهي إما تكون غداً كاملة مثل: الغدة الدرقية، والنخامية، أو نسيجاً متخصصاً في عضو من الأعضاء، كما في المعدة والأمعاء، أو نسيج متخصص في غدة ذات إفراز خارجي (قنوبية) كما هو الحال في البنكرياس. التي تُعد غدة ذات إفراز خارجي، وغدة صماء في نفس الوقت.</p><img src="img-37.jpeg" alt="img-37.jpeg" /><p>الشكل (٧) الغدد الصماء في جسم الإنسان.</p><p>جدول (٢) موقع الغدد الصماء في جسم الإنسان</p><p>|  اسم الغدة الصماء | موقعها في الجسم  |
+| --- | --- |
+|  – الغدة النخامية. | أسفل الدماغ في قاع الجمجمة.  |
+|  – الغدة الدرقية. | على السطح الأمامي للقصبة الهوائية أسفل الحنجرة.  |
+|  – غدد الجاردرقية. | على السطح الخلفي للغدة الدرقية.  |
+|  – الغدتان الكظريتان. | غدة فوق كل كلية.  |
+|  – جزر لألجر هانز. | في البنكرياس.  |
+|  – غدد القناة الهضمية الصماء. | أنسجة متخصصة في كل من المعدة والأمعاء.  |
+|  – الغدد التناسلية. | في خصبة الذكر، وفي مبيض الأنثى.  |
+|  – المشيمة. | داخل الرحم في أثناء الحمل.  |</p><p>ولكل نوع من هذه الغدد إفراز هرموني متخصص كما يأتي:</p><p>٥٠</p><p>الأحياء: للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

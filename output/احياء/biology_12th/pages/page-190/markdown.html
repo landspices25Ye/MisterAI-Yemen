@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>أنواع عدم التوافق عديدة أهمها :</h2><h3>١- عدم التوافق الحتمي (Erosional Unconformity) :</h3><img src="img-140.jpeg" alt="img-140.jpeg" /><p>الشكل (٣) عدم التوافق الحتمي</p><p>انظر الشكل (٣) تلاحظ مجموعتين من الطبقات السفلى الأقدم والعليا الأحدث، وبينهما سطح متعرج (س) يدل على أن طبقة أو عدة طبقات كانت بين المجموعتين لكنها الآن غير موجودة لتعرضها لعوامل التعرية، ويسمى السطح الفاصل المتعرج بسطح عدم التوافق.</p><h3>٢- عدم التوافق الزاوي (Angular Unconformity) :</h3><img src="img-141.jpeg" alt="img-141.jpeg" /><p>الشكل (٤) عدم التوافق الزاوي</p><p>في هذا النوع تكون مجموعة الطبقات الأقدم مائلة، أما مجموعة الطبقات الأحدث فهي أفقية كما يظهر في الشكل (٤) وما يميز هذا النوع عن السابق هو أن الصخور قد تعرضت إلى حركات أرضية، بعد انحسار البحر، أدت إلى ميلانها قبل حدوث الترسيب مرة أخرى للمجموعة الأحدث. ويستدل هنا على حدوث عدم التوافق من وجود طبقة صخور الكوخوليميرات (حصى وزلط) بقاعدة المجموعة العليا الأحدث.</p><h3>٣- اللاتوافق (Nonconformity) :</h3><img src="img-142.jpeg" alt="img-142.jpeg" /><p>الشكل (٥) عدم التوافق المتباين</p><p>يحدث اللاتوافق عندما تترسب صخور رسوبية فوق صخور نارية أو متحولة، ويعد السطح بينهما سطحاً لا متوافقاً، لأنه يمثل فترة انقطاع في الترسيب في وقت تكون الصخور النارية والمتحولة كما في الشكل (٥). وبناء على ما سبق يمكن تعريف سطح عدم التوافق بأنه: سطح يفصل بين مجموعتين من الصخور إحداهما قديمة والأخرى أحدث منها،</p><p>١٩٠</p><p>الأحياء للصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

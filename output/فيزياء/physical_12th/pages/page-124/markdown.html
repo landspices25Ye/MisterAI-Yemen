@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>في حجم صغير جداً في مركز الذرة سماه النواة، وهذا يفسر ارتداد عدد قليل من جسيمات ألفا. وأن الإلكترونات ذات الشحنة السالبة تتوزع حول النواة في مدارات شبيهة بمدارات الكواكب السيارة في النظام الشمسي، بحيث تتعادل شحنتها السالبة مع الشحنة الموجبة للنواة. وبما أن حجم الإلكترون صغير جداً بالنسبة لأبعاد الذرة، فيمكن أن يعتبر معظم حجم الذرة المحيط بالنواة فراغاً، وهذا يفسر لماذا معظم جسيمات ألفا الساقطة على الصفيحة الذهبية تجتازها دون أن تعاني من أي انحراف. وهكذا فهذا النموذج وطُعد نفسه وأصبح يعرف بالنظام النووي، والشكل (١٠) يبين صورة تخيلية تقريبية لهذا النموذج.</p><h3>عيوب نموذج (رذرفورد) :</h3><img src="img-123.jpeg" alt="img-123.jpeg" /><p>شكل (١٠)</p><p>وفقاً لهذا النموذج، لا يمكن أن تكون الذرة مستقرة من وجهة نظر الفيزياء الكلاسيكية، لأنه إذا كان الإلكترون في ذرة الهيدروجين يتحرك حول النواة حركة دائرية فإن شحنته (سم) تتعجل وبالتالي فإنها يجب أن تشع طاقة باستمرار بحسب ما تنص عليه النظرية الكهرومغناطيسية، أي أن ذرة الهيدروجين يجب أن تبعث طيفاً مستمراً (متصلاً). وفي هذه العملية الإشعاعية المستمرة لابد أن يفقد الإلكترون طاقته تدريجياً وفي النهاية ينهار ويسقط على النواة مندمجاً معها، انظر الشكل (١١).</p><p>ولكن هذا مخالف للواقع ولم يحدث مثل هذا الاندماج. فذرة الهيدروجين ذرة مستقرة وأكثر من ذلك فهي لا تشع طيفاً متصلاً وإنما طيفاً خطياً.</p><img src="img-124.jpeg" alt="img-124.jpeg" /><p>شكل (١١)</p><p>فهذا يعتبر عجزاً آخر للفيزياء التقليدية في عدم استطاعتها تفسير الظواهر الذرية.</p><p>فوتون ضوئي hf</p><p>لذلك فنظرية (رذرفورد) هذه لا يمكن قبولها، ولا بد</p><p>من البحث عن نظرية أخرى تحل هذه المعضلة، نظرية فذة جديدة لها من الجديد كما كان لنموذج</p><p>(رذرفورد) نفسه حين وضع النموذج النووي للذرة. وهذا ما فعله بلانك حين افترض تكميم الطاقة الإشعاعية.</p><p>١٢٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

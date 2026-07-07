@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-77.jpeg" alt="img-77.jpeg" /><p>الشخصيات في القصص تتخلد أكثر من بعض شخصيات الواقع. فالقصة والرواية عالم سحري جميل باللغة والشخصيات والأزمنة والأمكنة والأحداث، وما بين هذه العناصر من خصيب الخيال وبديع الجمال.</p><h2>أنواع القصة</h2><p>هناك ثلاثة مستويات للقصة: القصة، والرواية، والقصة القصيرة.</p><h3>١ - القصة:</h3><p>القصة عمل فني سردي يقوم على:</p><p>- السرد: ومعناه تتابع الأحداث.</p><p>- الوصف: ومعناه نقل صورة عن الإنسان والمكان وغيرها.</p><p>- الحوار: ومعناه المراجعة وتبادل الكلام بين شخصين أو أكثر.</p><p>وعند الحديث عن القصة يجب استبعاد الحكاية، والقصة الخرافية مما يتداوله الأطفال والشيوخ حين يتسلون بسرد مثل هذه الحكايات، ويجب استبعاد الأخبار المنقولة من الواقع مثل الحوادث التي يسردها الناس لبعضهم كما وقعت في البيوت والشوارع ومختلف أماكن المجتمع.</p><p>ومصطلح القصة بشكل عام يشمل الأقصوصة، والقصة المتوسطة، والرواية، وحتى المسرحية، فهو كذلك لدى الدكتور محمد يوسف نجم في كتابه «فن القصة». وقد يرى البعض أن القصة فن بمنزلة وسطى بين القصة القصيرة أو الأقصوصة والرواية. فإذا كانت القصة القصيرة لا تتجاوز بضع صفحات فإن القصة تكون بين القصة القصيرة والرواية التي تتجاوز المائة صفحة، بل إن بعضها يتجاوز الألف صفحة، ولاسيما إذا كانت أجزاء متعددة مثل «مدن الملح» ذات الأجزاء الخمسة لعبد الرحمن منيف، والثلاثية لنجيب محفوظ (بين القصرين، وقصر الشوق، والسكرية).</p><p>وربما يوحي مصطلح «القصة» لدى البعض بغلبة العنصر الخيالي، مقابل غلبة الواقعية على الرواية، لكننا سنتعامل مع القصة بأنها مادة أدبية أصغر من الرواية، إلا أنها هي والرواية تأخذ كل واحدة منهما مسمى الأخرى، فكلاهما عمل أدبي سردي في الأساس، مع ما يتخلل هذا السرد من الوصف والحوار.</p><p>ومعنى هذا أن القصة أو الرواية لا شأن لهما بالمسرحية كما سيتضح فيما بعد.</p><p>السرد والوصف والحوار في «ليته لم يعد»:</p><p>٢٠٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

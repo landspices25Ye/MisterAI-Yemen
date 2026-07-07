@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-22.jpeg" alt="img-22.jpeg" /><p>الوحدة الأولى</p><p>فإنه يمكن التعبير عن النقطة (س ، ص) أو العدد</p><p>المركب (س + ت ص) بدلالة م ، هـ :</p><p>$‫م = |\sqrt{أ} + س + ت ص| = \sqrt{أ} + س + ت ص‬$‫</p><p>[ مبرهنة فيثاغورث ]</p><p>من الشكل (١-٧) نلاحظ أن :</p><img src="img-23.jpeg" alt="img-23.jpeg" /><p>شكل (١-٧)</p><p>‬$‫جتا هـ = \frac{س}{م} \Leftarrow س = م \quad جتا هـ‬$‫</p><p>‬$‫جا هـ = \frac{ص}{م} \Leftarrow ص = م \quad جا هـ‬$‫</p><p>∴ س + ت ص = م جتا هـ + م ت جا هـ = م (جتا هـ + ت جا هـ) .</p><p>وهذه تسمى بالصورة القطبية (أو المثلثية) ، ويسمى م بمقياس العدد المركب (أو طوله) ، وتسمى هـ</p><p>بسعة العدد المركب (أو زاويته) .</p><h1>تعريف (١-٦)</h1><p>الصورة القطبية للعدد ع = س + ت ص هي ع = م (جتا هـ + ت جا هـ) حيث م = |ع| (مقياس العدد ع) ، هـ سعته ، وتُكتب اختصاراً بالصورة ع = [م ، هـ] .</p><h1>مثال (١-١٤)</h1><p>أوجد مقياس وسعة العدد المركب (١-٣) .</p><h1>الحل :</h1><p>لإيجاد مقياس العدد المركب (١-٣) نحسب م = ١-٣ ، ص = ١-٣ .</p><p>‬$‫م = |\sqrt{٣} + ١-٣| = ٢‬$‫</p><p>ولإيجاد سعة العدد المركب (هـ) :</p><p>‬$‫جتا هـ = \frac{س}{م} = \frac{١-}{٢} ، جا هـ = \frac{ص}{م} = \frac{\sqrt{٣}}{٢}‬$‫</p><p>وبما أن جتا هـ < ٠ ، جا هـ < ٠ ، إذن هـ تقع في الربع الثاني</p><p>‬$‫السعة (هـ) = \frac{\pi}{٣} - \frac{\pi}{٢}‬$</p><p>٢٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

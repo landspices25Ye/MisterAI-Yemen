@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>|  Oscilloscope | كاشف الذبابات (اسيلوسكوب)  |
+| --- | --- |
+|  Paschen series | سلسلة باشن  |
+|  Pbund series | سلسلة بفواند  |
+|  Planck's quant zation of energy | تكميم بلانك للطاقة  |
+|  Phase | طور  |
+|  Photo electron | إلكترون ضوئي  |
+|  Photo electric cells | الخلايا الكهروضوئية  |
+|  Photo electric electrons emitten | باعث إلكترونات ضوئية  |
+|  Photon | فوتون  |
+|  P-N Jumction | الوصلة الثنائية من نوع (P-N)  |
+|  Polyatomic structure | التركيب البلوري  |
+|  Principal Quntum number | العدد الكمي الرئيس  |
+|  Population inversion | استيطان عكسي  |
+|  Projectiles | المقذوفات  |
+|  Postive hole | الفجوة الموجبة  |
+|  P-Type semiconductor | بلورة من النوع الموجب (بلورة مستقلة)  |
+|  Potential barrier | الجهد الحاجز  |
+|  Pure semiconductors | أشباه موصلات نقية  |
+|  Quanta | كمات  |
+|  Quantum mechanics | ميكانيكا الكم  |
+|  Quantum theory | نظرية الكم  |
+|  Radar | رادار  |
+|  Radioactivity | النشاط الإشعاعي  |
+|  Radioactivity decay | التحلل الإشعاعي  |
+|  Radiation | إشعاع  |
+|  Radiation Energy | الطاقة الإشعاعية  |
+|  Radio Waves | الموجات الراديوية  |
+|  Red Giant | العملاق الأحمر  |
+|  Reversing Switch | مفتاح عاكس (مزدوج)  |
+|  Renewable Energy | طاقة متجددة  |
+|  Rockets prpulsion | صواريخ ذاتية الدفع  |</p><p>٢١٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

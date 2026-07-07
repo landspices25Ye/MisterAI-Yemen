@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>مثال (٥) :</h2><p>ثلاثة مكثفات سعاتها ( ٢٠ ، ٤٠ ، ٦٠ ) ميكروفاراد وصلت بمصدر تيار متردد جهده ( ٢٠٠ ) فولت وتردده ( ٣٥ هيرتز ) احسب شدة التيار في حالة توصيلها :</p><p>١- على التوالي
+٢- على التوازي .</p><h3>الحل :</h3><p>ملحوظة : يستخدم قانون أوم عند نفس اللحظة للجهد والتيار .</p><h3>أولاً : في حالة التوصيل على التوالي :</h3><p>$‫\frac{1}{\text{سع} \text{ك}} = \frac{1}{\text{سع} \text{ك}} + \frac{1}{\text{سع} \text{ك}} + \frac{1}{\text{سع} \text{ك}}‬$‫</p><p>‬$‫\frac{1}{\text{سع} \text{ك}} = \frac{1}{\text{سع} \text{ك}} + \frac{1}{\text{سع} \text{ك}} + \frac{2+3+6}{120} = \frac{11}{120} \text{ (ميكروفاراد)}^{-1}‬$‫</p><p>‬$‫\therefore \text{سع} \text{ك} = \frac{120}{11} \text{ ميكروفاراد} = \frac{120}{11} \times 10^{-6} \text{ فاراد}‬$‫</p><p>‬$‫\therefore \text{المفاعلة السعوية الكلية} = \frac{1}{\text{سع} \text{ك} \text{ك}} = \text{سع} \text{ك}‬$‫</p><p>‬$‫\text{المفاعلة السعوية الكلية} = \frac{1000000}{2400} = \frac{10000}{24} = 416.7 \text{ أوم}‬$‫</p><p>‬$‫\therefore \text{ت} = \frac{\text{ج}}{\text{سع} \text{ك}} = \frac{200}{416.7} = 0.48 \text{ أمبير}‬$‫</p><h3>ثانياً : في حالة التوصيل على التوازي :</h3><p>‬$‫\text{سع} \text{ك} = 20 + 40 + 60 = 120 \text{ ميكروفاراد} = 12 \times 10^{-5} \text{ فاراد}‬$‫</p><p>‬$‫\text{المفاعلة السعوية الكلية} = \frac{10 \times 1}{12 \times 35 \times 22 \times 2} = \frac{10 \times 1}{5 \times 12 \times 44} \text{ أوم}‬$‫</p><p>‬$‫\text{سع} \text{ك} = \frac{10}{60 \times 44} = \frac{10000}{264} = 37.88 \text{ أوم}‬$‫</p><p>‬$‫\therefore \text{ت} = \frac{\text{ج}}{\text{سع} \text{ك}} = \frac{200}{37.88} = 5.28 \text{ أمبير}‬$</p><p>٥٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

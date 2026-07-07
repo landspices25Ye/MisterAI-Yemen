@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>جدول (٣) التغيرات التي تحدث لليفة العصبية عند تأثرها بمؤثر</h1><p>|  اسم المرحلة | التغيرات التي تحدث في الليفة العصبية  |
+| --- | --- |
+|  زوال الاستقطاب Depolarization | وصول مؤثر لمنطقة التأثير يؤدي إلى توقف مضخة صوديوم - بوتاسيوم، وفتح قنوات الصوديوم في غشاء الليفة العصبية فتنتشر أيونات الصوديوم إلى داخل الليفة فيرتفع الجهد الداخلي لها إلى (٣٠+) ميلي فولت، وعندما تغلق قنوات الصوديوم.  |
+|  إعادة الاستقطاب Repolarization | عند إغلاق قنوات الصوديوم تفتح قنوات البوتاسيوم الموجودة على غشاء الليفة العصبية، فتنتشر أيونات البوتاسيوم وينخفض فرق الجهد لليفة العصبية.  |</p><p>لاحظ أن التغيرات الكهربائية التي ترافق زوال الاستقطاب، وإعادته، يطلق عليها جهد الفعل، وهنا يمكن أن يعرف السيل العصبي بأنه موجة من إزالة الاستقطاب تسري في محور الخلية العصبية بعد تنبيه تلك الخلية، ويصاحبها تكون جهد فعل عند نقاط متعددة على طول المحور.</p><img src="img-11.jpeg" alt="img-11.jpeg" /><p>– كيف تعود الليفة العصبية إلى جهد الراحة؟</p><p>بعد اختفاء جهد الفعل تعمل مضخة الصوديوم - بوتاسيوم على إعادة الليفة العصبية إلى حالة الاستقطاب بإخراج أيونات الصوديوم وإدخال أيونات البوتاسيوم لتعود الخلية إلى وضعها في جهد الراحة.</p><p>■ آلية انتقال السيل العصبي في الألياف العصبية :</p><p>انظر الشكل (٩)، ولاحظ كيف ينتقل السيل العصبي في الألياف العصبية غير المليئة ينتقل بطريقة التأثير الدائري الموضعي.</p><p>الشكل (٩) انتقال السيل العصبي في الألياف غير المليئة بطريقة التأثير الدائري الموضعي.</p><p>الأحياء للصف الثالث الثانوي</p><p>١٧</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

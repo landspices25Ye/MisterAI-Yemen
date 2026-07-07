@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>٣- استبدال البطارية السابقة بمصدر تيار متردد ولكن قوته الدافعة من (٣-٦) فولت، كما في الشكل (٧) ثم أقفل الدائرة بواسطة المفتاح، ولاحظ ما يحدث للمصباح. لا شك أنه سيضيء، ما سبب ذلك؟</p><p>من خلال النشاط نستنتج أن التيار المتردد يمر من أحد لوحي المكثف الكهربائي إلى اللوح الآخر المتصل بالدائرة مع مصدر التيار المتردد على التوالي في الدائرة الخارجية فقط، ولا يمر عبر المكثف نفسه، وكذلك لا يمر التيار المستمر خلال لوحي المكثف لوجود مادة عازلة بينهما.</p><h3>مكثف متصل بمصدر تيار متردد :</h3><img src="img-41.jpeg" alt="img-41.jpeg" /><p>شكل (٨)</p><p>يوضح الشكل (٨) دائرة مكثف سعته (سع) وصل بمصدر تيار كهربائي متردد. ففي النصف الأول لدورة التيار المتردد يشحن المكثف حتى يصل فرق الجهد بين لوحيه إلى قيمة عظمى (ج = ج ع) وتكون الشحنات (س) عليه أعلى ما</p><p>يمكن، وعند ذلك يتوقف الشحن وينعدم التيار في الدائرة (ت = صفر). وعندما تبدأ القوة الدافعة الكهربائية (ق) للمصدر بالهبوط، ويبدأ جهد المكثف بالانخفاض ويقوم المكثف بتفريغ شحنته حتى يصل معدل التفريغ (أي التيار) إلى قيمته العظمى (سالبة) ت = - ت ع عندها يكون المكثف مفرغاً تماماً من الشحنات وينعدم فرق الجهد بين لوحيه (ج = صفر).</p><p>وفي النصف الثاني لدورة التيار المتردد يسري التيار في الاتجاه المعاكس ويشحن المكثف مرة أخرى، ولكن بشحنات مضادة على لوحيه حتى يصل فرق الجهد بينهما إلى قيمة عظمى سالبة (ج = - ج ع) وتكون الشحنات (س) عليه أعلى ما يمكن، وعند ذلك يتوقف الشحن وينعدم التيار في الدائرة (ت = صفر). ثم يبدأ جهد المكثف بالانخفاض مرة أخرى ويقوم المكثف بتفريغ شحنته حتى يصل التيار إلى قيمة عظمى موجبة (ت = + ت ع) عندها يكون المكثف مفرغاً تماماً من الشحنات وفرق الجهد بين لوحيه صفراً (ج = صفر)، وذلك عند انتهاء النصف الثاني لدورة التيار المتردد.</p><p>٤٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

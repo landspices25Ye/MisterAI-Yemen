@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الجزيئية التي تمّ التوصل إليها عند دراسة هذه المركبات، وهي (Cn H2n On). وتُعدُّ الكربوهيدرات من أهم مصادر الطاقة الكيميائية في الكائنات الحية، فعند تأكدها تمّد الجسم بأكثر من نصف الطاقة التي يحتاجها جسم الكائن الحي. وتنتشر الكربوهيدرات في النبات بشكل كبير، حيث تصل نسبتها في جسم النبات إلى ما يقارب ٧٠٪ من وزنه، إذ أن السليليوز والنشا والأنبولين والصمغ كلها مركبات كربوهيدراتية. أما في جسم الحيوان فتوجد الكربوهيدرات بدرجة قليلة في الدم وفي الكبد والعضلات.</p><h1>التركيب الكيميائي للكربوهيدرات:</h1><p>كما سبق التوضيح فإن الكربوهيدرات هي عبارة عن مركبات عضوية تكون نسبة الهيدروجين إلى الأكسجين فيها هو ٢ : ١، وهذه النسبة هي نفسها الموجودة في جزيء الماء.</p><h1>ملاحظة</h1><p>بعض المركبات العضوية تمتلك نفس الصيغة العامة إلا أنها ليست من الكربوهيدرات ومثال ذلك حمض الخليك (الأسيتيك) C2 H4 O2. كما توجد بعض الكربوهيدرات التي لا تملك نفس الصيغة العامة ومثال ذلك سكر الرامنوز C6 H12 O5.</p><h1>تصنيف الكربوهيدرات:</h1><p>تُصنّف الكربوهيدرات إلى ثلاثة أصناف رئيسة هي: السكريات الأحادية، والسكريات المحدودة، والسكريات العديدة.</p><h1>١- السكريات الأحادية Monosaccharides</h1><p>إن أبسط المركبات الكربوهيدراتية هي السكريات الأحادية التي لا يمكن أن تتحلل أو تتجزأ إلى سكريات أبسط منها، ومثل هذا النوع من السكريات توجد بكثرة في بعض الأغذية. فمثلاً الجلوكوز يوجد في العنب (سكر العنب) والفركتوز يوجد في الفواكه (سكر الفواكه) شكل (٦-٢).</p><img src="img-97.jpeg" alt="img-97.jpeg" /><p>شكل (٦-٢) بعض الفواكه المحتوية على سكريات أحادية</p><p>١٠٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

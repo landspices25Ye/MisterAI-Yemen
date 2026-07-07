@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-13.jpeg" alt="img-13.jpeg" /><p>- ٥- لاستشراف المستقبل ثلاثة مستويات من الدراسة، تحدث عن هذه المستويات.
+- ٦- ما الذي يدل على تزايد الاهتمام في الدول المتقدمة بدراسة المستقبل؟
+- ٧- بم تفسر تخلف الدول العربية في مجال دراسات المستقبل؟</p><h2>التدريبات اللغوية</h2><p>- ١- ضع كل كلمة مما يأتي في جملة من إنشائك توضح معناها:
+(الرؤى - مسار - الحِيطَة - البحتة).
+- ٢- ابحث في المعجم عن معاني الكلمات الآتية:
+(أحرز - التكيف - ملابسات).
+- ٣- اقرأ الفقرة الآتية، ثم أجب عن الأسئلة التي تليها:
+«لم تعد دراسة المستقبل، أو استشرافه مجرد قراءة كَفّ، أو طالع، بل أضحت عملية بحث علمي في مجال ما. تبدأ من الماضي، وتدرس الحاضر بعناية لاستبصار آفاق المستقبل واتجاهاته، وعوامل التغير فيه بشكل كلي».
+أ - املأ الفراغ بالكلمة المناسبة فيما يأتي:
+- جمع كلمة (كفّ) : ( ... )
+- مرادف كلمة (استبصار) : ( ... )
+- مفرد كلمة (آفاق) : ( ... )
+ب - كلمة (المستقبل) اسم مشتق فما نوعه؟
+ج - أذكر أوزان المصادر الآتية:
+(دراسة - استشراف - استبصار).
+- ٤- وضح الفرق في معنى كل كلمة من الكلمات الآتية، مستعيناً بالمعجم عند الحاجة:
+(التنجيم - الكهانة - الشعوذة).
+- ٥- اقرأ الفقرة الآتية، ثم أجب عن الأسئلة التي تليها:
+«إن استشراف المستقبل لم يعد مجرد مسألة إشباع الرغبة الطبيعية لدى الإنسان في التعرف على المجهول، وإنما أصبح مطلباً أساسياً وضرورياً لتحقيق التوافق مع المتغيرات المرتقبة في مختلف مجالات الحياة».</p><p>٤٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

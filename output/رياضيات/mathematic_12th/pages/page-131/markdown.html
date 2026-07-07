@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>القطوع المحروطة</p><h1>دوران المحاور الإحداثية</h1><p>٤ - ٦</p><p>إذا دار المحوران س و ص حول نقطة الأصل إلى وضع س و ص كما في الشكل (٤-٢٤)، فإن العلاقة بين الإحداثي (س، ص) في النظام الأول والإحداثي (س، ص) في النظام الثاني لنقطة</p><p>و في المستوى يمكن توضيحها على النحو التالي:</p><p>لتكن هـ قياس دوران زاوية المحورين في اتجاه ضد</p><p>حركة عقارب الساعة، هـ قياس الزاوية المحصورة</p><p>بين المحور و س والقطعة المستقيمة و و.</p><p>فإذا كان م يرمز لطول القطعة المستقيمة و و،</p><p>فإن:</p><p>س = م جتا (هـ + هـ)، ص = م جا (هـ + هـ)</p><p>باستخدام صيغتي الجيب وجيب التمام لمجموع</p><p>زاويتين نحصل على:</p><p>س = م جتاه جتاه - م جاه جاه</p><p>ص = م جتاه جاه + م جاه جتاه</p><p>ولكن س = م جتاه، ص = م جاه،</p><p>وبالتعويض في المعادلتين الأخيرتين نجد أن:</p><p>س = س جتاه - ص جاه</p><p>ص = س جاه + ص جتاه</p><p>... (٤-١٠)</p><p>هاتان المعادلتان تعطيان إحداثي و في النظام س و ص بدلالة إحداثيها في النظام س و ص.</p><p>وتسميان معادلتي الدوران.</p><img src="img-105.jpeg" alt="img-105.jpeg" /><p>شكل (٤-٢٤)</p><p>١٢٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

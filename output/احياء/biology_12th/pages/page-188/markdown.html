@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>تاريخ الأرض</h2><p>هو مجموعة الظروف والأحداث التي مرت على تكون الصخور والطبقات الأرضية.</p><p>- ما المبادئ التي اعتمدت في تاريخ الأرض؟</p><p>- كيف تمكن العلماء من تقسيم الزمن الجيولوجي للأرض؟</p><p>لا يمكن الإلمام بتاريخ الأرض إلا إذا قسم إلى وحدات كبيرة وصغيرة، وتعتبر طبقات الصخور الرسوبية أصغر وحدة في تاريخ الأرض، وما تحتويه الطبقات من رواسب وأحافير دليل على زمن نشأة وتكون هذه الطبقات.</p><p>كيف تتكون الطبقات؟ وماذا تختلف الطبقات عن بعضها البعض؟</p><h3>● أولاً: الصخور الرسوبية (الطبقية):</h3><img src="img-138.jpeg" alt="img-138.jpeg" /><p>الشكل (١) طبقات رسوبية متعاقبة</p><p>توجد الصخور الطبقية في الطبيعة على شكل طبقات أفقية (متوازية) أو قريبة من الوضع الأفقي، وتتراكم فوق بعضها لتكون تعاقبات طبقية كما يظهر في الشكل (١)، ويسمى هذا بالتطبيق، ووحدته هي: الطبقة وهي أصغر وحدة صخرية تتراوح في سماكتها بين جزء من</p><p>الستيمتر إلى عدة أمتار حسب استمرارية مجالس المواد المترسبة فيها، وظروف التعرية والنقل وفترة الترسيب. فالطبقات الرقيقة كما تلاحظ في الشكل تمثل فترات ترسيب قصيرة، بينما الطبقات الأسمك تمثل فترات ترسيب أطول.</p><h3>- الطبقة (Stratum):</h3><p>يمكن تعريف الطبقة بأنها وحدة مسطحة من الصخور الرسوبية لها تركيب معدني ونسيج مميز وقد تكون كُتليَّة، أو تحري تراكيب داخلية محددة أو تكون كُتليَّة تميزها عما فوقها وعما تحتها، ولكل طبقة سطح علوي وسطح سفلي، يفصلانها عن بقية الطبقات انظر الشكل (١). ويتكون التعاقب أو التتابع الطبقي؛ لأن الطبقة الواحدة تترسب في ظروف فيزيائية وكيميائية وبيولوجية محددة، وإذا اختلفت هذه الظروف أو إحداها يؤدي ذلك إلى انتهاء تكوين الطبقة السابقة، وبدء</p><p>١٨٨</p><p>الأحياء: النصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

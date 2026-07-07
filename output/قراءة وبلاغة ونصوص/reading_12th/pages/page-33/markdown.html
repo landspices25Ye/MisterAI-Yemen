@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>ولم أكنْ أعرف حين هويت القراءة أنني أبحث عن هذا كله، أو أنَّ هذه الهواية تصدر من هذه الرغبة، ولكنني هويتها، ونظرت في موضوعات ما أقرأ فلم أجد بينها من صلة غير هذه الصلة الجامعة، وهي التي تتقارب بها القراءة عن فراشة، والقراءة عن المعرِّي وشكسبير.</p><p>لا أحب القراءة لأنني زاهدٌ في الحياة، ولكنني أحب القراءة لأنَّ حياةً واحدةً لا تكفيني. ومهما يأكل الإنسان، فإنَّه لن يأكل بأكثر من معدة واحدة، ومهما يلبس فإنه لن يلبس على غير جسد واحد، ومهما ينتقل في البلاد فإنه لا يستطيع أن يحلَّ في مكانين، ولكنه بزيادة الفكر والشعور والخيال يستطيع أن يجمع الحيوات في عمر واحد، ويستطيع أن يضاعف فكره وشعوره وخياله كما يتضاعف الشعور بالحب المتبادل، وتتضاعف الصورة بين مرأتين.</p><h3>معاني المفردات والتراكيب اللغوية</h3><p>|  الكلمة | معناها  |
+| --- | --- |
+|  غرائز الحشرات | طباعها.  |
+|  أقتضب الكلام | أقتطعه وأوجزه.  |
+|  الأحياء الدنيا | المخلوقات البسيطة.  |
+|  اللَّأَرَب | الثابت.  |
+|  فُصَارَى الأمر | غايته ومنتهاه.  |
+|  قِيسَان | مثنى قيس، وهو النار، أو شعلة منها.  |
+|  جيشان الحياة | نبض الحياة وحركتها.  |</p><p>٣١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

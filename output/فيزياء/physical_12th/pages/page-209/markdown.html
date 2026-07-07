@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>إِلَّا أَنَّهُ وَفِي بَعْضِ الْأَحْيَانِ لَا يَمُرُّ النَّجْمُ بِهَذِهِ التَّطَوُّرَاتِ وَلَكِنَّهُ يَمُرُّ بِتَغْيِيرَاتٍ مَدْمَرَةٍ، فَهُوَ يَتَمَدَّدُ وَيَنْكَمِشُ مَرَّاتٍ عَدِيدَةٍ، وَبِالْقُرْبِ مِنْ نِهَايَةِ حَيَاتِهِ يَنْفَجِرُ انْفِجَارًا ضَخْمًا، وَيُسَمَّى النَّجْمُ فِي هَذِهِ الْحَالَةِ بِالنَّجْمِ السَّاطِعِ Supernova ، وَيُمْكِنُ أَنْ يَنْتَجَ ضَوْءًا ضَخْمًا كَالضَّوْءِ الَّذِي تَصْدُرُهُ الْمَجْرَةُ كُلُّهَا، وَالْمَوَادُّ الَّتِي تَقْذِفُهَا هَذِهِ النُّجُومُ فِي الْفَضَاءِ تَقْذِفُ بِسُرْعَاتٍ عَظِيمَةٍ .</p><p>وَلَا يَسَعُنَا أَمَامَ هَذِهِ الظَّاهِرَةِ إِلَّا أَنْ نَسْبَحَ بِقُدْرَةِ اللَّهِ الْخَالِقِ الَّذِي أَقْسَمَ بِالنَّجْمِ الثَّاقِبِ حَيْثُ قَالَ : ﴿ وَالسَّمَاءِ وَالطَّارِقِ ۝ وَمَا أَدْرَاكَ مَا الطَّارِقُ ۝ النَّجْمُ الثَّاقِبُ ﴾
+سورة الطارق ( ١ ) .</p><p>وَإِذَا تَقَلَّصَ حَجْمُ النَّجْمِ بِشَكْلٍ كَبِيرٍ فَقَدْ يَصِلُ إِلَى ( ٥ كَم ٣ ) وَلَكِنْ كَتَلْتَهُ تَظَلُّ ثَابِتَةً وَتَسَاوَى أَرْبَعُ مَرَّاتٍ كَتِلَّةِ الشَّمْسِ وَتَكُونُ جَاذِبِيَّتُهُ قَوِيَّةً جِدًّا، وَأَيُّ جَسْمٍ يَصِلُ إِلَى هَذَا النَّجْمِ فَإِنَّهُ لَا يَسْتَطِيعُ الْمُغَادَرَةَ إِلَى دَرَجَةٍ أَنَّ الضَّوْءَ نَفْسَهُ لَا يَسْتَطِيعُ النَّفَّاذَ مِنْهُ فَيَعْرِفُ النَّجْمَ فِي هَذِهِ الْمَرْحَلَةِ بِالثَّقْبِ الْأَسْوَدِ Black Hole ، وَيُصْبِحُ بِإِمْكَانِ هَذَا الثَّقْبِ التِّهَامَ النُّجُومَ .</p><p>– عَرَفَ الثَّقْبَ الْأَسْوَدَ .</p><p>٢٠٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

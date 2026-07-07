@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-62.jpeg" alt="img-62.jpeg" /><p>أما الجانب الفني القصصي فقد أبدع فيه الكاتب فيما يأتي:</p><p>- تحديد الراوي أو البطل: الذي يمكن أن نسميه شاهد عيان، وهو الحاج مصطفى البشتيلي ليتمكن بواسطته أن ينقل أدق التفاصيل، ويصوّر الأحداث بشكل واقعي، بأسلوب السرد القصصي؛ لأنه بدون تحديد البطل إما أن تسمى لكل حدث جزئي شخصية أو أشخاص، وفيه تنويه للقارئ بين زحمة الأسماء، وإما أن تأتي القصة سردية وصفية دون ذكر أسماء، وهذا قد يوهم أن الكاتب عايش الحدث وشاهد تفاصيله بنفسه، والواقع غير ذلك، فلا بد من تحديد شخصية أو أشخاص للقصة إما حقيقة أو تخيلاً، لتكون أكثر قابلية ومصداقية في هذا النوع من القصص التاريخي.</p><p>- تحديد المكان: الذي وقع فيه الحدث، وهو هنا ينتقل ما بين بيت البشتيلي والجامع الأزهر، وشوارع القاهرة، والكل معروف، أو موصف في الحلقات السابقة، وفي هذا الجزء من الرواية.</p><p>- تحديد الزمان: الذي حدث فيه الحدث، وهو هنا نهاية القرن الثامن عشر الميلادي، يُعيد الحملة الفرنسية لاحتلال مصر بقيادة «نابليون» القائد الفرنسي، وبدون تحديد الزمان والمكان يصبح السرد القصصي خارج الخيال!</p><p>- وجود صراع بين قوى ومصالح متعارضة، وهو هنا بين الحاج مصطفى وزوجته، وبين الثوار والمحتلين، وبين الجماهير المتدفقة والقاضي التركي.. فإذا لم يوجد صراع في القصة فإنها تستحيل إلى تعبير ذاتي غير واقعي!</p><p>- الحبكة: ويقصد بها تدرج الأحداث وتسلسلها وترابطها موجهة إلى هدفها الخاص والعام، وفي هذا النص بدأت بإظهار مشاعر زوجة البشتيلي المتخوفة من فشل المقاومة مرة أخرى، ثم تطورت الحبكة بالحوار بينها وبين زوجها، ثم توسعت بانتقاله إلى الأزهر، ثم ازدادت برسم مشاهد بين الجماهير المحتشدة بمختلف مستوياتهم</p><p>١٦٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

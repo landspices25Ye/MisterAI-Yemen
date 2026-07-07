@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>مكونات البترول الخام (النفط):</h2><p>البترول الخام (النفط) عبارة عن سائل غليظ القوام يميل لونه إلى اللون البني المخضر الداكن وأحياناً يكون لونه أسود؛ لذلك يقال بأن النفط هو الذهب الأسود. ويوجد البترول مخزوناً في باطن الأرض في تجمعات تعرف بـ «مكامن أو مصايد النفط»، وهو يتميز برائحة غير مستحبة، ويحتوي البترول الخام بشكل عام على خليط من المركبات الهيدروكربونية الأليفاتية والأروماتية، بالإضافة إلى نسب مختلفة من بعض المركبات الكبريتية والنيتروجينية. وتتدرج الأوزان الجزيئية لهذه المركبات من الخفيف مثل الميثان إلى الجزيئات ذات الوزن الجزيئي المرتفع.</p><p>ويوضح الجدول (١-٧) أهم العناصر التي تدخل في تركيب النفط بشكل عام ونسب هذه العناصر بالتقريب، وينبغي الإشارة إلى أن مكونات النفط ونوع العناصر الداخلة في تكوينه قد تختلف باختلاف أماكن تواجده في العالم وكذلك طبيعة الظروف والعوامل التي صاحبت تكوينه. من خلال الجدول (١-٧)، كيف تستدل على أن معظم المركبات الموجودة في خام النفط هي عبارة عن هيدروكربونات؟</p><p>|  اسم العنصر | رمزه | النسبة المئوية التقريبية  |
+| --- | --- | --- |
+|  الكربون | C | ٨٢٪ إلى ٨٧٪  |
+|  الهيدروجين | H | ١٢٪ إلى ١٥٪  |
+|  الكبريت | S | ٠.١٪ إلى ٦٪  |
+|  النيتروجين | N | ٠.١٪ إلى ١.٥٪  |
+|  الأكسجين | O | ٠.١٪ إلى ٥٪  |</p><p>جدول (١-٧) أهم العناصر التي تدخل في تركيب النفط.</p><h2>أصل النفط الخام:</h2><p>قد تتساءل عن أصل النفط الخام وسبب احتوائه على هذا العدد من المركبات السائلة والغازية، وهذا التساؤل قد حير علماء الكيمياء لفترة طويلة من الزمن ولا زالت هذه المركبات وخواصها تكشف كل يوم عن أسرار جديدة ومثيرة. ولتفسير أصل النفط تقدم العلماء بطرح عدة نظريات تتفق جميعها في أن النفط قد تكون في باطن الأرض عبر ملايين السنين تحت ضغط مرتفع ودرجات حرارة عالية جداً، إلا أن هذه النظريات تختلف في وصف الطريقة أو الكيفية التي تكون بها النفط في باطن الأرض عبر ملايين السنين، ومن أهم النظريات التي توضح أصل النفط الخام ما يلي:</p><p>١٢٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![LOGO]</p><p>د - كيف تكشف في المعجم الوسيط عن معاني الكلمات الآتية؟
+(شَلَّتْ - أَدَوْتُ - تَطِيشُ - اقْتِرَافُ - الْمُرُوَّةُ).</p><p>هـ - اضبط بالشكل أواخر الكلمات التي تحتها خط، وبين سبب الضبط.</p><p>٥ - بين قيمة الصورتين البلاغيتين فيما يلي:</p><p>- يعيش المسلم ناصع الصفحة.</p><p>- لا يستريحون إلا إذا أرغوا وأزبدوا.</p><p>- على من سمع شيئاً من عيوب غيره ألا يوسع الخرق على الرافع.</p><p>٦ - روي عن رسول الله - صلى الله عليه وسلم - أنه قال: «ألا أنبئكم بشراركم؟</p><p>قالوا: بلى - إن شئت - يا رسول الله، قال: إن شراركم الذي ينزل وحده، ويجلد</p><p>عبده، ويمنع رفده، قال أفلا أنبئكم بشر من ذلك؟ قالوا: بلى - إن شئت -</p><p>يا رسول الله، قال: من يبغض الناس ويبغضونه، قال: أفلا أنبئكم بشر من</p><p>ذلك؟ قالوا: بلى - إن شئت - يا رسول الله، قال: الذين لا يقبلون عشرة، ولا</p><p>يقبلون معذرة، ولا يغفرون ذنباً. قال: أفلا أنبئكم بشر من ذلك؟ قالوا: بلى</p><p>- إن شئت - يا رسول الله، قال: من لا يرجى خيره، ولا يؤمن شره».</p><p>أ - املا الفراغ بالإجابة المناسبة فيما يأتي:</p><p>- مرادف (أنبئكم): (...)</p><p>- معنى (يقبلون عشرة): (...)</p><p>- ضد (يمنع): (...)</p><p>- مفرد (مظاهر): (...)</p><p>ب - ما الغرض البلاغي من الاستفهام في هذا الحديث؟ ولم كان الجواب</p><p>بالحرف (بلى) عقب كل سؤال من حيث المعنى؟</p><p>د - وضح نوع المحسن البديعي فيما يأتي:</p><p>- شراركم الذي ينزل وحده، ويجلد عبده، ويمنع رفده.</p><p>- الذين لا يقبلون عشرة، ولا يقبلون معذرة.</p><p>- لا يرجى خيره، ولا يؤمن شره.</p><p>٦٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

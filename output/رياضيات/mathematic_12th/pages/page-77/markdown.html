@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الاحتمالات</p><p>∴ حا (ع) = حا (t) + حا (t)
+∴ حا (ع) = ١
+∴ ١ = حا (t) + جا (t)
+ومنها حا (t) = ١ - جا (t)</p><h1>مبرهنة (٣ - ٣)</h1><p>لأي حادثتين t ، ب ⊖ تكون : حا (tب) = حا (t) - حا (tب) .</p><p>البرهان : من الشكل (٣-١) نلاحظ أن :</p><p>t = t ∪ 1ب</p><p>وعليه : حا (tب ∪ 1ب) = حا (t)</p><p>∴ tب ∪ 1ب = ∅</p><p>∴ حا (t) = حا (tب) + حا (tب)</p><p>ومنها حا (tب) = حا (t) - حا (tب) .</p><img src="img-51.jpeg" alt="img-51.jpeg" /><p>شكل (٣-١)</p><h1>نتيجة (١) :</h1><p>إذا كانت t ، ب حادثتين متنافيتين فإن :</p><p>حا (tب) = حا (t) ، حا (ب) = حا (ب) .</p><h1>تدريب (٣ - ١)</h1><p>برهن النتيجة (١) .</p><h1>نتيجة (٢) :</h1><p>لأي حادثتين t ، ب ⊖ ، ب ⊖ t فإن :</p><p>(١) حا (tب) = حا (t) - حا (ب)</p><p>(٢) حا (ب) ≥ حا (t)</p><p>البرهان : ١) ∴ ب ⊖ t ∴ tب = ب</p><p>∴ حا (tب) = حا (ب)</p><p>∴ حا (tب) = حا (t) - حا (tب) (مبرهنة ٣-٣)</p><p>∴ حا (tب) = حا (t) - حا (ب)</p><p>٧٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>معاني المفردات والتراكيب اللغوية</h1><p>|  الكلمة | معناها  |
+| --- | --- |
+|  مكامن الخيال | مواضعه.  |
+|  الملتبس | الغامض.  |
+|  تريده على التفسير | تحمله على التفسير.  |
+|  المُلهَم | المبدع كاتباً كان أم شاعراً.  |
+|  أعصابه الكهربائية | المراد به إحساساته وانفعالاته النفسية.  |
+|  حُدَّت الحقيقة | صارت محدودة ضيقة.  |
+|  تلبَّس | خالط.  |
+|  النَّدى | بخار الماء يتكاثف في طبقات الجو الباردة في أثناء الليل، ويسقط على الأرض قطرات صغيرة.  |
+|  يُنضِّرها | يزيدها حسناً ورونقاً.  |
+|  وخز الخضرة | أثرها.  |
+|  يَرِفُّ | يضرب جنبيه بجناحيه.  |</p><h1>المناقشة</h1><p>١- فيمَ تتمثل القيمة الحقيقية للمقالة البيانية ؟ وكيف ؟
+٢- ماذا يقصد الكاتب بالصناعة الفنية الكاملة ؟ وما الخصائص التي تتميز بها ؟
+٣- الكاتب الحق - في رأي الرافعي - لا يكتب، ولكنه أداة في يد القوة المصورة لهذا الوجود. اشرح هذه العبارة في ضوء فهمك للموضوع.
+٤- إذا اختير الكاتب لرسالة ما شعر بقوة تفرض نفسها عليه. ما هي هذه القوة ؟</p><p>١٠٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

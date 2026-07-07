@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-61.jpeg" alt="img-61.jpeg" /><h2>معاني المفردات اللغوية</h2><p>وَقَرَّ: تأكيد، يختلج: يتحرك، شأنه: مكانته، حدة: نبرة قوية، يمرق: يسير بخفة وسط الزحام، يتمتم: يحدث نفسه بصوت خفيف.</p><h3>إضافة</h3><p>يصور الكاتب نجيب الكيلاني، بطريقة السرد القصصي صفحة من الصراع ضد المستعمر الفرنسي، الذي خاضه الشعب المصري الأبي، في هذا الجزء من روايته «مواكب الأحرار» بواسطة أحد التجار، وهو الحاج مصطفى البشتيلي، وحواراته ومشاهداته؛ ليوضح مكانة المسجد في قلوب المسلمين، وما قام به الأزهر الشريف تجاه الغزاة الفرنسيين من توجيه وتنظيم للثوار والمجاهدين، فيقول:</p><p>إن زوجة الحاج مصطفى قد وصلت إلى ياس من جدوى المقاومة، لا سيما أن المحاولة الأولى للثورة ضد الفرنسيين لم تنجح، ففتحت حواراً مع زوجها عندما رأته منهمكاً في الإعداد للثورة من جديد لتقنعه بالعدول عن ذلك بأسلوب عقلاني، لكنه استطاع محاورتها وإقناعها بأن المقاومة الجهادية تفرضها الكرامة، وأن ليس هناك خسارة أكثر مما حدث، وأن أكبر مصيبة على الإنسان هو أن يرضى بالهوان!</p><p>ثم يترك البشتيلي زوجته متجهاً إلى الجامع الأزهر الذي كان يمثل قلب الأمة النابض، وقاعدة الانطلاق إلى شتى مجالات الحياة، وهناك يشعر بالاطمئنان النفسي والسكينة الإيمانية، وهو يرى الجموع المؤمنة تتدفق إلى المسجد متحفزة إلى القيام بواجب الجهاد والتضحية معتصمة بإيمانها بالله، واثقة بنصره.</p><p>وهناك شاهد جنسيات مختلفة من العرب وشاهد أبناء مصر بمختلف فئاتهم ومناطقهم، كلهم مستعدون للقيام بهذا الواجب المقدس، فيطلق بعض الكلمات المتفائلة بالنصر، المتوعدة للأعداء المحتلين، متذكراً ما يحدث منهم من ظلم وطغيان على أبناء مصر من قتل، ومداهمات تفتيش، وقسوة في المعاملة، وسجون مملوءة</p><p>١٦٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

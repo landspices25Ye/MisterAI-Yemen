@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-83.jpeg" alt="img-83.jpeg" /><p>الشكل (٧) مربع بونيت</p><p>١- حدد الشكل المظهري لجيل الآباء.
+٢- حدد الأمشاج وميز بين الذكورية منها والأنثوية من خلال العلامتين للمذكر و للمؤنث.
+٣- ضع الأمشاج الذكورية في الصف الأفقي الأعلى للمربع.
+٤- ضع الأمشاج الأنثوية في الصف الرأسي على يسار المربع.
+٥- ضع رموز الزيجوت الناتجة عن اندماج كل مشيج ذكري مع مشيج</p><p>أنثوي في الخانة المقابلة للمشيجين في المربع (الشكل ٧).</p><p>٦- تعرف على نوع كل زيجوت ناتج وحدد نسبة ظهور الصفات المختلفة في الجيل الجديد.
+- ما لون الأزهار الناتجة عن حدوث التلقيح الذاتي لنباتات الجيل الأول (F₁) ؟ استخدم مربع بونيت متبعاً نفس الخطوات السابقة للتعرف على ألوان الأزهار الناتجة في جيل الأبناء الثاني، وذلك كما في الشكل (٧).</p><img src="img-84.jpeg" alt="img-84.jpeg" /><p>الشكل (٨) مربع بونيت</p><p>- ما الشكل الظاهري لجيل الآباء ؟
+- ما التركيب الجيني لجيل الآباء ؟
+- ما الأشكال الظاهرية (لون الأزهار) في جيل الأبناء ؟
+- حدد التركيب الجيني لكل لون من ألوان أزهار جيل الأبناء.
+- ما نسبة الأزهار وردية اللون إلى الأزهار البيضاء في جيل الأبناء ؟</p><p>١٠٦</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

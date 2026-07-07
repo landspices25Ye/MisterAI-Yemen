@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الأعداد المركبة</p><p>[٤] أوجد النظر الضربي لكل مما يلي :</p><p>أ) $‫2 + 2‬$ ت . ب) $‫(-5 - 2)‬$ . ج) $‫(6 + 5)‬$ ت$‫^2‬$ .
+د) $‫\frac{5}{\sqrt{3}}‬$ . هـ) $‫\frac{4}{2 - 2}‬$ . و) $‫\frac{4 + 1}{2 - 3 - 2}‬$ .</p><p>[٥] أوجد قيمتي س، ص التي تحقق ما يلي :</p><p>أ) س + ت ص = (1 + ت) (4 - 3 ت) . ب) $‫(2 - 5) = (1 + ت) (س + ت ص) .
+ج) ‬$(3 - 2 + 2) ص (2 + 2) = 10 = (1 + 1) ت$‫ .</p><p>[٦] لتكن ع‬$_{1}$‫ = 2 + ت ، ع‬$_{2}$‫ = 2 - 5 ت ، أوجد :</p><p>أ) ع‬$_{1}$‫ ع‬$_{2}$‫ . ب) ع‬$_{1}$‫ ع‬$_{2}$‫ . ج) ع‬$_{1}$‫ + ع‬$_{2}$‫ .
+د) ع‬$_{1}$‫ ع‬$_{2}$‫ . هـ) ع‬$_{1}$‫ ع‬$_{2}$‫ . و) ع‬$_{1}$‫ - ع‬$_{2}$‫ .</p><p>[٧] إذا كان ع‬$_{1}$‫ مرافق العدد ع ؛ فأثبت أن :</p><p>أ) (ع) = ع‬$_{1}$‫ . ب) ع‬$_{2}$‫ + ع‬$_{2}$‫ = عدد حقيقي
+ج) ع‬$_{1}$‫ ، ع‬$_{2}$‫ مترافقان . د) ‬$\left(\frac{1}{ع}\right) = \left(\frac{1}{ع}\right)$‫ .</p><p>[٨] لتكن 1 = ‬$\frac{2 - 1}{3 - 1}$‫ ، ب = ‬$\frac{2 - 2}{3 - 3}$‫ ، أثبت أن : 1 ، ب عددان مترافقان .</p><p>ثم أوجد قيمة : 25 (2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2</p><p>[٩] لتكن (1 - 5 ت) ع‬$_{1}$‫ - 2 ع‬$_{2}$‫ = 3 - 7 ت ، أوجد : ع‬$_{1}$‫ ، ع‬$_{2}$‫ حيث إنهما مترافقان .</p><p>[١٠] إذا كان ع = ‬$\frac{1 - 2}{2 + 2}$‫ ، فأوجد الجزء الحقيقي والجزء التخيلي للعدد ‬$\frac{1 + 2}{2}$‫ .</p><p>[١١] أثبت أن : ‬$\left(\frac{3}{3 + 3} + \frac{3}{3 + 3}\right) + \left(\frac{3}{3 + 3} - \frac{3}{3 + 3}\right) = 1$‫ .</p><p>[١٢] حلل العدد س 2 + 1 إلى عددين مترافقين .</p><h2>الصورة القطبية للعدد المركب</h2><p>٤ - ١</p><p>تعرفت على كيفية كتابة العدد المركب بالصورة س + ت ص ، والتي تسمى الصورة الجبرية ، ويمكن أن يكتب العدد المركب كزوج مرتب (س، ص) . كما تعرف أن كل زوج مرتب يمثل بنقطة في المستوى ، وفي الوقت نفسه فإن أي نقطة في المستوى تمثل زوجاً مرتباً ، وبالتالي تمثل عدداً مركباً .</p><p>وكل زوج مرتب يمكن أن يمثل متجهاً قياسياً واحداً (و) [ انظر الشكل (١-٧) ] .</p><p>فإذا فرضنا أن طول المتجه و‬$\frac{1}{2}$‫ = م‬$_{1}$‫ وقياس الزاوية التي يصنعها و‬$\frac{1}{2}$ مع محور السينات الموجب تساوي هـ .</p><p>٢٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

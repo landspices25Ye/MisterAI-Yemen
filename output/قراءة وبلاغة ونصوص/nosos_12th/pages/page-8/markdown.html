@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-6.jpeg" alt="img-6.jpeg" /><h1>الفهرس</h1><p>|  الموضوع | الصفحة  |
+| --- | --- |
+|  • تقديم | ٣  |
+|  • مقدمة | ٤  |
+|  <strong>أولاً - الأدب والنصوص:</strong> | ٨  |
+|  ١ - الأدب في العصرين المملوكي والعثماني | ٩ أدب  |
+|  ٢ - في رثاء بغداد / شمس الدين الكوفي | ١٤ شعر  |
+|  ٣ - وصف السفينة / ابن حبيب الحلبي | ١٨ نثر  |
+|  ٤ - النهضة الأدبية في العصر الحديث | ٢٣ أدب  |
+|  ٥ - الشعر العربي في العصر الحديث | ٢٩ أدب  |
+|  ٦ - النثر العربي في العصر الحديث | ٣٤ أدب  |
+|  ٧ - فراق وشوق / محمود سامي البارودي | ٤١ شعر  |
+|  ٨ - ثمن الحرية / أحمد شوقي | ٤٦ شعر  |
+|  ٩ - صرخة على الظلم / محمد محمود الزبيري | ٥٠ شعر  |
+|  ١٠ - حضارة ومجد / محمود غنيم | ٥٥ شعر  |
+|  ١١ - أمتي / عمر أبو ريشة | ٦١ شعر  |
+|  ١٢ - الإسراء والمعراج / مصطفى صادق الرافعي | ٦٨ نثر  |
+|  ١٣ - الرجولة / أحمد أمين | ٧٧ نثر  |
+|  ١٤ - المدرسة الرومانسية | ٨٢ أدب  |
+|  ١٥ - المساء / خليل مطران | ٨٧ شعر  |
+|  ١٦ - مشاعر حزينة / أبو القاسم الشابي | ٩٣ شعر  |
+|  ١٧ - كن بلسماً / إيليا أبو ماضي | ٩٩ شعر  |
+|  ١٨ - الدجى المشبوه / عبد الله البردوني | ١٠٦ شعر  |
+|  ١٩ - لو أحسن الناس / مصطفى لطفي المنفلوطي | ١١١ نثر  |</p><p>٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

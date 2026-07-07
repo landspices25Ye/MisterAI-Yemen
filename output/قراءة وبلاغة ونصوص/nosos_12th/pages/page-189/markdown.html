@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>الأسلوب</h1><h2>الأمثلة</h2><h3>١- قال أحد العلماء يتحدث عن الأرض :</h3><p>الكتلة الأرضية : هي الجزء الأساسي في الكرة الأرضية، وتشتمل هذه الكتلة على جميع أنواع الصخور، سواء أكانت صلبة أم منصهرة، وتمتد من سطح الأرض إلى مراكزها، وهي كتلة بيضاوية الشكل منبعجة عند خط الاستواء، ومفلطحة عند القطبين، ويبلغ نصف قطرها ٣٩٥٠ ميلاً.</p><h3>٢- وكتب أحد الأدباء عن الأرض قائلاً :</h3><p>أنت أيتها الأرض أمي، سأفرح يوم تضمينني إلى قلبك كما تضمين الغصن الذي أنا غارسه.. كلمتني أرض أجدادي.. نعم الأرض كلمتني.. أجابت سؤالي.. أحيت في الرجاء، ضمت إلى صدرها طفل حبي، وأنعشته بعد أن كاد يموت، نفخت فيه من روحها الأزلي فتحرك لسانه.</p><h3>٣- الأسلوب العلمي المتأدب :</h3><p>لماذا لا يصعق الطير عندما يقف على سلك الكهرباء؟</p><p>(وقد روعي في عمل الأعمدة التي تثبت عليها أسلاك الكهرباء أن تكون قواعدها من مادة عازلة تمنع تسرب التيار، لا محافظة على حياة الطير، وإنما منعاً لفقد الطاقة، وضياع الكهرباء، وللطير أن يجلس مطمئناً على هذه الأعمدة أو الأسلاك المتصلة بها، يغني ما شاء الله له الغناء، ويترنم بصوته الرخيم كالموسيقا تعزف أعذب الألحان. فلن يصيبه أذى مهما كانت شدة التيار).</p><h2>التوضيح</h2><p>النصان الأول والثاني يتناولان موضوعاً واحداً وهو (الأرض)، بأسلوبين مختلفين</p><p>١٨٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

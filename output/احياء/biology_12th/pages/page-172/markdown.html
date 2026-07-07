@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>٦- التلوث الحراري الناتج عن استعمال المياه كمصدر للطاقة في محطات الكهرباء التي تدار بواسطة البخار أو الطاقة الذرية، أو استعمال المياه في تشغيل المعامل والمصانع في الأوساط المائية وجميعها تعمل على رفع درجة حرارة الماء فتقل نسبة الأوكسجين المذاب فيه، مما يؤثر على حياة الكائنات الحية التي تعيش فيه كالأوليات</p><img src="img-126.jpeg" alt="img-126.jpeg" /><p>الشكل (٦) تأثير الملوثات على النباتات</p><p>والطحالب والأسماك، وبشكل ذلك تهديداً مباشراً للحياة في المحيطات المائية، وقد يؤدي إما إلى وفاة الأحياء المائية، أو وقف تكاثرها أو هجرتها، وينتج عنه في النهاية تدمر هذا النظام البيئي وموت ما فيه من حيوان ونبات كما في الشكل (٦).</p><p>- ما المقصود بالنظام البيئي؟</p><p>- كيف تكون البيئة المائية نظاماً بيئياً متزناً؟</p><p>ومن الملوثات التي تؤثر بشكل كبير على البيئة المائية الملوثات النفطية.</p><h3>تأثيرات التلوث النفطي:</h3><p>يحدث تلوث مياه البحار والمحيطات بالنفط</p><p>بسبب غرق السفن المحملة بالنفط الذي يطفو على سطح الماء ويكون طبقة رقيقة تعمل على عزل المياه عن الغلاف الجوي، ومنع التبادل الغازي بينهما، مما</p><img src="img-127.jpeg" alt="img-127.jpeg" /><p>الشكل (٧) تأثير التلوث النفطي على الحيوانات</p><p>يؤدي إلى نقص كمية الأكسجين المذاب في الماء. وقد يُغطى طن واحد من النفط ١٢ كم²، ويؤدي ذلك إلى قتل العديد من الكائنات المائية (الشكل - ٧)، كما يجعل هذه المياه غير صالحة للاستعمال. ويقضي هذا التلوث على مصدر مهم من مصادر غذاء الإنسان.</p><p>وتتلوث مياه البحار والمحيطات أيضاً بالعناصر الثقيلة مثل الرصاص الموجود في وقود وسائل النقل البحري، أو بالزئبق والزرنيخ</p><p>١٧٢</p><p>الأحياء للصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-147.jpeg" alt="img-147.jpeg" /><p>يوجد في الصابون، ومن أهم هذه الشقوق ما يلي:
+مجموعة الكبريتات $‫\text{OSO}_3^{2-}‬$، ومجموعة الكبريتيت $‫\text{SO}_3^{2-}‬$، ومجموعة الهيدروكسيل $‫\text{OH}‬$، ومجموعة الأمونيوم ($‫\text{NH}_4^+‬$).</p><p>ويمكن تقسيم المنظفات الصناعية إلى ثلاثة أنواع وفقاً لتركيبها الكيميائي، وهي:
+أ - المنظفات الصناعية الأنثيونية Anionic Detergents: وهي تشبه الصابون التقليدي في أن الشق المحب للماء يكون سالباً، ويمكن تحضير هذا النوع بطريقتين، هما:</p><p>- من تفاعل حمض بارا الكيل بنزين سلفونيك مع $‫\text{NaOH}‬$، وفقاً للمعادلة الآتية:</p><img src="img-148.jpeg" alt="img-148.jpeg" /><p>- من تفاعل كحول ذي سلسلة هيدروكربونية طويلة مع حمض الكبريتيك المركز، ثم يضاف هيدروكسيد الصوديوم إلى الناتج فيتكون المنظف، وفقاً للمعادلات الآتية:</p><img src="img-149.jpeg" alt="img-149.jpeg" /><p><strong>ملاحظة</strong>
+المنظف الصناعي الذي ينتج من تفاعل الكحول ذي السلسلة الهيدروكربونية الطويلة يستخدم بكثرة في التنظيف داخل المنازل، وذلك لأن فعاليته أقوى من فعالية المنظفات الصناعية التي تُحضر في سلفونات الكيل البنزين.</p><p>ب- المنظفات الصناعية الكاتيونية Cationic Detergents: إن الشق المحب للماء في هذا النوع من المنظفات يكون موجباً، ويمكن تحضير هذه المنظفات من خلال تفاعل الكحولات ذات السلسلة الهيدروكربونية الطويلة مع حمض</p><p>١٦٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

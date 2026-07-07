@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>تقويم الوحدة</h2><p>١ - وضّح المقصود بالمصطلحات الآتية:</p><p>- النظائر - النشاط الإشعاعي - متوسط طاقة الربط
+- البوزيترون - الاندماج النووي - التفاعل المتسلسل</p><p>٢ - اختر الإجابة الصحيحة:</p><p>أ - نظائر العنصر الواحد تشابه في:</p><p>١. عدد البروتونات
+٢. عدد النيوترونات
+٣. عدد النيوكليونات
+٤. العدد الكتلي</p><p>ب - طاقة الربط النووية، هي الطاقة التي:</p><p>١. تحفظ الإلكترونات حول النواة
+٢. تلزم لفصل مكونات النواة
+٣. تلزم لفصل الإلكترونات
+٤. تنطلق عند انشطار النواة</p><p>ج - إذا تحوّلت نواة $‫\text{O}_2‬$ إلى نواة $‫\text{N}^+‬$, فإن النواة تكون قد فقدت:</p><p>١. بروتوناً
+٢. إلكتروناً
+٣. نيوتروناً
+٤. بوزيتروناً</p><p>د - إذا فقد عنصر معين أشعة ($‫\gamma‬$) فإن عدده الذري:</p><p>١. يزداد بمقدار ١
+٢. يقل بمقدار ٤
+٣. لا يتغير
+٤. ينقص بمقدار ٢</p><p>هـ - الأنوية الواقعة أسفل حزام الاستقرار تميل إلى إطلاق:</p><p>١. جسيمات ألفا
+٢. جسيمات بيتا
+٣. إشعاعات جاما
+٤. لاشيء مما سبق</p><p>٣ - علّل لما يأتي:</p><p>أ - تتفق النظائر في الخواص الكيميائية.</p><p>ب - تعتبر النيوترونات من أفضل القذائف النووية.</p><p>ج - أشعة جاما لها قدرة عالية على النفاذ.</p><p>د - الأنوية الواقعة بعد حزام الاستقرار غير مستقرة.</p><p>هـ - القنبلة الهيدروجينية أخطر بكثير من القنبلة النووية.</p><p>و - تُعدُّ التفاعلات النووية إحدى البدائل المهمة للطاقة.</p><p>٨٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

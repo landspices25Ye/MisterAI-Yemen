@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h3>٣- السرقات الشعرية:</h3><p>وتتلخص هذه القضية في ثلاثة أنواع:</p><p>- المعاني المشتركة:</p><p>وهذا النوع يتساوى فيه الشعراء لأنه متاح للجميع، لذلك لا يعده النقاد سرقة، فإن وصف الشاعر للممدوح بأنه أسد لا يفضي بالضرورة إلى أن المعنى نقله الشاعر عن غيره إذ إنه معنى مشاع لا يختص به شاعر بعينه.</p><p>- المعاني البديعة المختزعة:</p><p>وهذا النوع قد تدخل فيه السرقات الشعرية لأن صاحبه أول من ابتكره ومن ذلك قول أبي تمام:</p><p>لا تنكروا ضربي له من دونه مثلاً شروداً في الندى والبأس
+فالله قد ضرب الأقل لنوره مثلاً من المشكاة والنبراس</p><p>فأبوا تمام ها هنا، قد استحضر معنى جديداً مبتكراً لا مجال فيه لتوارد الخواطر؛ ولذلك خُصَّ بهذا المعنى دون غيره.</p><p>- المعنى المنقول إلى غرض آخر:</p><p>وهذا النوع لا يعد في نظر النقاد سرقة، لأن الشاعر يأخذ المعنى وينقله إلى غرض آخر، فإذا وجد الشاعر معنى لطيفاً في الغزل فاستخدمه في المدح. أو جعل النثر شعراً كان ذلك مستساغاً. وكذلك إذا أخذ المعنى وزاد عليه وتمه؛ فإن ذلك يعد من بنات أفكاره، وهو أحق الناس به ومن ذلك قول بشار:</p><p>من راقب الناس لم يظفر بحاجته وفاز بالطيبات الفاتك اللهج</p><p>أخذه سلم الخاسر وزاد عليه وغير أسلوبه فحسب له ونسب إليه، وذلك قوله:</p><p>من راقب الناس مات غماً وفاز باللذة الجسور</p><p>بيد أن النقد الحديث أطلق على مصطلح «السرقات الشعرية» اسم «التناص» ويعني مجموع العلاقات القائمة بين نص أدبي ونصوص أخرى بطرق مختلفة منها الاقتباس (١) والتضمين (٢) وغيرها، وقد يكون التناص أشمل من السرقات لأنه امتصاص وتحويل لعدد من النصوص في سياق نص واحد.</p><p>١ - الاقتباس: أن تدرج كلمة أو آية من القرآن في الكلام تزييناً لنظامه.</p><p>٢ - التضمين: أن يتضمن البيت الشعري أبيات من قصيدة أخرى أو كلمات من أبيات أخرى.</p><p>١٨٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

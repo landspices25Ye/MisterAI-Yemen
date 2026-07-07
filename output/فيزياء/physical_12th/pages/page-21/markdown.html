@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>حركة الأقمار الصناعية حول الأرض The Orbiting Motion of Satellites</h2><p>القمر الصناعي عبارة عن جسم يدور حول جسم آخر تماماً كالأقمار التي هي عبارة عن توابع طبيعية للكواكب، ويوجد الآن أكثر من ألف قمر صناعي تدور حول الأرض ومجهزة بأجهزة علمية لاستكشاف الفضاء.</p><p>ويوجد عدة أغراض للأقمار الصناعية، فهناك أقمار لدراسة الطقس تقوم بإرسال معلومات إلى الأرض عن الطقس والتوقعات، وأخرى تعمل على نقل الرسائل والصوت والصورة، وأقمار تقوم بدراسة سطح الأرض، ومنها ما يستخدم في التجسس، وهناك سفن ومسابير فضائية غير مأهولة أرسلت لدراسة القمر وكواكب المجموعة الشمسية الأخرى.</p><p>وللتعرف على حركة الأقمار الصناعية التي تحمل بالصواريخ ذاتية الدفع لتضعها في مدارها المخصص لها، قم بالنشاط الآتي:</p><h3>نشاط (٢)</h3><p>انظر إلى الشكل (٧) :</p><p>أفرض أن شخصاً قذف حجراً أفقياً من سطح مبنى بسرعة معينة فإن الحجر سيتحرك لمسافة معينة ثم يسقط في موضع على الأرض بسبب الجاذبية الأرضية ولتكن النقطة (أ).</p><p>– ماذا لو رمى الحجر بسرعة قذف أكبر. أين سيسقط ؟</p><p>حتماً سيسقط الحجر عند نقطة أبعد من النقطة السابقة ولتكن النقطة (ب)، وهكذا.</p><img src="img-17.jpeg" alt="img-17.jpeg" /><p>شكل (٧)</p><p>ولنفرض أن الحجر في القذفة الأولى سقط سقوطاً حراً من مسافة رأسية قدرها ٥ م مرتطماً عند النقطة (أ)، فإن الحجر في القذفة الثانية سيسقط سقوطاً حراً عند النقطة (ب) من مسافة رأسية ٥ أمتار من أعلى بالرغم من أن المسافة الأفقية التي سيقطعها ستكون أكبر من المسافة الأولى، وهكذا فإن الحجر يسلك ممراً منحنياً ليصل إلى الأرض، وفي كل مرة تزداد المسافة الأفقية التي يقطعها قبل أن يصل إلى سطح الأرض.</p><p>١٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

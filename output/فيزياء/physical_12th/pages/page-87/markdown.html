@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الأجهزة الإلكترونية
+Electronic Devices</p><p>الوحدة
+الرابعة</p><img src="img-84.jpeg" alt="img-84.jpeg" /><h1>أهداف الوحدة</h1><p>يتوقع من الطالب بعد الانتهاء من دراسة هذه الوحدة أن يكون قادراً على أن:
+١- يُعرف الآتي: الانبعاث الإلكتروني الثانوي، الانبعاث الإلكتروني الحراري، التفريغ الكهربائي خلال الغازات، أشعة الكاثود، الإرسال والاستقبال الإذاعي والتلفازي، المسح التلفازي.
+٢- يصف مستعيناً بالرسم التوضيحي تركيب كل من: أنبوبة أشعة الكاثود، الأسيلسكوب، الرادار، مكبر الصوت الديناميكي، الإيكونوسكوب، شبكة الإرسال وشبكة الاستقبال الإذاعي، شبكة الإرسال وشبكة الاستقبال التلفازي.
+٣- يشرح مراحل عمليتي الإرسال والاستقبال الإذاعي والتلفازي.
+٤- يقارن بين عمليتي الإرسال والاستقبال في التلفاز العادي والتلفاز الملون.
+٥- يذكر استخدامات كل من: الأسيلسكوب، الرادار، والملفات الحارقة في أنبوبة أشعة الكاثود.
+٦- يشرح عمل مكبر الصوت الديناميكي في جهاز الاستقبال الإذاعي.
+٧- يقدر جهود العلماء في مجال الصناعات الإلكترونية.
+٨- يبين أثر الأجهزة الإلكترونية على تطور وتقدم البشرية، وفي تسهيل الحياة المعاصرة.</p><p>٨٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

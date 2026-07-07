@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>وكان فوق مناكب اللحظات جدران السجون
+يا خدعة التشكيل أضحى كل رأس بنطلون
+أو قوله:</p><p>لو تحولت فرخة ثعلبوني لو تضفدعت خبروا عن نقيقي
+لو رأوني أمسي حماراً لنادوا خبراء يترجمون نهيقي
+وتكون هذه التصويرات أحياناً (سريالية) أو ما يسمى (اللامعقول)، مثل قوله:
+للريح طعم في حلوق الحصى وللحواري بالنجوم اكتحال
+هذي الشبابيك لها صبوة إلى وصال غير ذاك الوصال</p><p>من أعمال البردوني الشعرية الدواوين الآتية:</p><p>من أرض بلقيس، وفي طريق الفجر، ومدينة الغد، ولعيني أم بلقيس، ووجوه
+دخانية في مرايا الليل، وزمان بلا نوعية، وترجمة رملية لأعراس الغبار، وكائنات
+الشوق الآخر، ورواغ المصابيح، وجواب العصور، وعودة الحكيم ابن زايد.
+ومن دراسته وأعماله الأخرى: رحلة في الشعر اليمني، وقضايا يمنية، وفنون
+الأدب الشعبي، واليمن الجمهوري.</p><p>ولقد ظل عطاؤه الشعري متواصلاً حتى وفاته في أغسطس ١٩٩٩م رحمه الله.
+والأبيات الآتية من قصيدة بعنوان «شتائية» في ديوانه: ترجمة رملية لأعراس
+الغبار، الصادر في دمشق عام ١٩٨٣م:</p><h2>النص</h2><p>١- ماذا هنا غيرُ الدَّجَى المشبوه وحشي السكون
+٢- وكان كل دقيقة تبدو ملايين القرون
+٣- كل الكواكب لا تدور وكل ثانية حرون
+٤- والليلُ يبتدعُ التهاويلَ الغريباتَ الفنون
+٥- ويرهلُ المذيعُ حشرجةً يسميها اللحون
+٦- الحبُّ متهمٌ، ومتهمٌ أسى القلب الحنون</p><p>١٠٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

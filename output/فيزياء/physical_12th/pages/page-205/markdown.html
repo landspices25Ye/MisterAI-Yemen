@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>ويظهر السديم وكأنه أجسام سماوية وأجسام مبعثرة بين النجوم وهو عبارة عن بقايا نجوم وسحب من غازات تكونت من الهيدروجين ومواد أخرى .
+ويرى أدوين هابل (أحد العلماء الأمريكيين) أن المجرات يمكن أن تصنف من حيث الشكل إلى ثلاثة أصناف هي :</p><h3>المجرات الأهلليجية (بيضاوية) : Elliptical Galaxies</h3><p>وهي تقريباً ذات شكل كروي إلا أنها تميل إلى أن تكون على شكل كرة مستوية ومعظم هذه المجرات ليست ضخمة وتحتوي على ملايين النجوم شكل (٢-١) .</p><h3>المجرات الحلزونية (اللولبية) : Spiral Galaxies</h3><p>وتظهر على شكل طاولة مدورة Ring Disk Spin منتظمة في وسطها، والمجرة من هذا النوع تكون أكثر لمعاناً من المجرات البيضاوية، والتدويم (أي دوران المجرة على مركز التكثف)، يكون كبيراً جداً، وتتجمع نجوم هذه المجرات في الانتفاخ الكروي وفي ذراعي المجرة (شكل ٢-ب) .</p><h3>المجرات غير المنتظمة : Irregular Galaxies</h3><p>هذه المجرات أصغر حجماً من المجرات الأخرى وفيها أعداد أقل من النجوم مقارنة بأعداد النجوم في المجرات الأخرى، ومعظم نجوم هذه المجرات جديدة، أي أنها تحت طور التكوين شكل (٢ - ج) .</p><h3>مجرة درب التبانة (الطريق اللبني) : The Milky Way Galaxy</h3><p>للتعرف على هذه المجرة دعنا نمهد لذلك بالنشاط الآتي :</p><h3>نشاط (٢)</h3><p>انظر للشكل المجاور وأجب عن الأسئلة الآتية :</p><img src="img-205.jpeg" alt="img-205.jpeg" /><p>شكل (٣)</p><p>- سم الشكل الذي تلاحظه .
+- ما نوع هذا الشكل ؟
+- ما حجم المجموعة الشمسية بالنسبة للشكل ككل ؟</p><p>إن الشكل الذي تلاحظه هو شكل مبسط لمجرة درب التبانة (الطريق اللبني) ،</p><p>وهي مجرة حلزونية قطرها ١٠٠,٠٠٠ سنة ضوئية وسمكها ٥٠٠٠ سنة ضوئية، وتدور</p><p>٢٠٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

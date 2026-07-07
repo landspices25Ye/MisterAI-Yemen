@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الأعداد المركبة</p><h1>مثال (١ - ١٨)</h1><p>أوجد السعة لكل من الأعداد التالية :</p><p>أ) ع₁ = (جتا ه - ت جا ه) .
+ب) ع₂ = جا ه - ت جتا ه .
+ج) ع₃ = - جا ه - ت جتا ه .</p><h1>الحل :</h1><p>أ) ع₁ = جتا ه - ت جا ه = جتا ( - ه ) + ت جا ( - ه ) = جتا ( π ٢ - ه ) + ت جا ( π ٢ - ه ) .</p><p>∴ سعة ( ع₁ ) = π ٢ - ه = - ه .</p><p>ب) ع₂ = جا ه + ت جتا ه
+نحوها إلى الصورة القطبية العامة للعدد المركب</p><p>= جتا ( π/2 - ه ) + ت جا ( π/2 - ه ) ، [ جا ه = جتا ( π/2 - ه ) ؛ جتا ه = جا ( π/2 - ه ) ]</p><p>∴ سعة ( ع₂ ) = π/2 - ه .</p><p>ج) ع₃ = - جا ه - ت جتا ه = جتا ( π ٣/2 - ه ) + ت جا ( π ٣/2 - ه )</p><p>∴ سعة ( ع₃ ) = π ٣/2 - ه .</p><h1>تدريب (١ - ٧)</h1><p>أوجد السعة لكل من :</p><p>ع₁ = جا ه - ت جتا ه ، ع₂ = - جا ه + ت جتا ه .</p><h1>مثال (١ - ١٩)</h1><p>أوجد الصورة القطبية للعدد ع = ( ٣/٢ + ٥ ) / ( ٣/٢ + ٥ ) .</p><h1>الحل :</h1><p>ع = ( ٣/٢ + ٥ ) / ( ٣/٢ + ٥ )</p><p>= ( ٥/٢ + ٣ ) / ( ٣/٢ + ٥ ) = ( ٢/٢ + ٣ ) / ( ٢/٢ + ٥ ) [ بضرب البسط والمقام في مرافق المقام ] .</p><p>= ( ٥/٢ + ٣ ) / ( ٣/٢ + ٥ ) = ( ٣/٢ + ٥ ) / ( ٣/٢ + ٥ ) = ( ٣/٢ + ٥ ) / ( ٣/٢ + ٥ ) = ( ٣/٢ + ٥ ) / ( ٣/٢ + ٥ ) = ( ٣/٢ + ٥ ) / ( ٣/٢ + ٥ ) = ( ٣/٢ + ٥ ) / ( ٣/2 + 5 )</p><p>٢٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

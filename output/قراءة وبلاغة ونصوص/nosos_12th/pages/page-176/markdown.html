@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-65.jpeg" alt="img-65.jpeg" /><p>ويشير بيده لعبد القوي).</p><p>- عبد القوي: (يصرخ لأحد الشرطة في غضب) مر الجنود بتفريق هؤلاء الرعاع وليضربوهم إذا أبوا.</p><p>(ينطلق الشرطي خارجاً)</p><p>- الحاكم: هذا كله من عملك يا قاضي القضاة!</p><p>- جحا: ما تقول يا سيدي من عملي أنا؟</p><p>- الحاكم: نعم.. أنت سوفت الفصل في هذه القضية، وقضيت فيها وقتاً طويلاً.</p><p>- جحا: يا سيدي أين هذا الوقت الطويل؟ ما سلخنا في نظر هذه القضية غير سبعين يوماً، وإن من القضايا ما انقضى عليها سبعون عاماً ولم يُفصل فيها بعد!</p><p>(يستمر ترديد الهتاف في الخارج إلا أنه يبتعد شيئاً فشيئاً حتى ينقطع)</p><p>الحاكم: يتجلد متجاهلاً إشارة (جحا) إن لم تفصل فيها اليوم فإنني سأحملك تبعة هذه الفتنة!</p><p>- جحا: يا سيدي إن القاضي غير مسؤول أمام أحد إلا أمام ربه!</p><p>- الحاكم: (كاظماً غيظه) صدقت يا قاضي القضاة فامض إذن في عملك.</p><p>- جحا: (حماد وغانم) ألا تصطلحان أيها الخصمان العنيدان؟ افعلا ذلك من أجل مصلحة البلاد. فقد أوشكت قضيتكما هذه أن تقضي بها إلى فتنة تعم أدناها وأقصاها.</p><p>- غانم: في سبيل البلاد يا سيدي القاضي سأصالح خصمي على ما يريد. فليقل كم يطلب من المال ثمناً لمساره.</p><p>- جحا: «حماد»: ها هو ذا خصمك يا حماد قد فتح لك باب الصلح فإياك أن توصده اقترح كم تطلب.</p><p>- حماد: كلا لا أشتري بحقي ثمناً قليلاً!</p><p>- غانم: اطلب ما تشاء.</p><p>- حماد: كل مال يباع به حق فهو قليل وإن كثر!</p><p>- جحا: يا حماد لا تكن سبباً للفتنة!</p><p>- حماد: مرحباً بالفتنة إذا صينت بها الحقوق!</p><p>- جحا: هذا تمسك منك غير مقبول ولا مستساغ.</p><p>- حماد: من لم يتمسك بحقه فقد أضاعه!</p><p>- غانم: إذن فإنني أنزل عن الدار كلها له. اشهدوا يا معشر الحاضرين إني قد نزلت خصمي هذا عن الدار كلها فهي له حلال.</p><p>١٧٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

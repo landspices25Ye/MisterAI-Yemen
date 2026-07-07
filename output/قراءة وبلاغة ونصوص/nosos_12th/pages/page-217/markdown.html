@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>النص المسرحي</h1><p>يشترك النص المسرحي مع الأنواع الأدبية الأخرى كالقصة، والشعر والمقالة في تناول التجارب الإنسانية، والنفسية، وفي معالجة المشكلات الاجتماعية المختلفة. إلا أن خاصيته المقترنة بالتمثيل، والحركة ومخاطبة الجمهور مباشرة على خشبة المسرح؛ جعلته يختلف من حيث الطريقة والأسلوب عند إعداد مادته عن بقية الأجناس الأدبية الأخرى.</p><p>فصياغة النص المسرحي تتجنب السرد القصصي المباشر، وتعتمد في توضيح الأفكار، والمواقف للقضية التي تعالجها على قالب حوار يتم اختيار ألفاظه بكل دقة، وعناية للتناسق مع مختلف أدوار الشخصيات التي تضمنتها المسرحية. ويركز على جانب واحد من الموضوع الذي يتناوله، ويهمل الجزئيات لأنه محصور في عرض أحداث حكايته على خشبة المسرح.</p><p>والمسرحية تستعويض عن الأخبار بالعرض وعن السرد بالمحاورة، وعن التقرير بالتصوير وهي – أيضاً – مادة خصبة تنشر الآداب الاجتماعية الراقية، وتسمو بالنفس البشرية إلى جو من الإشراق خصيب.</p><p>ونظراً لهذه المكانة الرفيعة للآداب المسرحية؛ فقد وضع نقاد المسرح منذ العهد اليوناني – الذي إليه تنسب البداية الكاملة للمسرح – إلى عصرنا هذا جملة من الضوابط، والأسس تحدد سمات المسرحية العامة، نتناول أهمها فيما يأتي:</p><h2>أولاً – أنواع المسرحية:</h2><p>المسرحية نوعان رئيسان هما:</p><p>1. المأساة (التراجيديا) وتعني الفن الجاد الذي يستقي موضوعاته من أشراف الناس، وعظمائهم. ونشاهد ذلك في مسرحية (كيليوباترا) (لشوقي) ومسرحية (صقر قريش) (لحمود تيمور) وغيرها. وقد تناولت هذه المسرحيات المشهورين من الرجال والنساء فخلدت جانباً من حياتهم في عمل درامي مسرحي.
+2. الملهة (الكوميديا) وتتمثل في الفن الساخر الذي يبعث الضحك ويستمد شخصياته من حياة الأفراد العاديين، وتدور موضوعاته حول بعض العيوب</p><p>٢١٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

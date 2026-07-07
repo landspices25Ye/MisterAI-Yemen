@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p><strong>المجال الثالث:</strong> النقد وموضوعاته منحصرة في تعريف النقد الأدبي وأساليبه في العصر الحديث، والأسلوب وأنواعه، والشكل والمضمون، والتجربة الشعرية، والجانب النقدي للقصة والمسرحية والمقالة من الناحية الفنية.</p><p>وقد قدّمت الموضوعات النقدية بأسلوب يسهل فهمها ابتداءً بعضها بالأمثلة، ثم التوضيح، ثم الخلاصة، وأخيراً الأسئلة الشاملة، وبعضها الآخر بُدئ بالتعريف، ثم التفريع مع ذكر الأمثلة عرضاً، ثم الخلاصة، وبعدها الأسئلة.</p><p>وقد أعدّ هذا الكتاب في ضوء مجموعة من الأسس التربوية المستوحاة من طبيعة تعليم اللغة العربية، في مجالات الأدب والنصوص والبلاغة والنقد، وأهدافها في المرحلة الثانوية، ومن خصائص نمو الطلاب وحاجاتهم النفسية في هذه المرحلة.</p><p>وقد حرصنا على أن تكون تلك الموضوعات محققة لأهداف هذه المجالات، كما حددتها وثيقة منهج اللغة العربية، مع مراعاة دقة المعلومات، ووظيفتها، حتى تسهم في اكتساب الطلاب المهارات المطلوبة.</p><p>أما عرض المادة فقد انتهجنا فيه نهجاً يقوم على التطبيق الوظيفي، والمشاركة الفاعلة للطلاب في الفهم، والمهارة، والتذوق، ارتقاءً بالأداء اللغوي من ناحية، وإحداث التكامل بين جوانب الخبرة اللغوية من ناحية أخرى؛ يتضح ذلك من خلال كيفية العرض لكل موضوع من موضوعات الكتاب، ونوعية الأسئلة والتدريبات التي تعقبه؛ إذ إنها تقيس مدى فهم الطلبة واستيعابهم لجوانب الموضوع، وتأخذ بأيديهم في رفق وأناة إلى تبين أفكاره وتحصيلها، وتذوق القيم الجمالية فيه، وتتيح لهم مجالاً خصباً لتطبيق ما تعلموه من قواعد ومفاهيم لغوية: نحوية وصرفية وإملائية وبلاغية ضمن فروع اللغة العربية الأخرى.</p><p>ولا يفوتنا أن نشير هنا إلى أن زملاءنا المعلمين والمعلمات هم الأساس في نجاح هذا المجهود، ودورهم هو الجزء المهم المكمل لعملية تطوير هذا المنهاج، والسير به إلى الغايات المنشودة.</p><p>والله من وراء القصد،،،</p><p>المؤلفون</p><p>٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-77.jpeg" alt="img-77.jpeg" /><p>يُسمَّى مركب الأميد من خلال اسم الحمض الكربوكسيلي المشتق منه، لذا فالاسم يتركَّب من شقين: الشق الأول من اسم الحمض، والشق الثاني أميد بعد حذف المقطع (يك) في الاسم الشائع، أو بحذف المقطع (ويك) في الاسم المنهجي (IUPAC) للحمض.</p><p>المجموعتان الوظيفيتان العائدتان للأمينات ($‫-\text{NH}_2‬$) والأميدات ($‫-\text{C}-\text{NH}_2‬$) توجدان في العديد من المركبات البيولوجية الهامة مثل: الحموض الأمينية، والثيامين، والريبوفلافين، والبيوتنين، ... الخ.</p><h3>تحضير الأميدات:</h3><p>يتطلَّب تحضير الأميدات الكربوكسيلية وجود ذرة هيدرجين التي تؤدي في الأمينات الأولية إلى تحضير أميد أحادي الاستبدال، وفي الأمينات الثانوية إلى تحضير أميد ثنائي الاستبدال، أما الأمينات الثالثة فتفشل في التفاعل لتحضير الأميدات، ويمكن الحصول على أميد غير مستبدل كما يلي:</p><p>$‫(\text{CH}_3\text{CO})_2\text{O} + \text{NH}_3 \longrightarrow \text{CH}_3-\overset{\text{O}}{\overset{||}{\text{C}}}-\text{NH}_2 + \text{CH}_3-\overset{\text{O}}{\overset{||}{\text{C}}}-\text{OH}‬$‫
+أسياميد</p><p>ويمكن الحصول على أميد أحادي الاستبدال على النحو الآتي:</p><p>‬$‫\text{C}_6\text{H}_5 + \text{CH}_3-\overset{\text{O}}{\overset{||}{\text{C}}}-\text{O}-\overset{\text{O}}{\overset{||}{\text{C}}}-\text{CH}_3 \longrightarrow \text{CH}_3-\overset{\text{O}}{\overset{||}{\text{C}}}-\text{NH}-\text{C}_6\text{H}_5 + \text{CH}_3-\overset{\text{O}}{\overset{||}{\text{C}}}-\text{OH}‬$‫
+أسيثانيليد</p><p>- لماذا الأمينات الثالثة لا يحضر منها الأميدات؟
+- سجِّل ذلك في كراستك.</p><h3>تفاعلات الأميدات:</h3><p>الأميدات الكربوكسيلية مركبات فعَّالة تدخل في تفاعلات عديدة منها:</p><p>١ - تفاعل الاختزال (خسف هوفمان): هو تفاعل الأميدات غير المستبدلة مع هيبوبروميت الصوديوم (‬$\text{Na}-\text{O}-\text{Br}$‫)، لتكوين الأمين الذي يقل عن الأميد بذرة كربون واحدة، بالإضافة إلى نواتج ثانوية أخرى.</p><p>‬$‫\text{C}_6\text{H}_5-\overset{\text{O}}{\overset{||}{\text{C}}}-\text{NH}_2 \xrightarrow{\text{OBr}^-} \text{C}_6\text{H}_5-\text{NH}_2‬$</p><p>٩٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

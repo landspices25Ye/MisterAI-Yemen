@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>واللفاظ الشاعر مألوفة باستثناء القليل مثل: «حرون، ديجور»، والجموع: «تهاويل، لحون، سمون».</p><p>والأبيات غنية بالموسيقى الآتية من الوزن والقافية بحرفي الواو والنون، وهما حرفا مد وغنة. وهناك الموسيقى الداخلية الناشئة من تكرار بعض الحروف كالسين والراء، ومن اختيار الشاعر لألفاظه مثل: المشبوه، وحشي، السكون، حرون، التهاويل، يرهل، أسى. فمثل هذه الألفاظ توقظ أو تنبه مشاعر القارئ، وتترك صدى في نفسه.</p><h3>أسئلة وتدريبات</h3><p>1. ١ – أين درس البردوني؟ وما أعلى شهادة حملها؟
+2. ٢ – ما الأعمال التي مارسها؟
+3. ٣ – اذكر جائزتين من الجوائز التي نالها الشاعر.
+4. ٤ – اذكر خمسة من دواوين البردوني الشعرية.
+5. ٥ – ما الفكرة في الأبيات ١-٥؟
+6. ٦ – لماذا وصف الشاعر الظلام بالمشبوه؟
+7. ٧ – علام يدل قول الشاعر «كل ثانية حرون»؟
+8. ٨ – ما العلاقة بين المذيع والليل في الأبيات؟
+9. ٩ – «الجذور مدانة بذنوب إيجاب الغصون» هذا قول مجازي. وضع ذلك.
+10. ١٠ – ما البيتان اللذان ينصان على القيم الوطنية؟
+11. ١٢ – في الأبيات ما يشير إلى الأرض والبيئة اليمنية. حدد ذلك.
+12. ١٣ – ما الفكرة في البيتين الأخيرين؟
+13. ١٤ – التكرار من وسائل الموسيقى الداخلية. اذكر مثلاً من الأبيات.
+14. ١٥ – في البيت التاسع حذف، بيّنه.
+15. ١٦ – استخرج من الأبيات مصدرين رباعيين، وصيغة مبالغة على وزن «فعول».
+16. ١٧ – اختر الإجابة الصحيحة من بين القوسين:
+    - ● في التعبير «يسميها اللحون»: (تشبيه، استعارة، كناية).
+    - ● قد يأتي اللفظ «حتى» لل: (قصر، عطف، تحديد).
+    - ● معنى «الفتون»: (الإعجاب، الاستحسان، القبول).
+    - ● النفي في «لن ينام العاشقون» يوحي بـ: (الإحباط، الموافقة، التضحية).
+    - ● غرض النداء في البيت الثاني عشر: (التحدي، الالتماس، التمني).</p><p>١١٠</p><p><http://www.e-learning-moe.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

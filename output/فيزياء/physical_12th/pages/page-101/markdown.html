@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>قطبي مغناطيس كهربائي، انظر الشكل ( ١٠ - ب ) أقطابه دائرية الشكل ( له قطب مركزي وقطب آخر حلقي يحيط بالمركزي ).</p><p>كيف تتم عملية تحويل التيار الكهربائي المعبر عن الصوت إلى موجات صوتية مسموعة ؟</p><p>عندما يمر التيار المعبر عن الصوت في ملف المكبر، فإن المجال المغناطيسي للملف يتغير وتتغير بذلك القوى المتبادلة بينه وبين المجال المغناطيسي الدائم فيهتز الملف ( ويكون اتجاه الحركة « القوة » عمودياً على كل من اتجاه الفيض المغناطيسي واتجاه التيار ) ويهتز المخروط الورقي تبعاً له. وبسبب كبر المخروط تهتز كمية كبيرة من جزئيات الهواء المحبوس بداخله، وتحدث موجات صوتية ذات شدة مناسبة ومشابهة للصوت المرسل من محطات الإذاعة .</p><h1>ملاحظات:</h1><p>- التيار المعبر عن الصوت لا يمكن أن يعطي موجات لاسلكية ( موجات كهرومغناطيسية )، لأن ترددات الأصوات عادة صغيرة، لذلك يُحمل التيار المعبر عن الصوت على تيار حامل عالي التردد.
+- تتوقف قدرة محطة الإذاعة على معدل الطاقة المصاحبة للموجات اللاسلكية ( الراديوية ) التي ترسلها، ولزيادة هذه الطاقة كي تغطي إذاعة المحطة مساحة واسعة يستخدم عدد من دوائر الترانزستور لتكبير التيار المعدل عدة مرات .
+- لزيادة قدرة جهاز الاستقبال يستخدم عدد من دوائر الترانزستور حتى يمكن تكبير التيار المقوم إلى حد كبير .</p><h1>التلفاز (التليفزيون) Television</h1><p>كلمة التلفاز ( التليفزيون ) هي كلمة غير عربية جاءت من المقطعين Tele والذي يعني « بعد » أو « من بعد » و ( Vision ) وتعني الرؤية المباشرة للصور أو المناظر من بعد، ويتم ذلك عن طريق جهاز إرسال أو شبكة إرسال، واستقبال هذه الصور يتم بواسطة جهاز استقبال تلفازي... فماذا يقصد بعملية الإرسال التلفازي؟ وممّ تتركب</p><p>٩٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

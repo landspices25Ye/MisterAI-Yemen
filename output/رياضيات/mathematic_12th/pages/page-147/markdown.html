@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الهندسة الفضائية</p><img src="img-126.jpeg" alt="img-126.jpeg" /><p>البرهان : $‫\therefore \text{هـ} (\text{جوه}) = \text{هـ} (\text{بوه}) = 90^\circ‬$‫</p><p>‬$‫\therefore \text{هـ} \text{جوه} \text{، هـ} \text{بوه} \text{ (معطي)}‬$‫</p><p>‬$‫\therefore \text{هـ} \text{المستوى (ب جو) [مبرهنة (٥-١)]}‬$‫</p><p>‬$‫\therefore \text{س، ص منتصفا وج، جده}‬$‫</p><p>‬$‫\therefore \text{س ص // وه}‬$‫</p><p>‬$‫\therefore \text{س ص} \text{المستوى (ب جو) (هـ.ط أولا).}‬$‫</p><p>‬$‫\therefore \text{ب ج // ك}‬$‫</p><p>‬$‫\therefore \text{ك يقطع المستويين (ب جو)، (ب جده)}‬$‫</p><p>‬$‫\text{في س س، ص ص}‬$‫</p><p>‬$‫\therefore \text{ب ج // س س، // ص ص} \dots \dots \dots (1)‬$‫ (من مبرهنات التوازي)</p><p>‬$‫\therefore \text{وه // س ص} \text{، س ص ك}‬$‫</p><p>‬$‫\therefore \text{ك يقطع المستوى (ب وه) في س ص، س ص // وه}‬$‫</p><p>‬$‫\therefore \text{س ص ص // س ص} \dots \dots \dots (2)‬$‫</p><p>من (١)، (٢) ينتج أن الشكل س ص ص س متوازي أضلاع.</p><p>الآن نبرهن أن إحدى الزوايا قائمة.</p><p>‬$‫\therefore \text{س ص} \text{المستوى (ب جو)}‬$‫</p><p>‬$‫\therefore \text{هـ} (\text{س ص ص}) = 90^\circ‬$‫</p><p>‬$‫\therefore \text{الشكل س ص ص س مستطيل}‬$‫ (وهو المطلوب ثانيا).</p><h1>مثال (٥-٧)</h1><p>ب جوه رباعي سطوح، فيه ‬$‫\text{ب ج} \text{المستوى (جوه)}‬$‫، ‬$‫|\text{ب ه}|^2 = |\text{ب ج}|^2 + |\text{ج} |^2 + |\text{و} |^2‬$‫،</p><p>أثبت أن : ‬$‫\text{وه} \text{المستوى (ب جو)}‬$‫.</p><p>المعطيات : ب جوه رباعي سطوح.</p><p>‬$‫\text{ب ج} \text{المستوى (جوه) [الشكل (٥-١٧)]}‬$‫</p><p>‬$$‫|\text{ب ه}|^2 = |\text{ب ج}|^2 + |\text{ج} |^2 + |\text{و} |^2‬$$‫</p><p>المطلوب : إثبات أن ‬$$‫\text{وه} \text{المستوى (ب جو)}‬$$‫</p><p>البرهان : ‬$‫\therefore \text{ب ج} \text{المستوى (جوه)}‬$‫</p><p>‬$‫\therefore \text{ب ج} \text{جوه} \text{ [عكس حقيقة (٥-١)]}‬$‫</p><p>نطبق مبرهنة فيثاغورث على ‬$‫\Delta‬$‫ ب جده</p><p>‬$‫\therefore |\text{ب ه}|^2 = |\text{ب ج}|^2 + |\text{ج} |^2 \dots \dots \dots (1)‬$</p><img src="img-127.jpeg" alt="img-127.jpeg" /><p>شكل (٥-١٧)</p><p>١٤٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

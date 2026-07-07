@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-105.jpeg" alt="img-105.jpeg" /><p>الشكل (٩) بصمة الحمض النووي</p><p>انظر إلى الشكل رقم (٩) والذي يمثل بصمة DNA ثلاثة أشخاص، أم وطفل، ورجل يزعم أنه أب للطفل، وللتحقق من ذلك أجريت مقارنة لبصمة DNA لكل منهم. تلاحظ أن أي خط لا يتطابق مع بصمة الأم، ولكنه يتطابق مع بصمة الرجل، فإن ذلك يثبت أن الرجل أب للطفل كما يتضح ذلك من الخطوط المعلقة باللون الأصفر.</p><p>تجدر الإشارة إلى أنه يمكن استخدام بصمة الحمض النووي DNA في التحقق من هوية مجرم إذا ترك أثراً من نسيج حي من جسمه، كقطرة دم أو شعرة مثلاً، وذلك بإعداد بصمة DNA من هذا النسيج ومطابقتها مع الأشخاص المشتبه بهم لإثبات أو نفي ارتكابهم للجريمة.</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p><p>١٤١</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

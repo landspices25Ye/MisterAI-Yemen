@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>إلى مستويات طاقة أعلى ، وبالعكس الإلكترون الأكثر قرباً من النواة يمتلك طاقة أقل ويكون في حالة أكثر استقراراً ، ولهذا فالإلكترون المثار الواقع على مدار بعيد من النواة ( نتيجة لطاقة خارجية حملته إلى ذلك المدار ، انظر الشكل ( ١٦ ) ) ، يحاول أن يعود بسرعة إلى مكانه الأول ( الأصلي ) باعثاً بالطاقة التي امتصها على شكل إشعاع .</p><h3>حساب الأطوال الموجية لطيف ذرة الهيدروجين :</h3><p>وفقاً لفرضية بوهر الثالثة التي تنص على أنه إذا كانت طاقة الإلكترون الابتدائية هي ( طأ ) وانتقل إلى حالة نهائية طاقتها ( طم ) أصغر من طاقة الحالة ( طأ ) ، فإن ذرة الهيدروجين تبعث بضوء طاقته ( hf ) تحسب من العلاقة التالية :</p><p>$‫hf = طأ - طم‬$‫</p><p>‬$‫\text{أو } f = \frac{طأ}{h} - \frac{طم}{h}‬$‫</p><p>ولكن ‬$f = \frac{\frac{\text{ع}}{\text{ص}}}{\frac{\text{ع}}{\text{ص}}}$‫ ( حيث ( ع ) سرعة الضوء المنبعث و ( ‬$\lambda$‫ ) طول موجته و ( f ) تردده ،</p><p>‬$‫\text{وأن } \text{طأ} = \frac{\text{طأ}}{\text{نأ}} \text{ ، طم} = \frac{\text{طأ}}{\text{نأ}} \text{ ( من العلاقة ١٣ ) .}‬$‫</p><p>وبتعويض هذه القيم في العلاقة ( أعلاه ) نجد أن :</p><p>‬$‫\frac{\text{ع}}{\lambda} = \frac{\text{طأ}}{\text{نأ}} - \frac{\text{طأ}}{\text{نأ}} = \frac{\text{طأ}}{\text{نأ}} \left( \frac{1}{\text{نأ}} - \frac{1}{\text{نأ}} \right)‬$‫</p><p>‬$‫\text{أو } \frac{1}{\lambda} = \frac{\text{طأ}}{\text{ع}} \left( \frac{1}{\text{نأ}} - \frac{1}{\text{نأ}} \right) \text{ وحيث أن طأ} = - ١٣,٦ \text{ ( ف. } \text{أ. } \text{ف)}‬$‫</p><p>‬$‫\therefore \frac{1}{\lambda} = \frac{١٣,٦}{\text{ع}} \left( \frac{1}{\text{نأ}} - \frac{1}{\text{نأ}} \right)‬$‫</p><p>حيث ‬$\frac{١٣,٦}{\text{ع}} = \frac{\text{ع}}{\text{ع}}$‫ مقدار ثابت نرمز له بالرمز ‬$R_H$ ويساوي :</p><p>١٣٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

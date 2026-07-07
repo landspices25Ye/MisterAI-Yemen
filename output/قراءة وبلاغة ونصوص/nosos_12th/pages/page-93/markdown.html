@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>لم تسلم من أذى الزمن، فهي تتعرض للموج الذي يفتتها كما يحطم المرض جسمه ويضعف أعضائه (ينتابها موج كموج مكارهي)، (يفتتها كالسقم في أعضائي).</p><p>في بقية الأبيات نرى لوحة مكملة ومرتبطة بسابقها، لا تنفك عنها، يسري فيها رابط فكري وجداني عميق، إذ تطلعا نفس الشاعر في قمة انفعالها بالموقف، وفي نظرة تأملية يرصد مشهد الغروب وما يثيره من أحزان في نفس كل مشتاق متذكراً لحظات الوداع، ويتخذ منه المتأمل العبرة في أن لكل شيء نهاية، فالنهار يحتضر، والشمس تموت، والأضواء تقيم لها مائماً، ومع كل هذا فالشاعر يؤكد أن ذكرى محبوبته حية في نفسه (ولقد ذكرتك والنهار مودع).</p><p>وفي مشاركة وجدانية تظهر خواطره أمامه جريحة مجسمة في الطبيعة فالشمس دمعة حمراء تنحدر، وكأنما نزلت لثرائه مع آخر دمع له في الحياة، بل كأنه يرى في المرآة صورة لمساء عمره.</p><p>وقد استعان الشاعر ببعض الأساليب الإنشائية التي تثير المشاعر: (أيلطف النيران طيب هواء؟) استفهام غرضه النفي، (أو ليس نزعاً للنهار) استفهام للتقرير، (يا للغروب) نداء للتعجب يوحي بقوة الانفعال، (ليت لي قلباً..) للتمني. وفي قوله (شاك) إيجاز بحذف المبتدأ وتقديره (أنا شاك) وكذا (ثاو) تقديره (أنا ثاو) وهو أسلوب خبري لإظهار الألم.</p><p>ونجد زهداً في المحسنات البديعية كالطباق بين (علة واستشفاء) يوضح المعنى بالتضاد، وبين (الشمس، سوداء) تضاد معنوي وكذا الجنس الناقص بين (عبرة، عبرة) لتحريك الذهن بالمعنى المراد.</p><p>٩١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

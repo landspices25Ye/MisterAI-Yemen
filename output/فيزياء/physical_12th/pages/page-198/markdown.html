@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>وهي عبارة عن طبقة عاكسة تحفظ الضوء في الجزء الحامل من البطارية ، ثم طبقتين من السيليكون المطعم بالشوائب تكونان قلب البطارية أو قلب الخلية الشمسية ، أما الطبقة الخامسة فهي عبارة عن غشاء رقيق شفاف يحمي طبقة السيليكون العليا ، وتكتمل الخلية بالطبقة السادسة ، وهي لوح معدني دقيق يمثل القطب الموجب للخلية</p><img src="img-196.jpeg" alt="img-196.jpeg" /><p>شكل (١٣): تركيب الخلية الشمسية</p><p>تحول الطاقة في الخلية الشمسية</p><img src="img-197.jpeg" alt="img-197.jpeg" /><p>من الأجهزة التي تعمل بالبطارية الشمسية :</p><p>بعض أنواع الآلات الحاسبة . Calculators كما في الشكل (١٤) .
+والساعات الإلكترونية . Electronic Watches كما في الشكل (١٥) .</p><img src="img-198.jpeg" alt="img-198.jpeg" /><p>شكل (١٥) ساعة إلكترونية</p><img src="img-199.jpeg" alt="img-199.jpeg" /><p>شكل (١٤) آلة حاسبة</p><p>١٩٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

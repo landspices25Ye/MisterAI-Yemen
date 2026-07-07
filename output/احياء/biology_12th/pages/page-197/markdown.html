@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h4>٤- المناخ القديم (Palaeoclimate) :</h4><p>من الشروط البيئية التي تتكيف بها الكائنات الحية الشروط المناخية. فوجود أحافير معينة تؤخذ دليلاً على المناخ السائد في العصر الذي كانت تعيش فيه.</p><p>فأحافير المرجان والنخيل وغيرها التي عثر عليها في صخور العصر الجوارسي تدل على المناخ الدافئ، وهناك أحافير حيوانية ونباتية أخرى عثر عليها في صخور العصر البرمي مثلاً تدل على المناخ البارد. أي إن الأحافير تدل على تغير الأحوال المناخية في العصور المختلفة.</p><p>٥- دراسة التطورات التي مرت بها الحياة على الأرض وفهمها.</p><p>٦- تحديد العمر النسبي للطبقات ومضاهاتها</p><h4>(Age Determination & Correlation)</h4><p>لكل كائن حي فترة زمنية عاشها، وإذا حفظت بقاياه بعد موته على شكل أحفورة فإنها تكون دليلاً مرشداً على الفترة الزمنية أو العصر الذي عاش فيه.</p><p>لذا تساعد الأحافير في تحديد أعمار الصخور التي تحويها وتعيين موضعها الصحيح في السجل الزمني، كما تفيد أيضاً في مقارنة الصخور ذات العمر الواحد محلياً وإقليمياً حتى وإن اختلفت الصخور في تركيبها. وقياساً على ذلك فإن تشابه الأحافير المتزامنة في الطبقات يساعد على تنسيب الصخور ومقارنتها ببعضها إقليمياً (في أماكن متباعدة) حتى وإن اختلفت الصخور في تركيبها.</p><h4>- السجل الجيولوجي :</h4><p>ما المقصود بالسجل الجيولوجي؟</p><p>السجل الجيولوجي هو سجل ينظم طبقات الصخور والأحداث والأحافير، حسب ترتيب موضعها الأصلي خلال التاريخ الجيولوجي.</p><p>وأول ما تضافرت عليه الجهود للتعرف على تنابع التاريخ الجيولوجي للأرض هو تنظيم علاقات الطبقات بعضها ببعض وترتيب الأحداث الجيولوجية بشكل نسبي، أي نسبة إلى بعضها البعض، أيها أقدم وأيها أحدث، وربط هذه بتلك، لكن بعد اكتشاف ظاهرة النشاط الإشعاعي، قيست أعمار الصخور وحددت تحديداً مطلقاً، أي بعدد السنين.</p><h4>أولاً: مبادئ التاريخ النسبي للصخور :</h4><p>يعتمد التاريخ النسبي على عدة مبادئ في تاريخ الأحداث الجيولوجية،</p><p>١٩٧</p><p>الأحياء الصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

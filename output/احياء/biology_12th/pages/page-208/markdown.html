@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>جدول (٢) أقسام السجل الجيولوجي وسلمه الزمني وأهم أنواع الحياة</h1><p>| دهر (Eon) | حقبة (Era) | عصر (Period) | حين (Epoch) | أهم أنواع الحياة | السلم الزمني (مليون سنة) |
+| --- | --- | --- | --- | --- | --- |
+| دهر الحياة المعروفة أو ما بعد الكمبري (Phenoxazole Eon) | حقيقة الحياة الحديثة (Cenozoic Era) | الرباعي (Quaternary) | الحديث (Recent) بليستوسين (Pleistocene) | عصر الإنسان | ٢ |
+|  | البليوسين (Pliocene) | عصر الملوث | ٧ |
+| الثلاثي (Tertiary) |  | الميوسين (Miocene) | عصر الحيوانات العصرية | ٢٦ |
+|  | اليجوسين (Oligocene) | عصر آكلات العشب ومنها الجمل | ٣٧ |
+|  | أيوسين (Eocene) | عصر الفيلة الأولى | ٥٧ |
+| حقيقة الحياة المتوسطة (Mesoxazole Era) | الكريتاسي (Cretaceous) | باليوسين (Paleocene) | عصر الخيول الأولى | ٦٥ |
+| الجوارسي (Jurassic) |  | عصر الديناصور الأخير | ١٤٤ |
+| الكرياسي (Triassic) |  |  | عصر الديناصور المتوسط | ٢٠٨ |
+|  |  | عصر الديناصور الأول | ٢٤٥ |
+| حقيقة الحياة القديمة (Paleozoic Era) | البرمي (Permian) |  | عصر الزواحف الأولية | ٢٨٦ |  |
+| الكربوني (Carboni Ferous) |  | عصر البرمائيات والمستنقعات | ٣٦٠ |  |
+| الديفوني (Devonian) |  | عصر الأسماك | ٤٠٨ |  |
+| السيلوري (Silurian) |  | عصر العقارب المائية ونباتات اليابسة | ٤٣٨ |  |
+| الأردوفيشي (Ordovician) |  | عصر الرخويات العملاقة | ٥٠٥ |  |
+| الكمبري (Cambrian) |  | عصر ثلاثية القصص | ٥٧٠ |  |
+| دهر الحياة الحقيبة | الحقيبة البدائية (Proterozoic) |  |  |  | ٢٥٠٠ |
+| الحقيبة السعيدة (Cryptozoic Sea) | الحقيبة السعيدة (Archeozoic) |  |  |  | ٤٦٠٠ |</p><p>٢٠٨</p><p>الأحياء: النصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

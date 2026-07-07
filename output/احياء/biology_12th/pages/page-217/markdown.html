@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>وفي العصر الكريتاسي (الطباشيري) واصل البحر انحساره وتحولت اليمن مرة ثانية إلى بيئة قارية، وأدت العمليات التحتية إلى تفتيت خامات الأحواض التي ارتفعت في الجنوب والشرق وإعادة ترسيبها في كل أنحاء اليمن تقريباً، باستثناء منطقة الدرع العربي، على هيئة (صخور رملية خشنة الحبيبات)، رواسب رملية حصرية صفراء ميرقشة، ورملية طينية حمراء أو مختلفة الألوان، ورملية بيضاء بها مواد طينية، وتظهر على السطح في بعض المناطق في شمال وشرق اليمن وعلى جانبي بعض الوديان الرئيسية في غرب اليمن كوادي سردد وتراكيب الظهور (Horsts)، وتوجد مختبئة تحت الصخور البركانية لحقبة الحياة الحديثة في المناطق الشرقية والوسطى والجنوبية من اليمن.</p><h3>ثالثاً: حقبة الحياة الحديثة (Cenozoic Era):</h3><p>١ - العصر الثلاثي (Tertiary Period) (٦٥ - ٧ مليون سنة) مع بداية عصر الثلاثي، في حين الباليوسين غمر البحر اليمن باستثناء المناطق المرتفعة في شمال اليمن مرسياً رواسب رملية شاطئية طينية ذات انتشار محدود للغاية تحتوي على طفل وحفريات بحرية من حين الباليوسين، وفي حين الأيوسين انحسر البحر، وتكونت أحواض منعزلة بعضها عن بعض وترسب الجبس والملح كما في الصليف والمهرة، وقبل نهاية الأيوسين عاد البحر وغمر المنطقة مرة ثانية.</p><p>كما نشطت حركات القشرة الأرضية في حين الأيوسين وتعرض غرب شبه الجزيرة وشرق إفريقيا لحركة أرضية رافعة نشأ عنها تقوس إقليمي لقشرتها الأرضية بلغ أقصى مداه خلال حين الأوليجوسين ومصحوباً بما يلي:</p><p>١ - ثورات بركانية غير متصلة (بركانيات اليمن الثلاثية) نتج عنها صخور نارية بركانية كالبازلت والإنديزيت والتراكيت .. إلخ، مكونة مع ما تلاها من طفوح بركانية الميوسين بما يعرف بمجموعة (تراب) البركانية التي تتكون من صخور بركانية كالبازلت، والإنديزيت، والتراكيت، والتف أو الطف (Tuff) والإجنيميرت والزجاج البركاني وغيرها، على هيئة طبقات متراصة فوق بعضها البعض مما يجعل البعض يعتقد بأنها صخور رسوبية لأول وهلة وليست صخور بركانية، ويقطعها الكثير من القواطع والسدود والكتل</p><p>الأحياء الصيف الثالث الثانوي</p><p>٢١٧</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

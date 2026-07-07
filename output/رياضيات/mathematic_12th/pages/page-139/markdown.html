@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الهندسة الفضائية</p><img src="img-112.jpeg" alt="img-112.jpeg" /><p>شكل (٥-٥)</p><p>∴ قَم // قَم ، ∴ ل س م</p><p>∴ ل س قَم</p><p>∴ ل س قَم</p><p>بالمثل نجد أن :</p><p>ل س قَم</p><p>∴ قَم ، قَم متقاطعان في المستوى س م .</p><p>∴ ل س م ( وهو المطلوب ) .</p><h1><strong>مبرهنة (٥-٣)</strong></h1><p>المستويان العموديان على مستقيم واحد متوازيان .</p><img src="img-113.jpeg" alt="img-113.jpeg" /><p>شكل (٥-٦)</p><p>المعطيات : ل س م ، ل س م [ شكل (٥-٦) ]</p><p>المطلوب : إثبات أن س م // س م .</p><p>البرهان : نرسم المستويين ص م ، ص م المتقاطعين في</p><p>ل بحيث ص م يقطع س م ، س م في</p><p>قَم ، قَم على التوالي ، ص م يقطع س م ، س م</p><p>في قَم ، قَم على التوالي .</p><p>∴ ل س م ، ل س م</p><p>∴ ل س قَم ، ل س قَم .</p><p>∴ قَم ، قَم ، ل يجمعهم مستوى واحد هو ص م ،</p><p>∴ قَم // قَم ... (١) .</p><p>وبالمثل نجد قَم // قَم ... (٢) .</p><p>من (١) ، (٢) ينتج أن : س م // س م ( وهو المطلوب ) .</p><h1><strong>نتيجة (١) :</strong></h1><p>المستويات العمودية على مستقيم واحد متوازية .</p><p>١٣٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><p>ثانياً- حاجتنا إلى نور نهتدي به في الحياة. وليس من نور نهتدي به غير نور الحقيقة؛ حقيقة ما في أنفسنا، وحقيقة ما في العالم من حولنا. فنحن، وإن اختلف فهمنا عن الحقيقة، لسنا ننكر أنَّ في الحياة ما كان حقيقة من عهد آدم ولا يزال حقيقة حتى اليوم، وسيبقى حقيقة حتى آخر الدهر.</p><p>ثالثاً- حاجتنا إلى الجميل في كل شيء؛ ففي الروح عطش لا ينطفئ إلى الجمال وكل ما فيه مظهر من مظاهر الجمال. فإنَّ - وإن تضاربت أذواقنا فيما نحسبه قبيحاً - لا يمكننا التعامي عن أنَّ في الحياة جمالاً مطلقاً لا يختلف فيه ذوقان.</p><p>رابعاً- حاجتنا إلى الموسيقى: ففي الروح ميل عجيب إلى الأصوات والألحان لا ندرك كُنْهَه؛ فهي تهتز لقصف الرعد، ولخبير الماء، ولحفيف الأوراق، ولكنها تنكمش من الأصوات المتنافرة، وتأنس وتنبسط بما تألف منها.</p><p>هذه بعض حاجاتنا الروحية إن لم تكن أهمها، وهي معنا في كل حين. فهي، وإن تنوعت في الناس بتنوع الأفراد والشعوب والأزمنة والأقطار، لا تتنوع بجوهرها، بل بدرجات شدَّتها وقوة شعورنا بها، وهي المقاييس الثابتة التي يجب أن نقيس بها الأدب، فتكون قيمته بمقدار ما يُسَدُّ من بعض هذه الحاجات أو كلها، ويكون أثمنه أجلاءه بياناً، وأغناه حقيقة، وأطلاء رونقاً، وأشجاه وقعاً.</p><p>إنَّ لمفردات اللغة التي نصوغ منها منشوراتنا ومنظوماتنا صفات عجيبة، وميزات غريبة؛ فلكل كلمة معنى أو روح، ولكل كلمة رَنَّة، ولكل كلمة صِبْغَة أو لون، والمُجيد من الكتاب والشعراء من إذا شاء الإفصاح عن عاطفة أو فكر جمع بين مفردات يتولد من ارتباط معانيها معنى جلي، ومن اندماج ألوانها صورة واضحة جميلة، ومن تألف رَنَّاتها لحن رقيق شجي.</p><p>غير أنَّ من الكُتَّاب والشعراء من لا يرون في الألفاظ إلاَّ معانيها، فهؤلاء قد يُفصحون عن عاطفة أو فكر، إنما يجيء إفصاحهم عارياً من الجمال، خالياً من الموسيقى، ومنهم من لا يرون في الألفاظ غير ألوانها، فهؤلاء قد يرسمون صورة طَلِيَّة،</p><p>٥٦</p><p><http://www.e-learning-moe.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

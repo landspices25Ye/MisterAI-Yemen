@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-143.jpeg" alt="img-143.jpeg" /><p>الوحدة السادسة</p><p>وكذلك يمكن استنتاج أن :</p><p>$‫د (س) = \text{ظا س} : \text{دالة متصلة} ، س \approx (2 ك + 1) \frac{\pi}{2} ، ك \subseteq ص‬$‫</p><p>‬$‫د (س) = \text{ظا س} : \text{دالة متصلة} ، س \approx ك \pi ، ك \subseteq ص‬$‫</p><h1><strong>مثال (٦ - ٤)</strong></h1><p>‬$‫\text{إذا كانت } د (س) = \frac{3 س + جا 2 س}{ظا 3 س}‬$‫</p><p>إبحث اتصال الدالة د عند النقطة س = ٠ ، وإذا كانت غير متصلة أعد تعريفها لكي تكون متصلة (إن أمكن).</p><h1><strong>الحل :</strong></h1><p>الدالة غير معرفة عند س = ٠</p><p>إذن الدالة غير متصلة عند س = ٠ ،</p><p>ولإعادة تعريف الدالة د لكي تكون متصلة عند س = ٠ نبحث عن وجود النهاية عند س ← ٠</p><p>‬$‫\text{نهما } \frac{\frac{جا 2 س}{2} \times 2 + 3}{\frac{ظا 3 س}{3} \times 3} = \frac{1 \times 2 + 3}{1 \times 3} = \frac{5}{3}‬$‫</p><p>إذن يمكن إعادة التعريف لكي تكون الدالة د متصلة عند س = ٠ بالصورة :</p><p>‬$‫\left. \begin{array}{l} \text{عندما س} \approx 0 \\ \text{عندما س} = 0 \end{array} \right\} \left. \begin{array}{l} \frac{3 س + جا 2 س}{ظا 3 س} \\ \frac{5}{3} \end{array} \right\} = (س) \text{ د}‬$‫</p><h1><strong>تمارين ومسائل (٦ - ١)</strong></h1><p>[١] احسب نهايات الدوال التالية عندما يسعى متغيرها (س) نحو القيمة المرافقة لكل منها، علماً بأن (س) مقدرة بالراديان :</p><p>‬$‫(١) \frac{جا 2 س}{س} ، س \leftarrow ٠ \quad (٢) \frac{ظا 3 س}{جا 5 س} ، س \leftarrow ٠‬$‫</p><p>‬$‫(٣) س^2 قتا 5 س^2 ، س \leftarrow ٠ \quad (٤) \frac{جا 5 س}{س ظا 3 س} ، س \leftarrow ٠‬$‫</p><p>‬$‫(٥) \frac{1 - جتا 3 س}{جا س} ، س \leftarrow ٠ \quad (٦) \frac{س^2 + 3 جا 2 س}{1 - جتا س} ، س \leftarrow ٠‬$</p><p>١٥٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

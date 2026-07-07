@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الحموض $‫\alpha‬$ - الأمينية لا تنجذب ناحية الكاثود (القطب السالب) أو الأنود (القطب الموجب) عند إمرار التيار الكهربائي في محاليلها، والسبب في ذلك وجود الحمض $‫\alpha‬$ - الأميني على هيئة أيون ثنائي القطبية (Dipolar) متعادل كهربائياً، يحمل الشحنة الموجبة في طرف، والشحنة السالبة في الطرف الآخر من الجزيء، وينتج هذا من تفاعل المجموعة الأمينية ($‫NH_2‬$ -)، والمجموعة الكربوكسيلية ($‫COOH‬$) مع بعضها بعضاً في الجزيء نفسه على النحو الآتي:</p><p>$‫R - CH - COOH \rightleftharpoons R - CH - COO^-‬$‫
+$NH_2 \hspace{2em} NH_3^+‬$$‫</p><p>وفي الوسط الحمضي مثلاً، عند إضافة حمض قوي مثل حمض الهيدروكلوريك (إضافة كاتيون هيدروجين) إلى محلول الحمض الأميني ينجذب الحمض الأميني كوحدة واحدة إلى الكاثود، وذلك لأن الحمض ‬$\alpha$‫ - الأميني المتعادل - بسبب احتوائه على عدد متساوٍ من المجموعات الأمينية والكربوكسيلية - يكتسب بروتوناً في الوسط الحمضي، لذا يتجه نحو الكاثود عند إمرار التيار الكهربائي.</p><p>‬$‫H_3N^+ - CH_2 - COO^- + H^+ \longrightarrow H_3N^+ - CH_2 - COOH‬$‫
+حمض أميني في حالة تعادل</p><p>أما في الوسط القاعدي، عند إضافة قاعدة قوية مثل هيدروكسيد الصوديوم (أيونات هيدروكسيل) فيحدث العكس؛ لأن الحمض يفقد بروتوناً، كما يأتي:</p><p>‬$‫H_3N^+ - CH_2 - COO^- + HO^- \longrightarrow H_2N - CH_2 - COO^- + H_2O‬$‫</p><p>- ما تأثير محلول دوار الشمس على الحمض الأميني أحادي الأمين، ثنائي الكربوكسيل؟
+- ما تأثير محلول دوار الشمس على الحمض الأميني ثنائي الأمين، ثنائي الكربوكسيل؟
+- سجّل ذلك في كراستك.</p><h3>تفاعلات الحموض الأمينية:</h3><p>تتفاعل الحموض ‬$\alpha$‫ - الأمينية باعتمادها على وجود المجموعة الأمينية والمجموعة الكربوكسيلية، إضافة إلى تفاعلات كل من الحموض والقواعد، على النحو الآتي:
+أولاً: تفاعلات مجموعة الأمين:</p><p>١ - كقواعد أمينات: تتفاعل الحموض الأمينية مع أنهيدريد حمض الأسيتيك وكلوريد الأسيتيك، مكونة أسيتيل الحمض الأميني.</p><p>‬$‫H_2N - CH_2 - COOH + CH_3 - CO - Cl \longrightarrow CH_3 - CO - NH - CH_2 - COOH + HCl‬$</p><p>١٠١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

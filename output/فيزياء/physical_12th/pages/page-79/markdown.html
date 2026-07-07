@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>هذه الإلكترونات مع عدد مساوٍ لها من الفجوات الموجبة التي تعبر وصلة</p><img src="img-78.jpeg" alt="img-78.jpeg" /><p>(الباعث - القاعدة)
+بعدد كبير جداً، أما ما
+تبقى من هذه الفجوات
+(وهو عدد كبير) فإنه
+يندفع باتجاه المجمع، انظر
+إلى الشكل (١٦).</p><p>- صغر المقاومة باتجاه (الباعث - المجمع) يسمح الشكل (١٦)</p><p>بمرور عدد كبير من الفجوات الموجبة إلى المجمع لكبر مساحته، وكبر المقاومة
+باتجاه القاعدة يجعل عدداً قليلاً جداً من الفجوات الموجبة تتجه إلى القاعدة،
+وذلك بسبب صغر مساحة سطح القاعدة وقلة شوائبها.</p><h3>طريقة التكبير بالباعث المشترك :</h3><p>Common Emitter Amplification Process</p><img src="img-79.jpeg" alt="img-79.jpeg" /><p>الشكل (١٧) دائرة الترانزستور PNP ذي الباعث المشترك</p><p>كما هو واضح من الشكل (١٧)، في هذه الطريقة يكون الباعث مشتركاً بين
+الإشارة الداخلة والإشارة الخارجة (القدرة أو الجهد أو التيار الكهربائي) والتي تكون
+مكبرة بالنسبة للإشارة الكهربائية الداخلة.</p><p>ومن مزايا هذه الطريقة ما يأتي:</p><p>- يكون معامل تكبير التيار ($‫\frac{\text{ت خروج}}{\text{ت دخول}}‬$) عالياً لأن تيار المجمع أكبر بكثير من تيار القاعدة.</p><p>٧٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

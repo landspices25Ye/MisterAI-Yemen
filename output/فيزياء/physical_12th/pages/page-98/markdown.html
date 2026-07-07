@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-95.jpeg" alt="img-95.jpeg" /><h1>مراحل عملية بث الموجات اللاسلكية (الموجات الراديوية) (عملية الإرسال الإذاعي):</h1><p>- يوجه صوت المتكلم (أو غيره من الأصوات) إلى الميكروفون المتصل بمصدر كهربائي لتيار مستمر، فيهتز غشاء الميكروفون وتتغير تبعاً لذلك شدة التيار المستمر المار زيادة ونقصاً وفقاً للموجات الصوتية التي تصل إلى الميكروفون، ويصبح هذا التيار معبراً عن الصوت.</p><img src="img-96.jpeg" alt="img-96.jpeg" /><p>شكل (٨)</p><p>- تقوم الدائرة المهتزة (المذبذبة) بتوليد تيارات كهربائية عالية التردد تسمى هذه (التيارات الحاملة).
+- عندما يصل كل من التيارات المعبرة عن الصوت والتيارات عالية التردد (التيارات الحاملة)</p><p>إلى معدل التيار، كما يبدو في الشكل (٨)، تدمج التيارات المعبرة عن الصوت في التيارات الحاملة عالية التردد (المذبذب)، فتغير من سعتها وينتج عن ذلك تيارات تسمى تيارات معدلة.</p><p>أي إن: تيار معبر عن الصوت + تيار حامل = تيار معدل.</p><p>- يتم بعد ذلك حث التيارات المعدلة إلى هوائي الإرسال الذي يقوم ببثها إلى الهواء الجوي في جميع الاتجاهات على شكل موجات كهرومغناطيسية.</p><h1>ثانياً: استقبال الموجات اللاسلكية (الاستقبال الإذاعي) Radio Waves Reception</h1><p>تحتاج عملية الاستقبال الإذاعي إلى جهاز استقبال (جهاز راديو)، فماذا يقصد بعملية الاستقبال الإذاعي؟ ومُتركب جهاز الاستقبال الإذاعي؟ وكيف تتم عملية الاستقبال؟ لكي تتعرف على ذلك نفذ الآتي:</p><p>- قم بزيارة إلى أقرب ورشة متخصصة لصيانة الأجهزة الإلكترونية في منطقتك.
+- قابل المهندس المتخصص، وأطلب منه أن يوضح لك الأجزاء الرئيسية التي يتركب منها جهاز الاستقبال الإذاعي (جهاز الراديو)، وأطلب منه أيضاً أن يوضح ذلك برسم تخطيطي مبسط.</p><p>٩٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

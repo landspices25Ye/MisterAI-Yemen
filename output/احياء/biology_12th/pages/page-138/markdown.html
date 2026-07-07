@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>جدول (١) احتمالات تحديد هوية الحمض الأميني بقاعدتين فقط</p><p>|   | A | G | C | U  |
+| --- | --- | --- | --- | --- |
+|  A | AA | AG | AC | AU  |
+|  G | GA | GG | GC | GU  |
+|  C | CA | CG | CC | CU  |
+|  U | UA | UG | UC | UU  |</p><p>ولكن هذا لا يكفي لتحديد هوية جميع الحموض الأمينية والبالغ عددها (٢٠) حمضاً أمينياً كما ذكرنا.</p><p>ونتيجة لذلك لم يبق أمامنا سوى افتراض أن الحمض الأميني يحتاج إلى ثلاث قواعد تيتروجينية لتشفيره أو لتحديد هويته (وبذلك تكون الشفرة ثلاثية). ويكون بالإمكان الحصول على (٤-٦٤) احتمالاً في هذه الحالة.</p><p>وعليه يمكن أن يكون لمعظم الحموض الأمينية أكثر من شفرة ثلاثية لتحديد هويته كما هو مبين في الشكل (٧).</p><p>وتعرف كل من الاحتمالات الثلاثية بالشفرة الوراثية TAT, GAC, ATT؛ وهكذا تكون الشفرات على شكل وحدات، ويكون لكل وحدة منها معناها الخاص لتنتج حمضاً أمينياً محدداً، كما توجد بعض الشفرات التي تعمل على إنهاء الرسالة المطلوب استنساخها.</p><p>|  القاعدة الثانية  |   |   |   |   |   |   |   |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+|   | U | C | A | G |  |  |   |
+|  U | UUU | UCU | UAU | UGU | S | S | S  |
+|   |  UUC | UCC | UAC | UGC  |   |   |   |
+|   |  UUA | UCA | UAA | UGA  |   |   |   |
+|   |  UUG | UCG | UAG | UGG  |   |   |   |
+|  U | CUU | CCU | CAU | CGU | S | Arg | S  |
+|   |  CUC | CCC | CAC | CGC  |   |   |   |
+|   |  CUA | CCA | CAA | CGA  |   |   |   |
+|   |  CUG | CCG | CAG | CGG  |   |   |   |
+|  A | AUU | ACU | AAU | AGU | S | Ser | S  |
+|   |  AUC | ACC | AAC | AGC  |   |   |   |
+|   |  AUA | ACA | AAA | AGA  |   |   |   |
+|   |  AUG | ACG | AAG | AGG  |   |   |   |
+|  G | GUU | GCU | GAU | GGU | S | Gly | S  |
+|   |  GUC | GCC | GAC | GGC  |   |   |   |
+|   |  GUA | GCA | GAA | GGA  |   |   |   |
+|   |  GUG | GCG | GAG | GGG  |   |   |   |</p><p>الشكل (٧) قاموس الشفرة الوراثية</p><p>وعندها تتوقف الخلية عن إضافة الحموض الأمينية إلى السلسلة (Stop) كما أن هناك شفرات تعطي إشارة البدء بالتخليق للسلسلة الببتيدية (Start).</p><h3>خطوات بناء البروتين Protein Synthesis</h3><p>انظر الشكل (٨) وتتبع خطوات بناء البروتين في الخلية كما هي مرقمة في الشكل، فجزئ البروتين في جسمك يتم بناؤه وفق الخطوات الآتية:</p><p>1. يتم نسخ الحمض النووي الرايبوزي الراسل من حمض DNA في نواة الخلية، وينتقل RNA الراسل إلى سيتوبلازم الخلية.
+2. في سيتوبلازم الخلية كل حمض أميني يرتبط بحمض نووي رايبوزي ناقل خاص به وذلك بمساعدة أتزم محدد وتحتاج العملية إلى طاقة لإتمامها.</p><p>١٣٨</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

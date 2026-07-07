@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الأعداد المركبة</p><p>٤) النظير الجمعي للعدد ع = س + ت ص هو -ع = -س - ت ص .</p><p>أي أن : ع + (ع) = ٠ ، ٧ ع Ⓜ م</p><p>لإثبات ذلك :</p><p>نفرض أن النظير الجمعي للعدد (س ، ص) هو (سّ ، صّ) ،</p><p>(سّ ، صّ) + (س ، ص) = (٠ ، ٠) [ تعريف النظير ]</p><p>(سّ + س ، صّ + ص) = (٠ ، ٠) [ تساوي عددين مركبين ] .</p><p>سّ + س = ٠ ⇐ سّ = -س</p><p>صّ + ص = ٠ ⇐ صّ = -ص</p><p>∴ (سّ ، صّ) = (س - ، ص -)</p><p>∴ النظير الجمعي للعدد المركب ع هو -ع = -س - ت ص = - (س + ت ص) = -ع</p><h1><strong>مثال (١ - ٨)</strong></h1><p>لتكن ع₁ = ٣ + ت ، ع₂ = ١/٢ - ٥ ت ، ع₃ = ٦ - ت ؛ أوجد ما يلي :</p><p>أ) ع₁ + ع₂ . ب) ع₃ - ع₄ . ج) ع₁ + ع₂ - ع₃ .</p><h1><strong>الحل :</strong></h1><p>أ) ع₁ + ع₂ = (٣ + ت) + (١/٢ - ٥ ت)</p><p>= (٣ + ١/٢) + (١ - ٥) ت [ تعريف الجمع ]</p><p>= ١/٢ + ٣ + (٤ - ٢) ت = ٧/٢ - ٤ ت</p><p>ب) ع₃ - ع₄ = (٦ - ت) - (٣ + ت)</p><p>= (٦ - ٣) + (١ - ١) ت = ٣ + (٢ - ٢) ت = ٣ - ٢ ت [ تعريف الطرح ]</p><p>ج) ع₁ + ع₂ - ع₃ = (٣ + ت) + (٦ - ت) - (١/٢ - ٥ ت)</p><p>= (٣ + ٦) + (١ - ١) ت - (١/٢ - ٥ ت) [ تعريف الجمع ]</p><p>= (٩ + ٠) ت - (١/٢ - ٥ ت)</p><p>= (٩ - ١/٢) + (٠ + ٥) ت = ٨/٢ + ٥ ت [ تعريف الطرح ]</p><p>١٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

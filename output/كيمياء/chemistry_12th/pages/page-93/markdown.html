@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>مركبات النيتروجين العضوية</h1>
+Organic Nitrogen Compounds</p><h1>الوحدة الخامسة</h1><img src="img-65.jpeg" alt="img-65.jpeg" /><h1>الأهداف</h1><p>نتوقع منك بعد الانتهاء من دراسة هذه الوحدة أن تكون قادراً على أن:</p><p>١ - تُعرّف كلاً من الأمينات والأميدات والحمض الأميني.
+٢ - تُصنّف الأمينات إلى أولية، وثانوية، وثالثية.
+٣ - تُحدّد الخواص الفيزيائية للأمينات.
+٤ - تميّز العلاقة بين الأمينات والأميدات والحموض الأمينية من خلال الصيغة العامة.
+٥ - تُسمّى الأمينات والأميدات والأحماض الأمينية.
+٦ - تكتب الصيغ البنائية لبعض مركبات النيتروجين العضوية الهامة.
+٧ - تُوضّح كيف تحضر مركبات الأمينات والأميدات.
+٨ - تُبيّن التفاعلات الكيميائية للأمينات والأميدات والحموض الأمينية.
+٩ - تُصنّف الحموض الأمينية طبقاً لوجود مجموعة الأمين ومجموعة الكربوكسيل.
+١٠ - تُفرّق بين الحموض الأمينية المختلفة.</p><p>٩١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

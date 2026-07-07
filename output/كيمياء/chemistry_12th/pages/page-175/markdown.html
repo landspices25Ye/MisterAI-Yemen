@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>نسبة أكاسيد النيتروجين في الجو، أو احتراق البترول (١٤٪) من عوادم السيارات.
+وتتكون أكاسيد النيتروجين نتيجة لاتحاد غاز النيتروجين بالأكسجين عند درجات
+الحرارة العالية والضغط لتكوين أكسيد النيتريك.</p><p>$‫\text{N}_{2\text{(g)}} + \text{O}_{2\text{(g)}} \xrightarrow{\text{Energy}} 2\text{NO}_{\text{(g)}}‬$‫
+أكسيد النيتريك</p><p>ويتأكسد أكسيد النيتريك في الهواء الجوي ليعطي ثاني أكسيد النيتروجين.</p><p>‬$‫2\text{NO}_{\text{(g)}} + \text{O}_{2\text{(g)}} \longrightarrow 2\text{NO}_{2\text{(g)}}‬$‫
+ثاني أكسيد النيتروجين</p><p>يتحول ثاني أكسيد النيتروجين الناتج بفعل الرطوبة إلى حمض النيتريك وحمض
+النيتروز (اللذان يساهمان في تكوين الأمطار الحمضية).</p><p>‬$‫2\text{NO}_{2\text{(g)}} + \text{H}_{2}\text{O} \longrightarrow \text{HNO}_{2} + \text{HNO}_{3}‬$‫</p><p>وحمض النيتروز المتكون يتحلل إلى أكسيد النيتريك وماء وحمض نيتريك:</p><p>‬$‫3\text{HNO}_{2} \longrightarrow \text{HNO}_{3} + \text{H}_{2}\text{O} + 2\text{NO}‬$‫</p><p>ويتأكسد أكسيد النيتريك إلى غاز ثاني أكسيد النيتروجين:</p><p>‬$‫2\text{NO} + \text{O}_{2} \longrightarrow 2\text{NO}_{2}‬$‫</p><p>بينما يتحول جزء من ‬$\text{NO}_{2}$‫ في وجود الأكسجين لإنتاج مزيد من حمض النيتريك:</p><p>‬$‫4\text{NO}_{2} + 2\text{H}_{2}\text{O} + \text{O}_{2} \longrightarrow 4\text{HNO}_{3}‬$‫</p><p>وثاني أكسيد النيتروجين (‬$\text{NO}_{2}$) ماص قوي للأشعة فوق البنفسجية المنبعثة من
+الشمس، ولذا فهو يتفكك بفعل الفوتونات الضوئية إلى أول أكسيد النيتريك وذرات
+أكسجين حرة (O)، والتي بدورها تتحد مع الهيدروكربونات غير المحترقة والصادرة من
+عوادم السيارات لتكوين مركبات عضوية سامة ومركبات مهيجة للعين. وتتحد ذرات</p><p>١٧٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

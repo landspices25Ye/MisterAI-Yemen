@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-34.jpeg" alt="img-34.jpeg" /><p>الوحدة الأولى</p><p>ولكن $‫و = هـ + ٢ ك‬$ ، حيث $‫ك = ص‬$‫</p><p>‬$‫\frac{هـ + ٢ ك}{و} = هـ‬$‫</p><p>‬$‫\therefore ع = \frac{١}{\sqrt{2}} [جنا \frac{هـ + ٢ ك}{و} + ت جا \frac{هـ + ٢ ك}{و} = \frac{١}{\sqrt{2}}]‬$‫</p><p>وبالتعويض عن قيم ‬$ك = ٠، ١، ٢، ...، و -١ نحصل على و من الجذور .</p><p>فمثلاً: إذا أردنا إيجاد الجذرين التربيعين للعدد ع نضع $‫ك = ٠، ١‬$ والجذور التكعيبية</p><p>نضع $‫ك = ٠، ١، ٢‬$ وهكذا .</p><h1><strong>مثال (١ - ٢٦)</strong></h1><p>أوجد الجذرين التربيعين للعدد ( $‫٢ - ٢ \sqrt{3}‬$ ت ) بالصيغتين القطبية والجبرية .</p><h1><strong>الحل :</strong></h1><h1><strong>أولاً : الصيغة القطبية :</strong></h1><p>نحول $‫ع = ٢ - ٢ \sqrt{3}‬$ ت إلى الصورة القطبية .</p><p>$‫س = ٢، ص = ٢ \sqrt{3} \Leftarrow \sqrt{س^2 + ص^2} = ٤ \sqrt{١٢ + ٤} = ١٦ \sqrt{١٦} = ٤‬$‫</p><p>‬$‫\therefore جنا = \frac{س}{٢} = \frac{١}{٢} \text{ ، جا = } \frac{ص}{٢} = \frac{\sqrt{3}}{2}‬$‫</p><p>‬$هـ = -٦٠$‫ ، لأنها تقع في الربع الرابع حيث جنا ‬$هـ > ٠$‫ ، جا ‬$هـ > ٠$‫ .</p><p>‬$‫\therefore هـ = ٣٦٠ - ٦٠ = ٣٠٠‬$‫</p><p>‬$‫ع = [س، هـ] = [٤، ٣٠٠]‬$</p><p>$‫ع = \sqrt{س} (جنا \frac{هـ + ٢ ك}{٢} + ت جا \frac{هـ + ٢ ك}{٢}) \text{ ، } ك = ٠، ١‬$‫</p><p>عندما ‬$ك = ٠$‫ ، فإن الجذر الأول = ‬$\sqrt{٤}$‫ (جنا ‬$\frac{٣٠٠}{٢} + ت جا \frac{٣٠٠}{٢}$‫) = ٢ (جنا ‬$١٥٠ + ت جا ١٥٠$‫ )</p><p>‬$‫= ٢ (\frac{\sqrt{3}}{2} + \frac{١}{2} ت) = -\sqrt{3} + ت‬$‫</p><p>عندما ‬$ك = ١$‫ ، فإن الجذر الثاني = ٢ (جنا ‬$٣٣٠ + ت جا ٣٣٠$‫ ) = ٢ ( ‬$\frac{\sqrt{3}}{2} - \frac{١}{2} ت) = -\sqrt{3} - ت$$</p><p>٣٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

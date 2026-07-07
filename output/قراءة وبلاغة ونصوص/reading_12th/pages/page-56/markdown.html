@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>المقاييس الأدبية *</h1><p>الحياة لا تُحَدُّ، فلا تُكَال بصاع، ولا تُقاس بذراع. غير أننا نقيس منها ما يُحَدُّ عقلنا الصغير بالنسبة لحاجاتنا الجسدية والروحية. وما تلك إلا حيلة نوفق بها بين مداركنا المحدودة والحياة التي لا تُحَدُّ، ونُسَهِّل بها سبيلنا في عالم أوله آخره، وآخره أوله.</p><p>إنَّ نسبتنا إلى العالم لا تنتهي عند الزمان من حيث طوله وقصره، ولا عند الأشياء من حيث بُعدها وقُربها، وعُلُوها وانخفاضها، وثقلها وخفتها، بل هناك نسبة تتعدى كل هذه الأمور، وهي نسبتنا إلى كل ما في العالم، أو نسبة كل ما في العالم إلينا، من حيث قيمته. وإن جاز لي ذلك، دعوتها «النسبة القيمية»؛ فللزمان في حياتنا قيمة، وللمكان قيمة، وللأشياء بأنواعها قيمة أو ثمن، بل إنَّ لكل شيء قيمتين: مادية، وروحية، أمَّا القيمة المادية فنقيسها بحسب حاجاتنا الجسدية، وأمَّا الروحية فبحسب حاجاتنا الروحية. لكنَّ مقاييسنا «القيمية» ليست ثابتة مثل مقاييس الزمان والمسافة والوزن. بل هي تتكيف بالزمان والمكان، وبدرجة رقينا المادي والروحي.</p><p>لقد قلت إنَّ لكل شيء قيمتين: روحية، ومادية. لكن في الحياة ما ليس له إلا قيمة روحية، من ذلك الفنون، ومن ذلك الأدب، فكيف نحدد قيمة الأدب؟ بماذا نقيس هذه القصيدة أو تلك المقالة أو القصة أو الرواية؟ أمِنْ حيث طولها أم قصرها أم تنسيقها أم معناها أم موضوعها أم نفعها؟ أم بإقبال الناس عليها وبعدد طبعاتها؟ أم يستحيل قياسها بمقياس واحد ثابت لأن تقديرها موقوف على ذوق القارئ، والأذواق تختلف باختلاف الناس والأعصار والأمصار؟</p><p>* (بتصرف) من المجموعة الكاملة للكاتب والشاعر المهجري: ميخائيل نعيمة.</p><p>٥٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

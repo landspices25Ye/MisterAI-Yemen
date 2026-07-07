@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>ولقد قيست جهود الاختزال القياسية ورتبت تصاعدياً تبعاً لجهود اختزالها القياسية بالنسبة لقطب الهيدروجين القياسي، ويعرف هذا الترتيب بالسلسلة الكهروكيميائية، جدول (٢-٣).</p><h3>مزايا السلسلة الكهروكيميائية:</h3><p>١ - يمكننا بواسطتها معرفة العوامل المؤكسدة والعوامل المختزلة وتدرجها في القوة، فأقوى العوامل المؤكسدة هي تلك الواقعة على يسار السهمين في أسفل الترتيب (الفلور أقوى العوامل المؤكسدة وأيون الليثيوم أضعفها)، وأقوى العوامل المختزلة هي تلك الواقعة على يمين السهمين وأعلى الترتيب لذلك يعتبر عنصر الليثيوم أقوى العوامل المختزلة بينما (أيون الفلور السالب أضعفها).
+٢ - بمعرفة قيم جهود الاختزال القياسية لأنصاف الخلايا يمكن التنبؤ بإمكانية حدوث تفاعل أكسدة واختزال بشكل تلقائي أم لا، وذلك عن طريق حساب فرق جهد التفاعل (القوة الدافعة الكهربية) فإذا كانت قيمته سالبة فالتفاعل لا يحدث تلقائياً، وإذا كانت قيمته موجبة دل ذلك على إمكانية حدوث التفاعل بشكل تلقائي.
+٣ - القيمة العددية لجهود الاختزال القياسي لأي نصف خلية تساوي القيمة العددية لجهود الأكسدة القياسي لنصف الخلية نفسه ولكن تخالفها في الإشارة.</p><h1>■ مثال :</h1><p>وضّح ما إذا كان التفاعل الآتي تلقائياً أم لا:</p><p>$‫3\text{Ag}^+ + \text{Fe}^{3+}_{(aq)} \longrightarrow 3\text{Ag} + \text{Fe}^{3+}_{(aq)}‬$‫</p><p>علماً بأن جهد الاختزال القياسي للفضة = ٠,٨٠ فولت.</p><p>جهد الاختزال القياسي للحديد ‬$\text{Fe}^{3+} = ٠,٠٤$‫ فولت</p><h1>■ الحل :</h1><p>بما أن جهد اختزال الفضة أكبر من جهد اختزال الحديد ‬$\text{Fe}^{3+}$ فإن الحديد يتأكسد ويصبح هو الأنود (المصعد) وتختزل أيونات الفضة وتصبح هي الكاثود (المهبط) ونعبر عن هذه الخلية كما يأتي:</p><p>٥٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

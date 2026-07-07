@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-104.jpeg" alt="img-104.jpeg" /><p>الوحدة الرابعة</p><h2>تمارين ومسائل (٤-٤)</h2><p>[١] أوجد معادلة كل من القطع المخروطية الآتية :</p><p>أ) قطع مكافئ رأسه (٢-، ٢-) وبؤرته (٢-، ٢-)</p><p>ب) قطع ناقص رأسه (٢، ٠-، ٨-) وبؤرته (٠، ٠-، ٦-، ٠-)</p><p>ج) قطع زائد رأسه (٦، ٢-، ٠-، ٢-) وبؤرته (٧، ٢-، ١-، ٢-)</p><p>د) قطع ناقص تخالفه المركزي $‫\frac{1}{2}‬$ وبؤرته (٤، ٢-، ٢-، ٢-)</p><p>[٢] بين نوع المنحنى الذي تمثله كل من المعادلات الآتية :</p><p>أ) $‫ص^2 + ٨ س - ٦ ص + ١ = ٠‬$</p><p>ب) $‫ص^2 + ١٦ ص^2 - ٥٠ س - ٦٤ ص - ٣١١ = ٠‬$</p><p>ج) $‫ص^2 - ٢ ص^2 + ٦ س - ٨ ص - ١٧ = ٠‬$</p><p>د) $‫ص^2 + ١٦ ص^2 - ٣٦ س - ٣٢ ص - ٩٢ = ٠‬$</p><p>هـ) $‫ص^2 - ٣ ص^2 + ٨ س + ١٢ ص - ٨ = ٠‬$</p><p>[٣] بإجراء انسحاب مناسب للمحورين ؛ ماذا تمثل كل معادلة مما يلي ؟ أوجد إحداثيات الرأسين والبؤرتين وارسم منحنى القطع :</p><p>أ) $‫ص^2 + ٣ ص^2 - ٨ س - ٦ ص + ١١ = ٠‬$</p><p>ب) $‫ص^2 + ٦ س - ٨ ص + ١ = ٠‬$</p><p>ج) $‫ص^2 - ٤ ص^2 + ١٨ س + ١٦ ص + ٢٩ = ٠‬$</p><p>[٤] أثبت أن المعادلة $‫ص^2 - ٤ ص - ٤ س - ٨ = ٠‬$ تمثل قطعاً مكافئاً . ثم أوجد إحداثي الرأس ، البؤرة ، ومعادلة دليله .</p><p>[٥] أثبت أن المعادلة $‫ص^2 - ٣ ص^2 - ٣٢ س - ١٢ ص - ٤٤ = ٠‬$ تمثل قطعاً زائداً . أوجد طول محوريه ، تخالفه المركزي وإحداثيات مركزه ، رأسيه ، وبؤرتيه .</p><p>١٢٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

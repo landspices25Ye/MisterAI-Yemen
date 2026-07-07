@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>مترابط لا تستطيع أن تقدّم جزءاً منها، أو تؤخره عن موقعه، أو تحذفه من مكانه؛ لأن ذلك سيسبّب اهتزازاً وقلقاً في الفكرة ذاتها وفي بناء القصيدة، وهي ميزة يختص بها شعر التفعيلة.</p><p>ويمكن أن يتضح التماسك العضوي لهذا النصّ من خلال تحليله إلى عناصره الأولية الآتية:</p><p>(المقدمة – الفكرة – الأدلة – النتيجة)، وهذه العناصر متسلسلة منطقياً، مترابطة؛ أي كل جزء مرتبط بما قبله، ويُسلّم إلى ما بعده.</p><p>والمقدمة هنا تتكون من سبعة أسطر – بعضها مؤلّف من كلمة واحدة – جاءت قويةً سريعة الإيقاع عميقة الدلالة، لتتواءم مع حركة المشاعر الاستهلالية.</p><p>وبما أن مضامين المقدمة تأتي توطئة ضرورية للفكرة، وأن الفكرة في هذا النصّ هي (الإصرار والتحدي) الدالان على الشجاعة فإن المقدمة فيه جاءت لتخلي النفوس من الجبن والخوف والارتباك «الصمت عار – الخوف عار» ثم تواصل المقدمة بسؤال وجواب: «من نحن؟ عشاق النهار» لتحديد تلك الهامات الشامخة التي تأنف الذلّ وتعشق الكرامة، فتتكون لدى النفوس نماذج يحتذى بها، ثم تواصل المقدمة لتقضي على ما تبقى من التذبذب في النفوس بسبب ما تتعرض له من ظروف: «نبكي، نحب، نخاصم الأشباح، نحيا في انتظار» وهي لمسات نفسية واقعية تُطمئن النفس أن لا حرج في ذلك، فيكون فيه تثبيت لعزم من يحدث له مثل تلك التقلبات، وأنها أمور طبيعية، فكانت المقدمة عبارة عن (التخلية قبل التحلية)؛ أي تخلية القلوب من الخوف والضعف وإحلال الشجاعة والعزة مكانهما.</p><p>ثم تأتي الفكرة الرئيسة في أربعة أسطر، طويلة النفس، واثقة الخطى، قوية العزائم: «سنظل نحفر في الجدار – إما فتحنا ثغرة للنور، أو متنا على وجه الجدار – لا بأس تدركه معاولنا – ولا ملل انكسار» وهو إعلان مجلجل ينبئ عن الإصرار، وتكرار المحاولة، وثبات المبدأ، وتأصل عقيدة التحدي، وتقبل النتائج مسبقاً دون نقاش!</p><p>١٤١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

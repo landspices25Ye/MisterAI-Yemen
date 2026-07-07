@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><p>على الصمامات، إلا أنه منذ الخمسينيات، ظهرت نزعة راسخة لاستبدال الصمامات بالترانزستور، الذي يدخل الآن في صناعة الأجهزة الإلكترونية الحديثة، فهو يقوم بعمل الصمام الثلاثي بل ويفوقه في عمليات تقويم التيار وتكبيره وتوليد الموجات اللاسلكية والإشارات الكهربائية وفي أجهزة الكشف عنها. إضافة لتميزه عن الصمام الثلاثي بصغر حجمه، وخفة وزنه، وصلابته، وعدم احتياجه إلى تيار تسخين، وقدرته العالية، ويحتاج إلى جهد كهربائي صغير حتى يعمل، ويعمل لفترة زمنية طويلة قبل تلفه.</p><h3>الترانزستور كمكبر (كمضخم) Transistor As Amplifier</h3><p>في كثير من التطبيقات الإلكترونية تكون الإشارة الكهربائية (القدرة، أو التيار، أو الجهد) ضعيفة جداً وغير نافعة، لذلك لا بد من تكبيرها.. فكيف تتم عملية التكبير هذه؟ إنها تتم بثلاث طرق مختلفة هي: التكبير بطريقة القاعدة المشتركة، والتكبير بطريقة الباعث المشترك، والتكبير بطريقة الجمع المشترك، وسنستعرض الطريقتين الأوليين فقط:</p><h3>طريقة التكبير بالقاعدة المشتركة : Common Base Amplification Process</h3><p>انظر إلى الشكل (١٥) الذي يمثل دائرة يستخدم فيها الترانزستور من نوع (P-N-P)، كمكبر بطريقة القاعدة المشتركة، فإذا أدخلت إشارة كهربائية صغيرة (أي قدرة كهربائية أو جهد أو تيار كهربائي صغير) في دائرة الباعث أمكن الحصول على قدرة كبيرة أو جهد كبير، حيث تحدث عملية التكبير في هذه الطريقة نتيجة</p><img src="img-76.jpeg" alt="img-76.jpeg" /><p>الشكل (١٥)</p><p>لكون مقاومة الخروج أكبر من مقاومة الدخول، ويتم الحصول على المقاومة الصغيرة لتيار الباعث، وذلك بجعل اتصال (الباعث -</p><p>القاعدة) اتصالاً أمامياً فيقل بذلك المجال الكهربائي عبر هذا الاتصال أي يقل المجال</p><p>٧٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-140.jpeg" alt="img-140.jpeg" /><p>الوحدة السادسة</p><p>التفاضل</p><h1>نهايات واتصال الدوال المثلثية</h1><p>٦ - ١</p><p>عرفت في الصف الثاني الثانوي على مفهوم النهايات والاتصال لدوال: كثيرات الحدود، الكسرية، والجذرية ... إلخ، وهنا سوف تتعرف على مفهوم نهايات واتصال الدوال المثلثية.</p><p>أولاً: نهايات الدوال المثلثية:</p><p>تذكر أن:</p><p>إذا كانت نَهْـا د (س) = نَهْـا د (س) = ل ، فإن : نَهْـا د (س) = ل ، ل ج ح</p><p>موجودة عند النقطة س = ١ .</p><p>فمثلاً: لكل س ج ح مقدرة بالراديان نجد بالتعويض المباشر أن : نَهْـا جاس = جا (٠) = ٠ ،</p><p>نَهْـا جتاس = جتا ١ .</p><p>مثال (٦ - ١)</p><p>أوجد نَهْـا ( جاس + جتاس ) .</p><p>الحل:</p><p>نَهْـا ( جاس + جتاس ) = نَهْـا جاس + نَهْـا جتاس = جا $‫\frac{\pi}{2}‬$ + جتا $‫\frac{\pi}{2}‬$</p><p>$‫\frac{1+\sqrt{2}}{2} = \frac{1}{2} + \frac{\sqrt{2}}{2} =‬$‫</p><p>مبرهنة (٦ - ١)</p><p>إذا كانت س مقدرة بالراديان ، فإن : نَهْـا ‬$\frac{\text{جاس}}{\text{س}} = 1$‫</p><p>ولتوضيح المبرهنة نلاحظ بالتعويض المباشر عن س = ٠ أن : نَهْـا ‬$\frac{\text{جاس}}{\text{س}} = \frac{0}{0}$‫ ( عدم تعيين )</p><p>لكن الدالة معرفة في الجوار المحذوف للعدد صفر ، على النحو الموضح في الجدول (٦ - ١) التالي عندما س ‬$\leftarrow 0$‫ ، س ‬$\neq 0$ .</p><p>١٥٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

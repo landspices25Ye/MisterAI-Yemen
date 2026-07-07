@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-43.jpeg" alt="img-43.jpeg" /><p>$‫\sigma_e = \omega_{\text{سع}} \quad (٦) \dots\dots\dots‬$‫</p><p>ومن هذه العلاقة يمكن حساب شدة التيار العظمي المار في الدائرة .</p><p>وعند تعويض العلاقة (٦) في العلاقة (٥) يمكن كتابة العلاقة (٥) بالصورة</p><p>‬$‫\text{التالية : } \sigma_e = \sigma_e \times \text{جتا } \omega_e \quad (٧) \dots\dots\dots‬$‫</p><p>ومن هذه العلاقة يمكن حساب شدة التيار الكهربائي عند أية لحظة . وبتعويض</p><p>‬$‫\text{العلاقة المثلثية } \text{جتا } \omega_e = \text{جا } (\omega_e + \frac{\pi}{2}) \text{ في العلاقة (٧) نجد أن :}‬$‫</p><p>‬$‫\sigma_e = \sigma_e \times \text{جا } (\omega_e + \frac{\pi}{2}) \quad (٨) \dots\dots\dots‬$‫</p><p>وإذا قارنا بين المعادلتين (٢ ، ٧) نجد أن الجهد اللحظي بين طرفي المكثف</p><p>دالة في جيب الزاوية ( ‬$\omega_e$‫ ) بينما التيار اللحظي المار في دائرة المكثف دالة في جيب تمام</p><p>الزاوية ( ‬$\omega_e$‫ ) .</p><p>وهذا يدل أن منحنى التيار يتقدم على منحنى الجهد بزاوية طور ثابتة قيمتها ‬$\frac{\pi}{2}$</p><p>وهذا ما توضحه أيضاً المعادلة (٨) والشكل (٩) .</p><h2>نشاط (٦)</h2><h3>العلاقة بين شدة التيار وسعة المكثف</h3><p>لدراسة العلاقة بين تيارات الشحن والتفريغ في المكثف، نعيد تكرار تنفيذ</p><p>خطوات النشاط السابق ، ولكن بتغيير المكثف السابق بمكثف آخر سعته أقل ولتكن</p><p>١٠٠ ميكروفاراد بدلاً من ١٠٠٠ ميكروفاراد .</p><p>ونوصل المكثف بمصدر تيار متردد كما سبق، ونغلق الدائرة الكهربائية، ثم</p><p>نلاحظ ضوء المصباح .</p><p>* ماذا سيحدث لضوء المصباح من حيث شدة الإضاءة ، أو ضعفها ؟</p><p>يلاحظ أن إضاءة المصباح تقل عن الإضاءة السابقة عندما كانت سعة المكثف</p><p>كبيرة (١٠٠٠) ميكروفاراد في النشاط السابق .</p><p>* ماذا نستنتج من ذلك ؟</p><p>شدة التيار المتردد في دائرة المكثف تقل عندما تقل سعة المكثف وتزداد عندما</p><p>تزداد سعة المكثف ، وهذا يثبت أنه كلما زادت سعة المكثف فإن قدرته على</p><p>تمرير التيار المتردد تزداد، وأنه كلما قلت سعة المكثف تقل قدرته على تمرير التيار</p><p>٤٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

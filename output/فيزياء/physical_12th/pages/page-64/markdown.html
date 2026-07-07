@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>إن المتتبع للصناعات الإلكترونية، يلاحظ التطورات المتسارعة والمصحوبة بالتقنية عالية الجودة، فقد ازداد الاعتماد على الدوائر الكهربائية المتكاملة أكثر من الاعتماد على الدوائر الكهربائية المنفصلة، وظهر اتباع أسلوب جديد في صناعة الدوائر الكهربائية وهو أسلوب تقارب الأجزاء للدوائر الكهربائية في الأجهزة الإلكترونية الحديثة، مما أدى إلى تناقص أحجام الأجهزة الإلكترونية، بحيث أصبح من الممكن وضع بعضها في جسم الإنسان. إن هذا يعود إلى صناعة الوصلات الثنائية والترانزستورات، والدوائر المتكاملة (IC) التي تدخل في صناعتها مواد تسمى أشباه الموصلات.</p><p>فما المقصود بأشباه الموصلات؟ وما خصائصها؟ وما أنواعها؟</p><p>قبل أن نتكلم عن أشباه الموصلات... لا بد من التعرف على تقسيم المواد من حيث توصيلها للتيار الكهربائي...</p><p>إن المواد تنقسم من حيث توصيلها للتيار الكهربائي إلى ثلاثة أنواع هي:</p><p>- مواد موصلة، وذلك لامتلاكها عدداً كبيراً من الإلكترونات حرة الحركة (إلكترونات طليقة) وتسمى بالموصلات Conductors ومعظمها من الفلزات مثل، النحاس والفضة والألومنيوم، وغيرها من الفلزات والمعادن.
+- مواد غير موصلة، وذلك لعدم احتوائها إلا على عدد قليل جداً من الإلكترونات حرة الحركة، بسبب ارتباطها الوثيق بذراتها وتسمى بالمواد العازلة Insulators مثل الخشب والمطاط، والجلد المدبوغ، والزجاج، والخزف الصيني (البورسلين) وغير ذلك.
+- مواد تتميز بأن خاصية التوصيل الكهربائي لها تقع بين تلك للموصلات والمواد العازلة وتسمى هذه المواد بأشباه الموصلات Semiconductors.
+فهي المواد التي تسلك سلوك الموصلات في ظروف معينة وسلوك العازلات في ظروف أخرى.</p><h1>أشباه الموصلات : Semiconductors</h1><p>يوجد نوعان من أشباه الموصلات هما: أشباه موصلات نقية، أشباه موصلات غير نقية.</p><h1>أولاً - أشباه الموصلات النقية : Pure Semiconductors</h1><p>انظر إلى الشكل (١) .. الذي يضم عدداً من العناصر الكيميائية :</p><p>٦٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

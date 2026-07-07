@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-28.jpeg" alt="img-28.jpeg" /><h2>تقويم الوحدة</h2><p>١ - ما العلاقة بين الطاقة الكيميائية والحرارة؟
+٢ - ما الفرق بين كمية الحرارة ودرجة الحرارة؟
+٣ - عَرِّف ما يأتي:
+أ - حرارة التفاعل.
+ب - حرارة الذوبان.
+ج - حرارة التعادل.
+د - الحرارة النوعية.
+هـ - حرارة التكوين.
+٤ - ما المقصود بالتفاعل الطارد للحرارة، والتفاعل الماص للحرارة؟ مع ذكر أمثلة لكل منهما.
+٥ - يحترق أكسيد النيتريك (NO) في جو من الأكسجين لتكوين غاز ثاني أكسيد النيتروجين مع انطلاق حرارة مقدارها - ٥٦,٥ كيلو جول / مول.
+أ - اكتب المعادلة الكيميائية الحرارية لهذا التفاعل.
+ب - هل هذا التفاعل ماص للحرارة أم طارد للحرارة؟ ولماذا؟
+ج - ارسم شكلاً بيانياً تمثّل فيه هذا التفاعل.
+٦ - وضّح العلاقة بين حرارة التكوين القياسية وثبات المركب حرارياً.
+٧ - باستعمال جدول (٢) احسب حرارة تكوين الميثان:</p><p>$‫\text{CH}_4 + 2\text{O}_2 \xrightarrow{\text{(g)}} \text{CO}_2 + 2\text{H}_2\text{O}_{(1)}‬$‫</p><p>إذا علمت أن حرارة احتراق الميثان هي (٨ - ٨٩٠,٨ كيلو جول / مول).</p><p>٨ - ما أهمية قانون هس؟
+٩ - اكتب المعادلات الكيميائية الحرارية الموزونة للتفاعلات الآتية:
+أ - تفاعل أكسيد الكالسيوم ‬$\text{CaO}$‫ مع الماء لإنتاج هيدروكسيد الكالسيوم مع انطلاق كمية من الحرارة مقدارها ٦٥,٢ كيلو جول / مول.
+ب - تحلّل بيكربونات الصوديوم ‬$\text{NaHCO}_3$ إلى كربونات صوديوم وماء وثاني أكسيد الكربون، علماً بأن الحرارة الممتصّة هي ١٢٩ كيلو جول / مول.</p><p>٤٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

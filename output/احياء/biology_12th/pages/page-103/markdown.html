@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>فروض مندل لتفسير النتائج :</h2><p>وضع مندل مجموعة من الفروض لتفسير ظهور الصفة السائدة واختفاء الصفة المتنحية في أفراد الجيل الأول، ثم ظهور الصفتين في أفراد الجيل الثاني بنسبة ١:٣، وأهم هذه الفروض :</p><p>١- تنتقل الصفات الوراثية من الآباء إلى الأبناء عن طريق عوامل وراثية (والتي عرفت حالياً بالجينات)، وقد سمي مندل العامل الوراثي للصفة (أليل Allele).
+٢- لكل صفة وراثية عاملان وراثيان (أليلان) أحدهما من الأب والآخر من الأم.
+٣- تكون الصفة الوراثية نقية إذا كان العاملان الوراثيان متشابهين (Homozygous) وتكون غير نقية عندما يكون العاملان متضادين (Heterozygous).
+٤- ينفصل العاملان الوراثيان لكل صفة عند تكوين الأمشاج الذكورية والأنثوية، فيحمل كل مشيج عاملاً واحداً لكل صفة.
+٥- عند حدوث عملية التلقيح أو الإخصاب بين الأمشاج الذكورية والأنثوية يجتمع العاملان الوراثيان من جديد في الأبناء لتكوين الصفة الوراثية.
+وقد استخلص مندل من فروض ونتائج أبحاثه قوانين مندل الوراثية.</p><h2>قانون مندل الأول : انعزال العوامل الوراثية :</h2><p>ساعدت الفروض المذكورة سابقاً مندل في التوصل إلى قانونه الأول في الوراثة والذي أطلق عليه قانون الانعزال (Law of Segregation)، وينص قانون انعزال العوامل الوراثية على ما يأتي :</p><p>قتل الصفة الوراثية في الكائن الحي بعاملين وراثيين (أليلين) ينعزلان عن بعضها عند تكوين الأمشاج؛ بحيث يحمل المشيج عاملاً وراثياً واحداً لكل صفة.</p><p>ويعني هذا القانون أن العوامل الوراثية أو (الجينات) كما عرفت لاحقاً، تنتقل بين الأجيال المتعاقبة مستقلة عن بعضها البعض، وتظهر أو لا تظهر تأثيراتها تبعاً لكونها سائدة أو متنحية. فإذا حدث تزاوج بين فردين يختلفان عن بعضهما في زوج واحد من الصفات المتقابلة، مثل الطول والقصر، ظهرت إحدى هاتين الصفتين فقط في أفراد الجيل الأول (الصفة السائدة)، بينما تعرف الصفة الأخرى المقابلة لها بالصفة المتنحية، ولكنها تظهر مرة أخرى في عدد من أفراد الجيل الثاني يصل إلى ربع أعداد أفراد الجيل تقريباً (أي بنسبة ١:٣).</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p><p>١٠٣</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

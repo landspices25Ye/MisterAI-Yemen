@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>مهابة: خوف، رجاء: أمل، الشفق: أشعة حمراء ساعة الغروب، النضار: الذهب،
+العقيق: الياقوت وهو حجر كريم أحمر، ذرى: جمع ذروة وهي أعلى الشيء، خلال:
+بين، تحدراً: وهي تنحدر إلى الغروب، أنست: أحسست، يومي: المراد عمري،
+مسائي: المراد نهايتي.</p><h1>إضاءة</h1><p>يرتكز النص على ثلاث فكر رئيسة: آلام المرض وعذاب الحب، شكوى وحنين،
+خواطر حزينة.</p><p>وحول هذه المعاني يقول الشاعر: لقد عملت بنصيحة الأصدقاء، وأقمت غريباً
+عن وطني، معللاً نفسي بأمنية الشفاء، ولو فرضنا أن طيب الهواء سينعش الجسم
+ويشفي العلة الجسدية، فهل تخمد النيران نتيجة البعد عمن أحب؟ لا بل إنه
+يزيدها اشتعالاً!</p><p>إن تنقلي في البلاد عبث لا فائدة منه، فقد أضاف بوطأته عليّ علة جديدة
+كانت سبباً في مزيد من العناء، فوجدت نفسي في وحدتي فريسة للأشجان
+والأشواق والآلام.</p><p>وفي هذا المساء اتجهت إلى البحر، وشكوت له ما أعاني من اضطراب لكنه
+مضطرب مثلي، أجابني برياحه العاصفة الهادرة، فجلست إلى صخرة من صخور
+الشاطئ، متمنياً أن يكون لي قلب جامد جمود هذه الصخرة، فلا يتأثر بعواطف
+الحب والأشواق، فوجدت الصخرة تعاني ما أعاني، فالأمواج تلاطمها، وتتوالى عليها
+كما تتوالى الهموم على قلبي، فتضعف على الرغم من قوتها وتتحطم كما يحطم
+السقم جسدي.</p><p>عجباً للغروب وما يحمل من معانٍ متباينة، فهو يحرك الحزن في نفس الحب
+ويوحي للمتأمل في الحياة معاني وعظات بالغة. فهو موت للنهار بحيويته وحركته
+ومصرع للشمس في جنازة تشيعها الأضواء.</p><p>وفي قلب هذا المشهد المؤلم حيث يرحل النهار، ويقبل المساء فيختلط اليأس
+بالأمل، والخوف بالرجاء، ذكرتك أيتها الحبيبة، وكانت الشمس غارقة في الشفق
+الذي يجمع بين صفرة الذهب وحمرة الياقوت، ويترامى هناك بعيداً على قمم الروابي
+السوداء، ثم تنحدر بين غمامتين نحو الغروب، وكأنها دمعة حمراء تقطر من بين</p><p>٨٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

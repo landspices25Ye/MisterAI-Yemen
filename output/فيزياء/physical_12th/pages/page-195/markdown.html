@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>ومن إستخدامات الطاقة الشمسية في الحياة :</p><h2>توليد الطاقة الحرارية :</h2><h3>١- خلية مياه البحر :</h3><p>حيث يتم تحويل مياه البحر المالحة إلى مياه عذبة صالحة للشرب والري .</p><p>وكما يوضح الشكل (٧) يوضع ماء البحر في حوض ضحل ضمن بيت زجاجي حيث ينفذ قسم كبير من أشعة</p><img src="img-189.jpeg" alt="img-189.jpeg" /><p>شكل (٧)</p><p>الشمس إلى البيت الزجاجي ثم تمتص من قبل لوح معدني أسود موضوع أسفل الحوض، ويمتص ماء البحر هذه الطاقة وترتفع درجة حرارته فيتبخر، ومن ثم يتكاثف الماء المتبخر على الجدران الداخلية للبيت الزجاجي، ويتم جمع الماء العذب المتكثف في قناتين على جانبي البيت ويوزع للاستهلاك، ومن عيوب هذه الطريقة أنها بطيئة وكمية الماء العذب التي يمكن الحصول عليها تعتمد على مساحة الأحواض ، وهناك طرق حديثة أكثر كفاءة في تلبية مياه البحر .</p><h3>٢- التدفئة :</h3><p>تستخدم المياه الساخنة بفعل الطاقة الشمسية في تدفئة المنازل وذلك بدفع المياه للمرور في أنابيب تمر أولاً في مجمعات حرارة الشمس حيث تمتص الحرارة أثناء</p><img src="img-190.jpeg" alt="img-190.jpeg" /><p>شكل (٨)</p><p>دورتها في الأنابيب التي تمتد إلى داخل غرف المنزل المختلفة وتعمل على تدفئتها .</p><p>١٩٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

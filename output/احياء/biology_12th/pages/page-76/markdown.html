@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>- ما عدد الخلايا الأنثوية في الكيس الجنيني الناضج؟ سمّ هذه الخلايا.
+تقع خلية البيضة Egg Cell والتي تمثل المشيج المؤنث (n) مقابل فتحة التقير، ويحيط بها خليتان مساعدتان Synergids، والنواثان القطبيتان في مركز الكيس الجنيني تكوّنان خلية ثنائية النوى (2n) تسمى خلية الأندوس-بيرم الأم.</p><img src="img-59.jpeg" alt="img-59.jpeg" /><p>الشكل (١٤) خطوات تكوين البويضة</p><h2>النشاط (٩)</h2><p>- نفذ النشاط الخاص بتركيب عضو التأنيث في نبات الفول وتركيب البويضة من خلال شريحة جاهزة لإحدى البويضات في كتاب الأنشطة والتجارب العملية.</p><h2>التلقيح والإخصاب في النباتات الزهرية :</h2><p>تنقل حبوب اللقاح الناضجة من الملك إلى الميسم بواسطة الرياح أو الحشرات أو الطيور أو الماء أو الإنسان وعندما تسقط حبة اللقاح على الميسم يحدث لها ما يأتي:</p><p>1- تنتفخ بامتصاص الماء.
+2- تظهر أنبوبة اللقاح من أحد المسامات وتنمو مخترقة أنسجة الميسم والقلم والمبيض بفعل إنزيمات محللة يفرزها طرف أنبوبة اللقاح.</p><p>٧٦</p><p>الأحياء: النصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

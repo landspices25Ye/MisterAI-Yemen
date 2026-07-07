@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>وهناك أنواع عديدة من الزيوت، يمكن تصنيفها على النحو الآتي:</p><p>١ - زيوت معدنية: وهي من مشتقات المنتجات البترولية مثل زيت البرافين وزيت الديزل.</p><p>٢ - زيوت متطايرة: وتستخرج من النباتات العطرية، مثل زيت القرنفل وزيت القرفة.</p><p>٣ - زيوت غير متطايرة (ثابتة): وقد تكون نباتية، مثل: زيت الذرة والقطن وزيت الزيتون، وقد تكون حيوانية مثل زيت كبد الحوت.</p><h1>الخواص الفيزيائية لليبيدات:</h1><p>- لا تذوب في الماء ولكنها تذوب في المذيبات العضوية مثل البنزين والأيثر.
+- درجات انصهارها منخفضة.</p><h1>تفاعلات الليبيدات:</h1><p>هناك نوعان من التفاعلات الخاصة بالليبيدات هي:</p><p>١ - تفاعلات على روابط الإستر.</p><p>٢ - تفاعلات على الروابط المزدوجة في الحمض الدهني.</p><h1>١) التفاعلات على رابطة الإستر:</h1><h1>أ - التحلل المائي:</h1><p>تتحلل الليبيدات (الدهون والزيوت) بفعل الإنزيمات الهاضمة أو الحموض القوية وينتج عنها حموض دهنية وجليسرول.</p><img src="img-110.jpeg" alt="img-110.jpeg" /><h1>ب - التصين:</h1><p>تتحول الليبيدات (الدهون والزيوت) إلى صابون عند تفاعلاتها مع القواعد القوية مثل الصودا الكاوية. (وهذا التفاعل سيتم شرحه في الوحدة الثامنة من هذا الكتاب).</p><p>١١٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

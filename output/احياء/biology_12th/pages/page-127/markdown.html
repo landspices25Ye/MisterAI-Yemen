@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>اللون وطول الأجنحة كانت حوالي ٨٣٪ بينما نسبة الأفراد التي لها صفات مختلفة عن الأبوين حوالي ١٧٪.</p><p>وقد علل مورجان ظهور أفراد بصفات مختلفة عن صفات الأبوين بحدوث عبور بين الجينات أثناء عملية الانقسام الاختزالي كما في الشكل (٢١) رغم وجودها على كروموسوم واحد.</p><p>- ما المقصود بالعبور للجينات؟</p><p>لقد لاحظ العلماء أنه بالرغم من أن الجينات الموجودة على أحد الكروموسومات تنتقل مترابطة من جيل الآباء إلى جيل الأبناء إلا أنه يحدث أحياناً انفكاك لبعض الجينات فتنتقل من الكروموسوم الذي يحملها إلى الكروموسوم المقابل له في عملية تسمى العبور كما في الشكل (٢١)، وينتج عن ذلك تغير في الصفات المرتبطة بتلك الجينات.</p><p>- ما أهمية العبور للكائنات الحية؟</p><p>- كيف تتم عملية العبور للجينات من كروموسوم إلى آخر؟</p><img src="img-96.jpeg" alt="img-96.jpeg" /><p>الشكل (٢١) عبور الجينات بين كروموسومين متجاورين</p><p>١٢٧</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

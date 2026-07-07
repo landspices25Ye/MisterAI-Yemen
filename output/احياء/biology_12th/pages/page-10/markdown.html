@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>أ. الجهاز العصبي في اللافقاريات :</h2><p>يمكن ملاحظة الجهاز العصبي في الجوفمبويات للتعرف على نوعية التنظيم العصبي في اللافقاريات، ففي الهيدرا مثلا يلاحظ وجود نوع من التنظيم العصبي الأولي.</p><p>- ما سبب انكماش الهيدرا في حالة لمسها المفاجئ؟</p><p>تستجيب الهيدرا للمؤثرات الخارجية فتنكمش لوامسها باللمس المفاجئ (الشكل ٢). وتعود هذه الانفعالية إلى امتلاكها جهاز عصبي بسيط يعرف بالجهاز العصبي الأولي.</p><p>- ما مكونات الجهاز العصبي في الهيدرا؟</p><p>- كيف يستجيب للمؤثرات الخارجية؟</p><p>ادرس الشكل (٢) لاحظ أن الجهاز العصبي للهيدرا عبارة عن خلايا عصبية أولية تتصل زوائدها الشجرية ببعضها مكونة شبكة عصبية، وتتصل هذه الخلايا العصبية بالخلايا الحسية من جهة، وخلايا الاستجابة (اللأسعة) من جهة أخرى مكونة أبسط قوس عصبي، وعن طريقه يتم استقبال التنبيه عن طريق الخلايا الحسية، ومنها ينتقل إلى الخلايا العصبية المتصلة بها، ثم إلى الخلايا العضلية؛ حيث تحدث الاستجابة بانكماش جسم الهيدرا أو لوامسها.</p><img src="img-4.jpeg" alt="img-4.jpeg" /><p>الشكل (٢) الشبكة العصبية في الهيدرا.</p><h3>النقاط (١)</h3><p>• نفذ النشاط الخاص بفحص شرائح مجهرية توضح الشبكة العصبية، والخلية العصبية.</p><h2>الجهاز العصبي في الطفيليات (دودة الأرض) :</h2><p>ما الاستجابة التي تظهرها دودة الأرض في حالة تسليط ضوء شديد عليها؟ ما سبب ذلك؟</p><h3>النقاط (٢)</h3><p>• نفذ النشاط الخاص بتسليط ضوء شديد على دودة الأرض.</p><p>تبدي دودة الأرض استجابة واضحة للمؤثرات المحيطة فتتجذب نحو الطعام، وتبتعد عن المواد الضارة، وتتسحب، وتدفن نفسها في التراب في حالة تسليط ضوء شديد عليها، وترجع هذه الانفعالات إلى الرقي، والتعقيد في الحواس، والجهاز العصبي لها.</p><p>١٠</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

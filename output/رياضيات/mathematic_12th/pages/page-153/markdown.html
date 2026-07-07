@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الهندسة الفضائية</p><p>[حقيقة (٥-١)]</p><p>∴ لَ أ بَ</p><p>∴ و (أ ب ج) = ٩٠°</p><p>∴ و (أ ب ج) = ٩٠°</p><p>∴ لَ ك ( وهو المطلوب ) .</p><p>نتيجة (٧) :</p><p>إذا كان ك ، م مستويين متعامدين ، فإن كل مستقيم عمودي على م من نقطة ب ك يقع في ك .</p><p>مبرهنة (٥-٩)</p><p>إذا تعامد كل من المستويين م ، م مع مستوى ثالث م ، فإن الفاصل المشترك للمستويين م ، م عمودي على المستوى م .</p><p>المعطيات : م ، م ، م ، م</p><p>م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م م</p><p>المطلوب : إثبات أن لَ م م .</p><p>البرهان : نفرض أن : لَ م م</p><p>لناخذ نقطة ا ل</p><p>نرسم منها ا ب م م</p><p>∴ ا ل ، ا ل م م ،</p><p>∴ م ، م</p><p>∴ ا ب م م [نتيجة (٧)]</p><p>بالمثل نجد ا ب م م [نتيجة (٧)]</p><p>∴ ا ب هو الفاصل المشترك للمستويين م ، م</p><p>∴ ا ب منطبق على ل</p><p>∴ ا ب م م ، ∴ ل م م ( وهو المطلوب ) .</p><img src="img-137.jpeg" alt="img-137.jpeg" /><p>شكل (٥-٢٤)</p><p>١٥١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

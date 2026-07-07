@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h4>٤- الغدة الكظرية Adrenal Gland (الغدة فوق كلوية) Suprarenal Gland</h4><p>أدرس الشكل (١٢)، ولاحظ أن الغدة الكظرية عبارة عن غدة صغيرة تقع فوق الكلية، وتتركب كل غدة من طبقتين، طبقة خارجية (القشرة) Cortex، وطبقة داخلية (النخاع) Medulla، وتعد كل طبقة غدة مستقلة عن الأخرى وتقوم كل طبقة بإفراز هرموناتها الخاصة.</p><img src="img-42.jpeg" alt="img-42.jpeg" /><h4>١- هرمونات قشرة الغدة الكظرية:</h4><p>تفرز قشرة الغدة الكظرية ثلاث مجموعات من الهرمونات هي:</p><h4>١- الهرمونات السكرية:</h4><h4>Glucocorticoids Hormones</h4><p>الشكل (١٢) الغدة الكظرية.</p><p>مثل هرمون الكورتيزول Cortisol الذي يتحكم في عمليات أيض الكربوهيدرات. كما تعمل هذه الهرمونات على تحفيز وتحويل البروتينات، والدهون إلى جلوكوز، فيرتفع مستوى الجلوكوز في الدم، كما أن لها تأثير مضاد للالتهابات وخاصة الناتجة عن تلف الأنسجة.</p><h4>٢- الهرمونات المعدنية Mineralo Corticoids Hormones</h4><p>من أهمها هرمون الأندوستيرون Aldosterone الذي يعمل على حفظ معدل الصوديوم في الدم، إذ يقوم الهرمون بتحفيز عملية إعادة امتصاص أيونات الصوديوم، والكلوريد، في تفرونات الكلية في عملية تسمى تنظيم التوازن الملحي.</p><h4>٣- الهرمونات الجنسية: Sex Hormones</h4><p>مثل هرمون الاستروجين Oestrogen الذي له تأثير كبير في إظهار صفات البلوغ الثانوية عند الفتاة، وكذا هرمونات الأندروجين Androgen التي يكون لها نفس الدور بالنسبة للفتى.</p><p>- ما شعورك عند دخولك الامتحان؟</p><p>- ما التغيرات التي تحدث لجسمك عند تعرضك لأي إحراج أو خوف؟
+- ما سبب هذه التغيرات؟</p><p>الأحياء الصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

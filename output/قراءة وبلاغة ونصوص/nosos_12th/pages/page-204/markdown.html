@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>فتكتسب دلالة أخرى من تلاؤمها مع غيرها من الألفاظ في التجربة الشعرية.
+ويستخدم البحتري الترادف، فيردف اللفظ بلفظ آخر يؤدي معناه بقصد التأكيد،
+كقوله: «أعل، وأمرضا».</p><p>ويبلغ به الحزن مداه في البيت الرابع:</p><p>أسيان أثرى من جوى وصباية وأساف من وصل الحسان وأنفضا</p><p>أشعرنا بذلك باختياره هذه الكلمات الموحية المؤثرة، فالأسيان هو الحزين، وأثرى:
+كثير ماله، وأساف: ذهب ماله، وبغض النظر عن المقابلة بين (أسيان وأساف) فالشاعر
+هنا لا يريد هذا المعنى، وإنما شحن الألفاظ بدلالات مجازية، لأنه يريد أن يقول: إنه
+فقد وصل الحسان، وبين المعنى الأصلي والمجازي علاقة واضحة، فمعنى كلمة أساف
+يدور حول الفقد وهلاك المال، وحين عدّ الشاعر نفسه غنياً بالجوى والصباية، حسنت
+هذه الكلمة (أساف). ومعنى كلمة أنفضا: فني زاده وهلكت أمواله، ولكنه لم يأت
+بها هنا لتأكيد المعنى فحسب، ولا لضرورة القافية والروي، وإنما لما توحي به من معنى
+جديد، يأتي من قولهم: (نفض الثوب)، وما يعني ذلك من الحرص على الإزالة
+tامة، ومن قولهم: (نفض يده) وما يعني ذلك من اليأس، وعشية المحاولة...</p><h2>٢) الصور والأخيلة:</h2><p>الصور والأخيلة جزء من الصورة التعبيرية أو الصياغة الشعرية، وهي إلى جانب
+الألفاظ والموسيقى يعتمد عليها الشاعر في نقل مزيج فكره بعاطفته فيما يسمى
+بالتجربة الشعرية.</p><p>وفي النص السابق يصور الشاعر بياض الشعر وسواده بالثياب، كما نفهم من
+كلمة (لابسيه) وكلمة (نضا) ووجه الشبه الزينة، فالشاعر يعزي نفسه بالقول: إنه
+ترك السواد لما يحمل من دلالة الحزن، وليس البياض، وكذلك يصور الستين، هذه
+المرحلة من العمر بالثوب الذي يخلعه متى شاء.</p><p>ومن الصور المشهورة في الشعر العربي تصوير فتور العين بالمرض، وإسناد الفعل
+أعل وأمرض إلى اللحظ. ويشبه الشاعر (الصبا) بالدين الذي آن أوان سداده، كما
+يصور شدة صباية بالغنى، ووصل الحسان بالفقر والإفلاس.</p><p>والواقع أنه من غير الممكن فصل بعض عناصر التجربة عن بعضها الآخر، وإنما
+اعتسفنا ذلك للإيضاح وتسهيلا للدراسة.</p><p>٢٠٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

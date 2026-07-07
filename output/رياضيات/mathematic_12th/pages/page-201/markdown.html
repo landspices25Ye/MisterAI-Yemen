@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التفاصيل</p><p>$‫٣٠٠ = ٤ ل + ٨ س \text{ . أي أن } ٧٥ = ٢ ل + ٢ س‬$‫</p><p>‬$‫\therefore \text{ ل} = ٧٥ - ٢ س \dots\dots\dots (٢)‬$‫</p><p>وبالتعويض عن (٢) في (١) لكل س ‬$\subseteq [\frac{٧٥}{٢} \text{ ، } \square \text{ نجد أن} :$‫</p><p>‬$‫ح = س^2 (٧٥ - ٢ س) = ٧٥ س^2 - ٢ س^3 \text{ ،}‬$‫</p><p>‬$‫ح = ١٥٠ س - ٦ س^2 \text{ ، ويوضع } ح = ٠ \text{ نجد أن} :‬$‫</p><p>‬$‫٦ س (٢٥ - س) = ٠ \Leftarrow س = ٢٥ \text{ ، أو } س = ٠ \text{ (مرفوضة لأن } ح < ٠ \text{) .}‬$‫</p><p>‬$‫ح = ١٥٠ - ١٢ س \text{ ، وعند } س = ٢٥ \text{ فإن} :‬$‫</p><p>‬$‫ح = ١٥٠ - ١٢ \times ٢٥ = ١٥٠ \text{ . أي أن الحجم يكون أكبر ما يمكن عندما } س = ٢٥ \text{ .}‬$‫</p><p>‬$‫ل = ٧٥ - ٢ \times ٢٥ = ٢٥ \text{ سم} .‬$‫</p><p>إذن فإن أكبر حجم لمتوازي المستطيلات هو عندما يتحول إلى مكعب طول حرفه : ٢٥ سم .</p><h2>تمارين ومسائل (٦-٨)</h2><p>[١] حدّد فترات التزايد والتناقص لكل من الدوال التالية :</p><p>‬$‫أ) د(س) = س^2 - ٤ س + ٢ \text{ ، } \forall \text{ } \subseteq [٤, ٠] \text{ .}‬$‫</p><p>‬$‫ب) هـ(س) = س^3 - ٣ س + ١ \text{ ، } س \subseteq \text{ح} .‬$‫</p><p>‬$‫ج) م(س) = \frac{س}{٢ - س} \text{ ، } \forall \text{ } \subseteq \text{ح} / \{٢\} \text{ .}‬$‫</p><p>‬$‫د) هـ(س) = جأ^2 س \text{ ، } \forall \text{ } \subseteq [\frac{\pi}{٢} \text{ ، } \square \text{ .}‬$‫</p><p>‬$‫هـ) ص = س | س | .‬$‫</p><p>[٢] أثبت أن د : ‬$[\frac{\pi}{٤}, ٠] \leftarrow \text{ح} \text{ حيث } د(س) = \text{جاس} + \text{جاس دالة متزايدة على مجموعة تعريفها} .$‫</p><p>[٣] احسب كلًا من ل، م بحيث تكون د(س) = س^2 + ل س + م لها قيمة صغرى = ٣ عندما س = ١ .</p><p>[٤] احسب القيم القصوى المطلقة للدالة ‬$\text{ص} = \begin{cases} (س + ٣)^2 & , \text{ } \text{س} \geq ٠ \\ (س - ٣)^2 & , \text{ } \text{س} \leq ٠ \end{cases}$‫ على الفترة ‬$[٢, ٢]$ .</p><p>١٩٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

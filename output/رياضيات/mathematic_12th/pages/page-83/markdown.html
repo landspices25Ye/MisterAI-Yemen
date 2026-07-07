@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الاحتمالات</p><p>فعندما نقول مثلاً : إننا سحبتنا - عشوائياً - ورقة من مجموعة أوراق لعب محكمة الخلط، أو سحبتنا - عشوائياً - كرة من صندوق فإن ذلك يعني أن دالة الاحتمال منتظمة . وعندما تكون دالة الاحتمال منتظمة تستخدم التعريف الآتي في حساب احتمال أي حادثة .</p><h1>تعريف ( ٣ - ٢ )</h1><p>إذا كانت (ح) دالة احتمال منتظمة معرّفة على ( $‫\leq‬$ ) وكانت (١) حادثة في تجربة عشوائية ، فإن :</p><p>$‫ح ( ١ ) = \frac { ١ } { ١ } \frac { ( ١ ) } { ( ١ ) } = \frac { \text { عدد الحالات الملائمة للحادثة ( ١ ) } } { \text { عدد الحالات الممكنة لفضاء العينة ( ١ ) } } ، \text { و ( ١ ) } \geq \text { و ( ١ ) } .‬$‫</p><h1>مثال ( ٣ - ٤ )</h1><p>صندوقان يحتوي الأول منهما على كرتين بيضاوين وكرة سوداء ، ويحتوي الآخر على كرة بيضاء فقط . سحبت عشوائياً كرة من الصندوق الأول ووضعت في الصندوق الثاني وخلطت الكرتان في الصندوق الثاني خلطا محكما . ثم سحبت منه بعد ذلك عشوائياً كرة .
+(١) كُونُ مُؤَدِّجاً احتمالياً مناسباً لهذه التجربة .
+(٢) ما هو احتمال أن تكون الكرة المسحوبة من الصندوق الثاني بيضاء ؟</p><h1>الحل :</h1><p>نوجد ( ع ) وللتمييز بين الكرات بعضها عن بعض نرمز للكرتين البيضاوين في الصندوق الأول بالرمزين ( ب ) ، ( ب ) ، ( ب ) وللكرة السوداء بالرمز ( س ) وللكرة البيضاء في الصندوق الآخر بالرمز ( ب ) فيكون : ع = { ( ب ، ب ) ، ( ب ، ب ) ، ( ب ، ب ) ، ( ب ، ب ) ، ( ب ، ب ) ، ( س ، ب ) } حيث المسقط الأول في كل زوج مرتب يرمز لنتيجة السحب من الصندوق الأول ، والمسقط الثاني لنتيجة السحب من الصندوق الآخر .</p><p>(١) إذا خصّصنا لكل نقطة من نقاط فضاء العينة ( ع ) احتمالاً = ‬$\frac{1}{2}$‫ فإننا في هذه الحالة نكون قد كونا النموذج الاحتمالي الآتي :</p><p>‬$‫ح ( ب ، ب ) = ح ( ب ، ب ) = ح ( ب ، ب ) = ح ( ب ، ب ) = ح ( ب ، ب ) = ح ( س ، ب ) = ح ( س ، س ) = \frac{1}{2} .‬$‫</p><p>وهو النموذج الاحتمالي المطلوب تكوينه في هذه التجربة .</p><p>(٢) نفرض أن ١ هي حادثة سحب كرة بيضاء من الصندوق الثاني .
+‬$\therefore 1 = \{ ( ب ، ب ) ، ( ب ، ب ) ، ( ب ، ب ) ، ( ب ، ب ) ، ( س ، ب ) \} .$</p><p>٨١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

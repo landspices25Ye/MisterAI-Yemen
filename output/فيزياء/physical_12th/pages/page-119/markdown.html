@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>طيف المصادر الضوئية :</h2><p>إن ضوء عدد كبير من المصادر الضوئية كالأثوار المتوهجة أو الشمس يمثل طيفاً متصلاً، أي يحوي جميع الأطوال الموجية بشكل مستمر (متصل)، ويتضح ذلك عندما نمر حزمة ضوئية لمصدر ضوئي خلال منشور ثلاثي فيحللها إلى ألوان الطيف الأساسية وهي (الأحمر والبرتقالي والأصفر والأخضر والأزرق والنيلي والبنفسجي)، كما هو مبين في الشكل (٣).</p><img src="img-115.jpeg" alt="img-115.jpeg" /><p>شكل (٣)</p><p>وفيما يتعلق بطيف الشمس فهو طيف متصل ويحتوي على جميع الأطوال الموجية الضوئية المرئية وغير المرئية والجزء الأكبر منها غير مرئي، انظر</p><p>الشكل (٤ أ). ستلاحظ أن طيف الشمس يحتوي على الأشعة تحت الحمراء وفوق البنفسجية والأشعة السينية وأشعة جاما وأمواج الراديو والتلفزيون وغيرها من الأشعة ذات الأمواج الطويلة والقصيرة غير المرئية.</p><p>أما الجزء المرئي فهو جزء صغير جداً من الطيف الكلي للشمس ويمثله الشريط الأبيض الذي يتوسط الطيف. والشكل (٤ ب) صورة مكبرة لهذا الجزء المرئي وهو عبارة عن مزيج من الألوان على شكل طيف متصل تتغير فيه الألوان تدريجياً من اللون الأحمر إلى اللون البنفسجي (ألوان قوس قزح) (شكل ٣).</p><img src="img-116.jpeg" alt="img-116.jpeg" /><p>شكل (٤)</p><p>١١٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

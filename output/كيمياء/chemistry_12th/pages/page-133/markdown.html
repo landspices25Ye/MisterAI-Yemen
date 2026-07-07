@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>نشاط (٧-٣)</p><p>اجمع بعض المراجع عن استخراج النفط في اليمن والعالم العربي، واكتب تقريراً عن أماكن استخراجه وكمية الإنتاج اليومي لكل بلد، والتقديرات الحالية لكل مخزون، ثم ناقش ذلك مع زملائك ومدرسك.</p><img src="img-120.jpeg" alt="img-120.jpeg" /><p>شكل (٧-٣) مواد منتجة في برج التقطير</p><p><strong>تكريم النفط Petroleum Refining</strong></p><p>مما سبق هل يمكن استخدام النفط الخام بشكل مباشر بعد استخراجه من آبار النفط، ولماذا؟ يحتوي النفط الخام على خليط من المركبات الهيدروكربونات المشبعة والحلقية والأروماتية والتي قد تتراوح عدد ذرات الكربون في جزئياتها من ذرة واحدة، كما في الميثان CH₄ إلى ٣٠ ذرة؛ ونتيجة لذلك فإن مكونات النفط الخام تختلف في درجة غليانها تبعاً لزيادة الوزن الجزيئي لهذه المركبات فيها، مما يجعل عملية فصلها ممكناً عن طريق عملية التقطير التجزيئي والذي يتم باستخدام برج التقطير، كما هو موضح في الشكل (٧-٣).</p><p>ويتكون برج التقطير التجزيئي من اسطوانة معدنية يصل طولها إلى حوالي ٣٠ متراً، ويتراوح قطرها بين (٣ إلى ٥ أمتار). وتتألف هذه الأسطوانة من عدة غرف يفصلها عن بعضها إناء معدني يحتوي على عدد من الصمامات، ويوجد أسفل كل غرفة فتحة موصلة بأنبوب وذلك لنقل المادة المقطرة إلى خارج البرج.</p><p>ويتم عملياً دفع النفط الخام إلى أنابيب متعرجة داخل فرن كبير للتسخين تصل درجة حرارته إلى حوالي ٥٠٠م تقريباً. ونتيجة لهذه الحرارة الشديدة تتبخر مكونات النفط إلى برج التقطير فتتخفض درجة حرارتها فتتكثف المواد ذات الوزن الجزيئي الكبير أولاً، وتندفع باقي الأبخرة إلى أعلى عبر الصمامات فيحدث تكثف للمواد</p><p>١٣١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>وهذا لا يوقف عمل الساعات الإشعاعية، ولكن قد يؤثر في نسبة العنصر المستقر الناتج إلى العنصر المشع، لذلك فإن تقدير عمر هذه الحبيبات المعدنية يعطي عمراً أقرب إلى عمر الصخر الأصلي الذي أخذ منه المعدن.</p><p>أما إذا كانت الصخور غير فتائية (كيميائية) فإن التاريخ الإشعاعي يستخدم في تقدير بعض الرسوبيات مثل البوتاسيوم أو صخور كربونات الكالسيوم مثل: الحجر الجيري والشعاب المرجانية والأصداف البحرية باستخدام طريقة الكربون (١٤)، ولكن يجب أن لا يزيد عمر الصخور المراد تعيين أعمارها بهذه الطريقة عن (٦٠) ألف سنة، وذلك لصخر نصف العمر للكربون المشع إذ يبلغ حوالي (٦٠) ألف سنة. وخلاصة القول: إن الساعات الإشعاعية بما فيها الكربون المشع قد أعطت تقويماً زمنياً مطلقاً لأعمار الصخور والمواد المختلفة، ودلت على أن عمر الأرض يزيد عن (٤٦٠٠ مليون سنة)، كما ساعدت على تحديد عمر كل من أقسام السجل الجيولوجي.
+راجع الجدول (٢) الذي يبين السجل الجيولوجي وسلمه الزمني.</p><h3>– إعطاء الأعمار النسبية أعماراً مطلقة:</h3><p>كيف استخدمت النظائر المشعة لتقدير أعمار مطلقة للصخور، ومن ثم تحديد عمر كل قسم من أقسام السجل الجيولوجي؟</p><p>لإعطاء فكرة عن الأسلوب الذي اتبع نورد المثالين التاليين:</p><p>١- في الشكل (٢٧) وجد أن عمر الصخر البركاني (أ) يساوي (٧٠) مليون سنة، والصخر البركاني (ب) (٦٠) مليون سنة.</p><p>من هذا يمكننا أن نعرف بأن صخر الكونجلويمرات عمره أقدم من (٧٠) مليون سنة، والطفل أحدث من (٦٠) مليون سنة، لأنه يقع فوق الصخر (ب) والذي عمره (٦٠) مليون سنة، في حين ينحصر عمر الحجر الرملي بين (٦٠) و (٧٠) مليون سنة لأنه يقع بين الصخرين أ، ب.</p><p>|  غضار  |
+| --- |
+|  صخر ناري بركاني (ب)  |
+|  الحجر الرملي  |
+|  صخر ناري بركاني (أ)  |
+|  كونجلويمرات  |</p><p>الشكل (٢٧) تعاقب من الصخور الرسوبية والبركانية.</p><p>٢٠٦</p><p>الأحياء: النصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-23.jpeg" alt="img-23.jpeg" /><p>ب) حرارة التبخير والتكثيف Heat of Vaporization and Condensation:
+عرفت سابقاً أن الماء المتجمد (الثلج) يتحوّل إلى سائل عند امتصاصه لكمية من الحرارة، وعند استمرار التسخين يبدأ السائل بالغليان ويتحوّل السائل إلى بخار ماء، ويوضّح الشكل (٢-٦) منحنى التسخين للماء.
+ويمكن استخدام المعادلة الحرارية الآتية لوصف عملية تحوّل الماء السائل لبخار.</p><p>$‫\text{H}_2\text{O} \xrightarrow{\text{(l)}} \text{H}_2\text{O} \quad \Delta\text{H} = +44 \text{ KJ/mole}‬$‫
+للتبخير</p><img src="img-24.jpeg" alt="img-24.jpeg" /><p>شكل (٢-٦) منحنى تسخين الماء ابتداء من الحالة الصلبة إلى الحالة الغازية</p><p>من خلال الشكل (٢-٦):</p><p>- ماذا يحدث لدرجة الحرارة عند نقطة الانصهار وعند نقطة الغليان؟
+- أي عمليات التحوّل تحتاج إلى درجة حرارة عالية، تحويل كمية من الثلج إلى سائل، أم تحويل الكمية نفسها من سائل إلى غاز؟
+- اكتب المعادلة الحرارية التي تعبّر عن تحوّل بخار الماء إلى سائل موضحاً قيمة ‬$\Delta H$.
+- هل عملية التكثيف ماصّة أم طاردة للحرارة؟</p><p>٣٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

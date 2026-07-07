@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>أجزاء الجهاز العصبي في الإنسان:</h2><p>انظر الشكل (١٢)، ولاحظ تركيب الجهاز العصبي في الإنسان.</p><p>- ما الأجزاء الرئيسية للجهاز؟</p><p>- ما أهمية الجهاز العصبي لجسم الإنسان؟</p><p>يتركب الجهاز العصبي في جسمك من ثلاثة أجهزة رئيسة مرتبطة ببعضها وهي كالاتي:</p><h3>أولاً: الجهاز العصبي المركزي (CNS):</h3><p>ويتكون من الأعضاء الآتية:</p><p>- الدماغ (Brain): ويوجد داخل جمجمة الرأس، ويعتبر أهم الأعضاء في الجهاز العصبي ككل، وأكبرها حجماً، ووزناً. ويبلغ وزن الدماغ في رأس الإنسان البالغ حوالي ١٥٠٠ غرام، بينما يصل عدد خلاياه حوالي ١٠٠ مليار خلية عصبية.</p><p>- ما أهمية وجود الدماغ داخل الجمجمة؟</p><p>نتيجة لأهمية عضو الدماغ للإنسان، ومن أجل المحافظة عليه من الصدمات والمؤثرات الخارجية</p><img src="img-14.jpeg" alt="img-14.jpeg" /><p>الشكل (١٢) الجهاز العصبي، وتفرعاته في الإنسان.</p><p>الأخرى، فقد حمى الخالق عز وجل الدماغ بصندوق الجمجمة التي تتميز عظامها بأنها أشد العظام صلابة في الجسم، إضافة إلى ذلك فقد وجد أن الدماغ محاط بثلاثة أغشية، تسمى الأغشية السحائية (Meninges) زيادة في المحافظة عليه من المؤثرات الخارجية، وهذه الأغشية مرتبة من الخارج إلى الداخل كالاتي:</p><p>أ - غشاء الأم الجافية (Duramater) ويتميز بأنه نسيج سميك يتكون من ألياف تبطن عظام الجمجمة من الداخل.</p><p>ب - غشاء الأم العنكبوتية (Arachnoid) ويتميز بأنه نسيج شبكي يشبه بيت العنكبوت، ويقوم بعملية الربط بين غشاء الأم الجافية، وغشاء الأم الحنون المحيط بأجزاء الدماغ.</p><p>٢٠</p><p>الأحياء: النصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

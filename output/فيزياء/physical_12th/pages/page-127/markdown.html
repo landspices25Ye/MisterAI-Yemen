@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>ثابت سُمِّي فيما بعد ثابت بلانك تكريماً للعالم بلانك وقيمته = ١٠ × ٦,٦٢٥ = (جول. ثانية) و (f) تردد الإشعاع المبعث.</p><p>وقد لقيت نظرية بلانك نجاحاً عظيماً واستفاد منها فيما بعد إينشتاين في تفسيره للظاهرة الكهروضوئية، وكذلك بوهر في وضع نظريته لذرة الهيدروجين التي ستكون موضوع درسنا التالي.</p><h3>نظرية بوهر لذرة الهيدروجين (Bohr Theory of the Hydrogen Atom)</h3><p>أعلن العالم الدينماركي بوهر في عام ١٩١٣م نظريته لذرة الهيدروجين والأيونات الشبيهة بالهيدروجين التي لها إلكترون واحد مثل ذرة الهيليوم أحادي التاين He+ أو ذرة الليثيوم ثنائي التاين Li++، وكان ذلك الإعلان إشارة لبداية حقبة جديدة في علم الأطياف والبنية الذرية. فقد أعطت نظريته تفسيراً مقبولاً لسلسلة (بالمر) وتنبأت باكتشاف سلاسل أخرى هي سلاسل ليمن وباشن وبراكيت وبفوند، واستطاعت من اعتبارات نظرية بحتة، أن تحسب نصف قطر مدار الإلكترون وسرعته وتردده وطاقته بالإضافة إلى قيمة ثابت ريد بيرج R_H لذرة الهيدروجين. كما أعطت نظريته معنى فيزيائياً للاكتشافات التجريبية للعلاقة (١) وبذلك أعطت جواباً للسؤال الذي كان يطرح لماذا الطول الموجي (λ) أو التردد للخط الطيفي يعطي بالفارق بين حدين؟ (انظر إلى صيغة العلاقة (١)).</p><p>تبنى بوهر النموذج النووي (لرذر فورد) واعتبر أن الإلكترون في ذرة الهيدروجين يرسم مداراً دائرياً (للتبسيط) حول النواة الثابتة في المركز (بسبب كبر كتلتها بالنسبة لكتلة الإلكترون). وقد اعتبرت نظريته خليطاً من الفيزياء التقليدية، وفكرة تكميم الطاقة لبلانك، ولذلك سميت بنظرية الكم القديمة أو بالنظرية شبه التقليدية. وقد أسست على ثلاث فرضيات هي:</p><p>- الفرضية الأولى: يستطيع الإلكترون في ذرة الهيدروجين أن يتحرك حول النواة في مدارات دائرية دون أن تشع الذرة طاقة، هذه المدارات سميت بمستويات الطاقة المستقرة المكممة.</p><p>١٢٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

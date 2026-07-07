@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التكامل</p><p>ومن الشكل (٧ - ٥) نجد أن :</p><p>$‫\text{سط}_2^2 = \text{سط}_2^2 (4 - \text{ص}^2) \text{ و ص}‬$‫</p><p>‬$‫\Leftarrow \text{سط}_2^2 = \text{سط}_2^2 (4 - \text{ص}^2) \text{ و ص} + \text{سط}_2^2 (4 - \text{ص}^2) \text{ و ص}‬$‫</p><p>وحيث أن منحنى الدالة متماثل حول محور السينات</p><p>‬$‫\therefore \text{سط}_2^2 = \text{سط}_2^2 (4 - \text{ص}^2) \text{ و ص} = 2 \times \frac{16}{3} = \frac{32}{3} \text{ وحدة مربعة .}‬$‫</p><h1><strong>مثال (٧ - ٣٠)</strong></h1><p>احسب المساحة المحددة بمنحنى الدالة : ص = لو س
+والمستقيمات س = ٠ ، ص = ٠ ، ص = ٣ .</p><h1><strong>الحل :</strong></h1><p>‬$‫\text{ص} = \text{لو س} \Leftrightarrow \text{س} = \text{هـ ص} \text{ ،}‬$‫</p><p>‬$‫\therefore \text{سط}_1^2 = \text{سط}_1^2 \text{ س و ص} \text{ ، وحدود التكامل هي :}‬$‫</p><p>‬$‫1 = 0 \text{ ، ب} = 3 \text{ ، ومن الشكل (٧ - ٦) نجد أن :}‬$‫</p><p>‬$‫\text{سط}_1^3 = \text{سط}_1^3 \text{ هـ ص} \text{ و ص} = \text{هـ ص} \left| \begin{matrix} 3 \\ 1 \end{matrix} \right| = (\text{هـ} - 1) \text{ وحدة مربعة .}‬$‫</p><h1><strong>مثال (٧ - ٣١)</strong></h1><p>احسب المساحة المحصورة بين منحنى الدالتين : د(س) = ٦ س - س² ، م(س) = س² - س² .</p><h1><strong>الحل :</strong></h1><p>لإيجاد نقاط تقاطع الدالتين نضع ٦ س - س² = س² - س²</p><p>‬$‫\Leftarrow 2 \text{ س (س - ٤) = ٠}‬$‫</p><p>‬$‫\text{إما س} = 0 \text{ ، أو س} = 4‬$‫</p><p>‬$‫\therefore \text{حدود التكامل هي : ١ = ٠ ، ب} = 4 \text{ ،}‬$‫</p><p>ومن الشكل (٧ - ٧) نجد أن :</p><p>‬$‫\therefore \text{سط}_1^2 = \text{سط}_1^2 [\text{د(س) - م(س)}] \text{ و س}‬$‫</p><p>‬$‫\therefore \text{سط}_1^4 = \text{سط}_1^4 [(\text{س} - 2) - (\text{س} - 2) - (\text{س} - 2) - (\text{س} - 2) - (\text{س} - 2) - (\text{س} - 2) - (\text{س} - 2) - (\text{س} - 2) - (\text{س} - 2) - (\text{س} - 2) - (\text{س} - 2) - (\text{س} - 2) - (\text{س} - 2) - (\text{س} - 2)‬$‫</p><p>‬$‫= (4 \text{ س} - 2) - (3 \text{ س} - 2) \left| \begin{matrix} 3 \\ 1 \end{matrix} \right| = \frac{64}{3} \text{ وحدة مربعة .}‬$</p><img src="img-208.jpeg" alt="img-208.jpeg" /><p>٢٤٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

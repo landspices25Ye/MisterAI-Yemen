@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>التقانة الحيوية Biotechnology</h2><p>ما المقصود بالتقانة الحيوية Biotechnology</p><p>لاحظ أن مفهوم التقانة الحيوية في اللغة الإنجليزية Biotechnology يتكون من مقطعين هما: (Bio) ويعني حيوي، و technology، ويعني ثقافة، ويقصد بمفهوم التقانة الحيوية: تحويل المعارف العلمية لعلم الأحياء إلى تطبيقات عملية يستفيد منها الإنسان، في جوانب حياة مختلفة، ومعنى آخر فإن التقانة الحيوية تعني: كيفية استخدام الكائنات الحية أو النظم والتعليمات الحيوية في التصنيع وإنتاج مواد جديدة.</p><p>وقد بدأ الإنسان باستخدام التقانة الحيوية في إنتاج مواد جديدة منذ القدم وخاصة في صناعة بعض المواد الغذائية، كالجين واللبن الرائب (الزبادي)، وفي عمليات التخمر وفي صناعة الخبز.</p><p>– ما الذي يضيفه الخباز إلى عجينة الخبز؟ ولماذا؟</p><p>بالرغم من أن الإنسان يستخدم التقانة الحيوية منذ القدم فقد أدى التقدم المتسارع في المجالات التكنولوجية والكيمياء الحيوية وعلم الحياة الجزيئي هذه الأيام إلى تطورات متلاحقة في مجال التقانة الحيوية والصناعات المتنوعة المعتمدة عليها.</p><img src="img-108.jpeg" alt="img-108.jpeg" /><p>شكل (١) إنتاج البنسلين</p><p>وكانت بداية الصناعات الحديثة المعتمدة على التقانة الحيوية في أيام الحرب العالمية الأولى (١٩١٤-١٩١٨)، عندما كان الألمان بحاجة إلى الدهون النباتية لإنتاج الجليسرول اللازم لتصنيع المتفجرات، فاتجه علماؤهم إلى تخمير المنتجات النباتية بواسطة قطر الخميرة لإنتاج مواد بديلة عن الجليسرول الذي يدخل في إنتاج المتفجرات.</p><p>وكان اكتشاف البنسلين في عام ١٩٢٨ تقريباً، كمضاد حيوي يقوم بإنتاجه قطر البنسيوم، ثم أثر فاعل في معالجة كثير من الأمراض والالتهابات، وخطوة</p><p>الأحياء للصف الثالث الثانوي</p><p>١٤٥</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

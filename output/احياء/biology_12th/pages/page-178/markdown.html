@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>١- أمراض الأعضاء المكونة للدم مثل سرطان خلايا الدم البيضاء الذي يؤدي إلى سرطان الدم (اللوكيمياء)، وضعف المقاومة للأمراض.
+٢- أمراض الغدد التناسلية التي تؤدي إلى العقم.
+٣- أمراض الجلد.
+٤- أمراض الجهاز الهضمي، وجميعها تؤدي إلى الهرم والموت المبكر.</p><h1>خامساً: ملوثات الغذاء:</h1><p>يتعرض الغذاء الذي يتناوله الإنسان إلى أنواع مختلفة من الملوثات، فقد يتعرض إلى ملوثات كيميائية مثل المبيدات الحشرية والمواد الحافظة، أو حيوية مثل تلوث الغذاء بالبكتيريا والفيروسات والديدان، أو ملوثات إشعاعية مضرة بالإنسان. ويمكن توضيح أهم الملوثات التي يتعرض لها الغذاء فيما يأتي:</p><h1>١- تلوث الغذاء بالميكروبات والطفيليات:</h1><p>تتلوث المواد الغذائية بالملوثات الحيوية بواسطة المياه أو الهواء أو الحشرات أثناء إنتاجها وتصنيعها، أو أثناء إعدادها للاستهلاك، أو عند استخدام مياه المجاري (الملوثة) في سقي الخضروات. وأهم الملوثات الحيوية ما يأتي:</p><p>أ - الفطريات: وهذه تفرز سموماً شديدة الضرر، وتلوث المواد الغذائية أثناء الحصاد والتخزين وخاصة عند توفر الرطوبة في مخازن الغلال والحبوب، ومن هذه الفطريات فطر البنسيوم، وفطر الفيوزاريوم. لذا يجب أن تكون مخازن الحبوب خالية من الرطوبة حتى لا تنمو الفطريات.</p><p>ب - البكتيريا: تفرز بعض السموم التي تلوث المواد الغذائية، وخاصة اللحوم والبيض، وقد تؤدي إلى الوفاة إذا لم يتم إسعاف المريض بسرعة ومعالجته، وأهم هذه البكتيريا السالمونيلا Salmonella والشيجلا Shigella، ونوع من بكتيريا كلوستريدم Clostridium botulinum، وقد يكون تلوث الغذاء بالبكتيريا وباثياً، وينتج عنه أمراض مثل التيفرئيد، والدوستاريكا العصبية، وإسهالات الأطفال، والكوليرا.</p><h1>٢- تلوث الغذاء بالمواد الكيميائية:</h1><p>يتلوث الغذاء بالمواد الكيميائية وهي متعددة وكثيرة، مثل المواد الناتجة عن الأسمدة والمبيدات، والمواد المضافة أثناء الصناعة، مثل المواد الملونة ومواد النكهة</p><p>١٧٨</p><p>الأحياء: النصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

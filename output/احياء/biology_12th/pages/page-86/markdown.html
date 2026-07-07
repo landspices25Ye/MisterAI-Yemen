@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-67.jpeg" alt="img-67.jpeg" /><p>الشكل (٢٠) قطاع في المبيض يبين مراحل تكوين البويضات.</p><p>جدول (٦) مراحل تكوين البويضات</p><p>|  الوصف | المرحلة  |
+| --- | --- |
+|  تنقسم الخلايا التناسلية الأولية انقسامات متساوية لتنتج خلايا بيضية أم <strong>Oogonia</strong> | خلية تناسلية أصلية خلية بيضية أم  |
+|  تتم وتطور الخلية البيضية الأم إلى خلايا بيضية أولية <strong>Primary Oocytes</strong> | خلية بيضية ابتدائية  |
+|  تمر الخلية البيضية بالمرحلة الأولى من الانقسام المنصف لتنتج خلية كبيرة الحجم تسمى الخلية البيضية الثانوية <strong>Secondary Oocyte</strong> وخلية صغيرة الحجم تسمى الجسم القطبي الأول <strong>First polar body</strong> – تدخل الخلية البيضية الثانوية المرحلة الثانية في الانقسام المنصف عند حدوث الإخصاب باختراق الحيوان المنوي لغشاء الخلية البيضية، وتستمر المرحلة الثانوية من الانقسام لتنتج البويضات الناضجة والجسم القطبي الثاني، وقد ينقسم الجسم القطبي الأول إلى جسمين قطبيين (إضافية). | خلية بيضية ثانوية جسم قطبي أول جسم قطبي ثاني بويضات ناضجة اختصر عدد الكروموسومات في الإنسان (٤٦) إلى (٤) للتبسيط.  |</p><p>٨٦</p><p>الأحياء: النصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

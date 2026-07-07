@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-85.jpeg" alt="img-85.jpeg" /><h1>٤- الحموض الأمينية المحتوية على الكبريت :</h1><p>وهي حموض يحتوي الجزيء منها على مجموعة أمينو واحدة ومجموعة كربوكسيل واحدة ومجموعة ثيول (-SH) أو كبريتيدية، ومن أمثلة هذه الحموض ما يأتي :</p><img src="img-86.jpeg" alt="img-86.jpeg" /><img src="img-87.jpeg" alt="img-87.jpeg" /><h1>٥- المشتقات الأروماتية للحموض الأمينية :</h1><p>وهي حموض تحتوي على حلقات أروماتية وحلقات دائرية مختلفة، ومن أمثلتها :</p><img src="img-88.jpeg" alt="img-88.jpeg" /><img src="img-89.jpeg" alt="img-89.jpeg" /><p>كما أن هناك حموضاً أمينية وعددها ثمانية لا يستطيع جسم الحيوان أو الإنسان بناءها، وعدم احتواء الغذاء عليها يؤدي إلى ضعف نمو الجسم ومرض سوء التغذية وغيرها من الأمراض، لذا يجب تناولها أثناء الوجبات الغذائية من مصادر خارجية، ولهذا تسمى هذه الحموض بالحموض الأمينية الأساسية، وهي :</p><p>|  ١ - حمض ليوسين | Leucine | ٢ - ميثونين | Methionine  |
+| --- | --- | --- | --- |
+|  ٣ - فينيل الأثين | Phenylalanine | ٤ - لايسين | Lysine  |
+|  ٥ - قالين | Valine | ٦ - إيزوليوسين | Iso-Leucine  |
+|  ٧ - ثريونين | Threonine | ٨ - تريبتوفان | Tryptophane  |</p><h1>الخواص الفيزيائية :</h1><p>أغلب الحموض $‫\alpha‬$ - الأمينية مواد صلبة، بلورية، لها درجة انصهار عالية (أبسط هذه الحموض هو الجلايسين الذي تبلغ درجة انصهاره ٢٥٠م)، والأفراد الأولى البسيطة من هذه الحموض سريعة الذوبان في الماء، وقليلة الذوبان في المذيبات العضوية، ومتعادلة التأثير على ورقتي دوار الشمس.</p><p>١٠٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

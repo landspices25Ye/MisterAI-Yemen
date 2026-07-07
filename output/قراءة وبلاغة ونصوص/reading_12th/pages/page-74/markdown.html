@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'l' inside a circle with the text 'e-learning' below it.]()</p><p>المستشرق (برنال) : « إن الفضل، أعظم الفضل، للعلماء المسلمين في الحفاظ على هذا التراث وتدوينه ونقله، والتأليف فيه، وإن العلماء المسلمين قد بلغوا فيه شأواً عظيماً، وتفوقوا على الأغريق » ويقول المستشرق كارنيسكي : « إن الخدمات التي أداها العلماء المسلمون للعلوم غير مقدرة حق قدرها من المؤرخين، وإن البحوث الحديثة قد دلّت على عظم ديننا للعلماء المسلمين الذين لم يقتصروا على نقل علوم الآخرين، بل زادوا عليها، وقاموا بإضافات مهمة في ميادين مختلفة ».</p><p>وتقول المستشرقة الألمانية الدكتورة « سيجريد هونكة » في كتابها « شمس العرب تسطع على الغرب » : « لقد شاء الله أن يظهر من الأوروبيين من ينادي بالحقيقة، ولا يغمط المسلمين حقهم، في أنهم حملوا رسالة عالمية، وأدوا خدمة إنسانية للثقافة البشرية قديماً وحديثاً. إن هذا النفر من الأوروبيين المنصفين، لا يابه لتحدي المتعصبين الذين حاولوا جهد طاقتهم طمس معالم هذه الحضارة الإسلامية، والتقليل من شأنها. إن أوروبا تدين للمسلمين وللحضارة الإسلامية، وإن الدين الذي في عنق أوروبا وسائر القارات الأخرى للمسلمين كبير جداً، وكان يجب على أوروبا أن تعترف بفضل العلماء المسلمين منذ زمن بعيد، ولكن التعصب واختلاف العقائد أعمى عيونها، وترك عليها غشاوة، حتى إننا نقرأ ثمانية وتسعين كتاباً من مئة، فلا نجد فيها إشارة إلى فضل المسلمين، وما أسدوه من علم ومعرفة، اللهم إلا هذه الإشارة العابرة إلى أن دور المسلمين لا يتعدى دور ساعي البريد الذي نقل إليهم التراث اليوناني ».
+ومن الحق أن نقول إن الأمة الإسلامية قد واتتها ظروف طيبة جعلت لها مركزاً قيادياً في العلم، نهلت من العلم الإغريقي، وأضافت إليه، ومن المستحيل أن نتصور أن تنقل أمة علم أمة أخرى دون أن تكون قد بلغت من التقدم الحضاري ما يؤهلها لإساعة هذا العلم الذي تنقله، ولا نعرف أمة في التاريخ قد عُنيت بالعلم كما عُنيت به الأمة الإسلامية في عصورها الزاهية، حتى كان العلم والحركة العلمية جزءاً من حياتها، بل من كيانها.
+ولعل في موقف أوروبا درساً وعظة وعبرة لنا، ألا نهفو إلى الإغفاء مرة أخرى، وألا نترك قصب السبق من أيدينا، وأن نعض بالنواجذ على تراثنا التليد، وأن نعمل على إحيائه، وأن نجعل العلم وسيلتنا الأولى والأخيرة لتسلم ذرا المجد، وأن نقود العلم إلى مدارج الرقي والرفعة كما فعل أسلافنا الأوائل.</p><p>٧٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

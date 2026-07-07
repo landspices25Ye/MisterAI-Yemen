@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>لاحظ الشكل (٣) وتعرّف على مكونات الجهاز العصبي في دودة الأرض.
+ستجد أن الجهاز العصبي عبارة عن:</p><p>١- عقدة دماغية مزدوجة فوق بلعومية تمتد منها حلقة حول</p><img src="img-5.jpeg" alt="img-5.jpeg" /><p>بلعومية تلتقي تحت
+البلعوم بالعقدة
+العصبية.</p><p>٢- عقدة عصبية تحت
+بلعومية.</p><p>٣- حبل عصبي بطني
+مزدوج عليه عقد
+عصبية صغيرة (عقدة</p><p>في كل حلقة).</p><p>الشكل (٣)</p><p>الجهاز العصبي في دودة الأرض.</p><p>٤- أعصاب تخرج من العقدة الدماغية، والعقدة العصبية تحت البلعومية تمتد نحو الحلقات الأربع الأولى، في حين تستمد الحلقات التالية أعصابها من عقد الحبل العصبي البطني الذي يستمر امتداده نحو الخلف، ويخرج من كل عقدة في الحبل العصبي زوج من الأعصاب، تتفرع إلى فرعين أحدهما يتوزع على الناحية البطنية والآخر على الجانب، وعبر حواجز الحلقات تتشابك الأعصاب مكونة شبكة من الخيوط العصبية حيث تمكن الدودة من التفاعل مع المؤثرات البيئية المختلفة.</p><p>● اكتب عن الجهاز العصبي في المفصليات.</p><p><strong>قضية البحث</strong></p><h3>ب. الجهاز العصبي في الفقاريات:</h3><p>يصل التنظيم العصبي في الحيوانات الفقارية، وخاصة الثدييات (الإنسان)، إلى مستوى راق من التنسيق بين أجهزة الجسم المختلفة، ويرجع ذلك إلى وجود جهاز عصبي معقد التركيب يتكون من الدماغ، والحبل الشوكي، والأعصاب.</p><h4>● الجهاز العصبي في الإنسان:</h4><p>يتعرض الإنسان إلى مؤثرات عديدة؛ حيث تقوم في استقبالها أعضاء حس متخصصة مرتبطة بجهاز عصبي معقد التركيب، يعمل بكفاءة عالية، تضمن للإنسان الاتصال والتكيف الفعال مع البيئة، والقيام بالتنسيق لفعاليات الجسم المختلفة</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p><p>١١</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

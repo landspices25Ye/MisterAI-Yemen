@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-41.jpeg" alt="img-41.jpeg" /><h1>٢) خلايا خزن الطاقة:</h1><img src="img-42.jpeg" alt="img-42.jpeg" /><p>شكل (٣-٩) المركم الرصاصي</p><p>يعتبر المركم الرصاصي النموذج الشائع من هذه الخلايا، وتستعمل في أغلب السيارات، ويتكون المركم الرصاص من وعاء من الأيونيت بداخله مجموعتان من الألواح الرصاصية المثقبة على شكل شبكة، وتُملا إحداهما بالرصاص الإسفنجي (الأنود) وتُملا</p><p>المجموعة الأخرى بعجينة من ثاني أكسيد الرصاص PbO₂ (الكاثود)، وتُفصل المجموعتان بصفائح عازلة، وتُغمران في حمض الكبريتيك المخفف.</p><p>تفاعلات الخلية:</p><p>أ) عملية التفريغ:</p><p>$‫\text{Pb}_{(s)} + \text{SO}_4^{2-} \longrightarrow \text{PbSO}_4 + 2e^-‬$‫
+عند الأنود (المصعد):</p><p>‬$‫\text{PbO}_2 + 4\text{H}^+ + \text{SO}_4^{2-} + 2e^- \longrightarrow \text{PbSO}_4 + 2\text{H}_2\text{O}_{(l)}‬$‫
+عند الكاثود (المهبط):</p><p>التفاعل الكلي لعملية التفريغ:</p><p>‬$‫\text{Pb}_{(s)} + \text{PbO}_2 + 2\text{H}_2\text{SO}_4 \longrightarrow 2\text{PbSO}_4 + 2\text{H}_2\text{O}_{(l)}‬$‫</p><p>ب) إعادة شحن البطارية:</p><p>إن الاستخدام الطويل لهذه البطارية يؤدي إلى ضعف حمض الكبريتيك الموجود بها؛ نتيجة لاستهلاكه وزيادة نسبة الماء، مما يؤدي إلى نقص كمية التيار الكهربائي الناتج عنها؛ لذا نقوم بشحنها وذلك بتوصيلها بمصدر كهربائي خارجي له جهد أكبر من الجهد الناتج عن هذه الخلية، مما يؤدي إلى عكس التفاعلات الحادثة.</p><p>التفاعل الكلي لعملية الشحن والتفريغ:</p><p>‬$‫\text{Pb} + \text{PbO}_2 + 4\text{H}^+ + 2\text{SO}_4^{2-} \underset{\text{شحن}}{\overset{\text{تفريغ}}{\rightleftharpoons}} 2\text{PbSO}_4 + 2\text{H}_2\text{O}‬$</p><p>نشاط (٣-٣)</p><p>افحص صلاحية مركم الرصاص.</p><p>٥٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

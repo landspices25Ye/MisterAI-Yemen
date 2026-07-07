@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>وتسكب قلبها في قلبه حتى يستحيلا إلى قلب واحد، يخفق خفوقاً واحداً، وهي التي تسهر عليه ليلها، وتكلؤه نهارها، وتحتمل جميع آلام الحياة وأرزائها في سبيله».</p><p>أ - (يخفق - جانحتيه - أرزائها)</p><p>هات مرادف الكلمة الأولى، وجمع الثانية، ومفرد الثالثة.</p><p>ب - وضح الصورة البلاغية فيما يأتي، وبين أثرها في الكلام:</p><p>- (تبسط عليه جناح رحمتها).</p><p>- (تسكب قلبها في قلبه).</p><p>ج - هات من الفقرة كلمتين بينهما تضاد، وبين أثره في المعنى.</p><p>د - لاحظ الفرق في معنى الفعل (يستحيل) في الجملتين الآتيتين:</p><p>- يستحيل أن تفرط الأم في تربية ابنها.</p><p>- الشعب الحر يأتي أن يستحيل وطنه إلى سجن للقهر والعبودية.</p><p>هـ - لاحظ الفرق في معنى الفعل (يحتمل) في الجملتين الآتيتين:</p><p>- تحتمل الأم جميع آلام الحياة وأرزائها في سبيل راحة طفلها.</p><p>- لكل منا أفكار ومعتقدات بعضها يحتمل الصواب أو الخطأ.</p><p>٤ - هات جمع الكلمات الآتية:</p><p>(نكبة - شؤبوب - خباء - سرية - النظير).</p><p>٥ - يقول الكاتب: «ولا يستطيع الشيخ الفاني أن يجد في أخريات أيامه في قلب ولده الفتى من الحنان والعطف، والحب والإيثار، ما يجد في قلب ابنته الفتاة؛ فهي التي تمنحه يدها عكازاً لشيخوخته، وقلبها مستودعاً لأسراره، وهواجس نفسه، وهي التي تسهر بجانب سرير مرضه ليلها كله تتسمع أنفاسه، وتُصغي إلى أناته».</p><p>١٠١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>الأدب في العصرين المملوكي والعثماني</h1><p>تَنَقَّلَ الأدب العربي في عصوره المختلفة من قمة إلى قمة، كان آخرها ما سجله في العصر العباسي من ازدهار فائق في الشعر الغنائي، وظهرت فيه بوادر الشعر الملحمي والقصصي، وتطورت القصيدة الشعرية في بنائها وأفكارها، وصورها وموسيقاها، وظهرت في النثر فنون جديدة، مثل بواكير القصة عند ابن المقفع وبديع الزمان...</p><p>يَبْدَأُ أنه في أواخر العصر العباسي ضعفت الدولة، وبدأت عرى الحضارة بالانحلال، وأضواء الثقافة بالاختفاء، وأصبح الشعراء يقتصرون في استقاء مادتهم على ذاكرتهم ومحفوظاتهم، وليس من الحياة كما كان يفعل القدماء.</p><p>وقد زاد من ذلك الجمود القيود التي وضعها بعض النقاد العرب في أعناق الشعراء، إذ حددوا لكل غرض من أغراض الشعر معاني خاصة لا ينبغي للشاعر أن يتجاوزها، فأصبح لكل فن شعري معانيه التقليدية المتحجرة، وسجلت كتب الأدب تلك المعاني.</p><p>على أن الكارثة العظمى هي سقوط بغداد بأيدي التتار الذين خرجوا من جنوبي سيبيريا يشنون الغارات على البلاد التي مروا بها، واستولوا على بغداد بقيادة (هولاكو)، وقاموا بإلقاء معظم تراثها العلمي والأدبي في نهر دجلة، أو حرقه.</p><h2>عصور الانحطاط</h2><p>يطلق النقاد على فترة حكم المماليك والعثمانيين اسم عصور الانحطاط أو الاجترار في الأدب، وتبدأ باستيلاء المغول على بغداد عام ٦٥٦هـ/١٢٥٨م والقضاء على الخلافة العباسية فيها، وتنتهي بدخول نابليون الأول مصر عام ١٢١٣هـ/١٧٩٨م.</p><p>وهناك من يقسم هذه العصور إلى قسمين: العصر المملوكي ويبدأ من سقوط بغداد سنة ٦٥٦هـ/١٢٥٨م إلى استيلاء العثمانيين على القاهرة ٩٢٣هـ/١٥١٧م. والعصر العثماني ويبدأ منذ ذلك التاريخ وينتهي باستيلاء نابليون على مصر عام ١٢١٣هـ/١٧٩٨م.</p><p>٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

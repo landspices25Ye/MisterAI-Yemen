@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><p>بقرآن الله وكلماته عالمًا جديدًا يهتزُّ نَضْرَةً، ويتألق عظمة، ويتفوق اقتدارًا؟..
+وقبل هذا كله، وفوق هذا كله.. كيف استطاعوا في مثل سرعة الضوء أن يضيئوا الضمير الإنساني بحقيقة التوحيد، ويكنسوا منه إلى الأبد وثنية القرون؟..
+تلك هي معجزتهم الحق.. وأيضًا فإن معجزتهم الحق تتمثل في تلك القدرة النفسية الهائلة التي صاغوا بها فضائلهم، واعتصموا بإيمانهم على نحو يجلُّ عن النظير.. على أن كل معجزاتهم التي حققوها لم تكن سوى انعكاس متواضع للمعجزة الكبرى التي أهلت على الدنيا يوم أذن الله لقرآنه الكريم أن يتنزل، ورسوله الأمين أن يبلغ، ولوكب الإسلام أن يبدأ على طريق النور خطاه.. أجل، إنَّ معجزاتهم لم تكن شيئًا سوى النور الذي اتبعوه..
+فأيُّ معلم كان.. وأيُّ إنسان.. هذا المتزعُّ عظمةً، وأمانةً وسموًى؟.. ألا إن الذين بهرتهم عظمته لمعدورون.. وإن الذين افتدوه بأرواحهم لهم الرابحون!..
+ابن عبد الله محمد.. رسول الله إلى الناس في قيظ الحياة.. أيُّ سرٍّ توافر له فجعل منه إنسانًا يشرف بني الإنسان؟ وبأية يد طُولى، بسطها شطر السماء، فإذا كل أبواب رحمتها ونعمتها وهداها مفتوحة على الرحاب؟..
+لقد آتاه الله من أنعمه بالقدر الذي يجعله أهلاً لحمل رايته، والتحدث باسمه، بل ويجعله أهلاً لأن يكون خاتم رسله.. ومن ثمَّ، كان فضل الله عليه عظيمًا.. ومهما تتبارى القرائح والأفهام والأقلام متحدثةً عنه، عازفةً أناشيدَ عظمته، فستظل جميعًا كأن لم تبرح مكانها، ولم تحرك بالقول لسانها.. وحسبنا – إذن – أن نبصر في ضوء شعاع من ضيائه الغامر بعض سمات عظمته النادرة التي نادت إليه ولأه المؤمنين، وجعلتهم يرون فيه الهدف والطريق.. والمعلم والصديق..
+ما الذي جعل بعض سادة قومه يسارعون إلى كلماته ودينه.. متخلِّين بهذه المسارعة المؤمنة عن كل ما كان يحيطهم به قومهم من مجد وجاه، مستقبلين – في الوقت نفسه – حياة تمورُ مورًا شديدًا بالأعباء، وبالصعاب، وبالصراع؟..
+ما الذي جعل ضعفاء قومه يلوذون بحماه، ويُهرَّعون إلى رايته ودعوته، وهم يبصرونه أعزل من المال ومن السلاح؟.. ينزل به الأذى، ويطارده الشرُّ في تحدٍّ رهيب</p><p>١٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

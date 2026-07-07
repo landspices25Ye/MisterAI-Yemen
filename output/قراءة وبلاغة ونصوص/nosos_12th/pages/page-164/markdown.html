@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-59.jpeg" alt="img-59.jpeg" /><p>توفي - رحمه الله عام ١٩٩٥م، بعد مرض عضال صاحبه فترة طويلة.
+والنص الآتي جزء من رواية «مواكب الأحرار» التي كتبها الكيلاني ليكشف من خلالها جوانب تاريخية مهمة من صراع الشعب المصري ضد الاحتلال الفرنسي أواخر القرن الثامن عشر الميلادي.</p><h2>النص</h2><p>كانت زوجة الحاج مصطفى البشتيلي في أشد حالات التعاسة، إنها تتوقع دائماً كارثة من أي نوع، هذا الإحساس هو الذي يعذبها، ويحيل حياتها إلى جحيم. ويبدو أن ذلك كله يُعزى إلى اليأس العنيف الذي يخالط مشاعرها وأفكارها، إن هؤلاء الشياطين الفرنسيين - بآلاتهم الجهنمية - من العسير أن يهزموا، ذلك ما وقر في ذهنها، وازدادت تعاستها شدة وهي ترى زوجها يغرق في جو العمل والاستعداد للمشاركة الفعلية في ثورة لتدمير قوى الشر والعدوان.. وكانت توفن أن عاطفة زوجها تطغى على تفكيره، وأنه لا يقدم أمام نفسه حساباً دقيقاً للموقف.. واهتز زوجها إزاء سؤال محرج ألقته عليه، لقد قالت:</p><p>- ألم تفكر في العاقبة إذا ما حاقتم بكم الهزيمة مرة ثانية؟؟</p><p>كان سؤالاً دقيقاً خطيراً، على جانب كبير من الأهمية، هذا ما تبادر إلى ذهنه، ولم تكن خطورته نابعة من خوفه على نفسه وأسرته، وإنما الذي جعله يفكر هو أثر الهزيمة - لو حدثت - على ملايين البشر في مصر كلها.. وعادت الزوجة تقول:</p><p>- العقلاء يفكرون في احتمالات الهزيمة قبل احتمالات النصر.</p><p>أجابها بقوله:</p><p>- الحقيقة أنك تتفلسفين بطريقة معقولة.</p><p>- لا أعرف الفلسفة، ولكني أقول ما يختلج في صدري.</p><p>- حسناً.. لو فكر الفرنسيون في احتمالات الهزيمة، لما عبروا البحار وقطعوا المسافات الشاسعة ليحتلوا أرضنا.. أعرف أنك على جانب من الصواب له شأنه، غير أن المعركة يجب</p><p>١٦٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

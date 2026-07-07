@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>٢ - وظيفته:</p><p>للنقد وظيفتان: علمية وجمالية هما:</p><h1>١- الوظيفة العلمية:</h1><p>ويستفيد من هذه الوظيفة النقدية كل من الأديب، والقارئ، والحياة الأدبية.
+فالأديب المدرك لوظيفة النقد يدرك من خلاله مكامن القوة والضعف في أدبه، ويصحح
+مساره الأدبي، ويرعى موهبته وينميها وفقاً للتوجيهات النقدية التي أسديت إليه.
+أما القارئ فإن الناقد بالنسبة إليه كالصراف. قال أحدهم لخلف الأحمر: إذا
+سمعتُ الشعر واستحسنته فما أبالي ما قلت فيه أنت وأصحابك.
+قال له خلف: إذا أخذت درهماً فاستحسنته فقال لك الصراف إنه رديء هل
+ينفعك استحسانك؟!</p><p>ومن ثم ندرك أهمية النقد للقارئ؛ إذ يساعده على فهم النص ومعرفة مواطن
+الصحة أو الخطأ، ويساعده على حسن الاختيار، ولا سيما إذا وضع الناقد يده على
+مواضع الخطأ اللغوي أو الفكري في النص، ووضع لها البديل المناسب، وبالنسبة
+للحياة الأدبية، فإن النقد يسهم في رقيها وارتفاع مستوى الإبداع بين أدبائها، وبوجود
+النقد يكثر الإنتاج الأدبي الجيد ويقل الإسفاف في الأدب، ويرتفع صوت الأدباء
+الجيدين ويخفّضُ صوت الأدباء. وبالنقد يسود الفكر الراقي ويختفي الزيف.</p><h1>٢- الوظيفة الجمالية الفنية:</h1><p>ومهمة النقد من منطلق الوظيفة الجمالية تتجلى في تفسير النص وتحليله،
+والحكم عليه بالجمال أو القبح شكلاً ومضموناً، فمن ناحية الشكل يدرس النقد لغة
+النص، ومفرداته، وأسلوبه وصوره الفنية، وجرس ألفاظه، وإيقاعاتها. وفي مجال
+المضمون يعالج النقد أفكار النص من حيث الجدة والابتكار والمعاني الكلية والجزئية،
+ورؤية الأديب الخاصة، وتمثله للقيم والعلاقة بين الشكل والمضمون، ويدخل في ذلك
+دراسة حياة الأديب وبيئته ومعتقده، لأن ذلك كله يترك أثراً في معاني النص.</p><h1>تطور النقد الأدبي وقضاياه</h1><p>بدأ النقد الأدبي في صورة ملاحظات في العصور التي سبقت عصر الأزدهار وهو
+العصر العباسي، وفي هذا العصر ظهرت مؤلفات نقدية متخصصة، كان من أبرزها:
+كتاب (عيار الشعر) لابن طباطبا، وكتاب (الموازنة) للأمدي، وكتاب (الوساطة)</p><p>١٨١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>القطع الخروطية</p><p>ولإيجاد معادلتي المستقيمين المقاربين نضع المعادلة:</p><p>$‫\frac{2}{1} - \frac{2}{2} = 0‬$‫ نحصل على:</p><p>‬$‫\Leftarrow \text{ص} = \pm \frac{2}{1} \text{ س} \text{، أو نضع:}‬$‫</p><p>‬$‫\frac{2}{1} - \frac{2}{2} = 0 \quad \Leftarrow \quad \text{ص} = \pm \frac{1}{2} \text{ س} \text{.}‬$‫</p><p>فإذا أردنا مثلاً أن نجد معادلتي المستقيمين المقاربين للقطع الزائد ‬$16 \text{ س}^2 - 9 \text{ ص}^2 = 144$‫، نقسم الطرفين على 144 فنحصل على:</p><p>‬$‫1 = \frac{2}{16} - \frac{2}{9} \text{ والمستقيمان المقاربان هما: } 1 = \frac{2}{16} - \frac{2}{9} = 0‬$‫، أي أن: ص = ‬$\pm \frac{4}{3} \text{ س}$‫.</p><p>تلاحظ مما سبق أنه يمكن التعرف على القطع الخروطي من خلال التخالف المركزي فإذا كان:</p><p>- 1- ‬$1 = 1$‫ فإن القطع مكافئ.
+- 2- ‬$1 > 1$‫ فإن القطع ناقص.
+- 3- ‬$1 < 1$‫ فإن القطع زائد.</p><h2>مثال (4 - 14)</h2><p>أوجد معادلة القطع الخروطي الذي رأساه (0, 6 ± 0) وتخالفه المركزي ‬$\frac{5}{3}$‫، ثم أوجد إحداثي البؤرتين ومعادلتي دليليه.</p><h3>الحل:</h3><p>‬$‫\therefore 1 < \frac{5}{3} = 1‬$‫</p><p>∴ القطع زائد ومعادلته على الشكل:</p><p>‬$‫1 = \frac{2}{2} - \frac{2}{2} = 1‬$‫</p><p>حيث ‬$1 = 6$‫، ‬$1 = \frac{5}{3} = \frac{5}{3}$‫ ومنه ‬$5 = 10$‫، ‬$2 = 2 - 2 = 2 - 2 = 100 - 36 = 64$‫.</p><p>∴ المعادلة المطلوبة هي ‬$‫1 = \frac{2}{64} - \frac{2}{36} = 1‬$‫.</p><p>‬$‫\text{وواضح إن البؤرتين هما النقطتان (0, 10 ± 0) ومعادلتا الدليلين هما } 1 = \frac{1}{2} \text{ ص} = \pm \frac{18}{5} \text{.}‬$</p><p>121</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

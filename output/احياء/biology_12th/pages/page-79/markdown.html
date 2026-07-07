@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>في حبة القمح والذرة وبعض الحبوب يندمج غلاف الثمرة مع غلاف البذرة لتكوين الحبة لهذا السبب تعتبر حبة القمح ثمرة وليست بذرة.</p><p>وقد وجد أن بعض النباتات تنتج ثماراً خالية من البذور تسمى بالثمار العذرية Parthenocarpic Fruit مثل بعض أصناف العنب. فما أسباب ذلك؟</p><p>يرجع تكوين الثمار العذرية إلى عدة أسباب منها:</p><p>- تكوين الثمرة دون تلقيح كما في البرتقال والموز.
+- تكوين الثمرة بعد حدوث التلقيح والإخصاب دون تكون الجنين كما في العنب.
+- يمكن إنتاج ثمار عذرية صناعياً يرش أزهار النباتات بهرمونات نباتية قبل حدوث الإخصاب فيها مثل نبات الشمام.</p><h3>التكاثر الجنسي في الحيوان Sexual Reproduction in Animal</h3><p>تعتمد الحيوانات اللافقارية والفقارية على التكاثر الجنسي في الحفاظ على نوعها. وسوف نناقش التكاثر الجنسي في الحشرات كمثال للحيوانات اللافقارية والتكاثر الجنسي في الإنسان كمثال للحيوانات الفقارية وذلك كما يأتي:</p><h4>التكاثر الجنسي في الحشرات:</h4><p>الحشرات وحيدة الجنس أي إن هناك ذكراً ينتج أمشاجاً ذكرية، وأنثى تنتج أمشاجاً أنثوية، ويتم التكاثر عن طريق اندماج الأمشاج الذكرية والأمشاج الأنثوية. ثم يتكون الجهازان التناسليان الذكري والأنثوي في الحشرات؟</p><h4>الجهاز التناسلي في الحشرات:</h4><img src="img-63.jpeg" alt="img-63.jpeg" /><p>لاحظ الشكل (١٧) وتعرف على كل جزء من أجزاء الجهاز التناسلي في الحشرات.
+- ما الوظائف المتناظرة التي تقوم بها الأعضاء في الجهازين التناسليين للذكر والأنثى؟</p><p>الشكل (١٧) الجهاز التناسلي في الحشرات</p><p>الأحياء للصف الثالث الثانوي</p><p>٧٩</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

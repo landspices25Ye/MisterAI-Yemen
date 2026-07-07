@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>إشعاع الجسم الأسود Blackbody Radiation</h2><img src="img-125.jpeg" alt="img-125.jpeg" /><p>شكل (١٢)</p><p>الجسم الساخن في أية درجة حرارة فوق درجة الصفر المطلق يبعث إشعاعاً يدعى أحياناً الإشعاع الحراري. خواص هذا الإشعاع تعتمد على نوع مادة الجسم ودرجة حرارته. ففي درجة الحرارة المنخفضة، تقع الأطوال الموجية المنبعثة للإشعاع الحراري بشكل رئيسي في منطقة الأمواج تحت الحمراء، فهي لا ترى بالعين المجردة، ولهذا يظهر الجسم في بداية التسخين</p><p>معتماً. وعندما تزداد درجة حرارته يبدأ بالتوهج بلون يميل إلى الأحمر فالبرتقالي، وعندما تصل درجة حرارته حداً معيناً يصبح توهج الجسم أبيض، أي يصبح الجسم يشع أطوالاً موجية تقع في منطقة الطيف المرئي. وتدل الدراسة بأن طيف الإشعاع</p><p>الحراري هو طيف متصل يحوي جميع الأطوال الموجية المختلفة، البعض منها لا يرى بالعين لأنها تقع في منطقتي الإشعاعات تحت الحمراء أو فوق البنفسجية. وبحسب قانون كيرتشوف، فالجسم جيد الامتصاص هو أيضاً جيد الإشعاع، ويسمى الجسم الذي يمتص جميع الأطوال الموجية أو يشعها «بالجسم الأسود المثالي» (Blackbody) وأفضل تمثيل للجسم</p><img src="img-126.jpeg" alt="img-126.jpeg" /><p>شكل (١٣)</p><p>الأسود المثالي هو تجويف صغير من أية مادة كان يكون من مادة الحديد أو النحاس، فيه فتحة صغيرة، فأي إشعاع ساقط على هذه الفتحة يدخل التجويف وينعكس على جدرانه الداخلية انعكاسات متتالية إلى أن يتم امتصاصه كلياً. وعند تسخين جدران هذا التجويف من الخارج إلى درجة حرارة معينة ينبعث منها إشعاع حراري يحوي جميع الأطوال الموجية، شكل (١٢).</p><p>١٢٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>مبدأ العد ومبرهنة ذات الحدين</p><h1><strong>تدريب (٢-١١)</strong></h1><p>في مفكوك ( ا س + ب ص ) ، أثبت أن النسبة بين المعاملين الحسابيين لحدين متتاليين هي :</p><p>$‫\frac{\text{معامل ح س + ١}}{\text{معامل ح س}} = \frac{1 + م - ١}{م} \times \frac{\text{ب (معامل الحد الثاني)}}{\text{أ (معامل الحد الأول)}}‬$‫</p><h1><strong>مثال (٢-٣١)</strong></h1><p>في مفكوك ( ا س + ب ) إذا كان معاملا الحدين الثامن والتاسع متساويين ، وكانت ‬$‫\frac{44}{75} = \frac{2}{5}‬$‫ . أوجد قيم كلاً من : و ، س .</p><h1><strong>الحل :</strong></h1><p>‬$‫\frac{\text{معامل ح ٩}}{\text{معامل ح ٨}} = \frac{1}{1} \times \frac{1 + 8 - ١}{8} = 1‬$‫ ( لأن المعاملين متساويان ) .</p><p>‬$‫\therefore 5 - 7 = 8 \iff 15 = 5‬$‫</p><p>‬$‫\therefore \frac{2}{5} = \frac{2}{5} \times \frac{2}{5}‬$‫</p><p>‬$‫\therefore \frac{44}{75} = \left( \frac{1 + 6 - 15}{6} \times \left( \frac{1 + 5 - 15}{5} \right) \right) \times \left( \frac{1 + 5 - 15}{5} \times \frac{1 + 5 - 15}{5} \right)‬$‫</p><p>‬$‫\therefore \frac{4}{25} = 2 \iff 2 = 2‬$‫</p><h1><strong>مثال (٢-٣٢)</strong></h1><p>إذا كانت النسبة بين معاملات ثلاثة حدود متتالية في مفكوك ( س + ٤ ص ) هي ٢٧ : ٣٦ : ٣٢ فأوجد قيمة و ورتب هذه الحدود .</p><h1><strong>الحل :</strong></h1><p>نفرض أن الحدود هي ح س ، ح س + ١ ، ح س + ٢ .</p><p>‬$‫\frac{\text{معامل ح س + ١}}{\text{معامل ح س}} = \frac{1 + م - ١}{م} \times \frac{4}{3} = \frac{36}{27}‬$‫</p><p>‬$‫\therefore \frac{1 + م - ١}{م} = 1 \iff 2 - 1 = 1‬$</p><p>٧١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

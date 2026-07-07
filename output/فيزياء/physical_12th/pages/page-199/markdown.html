@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>تقويم الوحدة</h2><h3>السؤال الأول :</h3><p>أكمل الفراغات الآتية بما يناسبها :</p><p>- أ – تعد الطاقة ... من الطاقات المتجددة بينما النفط من الطاقات ...
+- ب – تنتج ... عن الاندماج النووي للذرات ... وتحولها إلى ...
+- ج – ترسل الشمس أنواعاً كثيرة من الإشعاعات تسمى ...
+- د – ينقسم الإشعاع الشمسي الذي يصل إلى الأرض إلى ... و ...</p><h3>السؤال الثاني :</h3><p>١- اشرح معنى العبارة التالية :</p><p>« تعد الطاقة الشمسية طاقة نظيفة »</p><p>٢- ماهي الأشعة المرئية ؟ وضح ذلك بتجربة عملية .</p><p>٣- اذكر العوامل التي يتوقف عليها مقدار الطاقة الشمسية الواصلة إلى الأرض .</p><p>٤- أوجد متوسط الطاقة الشمسية الساقطة على وحدة المساحات من سطح الأرض اذا علمت أن كل ١ سم² من سطح الأرض يستقبل في الدقيقة الواحدة مايقرب من ( ٢ ) سعر من الطاقة .</p><p>٥- ما الفرق بين الطيف المرئي والطيف غير المرئي ؟</p><h3>السؤال الثالث :</h3><p>١- وضح مع الرسم ملائمة تصميم البيت الزجاجي لنمو النبات ، وتوفير الشروط اللازمة للنمو .</p><p>٢- ما أنواع البطاريات الشمسية، وضح إجابتك بالرسم ثم اذكر بعض استخدامات هذه البطاريات ؟</p><h3>السؤال الرابع :</h3><p>اكتب مقالاً علمياً توضح فيه كيفية استغلال الطاقة الشمسية في التكنولوجيا، وما أثر ذلك على حياتنا، مستعيناً بمادرس في هذا الموضوع .</p><p>١٩٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

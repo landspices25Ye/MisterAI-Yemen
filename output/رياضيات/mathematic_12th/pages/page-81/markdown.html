@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الاحتمالات</p><h1>بناء النموذج الاحتمالي</h1><p>٣ - ٢</p><p>نتعرف في هذا البند على طريقة تمكننا من حساب قيمة الدالة الاحتمالية (حا) لأي حادثة في الفضاء الاحتمالي (ع ، ك ، حا) ، وإذا خصصنا لكل حادثة ابتدائية (س ر) عدداً حقيقياً « ر » ، [أي : حا (س ر) = ر ] يحقق الشرطين التاليين :</p><p>$‫(١) \text{ ر} \leq 0 \quad \text{ر} = 1, 2, 3, \dots, 4 \quad (٢) \text{ م} \leq 1 \quad \text{ر} = 1‬$‫</p><p>نكون قد كوثا نموذجاً احتمالياً نستطيع بواسطته حساب احتمال أي حادثة من (ك) ، أي نكون قد عرفنا الدالة (حا) على (ك) وبما ينسجم مع المسلمات الاحتمالية تماماً :</p><h1>تعريف (٣ - ١)</h1><p>احتمال حادثة هو مجموع احتمالات الحوادث الابتدائية الداخلة في تشكيل هذه الحادثة .</p><h1>تدريب (٣ - ٤)</h1><p>إذا كان : ع = { ر ، ب ، ج } ، حا (ر) = ٠,٣ ، حا (ب) = ٠,٢ ، فأوجد حا (ج) .</p><h1>مثال (٣ - ٣)</h1><p>أُلقيت قطعتان متجانستان مختلفتان من النقود عشوائياً، ولوحظ الوجه الظاهر عند استقرارهما على الأرض .</p><p>(١) اكتب فضاء العينة . (٢) كوّن نموذجاً احتمالياً مناسباً لهذه التجربة .</p><p>(٣) أوجد احتمالات الحوادث التالية :</p><p>أ) الحصول على الصورة مرة واحدة على الأقل . ب) الحصول على الكتابة من القطعة الثانية .</p><p>ج) الحصول على الكتابة مرة واحدة فقط . د) الحصول على الصورة مرة واحدة على الأكثر .</p><h1>الحل :</h1><p>(١) ع = { (ص ، ص) ، (ص ، ك) ، (ك ، ص) ، (ك ، ك) } .</p><p>(٢) بما أن القطعتين متجانستان ، فإن الاحتمال يكون متساوي الظهور للصورة والكتابة .</p><p>وحيث أن معرفة عدد النتائج الممكنة (و ع) شرط مسبق لتكوين أي نموذج احتمالي مطلوب لأي تجربة عشوائية .</p><p>نجد أن و (ع) = ٤ نقاط ( حوادث ابتدائية ) .</p><p>إذن ممكن الآن أن نخصص لكل نقطة من نقاط ع قيمة احتمالية = ١/٤ ، وفي هذه الحالة نكون قد كوثا النموذج الاحتمالي الآتي :</p><p>‬$‫حا \{ (ص ، ص) \} = حا \{ (ص ، ك) \} = حا \{ (ك ، ص) \} = حا \{ (ك ، ك) \} = \frac{1}{4}‬$</p><p>٧٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

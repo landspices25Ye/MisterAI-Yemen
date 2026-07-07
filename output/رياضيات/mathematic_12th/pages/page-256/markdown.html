@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-215.jpeg" alt="img-215.jpeg" /><p>الوحدة السابعة</p><p>ثانياً : حجم الجسم الناتج عن دوران منطقة مستوية حول محور الصادات دورة كاملة :</p><p>إذا كانت المنطقة المستوية محصورة بين بيان الدالة $‫t$ والفترة ‬$[t, n]$‫ من محور الصادات ، فإن الحجم الناتج من دوران هذه المنطقة دورة كاملة حول محور الصادات : ‬$t = \pi$‫ (تا (ص) ٢) ، ص .</p><h1><strong>مثال (٧ - ٣٦)</strong></h1><p>أوجد الحجم الدوراني للمنطقة المحددة بالقطع المكافئ (ص - ٢) ‬$^2$‫ س ، والمحورين الإحداثيين دورة كاملة حول محور الصادات .</p><p><strong>الحل :</strong> وبدوران المنطقة المحددة في الشكل (٧-١٣)</p><p>حول محور الصادات دورة كاملة نجد أن :</p><img src="img-216.jpeg" alt="img-216.jpeg" /><p>‬$t = \pi$‫ (تا (ص) ٢) ، ص</p><p>‬$= \pi$‫ (ص - ٢) ٤ ، ص</p><p>‬$= \frac{\pi (2 - \pi)}{5}$‫</p><p>‬$= \frac{\pi}{5} [ (32 - 0) ] = \pi$‫ وحدة مكعبة .</p><h1><strong>مثال (٧ - ٣٧)</strong></h1><p>أوجد حجم الاسطوانة الدائرية القائمة التي نصف قطر قاعدتها ‬$t$‫ وارتفاعها ‬$t$‫ .</p><p><strong>الحل :</strong></p><p>نفرض المستطيل ‬$t$‫ ب م ج إذا دار المستطيل ‬$t$‫ ب م ج حول محور الصادات ، دورة كاملة</p><p>حيث م (٠ ، ٠) نقطة الأصل ، فإنه سيشكل اسطوانة دائرية قائمة نصف قطرها ‬$t$‫ ج = نوه</p><p>وارتفاعها ‬$t$ ب = ع ، كما في الشكل (٧-١٤) .</p><img src="img-217.jpeg" alt="img-217.jpeg" /><p>٢٥٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

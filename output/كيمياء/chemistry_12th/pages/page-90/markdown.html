@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>٢ - تغطية أسطح أماكن إجراء التجارب بطبقة من الرصاص (Pb) لامتصاص الإشعاعات.
+٣ - إرتداء الألبسة الواقية من الإشعاعات وتركها في أماكن العمل حتى لا تكون وسيلة لنقل الإشعاعات إلى الآخرين.
+٤ - الفحص المستمر للإشعاعات باستخدام أجهزة خاصة بذلك.
+٥ - يجب التخلّص من المخلفات الإشعاعية ووضعها في مكان آمن يضمن عدم انتقالها إلى البيئات المحيطة.</p><h1>نشاط (٤-١)</h1><h1>قضية للبحث:</h1><p>استعن بالمراجع المتوفّرة في مكتبة المدرسة أو من خلال شبكة المعلومات العالمية (الإنترنت)، واكتب تقريراً عن احتياطات الأمان الأخرى التي لم ترد في الوحدة، وناقش ذلك مع زملائك ومعلّم المادة.</p><h1>ثانياً: احتياطات الأمان الخاصة بالحماية من الإشعاع الخارجي:</h1><p>للتقليل من مخاطر الإشعاعات المنبعثة من مصدر خارجي كالحوادث التي ينتج عنها تسرب أو تلوّث إشعاعي، يمكن الاستعانة بالاحتياطات والإجراءات الآتية:
+١ - التقليل من فترة التعرض للإشعاعات، حيث يُنبّه الناس لمغادرة المكان الذي يُحتمل وجود تلوّث إشعاعي فيه، وذلك بأسرع وقت ممكن.
+٢ - الابتعاد مسافة كبيرة عن مصدر الإشعاع، ففي ذلك يمكن تقليل معدل التعرض للإشعاع بنسبة أربعة أضعاف؛ كلما ضاعفنا المسافة بين المصدر المشع والإنسان، طبقاً لقانون التربيع العكسي.
+٣ - يجب وضع الحواجز السميكة التي تبنى من مواد خاصة ذات كثافة عالية مثل معدن الرصاص، حيث تساعد على حجز ومنع انتقال الإشعاعات إلى الأماكن المجاورة.</p><p>٨٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

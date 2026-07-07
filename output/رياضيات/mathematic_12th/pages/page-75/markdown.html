@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>مبدأ العد ومبرهنة ذات الحدين</p><p>[٤] أثبت أن :</p><p>أ) (س + س - ١) - (س - س - ١) = ١٢ (س + س + ٣) (٣ / ٣) .</p><p>ب) معاملي الحدين الأوسطين في مفكوك (س + ص) متساويان .</p><p>ج) الحد الأوسط في مفكوك (ص / ٣) - (ص / ٣) هو ١٢٨٧٠ ص + س - ٤ .</p><p>[٥] أوجد قيمة كلاً مماياتي :</p><p>أ) (١ + ٢٧) - (١ - ٢٧) . ب) (٢٧ + ٢٧) - (٢٧ - ٢٧) .</p><p>ج) (١ + ١) + (١ - ١) . د) (س - ٢ ص) - (س + ٢ ص) .</p><p>[٦] أوجد كلاً مماياتي :</p><p>أ) الحد الأوسط في مفكوك (٢ س + ١) . ب) الحد الأوسط في مفكوك (س + ١) .</p><p>ج) الحدين الأوسطين في مفكوك (١ / ٢) - ص .</p><p>د) النسبة بين الحدين الرابع والخامس في مفكوك (٢ س - ١) .</p><p>هـ) معامل س في مفكوك (١ + س + س) .</p><p>[٧] باستخدام مفكوك ذي الحدين أوجد قيمة كلاً مماياتي :</p><p>أ) (١,٠٣) مقربة إلى ثلاثة منازل عشرية .</p><p>ب) (٠,٩٩٨) مقربة إلى منزلتين عشريتين .</p><p>ج) (٥,١) مقرباً الناتج إلى منزلتين عشريتين .</p><p>[٨] إذا كان الحد الثالث في مفكوك (١ + س) يساوي ١١٢ ، فأوجد قيمة س .</p><p>[٩] إذا كانت ثلاثة معاملات لحدود متتالية في مفكوك (١ + س) هي : ٢٠ ، ١٩٠ ، ١١٤٠</p><p>فما قيمة و ؟ وما رتب تلك الحدود ؟</p><p>[١٠] إذا كان قيم الحد الثاني والثالث والرابع في مفكوك (س + ص) حسب قوى س التنازلية هي :</p><p>١٦ ، ١١٢ ، ٤٤٨ على الترتيب . أوجد قيم كلاً من : و ، س ، ص .</p><p>[١١] إذا كان الحدان الأوسطان في مفكوك (٢ س + ٣ ص) متساويين . أثبت أن :</p><p>س : ص = ٢ : ٣ .</p><p>[١٢] في مفكوك (س + ١) وجد أن : ح = ٣ ح ، ح = ٣ ح . أوجد قيمتي و ، س .</p><p>٧٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

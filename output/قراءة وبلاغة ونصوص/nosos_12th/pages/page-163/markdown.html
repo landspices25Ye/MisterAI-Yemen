@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>من إشعاعات الأزهر</h1><h2>نجيب الكيلاني</h2><h3>التعريف بالكاتب</h3><p>ولد نجيب الكيلاني في عام ١٩٣١م، في قرية شرشابة، محافظة الغربية، مصر.
+بدأ بحفظ القرآن وهو في الرابعة من عمره. درس الابتدائية بقرية (سنباط) والثانوية بمدينة طنطا، ثم التحق بكلية الطب بالقاهرة.</p><p>بدأت موهبة الكيلاني الأدبية صغيراً، ففي نهاية المرحلة الابتدائية، وعندما شاهد أفواجاً من المتطوعين للجهاد في فلسطين عام ١٩٤٨م، يجوبون شوارع طنطا مرددين هتافات جهادية، تفاعل مع هذه المشاهد، فكتب أولى قصائده عن فلسطين.</p><p>كان قارئاً نهماً لكتب المفكرين، ودواوين الشعراء، وبدأ بحضور مناقشات الأدباء والمفكرين مثل: طه حسين، والعقاد، وعبد الرحمن الشرقاوي.</p><p>كتب ما يزيد على أربعين رواية بخلاف سيرته الذاتية والمكونة من خمسة أجزاء، وقد ترجمت العديد من رواياته إلى لغات مختلفة؛ لجودتها الفنية، وتعلّق معظمها بالصراع بين المسلمين وخصومهم في تركستان الشرقية، وأندونيسيا، وفلسطين، والحبشة، ونيجيريا، ومصر، في قصصه: ليالي تركستان، وعذراء جاكرتا، وعمر يظهر في القدس، وعمالقة الشمال، والظل الأسود، وفي مواكب الأحرار، وغيرها.</p><p>يُعد الكيلاني أول من دعا إلى قيام أدب إسلامي؛ بتحديد ملامحه وتقييد أصوله، وأول من دعا إلى قيام رابطة الأدب الإسلامي. وقد شهد له الأديب الكبير نجيب محفوظ بأنه منظر الأدب الإسلامي في العصر الحديث.</p><p>حصل على الكثير من الجوائز الأدبية تقديراً له على أعماله الروائية الفنية المتميزة مثل: الطريق الطويل، وإقبال الشاعر الثائر، والمجتمع المريض، وشوقي في ركاب الخالدين، واليوم الموعود، وغيرها.</p><p>١٦١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

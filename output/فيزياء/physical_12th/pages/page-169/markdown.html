@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>المستوى العلوي (طام) مستوى شبه مستقر، أي مستوى تستطيع الذرات الاستقرار فيه مدة زمنية أطول نسبياً بحيث توجد فرصة زمنية للتراكم وازدياد عددها حتى يصبح عددها أكبر من عددها في المستوى السفلي (طام)، ويسمى هذا الوجود للذرات في المستوى (طام)، بالاستيطان العكسي للذرات (Inversion Population) لأنه استيطان عكس الاستيطان الطبيعي الذي يحدث في المستوى الأرضي طام، وهذا الاستيطان العكسي هو أحد شروط حدوث الانبعاث المستحث للأشعة الليزرية. ومن البلورات التي تتمتع بمستويات شبه مستقرة هي بلورة الياقوت.</p><h3>جهاز ليزر الياقوت : Ruby Laser</h3><img src="img-162.jpeg" alt="img-162.jpeg" /><p>شكل (١٧)</p><p>١- ليزر الياقوت هو أحد ليزرات الحالة الصلبة وهو عبارة عن بلورة أكسيد الألمنيوم ($‫Al_2O_3‬$) طُعمت بحوالي ٠.٥% من مادة الكروم ($‫Cr‬$) التي تكسب البلورة اللون الوردي.
+٢- يوضع الياقوت على شكل قضيب إسطواني منتظم طوله عدة سنتيمترات وقطره حوالي ٠.٥ سنتيمتر بحيث تكون نهايات متوازيتين ومصقولتين.
+٣- توضع عند كل نهاية مرآة متعددة الطبقات وظيفتها إرجاع أو عكس فوتونات أشعة الليزر إلى داخل القضيب. وتكون أحدهما عاكسة ١٠٠% والأخرى عاكسة بحوالي ٩٥% أي شفافة بحوالي ٥%، انظر الشكل (١٧).</p><p>١٦٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-18.jpeg" alt="img-18.jpeg" /><p>وكانت بدايات الأعمال القصصية والروائية متمثلة بما يأتي:</p><p>- الفضيلة لمصطفى لطفي المنفلوطي.</p><p>- البؤساء لحافظ إبراهيم.</p><p>- آلام فرتر لأحمد حسن الزيات.</p><p>- ابن الطبيعة لإبراهيم عبد القادر المازني.</p><p>وكان بعض هذه الأعمال ترجمة دقيقة من اللغات الأوروبية، وبعضها مجرد اقتباس.</p><p>ثم احتذى الشباب هذه الأعمال، فانتشرت الألوان القصصية في الأدب النثري</p><p>العربي، وظهرت أولى الأعمال القصصية المعبرة عن المجتمع العربي مثل:</p><p>- زينب لمحمد حسين هيكل.</p><p>- الأيام لطه حسين.</p><p>- سارة للعقاد.</p><p>- إبراهيم الكاتب لإبراهيم المازني.</p><p>- أهل الكهف لتوفيق الحكيم.</p><p>- بداية ونهاية لنجيب محفوظ.</p><p>أما المقامات: فقد انقضى أمرها وذهب عصرها بذهاب الصناعة اللفظية من</p><p>الأدب العربي. وكان آخر من قلد المقامات:</p><p>نصيف البازجي في «مجمع البحرين».</p><p>محمد المولحي في «حديث عيسى بن هشام».</p><p>حافظ إبراهيم في «ليالي سطيح».</p><p>والآن لانكاد نتصفح جريدة في أي قطر عربي حتى نجد القصة القصيرة حية حاضرة.</p><p>ولانكاد نؤم مكتبة عامة أو خاصة إلا وجدنا القصص والروايات من كل قطر عربي.</p><p>وعلى مستوى اليمن كانت البدايات المبكرة منذ الخمسينيات ممثلة بالكثير من</p><p>كتاب القصة مثل: أحمد البراق، محمد علي لقمان، محمد سالم باوزير، حسين</p><p>سالم باصدق، عبد الله سالم باوزير، علي باذيب، أحمد محفوظ عمر، صالح</p><p>الدحان، علي محمد عبده.</p><p>٣٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

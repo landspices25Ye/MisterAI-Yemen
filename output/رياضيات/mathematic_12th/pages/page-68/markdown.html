@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-48.jpeg" alt="img-48.jpeg" /><p>الوحدة الثانية</p><h1><strong>مثال (٢ - ٢١)</strong></h1><p>أوجد مفكوك (س + ص) ٦ .</p><p><strong>الحل :</strong></p><p>$‫(س + ص)^٦ = ٦ \text{ و} \text{س}^٦ + ٦ \text{ و} \text{س}^٥ \text{ ص} + ٦ \text{ و} \text{س}^٤ \text{ ص} + ٦ \text{ و} \text{س}^٣ \text{ ص} + ٦ \text{ و} \text{س}^٢ \text{ ص} + ٦ \text{ و} \text{س}^١ \text{ ص} + ٦ \text{ و} \text{س}^٠ \text{ ص} + ٦ \text{ و} \text{س}^٠ \text{ ص} + ٦‬$‫</p><p>‬$‫(س + ص)^٦ = \text{س}^٦ + ٦ \text{ س}^٥ \text{ ص} + \frac{٦}{٢} \text{ س}^٤ \text{ ص} + \frac{٦}{٣} \text{ س}^٣ \text{ ص} + \frac{٦}{٤} \text{ س}^٢ \text{ ص} + \frac{٦}{٥} \text{ س}^١ \text{ ص} + \text{س}^٠ \text{ ص} + ٦‬$‫</p><p>‬$‫= \text{س}^٦ + ٦ \text{ س}^٥ \text{ ص} + ١٥ \text{ س}^٤ \text{ ص} + ٢٠ \text{ س}^٣ \text{ ص} + ١٥ \text{ س}^٢ \text{ ص} + ٦ \text{ س}^٠ \text{ ص} + \text{س}^٠ \text{ ص} + ٦‬$‫</p><h1><strong>مثال (٢ - ٢٢)</strong></h1><p>أوجد مفكوك (س - ٣ ص) ٥ .</p><p><strong>الحل :</strong></p><p>نلاحظ أن : ٢ = س ، ب = ٣ ص ؛ فيكون المفكوك كما يأتي :</p><p>‬$‫(٢ - ٣ \text{ ص}) = \text{مج} \frac{٥}{٢} \text{ و} \text{س}^٥ \text{ ص} + ٢ \text{ س}^٣ \text{ ص} + ٢ \text{ س}^٢ \text{ ص} + ٢ \text{ س}^١ \text{ ص} + ٢ \text{ س}^٠ \text{ ص} + ٢ \text{ س}^٠ \text{ ص} + ٢ \text{ س}^٠ \text{ ص} + ٢ \text{ س}^٠ \text{ ص} + ٢ \text{ س}^٠ \text{ ص} + ٢ \text{ س}^٠ \text{ ص} + ٢ \text{ س}^٠ \text{ ص} + ٢ \text{ س}^٠ \text{ ص} + ٢ \text{ س}^٠ \text{ ص} + ٢ \text{ س}^٠ \text{ ص} + ٢ \text{ س}^0‬$‫</p><p>في هذا المثال نرى أن إشارتي الموجب والسالب تتناوب ابتداءً من الحد الأول وذلك لأن أس الحد (٣ - ص)</p><p>يتناوب زوجياً وفردياً ابتداءً من الصفر .</p><h1><strong>تدريب (٢ - ٨)</strong></h1><p>أوجد مفكوك كل من (١ + س) ٥ ، (١ - س) ٥ .</p><p><strong>الحد العام في مفكوك (١ + ب) ٥ :</strong></p><p>الحد العام في مفكوك (١ + ب) ٥ هو الحد الذي ترتيبه (١ + م) (لأننا نبدأ بوضع م = ٠) ، أي أن</p><p>الحد العام هو : ١ + م ح</p><p>حيث م = ١ + ح ، وهو معطى بالقاعدة :</p><p>‬$‫\text{ح م} = ١ + \text{ح م} \text{ م} \text{ م} \text{ م}‬$</p><p>٦٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

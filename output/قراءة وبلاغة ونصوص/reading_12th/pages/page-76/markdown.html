@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-16.jpeg" alt="img-16.jpeg" /><p>٩ - ما الدروس التي نتعلمها من موقف أوروبا من تراثنا العلمي ؟
+١٠ - ما واجب الأمة الإسلامية لإحياء تراثها العلمي العريق ؟</p><h2>التدريبات اللغوية</h2><p>١ - ضع كل كلمة مما يأتي في جملة من إنشائك توضح معناها :
+( تجاهل - نهلت - تسنم - أسلافنا ) .</p><p>٢ - اقرأ الفقرة الآتية، ثم أجب عن الأسئلة التي تليها :</p><p>« لم يكن العلماء المسلمون مجرد نقلة، لكنهم زادوا على ما ترجموه من هذه العلوم، وأضافوا إليه الكثير، واستحدثوا فنوناً لم يمارسها سواهم، سطعوا في سماء الحضارة الإنسانية ، ورفعوا من شأنها، وأعلوا من بنيانها، وظلت مؤلفاتهم العمدة التي يعتمد عليها أهل الصناعة في أوروبا طيلة قرون وقرون » .</p><p>أ - املأ الفراغ بالكلمة المناسبة فيما يأتي :</p><p>- مفرد كلمة ( نقلة ) : ( ... )</p><p>- مرادف كلمة ( استحدثوا ) : ( ... )</p><p>- ضد كلمة ( أعلوا ) : ( ... )</p><p>- جمع كلمة ( العُمدة ) : ( ... )</p><p>ب - ( سطعوا في سماء الحضارة ) ما نوع هذه الصورة ؟ وما قيمتها الفنية ؟</p><p>ج - ( طيلة قرون وقرون ) بم يوحي هذا التعبير ؟</p><p>د - هات مصادر الأفعال الآتية، واذكر وزنها الصرفي :</p><p>( ترجموا - أضافوا - استحدثوا - أعلوا ) .</p><p>٣ - ابحث في المعجم عن معاني الكلمات الآتية :</p><p>( المدنية - مركبات - حذق - يأبه - غشاوة ) .</p><p>٤ - اقرأ الفقرة الآتية، ثم أجب عن الأسئلة التي تليها :</p><p>« لقد أدرك الغربيون في العصور الوسطى مكانة العلماء المسلمين، وريادتهم العلمية، لذلك كانت الجامعات الإسلامية في الشرق معقد آمالهم، وكعبة قصائدهم » .</p><p>٧٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

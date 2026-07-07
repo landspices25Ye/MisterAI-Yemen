@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-119.jpeg" alt="img-119.jpeg" /><p>الشكل (١٢) خطوات استنساخ - النعجة دوللي</p><p>١- وضعت خلية مأخوذة من ضربة نعجة (Dorset) في وسط غذائي فقير جداً بالمواد الغذائية وأدى تجميع الخلية إلى وقف انقساماتها وجيناتها النشطة، مع بقاء نواتها سليمة.
+٢- في تلك الأثناء أخذت بويضة غير مخصبة من نعجة (Black face) ثم انتزعت منهما النواة بما فيها DNA، وبقيت بويضة فارغة تحوي كل المواد اللازمة لإنتاج جنين.
+٣- وضعت الخلية الجسدية بجانب البويضة (الخلية التناسلية)، ثم أطلق نبض كهربائي حاكي النشاط الكيميائي والبيولوجي الطبيعي أثناء عملية الإخصاب، فاندمجت نواة الخلية الجسدية مكان نواة البويضة المنزوعة كأي بويضة مخصبة (لاقحة).
+٤- بعد حوالي ستة أيام زرع الجنين الناتج في رحم نعجة أخرى من فصيلة (Black face).
+٥- بعد فترة الحمل ولدت نعجة (Black face) نعجة من فصيلة (Dorset) أطلق عليها (دوللي) والتي تماثل في صفاتها الوراثية النعجة التي أخذت منها الخلية الجسدية.</p><p>الأحياء للصف الثالث الثانوي</p><p>١٥٩</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-151.jpeg" alt="img-151.jpeg" /><p>الوحدة السادسة</p><h2>تمارين ومسائل (٦-٥)</h2><p>[١] أوجد مشتقة كل من الدوال التالية :</p><p>$‫(١) \text{ د (س)} = \text{لوس}‬$‫</p><p>‬$‫(٣) \text{ ص} = \text{لو (س}^2 - ٢ \text{ س)}‬$‫</p><p>‬$‫(٥) \text{ ص} = \text{لو (٣ س}^2 - ٢ \text{ س} + ١ \text{ س)}‬$‫</p><p>‬$‫(٧) \text{ ص} = \text{لو} \sqrt{\text{س}}‬$‫</p><p>‬$‫(٢) \text{ ص} = \text{لو (س}^2 + ١ \text{ س)}‬$‫</p><p>‬$‫(٤) \text{ ص} = \text{س}^2 \text{ لوس}‬$‫</p><p>‬$‫(٦) \text{ ص} = \text{لو} \sqrt{2 \text{ س}^2 + ٤ \text{ س}}‬$‫</p><p>‬$‫(٨) \text{ ص} = \frac{\text{لوس}}{\text{س}}‬$‫</p><p>[٢] أوجد مشتقة الدوال التالية :</p><p>‬$‫(١) \text{ ص} = \text{لو} [ (١ + \text{س}) \text{ أ}^\text{ب} ]‬$‫</p><p>‬$‫(٣) \text{ ص} = \text{لو} [ (١ + \text{س}) \times 10 \text{ أ}^\text{ب} ]‬$‫</p><p>‬$‫(٢) \text{ ص} = \text{لو (٣ س}^2 + ٢ \text{ س)} \text{٥}‬$‫</p><p>‬$‫(٤) \text{ ص} = (١ - ٢ \text{ س}) \text{ لو (١ - ٢ س)}‬$‫</p><p>[٣] أوجد مشتقة الدوال التالية :</p><p>‬$‫(١) \text{ ص} = \text{لو} [ \frac{\text{س (س + ١)}}{\text{س (٢ + ٢)}} ]‬$‫</p><p>‬$‫(٢) \text{ ص} = \frac{\text{س} \sqrt{\text{س} + ١}}{\sqrt{\text{س} + ٣}}‬$‫</p><p>‬$‫(٤) \text{ ص} = \text{هـ} \sqrt{\text{س}^2}‬$‫</p><p>‬$‫(٦) \text{ ص} = \text{س} \text{هـ}^\text{ب}‬$‫</p><p>‬$‫(٣) \text{ ص} = \text{هـ}^\text{٥}‬$‫</p><p>‬$‫(٥) \text{ ص} = \text{هـ} \sqrt{2 \text{ س} - ٣ \text{ س}^2}‬$‫</p><p>‬$‫(٧) \text{ ص} = \text{س}^2 \text{هـ}^\text{٢}‬$‫</p><p>[٤] إذا كانت د (س) = هـ، ر (س) = لوس أوجد :</p><p>‬$‫(١) \text{ د (٥ ر) / (س)}‬$‫</p><p>‬$‫(٢) \text{ د (٥ ر) / (س)}‬$‫</p><p>[٥] أوجد مشتقة الدوال التالية :</p><p>‬$‫(١) \text{ د (س)} = \text{هـ}^3 + \text{هـ}^3 \text{ب}‬$‫</p><p>‬$‫(٢) \text{ د (س)} = (١ + \sqrt{\text{س}}) \text{هـ}^\text{ب}‬$‫</p><p>‬$‫(٣) \text{ د (س)} = \frac{\text{لوس}}{\text{هـ}^2 + ١ \text{ س}}‬$‫</p><p>‬$‫(٤) \text{ د (س)} = (٢ + ١) \text{ب}^\text{ب}‬$‫</p><p>‬$‫(٥) \text{ ص} = (٢ + ١) \text{هـ}^\text{٤}‬$‫</p><p>‬$‫(٦) \text{ ص} = \text{هـ}^\text{٥} + \text{س}^\text{هـ}‬$</p><p>١٧٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

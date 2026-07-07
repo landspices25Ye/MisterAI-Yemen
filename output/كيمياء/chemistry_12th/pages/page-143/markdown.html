@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>تلاحظ من الجدول (١-٨) أن الصنف الأول يشتمل على ثلاثة عناصر هي (C, H, O)، أما الصنف الثاني فيشمل ثلاثة عناصر أساسية هي (N, P, K)، كما يشمل الصنف الثالث ثلاثة عناصر ثانوية هي (Ca, Mg, S). أما العناصر التي يحتاجها النبات بنسبة ضئيلة فهي تشمل (٩) عناصر، ويطلق عليها «الأسمدة الدقيقة».</p><p>من الأخطاء التي يرتكبها المزارعون هو قيامهم بتكرار زراعة الأرض بنوع واحد من المحاصيل ولفترات متتابة ودون إضافة أي أسمدة؛ وهذا يؤدي إلى استنزاف العناصر الهامة الموجودة في التربة وخاصة النيتروجين والفوسفور والبوتاسيوم.</p><h1>ملاحظة</h1><p>أظهرت الدراسات التي أجريت على القمح أن الفدان الواحد المزروع بالقمح يستهلك من التربة ما يقارب ٨ كجم من النيتروجين، وكذلك ما يقارب ٤ كجم من البوتاسيوم.</p><h1>تصنيف الأسمدة:</h1><p>يمكن تصنيف الأسمدة بعدة طرق، فقد تُصنَّف الأسمدة وفقاً لدورها في تعديل الخصائص الكيميائية للتربة، كما يمكن تصنيفها وفقاً لعدد ونوع العناصر التي يحتاجها النبات في تكوين غذائه، وكذلك قد تُصنَّف الأسمدة وفقاً لقابليتها للذوبان في التربة أو تأثيرها على درجة حموضة التربة.</p><p>وتُقسَّم الأسمدة وفقاً للدور الذي تؤديه إلى قسمين:</p><p>١ - أسمدة غير مباشرة (ثانوية): تضاف إلى التربة ولا يمتصها النبات بشكل مباشر؛ والغرض من إضافتها هو تحسين خواص التربة الكيميائية أو البيولوجية، كما أن هذه الأسمدة تساعد على تحسين طبيعة التربة فتمكّن جذور النبات من الانتشار بسهولة خلال حبيبات التربة، ومن أمثلة الأسمدة غير المباشرة: الحجر الجيري، والدولوميت (كربونات الكالسيوم والمغنيسيوم)، حيث تضاف إلى التربة لخفض حموضتها، أو للتقليل من نسبة الأملاح فيها.</p><p>٢ - أسمدة مباشرة: وتضاف إلى التربة كي يمتصها النبات بشكل مباشر؛ فيحصل من خلالها على العناصر الأساسية التي تساعده على النمو والنضج. ويمكن تقسيم الأسمدة المباشرة إلى أسمدة أساسية (أولية) مثل: النيتروجين، والفوسفور، والبوتاسيوم، وإلى أسمدة غير أساسية مثل: الكلور والنحاس. وتُقسَّم الأسمدة الأساسية إلى أسمدة أحادية حيث تحتوي على عنصر واحد من العناصر المهمة،</p><p>١٤١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

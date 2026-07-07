@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>e-learning</p><h1>استخدام كشاف جيجر لقياس النشاط الإشعاعي والكشف عن نوعه</h1><h1>التجربة العاشرة</h1><h1>الأهداف</h1><p>١- تستخدم كشاف جيجر لقياس النشاط الإشعاعي والكشف عنه .
+٢- تقيس كمية هذا الإشعاع .
+٣- تميز بين الأنواع المختلفة للإشعاعات المنبعثة .</p><h1>خطوات تنفيذ التجربة</h1><p>أولاً: قياس النشاط الإشعاعي وتعيين كميته :</p><p>١- صل الكشاف بالعداد ، وبمصدر الجهد الكهربائي .
+٢- اترك الأجهزة تعمل لمدة من الزمن (١٠ دقائق) حتى تتلافى تأثير التسخين ، والحرارة .</p><img src="img-26.jpeg" alt="img-26.jpeg" /><h1>الأدوات والمواد المطلوبة</h1><p>تحتاج لتنفيذ هذه التجربة الأدوات والمواد الآتية :</p><p>- كشاف جيجر مثبت على حامل خاص به .
+- دائرة عد (عداد) .
+- مصدر فرق جهد كهربائي .
+- ثلاثة مصادر مشعة الأول يشع أشعة ألفا والثاني بيتا والثالث جاما .
+- ماسك لتداول المصادر المشعة .
+- رقائق مختلفة السمك من الألومنيوم والرصاص .
+- قاعدة يوضع عليها المصدر المشع .
+- أرفف يثبت عليها الألواح المختلفة من الورق ، أو الألومنيوم ، أو الرصاص . كما في الشكل .</p><p>٢٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

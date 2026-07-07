@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>كيف يتم إنتاج الجبن ؟</h2><p>توصل الإنسان إلى طريقة إنتاج الجبن من الحليب منذ مئات السنين، إذ يقوم الفلاحون ورعاة الأبقار والأغنام بإنتاج أنواع مختلفة من الجبن.</p><img src="img-112.jpeg" alt="img-112.jpeg" /><p>شكل (٥) أنواع من منتجات الأجبان</p><p>– اذكر بعض أنواع الجبن الموجودة في السوق ؟
+إن إنتاج الجبن في عصرنا الحالي يتم في مصانع متخصصة حيث ينتج في أشكال وأنواع مختلفة. وتتشابه بعض خطوات إنتاج الجبن مع خطوات إنتاج الزبادي وعادة ما تتبع مصانع إنتاج الجبن الخطوات الآتية في إنتاجه :</p><p>١- يتم تعقيم الأوعية والأدوات التي سيتم فيها معالجة الحليب وتحويله إلى جبن.
+٢- يتم تحضير الحليب والتحكم بكمية الدهن والبروتين فيه وخلطها جيداً في الحليب.
+٣- يعقم الحليب عن طريق البسترة.
+٤- تثبت درجة حرارة الحليب عند ٤٠ درجة مئوية.
+٥- تضاف بكتيريا التخمر إلى الحليب. وتختلف أنواع البكتيريا المضافة بحسب نوعية الجبن المراد إنتاجه. وعادة ما يضاف بكتيريا الاستريتوكوكس وبكتيريا اللاكتوبا سيلوس والتي تسمى بكتيريا حمض اللاكتيك.
+٦- تعمل هذه البكتيريا على تحويل لاكتوز الحليب إلى حمض اللاكتيك كما في المعادلة الآتية :</p><p>$‫\text{C}_{12}\text{H}_{22}\text{O}_{11} + \text{H}_2\text{O} \longrightarrow 4\text{CH}_3\text{CHOHCOOH}‬$
+لاكتوز ماء حمض اللاكتيك</p><p>٧- تضاف مجموعة من الإنزيمات، وأهمها إنزيم الكيموزين.
+– من أين يتم الحصول على إنزيم الكيموزين ؟
+٨- يعمل إنزيم الكيموزين على تجميع بروتين الكازائين في الحليب وتحويله إلى حالة شبه صلبة من اللبن المتخثر.
+٩- يتم التخلص من السائل المائي المتجمع في الإناء، ويبقى اللبن المتخثر في حالته شبه الصلبة.</p><p>١٥٠</p><p>الأحياء للصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

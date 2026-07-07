@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التكامل</p><h1><strong>ملاحظة :</strong></h1><p>أما إذا كانت المنطقة المطلوب دورانها حول محور السينات تقع تحت منحنى الدالة د وفوق منحنى الدالة هـ في الفترة [ ١ ، ب ] من محور السينات ، فإن حجم الجسم الناتج عن الدوران دورة كاملة تساوي :</p><p>$‫ح = \pi \int_1^\infty [ (د(س) ٢ - (هـ(س) ٢) ] \cdot س‬$‫</p><h1><strong>مثال (٧ - ٣٥)</strong></h1><p>احسب حجم الجسم الناتج من دوران المنطقة المحصورة بين القطع المكافئ ص = س ٢ + ٢ والمستقيم : ص = س ٨ + حول محور السينات دورة كاملة .</p><h1><strong>الحل :</strong></h1><p>نقاط التقاطع بين المنحنى والمستقيم نحصل عليها من مساواة المعادلتين ، أي أن : س ٢ + ٢ = س ٨ +</p><p>‬$‫س = ٢ - س = ٦ = ٠ \quad \Leftarrow \quad س = ٣ \text{ أو } س = ٢ - \infty‬$‫</p><p>∴ حدود التكامل هي : ١ = ٢ - ٢ ، ب = ٣ ،</p><p>وبدوران المنطقة المحددة في الشكل (٧ - ١٢)</p><p>دورة كاملة حول محور السينات نجد أن :</p><p>‬$‫\therefore ح = \pi \int_1^\infty [ (د(س) ٢ - (هـ(س) ٢) ] \cdot س‬$‫</p><p>‬$‫\therefore ح = \pi \int_2^\infty [ (س+٨) ٢ - (س ٢ + ٢) ] \cdot س‬$‫</p><p>‬$‫= \pi \int_2^\infty (س ٢ + ١٦ س + ٦٤ - س ٤ - ٤ س ٢ - ٤) \cdot س‬$‫</p><p>‬$‫= \pi \int_2^\infty (س ٢ + ١٦ س - ٣ س ٢ - س ٤) \cdot س‬$‫</p><p>‬$‫= \pi \left[ \frac{س ٢}{٥} - ٣ س - ٢ س ٨ + ٦٠ \right] \pi‬$</p><p>= ٢٥ وحدة مكعبة .</p><img src="img-214.jpeg" alt="img-214.jpeg" /><p>شكل (٧ - ١٢)</p><p>٢٥٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>وللتعرف على مفهوم التفاعلات الطاردة والماصة للحرارة، يمكن تتبُّع المثال الآتي:</p><p>■ مثال:</p><p>عند إشعال مولين من غاز الهيدروجين مع مول واحد من الأكسجين عند درجة حرارة الغرفة يتكون مولان من بخار الماء وتنطلق كمية من الطاقة مقدارها ٤٨٣,٦ كيلو جول، وفقاً للمعادلة الآتية:</p><p>$‫2\text{H}_{2(\text{g})} + \text{O}_{2(\text{g})} \longrightarrow 2\text{H}_2\text{O}_{(\text{g})} \quad \Delta H = - 483.6 \text{ KJ}‬$‫</p><p>وإشارة ‬$\Delta H$‫ السالبة تعني أن هذا التفاعل طارد للحرارة، وكمية الحرارة المطلقة تعتمد على كمية المتفاعلات والنواتج، وبالتالي فإن إنتاج مول واحد من بخار الماء يتطلب تفاعل مول واحد من الهيدروجين مع نصف مول من الأكسجين. ويصاحب هذه العملية انبعاث كمية من الحرارة مقدارها ٢٤١,٨ كيلوجول/مول، وفقاً للمعادلة الآتية:</p><p>‬$‫\text{H}_{2(\text{g})} + \frac{1}{2} \text{O}_{2(\text{g})} \longrightarrow \text{H}_2\text{O}_{(\text{g})} \quad \Delta H = - 241.8 \text{ KJ/mole}‬$‫</p><p>وعلى العكس فإن تفكُّك مول واحد من الماء يعتبر ماصاً للحرارة وفقاً للمعادلة الآتية:</p><p>‬$‫\text{H}_2\text{O}_{(\text{g})} \longrightarrow \text{H}_{2(\text{g})} + \frac{1}{2} \text{O}_{2(\text{g})} \quad \Delta H = + 241.8 \text{ KJ/mole}‬$</p><p>ويوضِّح الشكل (٢-٥) التغيُّر في المحتوى الحراري للتفاعلات الماصة والطاردة للحرارة.</p><img src="img-21.jpeg" alt="img-21.jpeg" /><p>شكل (٢-٥) التفاعل الماص، والطارد للحرارة</p><p>٢٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

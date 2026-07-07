@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-12.jpeg" alt="img-12.jpeg" /><p>٥- اقرأ الفقرة الآتية، ثم أجب عن الأسئلة التي تليها:</p><p>«لأريب في أنَّ شبكة الإنترنت تُعدُّ اليوم إحدى العجائب العلمية المثيرة، ولذلك يصفها كثير من علماء تكنولوجيا المعلومات بأنها «شبكة الشبكات»، أو الشبكة الأم التي طوت في جوفها مئات الآلاف من شبكات تبادل المعلومات، سواء أكانت عالمية، أم إقليمية، أم محلية. إنها تلك الغابة الكثيفة من مراكز تبادل المعلومات التي تختزن وتستقبل وتُبثُّ جميع أنواع المعلومات في شتى فروع المعرفة».</p><p>أ - املأ الفراغ في كل ما يأتي بالكلمة المناسبة:</p><p>- مرادف كلمة (شتى) : (...).</p><p>- مفرد كلمة (العجائب) : (...).</p><p>- ضد كلمة (تختزن) : (...).</p><p>- جمع كلمة (جوف) : (...).</p><p>ب - وضح قيمة الصورة البلاغية في العبارتين الآتيتين:</p><p>- الإنترنت هي الشبكة الأم التي طوت في جوفها مئات الآلاف من شبكات تبادل المعلومات.</p><p>- إنها تلك الغابة الكثيفة من مراكز تبادل المعلومات.</p><p>ج - ضع الفعل (طوى) في جملتين من إنشائك على أن يكون له في كل جملة معنى مختلف.</p><p>د - (تختزن - تستقبل - تبث - طوى).</p><p>هات مصدر كل فعل من الأفعال السابقة، ثم بيّن نوعه.</p><p>٦- ضع علامات الترقيم المناسبة داخل المربعات من الفقرة الآتية:</p><p>«على الرغم من الانتشار الهائل لشبكة الإنترنت ☐ وتعدد استخدامها فإنها ما تزال في مهدها ☐ ومع عمرها القصير ☐ فقد باتت تشكو من الاختناقات ☐ وفوضى المعلومات وتلوّثها ☐ وتتوالى إلى أسماعنا أنباء عن قرب ظهور جيلها الثاني الذي سيفوق جيلها الأول بمعدلات كبيرة سواء من حيث السرعة ☐ أم من حيث الإمكانيات الفنية».</p><p>٤٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

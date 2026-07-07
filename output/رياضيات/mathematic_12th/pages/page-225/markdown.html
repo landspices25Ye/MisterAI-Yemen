@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التكامل</p><p>ستجد أن كلاً من الدوال الآتية :</p><p>ل₁ (س) = س² ، ل₂ (س) = س² - ٥ ، ل₃ (س) = س² + ٧ ، ... وغيرها ممكن أن تكون دالة أصلية للدالة د (س) = ٢ س لأن :</p><p>ل₁ (س) = ل₂ (س) = ل₃ (س) = د (س) .</p><p>وفي الحقيقة لأي عدد ث ⊖ ج نجد أن : ل (س) = س² + ث هي دالة أصلية للدالة د . أي أن : 
+[ س² و س = س² + ث ؛ يسمى ث ثابت التكامل .</p><h1>مبرهنة (٧ - ٧) :</h1><p>إذا كان ل₁ ، ل₂ دالتين قابلتين للاشتقاق على [ ! ، ب ] ، وإذا كان لهما المشتقة نفسها فهما لا يختلفان 
+إلا في قيمة ثابتة (ث) . أي أن : ل₁ (س) = ل₂ (س) ⇐ ل₁ (س) - ل₂ (س) = ث .</p><p>البرهان :</p><p>ل₁ (س) = ل₂ (س) ⇐ ل₁ (س) - ل₂ (س) = .</p><p>أي أن : (ل₁ - ل₂) (س) = . 
+[ س ⊖ ! ، ب ]</p><p>مشتقة الثابت تساوي صفراً .</p><p>∴ (ل₁ - ل₂) (س) = ث</p><p>أي أن : ل₁ (س) - ل₂ (س) = ث</p><p>والآن نقدم القاعدة التالية :</p><p>(٣ - ٧) ...</p><p>[ س³ و س = س³ + ١ / (١ + ٣) + ث حيث و ⊖ ل ، و ⊖ - ١ .</p><p>وعندما و = - ١ نجد أن : [ س³ / س = لو | س | + ث .</p><p>فمثلاً : [ س³ و س = س³ / ٨ + ث ؛</p><p>وللتأكد من صحة التكامل نشق الطرف الأيسر . أي أن : س³ / س ( س³ / ٨ + ث ) = س³</p><p>٢٢٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

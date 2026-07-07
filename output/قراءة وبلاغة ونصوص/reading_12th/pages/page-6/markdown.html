@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![LOGO]</p><h1>بسم الله الرحمن الرحيم</h1><h1>مقدمة</h1><p>الحمد لله رب العالمين ، والصلاة والسلام على نبيه المبعوث بالكتاب المبين ،
+هدى ورحمة للعالمين ... وبعد .</p><p>فهذا هو كتاب القراءة والتعبير، نقدمه لأبنائنا طلبة الصف الثالث الثانوي
+بقسميه «العلمي والأدبي» آملين أن يجدوا فيه ما يشبع حاجتهم إلى القراءة
+والاطلاع، ويوثق صلتهم بلغتهم وثقافتهم. وهو يشتمل على خمسة عشر
+موضوعاً، تؤلف في مادتها العلمية واللغوية بناءً واحداً متكاملاً، وتشكل – في
+الوقت نفسه – امتداداً لموضوعات القراءة في الصفين: الأول والثاني الثانوي
+بخبراتها اللغوية من ناحية، وطريقة عرضها ومعالجتها من ناحية أخرى، مما يجعل
+من القراءة في هذه المرحلة وسيلة أساسية تؤدي وظيفتها في تنمية قدرات الطلبة
+على فهم ما يقرؤونه ، وتحليله وتفسيره، وتذوقه، وإبداء الرأي فيه بالصورة التي
+تتلاءم مع نموهم العقلي واللغوي.</p><p>وقد أعدَّ هذا الكتاب في ضوء مجموعة من الأسس التربوية واللغوية ، ومن
+أهم هذه الأسس تنوع موضوعات الكتاب ، لتلائم ميول طلبة هذا الصف
+وحاجاتهم وأذواقهم ، ولتسهم في تعميق صلتهم بعقيدتهم ولغتهم ، وتعمل
+على وصلهم بثقافتهم العربية الإسلامية من ناحية ، وتنمي وعيهم ومعرفتهم
+بالحياة المعاصرة من ناحية أخرى.</p><p>وروعي في اختيار موضوعات الكتاب أن تكون ممثلة لأهداف المنهاج ،
+وثيقة الصلة بحياة الطالب ومجتمعه ، وأن تكون بأقلام كبار الكتاب ، وأعلام
+الفكر والأدب. كما روعي في مادتها العلمية صحة المعلومات وحداتها ؛ حتى
+ترقى بالطالب لغة ، وتذوقاً ، وتكون منطلقاً لقراءات موسعة في مختلف مجالات
+المعرفة الإنسانية.</p><p>وقد اتبعنا في عرض موضوعات الكتاب ومعالجة مادته اللغوية نهجاً يقوم
+على التكامل والربط بين جوانب الخبرة اللغوية ؛ فكل موضوع يشتمل على طائفة
+من أسئلة الحوار والمناقشة ، تقيس فهم الطالب واستيعابه لختواه وعناصره وأفكاره
+المختلفة، وتأخذ بيده في رفق وأناة إلى تبيين أفكاره وتمحيصها، ويلى ذلك طائفة</p><p>٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

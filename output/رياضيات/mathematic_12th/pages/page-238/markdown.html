@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-199.jpeg" alt="img-199.jpeg" /><p>الوحدة السابعة</p><p>- أي أنه عند حساب التكامل لدالة مرفوعة للأس و مضروباً في مشتقة الدالة ، فإن التكامل يساوي الدالة مرفوعة للأس و ١+ مقسوماً على الأس الجديد مضافاً إليه ث .
+- وعندما و = -١ ، فإن : $‫\left[ \frac{\text{د(س)}}{\text{د(س)}} \right]‬$‫ و س = لو |د(س)| + ث .</p><h1><strong>مثال (٧ - ١٨)</strong></h1><p>احسب التكاملات الآتية : أ) ‬$‫\left[ \text{س}^4 \text{ جا س}^5 \text{ و س} \right]‬$‫ . ب) ‬$‫\left[ \text{هـ}^3 + 6 \text{ س}^2 \text{ (س}^2 + 2 \text{ و س} \right]‬$‫ .</p><p><strong>الحل :</strong></p><p>أ) نضع ص = س⁵ ‬$‫\Leftarrow \frac{\text{ص}}{\text{س}} = 5 \text{ س}^4‬$‫ $\Leftarrow \text{س}^4 \text{ و س} = \frac{1}{5} \text{ و ص}‬$$‫ .</p><p>‬$‫\therefore \left[ \text{س}^4 \text{ جا س}^5 \text{ و س} = \frac{1}{5} \right]‬$‫ جا ص و ص = ‬$‫\frac{1}{5}‬$‫ جتا ص + ث = ‬$$‫\frac{1}{5}‬$$‫ جتا س⁵ + ث .</p><p>ب) نضع ع = س³ + ٦ س ‬$‫\Leftarrow \frac{\text{ع}}{\text{س}} = 3 \text{ س}^2 + 6‬$‫ .</p><p>‬$‫\Leftarrow 3 \text{ (س}^2 + 2 \text{ و س} = \text{ع}‬$‫ .</p><p>‬$‫\Leftarrow (\text{س}^2 + 2 \text{ و س} = \frac{1}{3} \text{ ع}‬$‫ .</p><p>‬$‫\therefore \left[ \text{هـ}^3 + 6 \text{ س}^2 \text{ (س}^2 + 2 \text{ و س} = \frac{1}{3} \right]‬$‫ هـ ع و ع = ‬$‫\frac{1}{3}‬$‫ هـ ع + ث .</p><p>‬$‫= \frac{1}{3} \text{ هـ}^3 + 6 \text{ س}^2 + \text{ث}‬$‫ .</p><h1><strong>مثال (٧ - ١٩)</strong></h1><p>احسب كلا من : أ) ‬$‫\left[ \frac{\text{س}^2}{\text{س}^2 + 2 \text{ و س}} \right]‬$‫ . ب) ‬$‫\left[ \frac{\text{جا 2 س}}{\text{س}^2 + 3 \text{ جتا 2 س}} \right]‬$‫ و س .</p><p><strong>الحل :</strong></p><p>أ) نضع ص = س³ + ٢ ‬$‫\Leftarrow \frac{\text{ص}}{\text{س}} = 2 \text{ س}^2‬$‫ $\Leftarrow \text{س}^2 \text{ و س} = \frac{1}{3} \text{ و ص}‬$$‫ .</p><p>‬$‫\therefore \left[ \frac{\text{س}^2}{\text{س}^2 + 2 \text{ و س}} \right]‬$‫ و س = ‬$$‫\frac{1}{3}‬$$‫ $\left[ \frac{\text{ص}}{\text{ص}} = \frac{1}{3} \text{ لو |ص|} \right]‬$$‫ + ث</p><p>‬$‫= \frac{1}{3} \text{ لو |س}^2 + 2 \text{ |} + \text{ث}‬$‫ .</p><p>ب) نضع ع = ٣ + جتا ٢ س ‬$‫\Leftarrow \frac{\text{ع}}{\text{س}} = 2 - \text{جا 2 س}‬$‫ .</p><p>‬$‫\Leftarrow \text{جا 2 س و س} = \frac{1}{2} \text{ ع}‬$ .</p><p>٢٣٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

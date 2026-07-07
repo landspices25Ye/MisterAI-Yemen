@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-11.jpeg" alt="img-11.jpeg" /><p>عظيمة وهبها الله لنا، وعلينا أن ننتفع بخيراتها، وأن نستغلها في تعزيز القيم والمبادئ الدينية وترسيخها بداخلنا، وفي ترقية حياتنا ومداركنا وثقافتنا.</p><h2>معاني المفردات والتراكيب اللغوية</h2><p>|  الكلمة | معناها  |
+| --- | --- |
+|  يحدوها الأمل | يراودها الأمل.  |
+|  ميكانيكية | آلية الحركة.  |
+|  بيد أن | غير أن.  |
+|  حيز الوجود | الحيز: المكان، والمراد دنيا الوجود.  |
+|  عتاد الحاسوب | عُدَّتْه ومكوناته.  |
+|  البرمجيات | المراد بها النُّظُم الدقيقة الخاصة بمعالجة البيانات.  |
+|  الصَّاخِب | المضطرب.  |
+|  عَلِيَّة القوم | ذوو المكانة العالية.  |
+|  فاضح | يكشف ما ينبغي ستره.  |
+|  مبتذل | ممتهن.  |</p><h2>المناقشة</h2><p>1. متى ظهر الحاسوب الرقمي؟ وما العلوم التي شاركت في ظهور وتصميم الحاسوب الرقمي؟
+2. لم تُعَدُّ شبكة الإنترنت أحدث إنجازات تكنولوجيا المعلومات؟
+3. ما الأغراض التي أنشئت لأجلها شبكة الإنترنت؟
+4. ما الفكرة الذهبية وراء التطور المذهل لشبكة الإنترنت؟
+5. لم تُعَدُّ الإنترنت «شبكة الشبكات»؟ ولم تُعَدُّ كياناً طفيلياً في الوقت نفسه؟
+6. لشبكة الإنترنت جاذبية عجيبة. فبِمَ تفسر ذلك؟
+7. تقدم شبكة الإنترنت خدمات كثيرة لمستخدميها. هات من الموضوع أمثلة لبعض هذه الخدمات.</p><p>٣٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

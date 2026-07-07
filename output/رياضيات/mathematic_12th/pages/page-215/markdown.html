@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التكامل</p><p>$‫\text{د (س}^* \text{) = د (١ + ٢/٣ م) = (١ + ٢/٣ م) + (١ + ٢/٣ م) + ١}‬$‫</p><p>‬$‫= ١ + \frac{٤}{٣} م + \frac{٤}{٣} م + ٢ + \frac{٢}{٣} م‬$‫</p><p>‬$‫= \frac{٤}{٣} م + ٢ + \frac{٦}{٣} م + ٣‬$‫</p><p>‬$‫\text{مَجْد ١/٣} \text{ د (س}^* \text{) } \Delta \text{ س} = \text{مَجْد ١/٣} \left( \frac{٤}{٣} م + ٢ + \frac{٦}{٣} م + ٣ \right) \times \frac{٢}{٣}‬$‫</p><p>‬$‫= \frac{٢}{٣} \left[ \frac{٢٤}{٣} \times \frac{١ (١ + ٢) (١ + ٢) (١ + ٢) (١ + ٢) (١ + ٢) (١ + ٢) (١ + ٢) (١ + ٢) (١ + ٢) (١ + ٢) (١ + ٢) (١ + ٢) (١ + ٢) (١ + ٢) (١ + ٢) (١ + ٢) (١ + ٢) (١ + 2) (١ + 2) (١ + 2) (١ + 2) (١ + 2) (١ + 2) (١ + 2) (١ + 2) (١ + 2) (١ + 2) (١ + 2) (١ + 2) (١ + 2) (١ + 2) (١ + 2) (١ + 2) (\text{مَجْد ١/٣}) \right]‬$‫</p><p>‬$‫= \frac{٢}{٣} \left[ \frac{١ (١ + ٢) (١ + ٢) (١ + ٢) (١ + ٢) (١ + ٢) (١ + ٢) (١ + ٢) (١ + ٢) (١ + 2) (١ + 2) (١ + 2) (١ + 2) (١ + 2) (\text{مَجْد ١/٣}) \right]‬$‫</p><p>‬$‫= \frac{٢}{٣} \left[ \frac{٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + 2}{\text{مَجْد ١/٣}) \right]‬$‫</p><p>‬$‫= \frac{٢}{٣} \left[ \frac{٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + 2}{\text{مَجْد ١/٣}) \right]‬$‫</p><p>‬$‫= \frac{٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + 2}{\text{مَجْد ١/٣}) \right]}‬$‫</p><p>‬$‫\therefore \text{سط } \frac{٣}{١} = \text{نها } \frac{٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + 2}{\text{مَجْد ١/٣}) \text{ وحدة مربعة . [استناداً إلى الصيغة (١ - ٧) .]}}‬$‫</p><h1>تعريف (١ - ٧)</h1><p>إذا كانت د دالة معرفة على الفترة [١، ب]، وكانت النهاية التالية موجودة.</p><p>‬$‫\text{نها } \text{مَجْد ١/٣} \text{ د (س}^* \text{) } \Delta \text{ س}‬$‫</p><p>عندئذ تسمى هذه النهاية التكامل المحدد للدالة د على الفترة [١، ب]</p><p>ويعبر عنها بالرمز ‬$\text{أ} \text{د (س) و س}$‫ . أي أن:</p><p>‬$‫\text{أ} \text{د (س) و س} = \text{نها } \text{مَجْد ١/٣} \text{ د (س}^* \text{) } \Delta \text{ س}‬$‫</p><p>‬$$‫\text{أ} \text{د (س) و س} = \text{نها } \text{مَجْد ١/٣} \text{ د (س}^* \text{) } \Delta \text{ س}‬$$‫</p><p>ملاحظات: - الصورة ‬$\text{أ} \text{د (س) و س}$‫ تقرأ تكامل د (س) بالنسبة لـ س، والرمز ‬$\text{أ} \text{د}$ علامة التكامل المحدد، ويسمى العدد (١) بالحد الأدنى، والعدد (ب) بالحد الأعلى لحدود التكامل.</p><p>٢١٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

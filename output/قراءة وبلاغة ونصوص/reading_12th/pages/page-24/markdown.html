@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><p>أستطيع – من فوق تلك الراية – أن أحدد أماكن الأبواب السبعة للمدينة، وهي: باب شعوب في الجزء الشمالي، يقابله باب اليمن في الجزء الجنوبي، ثم باب الشقاديف في وسط المدينة شمالاً، يقابله باب السَّبْح جنوباً، وباب الروم في الجزء الشمالي عند نهاية المدينة غرباً، يقابله باب البَلْقَة جنوباً، ثم باب «القاع» المفتوح على الجهة الغربية. وهناك باب آخر اسمه باب «استران» ومعناه الباب المستور، ويحسبه بعض الناس أنه من أبواب المدينة في حين أنه ليس كذلك، ويقع في شرق المدينة، ويتبع قلعة عَمْدَان التي أصبحت في العهد العثماني قصراً للسلاح. وهذا الباب مغلق، وخاص بالقلعة، ولا يُعَدُّ من أبواب المدينة، ولم يفتح في تاريخ اليمن الحديث سوى مرة واحدة عندما اتخذ الإمام الشهيد عبدالله الوزير القلعة مقرّاً لحكمه الذي لم يَدُم سوى ثلاثة أسابيع.</p><p>الحالة الثالثة – وهي خليط من الدهشة والحسرة – تعود إلى أواخر السبعينيات عندما رجعت من القاهرة بعد غياب دام اثني عشر عاماً. كانت المدينة قد بدأت في التَّرْهَل، إن لم تكن قد ترهلت فعلاً، ولأنني اخترت الإقامة في حيٍّ «جديد» فقد صدمني كل شيء فيه، وحزنت أشد الحزن لانتشار بيوت الإسمنت وما تتركه من ملامح المدينة الهَجَين. لقد تَبَدَّدَت الصورة المرسومة في الذاكرة لصنعاء، وتكسرت أمام عيني، ولم يَبْقَ في هذه الأحياء الجديدة سوى شوارع مُكْتَظَّة بالناس، وهذه الشوارع في الوقت نفسه أسواق نَافِرَة ومُنَفِّرَة؛ يجتمع فيها بائع الذهب والمجوهرات ببائع الفحم والأحذية، وبائع العطور ببائع اللحم والسمك. أين هذا التنافر البغيض من صنعاء الذاكرة، حيث الأسواق المستقلة البعيدة عن الأحياء السكنية، وحيث يوجد سوق خاص لكل سلعة؟! فهناك سوق للزبيب، وسوق للفضة، وسوق للقماش، وآخر للعطارة، وأسواق للحدادة، والنجارة، والصناعات الحرفية.</p><p>إحساس فظيع بالتشويه الذي أصاب المدينة، بيوت الإسمنت الباهتة بدلاً عن البيوت التي تتعانق فيها الأحجار بالأجر. والبناء العشوائي يزحف تماماً على الحدائق والبساتين بعد أن التَّهَم كل الأراضي الزراعية، التي كانت تحيط بالمدينة، وتم القضاء نهائياً على الينابيع المائية التي كانت تسقي جزءاً من المدينة، وتخترقها متجهة إلى</p><p>٢٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>لكن هل تعدّ الأحافير كلها مفيدة لإتمام عملية المضاهة بين الطبقات في الأماكن المتباعدة؟ لقد اتضح من الدراسات أن ثمة أنواعاً من الأحافير يمكن الاعتماد عليها أكثر من غيرها في عملية المضاهة، وتعرف بالأحافير المرشدة أو الدليلية (Index Fossils).</p><h3>فما هي الأحفورة المرشدة ؟</h3><p>الأحفورة المرشدة هي ذات الأمد الزمني القصير (أي ذات العمر الجيولوجي القصير) وبذلك يسهل تحديد الزمن بدقة، وذات الانتشار الجغرافي الواسع، أي إنها كانت واسعة الانتشار جغرافياً وبذلك تسهل عمليات الترابط بين مناطق أو قارات متباعدة. ومن الأمثلة عليها في الشكل (٢٢) : أحفورة الترابلوبيت من نوع متعددة القطع التي ترشدنا إلى عصر الكمبري، وأحفورة جرابتوليت التي ترشدنا إلى العصرين الأوردوفيشي والسيلوري من الحقبة القديمة، وأحفورة الأمونيت التي ترشدنا إلى الحقبة المتوسطة.</p><img src="img-159.jpeg" alt="img-159.jpeg" /><p>الشكل (٢٢)</p><h3>٤- مبدأ الاحتواء :</h3><p>الجسم الصخري الذي يحتوي على قطع من جسم آخر يعتبر أحدث من الجسم الذي أخذت منه هذه القطع، والشكل (٢٢) يعطينا مثلاً على ذلك فالصخر (ب) أحدث من الصخر (أ)، لأن جزءاً من (أ) محتوى داخل (ب).</p><img src="img-160.jpeg" alt="img-160.jpeg" /><p>الشكل (٢٣) جسم صخري يحتوي قطع من جسم آخر</p><p>الأحياء للصف الثالث الثانوي</p><p>٢٠١</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-58.jpeg" alt="img-58.jpeg" /><p>الوحدة الثالثة</p><p>ثانياً : احسب احتمالات كل من الحوادث التالية :</p><p>أ) أن تكون نتيجة الرمية الثانية ظهور الصورة .
+ب) ظهور الصورة ثلاث مرات على الأقل .
+ج) ظهور الكتابة مرتين على الأقل .</p><p>[١١] أسرة لها أربعة أطفال تم تسجيلهم من الأكبر إلى الأصغر حسب النوع (الجنس) :</p><p>أولاً : اكتب فضاء العينة لهذه التجربة .</p><p>ثانياً : عبّر عن الحوادث التالية واحسب احتمالها :</p><p>أ) لدى الأسرة بنتان .
+ب) لدى الأسرة ولد واحد على الأقل .
+ج) عدد الذكور أكثر من عدد الإناث .</p><h1>الاحتمال الشرطي وقانون الضرب والحوادث المستقلة</h1><p>٣ - ٣</p><h1>أولاً : الاحتمال الشرطي :</h1><p>كثيراً ما يصادفنا في حياتنا اليومية حسابات وقوع حادثة بشرط تحقق وقوع حادثة أخرى كحادثة دخول الطالب الجامعة إذا حصل على معدل ٧٥٪ على الأقل ، أو حصول عبدالله على سيارة إذا حصل على شهادة البكالوريوس من الجامعة ... وهكذا .</p><p>ويسمى مثل هذا الاحتمال بالاحتمال الشرطي (المشروط) وإذا افترضنا أن : أ هي حادثة حصول عبدالله على سيارة ، ب هي حادثة حصول عبدالله على شهادة البكالوريوس ؛ فإن احتمال حصول عبدالله على سيارة في حالة حصوله على شهادة البكالوريوس من الجامعة يكون : حا ( أ | ب ) وهو رمز الاحتمال الشرطي ويُقرأ احتمال وقوع «أ» بشرط وقوع «ب» .</p><h1>تعريف (٣ - ٣)</h1><p>$‫حا (أ | ب) = \frac{حا (أ | ب)}{حا (ب)} ، حا (ب) = ٠ ، حا (ب | أ) = \frac{حا (أ | ب)}{حا (أ)} ، حا (أ) = ٠ .‬$‫</p><h1>مثال (٣ - ٧)</h1><p>إذا كان حا (أ | ب) = ٠,٤ ، حا (أ | ب) = ٠,١ ، حا (ب) = ٠,٢ . فأوجد :</p><p>١) حا (أ | ب) ٢) حا (ب | أ) ٣) حا (ب | أ) ٤) حا (أ | ب)</p><h1>الحل :</h1><p>١) ‬$‫\therefore \text{حا (أ | ب)} = \frac{\text{حا (أ | ب)}}{\text{حا (ب)}}‬$‫
+$\therefore \text{حا (أ | ب)} = \frac{٠,١}{٠,٢} = \frac{١}{٢}‬$$‫</p><p>٢) ‬$‫\therefore \text{حا (ب | أ)} = \frac{\text{حا (ب)}}{\text{حا (أ)}}‬$‫
+$\therefore \text{حا (ب | أ)} = \frac{٠,١}{\text{حا (أ)}} \dots \dots \dots (١)‬$$</p><p>٨٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

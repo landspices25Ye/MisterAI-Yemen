@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>احترام المرأة *</h1><img src="img-22.jpeg" alt="img-22.jpeg" /><p>نعم إنَّ الرجال قوامون على النساء كما يقول الله تعالى في كتابه العزيز، ولكن المرأة عماد الرجل، وملاك أمره، وسرُّ حياته، من صرخة الوضع إلى أنة النزع.
+لا يستطيع الأب أن يحمل بين جانحتيه لطفله الصغير عواطف الأم، فهي التي تحوطه بعنايتها ورعايتها، وتبسط عليه جناح رحمتها ورأفتها، وتسكب قلبها في قلبه حتى يستحيلا إلى قلب واحد، يخفق خفوقاً واحداً، ويشعر بشعور واحد، وهي التي تسهر عليه ليلها، وتكلؤه نهارها، وتحتمل جميع آلام الحياة وأرزاقها في سبيله، غير شاكية ولا متبرمة، بل تزداد شغفاً به، وإيثاراً له، وضناً بحياته بمقدار ما تبذل من الجهود في سبيل تربيته. ولو شئت أن أقول لقلت: إن سرَّ الحياة الإنسانية، وينبوع وجودها، وكوكبها الأعلى الذي تنبعث منه جميع أشعتها ينحصر في كلمة واحدة هي (قلب الأم).</p><p>ولا يستطيع الرجل أن يكون رجلاً حتى يجد إلى جانبه زوجة تبعث في نفسه روح الشجاعة والهمة، وتغرس في قلبه مسؤولية التبعة وعظمتها، وحسب المرء أن يعلم أن رعية كبيرة أو صغيرة تضع ثقتها فيه، وتستظل بظل حمايته ورعايته، وتعتمد في شؤون حياتها عليه. وما نصح الرجل بالجد في عمله، والاستقامة في شؤون حياته، وسلوك الجادة في سيره، ولا هداه إلى التدبير ومزاياه، والاقتصاد</p><p>* من كتاب (النظرات) لمصطفى لطفي المنفلوطي، الجزء الثالث (بتصرف).</p><p>٩٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

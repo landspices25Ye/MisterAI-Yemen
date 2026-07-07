@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>ملاحظة</p><p>لخفض سرعة النيوترونات تُمرر خلال مواد مهدئة مثل الماء الثقيل أو البارافين، ولزيادة سرعتها تستخدم المعجلات.</p><p>٣ - نوع النظير المقذوف (الهدف): تختلف النواتج باختلاف النظير المقذوف.</p><p>$‫\text{Li}_3^{6+} + \text{P}_1^{1-} \longrightarrow \text{He}_2^{4+} + \text{He}_2^{3-}‬$‫</p><p>‬$‫\text{Li}_3^{7+} + \text{P}_1^{1-} \longrightarrow 2 \text{He}_2^{4-}‬$‫</p><p>ومن تفاعلات التحوّل النووي الصناعي ما يلي:</p><p>أ - إنتاج النظائر المُشعّة: ويتمّ قذف النواة بقذائف مناسبة، ومن خلال هذا التفاعل يتمّ تحويل العناصر غير المُشعّة إلى عناصر مُشعّة، وتختلف نتائج هذا التفاعل وفقاً للعوامل المذكورة سابقاً.</p><p>ب - الانشطار النووي (Nuclear Fission): هو تفاعل تنشط فيه النواة الثقيلة جداً إلى أنوية العناصر الأخرى الخفيفة الأكثر استقراراً، ويمكن أن يحدث هذا الانشطار في الكون تلقائياً، كما يمكن أن يُحفّز في مفاعل نووي. ومن أمثلة الانشطار النووي انشطار أنوية اليورانيوم U92 235 عند قذفه بالنيوترونات البطيئة.</p><p>‬$‫\text{U}_{92}^{235} + \text{n}^1 \longrightarrow \text{Ba}^{141}_{56} + \text{Kr}^{92}_{36} + 3 \text{n}^1 + \text{طاقة}‬$
+(بطيء) (سريع)</p><p>والنيوترونات الناتجة تستطيع شطر أنوية جديدة، ويستمر هذا التفاعل ويتضاعف، ويُسمّى هذا التفاعل «التفاعل المتسلسل» Chain Reaction، شكل (٤-٥)، وتنطلق في عملية الانشطار كمية هائلة من الطاقة،</p><p>٨٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

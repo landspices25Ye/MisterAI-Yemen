@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الشجرة اليابسة هنا وهنا. ولكنَّ الفنَّ البياني يرتفع على ذلك بأنَّ غايته قوة الأداء مع الصحة، وسمو التعبير مع الدقة، وإبداع الصورة زائداً جمال الصورة، أولئك في الكتابة كالطير له جناح يجري به، ويَرِفُّ ولا يطير، وهؤلاء كالطير الآخر له جناح يطير به ويجري. ولو كتب الفريقان في معنى واحد لرأيت المنطق في أحد الأسلوبين وكأنه يقول: أنا هنا في معانٍ وألفاظ، وترى الإلهام في الأسلوب الآخر يطالعك أنه هنا في جلال وجمال، وفي صور وألوان.</p><p>ودورة العبارة الفنية في نفس الكاتب البياني دورة خَلْقٍ وتركيب، تخرج بها الألفاظ أكبر مما هي، كأنها شَبَّتْ في نفسه شباباً، وأقوى مما هي، كأنما كسبت من روحه قوة، وأدلَّ مما هي، كأنما زاد فيها بصناعته زيادة. فالكاتب العلمي تمرُّ اللغة منه في ذاكرة، وتخرج كما دخلت، عليها طابع واضعيها، ولكنها من الكاتب البياني تمرُّ في مصنع، وتخرج عليها طابعه هو. أولئك أزاحوا اللغة عن مرتبة سامية، وهؤلاء علَّوا بها إلى أسمى مراتبها، وأنت مع الأولين بالفكر، ولا شيء إلا الفكر والنظر والحكم، غير أنك مع ذي الحاسة البيانية لا تكون إلا بمجموع ما فيك من قوة الفكر والخيال والإحساس والعاطفة والرأي.</p><p>والكتابة التامة المفيدة مثل الوجهين في خلق الناس؛ ففي كل الوجوه تركيب تام تقوم به منفعة الحياة، ولكن الوجه المنفرد يجمع إلى تمام الخلق جمال الخلق، ويزيد على منفعة الحياة لذة الحياة، وهو لذلك، وبذلك، يرى ويؤثر ويعشق.</p><p>وربما عابوا السمو الأدبي بأنه قليل، ولكن الخير كذلك، وبأنه مخالف، ولكن الحق كذلك، وبأنه مُحَيِّر، ولكن الحُسْن كذلك، وبأنه كثير التكاليف، ولكن الحرية كذلك. إن لم يكن البحر فلا تنتظر اللؤلؤ، وإن لم يكن النجم فلا تنتظر الشعاع، وإن لم تكن شجرة الورد فلا تنتظر الورد، وإن لم يكن الكاتب البياني فلا تنتظر الأدب.</p><p>١٠٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

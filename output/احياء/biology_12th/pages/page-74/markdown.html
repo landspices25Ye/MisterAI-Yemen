@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>٢- التكاثر الجنسي في النباتات الزهرية:</h2><p>– أين يتم التكاثر الجنسي في النباتات الزهرية؟ وكيف يتم ذلك؟
+يتم التكاثر الجنسي في النباتات الزهرية بتكوين الأمشاج المذكورة (حبوب اللقاح) في الملك والأمشاج المؤنثة (البويضات) في المبيض، ثم إندماج محتويات حبة اللقاح مع البويضة لتكوين اللقاحة «Zygote».</p><p>– ما الأجزاء الزهرية التي تنتج الأمشاج؟
+تتكون حبوب اللقاح في الملك والبويضات في المبيض. وهناك نوعان من الأزهار هما:
+أ – أزهار ثنائية الجنس: Bisexual (أحادية المسكن) تحتوي الزهرة على أعضاء التذكير والتأنيث معاً، كما في نباتات الغول والمشمش والصنوبر.</p><p>ب – أزهار أحادية الجنس: Monosexual (ثنائية المسكن)
+تحتوي الزهرة على أعضاء التذكير أو أعضاء التأنيث كما في نبات النخيل.</p><p><strong>تكوين حبوب اللقاح والبويضات في الزهرة</strong> يمكن توضيح خطوات تكوين حبوب اللقاح والبويضات في النبات كما يأتي:</p><h3>أولاً: خطوات تكوين حبوب اللقاح</h3><p>انظر الشكل (١٢) ولاحظ أن المُمك يتكون عادة من أربعة أكياس تنمو فيها الخلايا البوغية الذكرية الأم التي تحتوي على (2n).</p><img src="img-57.jpeg" alt="img-57.jpeg" /><p>الشكل (١٢) خطوات تكوين حبوب اللقاح</p><p>٧٤</p><p>الأحياء النصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

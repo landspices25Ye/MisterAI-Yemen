@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>تشغيل محطة الرادار :</h2><p>يمكن تلخيص خطوات تشغيل محطة الرادار في النقاط الآتية:</p><p>- يوصل اللوحان (س١، س٢)، في جهاز المستقبل بدائرة كهربائية تحدث بين اللوحين فرقاً في الجهد، يتغير بنظام معين، فينحرف الشعاع الإلكتروني أفقياً وتتحرك النقطة المضيئة على شاشة الكاشف - الذي يتصل بالمستقبل - أفقياً مثلاً من اليسار إلى اليمين بتردد معين.
+- يرسل المرسل حزمة ضيقة من الموجات اللاسلكية القصيرة جداً (طولها الموجي قصير، وترددها عال)، فإذا قابلت الموجات المرسلة هدفاً (جسماً) فإنها تصطدم به وتنعكس مرتدة إلى المحطة ويستقبلها المستقبل، ويحدث فرق في الجهد بين اللوحين (ص١، ص٢)، فينحرف الشعاع الإلكتروني رأسياً وتتحرك النقطة المضيئة على شاشة الكاشف المتصل بالمستقبل رأسياً إلى أعلى محدثة قمة، انظر الشكل (٧).
+- بواسطة التدرج الموجود على الشاشة يمكن تحديد الزمن الذي استغرقته الموجات المرسلة والموجات المنعكسة في قطع المسافة بين المحطة والهدف.
+- وبمعرفة سرعة الموجات اللاسلكية في الهواء (الفراغ) وهي مساوية لسرعة الضوء (١٠×٣ م/ث) يمكن حساب بُعد الهدف بالعلاقة الآتية:
+بعد الهدف = سرعة الموجات × نصف زمن ذهاب وإياب الموجات</p><p><strong>مثال</strong>
+إذا كان الزمن الكلي الذي تستغرقه موجة لاسلكية لمحطة الرادار للذهاب والإياب هو $‫\frac{4}{30}‬$ ثانية. فكم يكون بُعد الهدف عن المحطة مقدراً بالكيلومتر؟
+<strong>الحل..</strong></p><p>بعد الهدف = السرعة × نصف الزمن</p><p>بعد الهدف = $‫\frac{4}{30} \times \frac{1}{2} \times 10 \times 3‬$</p><p>بعد الهدف = $‫10 \times 2‬$ متر.</p><p>بعد الهدف = $‫10 \times 2‬$ كيلو متر</p><p>وللحصول على صورة واضحة، فإنه يراعى في المرسل أن تكون قدرته عالية، ويراعى في المستقبل تكبير التيارات المتولدة بالتأثير عن الموجات اللاسلكية المنعكسة وذلك قبل انتقالها إلى الكاشف.</p><p>إن أجهزة الرادار بعد تطويرها أصبحت متكاملة بحيث تعين بعد الهدف وتعطي</p><p>٩٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

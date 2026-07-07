@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التكامل</p><h1>تمارين (٧-١)</h1><p>[١] باستخدام تعريف التكامل المحدد حسب مايلي :</p><p>أ)  $‫l_1 = 2‬$  س و س . ب)  $‫l_1 = (2 + 3)‬$  س و س .</p><p>ج)  $‫l_1 = 2‬$  س و س . د)  $‫l_1 = 2‬$  ص و ص .</p><p>هـ)  $‫l_2 = 2‬$  س -  $‫l_2 = 2‬$  س و س .</p><p>[٢] أثبت مايلي :</p><p>أ)  $‫l_1 = (2 + 4)‬$  س و س  $‫\geq 0‬$  ب)  $‫l_1 = (2 - 1)‬$  س و س  $‫\leq 0‬$  .</p><p>[٣] أيهما أكبر :</p><p>أ)  $‫l_1 = 2‬$  س و س أم  $‫l_1 = 2‬$  س و س ؟</p><p>ب)  $‫l_1 = 2‬$  س و س أم  $‫l_1 = 2‬$  س و س ؟</p><p>[٤] برهن مايلي :</p><p>أ)  $‫l_1 = 2‬$  س و س  $‫\geq 2‬$  س و س ب)  $‫l_1 = 2‬$  س و س  $‫\leq 2‬$  س و س</p><p>ج)  $‫l_1 = 2‬$  س و س  $‫\geq 2‬$  س و س و)  $‫l_1 = 2‬$  س و س  $‫\leq 2‬$  س و س (١ - ٢)</p><p>هـ)  $‫\frac{\pi}{2}‬$  جئاس و س  $‫\geq \frac{\pi}{2}‬$  جاس و س</p><p>و)  $‫\frac{\pi}{2}‬$  جئاس و س  $‫\leq \frac{\pi}{2}‬$  جاس و س</p><p>[٥] أوجد الحدين الأدنى والأعلى لقيم التكاملات التالية :</p><p>أ)  $‫l_1 = (2 + 1)‬$  س و ب)  $‫l_2 = 2‬$  س و س</p><p>٢٢١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

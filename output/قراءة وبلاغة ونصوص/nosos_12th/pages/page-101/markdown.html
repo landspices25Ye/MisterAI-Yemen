@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>كُنْ بَلْسَمَا</h1><h2>إيليا أبو ماضي</h2><h3>التعريف بالشاعر</h3><p>هو إيليا ضاهر أبو ماضي، شاعرٌ عربي رومانسي. جمع بين العاطفة الجياشة، والفكر الموجه، وعمق التجربة، والخيال.</p><p>كان من أبرز أولئك النفر من الأدباء الذين فروا من الواقع الأليم في مواطنهم الأصلية إلى أصقاع الأرض متخذين من أماكن هجرتهم التي حظوا عليها رحالهم مستقراً لأجسادهم، بينما ظلت أحاسيسهم، ومشاعرهم مُحَلِّقَةً حيث نشأتهم الأولى، وحيث مرابع صباهم.</p><p>كان (إيليا) من بين الأوائل الأكثر شهرة من شعراء الرابطة القلمية في المهجر، بل كان الأطول نفساً، والأغزر إنتاجاً، ولعل ذلك يعود إلى طبيعته المثابرة التي صاحبته منذ نعومة أظفاره؛ إذ كان يقطع مسافة ميلين سيراً على الأقدام - وهو طفل صغير - من قريته الحديثة بلبنان - التي أبصر فيها النور عام ١٨٨٩م، - إلى المدرسة التي يديرها الشيخ (إبراهيم المنذر) فيقف أمام نافذتها يصغي إلى شرح الدرس لعدم قدرته على دفع تكاليف الدراسة، وحين لمس المعلم شدة رغبته في طلب العلم دعاه إلى دخول الفصل دون مقابل.</p><p>وتحت إلحاح نفسه الشغوفة إلى طلب المزيد من العلم، ووطأة ضائقة سبل العيش يحم شطر أرض الكنانة وهو في الثالثة عشرة من العمر؛ فعمل في (الاسكندرية)، وواصل دراسته وتمكن من إصدار أول ديوان له أسماه (تذكار الماضي) وهو لم يتجاوز الثانية والعشرين من العمر.</p><p>تناول شعره في بداياته الأولى القضايا القومية حيث سلَّ يراعه منافحاً عن أمته ومستنهضاً إياها في مجابهة مستعمرها وما قاله في ذلك:</p><p>دنيك يا وطن العروبة غابة حشدت عليك أراقماً وذئاباً
+فالبس لها ماء الحديد مطارقاً واجعل لسانك مخلباً أو ناباً
+لا شرع في الغابات إلا شرعها فدع الكلام شكاية وعتاباً</p><p>٩٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

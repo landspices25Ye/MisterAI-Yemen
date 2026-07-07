@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-30.jpeg" alt="img-30.jpeg" /><p>الشكل (١) الإنتحاح الأرضي.</p><img src="img-31.jpeg" alt="img-31.jpeg" /><p>الشكل (٢) الإنتحاح الضوئي.</p><p>الجانب السفلي يشبه استطالة الخلايا في هذا الجانب، وينشط استطالتها في الجانب العلوي فينحني الجذر إلى أسفل داخل التربة؛ فالجذر موجب الانتحاح الأرضي - شكل (١). وتنسب الساق إلى أعلى نتيجة لتركيز الأوكسينات في الجانب السفلي، الذي يؤدي إلى استطالة الخلايا في هذا الجانب، مقارنة مع الجانب العلوي، فينحني الساق أثناء نموه إلى أعلى عكس الجاذبية الأرضية مما يجعل الساق سالب الانتحاح الأرضي.
+- كيف تفسر الانتحاح الأرضي في النبات؟</p><h2>٢- الانتحاح الضوئي : Phototropism</h2><p>- ما دور الأوكسينات في عملية الانتحاح الضوئي؟</p><p>ادرس الشكل (٢)، ماذا تلاحظ؟</p><p>عند وضع أي نبات زينة على نافذة المنزل، تلاحظ أن أجزاء النبات تنحني نحو الضوء نتيجة استجابة النبات للضوء بسبب تأثير الأوكسينات.</p><p>- كيف تتحرك أجزاء النبات نحو الضوء؟</p><p>تتميز الأوكسينات بقدرة حساسيتها للضوء، فعندما تتعرض ساق النبات للضوء من جانب واحد، تتركز الأوكسينات في الجانب البعيد عن الضوء، وتعمل على استطالة الخلايا في ذلك الجانب بمعدل أعلى من الجانب الآخر فينحني النبات نحو الضوء.</p><h2>النشاط (٣)</h2><p>• نفذ النشاط الخاص بالانتحاح الضوئي الموجود في كتاب الأنشطة والتجارب.</p><p>وقد توصل العلماء إلى أن بالإمكان استخدام الهرمونات النباتية في عملية تطوير الإنتاج الزراعي والنباتي لما فيه مصلحة الإنسان والبيئة.</p><p>٤٤</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>ويكرر النداء ليشكو من عدم وجود شمس يأتلق فيها ويطير بخياله ساعة السحر، ومن انعدام الأفق والنار التي تضيء الخواء وتحترق فيها المسافات.</p><p>والشمس رمز للحرية التي بدونها لا يسعد الإنسان، وبدونها يتقيد حتى الخيال. والأفق أيضاً رمز للحرية والانطلاق، والنار لدفء المشاعر فهي تضيء الخواء، والخواء من قولهم: خوت الدار إذا خلت من أهلها، فالشاعر يخشى الخواء، وانعدام النار التي تضيئه وتزيل البرد وتحترق المسافات فيدنو من نخل جيكور، وذكر جيكور (ولم يكن) لقربها من نفسه والتلذذ بذكرها، والاعتراض بقوله: (بلاسفر) للاحتراز، حتى لا يفهم الدنو الحقيقي، إضافة إلى ما توحي به من الأسى.</p><p>والنخل رمز للأصالة وجناه الفضائل والأخلاقيات والعادات، والتعبير عن الثمر بوصفه بالداني ( من إضافة الصفة إلى الموصوف ) فيه إيجاء ببساطة العيش.</p><p>يعود فيذكر دنياه الحالية التي لا تخلو من النار، إلا أنها بلا سمر !، والأحاديث تندفق أخيلة من الماضي شبهها بالحفيف، وهي باقية في سمعه تبكي لأنها في عالم غير عالمها، عالم ليس فيه شجر، أو طبيعة، أو صفاء.</p><h2>أسئلة وتدريبات</h2><p>١ - أين ولد السياب ؟ وأين درس ؟
+٢ - ما المرض الذي عانى منه ؟ ومتى توفي ؟
+٣ - ما موقع السياب من الشعر الحر ؟
+٤ - ما نوع الغربة التي يشكو منها الشاعر في هذا النص ؟
+٥ - اختر الإجابة الصحيحة من بين الأقواس :
+- يقصد الشاعر بالخواء ( الجهل، برود المشاعر، البطالة )
+- ضبطت كلمة فوانيس بالفتحة لأنها ( ممنوع من الصرف، تمييز، مفعول به )
+٦ - ما الغرض من النداء في أول النص ؟
+٧ - إلام رمز الشاعر بكل من : الصخر والشمس والنخل ؟
+٨ - ماذا يقصد الشاعر بالخواء ؟
+٩ - لماذا ذكر جيكور، وكنى عن بغداد ؟
+١٠ - ما فائدة قوله : ( بلا سفر ) ؟
+١١ - إلام يرمي الشاعر من ذكر الفراشات المحترقة ؟
+١٢ - ما الأثر الذي تركه النص في نفسك ؟</p><p>١٣٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

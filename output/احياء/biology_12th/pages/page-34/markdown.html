@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>– لماذا تقل قدرة الإنسان على السمع عندما تتمزق الطبلة؟
+يؤدي اهتزاز الطبلة إلى تحريك العظيمة الثلاث الموجودة في الأذن الوسطى
+(المطرقة – السندان – الركاب).</p><p>تنتقل الاهتزازات من عظمة الركاب إلى السائل الموجود في القوقعة بالأذن
+الداخلية عبر الكرة البيضاء.</p><p>تؤثر اهتزازات السائل في القوقعة على مستقبلات الصوت الموجودة في خلايا
+السمع، وتقوم بتحويله إلى سيالات عصبية.</p><p>تنتقل السيالات العصبية من خلايا السمع إلى الأعصاب القوقعة التي تكون
+العصب السمعي وتتجه مع عصب السمع التوازني إلى مركز السمع بالدماغ.</p><p>يقوم مركز السمع بتحويل الإشارات العصبية إلى أصوات يسهل على الإنسان
+إدراكها وتمييزها. شكل (٢٣).</p><h1>مستقبلات التوازن :</h1><img src="img-25.jpeg" alt="img-25.jpeg" /><p>الشكل (٢٣) مستقبلات التوازن في القرية والكيس والقارورة</p><p>٣٤</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

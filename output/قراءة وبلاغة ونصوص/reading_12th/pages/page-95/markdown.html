@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الهدف منها إبطاء نسبة انتشار الفيروس، ومعالجة الأمراض المصاحبة للإيدز.</p><p>ومع ذلك، فإنَّ ما تحقق في الآونة الأخيرة يُعد إنجازاً طيباً..»</p><p>أ - (شافة - إبطاء - آونة).</p><p>هات مرادف الكلمة الأولى، وضد الثانية، ومفرد الثالثة.</p><p>ب - (استئصال شافته) - (القضاء عليه). أي التعبيرين أكثر دلالة؟ ولماذا؟</p><p>ج - وضع نوع المشتقات الآتية، واذكر الفعل المجرد والمزيد منها:</p><p>(فَعَّال - معروف - المستعملة - المصاحبة - مذهل)</p><p>د - اضبط بالشكل آخر ما تحته خط من الكلمات، واذكر سبب الضبط.</p><p>٦ - اكتب الأعداد في الفقرة الآتية بالحروف: مع ضبطها بالشكل:</p><p>«تشير تقديرات منظمة الصحة العالمية إلى أن العالم يضم نحو (٤٠) مليون مصاب، وهناك نحو (١٤) ألف شخص جديد ينضمون إلى طابور المرضى كل يوم، أما الذين يموتون كل (٢٤) ساعة فهم نحو (٨٠٠٠) شخص».</p><p>٧ - إلام نسب كل من الأسماء الآتية؟ وما طريقة صوغها؟</p><p>(السريري - العالمية - اقتصادية - دولية).</p><p>٨ - علل سبب كتابة الهمزة على هذه الصورة في الكلمات الآتية:</p><p>(أوبئة - التائية - الرئوي - استئصال - شافة).</p><p>٩٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

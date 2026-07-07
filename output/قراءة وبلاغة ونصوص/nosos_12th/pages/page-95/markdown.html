@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>مشاعر حزينة</h1><p>أبو القاسم الشابي</p><p>التعريف بالشاعر</p><p>هو أبو القاسم بن محمد بن بلقاسم الشابي، سليل أسرة (الشابية). ولد بـ توزر عام ١٩٠٩م، (إحدى مناطق القطر التونسي).</p><p>كان أبوه قاضياً، تخرج في الأزهر، ثم أخذ شهادة (التطويع) من كلية الزيتونة بتونس، فنشأ أبو القاسم في رعاية أبيه القاضي المثقف، فتعلم منه معاني الرحمة والحنان، وغرس في نفسه حب الحق والخير.</p><p>كانت الأسرة - التي يعدّ شاعرنا أحد أفرادها - تنتقل في البلاد التونسية حسبما يقتضيه عمل كبير الأسرة في القضاء، من منطقة إلى أخرى، ومن مدينة إلى مدينة، إذ كان لذلك دور في معايشة الشاعر الناشئ لكثير من مظاهر الحياة بمختلف المناطق التي كان ينتقل بها مع والده، بما فيها من اختلاف الأجواء والمظاهر الطبيعية واللهجات المتعددة، فتشكلت تجربته، وتدفقت شاعريته؛ مما جعله لا ينطلق في شعره من نظرة بيئية ضيقة، وإنما كان شعره تونسي البيئة، عربي الانتماء، عالمي التحليق والمشاعر.</p><p>قدم أبو القاسم إلى العاصمة تونس عام ١٩٢٠م، للدراسة بجامع الزيتونة في الثانية عشرة من عمره، وقال الشعر مبكراً، وكون لنفسه ثقافة واسعة، عربية بحتة جمعت بين التراث العربي في أزهي عصوره، وبين روائع الأدب الحديث بمصر والعراق وسورية والمهاجر، ولم يكن يعرف لغة أجنبية، إلا أنه استطاع بفضل مطالعاته الواسعة أن يستوعب ما تنشره المطابع العربية عن آداب الغرب وحضارته.</p><p>ظهرت أول مجموعة شعرية له ضمن كتاب «الأدب التونسي في القرن الرابع عشر» عام ١٩٢٧م، وبعد ذلك بعام صدر له كتاب بعنوان «الخيال الشعري» تضمن أفكاره الجريئة في التجديد الثقافي والأدبي، فأحدث ردود فعل كبيرة في الأوساط الصحفية والفكرية والأدبية في القطر التونسي، وقد نشرت هذه الآثار في حياة والده،</p><p>٩٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

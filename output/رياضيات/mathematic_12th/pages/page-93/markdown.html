@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الاحتمالات</p><p>$‫\therefore \text{حا}(t) + \text{حا}(n) - \text{حا}(t) = \text{حا}(t) \text{حا}(n) + \text{حا}(n)‬$‫
+$= \text{حا}(t) [1 - \text{حا}(n)] + \text{حا}(n)‬$$‫
+$= \text{حا}(t) - \text{حا}(t) \text{حا}(n) + \text{حا}(n)‬$$‫</p><p>‬$‫\therefore - \text{حا}(t) = - \text{حا}(t) \text{حا}(n) \Leftarrow \text{حا}(t) = \text{حا}(t) \text{حا}(n)‬$‫
+$\therefore t, n \text{ حادثتان مستقلتان.}‬$$‫</p><h1><strong>مثال (٣ - ١٢)</strong></h1><p>إذا كانت ‬$t \supset n$‫ وكان ‬$\text{حا}(t) = \frac{1}{4}$‫، ‬$\text{حا}(n) = \frac{1}{3}$‫، فهل ‬$t, n$‫ حادثتان مستقلتان؟</p><h1><strong>الحل:</strong></h1><p>نبحث في تحقق الشرط: ‬$\text{حا}(t) = \text{حا}(t) \text{حا}(n)$‫.</p><p>أولاً: نوجد قيمة الطرف الأيمن من الشرط كما يلي:</p><p>‬$‫\therefore t \supset n \Leftarrow t = \text{حا}(t) \Leftarrow \text{حا}(t) = \text{حا}(t) = \frac{1}{4} \dots\dots\dots (1)‬$‫</p><p>ثانياً: نوجد قيمة الطرف الأيسر من الشرط كما يلي:</p><p>‬$‫\text{حا}(t) \text{حا}(n) = \frac{1}{4} \times \frac{1}{3} = \frac{1}{12} \dots\dots\dots (2)‬$‫</p><p>ثالثاً: نقارن بين (١)، (٢) فنجد أن:</p><p>‬$‫\frac{1}{4} \neq \frac{1}{12} \text{ أي أن: } \text{حا}(t) \neq \text{حا}(t) \text{حا}(n)‬$‫</p><p>‬$\therefore$‫ لم يتحقق شرط الاستقلالية للحادثتين.</p><p>‬$\therefore t, n$‫ حادثتان غير مستقلتين.</p><h1><strong>تمارين ومسائل (٣ - ٣)</strong></h1><p>[١] إذا كان: ‬$\text{حا}(t) \mid n = 0,4$‫، ‬$\text{حا}(n) = 0,8$‫. فأوجد ‬$\text{حا}(t) n$‫</p><p>[٢] إذا كانت ‬$t, n$‫ حادثتين مستقلتين، ‬$\text{حا}(t) = \frac{1}{2}$‫، ‬$\text{حا}(t) \cap n = \frac{2}{3}$‫</p><p>فأوجد: (١) ‬$\text{حا}(n)$‫ (٢) ‬$\text{حا}(t) \mid n$‫ (٣) ‬$\text{حا}(n) \mid t$‫</p><p>[٣] برهن أن: ‬$\text{حا}(t) \mid n = 1 - \text{حا}(t) \mid n$</p><p>[٤] صندوق به ١٦ مصباحاً من بينها ٤ مصابيح غير سليمة، سحبت ٣ مصابيح - عشوائياً - من الصندوق واحد تلو الآخر، فما احتمال أن تكون الثلاثة المصابيح سليمة؟</p><p>٩١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

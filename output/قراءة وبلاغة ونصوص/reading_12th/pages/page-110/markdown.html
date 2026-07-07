@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><p>ج- (وتجعل الكلام كأنه وجد لنفسه عقلاً يعيش به). ما نوع هذه الصورة؟ وما قيمتها الفنية؟</p><p>د- وضح نوع الاسم المشتق، ووزنه في كل مما يأتي:</p><p>(صحيح - أجمل - كشفة - الملتبس).</p><p>هـ- وضح إعراب ما تحته خط في الفقرة السابقة:</p><p>٤- صغّر الكلمات الآتية مراعيًا الضبط الصحيح لها:</p><p>(كاتب - رسالة - قصة - صورة).</p><p>٥- يقول الكاتب: «ودورة الكتابة الفنية في نفس الكاتب البياني، دورة خلق وتركيب، تخرج بها الألفاظ أكبر مما هي، كأنها شُبِّت في نفسه شباباً، وأقوى مما هي، كأنما كسبت من روحه قوة، وأدل مما هي، كأنما زاد فيها بصناعته زيادة. فالكاتب العلمي تمر اللغة منه في ذاكرة، وتخرج كما دخلت، عليها طابع واضعيها؛ ولكنها من الكاتب البياني تمر في مصنع، وتخرج عليها طابعه هو...»</p><p>أ - ضع علامة (✓) مقابل الإجابة الأكثر دقة فيما يأتي:</p><p>- يقصد الكاتب بدورة الكتابة الفنية:</p><p>( ) - التجربة الشعرية التي يمرُّ بها الكاتب عند إبداعه للعمل الأدبي.</p><p>( ) - ممارسة الكاتب للكتابة الفنية.</p><p>( ) - مراحل الكتابة الفنية من تقليد ومحاكاة، وتفرد.</p><p>- المراد بكلمة (خَلَقَ) في الفقرة السابقة:</p><p>( ) - المخلوق.</p><p>( ) - الناس.</p><p>( ) - الخلق الفني.</p><p>١٠٨</p><p><http://www.e-learning-moe.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

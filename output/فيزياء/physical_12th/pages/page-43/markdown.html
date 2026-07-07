@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>ويتكرر ما حدث في الدورة الأولى في كل دورة من دورات التيار المتردد فإذا كان تردد التيار كما في اليمن ٥٠ هيرتز فإن شحن وتفريغ المكثف يتكرر ١٠٠ مرة في كل ثانية. ويوضح الشكل (٩) المنحنيات البيانية لكل من: الشحنة الكهربائية (س) وفرق الجهد الكهربائي بين لوحي المكثف (ج) وشدة التيار الكهربائي (ت) المار في دائرة المكثف.</p><p>زاوية الطور بين فرق الجهد وشدة التيار في دائرة المكثف.</p><p>يلاحظ مما سبق أن التيار المتردد يمر في الدائرة السابقة نتيجة شحن وتفريغ المكثف، وتتناسب شدة التيار المتردد التي تمر في أية لحظة تناسباً طردياً مع معدل التغير في شحنة المكثف أو جهده.</p><p>وتحسب الشحنة الكهربائية المتراكمة على لوحي المكثف عند أية لحظة زمنية</p><p>من العلاقة : س = سع ج (١) ...</p><p>حيث فرق الجهد (ج) = جع جا (ج) ... (٢)</p><p>ومن العلاقتين (١، ٢) فإن : س = سع جع جا (ج) ... (٣)</p><p>وعند اشتقاق طرفي العلاقة (٣)</p><p>بالنسبة للزمن (ز) فإنها تصبح :</p><img src="img-42.jpeg" alt="img-42.jpeg" /><p>شكل (٩)</p><p>$‫\frac{\text{س}}{\text{ج}} = \text{سع} \times \frac{\text{جع} \times \text{جا}}{\text{ج}} \times \frac{\text{س}}{\text{ج}}‬$‫</p><p>‬$‫\frac{\text{س}}{\text{ج}} = \text{سع جع} \times \text{ج} \times \text{جا} \text{ج}‬$‫</p><p>وحيث أن : ‬$‫\frac{\text{س}}{\text{ج}}‬$‫ عند أية لحظة تمثل</p><p>شدة التيار الكهربائي اللحظي (ت) المار في الدائرة الكهربائية.</p><p>‬$‫\therefore \frac{\text{س}}{\text{ج}} = \text{ت} = \text{سع جع} \times \text{جا} \text{ج} \times \text{جا} \text{ج}‬$</p><p>وتكون أعلى قيمة للتيار عندما تكون قيمة جتا ج = ١ (أي أن ج = صفر)</p><p>وعند التعويض عن هذه القيمة في العلاقة (٥) تصبح العلاقة كما يلي :</p><p>٤١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

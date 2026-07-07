@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-171.jpeg" alt="img-171.jpeg" /><p>الوحدة السادسة</p><h2>الحل :</h2><p>الدالة د متصلة وقابلة للاشتقاق على ح* ، د(س) = ١ - ١/٢س وعندما د(س) = ٠ ، فإن :</p><p>س = ١ ، س = ١</p><p>د(س) = ٢/٣س نجد أن : د(١) = ٢ < ٠ ، د(١) = ٢ - ٢ < ٠</p><p>لذلك فإن للدالة د قيمة عظمى محلية عند س = ١ وهي : د(١) = ٢ - ٢ ، وقيمة صغرى محلية</p><p>عند س = ١ وهي : د(١) = ٢</p><h2>ملاحظة :</h2><p>من المثال السابق نلاحظ أن قيمة الدالة عند نقطة القيمة العظمى أصغر من قيمتها عند نقطة القيمة الصغرى . مما يوضح عدم وجود علاقة بين قيم الدالة ونقاط القيم القصوى .</p><h2>ثالثاً : فترات التقعر ونقاط الانعطاف :</h2><p>نلاحظ أن المنحنى في الشكل (٦ - ١٢ أ)</p><p>يقع تحت المماسات المرسومة عند جميع النقاط</p><p>(س ، د(س) ) v س ⊖ [ ! ، ب ] ،</p><p>وفي هذه الحالة المنحنى مقعراً للأسفل .</p><p>بينما في الشكل (٦ - ١٢ ب) يقع المنحنى فوق</p><p>المماسات المرسومة عند جميع النقاط</p><p>(س ، د(س) ) v س ⊖ [ ! ، ب ] ،</p><p>وفي هذه الحالة المنحنى مقعراً للأعلى .</p><p>ولتحديد الفترات التي عندها بيان الدالة مقعراً نحو الأعلى ، أو نحو الأسفل نستعين بالبرهنة التالية :</p><h2>مبرهنة (٦ - ١١)</h2><p>إذا كانت الدالة د قابلة للاشتقاق الثاني على الفترة ف ⊖ ح ، فإن :</p><p>١) منحنى الدالة د مقعر للأعلى إذا كانت د(س) < ٠</p><p>٢) منحنى الدالة د مقعر للأسفل إذا كانت د(س) < ٠</p><p>١٩٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>مقدمة :</h2><p>تعدُّ الكيمياء الكهربائية فرعاً مهماً من فروع الكيمياء بشكل عام، وتهتم بدراسة التفاعلات التي تحدث تحت تأثير الطاقة الكهربائية، أو التفاعلات التي ينتج عنها طاقة كهربائية.</p><h2>الأكسدة والاختزال</h2><h3>مفهوم الأكسدة والاختزال:</h3><p>كان مفهوم الأكسدة مقتصرًا على تفاعل العناصر مع الأكسجين مكونة أكاسيد، مثل: احتراق شريط من المغنيسيوم في جو من الأكسجين لتكوين أكسيد المغنيسيوم.</p><p>$‫2\text{Mg} + \text{O}_2 \xrightarrow{\Delta} 2\text{MgO}‬$‫</p><p>ولكن لوحظ أن اتحاد العناصر مع بعضها يشابه اتحادها مع الأكسجين، فالمغنيسيوم يتفاعل مع الفلور لتكوين فلوريد المغنيسيوم.</p><p>‬$‫\text{Mg} + \text{F}_2 \longrightarrow \text{MgF}_2‬$‫</p><p>واعتبرت هذه التفاعلات نوعاً من تفاعلات التأكسد وذلك للتشابه الكبير بينها وبين الاتحاد بالأكسجين. وبذلك أصبح مفهوم التأكسد لا يقتصر على اتحاد العناصر بالأكسجين فقط بل أيضاً بالعناصر ذات السالبية الكهربائية العالية مثل: الفلور، والكلور، والبروم، واليود، والكبريت.</p><h3>التأكسد بمفهوم النظرية الإلكترونية :</h3><p>لو نظرنا إلى تفاعل الأكسجين مع المغنيسيوم وفقاً للمعادلة الآتية:</p><p>‬$‫2\text{Mg} + \text{O}_2 \longrightarrow 2\text{MgO}‬$‫</p><p>‬$‫\text{Mg} + \text{O} \longrightarrow \text{Mg}^{2+} \text{O}^{2-}‬$‫
+(2,8,2) (2,6) (2,8) (2,8)</p><p>فإن هذا التفاعل يمثل إلكترونياً هكذا:
+(Mg 2, 8, 2) قد فقدت إلكترونين من المستوى الخارجي لها لينتج أيون المغنيسيوم الموجب (Mg²⁺)، بينما ذرة الأكسجين اكتسبت إلكترونين ونتج أيون الأكسجين السالب (O²⁻) كما هو موضح أدناه:</p><p>‬$‫\text{Mg} \xrightarrow{2,8} \text{Mg}^{2+} + 2\text{e}^- \quad (\text{أكسدة})‬$‫
+(2,8,2)</p><p>‬$‫\text{O} + 2\text{e}^- \longrightarrow \text{O}^{2-} \quad (\text{اختزال})‬$
+(2,6)</p><p>٤٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

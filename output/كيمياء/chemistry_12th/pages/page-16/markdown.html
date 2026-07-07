@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-10.jpeg" alt="img-10.jpeg" /><p>عناصر المجموعة VIB: وعناصر هذه المجموعة تتكوّن من: كروم، وموليبيديوم، وتنجستن، وتتميّز بمقاومتها الفائقة للتآكل. وإذا اعتبرنا جهد تأكسد الكروم الذي يزيد عن جهد تأكسد العنصر النشط كادميوم، فإنه ليس من المستغرب ألا يتأكسد الكروم بسهولة؛ وذلك لأن سطحه يتغطى بطبقة من الأكسيد تحميه من مزيد من التأكسد.</p><p>عناصر المجموعة VIIB: وتتكوّن هذه المجموعة من عناصر: المنجنيز، والتكتينيوم، والرينيوم، وأكثرها شيوعاً وانتشاراً هو المنجنيز والذي يُعدّ العنصر الثالث عشر من حيث الوفرة في القشرة الأرضية، يُكوّن المنجنيز مركبات بحالات تأكسد (٢+، ٣+، ٤+، ٦+، ٧+).</p><p>عناصر المجموعة VIIIB: وتتكوّن هذه المجموعة من تسعة عناصر، وتشغل الأعمدة رقم (٨، ٩، ١٠)، وتصنف إلى ثلاث عائلات أفقية كل عائلة منها تسمى بأشهر عنصر فيها مثل: عائلة الحديد في الدورة الرابعة، وتشمل (الحديد، والكوبلت، والنيكل)، وعائلة البلاديوم في الدورة الخامسة وتشمل (الروثينيوم، والروديوم، والبلاديوم)، أما في الدورة السادسة فتوجد عائلة البلاتين وتشمل (الأوزميوم، والإريديوم، والبلاتينوم)، وتتميّز فلزات عائلة البلاتين بخمولها الشديد، وهي تستخدم لصنع الحلي، وعمل الأدوات المختبرية التي لا تتآكل وتستخدم لأغراض أخرى، أما فلزات عائلة الحديد فإنها ذات أهمية صناعية كبيرة.</p><h3>التركيب الإلكتروني وحالات التأكسد:</h3><p>عند الانتقال في الجدول الدوري من اليسار إلى اليمين عبر أي دورة من دورات العناصر الانتقالية الرئيسية، يتم ملء تدريجي للغلاف الفرعي d الواقع تحت الغلاف الخارجي مباشرة، كما هو ملاحظ في الدورة الرابعة (عناصر السلسلة الانتقالية الرئيسية الأولى)، والتي تم فيها ملء المستوى الفرعي 3d كما في الجدول (١-١). فكل من هذه العناصر تمتلك توزيعاً إلكترونياً يشتمل على التوزيع الإلكتروني لذرة الأرجون [Ar] 4s² كاملاً مضافاً إليه تتابع ملء الغلاف 3d باستثناء الكروم والنحاس فهما شاذان، كما هو ملاحظ في الجدول (١-١).</p><p>١٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-18.jpeg" alt="img-18.jpeg" /><p>الوحدة الأولى</p><p>بالتعويض عن قيمة س من (٢) في (١) ينتج أن :</p><p>$‫ص (٣ - ٧) = ٦ \iff ٣ ص - ٧ - ٦ = ٠ \iff (٣ ص + ٢) (ص - ٣) = ٠‬$‫</p><p>‬$‫أما ٣ ص + ٢ = ٠ \iff ص = -\frac{٢}{٣} .‬$‫</p><p>‬$‫أو ٣ = ص - ٣ = ٠ \iff ص = ٣‬$‫</p><p>‬$‫من (٢) عندما ٣ = ص - \frac{٢}{٣} \iff ص = ٩ - ١‬$‫</p><p>‬$‫عندما ٣ = ص = ٢ \iff ص = ٢‬$‫</p><h1>خواص ضرب الأعداد المركبة :</h1><p>١) عملية الضرب تبديلية على م أي أن :</p><p>‬$‫ع ١ \cdot ع ٢ = ع ٢ \cdot ع ١ \quad \forall \quad ع ١ \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \)</p><p>٢) عملية الضرب تجميعية على م ؛ أي أن :</p><p>‬$‫ع ١ \cdot ع ٢ \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \)</p><p>٣) الواحد هو العنصر الخايد الضربي للأعداد المركبة ؛ أي أن :</p><p>‬$‫ع ١ \times ١ = ١ \times ع = ع \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{</p><p>٤) النظير الضربي للعدد ع = س + ت ص = (س، ص) ع = ع \* ، هو :</p><p>‬$‫\left( \frac{\text{س}}{\text{س} + \text{ص} + \text{ص} \text{ع}} - \frac{\text{ص}}{\text{س} + \text{ص} + \text{ص} \text{ع}} \right) \text{ ويرمز له بالرمز } \frac{1}{\text{ع}} \text{ أو } \text{ع}^{-1}‬$‫</p><p>٥) عملية الضرب تتوزع على الجمع ؛ أي أن :</p><p>‬$ع ١ \cdot (ع ٢ + ع ٣) = (ع ١ \cdot ع ٢) + (ع ١ \cdot ع ٣) \quad \forall \quad ع ١ \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \quad \text{ع} \)</p><p>١٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>مبدأ العد ومبرهنة ذات الحدين</p><p>الوحدة الثانية</p><h1>مبدأ العد</h1><p>٢ - ١</p><p>نتناول في هذا البند إحدى الطرق المفيدة في حساب عدد الطرق اللازمة لإجراء عملية ما بدون استخدام العد المباشر توفيراً للوقت والجهد ؛ فمثلاً: إذا كان لدى رجل جاك صوف وآخر من القطن ، ورمزنا لهما بالرمزين ١ ، ب ولديه كذلك ثلاثة بنطلونات من الصوف والقطن والنايلون ، ورقمناها على الترتيب ١ ، ٢ ، ٣ . ولنسأل ما عدد إمكانيات ( طرق ) اختيار جاك ثم بنطلون كبدلة يمكن للرجل لبسهما معاً .</p><p>نبدأ بعملية اختيار جاك وهي تتم بطريقتين :</p><p>اختيار الجاك ١ ، أو اختيار الجاك ب ،</p><p>ويلي ذلك عملية اختيار بنطلون ، وهي تتم بثلاث طرق :</p><p>اختيار البنطلون ١ ، أو اختيار البنطلون ٢ ، أو اختيار البنطلون ٣ .</p><p>ويمكن الحصول على نواتج العملية المركبة من العمليتين السابقتين المتتاليتين كما في المخطط الشجري التالي</p><p>[ انظر شكل (٢ - ١) ] :</p><img src="img-39.jpeg" alt="img-39.jpeg" /><p>شكل (٢ - ١) نلاحظ أن طرق اختيار جاك ثم بنطلون هي الأزواج المرتبة التالية :</p><p>( ١ ، ٢ ) ، ( ٢ ، ٣ ) ، ( ٣ ، ١ ) ، ( ١ ، ٢ ) ، ( ٢ ، ٣ ) ، وأن عدد</p><p>طرق ( إمكانيات ) إجراء العمليتين معاً يساوي عدد طرق العملية الأولى مضروباً في عدد طرق العملية الأخرى</p><p>ويساوي ٢ × ٣ = ٦ طرق .</p><h1>تدريب (٢ - ١)</h1><p>لتكن س = { ١ ، ٢ ، ٣ ، ٤ } ، كم عدداً مكوناً من رقمين مختلفين يمكن تشكيله من هذه المجموعة؟</p><p>وضّح ذلك بمخطط شجري .</p><p>٤٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الموضوع هو الشكل الظاهري للمسرحية، وعلى سبيل المثال نجد أن الموضوع في مسرحية «مسمار جحا» لما كثير هو الخلاف حول المسمار.</p><h2>٢-الفكرة:</h2><p>لا يمكن أن تكون مهمة الكاتب المسرحي تسجيل الوقائع كما حدثت، بل عليه أن يوجهها لتخدم فكرة معينة ينفذ من خلالها إلى التأثير الإيجابي على وجدان المشاهد والقارئ؛ كما فعل باكثير في مسرحيته حين رمز بالمسمار إلى ذرائع الاستعمار، لذلك ينبغي أن تكون لكل مسرحية فكرة أساسية تدور عليها، وتنظمها من بدايتها إلى نهايتها؛ كما يجب ألا تُساق الفكرة مجردة مباشرة، بل تُقدم في إطار الحكاية المسرحية.</p><h2>٣-الحبكة:</h2><p>ويسميها النقاد بناء الحدث، وهي روح المسرحية، ويراها (أرسطو) أكبر عنصر من عناصر العمل المسرحي؛ وتتمثل في ترتيب الجزئيات المختلفة المكونة لجسم المسرحية، التي يتم بها تتابع الأحداث في تسلسل طبيعي من البداية إلى الوسط، وإلى النهاية، وبشكل دقيق ومرتب، ويفضي السابق إلى اللاحق، وترتيب اللاحق على السابق وصولاً إلى العقدة وهي ذروة الصراع القائم بين التناقض الذي تمثله المسرحية ومنها إلى الحل المطلوب.</p><h2>٤-الشخصيات:</h2><p>هي النماذج البشرية التي تقوم بتنفيذ أحداث المسرحية، وتوجيهها وعلى أسنتها يدور الحوار الذي يكشف عن طبيعة الموقف المراد إبرازه. والشخصية في المسرحية ذات قيمة كبيرة، وهي أظهر عناصر المسرحية قرباً من الجمهور. وتتمثل في نوعين:</p><p>- أ- أساسية: وهي الشخصيات التي تكون عماد المسرحية وعليها تدور الأحداث.
+- ب- فرعية: وهي الشخصية المساعدة التي تعين الشخصية الأولى على أداء دورها، وتكمله.</p><p>ولكي تكون الشخصية في المسرحية ناجحة يجب أن تتشكل وفقاً لأبعادها الاجتماعية التي تحدد مستوى تعليمها، وثقافتها، والبيئة، التي تنشأ فيها، وكذلك أبعادها النفسية التي تحدد طبيعتها ونوازعها وخطراتها، فضلاً عن بقية الأبعاد الأخرى المتعلقة بالدور المناط بها.</p><p>٢١٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

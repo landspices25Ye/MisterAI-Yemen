@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-27.jpeg" alt="img-27.jpeg" /><p>وهل التفاعل ماصّ أم طارد للحرارة؟</p><p>■ <strong>الحل:</strong> نكتب أولاً المعادلة الكيميائية الحرارية الموزونة لهذا التفاعل:</p><p>$‫2\text{CO}_{(g)} + \text{O}_2 \longrightarrow 2\text{CO}_{2(g)}‬$‫</p><p>‬$‫\Delta H_f^\circ = -110,5 \text{ كيلوجول/مول} \quad (\text{CO}_{(g)})‬$‫</p><p>‬$‫\Delta H_f^\circ = \text{صفر} \quad (\text{O}_2_{(g)})‬$‫</p><p>‬$‫\Delta H_f^\circ = -393,5 \text{ كيلوجول/مول} \quad (\text{CO}_{2(g)})‬$‫</p><p>• <strong>حرارة التفاعل</strong> ‬$\Delta H^\circ$‫ = مجموع حرارة تكوين النواخ - مجموع حرارة تكوين المتفاعلات</p><p>‬$‫\Delta H^\circ = (393,5 - \times 2) - (110,5 - \times 2) + \text{صفر}‬$‫</p><p>‬$‫\Delta H^\circ = 771,0 + 771,0‬$‫</p><p>‬$‫\Delta H^\circ = 566 \text{ كيلوجول}‬$‫</p><p>• <strong>إشارة</strong> ‬$\Delta H^\circ$‫ سالبة، ‬$\therefore$‫ التفاعل طارد للحرارة.</p><p>٢) استخدام قانون هس:</p><p>وضع العالم الروسي هس (Hess) قانوناً عُرف باسمه وتوصّل إليه من خلال التجارب التي أجراها عام ١٨٤٠م، ويمكن بواسطة هذا القانون حساب حرارة التفاعل لبعض التفاعلات التي يمكن أن تتمّ في عدة خطوات والتي يصعب قياسها بطرق تجريبية.</p><p>وينصّ قانون هس على أن حرارة التفاعل هي عبارة عن مقدار ثابت عند الظروف القياسية سواء تم التفاعل في خطوة واحدة أو في عدة خطوات.</p><p>وتتضح أهمية هذا القانون في إمكانية التعامل مع المعادلات الكيميائية الحرارية وكأنها معادلات جبرية يمكن جمعها وطرحها وضرب طرفيها في معامل ثابت.</p><p>ولفهم هذا القانون يمكن تتبّع المثال الآتي:</p><p>يمكن تعيين حرارة احتراق الإيثانول ‬$\text{CH}_3\text{CH}_2\text{OH}$‫ القياسية بطريقة مباشرة وفي خطوة واحدة وذلك باستخدام مسعر القنبلة، والتي يُعبّر عنها في المعادلة (١) الآتية:</p><p>‬$‫1) \text{CH}_3\text{CH}_2\text{OH} + 3\text{O}_{2(g)} \longrightarrow 2\text{CO}_{2(g)} + 3\text{H}_2\text{O}_{(l)}, \Delta H = -1367 \text{ KJ/mole}‬$</p><p>ويمكن كذلك استخدام قانون هس لحساب حرارة التفاعل الذي يمكن أن يتمّ في عدة خطوات على النحو الآتي:</p><p>٣٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

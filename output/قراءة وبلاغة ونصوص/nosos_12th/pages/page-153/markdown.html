@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>درويش في عدد كبير من قصائده، ومنها هذه القصيدة و(مشياً أو زحفاً) رمز للإصرار على العودة، وأن (يضمّر الصخر ويقود المساء) رمز على أن من طبيعة الأشياء أن يعود المهاجر إلى وطنه، (كانوا ثلاثة عائدين) رمز إلى أن العودة مرفوضة من اليهود الغاصبين جملة وتفصيلاً وإن كان عدد العائدين قليلاً.</p><p>- القصيدة الجديدة كما هو شأن محمود درويش تعتمد على وحدة موسيقية واحدة متكررة، فقد يكون السطر الشعري تفعيلة واحدة كما في قول شاعرنا: (قالوا) وقد يكون أكثر من ذلك كما في قوله (أو زحفاً على الأيدي نعود) وهذا النظام الشعري درج عليه الشعراء العرب منذ منتصف القرن العشرين على يد نازك الملائكة، والسياب، وصلاح عبد الصبور وغيرهم.</p><p>- ألفاظ الشاعر منتقاة، دالة على الحركة والحياة المتجددة مشياً، زحفاً، نعود، نقود، ولهذا غلب على النص استخدام الأفعال المضارعة للدلالة على استمرار الحركة (يقفون، يصلون، يمر، يحمي)، وأحياناً يقدم الحال على صاحبها لأن في تقديم الحال ما يدل على الاختصاص الذي يفيد التوكيد كقوله: «مشياً، زحفاً».</p><p>- ولم يتجاوز الشاعر ظاهرة التناص التي أضحت سمة من سمات القصيدة الحديثة، فقد استدعى الشاعر رائد التجديد في العصر العباسي وهو أبو تمام في بيتيه المشهورين في الحكمة:</p><p>نقل فؤادك حيث شئت من الهوى ما الحب إلا للحبيب الأول
+كم منزل في الأرض يألفه الفتى وحنينه أبداً لأول منزل</p><p>ولهذا التناص ما يسوغه عند محمود درويش؛ إذ يعد أحد أقطاب الحداثة الشعرية، لذلك وظف نشوة الشيخ وشعوره بالفرحة والأمان، حيث تذكر حكمة أبي تمام، وكان الشاعر يريد أن يؤكد أن هذه الحكمة ليست خاصة بعصر أبي تمام، فكل من عانى التشرد والغربة يجد عنده هذا الشعور.</p><p>١٥١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

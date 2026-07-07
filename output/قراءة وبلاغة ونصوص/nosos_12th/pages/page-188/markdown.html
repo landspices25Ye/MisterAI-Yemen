@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-69.jpeg" alt="img-69.jpeg" /><h2>أسئلة وتدريبات</h2><p>١ - عرف النقد لغة واصطلاحاً.
+٢ - وضح وجوه الاختلاف بين النقد والبلاغة.
+٣ - «هل النقد فن أم علم؟» وضح ذلك.
+٤ - يندرج تحت مسمى البلاغة علوم ثلاثة حددها.
+٥ - الوظيفة العلمية للنقد الأدبي يستفيد منها كل من:
+الأديب، والقارئ، والحياة الأدبية، وضح ذلك.
+٦ - اختر الإجابة الصحيحة من بين القوسين فيما يأتي:
+- خلف الأحمر هو: «فقيه، شاعر، ناقد».
+- النقد يسهم في: «وضوح الحياة الأدبية، في رقيها، في انحطاطها»
+- كتاب «عيار الشعر» مؤلفه «أبو هلال العسكري، ابن طباطبا، ابن رشيق».
+- قول أبي تمام: لا تنكروا ضربي له من دونه.. الخ من «المعاني المشتركة، من المعاني البديعة، من المعاني المنقولة إلى غرض آخر».
+٧ - في قضية اللفظ والمعنى ثلاثة آراء اذكرها، واختر ما تراه مناسباً.
+٨ - مناهج النقد الأدبي المذكورة بين يديك أربعة. اشرح اثنين منها، وأي هذه المناهج ترى أنك بحاجة إليه لدراسة الشعر؟
+٩ - أكمل الفقرة في العمود «أ» بما يناسبها من العمود «ب»
+«أ»
+١- المنهج التكاملي
+٢- المنهج النفسي
+٣- المنهج التاريخي
+٤- المنهج الفني
+يدرس هذا المنهج تأثير العمل الأدبي بنفسية الأديب.
+ينظر أصحاب هذا المنهج إلى النص نظرة شمولية.
+يدرس العناصر الفنية في النص الأدبي.
+يتناول النقاد في هذا المنهج المؤثرات الخارجية في النص كالبيئة والثقافة.</p><p>١٨٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

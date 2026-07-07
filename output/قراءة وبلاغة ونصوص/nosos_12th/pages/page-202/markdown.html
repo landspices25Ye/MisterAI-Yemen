@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-75.jpeg" alt="img-75.jpeg" /><p>الحياة أم حالة نفسية أم مشهداً من مشاهد الطبيعة... ليس المهم الموضوع لكن المهم استشارته النفس. والكلام عن الوجدان يستدعي الحديث عن الصدق الفني، وهو أن يعايش الشاعر الموقف (معايشة حقيقية أو وجدانية) ويتأثر به تأثيراً حقيقياً، ويعبر عنه تعبيراً صادقاً.</p><p>ولهذا فشعر المناسبات ليس من التجارب الصادقة، ولا يتوافر فيه الصدق الفني. والشاعر لا ينقل الحقيقة كما هي في الواقع الخارجي، وإنما وفقاً لإحساسه ولتجاوبنا معها. والعنصر الوجداني أو العاطفة لا تقتصر على موضوع معين كالغزل والرتاء كما قد يُظن، ولكنه في كل الأغراض والمواقف التي يقال فيها الشعر، فلا انفصال بين الفكر والعاطفة.</p><h2>الصياغة الشعرية</h2><h2>ثالثاً</h2><p>تشمل الصور التعبيرية: الألفاظ والعبارات، والصور والأخيلة، والموسيقى.
+للبحترى من قصيدة مدح:</p><p>ترك السوادَ للابسِيهِ وبِيضاً ونضاً من الستين عنه ما نضا
+وشأه أغيدُ في تصرفِ لحظهِ مرضٌ أعلُ به القلوبَ وأمرضا
+وكأنه ألقى الصبا وجديده ديناً دنا ميقاته أن يُقتضى
+أسيانُ أثرى من جوى وصباية وأسافَ من وصلِ الحسانِ وأنفضا
+كلفٌ يكفكفُ عبرةً مهراقةً أسفاً على عهدِ الشبابِ وما انقضى</p><p>هذه أبيات من مقدمة قصيدة مدح، صاغها البحترى في مدح أحد وزراء المعتمد (واسمه أبو صقر إسماعيل بن بلبل)، وإذا كانت أذواقنا تنفر من المدح في وقتنا الحاضر، فقد كانت هذه الظاهرة مقبولة بحكم الإلف والعادة، وإذا كان شعر المدح -عادة- شعراً متكلفاً كاذباً، فهذه المقدمة تجربة شعرية يتحدث فيها الشاعر عن هموم أثارت أحزانه وتتمثل بالشيخوخة وما يتبعها من الضعف والشعور بدنو الأجل.</p><p>وفيها يجرد الشاعر من نفسه شخصاً، ويتحدث عنه، وهذا من التقاليد الفنية العريقة في الشعر العربي، فيحدثنا بنبرة حزينة عن سواد شعره وقد غزاه الشيب، وعمّا بلغ من العمر، بينما يغلبه هوى فتاة تمرض القلوب بنظراتها (لعلها علوة التي ما فتئ يتغنى بها)، ويتحسر على ضياع الشباب الذي شبهه بالدين اقترب موعد سداده، ويصف غناه بالحب وفقره بوصل الحسان، ولهذا فهو لا يملك إلا الدمع والبكاء أسفاً</p><p>٢٠٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

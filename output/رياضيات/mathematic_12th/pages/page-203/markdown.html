@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التفاصيل</p><p>إما إذا كانت الدالة $‫د (س) = \sqrt{4} - س^2‬$ ، فإن مجموعة تعريفها $‫[2, 2]‬$ ومداها أيضاً $‫[2, 0]‬$ ، وبالتالي فإن هذه الدالة ليس لها فروع لانهائية .</p><h1>المستقيمات المقاربة :</h1><p>إذا رمزنا لبيان الدالة $‫ص = د (س)‬$‫ بالرمز ‬$‫ك$ ، وكانت مجموعة تعريفها من الشكل ‬$[\infty, t]$‫ ، أو ‬$‫[-\infty, t]‬$‫ ورمزنا لبيان المستقيم الذي معادلته ‬$ص = t س + ب$ بالرمز $ل$‫ ، نقول أن :  
+ص = ‬$t س + ب$‫ مستقيماً مقارباً إذا كان ‬$|ك - ل| \leq 0$‫ عندما ‬$‫س \leq \infty‬$‫ .  
+أي أن : ‬$س \leq \infty$‫ $د (س) - ص = 0‬$ .  
+يمكن تصنيف المستقيمات المقاربة على النحو التالي :  
+١- المستقيم المقارب الأفقي (الموازي محور السينات) :</p><h1>تعريف (٦ - ٤)</h1><p>إذا كانت مجموعة تعريف الدالة $‫ص = د (س)‬$ من الشكل $‫[t, \infty]‬$ ، أو $[-\infty, t]$ ، وكانت $س \leq \infty$ $‫د (س) = ل \supseteq \infty‬$ ؛ فإن المستقيم $‫ص = ل‬$ مستقيم مقارب أفقي موازي محور السينات .</p><h1>ملاحظات على التعريف :</h1><p>1. ١) البعد بين أي نقطة على منحنى الدالة والمستقيم المقارب هو $‫|د (س) - ل|‬$ .
+2. ٢) عندما $‫د (س) - ل > 0‬$ يكون منحنى الدالة أسفل المستقيم المقارب ، وعندما $‫د (س) - ل > 0‬$ يكون منحنى الدالة أعلى المستقيم المقارب ، كما في الشكل (٦ - ١٥) .</p><img src="img-176.jpeg" alt="img-176.jpeg" /><p>الشكل (٦ - ١٥)</p><p>٢٠١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

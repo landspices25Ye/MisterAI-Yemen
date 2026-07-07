@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-88.jpeg" alt="img-88.jpeg" /><p>الوحدة الرابعة</p><h1><strong>مثال (٤ - ٧)</strong></h1><p>لتكن ١٦ س² + ٩ ص² = ١٤٤ معادلة قطع ناقص ، أوجد طولي محورية ، وتخالفه المركزي ، وإحداثيات بؤرته ورأسيه ، ثم ارسمه .</p><h1><strong>الحل :</strong></h1><p>١٦ س² + ٩ ص² = ١٤٤ ، بقسمة طرفي المعادلة على ١٤٤</p><p>$‫\text{نحصل على } 1 = \frac{ص^2}{16} + \frac{ص^2}{9}‬$‫</p><p>حيث ١ = ٤ ، ب = ٣ ،</p><p>‬$‫\therefore \text{ج} = \sqrt{16} - \sqrt{9} \text{ ، فيكون :}‬$‫</p><p>طول المحور الأكبر = ٨</p><p>طول المحور الأصغر = ٦</p><p>‬$‫\text{التخالف المركزي } \text{ي } = \frac{\sqrt{7}}{4}‬$‫</p><p>البؤرتان هما ( ٠ ، ± ٧ ) ، والرأستان هما ( ٠ ، ± ٤ ) منحنى القطع الناقص موضح في [ الشكل ( ٤ - ١٥ ) ] .</p><h1><strong>مثال (٤ - ٨)</strong></h1><p>أوجد معادلة القطع الناقص الذي رأساه ( ٠ ، ± ٥ ) ، وبؤرتاه ( ٠ ، ± ٤ ) .</p><h1><strong>الحل :</strong></h1><p>إحداثيات البؤرتين ( ± ج ، ± ٠ ) = ( ٠ ، ± ٤ ) ، أي ج = ٤ .</p><p>إحداثيات الرأسين ( ± ٠ ، ± ٠ ) = ( ٠ ، ± ٥ ) ، أي ١ = ٥ .</p><p>الآن ج² = ١ - ب² ⇐ ب² = ١ - ج² = ٢٥ - ١٦ = ٩ ، وتكون معادلة القطع الناقص هي :</p><p>‬$‫\frac{ص^2}{25} + \frac{ص^2}{9} = 1 \text{ أو } 9 \text{ س}^2 + 25 \text{ ص}^2 = 225 .‬$</p><h1><strong>مثال (٤ - ٩)</strong></h1><p>أوجد معادلة القطع الناقص الذي بؤرتاه ( ٠ ، ± ٤ ) وتخالفه المركزي ١/٣ .</p><h1><strong>الحل :</strong></h1><p>إحداثيات البؤرتين ( ٠ ، ± ٤ ) ، أي ج = ٤ التخالفة المركزي ي = ج/١ ،</p><p>١١٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

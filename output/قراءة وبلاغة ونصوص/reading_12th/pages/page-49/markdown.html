@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>أ - هات مرادف كلمة «المرتقبة»، وضد «المجهول»، وجمع «مطلب» في جمل تامة من إنشائك.</p><p>ب - اضبط بالشكل أواخر الكلمات التي تحتها خط، مبيناً سبب الضبط.</p><p>ج - بين نوع المشتقات الآتية، واذكر وزنها:</p><p>(المجهول - مطلب - المرتقبة - مختلف).</p><p>٦ - علل سبب كتابة الهمزة المتوسطة على هذه الصورة في الكلمات الآتية:</p><p>(التواؤم - تأثير - حقائق).</p><h2>التعبير</h2><h3>١- التعبير الشفهي</h3><p>أجر حواراً مع معلمك وزملائك عن الجهود المبذولة لاستشراف المستقبل، مبرزاً أهميته في تطوير المجتمعات.</p><h3>٢- التعبير الكتابي</h3><p>لكل إنسان في الحياة طموحات مستقبلية. اكتب موضوعاً عن طموحاتك المستقبلية، موضحاً الخطط التي أعددتها من الآن لتحقيق أهدافك.</p><p>٤٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-54.jpeg" alt="img-54.jpeg" /><p>الوحدة الثالثة</p><p>وهو النموذج الاحتمالي المطلوب تكوينه لهذه التجربة .</p><p>$‫\text{حا (أ) = حا (ص، ص) + حا (ص، ك) + حا (ك، ص)}‬$‫</p><p>‬$‫\frac{3}{4} = \frac{1}{4} + \frac{1}{4} + \frac{1}{4} =‬$‫</p><p>‬$‫\text{حا (ب) = حا (ص، ك) + حا (ك، ك)}‬$‫</p><p>‬$‫\frac{1}{2} = \frac{1}{4} + \frac{1}{4} =‬$‫</p><p>‬$‫\text{حا (ج) = حا (ص، ك) + حا (ك، ص)}‬$‫</p><p>‬$$‫\frac{1}{2} = \frac{1}{4} + \frac{1}{4} =‬$$‫</p><p>‬$‫\text{حا (د) = حا (ص، ك) + حا (ك، ص) + حا (ك، ك)}‬$‫</p><p>‬$$‫\frac{3}{4} = \frac{1}{4} + \frac{1}{4} + \frac{1}{4} =‬$$‫</p><p>لاحظ من حل المثال السابق (٣ - ٣) فقرة (٢) أن كل نقطة من نقاط فضاء العينة « ع » لها الاحتمال</p><p>‬$‫\text{نفسه ويساوي } \frac{1}{\sqrt{(ع)}} = \frac{1}{4}‬$‫</p><p>الفضاءات التي تكون فيه فرصة وقوع الحوادث متساوية تسمى الفضاءات ذات الاحتمالات المتساوية ، وتُسمى دالة الاحتمال ( حا ) المعرَّفة على مثل هذه الفضاءات دالة الاحتمال المنتظمة فمثلاً : عند إلقاء حجر نرد وملاحظة العدد الظاهر على الوجه العلوي له عند استقراره على الأرض ، فإن : ‬$‫\text{ع} = \{ 1, 2, 3, 4, 5, 6, 7 \}‬$‫ ، ونجد أن :</p><p>‬$‫\text{حا (أ) = حا (ب) = حا (ج) = حا (د) = حا (هـ) = حا (و) = حا (ز) = حا (ح) = 1/6}‬$‫</p><p>وبهذا نكون قد خصصنا في هذه التجربة لكل نقطة من نقاط فضاء العينة « ع » الاحتمال نفسه = ‬$‫\frac{1}{\sqrt{(ع)}} = \frac{1}{6}‬$‫ وهذا يعني أن ( حا ) دالة احتمال منتظمة ؛ إلا أن بناء النموذج الاحتمالي لا يفترض تساوي قيم ( أ ) دائماً في كل التجارب العشوائية . وإذا افترضنا الآن أن ( أ ) حادثة تتضمن ( أ ) حادثة ابتدائية ( أولية ) فإن :</p><p>‬$‫\text{حا (أ) = } \underbrace{\frac{1}{\sqrt{(ع)}} + \frac{1}{\sqrt{(ع)}} + \dots + \frac{1}{\sqrt{(ع)}}}_{\text{حا (أ) مرة (حيث احتمال كل نقطة (حادثة ابتدائية) = } \frac{1}{\sqrt{(ع)}})}‬$‫</p><p>‬$‫\text{حا (أ) = } \underbrace{\frac{1}{\sqrt{(ع)}} + \dots + \frac{1}{\sqrt{(ع)}} + \frac{1}{\sqrt{(ع)}}}_{\text{حا (أ) مرة (حيث احتمال كل نقطة (حادثة ابتدائية) = } \frac{1}{\sqrt{(ع)}})}‬$</p><p>ونشير أن أكثر ما تكون دالة الاحتمال منتظمة في التجارب التي يتم فيها اختيار عنصر من مجموعة عشوائية .</p><p>٨٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

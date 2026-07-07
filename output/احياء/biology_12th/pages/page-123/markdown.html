@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>تحوي عدداً زوجياً من الكروموسومات (2n) لأنها تنتج من بيض مخصب، بينما الذكر يحوي عدداً أحادياً من الكروموسومات (n) لأنه ينتج من بيض غير مخصب.</p><h2>ثانياً: توارث الصفات المرتبطة بالجنس:</h2><p>لقد وجد أن كثير من الصفات الوراثية تحمل جيناتها على الكروموسومات الجنسية، لهذا تسمى صفات يرتبط توارثها بالجنس.</p><p>- ما الكروموسومات الجنسية؟</p><p>- ما هو الكروموسوم الجنسي الذي يحمل معظم الصفات المرتبطة بالجنس؟
+ومن أمثلة الصفات التي تنتقل من الآباء إلى الأبناء في الإنسان مرتبطة بالكروموسومات الجنسية، وخاصة الكروموسوم (X)، مرض عمى الألوان الشكل ١٧، ومرض نزف أوسيولة الدم الهيموفيليا (Hemophilia) ومرض البول السكري وغيرها، وهي جميعاً صفات متنحية مسؤول عن إظهارها حين منتج على الكروموسوم (X). وصفة الشعر الكثيف في الأذن المرتبطة بالكروموسوم Y.</p><img src="img-92.jpeg" alt="img-92.jpeg" /><p>الشكل (١٧) بطاقة فحص عمى الألوان</p><p>جدول (٣)</p><p>|  النوع | مصاب | حامل المرض | سليم  |
+| --- | --- | --- | --- |
+|  ذكر | X^{b}y | - | X^{B}y  |
+|  أنثى | X^{b}X^{b} | X^{B}X^{b} | X^{B}X^{B}  |</p><p>فمثلاً يظهر عمى الألوان بين الأبناء وهو عدم القدرة على التمييز بين اللونين الأخضر والأحمر. ويمكن الكشف عن وجود المرض باستخدام البطاقة المبينة في الشكل (١٧). فالشخص الذي يرى الرقم (4) فقط في البطاقة يكون مصاباً بعمى اللون الأخضر وأما الشخص الذي يرى الرقم (2) فقط يكون مصاباً بعمى اللون الأحمر. أما الشخص الذي يستطيع قراءة الرقم (42) فيكون طبيعياً وغير مصاب بالمرض. والجدول (٣) يوضح التركيب الظاهري والتركيب الجيني للمصابين بمرض عمى الألوان وحاملي المرض والأشخاص السليمين من المرض.</p><p>- ما التركيب الجيني لأنثى مصابة بعمى الألوان؟
+- ما التركيب الجيني لذكر مصاب بعمى الألوان؟</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p><p>١٢٣</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

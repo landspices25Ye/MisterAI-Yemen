@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-40.jpeg" alt="img-40.jpeg" /><p>٧- والصوتُ يحترفُ الخيانةَ، والسكوتُ كمن يخونْ
+٨- حتى الجذورُ مدانةٌ بذنوبِ إنجابِ الغصونْ
+٩- حتى الصخورُ لأنها كانت لذي يزنِ حصونْ
+١٠- حتى الذي كان احتلالاً ملسوه بالسمونْ
+١١- حتى الذي كان اسمه عنباً تحولَ زيزفونْ
+١٢- للقلبِ يا ديجورِ قلبٌ من أساطيرِ الفتونْ
+١٣- لن يعدم الأرقُ النجومَ ولن ينامَ العاشقونْ</p><h3>معاني المفردات والتراكيب اللغوية</h3><p>الحرون: النافر المتوتر، التهاويل: المقصود بها الأهوال والخاوف، الزيزفون: نوع من الشجر يزهر ولا يثمر، الديجور: الظلام، الفتون: ما يفتن ويسحر.</p><h3>إضاءة</h3><p>في الأبيات ثلاث فكر رئيسة: وطأة الظلام والزمن الثقيل، في الأبيات ١-٥، الواقع المزيف، في الأبيات ٦-١١، القلب الرافض المقاوم، في البيتين ١٢، ١٣.</p><p>يقول الشاعر: الظلام ساكن موحش فيه ريبة وشبهة، والزمن متجمد ثابت، فكان الدقيقة ملايين القرون، والكواكب لا تتحرك، والليل لا ينزاح، وكل ثانية تبدو مستنفرة لا تؤد الحركة والتعاقب، والليل يتفنن باستعراض الخاوف والأهوال، والمذيع لا يرسل إلا لحناً يشبه الحشرجة الهزيلة.</p><p>ويشير الشاعر إلى أن ما يقابل هذا الجو الخارجي بظلامه ووحشيته هو إظلام ووحشة في صدور الناس، فالحب متهم لديهم والأسى أو الحزن متهم، وكل صوت خائن، بل إن السكوت قريب من الخيانة!</p><p>حتى جذور الشجر مدانة لأنها سبب في أغصانها، والصخور مدانة لأنها كانت حصوناً لفارس اليمن سيف بن ذي يزن، والاستعمار مسوغ ومقبول، والعنب انقلب زيزفوناً.</p><p>ويقول الشاعر في البيتين الأخيرين: قلبي وقلوب أمثالي أو هناك قلوب نابضة بكل ما يفتن ويعجب رغم كل هذه الظروف. والأرق السائد تتغلب عليه هذه القلوب برؤية النجوم، وكل عاشق لا بد أن يجافيه النوم وهذا ثمن المقاومة والرفض.</p><p>١٠٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

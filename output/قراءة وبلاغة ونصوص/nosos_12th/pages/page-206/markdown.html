@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-76.jpeg" alt="img-76.jpeg" /><h2>أسئلة وتدريبات</h2><p>١- عرف التجربة الشعرية.</p><p>٢- يقول الشاعر أحمد شوقي:</p><p>ليس اليَسِيمُ من انتهى أبواهُ من هَمِّ الحَيَاةِ وخَلْفَاهُ ذَلِيلَا
+فأصاب بالدنيا الحَكِيمَةِ مِنْهُمَا وبحسن تربية الزمان بديلا
+إن اليَسِيمَ هو الذي تَلْقَى له أُمَّا تَخَلَّتْ أو أُمَّا مَشْغُولَا</p><p>أ - ما الفكرة التي تدور حولها الأبيات ؟</p><p>ب - ضع علامة ( ✓ ) أمام العبارة الصحيحة، وعلامة ( X ) أمام العبارة الخاطئة:</p><p>- التجربة في الأبيات إنسانية عامة.</p><p>- المعاني واضحة ومحددة.</p><p>- لجأ الشاعر إلى المبالغة.</p><p>٣- وضح عنصر الوجدان في النص الآتي لخليل مطران، وقد سافر إلى الإسكندرية بناء على نصيحة الأطباء:</p><p>إني أقسمتُ على التَّعَلُّلِ بالمني في غريبة قالوا تكون دوائي
+إن يشف هذا الجسم طيبُ هوائها أبلطفُ النيران طيبُ هواء
+عبثُ طوافي في البلاد وغريبة في غريبة منفاي لا استشفائي
+متفردٌ بصبائي متفردٌ بكابتي متفردٌ بعنائي
+ثاوٍ على صخرٍ أصمٍ وليت لي قلباً كهذي الصخرة الصماء</p><p>٤- وضح العنصر الفكري في بيتي كل من شوقي والجواهري:</p><p>قال أحمد شوقي:</p><p>ولا يبني الممالك كالضحايا ولا يدني الحَقْصُوق ولا يُحَقُّ
+ففي القتلى لأجيالِ حَيَاةٍ وفي الأسرى فِدَى لَهُمْ وَعِشْقُ
+وقال الجواهري:</p><p>وخلَّ النفوس العذاب الصلاب تسيل على الأسل الشرع
+فسارية العلم المستقل بغير يد الموت لم ترفع</p><p>٥- وضح عناصر التجربة الشعرية في نص ( ثمن الحرية ) لأحمد شوقي.</p><p>٢٠٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-190.jpeg" alt="img-190.jpeg" /><p>الوحدة السابعة</p><p>$‫1 \geq \frac{2}{m+1} \geq 1 \quad \text{و س} \geq 2‬$‫</p><p>∴ الحد الأدنى = 1 ، والحد الأعلى = 2 .</p><p>‬$‫\text{ب) } \because 1 \leq m \leq 3 \quad \Leftarrow 1 \leq m^2 \leq 9 \quad \Leftarrow 9 \leq 2 \leq m^2 + 7 \leq 25‬$‫</p><p>‬$‫3 \geq \sqrt{7 + 2} \leq 5 \quad [استناداً إلى المبرهنة (7 - 6) ]‬$‫</p><p>‬$‫\therefore 3 (3 - 1) \geq \sqrt{7 + 2} \leq 1 \quad \text{و س} \geq 5 (3 - 1)‬$‫</p><p>‬$‫6 \geq \sqrt{7 + 2} \leq 2 \quad \text{و س} \geq 10‬$‫</p><p>∴ الحد الأدنى = 6 ؛ والحد الأعلى = 10 .</p><p>‬$‫\text{ج) } \because 2 - 1 \leq m \leq 1 \quad \Leftarrow 0 \leq m^2 \leq 4 \quad \Leftarrow 1 \leq m^2 + 1 \leq 5‬$‫</p><p>‬$‫\frac{1}{5} \geq \frac{1}{m+1} \geq 1‬$‫</p><p>‬$‫\therefore \frac{1}{5} (1 - 2) \geq \left( \frac{1}{m+1} \right) \geq 1 \quad \text{و س} \geq 1 \quad (2 - 1)‬$‫</p><p>‬$‫\frac{3}{5} \geq \frac{1}{m+1} \geq 3 \quad \text{و س} \geq 3‬$‫</p><p>∴ الحد الأدنى = ‬$\frac{3}{5}$‫ ، والحد الأعلى = 3 .</p><p>‬$‫\text{د) جنا س - جا س} = \text{جنا س} - \text{جنا} \left( \frac{\pi}{2} - m \right) = -2 \text{ جا} \left( \frac{\pi}{4} - \frac{\pi}{2} \right)‬$‫</p><p>‬$‫= -2 \times \frac{1}{2\sqrt{2}} \text{ جا} \left( m - \frac{\pi}{4} \right) = -2 \sqrt{2} \text{ جا} \left( m - \frac{\pi}{4} \right)‬$‫</p><p>‬$‫\therefore 0 \leq m \leq \frac{\pi}{2} \quad \Leftarrow -\frac{\pi}{4} \leq m - \frac{\pi}{4} \leq \frac{\pi}{4}‬$‫</p><p>‬$‫\frac{1}{2\sqrt{2}} \leq \text{جا} \left( m - \frac{\pi}{4} \right) \leq \frac{1}{2\sqrt{2}} \quad \Leftarrow 1 \leq -2 \sqrt{2} \text{ جا} \left( m - \frac{\pi}{4} \right) \leq 1 - 1‬$‫</p><p>‬$‫-\frac{\pi}{2} \geq \frac{\pi}{2} \left( \frac{\pi}{2} \right) \text{ جنا س} - \text{جا س} \text{ و س} \leq \frac{\pi}{2}‬$‫</p><p>∴ الحد الأدنى = ‬$-\frac{\pi}{2}$‫ ؛ والحد الأعلى = ‬$\frac{\pi}{2}$ .</p><p>220</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

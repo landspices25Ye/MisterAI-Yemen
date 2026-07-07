@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>من خلال الخطوات السابقة تتضح قدرة نظرية الكربيد على تفسير وجود العديد من المركبات العضوية التي تدخل في تكوين النفط بطريقة علمية ومعقولة من الناحية الكيميائية، ولكن هذه النظرية لا زالت عاجزة عن تفسير وجود بعض المركبات النيتروجينية والأكسجينية، وكذلك وجود مادة الكلوروفيل وبعض المركبات العضوية التي تظهر نشاطاً ضوئياً. ولذلك ظهرت الحاجة إلى وجود نظرية أخرى تفسر هذه الظواهر.</p><h2>٢ - نظرية الأصل الحي (الأصل العضوي):</h2><p>تُنسب هذه النظرية إلى العالم أنجلر (١٩٠٠م)، الذي تمكّن من تحضير سائل يشبه النفط، وذلك من خلال عملية التقطير الإثلافي لشحوم الأسماك تحت ضغط شديد وحرارة مرتفعة، وقد وجد أنجلر أن هذا السائل مكون من خليط من الهيدروكربونات السائلة والغازية، وكذلك بعض المركبات الهيدروكربونية الحلقية والأروماتية وبعض المركبات ذات النشاط الضوئي، كما احتوى الخليط على نسبة بسيطة من مركبات النيتروجين والكبريت. ونظراً لتشابه هذه المركبات مع مكونات النفط قام أنجلر بصياغة نظريته التي تفسر أصل النفط وذلك على النحو الآتي:</p><p>أ - حدثت براكين شديدة بالقرب من المحيطات والبحار وحدثت انسياب للحمم إلى داخل هذه المحيطات والبحار ونتج عن ذلك تسمم الحيتان والكائنات البحرية وذلك بسبب ذوبان غاز $‫SO_2‬$ الناتج من الحمم البركانية.</p><p>ب - تراكمت الحمم البركانية على الحيوانات الميتة، ونتيجة للحرارة الشديدة المتولدة عن الأنشطة البركانية، ونتيجة للضغط الشديد حدث تحلل لهذه الحيوانات عبر السنين ونتج عن تحللها زيت النفط.</p><p>وقد اتضح نتيجة الاستكشافات النفطية المتعددة وجود بعض البراهين التي تدعم هذه النظرية، ومنها وجود الماء المالح مختلطاً بالنفط وكذلك وجود بعض بقايا من الحيوانات المتحجرة في مناطق النفط الخام، كما لوحظ أيضاً وجود الكلوروفيل في بعض خامات النفط مما يؤكد أن المصادر النباتية تدخل أيضاً في تكوين النفط، وقد دلت بعض الكشوف إلى وجود بعض الفحم النباتي بالقرب من مناطق تواجد النفط الخام.</p><p>١٢٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

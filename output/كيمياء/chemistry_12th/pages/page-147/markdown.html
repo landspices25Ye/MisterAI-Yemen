@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>الأسمدة البوتاسية (بوتاس Potash) :</h2><p>تُعدُّ أملاح البوتاسيوم من العناصر اللازمة لنمو النباتات، ولذلك ينصح المزارعون بإضافة الأسمدة المحتوية على أملاح البوتاسيوم إلى التربة لتعويضها عن الفاقد من هذه الأملاح.</p><p>ويساعد البوتاسيوم على عمليات الاستقلاب داخل الخلايا النباتية، وعلى زيادة مكونات النبات الهامة، مثل: النشا، والسكر، وغيرها من المركبات الكربوهيدراتية.</p><p>ويعد كلوريد البوتاسيوم (KCl) من أهم خامات البوتاس، حيث إن ما ينتج منه على مستوى العالم هو ٩٠٪ من بين أملاح البوتاسيوم الأخرى، مثل: K₂CO₃ ، K₂O .</p><p>وتحضر الأسمدة البوتاسية من بعض الخامات الموجودة في سطح القشرة الأرضية، مثل: (فلسار البوتاس KAlSi₃O₈)، والميكا [KH₂Al₃(Si₃O₈)₃].</p><p>ونتيجة لعوامل التعرية (في وجود H₂O ، CO₂) يتحول البوتاسيوم الموجود في هذه الخامات إلى كربونات البوتاسيوم K₂CO₃ والتي تذوب في الماء وتظل محتجزة في التربة.</p><h3>ملاحظة</h3><p>يوجد معظم الاحتياطي العالمي من البوتاس في كندا، وجمهوريات الاتحاد السوفيتي (سابقاً)، والولايات المتحدة الأمريكية، وألمانيا. ويبلغ احتياطي العالم العربي من البوتاس ما يقارب ٤٪ من الاحتياطي العالمي. ومن أهم الدول العربية المنتجة للبوتاس الأردن (من مياه البحر الميت)، وتوجد نسب قليلة في المغرب وتونس وليبيا.</p><h2>صناعة الأسمدة عديدة العناصر :</h2><p>من خلال الشكل (٨-١) يتضح أن الأسمدة عديدة العناصر تنقسم إلى صنفين، هما: أسمدة مركبة، وأخرى مخلوطة.</p><p>١- الأسمدة المركبة: وتنقسم إلى صنفين، هما:</p><p>أ) أسمدة ثنائية: حيث تحتوي على عنصرين أساسيين، مثل: النيتروجين والفسفور، أو النيتروجين والبوتاسيوم، أو الفسفور والبوتاسيوم.</p><p>ب) أسمدة مركبة ثلاثية: حيث يحتوي المركب على العناصر الثلاثة الأساسية لنمو النبات، وهي: النيتروجين، والفسفور، والبوتاسيوم.</p><p>١٤٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

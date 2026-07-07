@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-20.jpeg" alt="img-20.jpeg" /><p>٥- أجب عن الأسئلة التي تلي البيتين الآتين:</p><p>لئن طغى في رباها العلج وأسفي! ومزق الشعب تشريد وتقتيل
+فإن همتها بالله عالية وليس في رفضها للذل تأويل</p><p>أ - املأ الفراغ بالكلمة المناسبة فيما يأتي:</p><p>- مرادف كلمة (تشريد): (...)</p><p>- ضد كلمة (رفضها): (...)</p><p>- جمع كلمة (همتها): (...)</p><p>ب - وضح الصورة البلاغية في قوله: (مزق الشعب) مبيناً قيمتها الفنية.</p><p>ج- لم كتبت الهمزة في الكلمتين: (لئن - تأويل) بهذه الصورة؟</p><h2>التعبير</h2><h3>١- التعبير الشفهي</h3><p>تحدث عن بطولة مجاهد قام بعملية استشهادية فدائية ضد الصهاينة، ثم نال الشهادة التي كانت أغلى أمنياته، موضحاً دور الشباب في حماية الأوطان والمعتقدات والمقدسات.</p><h3>٢- التعبير الكتابي</h3><p>اكتب قصة قصيرة عن الليلة الأخيرة لمجاهد أو مجاهدة من أبناء فلسطين قام بعملية فدائية، متخيلاً أعماله الأخيرة بأسلوب الفن القصصي.</p><h2>نشاط ذاتي</h2><p>ابحث عن قصيدة شعرية - أعجبتك - تناولت قضية القدس بشكل خاص، أو فلسطين بشكل عام، ثم اعرضها على معلمك، وزملائك أو شارك بها في صحيفة المدرسة أو الفصل.</p><p>٨٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

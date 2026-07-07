@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-140.jpeg" alt="img-140.jpeg" /><p>شكل (١)</p><p>٤- ضع لوح الزجاج على لوح الزنك وراقب ورقتي الكشاف، ماذا تلاحظ؟ إعط تفسيراً لملاحظاتك؟</p><p>٥- اشحن لوح الزنك بشحنة موجبة وكرر نفس الخطوات السابقة</p><p>وراقب ورقتي الكشاف الكهربائي هل يظل انفراجها ثابتاً؟ علام يدل عدم انطباقهما؟ ماذا تستنتج من ذلك؟ انظر الشكل (١ ج).</p><h1>ملخص الاستنتاجات:</h1><p>- في حالة إذا كان لوح الزنك مشحوناً بشحنة سالبة فإن انفراج ورقتي الكشاف الكهربائي يقل ثم تنطبقان على بعضهما، والسبب هو أنه عندما يسقط الضوء على سطح معدن الزنك تنطلق منه الإلكترونات سالبة الشحنة (الإلكترونات الضوئية) مما يؤدي إلى تفريغ الكشاف من شحنته السالبة ويصبح متعادل الشحنة فتطبق الورقتان على بعضهما.
+- أما إذا شُحن سطح الزنك بشحنة موجبة فإن شحنته تزداد إيجابية عند سقوط الضوء عليه مما يبقى ورقتي الكشاف على انفراجهما.
+- وإذا وضع لوح زجاجي على سطح معدن الزنك فإن اللوح الزجاجي يمتص الأشعة فوق البنفسجية الساقطة عليه، ويمنعها من الوصول إلى سطح معدن الزنك، الأمر الذي يمنع حدوث الظاهرة الكهروضوئية.</p><h1>الخلية الكهروضوئية:</h1><p>هناك أنواع عديدة من الخلايا الكهروضوئية، ومنها ما هو مبين في الشكل (٢). وتتكون من أنبوب أو انتفاخ من الكوارتز مفرغ من الهواء (لماذا؟) ويحوي داخله صفيحة معدنية مقعرة حساسة للضوء تدعى المهبط (C). هذه الصفيحة تكون باعثة للإلكترونات الضوئية عند سقوط ضوء عليها بتردد مناسب، يقابلها قضيب معدني رفيع (حتى لا يحجب الضوء الساقط على المهبط) يوضع في مركز تكرر الصفيحة المقعرة (لماذا؟) ويدعى المصعد (A).</p><p>١٤٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

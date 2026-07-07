@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><h1>الدُّجَى الْمَشْبُوه</h1><p>عبد الله البردوني</p><h2>التعريف بالشاعر</h2><p>ولد عبدالله بن صالح البردوني عام ١٩٢٨م، في قرية البردون بالحدأ محافظة ذمار. أصيب بالجدري عام ١٩٣٣م، ففقد بصره. التحق بكتاب القرية عام ١٩٣٤م، فحفظ الكثير من القرآن الكريم، وأكمل دراسة القرآن الكريم في المدرسة الشمسية في مدينة ذمار.</p><p>اعتقل عام ١٩٤٨م، وسجن تسعة أشهر بسبب شعره المناهض للحكم البائد. وقال في معاناته تلك:</p><p>هَدَّنِي السِّجْنَ وَأَوْهَى الْقَيْدَ سَاقِي فَتَعَابَيْتُ بِجَرْحِي وَوَثَاقِي
+وَأَضَعْتُ الْخَطَرَ فِي شَوْكِ الدُّجَى وَالْعَمَى وَالْقَيْدَ وَالْمَجْرَحَ رَفَاقِي</p><p>وفي العام التالي انتقل إلى مدينة صنعاء ليواصل دراسته في الجامع الكبير، ثم انتقل إلى دار العلوم بصنعاء وحصل على إجازة (شهادة) العلوم الشرعية والتفوق اللغوي. وفي عام ١٩٥٣م، عين مدرساً في الدار نفسها.</p><p>عمل محامياً، ومديراً لإذاعة صنعاء. انتخب رئيساً لاتحاد الأدباء والكتاب اليمنيين عام ١٩٧٠م. نال جوائز: أبي تمام بالموصل في العراق ١٩٧١م، مهرجان جرش الرابع بالأردن ١٩٨١م، شوقي وحافظ بالقاهرة ١٩٨١م، سلطان العويس ١٩٨٣م، وقد تقلّد وسامي الأدب والفنون في عدن ١٩٨٢م، وفي صنعاء ١٩٨٤م، واختير بوصفه أبرز شاعر ضمن استبيان ثقافي عام ١٩٩٧م.</p><p>والبردوني شاعر متفرد لأنه جمع بين الشكل القديم للقصيدة والحداثة الشعرية في المضمون، وشعره فيه الكلاسيكي والرومانسي والواقعي. وفي كل أشعاره اشتهر بالتجديد والابتكار. وفي تصويراته الشعرية طرافة وسخرية وعمق أحياناً، مثل قوله:</p><p>١٠٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

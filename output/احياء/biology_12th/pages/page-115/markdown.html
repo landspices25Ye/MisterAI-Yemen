@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الثلاسيميا لا يتم إنتاج هيموجلوبين البالغين، وقد وجد أن السبب في ذلك هو انتقال الجينات المسببة للمرض من الآب والأم إلى الأبناء؛ حيث إن الجين المسؤول عن إنتاج الهيموجلوبين الجيني هو $‫H^F‬$ أما الجين المسؤول عن إنتاج هيموجلوبين البالغين فهو $‫H^A‬$. ولهذا فالإنسان غير المصاب يكون تركيبه الجيني $‫H^AH^A‬$ والإنسان المصاب بالمرض إصابة كاملة فيكون تركيب الجيني $‫H^FH^F‬$ وأما الإنسان المصاب الذي يكون تركيبه الجيني $‫H^AH^F‬$ فتكون إصابته بدرجة قليلة، ويظهر المرض في جيل الأبناء عند ما يتزوج رجل تركيبه الجيني $‫H^AH^F‬$ من امرأة تحمل نفس التركيب الجيني ويكثر ظهور حالات الإصابة بهذا المرض في زواج الأقارب وخاصة عندما يكون المرض موجوداً بين أفراد الأسرة أو القبيلة أو العشيرة التي ينحصر التزاوج بين أفرادها.</p><h2>النقاط (٨)</h2><p>توصل إلى احتمالات ظهور مرض الثلاسيميا بين الأفراد الناجمة من الأبناء عند حصول التزاوج بين رجل تركيبه الجيني $‫H^AH^F‬$ وامرأة تركيبها الجيني $‫H^AH^F‬$، محدداً نسبة الأطفال المصابين بالمرض ونسبة الأطفال ذوي الإصابة المتوسطة بالمرض والأطفال غير المصابين.</p><p>وعادة ما تكون خلايا الدم الحمراء في الطفل المصاب بالمرض $‫H^FH^F‬$ هشة وسريعة التكسر في أثناء مرورها في الكبد أو الطحال، وتكون كفاءة الهيموجلوبين في نقل الأكسجين منخفضة، وعادة ما تظهر أعراض المرض في العشر السنوات الأولى من عمر الطفل ويبدو عليه أعراض فقر الدم الحاد كالشحوب وبطء في النمو، كما يتضخم الطحال ويتراكم الحديد فيه وفي أجزاء أخرى من الجسم مما يؤدي إلى ظهور مشاكل في القلب والكبد والكلى قد تسبب الوفاة للطفل، ويتم علاج الطفل عن طريق تغيير دمه باستمرار.</p><p>وأما الشخص الذي يحمل التركيب الجيني $‫H^AH^F‬$ فتكون إصابته بدرجة قليلة وتظهر الأعراض السابقة في مراحل عمرية متأخرة ولكن بدرجة أقل مما يعني أن الجين $‫H^F‬$ المسبب للمرض يكون له بعض الآثار في ظهور أعراض المرض في الفرد الهجين أي إن سيادة الجينات تكون ناقصة، ولا يظهر المرض إلا في وجود التركيب الجيني في صورته النقية $‫H^FH^F‬$. ويحصل الشيء نفسه بالنسبة لتوارث مرض فقر الدم المنجلي الذي ينتشر بين السود في أمريكا وأفريقيا.</p><p>١١٥</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

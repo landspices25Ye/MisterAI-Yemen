@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>إما أن ينتقل الإلكترون من المستوى الثالث ( $‫n_i = 3‬$ ) إلى المستوى الأول (الأرضي) ( $‫n_f = 1‬$ ) أو أن ينتقل من المستوى الثالث ( $‫n_i‬$ ) إلى المستوى الثاني، ثم ينتقل من المستوى الثاني إلى المستوى الأرضي ( $‫n_f = 1‬$ ) انظر الشكل (١٩ ب). ولحساب هذه الأطوال الموجية للانتقالات الممكنة تستخدم العلاقة (١٥).
+(١) الطول الموجي الناتج عن الانتقال من المستوى الثالث إلى المستوى الأول.</p><p>حيث $‫n_i = 3‬$‫ ، ‬$‫n_f = 1‬$‫</p><p>‬$‫R_H = \frac{1}{\lambda} = \frac{1}{\lambda^2} R_H = \frac{1}{2\pi} - \frac{1}{1} R_H = \frac{1}{2\pi} R_H = \frac{1}{2\pi} \text{ سم}^{-1}‬$‫</p><p>‬$‫\therefore \lambda = \frac{9}{R_H \times \lambda} = \frac{9}{1.09677,58 \times \lambda} = 1.025734 \times 10^{-5} \text{ سم}^{-1} = 1.025,7 \text{ أنجستروم}‬$‫</p><p>‬$\lambda = 1.025,7$‫ أنجستروم، هذا الخط ينتمي إلى سلسلة ليمان.</p><p>(٢) الطول الموجي الناتج عن الانتقال من المستوى الثالث إلى المستوى الثاني.</p><p>حيث ‬$n_i = 3$‫ ، ‬$n_f = 2$‫</p><p>‬$‫R_H = \frac{1}{\lambda} = \frac{1}{2\pi} R_H = \frac{1}{2\pi} - \frac{1}{4} R_H = \frac{5}{36} R_H‬$‫</p><p>‬$‫\therefore \lambda = \frac{36}{R_H 5} = 6.6547 \times 10^{-5} \text{ سم}^{-1} = 6564,7 \text{ أنجستروم}‬$‫</p><p>وهو الخط الطيفي الأول (أي الطول الموجي الأول) من سلسلة بالمر شكل (١٩ ب).</p><p>(٣) الطول الموجي الناتج عن الانتقال من المستوى الثاني إلى المستوى الأول.</p><p>حيث ‬$n_i = 2$ ، $n_f = 1$‫</p><p>‬$‫R_H = \frac{1}{\lambda} = \frac{1}{2\pi} R_H = \frac{1}{2\pi} - \frac{1}{4} R_H = \frac{1}{4} R_H = \frac{3}{4} R_H‬$</p><p>$‫\therefore \lambda = \frac{4}{R_H \times 3} = 1.2157 \times 10^{-5} \text{ سم}^{-1} = 1215,7 \text{ أنجستروم}‬$</p><p>وهذا الخط ينتمي إلى سلسلة ليمان، انظر الشكل (١٩ ب).</p><p>١٣٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>مبدأ العد ومبرهنة ذات الحدين</p><h1><strong>مثال (٢ - ٣)</strong></h1><p>يتكون مجلس إدارة إحدى المؤسسات من خمسة أشخاص، فيكم طريقة يمكن اختيار رئيساً ونائباً وأمين سر من بين أعضاء مجلس الإدارة ؟</p><h1><strong>الحل :</strong></h1><p>- بما أن مجلس الإدارة يتكون من خمسة أفراد ،
+- إذن عدد الطرق الممكنة لاختيار الرئيس = ٥ طرق ،
+- وعدد الطرق الممكنة لاختيار النائب = ٤ طرق ،
+- وعدد الطرق الممكنة لاختيار أمين سر = ٣ طرق .</p><p>وحسب مبدأ العد :</p><p>فإن عدد الطرق الممكنة لاختيار الرئيس ثم النائب ثم أمين سر = ٣ × ٤ × ٥ = ٦٠ طريقة .</p><h1><strong>مثال (٢ - ٤)</strong></h1><p>أرادت إدارة المرور عمل لوحات معدنية للسيارات تبدأ رموز كل منها من اليمين بحرف من حروف الهجاء العربية متبوع بأربعة أرقام من مجموعة الأرقام { ١ ، ٢ ، ٣ ، ٩ ، ... }، كم لوحة مختلفة يمكن صنعها في الحالتين التاليتين :</p><p>أ) مع تكرار الأرقام ؟
+ب) بدون تكرار الأرقام ؟</p><h1><strong>الحل :</strong></h1><p>أ) إذا كان تكرار الأرقام مسموحاً:</p><p>يملا الفراغ الأول بـ ٢٨ طريقة مختلفة ( لأن عدد الأحرف الهجائية ٢٨ حرفاً ، ويملا أي من الفراغات الأربعة الأخرى بـ (٩) طرق مختلفة .</p><p>ويكون عدد اللوحات التي يمكن صنعها في هذه الحالة = ٢٨ × ٩ × ٩ × ٩ × ٩ = ١٨٣٧٠٨ لوحة .</p><p>ب) إذا لم يكن تكرار الأرقام مسموحاً ؛ فإنه يمكن ملء الفراغات الخمسة بطرق مختلفة على النحو التالي :</p><p>يملا الفراغ الأول بـ ٢٨ طريقة ، ويملا الفراغ الثاني بـ (٩) طرق ، ويملا الفراغ الثالث بـ (٨) طرق ، ويملا الفراغ الرابع بـ (٧) طرق ، ويملا الفراغ الخامس بـ (٦) طرق :</p><p>يكون عدد اللوحات التي يمكن صنعها في هذه الحالة = ٢٨ × ٩ × ٨ × ٧ × ٦ = ٨٤٦٧٢ لوحة .</p><p>٤٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

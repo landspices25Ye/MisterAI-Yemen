@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>جدول (٣) الاعضاء التناسلية الثانوية في الذكر</h1><p>|  الاسم | الوصف | الدور | الاعضاء التناسلية الثانوية  |
+| --- | --- | --- | --- |
+|  البريخ Epididymis | وعاء مُلْصِر (مبطن بنسيج) تتجمع فيه قنوات صادرة من الأنابيب المنوية. | مستودع رئيس للحيوانات المنوية يفرز نسيجه مواد غذائية، ومواد أخرى تحافظ على حيوية الحيوانات المنوية وتعمل على نضجها وتكسبها القدرة على الإخصاب والحركة. | القنوات التناسلية الناقلة  |
+|  الوعاء الناقل Vas deferens | قناة رفيعة سميكة الجدار ممتدة من البريخ وتلتف حول المثانة حتى تلتقي مع قناة الحويصلة المنوية. | نقل الحيوانات المنوية إلى الإحليل.  |   |
+|  الإحليل Urethra | قناة تكونت من اشتراك قنوات الأوعية الناقلة والغدد المساعدة مع قناة المثانة لتصبح مشتركة تمر خلال القضيب وتفتح بالفتحة البولية الخارجية. | نقل البول والحيوانات المنوية  |   |
+|  الحوصلتان المنويتان Seminal Vesicles | زوج من أكياس تقع إلى الجهة الخلفية من المثانة البولية. | إفراز مادة مخاطية غنية بالفركتوز لتزويد الحيوانات المنوية بالطاقة كما تحتوي على حموض دهنية معدلة تعمل على تنبيه انقباض عضلات الرحم، فتساعد في حركة السائل المنوي نحو البويضة. | الغدد التناسلية المساعدة  |
+|  غدة البروستات Prostate gland | غدة تحيط جذر الإحليل. | إفراز سائل قاعدي يعادل حموضة المهبل والسائل المنوي الناتج عن نشاطات الحيوانات المنوية المخزونة.  |   |
+|  غدة كوبر Cowper's gland | غدة تان تفتتحان في الإحليل. | تفرزان كمية قليلة من سائل يساعد في معادلة حموضة بقايا البول في الإحليل.  |   |</p><p>٨٢</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

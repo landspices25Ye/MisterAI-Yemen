@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>ثانياً : مع مشتقات الحموض :</h2><p>١ - تتفاعل الأمينات الأولية والثانوية مع كلوريدات الحموض أو أنهيديدات الحموض؛ لتكوّن الأميدات :</p><p>$‫\text{CH}_3-\text{NH}_2 + \text{CH}_3-\text{CO}-\text{Cl} \longrightarrow \text{CH}_3-\text{NH}-\text{CO}-\text{CH}_3 + \text{HCl}‬$‫
+ميثيل أمين ميثيل أسيتيل أميد</p><p>٢ - تتفاعل الأمينات أيضاً مع حمض النيتروز؛ لتعطي الكحول المناظر لها، ويتصاعد غاز النيتروجين.</p><p>‬$‫\text{C}_2\text{H}_5\text{NH}_2 + \text{HNO}_2 \longrightarrow \text{C}_2\text{H}_5\text{OH} + \text{H}_2\text{O} + \text{N}_2\uparrow‬$‫
+إيثيل أمين كمض النيتروز كحول الإيثيل نيتروجين</p><p>استخدام الأمينات وأهميتها :</p><p>تستخدم الأمينات في صناعة النايلون، حيث يستخدم في هذه الصناعة ١ ، ٦ ثنائي أمينوهكسان ‬$\text{H}_2\text{N}(\text{CH}_2)_6\text{NH}_2$‫ .</p><h2>ثانياً : الأميدات Amides</h2><p>كما ترى في البند (١) أعلاه، تتفاعل الأمينات مع مشتقات الحموض لتكوين الأميدات وتشتق أيضاً من تفاعل الحموض العضوية مع الأمينات.</p><p>‬$‫\text{R}-\overset{\text{O}}{\overset{||}{\text{C}}}-\text{O}-\text{H} + \text{H}-\overset{\text{H}}{\overset{|}{\text{N}}}-\text{R} \longrightarrow \text{R}-\overset{\text{O}}{\overset{||}{\text{C}}}-\overset{\text{H}}{\overset{|}{\text{N}}}-\text{R} + \text{H}_2\text{O}‬$‫
+حمض عضوي أمين أولي أميد</p><h2>التسمية Nomenclature</h2><p>الأميدات مركبات تتميز بوجود المجموعة الوظيفية ‬$\text{O}-\overset{\text{O}}{\overset{||}{\text{C}}}-\text{NH}_2$‫ ، وفيما يأتي تسمية بعض مركبات الأميدات :</p><p>‬$‫\text{CH}_3-\overset{\text{O}}{\overset{||}{\text{C}}}-\text{NH}_2, \text{أسيتاميد} \quad \text{نيكوتيناميد} \quad \text{Nicotinamide} \quad \text{بنزاميد} \quad \text{Benzamide} \quad \text{H}_2\text{N}-\overset{\text{O}}{\overset{||}{\text{C}}}-\text{NH}_2‬$
+أسيتاميد Urea نيبوريا Acetamide</p><p>٩٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

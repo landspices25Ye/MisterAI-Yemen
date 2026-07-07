@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>- ما الجانب من الجسم الذي يصاب بالشلل عند حصول مشكلة للنصف الأيمن من الدماغ؟
+ب - الخيخ (Cerebellum) : ويشكل الجزء الخلفي للدماغ؛ حيث يقع أسفل الفص الخلفي للمخ - الشكل (١٣)، ووظيفته تنظيم الحركات الإرادية للجسم والحفاظة على أترانها؛ مثل: المشي، وحركات اليدين، وغير ذلك.</p><p>- ما الذي يحدث لحركات الإنسان عند حدوث مشكلة للمخيخ؟</p><p>ج- النخاع المستطيل، أو ساق الدماغ (Brain Stem)، ويربط بين الخيخ والحبل الشوكي في العمود الفقاري الشكل (١٣)، ويقوم بتنظيم الحركات الإرادية لبعض أعضاء النصف العلوي من الجسم؛ حيث يوجد به مراكز التنفس، والقلب، والبلع، والسعال، والعطس.</p><p>الحبل الشوكي (Spinal Cord) : ويمتد من النخاع المستطيل داخل العمود الفقاري مشكلاً امتداداً للدماغ؛ حيث تحيط به نفس الأغشية السحائية التي تحيط بالدماغ.</p><p>- ما الأغشية السحائية التي تحيط بالنخاع الشوكي؟</p><p>يتركب نسيج الحبل الشوكي من طبقتين هما الطبقة الخارجية متكونة من المادة البيضاء، والطبقة الداخلية متكونة من المادة الرمادية. الشكل (١٤).</p><img src="img-16.jpeg" alt="img-16.jpeg" /><p>الشكل (١٤) مقطع في الحبل الشوكي يوضح اتصال الأعصاب الشوكية.</p><p>- ما الفرق بين المادة الرمادية، والمادة البيضاء؟</p><p>- قارن بين نوع النسيج في الطبقة الخارجية، والطبقة الداخلية في كل من الدماغ، والحبل الشوكي.</p><p>ويخرج من جانبي الحبل الشوكي (٣١) زوجاً من الأعصاب الشوكية يتصل كل عصب بالحبل الشوكي بجذرين: أحدهما ظهري يحتوي على الألياف والخلايا العصبية الحسية، والجذر الآخر</p><p>٢٢</p><p>الأحياء: النصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

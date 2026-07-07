@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-82.jpeg" alt="img-82.jpeg" /><p>الوحدة الرابعة</p><h2>تمارين ومسائل (٤-١)</h2><p>[١] أوجد معادلة القطع المكافئ الذي يحقق الشروط الآتية :</p><p>أ) الرأس (٠,٠٠) ، البؤرة (٠,٦٠) ب) الرأس (٠,٠٠) ، والبؤرة (٠,٣٠-).</p><p>ج) الرأس (٠,٠٠) ، ومعادلة الدليل ص = ٢ د) البؤرة (٠,٠٠ - ٥/٢) ، ومعادلة الدليل ص = ٥/٢</p><p>[٢] أوجد إحداثي البؤرة ومعادلة الدليل ، ثم ارسم القطع المكافئ في الحالات التالية :</p><p>أ) ص² = ٨ س ب) ص² = ٦ س</p><p>ج) س = ص² د) ص² = ١٠ س</p><p>هـ) ص² = ٨ س و) ص² = ٤/٩ س</p><p>[٣] أوجد معادلة القطع المكافئ الذي رأسه نقطة الأصل ومحوره هو المحور السيني ويمر بالنقطة (٦-٨).</p><p>[٤] أثبت أن النقطة (٣, ٣) تقع داخل القطع المكافئ ص² = ٦ س.</p><p>[٥] أوجد معادلات القطع المكافئة في الحالات التالية :</p><p>أ) الدليل س = ٨ ، البؤرة (٢, ٢)</p><p>ب) الدليل ص = ٧- ، البؤرة (٢, ١)</p><h2>القطع الناقص ٤-٣</h2><p>تأمل الشكل (٤-١١): لتكن ١، ٢، ٣ نقطتين ثابتتين ، والنقطة و تتحرك في مستوى هاتين النقطتين بحيث يكون ١ و ٢ و ٣ | ١ و ٢ و ٣ | طولاً ثابتاً ، نلاحظ أن و ترسم منحنيّاً يسمى قطعاً ناقصاً [شكل (٤-١١ ب)].</p><img src="img-83.jpeg" alt="img-83.jpeg" /><p>شكل (٤-١١)</p><img src="img-84.jpeg" alt="img-84.jpeg" /><p>١١٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

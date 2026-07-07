@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>غُربة الرُّوح</h1><p>بدر شاكر السيَّاب</p><h2>التعريف بالشاعر</h2><p>ولد بقرية جيكور في البصرة جنوبي العراق عام ١٩٢٦م، وبعد ولادته بست سنوات توفيت والدته، فعاش حياته محروماً من عطف الأم.</p><p>درس في دار المعلمين في بغداد، وكان ينظم الشعر في المناسبات الأدبية، ولكن لخجله لم يكن يعلن عن نفسه، وبعد تخرجه بدأت حياته الأدبية، ونشرت قصائده لأول مرة في جريدة الاتحاد.</p><p>تنقل بين بيروت وباريس ولندن من أجل العلاج من مرض السّل، وفي عام ١٩٦٤م، توفي - رحمه الله - فقيراً، كما عاش فقيراً معدماً، غير أنه ترك إرثاً شعرياً كبيراً.</p><p>أصدر عدة دواوين شعرية منها: أزهار ذابلة، وأنشودة المطر، والمعبد الغريق، ومنزل الأقنان، وفجر السلام، وهذا الأخير قصيدة واحدة مطولة.</p><p>يقول من قصيدة (غريب على الخليج) يصور شوقه للعراق:</p><p>هي وجه أمي في الظلام</p><p>وصوتها يتزحقان مع الرؤى حتى أنام</p><p>وهي النخيل أخاف منه إذا ادلهم مع الغروب</p><p>فاكتظ بالأشباح تخطف كل طفل لا يؤوب</p><p>من الدروب</p><p>ويُعد السيَّاب من أوائل من كتبوا الشعر الحر، وأول شاعر وظف الأسطورة في شعره، وأول من وحد بين الرموز وتوحد بها.</p><p>كتب عنه ما يزيد عن أربعمائة كتاب بالعربية والإنجليزية والفرنسية وغيرها، والعشرات من المراجع التي تتعلق بشعره، وترجمت الكثير من أشعاره.</p><p>وهو من الشعراء الريفيين الذين هاجروا إلى المدن، فعبروا في أشعارهم عن الاغتراب النفسي والاجتماعي الذي أصابهم، يضاف إلى ذلك خيبة أمل شاعرنا في الحصول على عمل مناسب، لهذا حفل شعره بالحديث عن قريته جيكور، ومن ذلك قصيدته التي منها هذا النص الذي ينتمي إلى المدرسة الواقعية.</p><p>١٢٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

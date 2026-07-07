@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>السلم الزمني للسجل الجيولوجي:</h2><p>استغرق وضع السجل الجيولوجي بشكله الحديث حوالي قرنين من مجهود الجيولوجيين والعلماء بصورة عامة. وكان اعتمادهم في المرحلة الأولى على تحديد التاريخ النسبي للطبقات، ومن ثم تمكنوا من ترتيب السلم الزمني للسجل الجيولوجي (Geologic Time Scale)، وباستخدام الساعات النووية في تحديد التاريخ المطلق للصخور والأحداث الجيولوجية على الكرة الأرضية. وبذلك استطاع العلماء أن ينسبوا أي حدث إلى فترته الزمنية؛ بحيث حدد عمر كل دهر وحقبة وعصر وكل حدث جيولوجي بوحدات الزمن المطلق بدلالة ملايين السنين.</p><h3>نبذة عن تاريخ الأرض</h3><h4>١- دهر ما قبل الكمبري (دهر الحياة الخفية Cryptozoic Eon):</h4><p>بدأ هذا الدهر منذ نشأة الأرض، أي قبل حوالي (٤٦٠٠) مليون سنة، وانتهى بداية عصر الكمبري قبل (٥٧٠) مليون سنة، وهو أطول الدهور الجيولوجية، ودلائل الحياة فيه غير واضحة ونادرة بسبب قلة الأحافير التي عثر عليها. ويعتقد العلماء بأن الحياة بدأت في البحار قبل حوالي (٣٥٠٠) مليون سنة، وكانت الكائنات الحية بدائية النوى وهي بكتيريا خضراء مزرقة، ومنذ (١٥٠٠) مليون سنة ظهرت الكائنات حقيقية النوى وهي طحالب خضراء بسيطة كانت تقوم بعملية البناء الضوئي فأدى ذلك إلى زيادة نسبة O₂ في الغلاف الجوي. وفي أواخر هذا الدهر قبل حوالي (٧٠٠) مليون سنة ظهرت كائنات حية متعددة الخلايا، لكنها تفتقر إلى هيكل صلب مثل الفطريات والديدان البسيطة، ومن المناطق التي عثر فيها على هذه الأحافير على هيئة طبقات وتفحيمات استراليا.</p><p>أما الصخور التي تكونت في هذا الدهر فأغلبها نارية ومتحولة، وقليل من الصخور الرسوبية، وتشكل أقدم المناطق في القارات وتسمى الدروع، ومن الأمثلة على هذه الدروع: الدرع العربي.</p><h4>٢- حقبة الحياة القديمة (Paleozoic Eon):</h4><p>استمرت هذه الحقبة من حوالي (٥٧٠) مليون سنة إلى (٢٤٥) مليون سنة، أي نحو (٣٢٥ مليون سنة). وتتميز بوفرة الأحافير في صخورها، ويرجع ذلك إلى ظهور</p><p>الأحياء الصنف الثالث الثانوي</p><p>٢٠٩</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

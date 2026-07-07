@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>النشاط (١)</h2><p>إذا كان المتبقي في حوض صنعاء مثلاً في عام ٢٠٠٠م، حوالي ١٠ مليار م³ من الماء واستمر السحب السنوي في حدود ٨٠٠ مليون م³، وكان معدل التعويض (التجدد) هو ٢٦٥ مليون م³ كل عام ففي أي عام يتوقع نضوب مياه الحوض؟</p><h2>النشاط (٢)</h2><p>ادرس الجدول المقابل بعناية، ثم أجب عن الأسئلة الآتية في كراسة الأنشطة:</p><p>- ما نسبة نصيب الفرد من الماء في اليمن إلى نصيب الفرد في آسيا؟
+- لماذا نصيب الفرد في مصر أعلى من نصيب الفرد في اليمن بالرغم من ارتفاع عدد السكان في مصر؟
+- كم نسبة نصيب الفرد في اليمن إلى حاجة الفرد السنوية؟</p><p>|  نصيب الفرد بالمتر المكعب | استهلاك الماء  |
+| --- | --- |
+|  ٧٥٠٠ | على مستوى العالم  |
+|  ٥٥٠٠ | في أفريقيا  |
+|  ٣٥٠٠ | في آسيا.  |
+|  ٢٠٠٠ | في العالم المتقدم.  |
+|  ١٠٢٥ - ٩٥٠ | في الوطن العربي.  |
+|  ٨٠٠ | في مصر.  |
+|  ١٧٠ | في الأردن.  |
+|  ١٣٧ | في اليمن.  |</p><p>- ما نسبة نصيب الفرد على مستوى الوطن العربي إلى نصيب الفرد في العالم المتقدم؟</p><p>وقد اتضح أن حوالي ٩٠٪ من كمية المياه المستخدمة سنوياً في اليمن تستهلك في الجوانب الزراعية، وتذهب معظم هذه المياه في ري مزارع القات.</p><h2>النشاط (٣)</h2><p>نقاش جماعي حول أهم المعالجات التي يمكن اتباعها للمحافظة على الثروة المائية في بلادنا.</p><h2>٢ - التآكل المستمر للتربة الزراعية:</h2><p>يعتبر تآكل التربة من المشكلات البيئية، ويقدر بـ ٢٥ مليون طن كل عام على مستوى العالم. وتبدو هذه المشكلة بشكل واضح في اليمن نتيجة لعوامل عدة من أهمها:</p><p>١٨٣</p><p>الأحياء للصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

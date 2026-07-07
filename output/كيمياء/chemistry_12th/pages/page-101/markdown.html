@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>١- الحموض الأليفاتية أحادية الأمينو أحادية الكربوكسيل :</h1><p>وهي تلك الحموض التي تحتوي على مجموعة أمينو ($‫\text{NH}_2‬$) - واحدة ومجموعة كربوكسيل ($‫\text{COOH}‬$) - واحدة، وهذه المركبات متعادلة تقريباً في تفاعلاتها، ومن أمثلة هذه الحموض (الجلايسين) و (الألانين).</p><img src="img-79.jpeg" alt="img-79.jpeg" /><img src="img-80.jpeg" alt="img-80.jpeg" /><p>- لاحظ الاختلاف بين تركيب الحمضين، وقارن ذلك بتعريف الحمض الأميني.</p><h1>٢- الحموض الأليفاتية أحادية الأمينو ثنائية الكربوكسيل :</h1><p>وهي الحموض التي تحتوي على مجموعة أمينو واحدة ومجموعتي كربوكسيل، وهذه مركبات حمضية في تفاعلاتها، ومن أمثلتها:</p><img src="img-81.jpeg" alt="img-81.jpeg" /><p>حمض الجلوتاميك</p><img src="img-82.jpeg" alt="img-82.jpeg" /><p>حمض الأسبارتيك</p><h1>٣- الحموض الأليفاتية ثنائية الأمينو أحادية الكربوكسيل :</h1><p>وهي حموض يحتوي الجزيء فيها على مجموعتي أمينو ومجموعة كربوكسيل واحدة. وهذه الحموض مركبات قاعدية في تفاعلاتها، ومن أمثلتها:</p><img src="img-83.jpeg" alt="img-83.jpeg" /><p>أرجنين</p><img src="img-84.jpeg" alt="img-84.jpeg" /><p>لايسين</p><p>٩٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

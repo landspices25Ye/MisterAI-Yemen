@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-33.jpeg" alt="img-33.jpeg" /><h2>تحليل وتدقيق</h2><p>هذا النص من نوع المقال الاجتماعي الذي ينتمي إلى المدرسة الكلاسيكية، وهو يمثل مرحلة متقدمة من مراحل تطور النثر، حيث الاتجاه إلى معالجة مشاكل الحياة من ناحية الموضوع، والعناية بالنسيج اللغوي، والتعمق بالفكرة، والتحرر من قيود الصناعة. يتناول النص فكرة رئيسية يضرب لها الأمثلة في شيء من الإطناب غير الممل بل يخدم الموضوع، فلا يترك فكرته غامضة. ويحرص على توضيح الفكرة وتأكيدها عن طريق تكرار التعبير، أو أن يلبسها أثواباً لغوية جديدة، كقوله: «من عد كرسيه تكليفاً لا تشريفاً، ورآه للخدمة لا وسيلة للجاه، أول ما يفكر فيه قومه وآخر ما يفكر فيه نفسه...».</p><p>كل ذلك تناوله في تسلسل في الأفكار، وبأسلوب جذاب، حتى لا يدع فرصة للقارئ أن يترك النص قبل أن يتمه.</p><p>واللفاظ الكاتب واضحة الدلالة، وجمله قصيرة، فيها نوع من الإيقاع يزيد من تأثير الفكرة، كقوله: «له صبر على الشك، وغرام بالتفكير، وبطء في الجزم...».</p><p>ويميل إلى تكرار بعض الألفاظ والتعابير للتأكيد وترسيخ الفكرة، كتكرار كلمة (رجلاً) أو (كانت (لا) منه) أو (وهو لهذا)..</p><p>ومن أساليب الإنشاء استخدام الاستفهام للتمني في قوله: (من لنا ببرامج دقيق للرجولة) وقوله: (ومن يبادلني فيأخذ كل برامج التعليم).. بينما سيطر الأسلوب الخبري على بقية النص لأن الكاتب أراد التقرير وإبراز الفكرة.</p><p>ومن أظهر ضروب الصناعة في النص الطباق الذي يرد من غير ما تكلف، يسوقه بوصفه جزءاً أصيلاً من الفكرة، من ذلك: «أول وآخر، الصواب والخطأ، النفع والضرر»، والمقابلة في قوله عن العالم الرجل: «لا يفرح بالجديد لجدته، ولا يكره القديم لقدمه»، وقوله: «يفضل قول الحق وإن أهين، على قول الباطل وإن أكرم» وعن الصانع الرجل ما يشبه ذلك: «يرفض ربحاً كثيراً مع الخداع، ويقنع بربح معتدل مع الصدق...».</p><p>٨٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

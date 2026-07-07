@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>بطني يحتوي على ألياف الخلايا العصبية الحركية، يندمج الجدران ليكونا العصب الشوكي الذي يتكون من نوعين من الألياف العصبية الحسية والحركية، لهذا تسمى الأعصاب المختلطة، حيث تقوم بنقل السبالات العصبية الحسية والحركية بين أجزاء الجسم والحبل الشوكي في حركة دائمة تسمى رد الفعل العصبي المنعكس .</p><h3>رد الفعل العصبي المنعكس Reflex Action</h3><p>يتم الإحساس بالمؤثرات الخارجية وحدوث الإستجابة المناسبة لها في عملية مستمرة تسمى رد الفعل العصبي المنعكس، يمثل رد الفعل العصبي استجابة غير إرادية تلقائية للتغيرات الحادثة داخل الجسم أو خارجه، ويتدخل الدماغ في عمل بعض الأفعال المنعكسة كرمش العين عند اقتراب جسم منها، بينما لا يتدخل في بعضها الآخر كسحب اليد بسرعة عند ملامستها فجأة جسماً ساخناً، حيث يقوم بذلك الحبل الشوكي وفقاً لما يلي:</p><p>١ - يؤدي تنبيه النهايات العصبية (مستقبلات الألم في الجلد) بواسطة الحرارة إلى تكوين سيالات عصبية تنتقل عبر الخلية العصبية الحسية.</p><img src="img-17.jpeg" alt="img-17.jpeg" /><p>الشكل (١٥) القوس العصبي المنعكس.</p><p>٢ - تدخل السبالات العصبية إلى الحبل الشوكي وتنبه الخلية العصبية البينية والتي تنبه بدورها الخلية العصبية الحركية لتعطي سيالات تسبب انقباض العضلة الهيكلية والعضو المتأثر
+مسببة سحب اليد بعيداً عن الجسم الساخن .
+من خلال ملاحظاتك للشكل (١٥) ما الأجزاء التي يتألف منها القوس العصبي المنعكس ؟.</p><p>الأحياء للصف الثالث الثانوي</p><p>٢٣</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>ولكن هل طريقة المضاهاة الصخرية تؤدي دائماً إلى نتائج صحيحة؟
+لقد اتضح للعلماء أن فاعلية هذه الطريقة تكون جيدة عند استعمالها في المضاهاة والمقارنة بين قطاعات قريبة من بعضها البعض، أما في حالة استعمالها في المناطق المتباعدة فقد لا تؤدي إلى نتائج صحيحة، لأن الترسيبات غالباً ما تكون مختلفة.
+ولهذا فإنه يلزم الاعتماد على نوع آخر من المضاهاة، وهي المضاهاة الزمنية بواسطة الأحافير (المضاهاة الأحفورية).</p><h3>ب - المضاهاة الأحفورية (Biocorrelation)</h3><p>هي عملية مضاهاة أو توافق بين الطبقات في أماكن مختلفة لتحديد أعمارها النسبية بالاعتماد على الأحافير التي تحتويها هذه الطبقات، فكل طبقة أو مجموعة من الطبقات تتميز بأنواع معينة من الأحافير تفيد في التعرف على عمرها وترتيبها بين الطبقات الأخرى. وذلك لأن كل فترة زمنية من التاريخ الجيولوجي تميزت بانتشار أنواع معينة من الكائنات الحية، وبقايا هذه الكائنات أو آثارها في الصخور تدلنا على فترة زمنية واحدة تكونت في أثنائها تلك الصخور، كما عرفنا في مبدأ تعاقب الحياة.</p><img src="img-158.jpeg" alt="img-158.jpeg" /><p>الشكل (٢١) المضاهاة الأحفورية بين مقطعين للحافة بينهما بعيدة</p><p>فإذا وجدت هذه الأحافير في طبقات صخرية في منطقتين متباعدتين، فهذا يدلنا على أن هذه الطبقات تكونت في أثناء فترة زمنية واحدة، رغم وجود اختلافات شديدة في صفات الصخور الفيزيائية وتركيبها المعدني المكونة لهذه الطبقات كما تلاحظ بالشكل (٢١).</p><p>٢٠٠</p><p>الأحياء للصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

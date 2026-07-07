@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-174.jpeg" alt="img-174.jpeg" /><p>الوحدة السادسة</p><p>[٥] عددان مجموعهما ١٦ ، أوجد العددين إذا كان مجموع مربعيهما أصغر ما يمكن .</p><p>[٦] أوجد القيم القصوى لكل من الدوال التالية :</p><p>أ) ص = س² + ٤ س + ٦ .
+ب) ص = س (س - ١)² .
+ج) ص = س² / (س - ١) ، س = ١ .
+د) ص = س | س - ٤ | .</p><p>[٧] إذا كانت د(س) = س³ - ٣ س² + ١ . أوجد فترات التقعر لمنحنى الدالة للأعلى وللأسفل ، ونقاط الانعطاف .</p><p>[٨] استخدم المشتقة الثانية في إيجاد القيم القصوى ونقاط الانعطاف لمنحنى الدالة</p><p>د(س) = س⁴ - ٢ س² موضحاً فترات التقعر نحو الأعلى والأسفل لمنحنى الدالة .</p><p>[٩] إذا كانت د(س) = ١/٣ س³ - ٣ س² + ٨ س . أوجد فترات التقعر للأعلى وللأسفل ونقاط الانقلاب .</p><p>[١٠] أوجد قيم كل من t ، ب بحيث تكون النقطة (١ ، ٣) نقطة انعطاف للمنحنى ص = t س³ + ب س² .</p><p>[١١] ارسم شكلاً لبيان منحنى الدالة د في الفترة [١ ، ٣] بدلالة المعلومات التالية :</p><p>د(١) = ٠ ، د(٣) = ٤ ، د(س) < ٠ ، v س ≥ [١ ، ٣] ، د(س) < ٠ ، v س ≥ [١ ، ٣]</p><p>[١٢] ارسم منحنى الدالة د(س) = جا ٣ س في الفترة [ ٠ ، ٢ / ٣ ] .</p><h2>دراسة تغيير الدالة</h2><p>٦ - ٩</p><p>الفروع اللانهائية :</p><p>تعريف (٦ - ٣)</p><p>نقول أن للدالة د فرعاً لانهائياً إذا كان من الممكن أن يسعى أحد المتغيرين إلى اللانهائية (الموجبة ، أو السالبة ) ، أي إذا حوت مجموعة تعريف هذه الدالة أو مداها فترة من الشكل [∞ ، t] أو من الشكل [t - ∞ ، t] .</p><p>فمثلاً : إذا كانت الدالة د(س) = ١/س تلاحظ أن :</p><p>م.ت = ح* = [∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞ ، ∞</p><p>أي أن مجموعة تعريفها تحتوي على فرعان لانهائيان .</p><p>نهياً د(س) = ∞ + ∞ ،</p><p>نهياً د(س) = ∞ - ∞ ، أي أن مدى</p><p>الدالة يحتوي أيضاً على فرعان لانهائيان . وبالتالي</p><p>فإن للدالة د أربعة فروع لانهائية كما في الشكل (٦ - ١٤) .</p><img src="img-175.jpeg" alt="img-175.jpeg" /><p>الشكل (٦ - ١٤)</p><p>٢٠٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>هـ - اذكر وزن الكلمات الآتية:</p><p>(توارب - شقوق - يصغون - بقايا).</p><p>٦ - ضع علامات الترقيم المناسبة في مواضعها من الفقرة الآتية:</p><p>في وصفها لمدينة صنعاء تقول الكاتبة الإنجليزية «هيلين روجرز» تعد مدينة صنعاء من أقدم وأجمل مدن العالم وهي عاصمة الجمهورية اليمنية وطابع فنها المعماري يعد فريداً من نوعه ويعتمد على الطين والأحجار والأجر».</p><h2>التعبير</h2><h3>١- التعبير الشفهي</h3><p>تخاور مع زملائك عن الأهمية التاريخية لمدينة صنعاء، وما تزخر به من موروث حضاري فريد، موضحاً المقترحات والحلول التي تراها مناسبة وضرورية لإبراز مكانتها التاريخية والحفاظ عليها.</p><h3>٢- التعبير الكتابي</h3><p>اكتب مقالاً عن «صنعاء عاصمة للثقافة العربية» مبيناً فيه المؤهلات والمقومات الحضارية المختلفة التي تتمتع بها وتؤهلها لاحتلال هذه المكانة الثقافية، مستعيناً بما ورد من أفكار في الموضوع، وفي التعبير الشفهي.</p><h3>نشاط ذاتي</h3><p>صمم بطاقات ومطبوعات للتعريف بمدينة صنعاء القديمة بما تشتمل عليه من أسواق ومساجد وفن معماري فريد.</p><p>٢٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-69.jpeg" alt="img-69.jpeg" /><p>وفي حالة الانحياز العكسي تتحرك الفجوات الموجبة نحو القطب السالب للبطارية (أو الطرف السالب للدائرة الكهربائية) بسبب التجاذب، وتتحرك الإلكترونات نحو القطب الموجب للبطارية (أو الطرف الموجب للدائرة الكهربائية) بسبب التجاذب، ويزداد تبعاً لذلك حاجز الجهد (انظر الشكل ٨)، فلا يمر في دائرة الوصلة الثنائية سوى تيار ضعيف جداً من حاملات الشحنة غير السائدة، وقد لا يمر تيار كهربائي.</p><h2>استخدام الوصلة الثنائية في تقويم التيار المتردد</h2>
+P-N Junction As Rectifier</p><p>كما ورد سابقاً يتبين أن مقاومة الوصلة الثنائية لمرور التيار الكهربائي المار خلالها في حالة الانحياز الأمامي تكون صغيرة نسبياً، بينما تكون مقاومتها لهذا التيار الكهربائي في حالة الانحياز العكسي أكبر ما يمكن، أي أن الوصلة الثنائية تسمح فقط لانصاف الذبذبات بالمرور عندما يكون جهد البلورة الموجبة موجباً وجهد البلورة السالبة سالباً. هذه الخاصية التي تمتلكها الوصلة الثنائية، تجعلها تستخدم في تقويم التيار المتردد، والشكل (٩) يوضح دائرة كهربائية تستخدم فيها الوصلة الثنائية في تقويم التيار المتردد، وهذا التقويم هو تقويم نصف موجي غير مكتمل حيث لا تسمح الوصلة الثنائية بمرور أنصاف الذبذبات التي في الاتجاه المضاد أو المعاكس.</p><img src="img-70.jpeg" alt="img-70.jpeg" /><p>الشكل (٩)</p><p>ومن الموصلات الثنائية المعروفة، ثنائية الجرمانيوم وثنائية السيليكون.</p><p>٧٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

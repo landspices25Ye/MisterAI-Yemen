@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التفاصيل</p><h2>تمارين ومسائل (٦-٧)</h2><p>[١] أ) إذا كانت د(س) = س³ + ١ ، أوجد قيم ج الناتجة عن مبرهنة القيمة المتوسطة للدالة د ، حيث د: [٤، ٢-١] ← ح .</p><p>ب) بين فيما إذا كانت م(س) = س³ - ١ تحقق شروط مبرهنة القيمة المتوسطة على الفترة [٣، ١] ، وإذا تحققت ، فأوجد قيم ج الناتجة عن المبرهنة .</p><p>[٢] بين أن الدالة هـ(س) = س³ - ٤ س + ٢ تحقق شروط مبرهنة رول على الفترة [٢، ٢-١] ، ثم أوجد قيمة (قيم) (ج) التي تعينها المبرهنة .</p><p>[٣] طبق مبرهنة القيمة المتوسطة على الدالتين التاليتين وفق الفترة المرافقة لكل منهما ، وإذا تحققت الشروط أوجد قيم ج التي تعينها المبرهنة :</p><p>أ) د(س) = س³/٣ ، v س ⬅ [١، ١-١] .</p><p>ب) د(س) = س³ - س² ، v س ⬅ [٢، ٣-١] .</p><p>[٤] إذا كانت الدالة د(س) = س + ١/س تحقق شروط رول v س ⬅ [٢-١، ب] . أوجد قيمة ب ، ثم قيمة ج التي تعينها المبرهنة .</p><h2>القيم القصوى</h2><p>٦ - ٨</p><p>أولاً : تزايد الدوال وتناقصها :</p><p>تذكر أن :</p><p>إذا كانت الدالة د: [١، ب] ← ح ، v س₁، س₂ ⬅ [١، ب] ، فإن الدالة :</p><p>١ - تزايدية إذا كان س₁ > س₂ ⬅ (د(س₁) > د(س₂))</p><p>٢ - تناقصية إذا كان س₁ > س₂ ⬅ (د(س₁) > د(س₂))</p><p>٣ - ثابتة إذا كان س₁ > س₂ ⬅ (د(س₁) = د(س₂))</p><p>وفي هذا البند نبحث تزايد وتناقص الدوال من خلال المشتقة بناءً على المبرهنة التالية :</p><p>مبرهنة (٦-٦)</p><p>لتكن الدالة د متصلة على الفترة [١، ب] وقابلة للاشتقاق على الفترة [١، ب] وكان :</p><p>١) د(س) > ٠ ، v س ⬅ [١، ب] ، فإن الدالة تزايدية على الفترة [١، ب] .</p><p>٢) د(س) > ٠ ، v س ⬅ [١، ب] ، فإن الدالة تناقصية على الفترة [١، ب] .</p><p>٣) د(س) = ٠ ، v س ⬅ [١، ب] ، فإن الدالة ثابتة على الفترة [١، ب] .</p><p>١٨٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

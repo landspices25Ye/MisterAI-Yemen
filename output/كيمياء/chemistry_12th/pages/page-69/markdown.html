@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>تقويم الوحدة</h2><p>١ - عَرِّف ما يأتي:</p><p>الأكسدة - الاختزال - العامل المختزل - الخلية الجلفانية - جهد الاختزال القياسي - العامل المؤكسد.</p><p>٢ - مثِّل الخلية الجلفانية التي تخص التفاعلين الآتين:</p><p>أ - Mg + 2AgNO₃ → Mg(NO₃)₂ + 2Ag</p><p>ب - Zn + CuSO₄ → Cu + ZnSO₄</p><p>٣ - احسب ق. د. ك للخلية الآتية مستعيناً بالسلسلة الكهروكيميائية:</p><p>Ni / Ni²⁺ // 2Ag⁺ / 2Ag</p><p>٤ - أي التفاعلات الآتية تحدث تلقائياً:</p><p>أ - H₂ + Cl₂ → 2HCl</p><p>ب - 2F⁻ + Cl₂ → 2Cl⁻ + F₂</p><p>٥ - وضِّح التفاعلات التي تحدث داخل المركم الرصاصي عند تشغيل السيارة.</p><p>٦ - ما الخطوات المتبعة لطلاء ملعقة نحاسية بطبقة من الفضة؟</p><p>٧ - ضع علامة (✓) أمام العبارة الصحيحة، وضع علامة (✗) أمام العبارة الخاطئة فيما يأتي:</p><p>أ - عدد التأكسد للأكسجين في CO₂ يساوي - ٢.</p><p>ب - يحدث تفاعل الأكسدة والاختزال تلقائياً إذا كانت قيمة</p><p>جهد التفاعل سالبة.</p><p>ج - تتأكسد ذرات مادة القطب إذا كان جهد اختزالها أقل من</p><p>جهد اختزال أيونات المذاب السالبة.</p><p>د - في الخلايا الجلفانية يكون الكاثود (المهبط) هو القطب</p><p>السالب وتحدث عنده عملية الأكسدة.</p><p>هـ - عند تحليل مصهور كلوريد الصوديوم نحصل على فلز</p><p>الصوديوم عند الأنود (المصعد) وغاز الكلور عند الكاثود</p><p>(المهبط).</p><p>٦٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

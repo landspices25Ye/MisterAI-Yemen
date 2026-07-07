@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-110.jpeg" alt="img-110.jpeg" /><p>شكل (٣)
+أنواع من منتجات الزبادي والجبن</p><p>الجبن واللبن (الحقين والرائب) أطعمة ينتجها الرعاة والمزارعون، الذين يهتمون بتربية الأغنام والأبقار منذ مئات السنين. ويتم إنتاج هذه الأطعمة عن طريق تخمير حليب الأبقار والأغنام بواسطة بعض أنواع من البكتيريا. وكان المزارعون ورعاة الأغنام والأبقار (وحتى الآن) يقومون بإنتاج الحقين والزبادي والجبن عن طريق إضافة كمية بسيطة من حقين أو زبادي سابق إلى الحليب الجديد وتركه فترة من الوقت، ثم تتبع بعض الإجراءات المختلفة حتى يتحول الحليب إلى حقين أو زبادي أو جبن بحسب الطلب.</p><p>– ما الذي يحويه الحقين أو الزبادي المضاف إلى الحليب؟</p><h1>النشاط (١)</h1><p>• نفذ النشاط الخاص بإنتاج الزبادي في كتاب الأنشطة والتجارب العملية.</p><p>إن عملية إنتاج الحقين والزبادي والجبن تتم هذه الأيام في مصانع متخصصة، حيث يتم إنتاج كميات كبيرة منها وفق طرق علمية حديثة يتم التحكم بها آلياً. والخطوات التي تتبع عادة في إنتاج الزبادي صناعياً كما يأتي:</p><p>١- يتم التأكد من تعقيم كل الأواني والأدوات التي سيتم معالجة الحليب فيها لتحويله إلى زبادي.
+٢- يحضر الحليب، بحيث يتم التحكم في نسبة المواد الدهنية والمواد البروتينية فيه بحسب رغبة المستهلك (إنتاج زبادي مع الدهون أو خالٍ من الدهون).
+٣- يتم التأكد من خلط الدهن جيداً في الحليب، حتى لا يجتمع ويتفصل عنه أثناء عملية الإنتاج.
+– ما فائدة قيام المرأة في الريف بخض الحليب لفترة طويلة من الوقت؟
+٤- تتم بسترة الحليب.
+– وضع الخطوات التي تتم بها بسترة الحليب؟
+– ما أهمية عملية البسترة للحليب؟</p><p>١٤٨</p><p>الأحياء: النصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

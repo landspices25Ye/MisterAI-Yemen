@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>CO₂ لها مقدرة على امتصاص الأشعة تحت الحمراء، فهي بالتالي تمنع الأشعة الحرارية المنعكسة عن الأرض من الذهاب إلى الطبقات العليا أو خارج الغلاف الجوي، وعند زيادة نسبة CO₂ في الجو تزداد نسبة الأشعة الحرارية غير المنعكسة مؤدية إلى ارتفاع درجة حرارة الأرض، وسُمِّيت هذه الظاهرة بظاهرة الاحتباس الحراري Global Warming أو (البيت الأخضر) Green House. شكل (٩-٢).</p><img src="img-154.jpeg" alt="img-154.jpeg" /><p>شكل (٩-٢) ظاهرة الاحتباس الحراري</p><p>تلوُّث الهواء بأول أكسيد الكربون CO :</p><p>يوجد أول أكسيد الكربون في الهواء كناية طبيعي للتفاعلات الكيميائية الضوئية واحتراق الغابات.</p><p>وأول أكسيد الكربون مركب شديد السُمِّيَّة، وسُمِّيَّته أعلى من سُمِّيَّة غاز ثاني أكسيد الكربون.</p><p>وينتج صناعياً من الاحتراق غير التام للوقود داخل محركات السيارات.</p><p>$‫\text{C}_8\text{H}_{18}_{(l)} + 12\text{O}_2 \longrightarrow 7\text{CO}_2 + \text{CO} + 9\text{H}_2\text{O} + \text{Heat}‬$</p><p>١٧١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

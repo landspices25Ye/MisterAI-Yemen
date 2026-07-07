@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>فعند درجات الحرارة المرتفعة يتحلّل الحجر الجيري $‫\text{CaCO}_3‬$ ليكوّن الجير ($‫\text{CaO}‬$) و $‫\text{CO}_2‬$، حسب المعادلة الآتية:</p><p>$‫\text{CaCO}_3 \longrightarrow \text{CaO} + \text{CO}_2‬$‫</p><p>ويتفاعل بعد ذلك الجير، كالآتي:</p><p>‬$‫\text{CaO} + \text{SiO}_2 \longrightarrow \text{CaSiO}_3‬$‫</p><p>‬$‫3\text{CaO} + \text{P}_2\text{O}_5 \longrightarrow \text{Ca}_3(\text{PO}_4)_2‬$‫</p><p>‬$‫\text{CaO} + \text{Al}_2\text{O}_3 \longrightarrow \text{Ca}(\text{AlO}_2)_2‬$</p><p>وللمواد الناتجة عن هذه التفاعلات درجات انصهار منخفضة وهي في الحالة السائلة عند تكوينها، ويتجه هذا المزيج والذي يُسمّى بالخبث (Slag) إلى قاعدة الفرن، حيث يطفو على سطح الحديد المصهور. وفي أثناء تكوّن هاتين الطبقتين تهبط الشحنة في الفرن، وعندها يتمّ وضع كميات إضافية من مزيج (الحجر الجيري، وخام الحديد، وفحم الكوك) من الفتحة العليا للفرن. وبهذه الطريقة يعمل الفرن العالي (اللافح) باستمرار عن طريق إضافة شحنة من الأعلى وسحب الحديد المصهور والخبث من الأسفل، ويتم عادة تشغيل هذه الأفران لمدة شهور في كل مرة قبل إيقافها لأغراض الصيانة الروتينية. ويُسمّى الحديد المنصهر الذي يتم سحبه من الفرن العالي بالحديد الفضي، ويتكوّن من حوالي ٩٥٪ حديد، وما يقارب ٤٪ من الكربون، مع بعض الكميات الضئيلة من: السليكون، والمنجنيز، والفوسفور، والكبريت. وهذا الحديد الناتج يُعدّ صلباً جداً، ويمكن صبه في قوالب كحديد صب (Cast Iron)، أما الخبث فيمكن استعماله في صناعة الإسمنت.</p><h1>خواص الحديد:</h1><p>الحديد النقي في حالته الصلبة عبارة عن فلز فضي أبيض اللون، ليّن، قابل للطرق وكثافته عند درجة ٢٠م تساوي ٧,٨٧٤ جم/سم³، ودرجة انصهاره ١٥٣٥م، ودرجة غليانه ٢٧٥٠م، وعند انصهار الحديد يزداد حجمه بمقدار ٤,٤٪. ويعتبر الحديد من المواد المختزلة الجيدة، كما أنه يعد موصلاً جيداً للحرارة والكهرباء، ومسحوق الحديد أسود وغالباً ما يتوفّر في المعامل المدرسية باسم برادة الحديد.</p><p>١٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>وفي الختام يمكن تلخيص السمات الأساسية للمدرسة الكلاسيكية فيما يأتي:</p><p>١ - العناية بالأسلوب والصياغة، والابتعاد عن الأخطاء اللغوية والركاكة الأسلوبية التي سادت الشعر العربي قبل عصر النهضة.
+٢ - استخدام الشكل العروضي المعروف.
+٣ - تناول الموضوعات القديمة مع إضفاء بعض مظاهر التجديد التي تقتضيها ظروف العصر.
+٤ - ربط الشعر بالمجتمع بتصوير آلام الأمة وآمالها ومعالجة مشكلاته.</p><h2>أسئلة وتدريبات</h2><p>١ - ما الأسباب التي أدت إلى ضعف اللغة العربية عامة والشعر خاصة في مرحلة ما قبل الإحياء؟
+٢ - ما الظروف التي أدت إلى إطلاق اسم مدرسة الإحياء على حركة الشعر العربي؟
+٣ - اذكر أبرز شعراء هذه المدرسة.
+٤ - اذكر أبرز سمات المدرسة الإحيائية.
+٥ - اختر الإجابة الصحيحة من بين القوسين فيما يأتي:
+أ - رائد مدرسة الإحياء ( شوقي - البارودي - حافظ إبراهيم ).
+ب - المدرسة الإحيائية تعني ( الرومنسية - الكلاسيكية - الواقعية ).
+ج - مؤلف مسرحية كليوبترا ( عزيز أباظة، معروف الرصافي، أحمد شوقي ).
+٦ - من أغراض الشعر العربي في هذه المرحلة ربط الشعر بالمجتمع، وضح ذلك.
+٧ - اختر الإجابة الصحيحة لكل فقرة من الفقرات التالية من بين الأقواس واحصرها في دائرة:
+أ - الشعراء ليسوا بمعزل عن الحياة: ( الرومنسية - الواقعية - الكلاسيكية ).
+ب - من مسرحيات شوقي: ( مصرع كليوبترا - قيس ولبني - العباسية ).
+ج - من أنواع التطوير في الشعر العربي المعاصر: ( اجترار الماضي في التعبير - الاحتفاظ بالقالب القديم في شكل القصيدة - تناول القضايا الوطنية ).
+د - من أغراض الشعر العربي الجديد: ( الشعر الوطني - شعر الزهد - شعر الفخر ).
+هـ - من أبرز شعراء المدرسة الكلاسيكية: ( المقالح - البارودي - خليل مطران ).
+و - أول من أدخل الشعر التمثيلي في الشعر العربي ( البارودي - شوقي - الزبيري ).</p><p>٣٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

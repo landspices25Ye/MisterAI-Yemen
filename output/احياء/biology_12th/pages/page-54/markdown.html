@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>٢- الغدة الدرقية : Thyroid Gland</h2><p>– أين توجد الغدة الدرقية؟</p><p>انظر الشكل (١٠) ولاحظ أن الغدة الدرقية تتكون من فصين: أيمن وأيسر يتصلان ببعضهما في الوسط.</p><p>وتعد الغدة الدرقية أكبر الغدد الصماء حجماً؛ إذ يصل وزنها حوالي ٢٥٠-٣٠٠ جم، وهي مخزن اليود في الجسم الذي يدخل في عملية تركيب هرمون الفيروكسين Thyroxin من الغدة الدرقية بنسبة ٦٥٪ من وزن الهرمون.</p><p>– من أين يحصل الإنسان على عنصر اليود؟</p><p>– ما الذي يحدث للغدة الدرقية في حالة نقص عنصر اليود في الجسم؟</p><p>• وظيفة هرمون الفيروكسين:</p><p>١- تنشيط العمليات الأيضية في خلايا الجسم، وتنظيمها وخاصة عملية الأكسدة.
+٢- تنظيم عملية النمو، والتمايز لمعظم خلايا الجسم، وأنسجته المختلفة وخاصة عمليات نمو العظام.</p><h2>٣- الغدد الجاردرقية : Parathyroid Glands</h2><p>– أين توجد الغدد الجاردرقية، وما وظيفتها؟</p><p>الغدد الجاردرقية عبارة عن أربعة فصوص صغيرة جداً، الشكل (١١). وتوجد ملتصقة على السطح الخلفي للغدة الدرقية، وتفرز هرمون الباراثورسون (Parathormone)؛ الذي يقوم بتنظيم نسبة الكالسيوم في الدم، وبقائها في المستوى الطبيعي.</p><img src="img-40.jpeg" alt="img-40.jpeg" /><p>الشكل (١٠) الغدة الدرقية.</p><img src="img-41.jpeg" alt="img-41.jpeg" /><p>الغدد الجاردرقية</p><p>الشكل (١١) غدد الجاردرقية.</p><p>٥٤</p><p>الأحياء: النصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

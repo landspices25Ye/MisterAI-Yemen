@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-53.jpeg" alt="img-53.jpeg" /><h2>ما النظائر؟</h2><p>هي ذرات العنصر الواحد التي لها العدد الذري نفسه ولكنها تختلف في أعدادها الكتلية.</p><p>فمثلاً يملك الهيدروجين ثلاثة نظائر، هي:  $‫H^1‬$‫ ,  ‬$‫H^2‬$‫ ,  ‬$‫H^3‬$</p><p>كما أن اليورانيوم له ثلاثة نظائر هي:  $‫U^{238}‬$ ,  $‫U^{235}‬$ ,  $‫U^{234}‬$</p><p>ومن خلال معرفة الكتلة الذرية لكل نظير ونسبة وجوده في أية عينة من العنصر، يمكن معرفة الكتلة الذرية للعنصر باستخدام العلاقة الآتية:</p><p>$‫\text{الكتلة الذرية للعنصر} = \frac{\text{كتلة النظير الأول} \times \text{نسبة وجوده} + \text{كتلة النظير الثاني} \times \text{نسبة وجوده}}{\text{مجموع النسب}}‬$‫</p><p>مثال: يوجد لغاز النيون ثلاثة نظائر هي:  ‬$Ne^{22}$ ,  $Ne^{21}$ ,  $Ne^{20}$‫</p><p>وقد وجد أن نسب وجودها في عينة منه هي: 90% ، 27% ، 9% ، 7% على التوالي. فما هي الكتلة الذرية لغاز النيون؟</p><p>الحل:</p><p>‬$‫\text{الكتلة الذرية للنيون} = \frac{90 \times 20 + 27 \times 21 + 22 \times 9}{100}‬$‫</p><p>‬$‫= \frac{2019.73}{100} = 20.1973‬$‫</p><h2>أنواع النظائر:</h2><p>هناك نوعان من النظائر هما:</p><p>١ - نظائر مشعة: وهي التي يصدر عنها إشعاعات ألفا أو بيتا أو جاما، وتكون أنويتها غير مستقرة.</p><p>٢ - نظائر غير مشعة: وتكون أنويتها مستقرة ولا يصدر عنها أي إشعاعات. ويمكن تحويل النظائر غير المشعة إلى نظائر مشعة بطرق صناعية عن طريق المفاعلات النووية. ومثال ذلك تحويل الألومنيوم العادي إلى ألومنيوم مشع عن طريق قذفه بنيوترون بطيء.</p><p>‬$‫Al^{27} + n^{1} \xrightarrow{13} Al^{28} + \gamma \quad (\text{جاما})‬$</p><p>٧٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

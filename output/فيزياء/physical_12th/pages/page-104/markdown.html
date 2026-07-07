@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-102.jpeg" alt="img-102.jpeg" /><p>الآخر للوح الميكافنتكون عليها شحنات سالبة مساوية لعدد الشحنات الموجبة التي على الخلايا الكهروضوئية.</p><p>تطلق البندقية الإلكترونية الشعاع الإلكتروني على لوح الخلايا الكهروضوئية عند نقطة تسمى نقطة الاستكشاف حيث يمدها الشعاع الإلكتروني بشحنات سالبة عددها مساوٍ لعدد الإلكترونات التي فقدتها الخلايا نتيجة تكون الصورة الضوئية عليها، وبذلك تتعادل هذه الخلايا كهربائياً. ونتيجة لتعادل شحنات الخلايا، تتحرر الشحنات السالبة (الإلكترونات) التي على الصفيحة المعدنية، وتنطلق على هيئة نبضات كهربائية مختلفة التردد إلى جهاز التكبير وإلى باقي أجزاء جهاز الإرسال (شبكة الإرسال).</p><h3>عملية المسح التلفازي :</h3><img src="img-103.jpeg" alt="img-103.jpeg" /><p>شكل (١٣)</p><p>كيف يقوم الشعاع الإلكتروني بعملية المسح التلفازي للصورة المكونة على لوح الخلايا الكهروضوئية؟ وما الدور الذي تقوم به الملفات الحارقة في عملية المسح هذه؟</p><p>عندما يمر تيار كهربائي في الملفات الحارقة (س١، س٢) و (ص١، ص٢) تتولد مجالات مغناطيسية يمكن تغييرها بنظام معين بحيث يتحرك الشعاع الإلكتروني، وتتحرك نقطة الاستكشاف على لوح الخلايا ماسحة الخلايا الكهروضوئية صفاً صفاً ابتداءً من اليسار إلى اليمين (انظر الشكل «١٣»)، أي تبدأ بالصف الأول ثم الثاني ثم الثالث وهكذا حتى تصل إلى الصف رقم ٦٥٠، وتتم عملية مسح الصورة لجميع الصفوف للمرة الواحدة في زمن قدره $‫\frac{1}{25}‬$ من الثانية، وكلما تم مسح الصورة مرة تتكون صورة ضوئية جديدة على لوح الصورة بالطريقة السابقة نفسها.</p><p>ونتيجة لعمليات المسح تنطلق الإلكترونات من الصفيحة المعدنية، مكونة التيار المعبر عن الصورة الذي يمر إلى جهاز التعديل حيث يُحمل على التيار الحامل الذي تنتجه الدائرة المهتزة، وبالتالي يتكون ما يسمى بالتيار المعدل (التيار المعدل = التيار المعبر عن الصورة + التيار الحامل) الذي بدوره يتجه إلى هوائي الإرسال Antenna حيث تتحول التيارات المعدلة إلى موجات كهرومغناطيسية تنتشر في الهواء الجوي في جميع الاتجاهات (انظر الشكل «١٢»).</p><p>١٠٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

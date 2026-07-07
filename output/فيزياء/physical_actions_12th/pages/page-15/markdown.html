@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>خطوات تنفيذ التجربة</h2><p>١- صل الأدوات المستخدمة كما هو
+موضَّح في الشكل (١) بحيث
+يوصل القطب الموجب للبطارية
+بالبلورة الموجبة للوصلة الثنائية،
+ويوصل القطب السالب للبطارية
+بأحد طرفي المقاومة ويوصل الطرف
+الآخر للمقاومة بالملي أميتر (أو
+بالجلفانومتر) ومن الملي أميتر إلى
+البلورة السالبة للوصلة الثنائية.
+٢- لاحظ الملي أميتر (أو الجلفانومتر)
+- هل يمرّ تيار كهربائي في هذه
+dائرة؟ أم أنه لا يمرّ.
+٣- عيّن قراءة الملي أميتر - وبالتالي</p><p>مقدار شدة التيار.</p><p>٤- اعكس توصيل قطبي البطارية
+( مصدر التيار المستمر) كما في
+الشكل (٢) ، بحيث يُوصَّل
+القطب السالب للبطارية بالبلورة
+الموجبة للوصلة الثنائية والقطب
+الموجب للبطارية بأحد طرفي المقاومة
+ومن الطرف الآخر للمقاومة إلى
+الملي أميتر ومنه إلى القطب السالب
+للوصلة الثنائية.
+٥- لاحظ الملي أميتر. هل يمرّ تياراً
+كهربائياً. أم أنه لا يمرّ؟
+- ماذا نستنتج ؟</p><img src="img-12.jpeg" alt="img-12.jpeg" /><p>الشكل (٢)</p><p>١٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-10.jpeg" alt="img-10.jpeg" /><h1>مثال (١)</h1><p>كرتان متساويتان في الكتلة وكتلة كل منهما ٠,١ كجم . تتحرك الأولى بسرعة ١م/ث نحو الكرة الثانية الساكنة . وبعد التصادم تحركتا في مسارين متعامدين بحيث صنعت الكرة الأولى زاوية مقدارها (هـ = ٣٠) . أحسب سرعة كل من الكرتين بعد التصادم .</p><h1>الحل :</h1><p>المعطيات : ك = ك = ٠,١ كجم ، ع = ١م/ث ، ع = صفر
+هـ = ٣٠ ، هـ = ٦٠ ، ع = ؟ ، ع = ؟</p><p>أولاً : كمية التحرك في اتجاه محور السينات .</p><p>∴ ك = ع + ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك</p><p>∴ ٠,١ × ١ + ٠,١ × صفر = ٠,١ × ع = ٣٠ + ٠,١ × ع = ٦٠ (بالضر × ١٠)</p><p>∴ ١ = ٣/٢ ع = ١/٢ ع = ٢ (بالضرب × ٢)</p><p>∴ ٣/٢ ع = ٢ (١)...</p><p>ثانياً : كمية التحرك في اتجاه محور الصادات</p><p>∴ صفر = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك = ك</p><p>∴ صفر = ٠,١ × ع = ٣٠ - ٠,١ × ع = ٦٠ (بالضر × ١٠)</p><p>∴ صفر = ١/٢ ع = ٣/٢ ع = ٢ (بالضرب × ٢)</p><p>∴ ع = ٣/٢ ع = ٠ (٢)...</p><p>وبحل المعادلتين (١) ، (٢) آنياً كالتالي :</p><p>من المعادلة (٢) نجد أن : ع = ٣/٢ ع = ٣ (٣)...</p><p>بالتعويض بقيمة ع من (٣) في المعادلة (١) نجد أن :</p><p>١٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>التجربة الشعرية</h2><p>مثلما يحلل بعض النقاد النص الأدبي إلى جانب يتعلق بالشكل وآخر يتعلق بالمضمون (كما تقدم)، فهناك من النقاد من يذكر عناصر يتألف منها الأدب، والشعر خاصة تكون في مجموعها التجربة الأدبية أو الشعرية.</p><p>يقول الشريف الرضي:</p><p>وَلَقَدْ مَسَرَّتْ عَلَى دِيَارِهِمْ وَطَلُولُهَا بِيَدِ الْبِلَى نَهَبُ
+فَوَقَفَتْ حَتَّى ضَجَّ مِنْ لَغَبٍ نَضْوِي وَبَحَّ بِعَذْلِي الرَّكْبُ
+وَتَلَفَتْ عَيْنِي، فَمَدَّ خَفِيَّتَ عَنِّي الدِّيَارُ تَلَفَّتَ الْقَلْبُ</p><p>كان الشاعر مسافراً مع رفقة له، فمروا بديار أحبته، فوجدها طلولاً بالية، فوقف وقد استبد به الحزن والأسى، وأطال الوقوف عليها، فعذله رفاقه، وألحوا عليه ليتابع السير، فسار معهم مرغماً، وهو دائم الالتفات نحو تلك الأطلال، حتى إذا ما غابت عن عينيه، التفت نحوها بشعور قلبه الولهان.</p><p>إن وقفة الشاعر وما صحبها من انفعالات وجدانية، هي ما يُطلق عليها التجربة الشعرية. وسواء سافر أم لم يسافر، وقف أم لم يقف، هذه أمور ندعها للمؤرخين، إنما يتوقف النقاد الأدبي عند هذه التجربة التي وقع الشاعر تحت تأثيرها فأثارت انفعالاته أو خلجات نفسه، بكل ما صاحبها من استغراق فكري ومن خواطر وأخيلة وذكريات... ويمكن أن يُستشف من التجربة الشعرية عناصرها الآتية:</p><p>1. العنصر الفكري، ويتمثل في موضوعها والمعاني التي ساقها الشاعر من مروره على الأطلال ووقوفه، وعذل أصحابه، ومتابعته السير وهو دائم الالتفات.
+2. العنصر العاطفي، ويتمثل في الانفعالات التي انداحت على الشاعر حين رأى الديار على تلك الصورة، وما ماج في وجدانه من خواطر وصور أثناء وقوفه، وأثناء سيره وتلفته، ثم ما اعتلج في نفسه حين غابت الديار عن ناظره...
+3. الصورة التعبيرية، وهي الصياغة الشعرية التي امتزج فيها الفكر والعاطفة، وعبرت عنها الألفاظ والتراكيب، والصور والأخيلة، والموسيقا. وهكذا فالتجربة الشعرية ليست الموضوع والأفكار وحدها، وليست المشاعر التي</p><p>١٩٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

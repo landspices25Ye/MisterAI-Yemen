@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>الحل :</h2><p>المعطيات : $‫\lambda‬$ = واحد أنجستروم = $‫10^{-10}‬$ متر</p><p>المطلوب : الجهد (ج) .</p><p>إن تردد الإشعاع المنبعث $‫f$ (أكبر تردد منبعث) يساوي</p><p>‬$‫f = \frac{\frac{\text{مغ}}{\lambda}}{\frac{\lambda}{\lambda}} = \frac{10 \times 3}{10^{-10} \text{ (متر)}} = 10 \times 3^{18} \text{ هيرتز}‬$‫</p><p>∴ طاقة الإشعاع المنبعث = ‬$hf = 10 \times 3^{18} \times 6,625 \times 10^{-34}$‫</p><p>‬$‫= 19,9 \times 10^{-16} \text{ جول}‬$‫</p><p>هذه الطاقة لا بد أن تكون مساوية للطاقة الحركية التي فقدها الإلكترون التي تساوي حاصل ضرب فرق الجهد (ج) في شحنه الإلكترون، أي:</p><p>ج = ‬$hf$‫ ومنه :</p><p>‬$‫\text{ج} = \frac{hf}{\text{س}^2} = \frac{19,9 \times 10^{-16}}{19 \times 1,6} = 12,42 \times 10^3 \text{ فولت .}‬$‫</p><h2>مثال (٢)</h2><p>من أجل إنتاج طول موجي مقداره (١,٣٧٧) أنجستروم من هدف نحاسي في أنبوب الأشعة السينية، يجب أن يطبق فرق جهد بين طرفي الأنبوب مقداره (٩٠٠٠) فولت . احسب النسبة (‬$\frac{h}{\text{س}^2}$‫) ثم استنتج ثابت بلانك (‬$h$‫) إذا كانت شحنة الإلكترون (‬$\text{س}^2$‫) = ‬$1,602 \times 10^{-19}$‫ كولوم .</p><h2>الحل :</h2><p>المعطيات : ‬$\lambda = 1,377 \frac{^\circ}{\text{A}}$‫ ، ‬$\text{ج} = 9000 \text{ فولت .}$‫</p><p>المطلوب : حساب كل من (‬$\frac{h}{\text{س}^2}$‫) ، ‬$h$</p><p>١٦١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

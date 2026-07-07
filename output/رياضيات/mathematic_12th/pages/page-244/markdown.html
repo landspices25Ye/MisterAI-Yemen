@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-202.jpeg" alt="img-202.jpeg" /><p>الوحدة السابعة</p><h1><strong>مثال (٧ - ٢٤)</strong></h1><p>احسب $‫ل = \lfloor \text{هـ} \cdot \text{جاس} \cdot \text{وس}‬$ .</p><p><strong>الحل :</strong> نضع $‫ف = \text{هـ} \quad \Leftarrow \quad \text{وف} = \text{هـ} \cdot \text{وس}‬$ .</p><p>$‫\text{هـ} = \text{جاس} \cdot \text{وس} \quad \Leftarrow \quad \text{هـ} = - \text{جاس} \cdot \text{وس}‬$ .</p><p>$‫\therefore‬$ $‫ل = - \text{هـ} \cdot \text{جاس} + \lfloor \text{هـ} \cdot \text{جاس} \cdot \text{وس} \quad \dots \dots\dots (١)‬$</p><p>نلاحظ أن التكامل في الطرف الأيسر من (١) هو عبارة عن دالة مثلثيه والأخرى آسية وتشبه المسألة نفسها.</p><p>ولذلك سنحسب $‫\lfloor \text{هـ} \cdot \text{جاس} \cdot \text{وس}‬$ باستخدام التجزئة مرة أخرى .</p><p>نضع $‫ف = \text{هـ} \quad \Leftarrow \quad \text{وف} = \text{هـ} \cdot \text{وس}‬$ .</p><p>$‫\text{هـ} = \text{جاس} \cdot \text{وس} \quad \Leftarrow \quad \text{هـ} = \text{جاس} \cdot \text{وس}‬$ .</p><p>وبالتعويض في (١) عن $‫\lfloor \text{هـ} \cdot \text{جاس} \cdot \text{وس} = \text{هـ} \cdot \text{جاس} - \lfloor \text{هـ} \cdot \text{جاس} \cdot \text{وس} \cdot \text{وس}‬$ .</p><p>$‫\lfloor \text{هـ} \cdot \text{جاس} \cdot \text{وس} = - \text{هـ} \cdot \text{جاس} + \text{هـ} \cdot \text{جاس} - \lfloor \text{هـ} \cdot \text{جاس} \cdot \text{وس} \quad \dots \dots\dots (٢)‬$</p><p>نلاحظ أن: $‫\lfloor \text{هـ} \cdot \text{جاس} \cdot \text{وس}‬$ ظهر مرة أخرى في (٢) هنا ستتوقف عن استخدام طريقة المكملة بالتجزئة</p><p>ونقل $‫- \lfloor \text{هـ} \cdot \text{جاس} \cdot \text{وس}‬$ إلى الطرف الأيمن أي أن :</p><p>$‫\lfloor \text{هـ} \cdot \text{جاس} \cdot \text{وس} + \lfloor \text{هـ} \cdot \text{جاس} \cdot \text{وس} = - \text{هـ} \cdot \text{جاس} + \text{هـ} \cdot \text{جاس} + \text{ث} \quad (\text{بجمع الطرف الأيمن})‬$</p><p>$‫\therefore‬$ $‫\lfloor‬$ $‫\text{هـ} \cdot \text{جاس} \cdot \text{وس} = - \text{هـ} \cdot \text{جاس} + \text{هـ} \cdot \text{جاس} + \text{ث} \quad (\text{بالقسمة على العدد ٢})‬$</p><p>$‫\therefore‬$ $‫\lfloor \text{هـ} \cdot \text{جاس} \cdot \text{وس} = - \frac{1}{2} \text{هـ} \cdot \text{جاس} + \frac{1}{2} \text{هـ} \cdot \text{جاس} + \text{ث}‬$</p><p>$‫\therefore‬$ $‫\lfloor \text{هـ} \cdot \text{جاس} \cdot \text{وس} = \frac{1}{2} \text{هـ} \cdot (\text{جاس} - \text{جاس}) + \text{ث} \quad .‬$</p><h1><strong>مثال (٧ - ٢٥)</strong></h1><p>احسب $‫ل = \lfloor \text{س} \cdot \text{هـ} \cdot \text{وس} \cdot \text{وس} \cdot \text{وس}‬$ .</p><p><strong>الحل :</strong> نلاحظ أن $‫\text{هـ} \cdot \text{وس}‬$ ليست في الصور القياسية لذا نستخدم التعويض وذلك بوضع .</p><p>$‫\text{س} = \text{ع} \quad \Leftarrow \quad \text{س} = \text{س} \cdot \text{وس} = \text{ع} \quad \Leftarrow \quad \text{س} = \text{س} \cdot \text{وس} = \frac{1}{2} \text{ع} \quad .‬$</p><p>$‫\text{ل} = \lfloor \text{س} \cdot \text{س} \cdot \text{س} \cdot \text{س} \cdot \text{س} \cdot \text{س} \cdot \text{س} \cdot \text{س} \cdot \text{س} = \frac{1}{2} \text{ع} \quad \text{ع} \quad \text{ع} \quad \dots \dots\dots (١)‬$</p><p>٢٤٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

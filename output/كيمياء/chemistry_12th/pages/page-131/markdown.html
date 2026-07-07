@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>٢ - قياس المغناطيسية الأرضية:</h2><p>اتضح من خلال الدراسات الاستكشافية أن النفط يوجد غالباً بالقرب من الصخور الملحية التي تتميز بأن لها مغناطيسية عكسية تعمل على إضعاف المغناطيسية الأرضية، لذلك يقوم العلماء حالياً باستخدام أجهزة قياس المغناطيسية والتحليق فوق المناطق المراد استكشافها، وتقاس المغناطيسية وتُدوّن المعلومات في خرائط تحدّد الأماكن التي لوحظ فيها انخفاض المغناطيسية حيث تكون دليلاً على وجود حقول النفط بالقرب من هذه المناطق.</p><h2>٣ - قياس الاهتزازات الأرضية:</h2><p>تُعدُّ هذه الطريقة من أكثر الطرق الحديثة استخداماً لاستكشاف النفط وتحديد أماكن وجوده تحت سطح الأرض. انظر الشكل (٧-٢) والذي يمثل رسماً توضيحياً لطريقة قياس الاهتزازات الأرضية التي تحدّد أماكن تواجد النفط.</p><img src="img-118.jpeg" alt="img-118.jpeg" /><p>شكل (٧-٢) طريقة قياس الاهتزازات الأرضية التي تحدّد أماكن وجود النفط تعتمد فكرة هذه الطريقة على إحداث هزة أرضية ضعيفة باستخدام المتفجرات على عمق (٢٠-٣٠م)، ثم استقبال الموجات الصوتية التي تنعكس من باطن الأرض</p><p>١٢٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

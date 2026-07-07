@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>وراثة الجينات المتعددة (التراكمية)</h2><p>- ما المقصود بالجينات التراكمية ؟</p><p>عددة أزواج من جينات غير مرتبطة تتحكم في تكوين صفة وراثية كمية واحدة في الفرد الواحد . فكلما زاد عدد الجينات السائدة تزداد درجة الصفة، ومن الأمثلة عنها :</p><p>- طول القامة ، لون الجلد ، الذكاء عند الإنسان .</p><p>- تدرج كمية اللبن أو اللحم أو حجم البيض في بعض الحيوانات .</p><p>- تدرج لون حبوب القمح بين اللون الأبيض واللون الأحمر، ويتحكم في ذلك ما لا يقل عن ثلاثة أزواج من الجينات توجد على أكثر من زوج من الكروموسومات .</p><p>فلو افترضنا أن التركيب الجيني للون حبوب القمح يكون AA BB RR ، والتركيب الجيني للون حبوب القمح البيضاء aa bb rr ، وتكون التراكيب الجينية للون حبوب القمح الوسط Aa Bb Rr ، ولأن للجينات المتعددة تأثيراً متساوياً فإن التركيب الجيني AA Bb Rr ، والتركيب الجيني Aa Bb RR لهما التأثير نفسه لوجود ثلاثة أزواج من الجينات تتحكم في إنتاج الصبغة في خلايا كل منهما، ففي هذا المثال ينتج التركيب المظهري متدرجاً ومتراكماً لمجموعة الجينات المشاركة في التركيب الجيني للون حبات القمح .</p><p>١٢٨</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

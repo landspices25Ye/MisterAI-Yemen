@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>٦- سجّل عدد الإشعاعات بواسطة</p><p>العداد خلال فترة زمنية مناسبة (حوالي ٤-٥ دقائق).</p><p>٧- ارفع قيمة فرق الجهد في خطوات</p><p>ثابتة وفي كل مرة سجّل عدد</p><p>الإشعاعات بالعداد (خلال الفترة</p><p>الزمنية نفسها) كما في بند (٦)</p><p>حتى تصل بفرق الجهد إلى</p><p>(٤٠٠ - ٤٥٠ فولت).</p><p>٨- يجب أن يكون العداد والمصدر المشع</p><p>ثابتين في موضعهما طيلة فترة هذه</p><p>القياسات.</p><p>٩- يجب وقف التجربة عند بدء ارتفاع</p><p>عدد الإشعاعات المسجّلة بالعداد</p><p>بعد فترة ثبوتها. حتى</p><p>لا يتلف الكشاف.</p><p>١٠- رتّب النتائج في جدول كالآتي:</p><p>١١- ارسم العلاقة البيانية بين العدد</p><p>المسجّل في الدقيقة على المحور</p><p>الصادي وفرق الجهد بين قطبي</p><p>الكشاف (بالفولت) على</p><p>المحور السيني.</p><p>١٢- عيّن من الرسم المنطقة التي تثبت</p><p>فيها قيمة عدد الإشعاعات المسجّلة</p><p>١٣- عيّن فرق الجهد المقابل لنقطة</p><p>المنتصف في المنطقة الثابتة فيكون</p><p>هو جهد التشغيل الخاص بالكشاف</p><p>كما في الشكل (٢).</p><img src="img-25.jpeg" alt="img-25.jpeg" /><p>شكل (٢)</p><p>|   |  |  |  | فرق الجهد (بالفولت)  |
+| --- | --- | --- | --- | --- |
+|   |  |  |  | عدد الإشعاعات المسجّلة (إشعاع في الدقيقة)  |</p><p>٢٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

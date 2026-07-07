@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and the text 'e-learning'.]()</p><img src="img-191.jpeg" alt="img-191.jpeg" /><img src="img-192.jpeg" alt="img-192.jpeg" /><p>شكل ( ٩ ) البيت الزجاجي</p><h3>- البيوت الزجاجية :</h3><p>كثير من النباتات لا تستطيع مقاومة البرودة في فصل الشتاء فتوضع داخل بيوت خاصة تعمل على خزن كمية هائلة من الحرارة الآتية من الأشعة الشمسية، وتعرف بالبيوت الزجاجية، كما تحصل هذه النباتات على الطاقة الضوئية اللازمة للقيام بعملية البناء الضوئي، ويوضح الشكل ( ١٩ ) كيفية تصميم البيت الزجاجي بحيث تتوفر فيه الشروط اللازمة لنمو النبات داخله من حيث توفر الحرارة ، والضوء ، وثاني أكسيد الكربون .</p><h3>- الأفران الشمسية :</h3><p>تتكون الأفران الشمسية من مرآة مقعرة كبيرة مصنوعة من الألومنيوم اللامع، وتقوم هذه المرايا بتجميع الأشعة الشمسية في بؤرتها على حامل أسود ليمتص كمية هائلة من الأشعة الشمسية التي تتحول إلى حرارة تستخدم في المواقد الشمسية لطي الطعام ، حيث يوضع الطعام على الحامل في المرايا الصغيرة، أو بصهر المعادن في الأفران الشمسية الكبيرة المستخدمة لصهر المعادن .</p><img src="img-193.jpeg" alt="img-193.jpeg" /><p>شكل ( ١٠ ) فكرة الفرن الشمسي</p><h3>توليد الطاقة الكهربائية :</h3><p>تصنع محركات شمسية تتكون من غلاية مائية مثبتة فوق برج وتوضع حولها عدد كبير من المرايا المقعرة تعمل على تجميع وتركيز أشعة الشمس على الغلاية باستمرار. وعندما يغلي الماء في الغلاية يتحول إلى بخار يخرج بسرعة كبيرة من فتحة في أعلى الغلاية ليدير تربينا، والتربين يدير مولداً كهربائياً. وبهذا نكون قد حصلنا على الطاقة الكهربائية من الطاقة الشمسية بطريقة غير مباشرة.</p><p>١٩٤</p><p><http://www.e-learning-moe.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>الخلاصة</h1><p>للتقاد آراء حول قضية الشكل والمضمون فمنهم من يرى أن القيمة لجودة الشكل دون المضمون، ومنهم من يرى وجوب الاعتناء بكل منهما على حدة، ومنهم من يرى العناية بهما كجسد وروح، بحيث يؤثر أحدهما في الآخر سلباً أو إيجاباً مثل الكائن الحي تماماً، ولذلك فإن ضعف المعاني يسبب ضعفاً في الشكل، والعكس صحيح.</p><h2>أسئلة وتدريبات</h2><p>١- بم ينفرد الشعر في مجال الشكل عن غيره من فنون النثر؟</p><p>٢- قال البحتري:</p><p>صنت نفسي عما يدنس نفسي وترفعت عن جداً كل جبس
+وتماسكت حين زعزعني الدهر — التماساً منه لتعسي ونكسي</p><p>أ - ما المعاني المتضمنة في البيتين؟</p><p>ب - هل وفق الشاعر في اختيار ألفاظ مناسبة للمعنى؟ وضح ذلك.</p><p>ج - ما الذي أضفاه صوت السين في كلمات البيتين؟</p><p>٣- قال الزبيري:</p><p>خرجنا من السجن شم الأنوف كما تخرج الأسد من غابها
+نمر على شفرات السيوف ونأتي المنية من بابها
+وقال في الحنين إلى الوطن:</p><p>ذكريات فاحت برياً الجنان فسبت خاطري وهزت جناني
+عمر في دقيقة مستعاد ودهور مطلة في ثوان</p><p>أ - تلمس الفرق في استخدام الألفاظ بين الأسلوبين السابقين.</p><p>ب - هل هناك مواءمة بين الشكل والمضمون في الأسلوبين؟ كيف كان ذلك؟</p><p>٤- للتقاد آراء حول الشكل والمضمون:</p><p>- ما الرأي الذي تميل إليه.</p><p>- دلل على صحة الرأي الذي اخترته ببيتي شعر مما تحفظ.</p><p>١٩٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

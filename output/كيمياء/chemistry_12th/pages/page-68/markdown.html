@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-49.jpeg" alt="img-49.jpeg" /><p>كاثوداً (مهبطاً) بالنسبة للحديد الذي هو الأنود (المصعد)، ويمكن أن يكون هذا الكاثود (المهبط) الطرف الآخر من قضيب الحديد ذاته. فمثلاً المسمار الذي يتعرض للإجهاد من طرفيه يؤلف خلية كهروكيميائية.</p><p>يمثل أي إلكتروليت يوجد في تماس مع الحديد (مثل المياه المالحة) طريقاً مناسباً لانتقال الأيونات من قطب لآخر. وهذا هو حال تماس الحديد مع الماء أو الرطوبة، أو أي سطح رطب كالتربة، أو الخشب.</p><p>كيميائياً يعزى تآكل الحديد نتيجة تأكسده إلى $‫Fe^{2+}‬$ بواسطة:</p><p>١ - أيون الهيدروجين وفقاً للمعادلات الآتية:</p><p>$‫\begin{array}{l} \text{Fe} \longrightarrow \text{Fe}^{2+} + 2e^- \\ 2\text{H}^+ + 2e^- \longrightarrow \text{H}_2 \\ \text{Fe} + 2\text{H}^+ \longrightarrow \text{Fe}^{2+} + \text{H}_2\uparrow \end{array}‬$‫</p><p>(إذا كان تركيز أيون الهيدروجين ‬$H^+$‫ عالياً، انطلقت فقاعات غاز الهيدروجين).
+٢ - الماء: الأكسجين المنحل من الماء يعمل كعامل مؤكسد على أكسدة ‬$Fe^{2+}$‫ إلى أكسيد الحديد المائي (الصدأ) ‬$Fe_2O_3 \cdot nH_2O$‫.</p><p>‬$‫4\text{H}^+ + \text{O}_2 + 2e^- \longrightarrow 4\text{H}_2\text{O}‬$</p><p>ولحماية الحديد من التآكل يطلّى بطبقة من الزنك ويدعى في هذه الحالة بالحديد المجلفن، حيث تعمل هذه الطبقة على حماية الحديد من التآكل كونها أكثر فاعلية منه. على العكس من ذلك فإن طلاء الحديد بمعدن أقل فاعلية منه كالفضة، النحاس، أو القصدير يؤدي إلى تآكل الحديد بسرعة إذا خدشت طبقة الطلاء.</p><p>بشكل عام فإن كثيراً من المعادن عند بداية التآكل تشكل طبقة رقيقة من الأوكسيد ملتصقة بسطح المعدن، الأمر الذي يمنع استمرار عملية التآكل، وهذا هو حال الألومنيوم والكوبلت والكروم والنيكل. وكذلك يكون اكتساب بعض المعادن صفة عدم التأثير Passivity، وهي طلاؤها بطبقة من أكسيد الحديد سماكتها جزيء واحد على السطح أو امتزاز ثاني أكسيد النيتروجين على سطح المعدن.</p><p>ومع الأسف فإن هذه الميزة المكتسبة تزول بسهولة عند تلامس الحديد الذي اكتسب هذه الصفة مع قطعة حديد عادية.</p><p>٦٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

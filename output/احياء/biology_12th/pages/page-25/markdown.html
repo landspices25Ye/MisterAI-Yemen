@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>٢- الجهاز العصبي الجارسمبثاوي: ويعمل عكس الجهاز السمبثاوي، أي أنه يقوم مثلاً بتقليل ضربات القلب، أو ضغط الدم، أو تضييق حدة العين، أو تنبيه إفراز اللعاب، أو تضييق الشُعُوب الهوائية في الرئتين وغير ذلك من الأنشطة اللاإرادية في الجسم.</p><p>- اذكر بعض الأمثلة الأخرى لوظائف الجهاز العصبي السمبثاوي؟
+- اذكر بعض الأمثلة الأخرى لوظائف الجهاز العصبي الجارسمبثاوي؟</p><img src="img-18.jpeg" alt="img-18.jpeg" /><p>الشكل (١٦) الجهاز العصبي الذاتي.</p><h1>النشاط (٤)</h1><p>• نفذ النشاط الخاص بتشريح ضفدع، والتعرف على أجزاء الجهاز العصبي.</p><p>الأحياء للصف الثالث الثانوي</p><p>٢٥</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

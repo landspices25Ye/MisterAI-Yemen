@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>الشكل والمضمون</h1><h2>الأمثلة</h2><p>١- قال كثير عزة:</p><p>ولما قضينا من منى كل حاجة ومسح بالأركان من هو ما سح
+وشدت على حدب المطايا رحالنا ولم ينظر الغادي الذي هو رائح
+أخذنا بأطراف الأحاديث بيننا وسالت بأعناق المطي الأباطح</p><p>٢- وقال عمر أبو ريشة:</p><p>أمستني هل لك بين الأمم منبر للسيف أو للقلم؟
+أتلقسك وطرفي مطرق خجلاً من أمسك المنصرم</p><p>٣- وقالت نازك الملائكة:</p><p>ارجع فالليل تشير مخاوفه قلقي
+وأنا وحدي، والنجم بعيد في الأفق
+يخدعني أمل في فجر لم ينبثق
+وصبابة دمع باردة لم تحترق</p><h2>التوضيح</h2><p>قضية الشكل والمضمون تعد عند نقاد الأدب كبرى القضايا النقدية؛ لأنها تعالج أساس البناء في الفن الأدبي، بل هي قاعدة البناء في كل لون من ألوان التعبير اللغوي. وأول من أثار هذه القضية النقدية (هو الجاحظ) وذلك بالنظر فيها، والتفريق بين اللفظ والمعنى، أو ما سمي فيما بعد «الشكل والمضمون» يقول: «المعاني مطروحة في الطريق يعرفها العجمي والقروي والبدوي، وإنما الشأن في إقامة الوزن، وتحبير اللفظ، وسهولة المخرج، وفي صحة الطبع، وجودة السبك». وعلى الرغم من أن الجاحظ يفضل الاهتمام باللفظ دون المعنى إلا أنه لم يكن من اللفظيين الذين ركزوا على اللفظ دون</p><p>١٩١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

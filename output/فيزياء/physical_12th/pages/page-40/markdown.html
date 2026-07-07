@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-38.jpeg" alt="img-38.jpeg" /><p>أي عندما تتساوى كمية الحرارة المتولدة فيه والمفقوده منه في الهواء المحيط به
+وعندها تدل قراءة المؤشر على القيمة الفعالة لشدة التيار المتردد.</p><h1>❖ ملحوظة :</h1><p>أمكن معايرة تدريج الأميتر الحراري بمقارنته بأميتر ذو ملف متحرك عندما يوصلا
+معاً على التوالي بمصدر تيار مستمر، ونعين قراءات الأميتر ذو الملف المتحرك ونسجلها
+أمام مؤشر الأميتر الحراري .</p><h1>عيوب الأميتر الحراري :</h1><p>أ – يتحرك مؤشره ببطء حتى يثبت على التدريج ، كما أنه يعود إلى الصفر
+ببطء بعد فتح الدائرة الكهربائية وانقطاع مرور التيار فيه .</p><p>ب – تأثر سلك إيريديوم البلاتين بحرارة الجو المحيط به ارتفاعاً وانخفاضاً ، وهذا
+يسبب خطأً في قراءة الأميتر ، أي أنه لا يعطي القراءة الصحيحة للقيمة
+الفعالة لشدة التيار المتردد المراد قياسها .</p><h1>كيفية التخلص من العيوب السابقة في الأميتر الحراري ؟</h1><p>يمكن التخلص من العيب الثاني ( ب ) وذلك عن طريق شد سلك إيريديوم
+البلاتين على لوحة من مادة لها نفس معامل تمدده، مع عزله عنها بمادة عازلة .</p><h1>نشاط (٣)</h1><p>حاول مشاهدة تدريج الأميتر الحراري إن وجد في مختبر المدرسة أو استعن
+بمهندس كهربائي لذلك إذا أمكن لك .</p><p>لاحظ المسافات المدونة على لوحة التدريج ثم أجب عما يأتي :</p><p>* هل مسافات التدريج متساوية أم غير متساوية ؟</p><p>* لماذا يزداد اتساعها كلما زادت قيمة شدة التيار المدونة على تدريج الأميتر
+الحراري ؟</p><p>حاول أن تجيب عن الأسئلة السابقة ، واستعن بمدرسك لتصحيح إجابتك .</p><p>٣٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><h2><em>العولمة</em></h2><p>ظهر مفهوم «العولمة» أواخر القرن الماضي، فانطلقت هذه الكلمة تجوب الكوكب الأرضي في سرعة خاطفة، وكأنها تُبشِّر بشيء جديد يفيد العالم، أو يجعله أسرة بشرية موحدة، متساوية الحقوق والدماء والواجبات، غير أن غموض مدلول الكلمة، والظروف التي صاحبت انطلاقتها، وتعدد الجوانب التي تتضمنها جعلت كثيراً من عقلاء العالم يقفون أمامها، متأملين أبعادها ومراميها، ومن ثمَّ فوائدها وأخطارها. وسواء قُصد بها عولمة الأشياء والأفكار؛ أي جَعْلُها عالمية، أم تأسيس كل شيء على العلم – ولا ثالث لهما – فإنها لا تخرج عن معنى التصيير والتحويل وفق ما يوحي به مدلول هذه الكلمة.</p><p>والمتأمل لهذين المدلولين : (العالمية والعلمية) لا يرى في العولمة شرّاً يُحذَر، ولا معنى يُنكر، فالمعنيان كلاهما مرغوبان؛ فالعصر عصر التقدم العلمي والتطور التكنولوجي، بل أضحى التنافس العلمي بين الأمم والشعوب محمَّدةً من محامد العصر، والمسافات الزمانية والمكانية قد طويت، حتى أصبح العالم كالقرية الواحدة، فما العيب في العالمية إذن؟ وممَّ الخوف إذا كان الناس قد أصبحوا يعيشون هذه المعاني في واقع حياتهم من خلال وسائل الاتصالات والمواصلات، والقنوات الفضائية، والإنترنت، والحركات التجارية والسياحية، وغيرها؟!</p><p>لكنَّ بعض المفكرين في العصر الحديث لا يفهمون العولمة بهذه السطحية من خلال سرعة التواصل بين العالم، أو السمة العلمية للعصر، إنما يفهمونها في ضوء حركتها الجامحة، ووسائلها المستخدمة، وآثارها الواقعة والمتوقعة، إنهم لا يرون في العولمة إلا شعراً؛ ظاهره فيه الرحمة، وباطنه فيه الشر والنقمة، ليس على شعب دون شعب، أو أمة دون أخرى، وإنما على جميع فقراء العالم.</p><p>إنها تسوق أبناء القرن الواحد والعشرين إلى الكارثة، فهي – في نظرهم – حركة</p><p>* يتصرف من كتاب «العولمة المزعومة» للمفكر الفرنسي المسلم رجاء جارودي، وظاهرة العولمة «رؤية نقدية»، د. بركات محمد مراد.</p><p>٤٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

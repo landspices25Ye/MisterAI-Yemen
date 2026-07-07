@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><h1>ثمن الحرية</h1><p>أحمد شوقي</p><p>التعريف بالشاعر</p><p>أحمد شوقي مصري من أصول تركية ويونانية. ولد في قصر الخديوي إسماعيل لأن جدته لأمه كانت إحدى وصيفات القصر، ونتيجة لما اتسم به شوقي من ذكاء، فقد قرض الشعر وهو ما يزال طالباً في الثانوية التي تخرج منها عام ١٢٨٧ هـ الموافق ١٨٦٨ م.</p><p>بعثه الخديوي إلى فرنسا لدراسة الحقوق، فمكث هناك أربع سنوات أتقن فيها الفرنسية بجانب إتقانه الإنجليزية والتركية، وأكمل دراسة الحقوق عام ١٨٩١ م. تعرف على أعلام الشعر والمسرح والموسيقى في باريس. وبعد أن عاد إلى مصر رحب به القصر الملكي، وأصبح شاعر الخديوي.</p><p>نفاه الإنجليز إلى إسبانيا عندما قامت الحرب العالمية الأولى عام ١٩١٤ م بعد أن حيل بين الخديوي عباس وعودته من تركيا إلى مصر، وخلع من عرشها. وفي إسبانيا عايش شوقي آثار أجداده العرب والمجد الإسلامي، فأحسّ بالحنين، وهزه الشوق لبلاده مصر وأهله وأصدقائه فيها.</p><p>بعد الحرب عاد شوقي إلى مصر، حيث أخذت علاقته بالقصر تضعف، لينصرف بإلهامه وأنغامه إلى الشعب متغنياً بكفاحه وجهاده، حتى حمد له المصريون والعرب هذا الموقف، ولذلك بويع سنة ١٩٢٧ م بإمارة الشعر، عندما أقاموا له بدار الأوبرا الملكية مهرجاناً عاماً لتكريمه برعاية الملك فؤاد الأول، وفي هذا المهرجان ردد الشعراء بعد حافظ إبراهيم:</p><p>أمير القوافي قد أتيتُ مبايعاً وهذي وفود الشرق قد بايعت معي</p><p>شعر شوقي مجموع في ديوان (الشوقيات) المؤلف من أربعة أجزاء. وهو شعر ينم عن خبرة بالطبائع والنوازع البشرية لأن الشاعر خبر الناس من مختلف المستويات والطبقات، فجاء شعره متضمناً البيت النادر والمثل السائر والحكمة العالية. وشوقي هو أول من جمع بين الشعر الغنائي والشعر القصصي والمسرحي في العصر الحديث. انتقل إلى جوار ربه عام ١٣٥١ هـ الموافق ١٩٣٢ م رحمه الله عليه.</p><p>٤٦</p><p><http://www.e-learning-moe.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

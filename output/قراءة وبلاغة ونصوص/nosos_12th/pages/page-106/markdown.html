@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>وجمال صنعه مظلماً إذا افتقد المحبة. ويقول آخرون: لعلّ الشاعر قصد تصوير الكوخ في الحالتين (المحبة – البغض) ولم يقصد المقارنة.</p><p>وتتواصل الأدلة، والبراهين في القصيدة؛ فتأتي بصور خيالية قد تنقبلها ما دمنا في ميدان الشعر والفن، من ذلك: أن اسوداد الدجى ناتج عن كره، وأن الصحراء لو أحبّت لتحوّل رملها زهراً ناضراً، وانقلب سرابها الخداع إلى ماء يجري، وأن الأرض لو لم يبق عليها إلا واحد من الناس يؤنس وحشتها سوف ترفضه، وتستغني عنه إذا كان مبغضاً.</p><p>وأخيراً يدعو إلى الترفق بأولئك النفر الذين انطوت نفوسهم على الكره، والبغض فهم – في نظره – معذورون لقصور فهمهم، وغباء فكرهم.</p><p>ولكي يؤكد الشاعر هذه المعاني والأفكار فقد حشد العديد من الصور البلاغية، والبيانية. من ذلك: (أيقظ شعورك بالمحبة) (كره الدجى) (شهبه بقيت لتضحك) (تعشق البيداء) فجميع هذه العبارات استعارات مكينة تعطي عنصر الطبيعة أحاسيس الإنسان وإدراكه، وتجسد المعنوي، وتعطيه صفات الحس المادي المجسم. فالشعور يستيقظ، والدجى يكره، والشهب تضحك، والبيداء تعشق.</p><p>ومن المحسنات البديعية التي تضمنها النص مثل: الطباق في (حلاوة – علقماً) و(أحبب – أبغض) وجميع هذه الصور الأدبية قد أسهمت في تدعيم فكرة الشاعر حيث أكسبتها القوة، والوضوح، والإقناع.</p><p>وبعد هذه الرحلة الشقيقة التي استمتعنا بها في ربوع هذه القصيدة تبيّن لنا أن كل الحجج التي أوردها الشاعر، وأضفى عليها صوراً بديعة من خياله الممتلئ بالمحبة، يريد من خلالها أن يوصل إلينا فكرة واحدة مفادها: أن الإنسان إذا اعتمر قلبه بالمحبة فستصبح الحياة أكثر جمالاً، وأبدع منظراً، وستتحول بعض نواقصها إلى الكمال الذي لا عيب فيه.</p><p>وعليه يجدر بنا القول: إن هذه القصيدة تدعو إلى التفاؤل، والمحبة، وتدفع إلى الخير في بساطة شعرية خالية من التعقيد، وفي فلسفة واضحة لا يفسدها غموض.</p><p>١٠٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

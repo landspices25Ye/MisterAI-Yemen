@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>يعرف العلم الذي يختص بدراسة أهمية جزيئات DNA في مختلف جوانب حياة الكائنات الحية باسم علم الوراثة الجزيئية Molecular Genetics.</p><h2>اكتشاف التركيب البنائي لجزيء DNA :</h2><p>توصل العالم أوزوالد أفري Oswald Avery ومساعدوه (ماك كارتي، وماكلاود) عام ١٩٤٤م إلى أن الحمض النووي الرايبوزي منقوص الأكسجين DNA هو المادة الوراثية في خلايا الكائن الحي. واستمرت الدراسات على هذا الحمض لسنوات عديدة إلى أن جاء اكتشاف تركيبه البنائي على يد كل من جيمس واطسون James Watson وفرانسيس كريك Francis Crick في عام ١٩٥٢م، بعد دراسة جميع المعطيات المعروفة عن هذا الحمض، وخاصة بعد حصولهما على صورة بالأشعة السينية للحمض النووي DNA كانت قد التقطتها روزا ليندا فرنكلين وقد توصل واطسون وكريك إلى أن للحمض النووي تركيب سلمي مؤلف من شريط حلزوني مزدوج (الشكل ١) يتكون كل منهما من سلسلة من النيوكليوتيدات. وتتألف كل نيوكليوتيدة مما يأتي:</p><p>أ - مجموعة فوسفات.</p><p>ب - سكر الرايبوز منقوص الأكسجين.</p><p>ج - قاعدة نيتروجينية.</p><p>وهناك أربعة أنواع من القواعد النيتروجينية تدخل في تركيب DNA، وهي كما يأتي:</p><p>١ - أدينين Adenine ويرمز له بالحرف A.</p><p>٢ - جواتين Guanine ويرمز له بالحرف G.</p><p>٣ - سايتوسين Cytosine ويرمز له بالحرف C.</p><p>٤ - ثالين Thymine ويرمز له بالحرف T.</p><p>وتترتب القواعد النيتروجينية في شريط DNA على هيئة درجات السلم الحلزوني بحيث يرتبط C مع G بثلاثة روابط هيدروجينية كما يرتبط A مع T برابطتين هيدروجينيتين. الشكل (١)</p><img src="img-98.jpeg" alt="img-98.jpeg" /><p>الشكل (١) جزء من شريط DNA المزدوج</p><p>الأحياء الصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p><p>١٣٣</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

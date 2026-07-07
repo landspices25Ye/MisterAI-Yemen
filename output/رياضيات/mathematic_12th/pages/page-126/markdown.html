@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-100.jpeg" alt="img-100.jpeg" /><p>الوحدة الرابعة</p><h2>انسحاب المحاور الإحداثية</h2><p>٤ - ٥</p><p>إن انسحاب المحاور يساعد على إيجاد معادلات القطوع المخروطية التي محاورها توازي محوري الإحداثيات لكن مراكزها لا تكون نقطة الأصل .</p><p>كما أنه إذا أحسن اختيار نقطة الأصل الجديدة للمحاور ، وكان لدينا معادلة منحنى معين في نظام إحداثي غير مناسب ، فإنه يمكننا تغيير هذا النظام للحصول على صورة قياسية لمعادلة هذا المنحنى ، فسحب المحاور يساعد على تبسيط معادلة المنحنى والحصول على صورتها القياسية .</p><p>ليكن س و ص مستوى الإحداثيات المتعامدة ، م نقطة في المستوى إحداثياها ( و ، ك ) .</p><p>فإذا رسمنا من م المحورين م س ، م ص موازين للمحورين و س ، و ص على الترتيب ، وأخذنا أي نقطة مثل و في المستوى ، وكان إحداثياها ( س ، ص ) بالنسبة للمحورين الأصليين ، وإحداثياها ( س ، ص ) بالنسبة للمحورين الجديدين فإننا نجد من الشكل (٤-٢٢) أن :</p><img src="img-101.jpeg" alt="img-101.jpeg" /><p>شكل (٤-٢٢)</p><p>... (٤-٩)</p><p>س = س + و ، ص = ص + ك
+أو س = س - و ، ص = ص - ك</p><p>هاتان المعادلتان تسميان معادلتي الانسحاب .</p><p>لإيجاد معادلات القطوع التي مراكزها ليست نقطة الأصل ، نسحب المحاور الإحداثية لتحويل معادلات الدرجة الثانية ذات الصورة :</p><p>١ س + ج ص + ه س + ح ص + ط = .</p><p>إلى الصور القياسية التي مرت معنا سابقا .</p><p>كل قطع مخروطي له محور يوازي أحد محوري الإحداثيات تكون معادلته على صورة المعادلة ( ١ ) ، والعكس أيضا صحيح مع استثناءات بسيطة . فإذا كان :</p><p>( ١ ) ا ، ج لهما الإشارة نفسها ، فإن المعادلة تمثل قطعاً ناقصاً ( دائرة وذلك عندما ا = ج ، أو نقطة ، أو تكون مجموعة خالية ) .</p><p>( ٢ ) ا ، ج لهما إشارتان مختلفتان ، فإن المعادلة تمثل قطعاً زائداً أو مستقيمين متقاطعين .</p><p>( ٣ ) أحد العددين ا أو ج يساوي صفراً ، فإن المعادلة تمثل قطعاً مكافئاً ، ( أو مستقيمين متوازيين ، أو مستقيماً واحداً ، أو مجموعة خالية ) .</p><p>١٢٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

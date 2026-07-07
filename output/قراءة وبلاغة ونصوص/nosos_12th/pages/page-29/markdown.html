@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>اللهجات العامية في البلدان العربية بدلاً عن العربية الفصحى تحت ذريعة أن العربية غير قادرة على استيعاب العلوم الحديثة، ومواكبة العصر! وما زاد من خطورة هذا الموقف أن بعض الآراء التي تبنتها مجلة (المقتطف) -حينها- قد تمادت في حملتها على الفصحى، ونادت إلى أن تكون الكتابة بالحرف اللاتيني بدلاً من الحرف العربي. ولواجهة هذه الحملة الظالمة كان لا بد من العودة إلى تراث الأمة العريق؛ إذ إن ما أفرزته عصور التخلف من ثقافة رديئة غير قادرة على مواجهة الثقافة الأوروبية المتحدية، ناهيك عن إسكات نعيق المتحاملين على العربية الفصحى من أبنائها.</p><p>وهذا ما دفع علماء الأمة إلى الاتجاه بقوة نحو التراث العربي القديم في عصوره المزدهرة، فعملوا على انتقاء جمهرة من روائعه لإحيائها، ونشرها، والاتكاء عليها في إرضاء الوعي النامي المتلهف إلى ثقافة عربية أصيلة لمواجهة كل التحديات العصرية. وكان من نواة هذه الحركة (جمعية المعارف) التي تأسست في العام ١٨٦٨م. وعملت على نشر عدد من روائع الأدب العربي مثل: كتاب (البيان والتبيين) للجاحظ، و(تاج العروس) للزبيدي، و(مقامات بديع الزمان) وغيرها. وسارت على إثر جمعية المعارف دار الكتب المصرية، والكثير من الهيئات، والجمعيات، والمطابع التي شاركت في هذا العمل الإحيائي الجليل لتراث الأمة، وكنوز معرفتها، فظهر ما كان مخفياً عن البعض من عراقة الأمة، ودورها الذي ساد يوماً عندما حملت مشاعل المدينة بقيمها الإنسانية المثالية، وأسهمت في صنع الحضارة البشرية بوجهيها المادي، والروحي معاً.</p><p>٢٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

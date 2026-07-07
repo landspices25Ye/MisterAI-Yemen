@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><h1>الإسراء والمعراج</h1><h2>مصطفى صادق الرافعي</h2><h3>التعريف بالكاتب</h3><p>ولد الأديب الكبير مصطفى صادق الرافعي بمدينة طنطا عام ١٨٨٠م، وتلقى علومه الأولى فيها حتى الصف السادس -تقريباً- ولم يتم دراسته بسبب عائق صحي ألمّ به، وهو الصمم، ولكنه عوض هذا النقص بالاعتماد على نفسه، فتابع تحصيله بالقراءة الدائبة للكتب، وساعده على ذلك مكتبة والده التي ضمّت كثيراً من الكتب العربية والإسلامية، وكان محباً للاعتكاف في بيته، عزوفاً عن الاختلاط بالناس، مع ميل فطري إلى الخلود للنفس والأهل، والأصحاب خاصة.</p><p>وعلى الرغم من ذلك كان به اعتداد بنفسه وبأدبه ربما لجأ به إلى الإشارة أو التصريح بذلك متى سنحت له فرصة، وربما دبّج تقريباً لنفسه، ونحله بعض الأدباء. وكثيراً ما مال على خصومه ومعارضيه في الاتجاه الأدبي بقلمه، وكم كانت له من المعارك الأدبية على صفحات الصحف والمجلات.</p><p>وكان الرافعي متمسكاً بدينه، شديداً للغيرة عليه، ميالاً إلى الفضائل، عزوفاً عن كل فساد أو خلق غير كريم، بل كان داعية إلى التمسك بأخلاق السلف، ونبذ العادات والتقاليد الوافدة من أوروبا التي تغاير عادات المجتمع الإسلامي وتقاليده. كذلك كان يدعو إلى الحفاظ على اللغة العربية الفصحى، والأدب العربي القديم، ويعرض عن كل دعوة إلى مخالفة تلك اللغة، أو الإقلال من شأنها، أو الإخلال بأساليبها.</p><p>وقد هاجم الرافعي دعاة التجديد في الأدب العربي على الطريقة الأوروبية أمثال العقاد، وطه حسين، وكانت له معهم معارك حامية، ضمّنها كتابيه: «على السُّفُود» و«تحت راية القرآن».</p><p>ويمكن حصر رسالة الرافعي الأدبية في ثلاثة عناصر هي:
+1. الدين؛ إذ أشاد بقيمه وفضائله وتشريعاته، ودافع عن القرآن والسنة، وعن رسالة الإسلام العقائدية والاجتماعية.
+2. اللغة العربية، فقد دعا إلى الالتزام بأساليبها الأصلية، وإثراء مادتها، والدفاع عنها وعن الأدب العربي القديم ضد موجات التغريب التي استعر أوارها في عصره.</p><p>٦٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

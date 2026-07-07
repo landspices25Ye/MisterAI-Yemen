@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>درست في الصفوف السابقة التيار الكهربائي المستمر (D.C) ومصادره ودوائره الكهربائية وكذلك تأثيراته المختلفة .</p><p>وفي هذا الصف سندرس النوع الآخر من أنواع التيار الكهربائي، وهو التيار الكهربائي المتردد (A.C) .</p><p>يستخدم التيار المتردد في جميع وسائل حياة الإنسان مثل تشغيل المصانع والأجهزة الحديثة، وإضاءة المنازل والشوارع العامة ، ويسهم في التقدم الحضاري والتكنولوجي، والعلمي .</p><p>فماذا يعني التيار الكهربائي المتردد ؟ وما أنواعه ؟</p><h2>التيار المتردد</h2><p>هو التيار الذي تتغير شدته واتجاهه مع الزمن ، وهو عدة أنواع نذكر منها : التيار المتردد الجيبي، التيار المتردد المنشاري، التيار المتردد المثلي والتيار المتردد الرباعي، والشكل ( ١ ) أ ، ب ، ج ، د يوضح هذه الأنواع .</p><h3>التيار المتردد الجيبي :</h3><p>هو الشائع استخداماً في حياتنا وسندرسه في هذه الوحدة، ويعرف بأنه: تيار كهربائي متغير الشدة لحظياً ومتغير الاتجاه في كل نصف دورة من دورات ملف مولده .</p><p>أو هو التيار الذي يسري في موصل بصورة موجية جيبية تتغير خلالها القوة الدافعة الكهربائية التأثيرية الناتجة عن دوران ملف المولد له من الصفر إلى نهاية عظمى، وتهبط هذه</p><img src="img-28.jpeg" alt="img-28.jpeg" /><p>(ب)</p><img src="img-29.jpeg" alt="img-29.jpeg" /><p>(أ)</p><img src="img-30.jpeg" alt="img-30.jpeg" /><p>(د)</p><img src="img-31.jpeg" alt="img-31.jpeg" /><p>(ج)</p><p>شكل ( ١ )</p><p>٣٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

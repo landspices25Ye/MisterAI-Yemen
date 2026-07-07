@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>- حدد موقع هذه العناصر في الجدول الدوري .</p><p>- إلى أي من المجموعات في الجدول</p><p>الدوري تنتمي هذه العناصر ؟</p><p>- ما تكافؤات العناصر التي تحتل كلاً</p><p>من المجموعات الثالثة والرابعة</p><p>والخامسة ؟</p><p>- ما الخصائص العامة لهذه العناصر ؟</p><p>إن أغلب العناصر التي تبدو في</p><p>الشكل ( ١ ) تعد من أشباه</p><p>الموصلات . وإن الجرمانيوم،</p><p>والسيليكون، هي العناصر الأكثر انتشاراً والأكثر معرفةً ودراسةً لخصائصها من قبل العلماء .</p><p>وأهم ما يميز أشباه الموصلات أن قدرتها على توصيل الكهرباء تزداد بارتفاع درجة حرارتها وتقل بانخفاض درجة حرارتها حتى أنها تكون عازلة تماماً عند درجة الصفر المطلق ( صفر كلفن ) .</p><p>ولكي تزداد معرفتنا بخصائص أشباه الموصلات ، ينبغي علينا دراسة التركيب البلوري لبلورات هذه المواد .</p><p>|  3A | 4A | 5A | 6A | 7A  |
+| --- | --- | --- | --- | --- |
+|  5B البورون | 6C الكربون | 15P الفوسفور | 5S الكبريت | 53I البيسود  |
+|  12Al الألنيوم | 14Si السيليكون | 33As الزرنيخ | 34Se السيليوم |   |
+|  Ga جاليوم | 32Ge الجرمانيوم |  |  |   |
+|  In 49 أنديوم | 50Sn القصيد | 51Sb الأنثيوم | 52Te البلوربوم |   |</p><p>الشكل ( ١ )</p><h2>التركيب البلوري لأشباه الموصلات النقية :</h2><p>Pure Semiconductors Crystal Structure</p><p>لكي تتعرف على التركيب البلوري لأشباه الموصلات النقية ، لاحظ الرسمين ( أ ) و ( ب ) في الشكل ( ٢ ) الذي يبين التركيب البلوري ، لبلورة الجرمانيوم .</p><p>كيف تترتب أو تنتظم ذرات الجرمانيوم في بلورته ؟</p><p>من المعروف أن الجرمانيوم والسيليكون من العناصر التي تنتمي إلى المجموعة الرابعة الأساسية في الجدول الدوري ، لذلك فهما من العناصر التي تكافؤها رباعي أي أن مستوى الطاقة الأخير ( الخارجي ) لذراتها يحتوي على أربعة إلكترونات .</p><p>فعندما تنتظم ذرات الجرمانيوم ( أو السيليكون ) لتكوين بلورته فإن كل ذرة من ذراته ترتبط مع أربع ذرات مجاورة بروابط تساهمية ، بحيث تصبح كل ذرة محاطة بثمانية</p><p>٦٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

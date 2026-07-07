@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>التكاثر في الكائنات الحية</h1>
+Reproduction</p><h1>الوحدة الثالثة</h1><p>قال تعالى: ﴿ وَمِنْ كُلِّ شَيْءٍ خَلَقْنَا زَوْجَيْنِ لَعَلَّكُمْ تَذَكَّرُونَ ﴾ [الذاريات: ٤٨]</p><img src="img-47.jpeg" alt="img-47.jpeg" /><h1>أهداف الوحدة</h1><p>يتوقع منك بعد دراستك لهذه الوحدة أن تكون قادراً على أن:</p><p>١- توضح أنواع التكاثر اللاجنسي في الكائنات الحية.
+٢- توضح التكاثر الجنسي في النبات.
+٣- تشرح التكاثر الجنسي في الحيوان.
+٤- تحدد مكونات ووظيفة أجهزة التكاثر الذكرية والأنثوية في الإنسان.
+٥- تتبع مراحل تكوين الأمشاج الذكرية والأنثوية في الإنسان.
+٦- تصف أهم التغيرات التي تحدث في المبيض والرحم أثناء دورة الحيض.
+٧- تصف مراحل تطور الجنين في الإنسان.</p><p>الأحياء للصف الثالث الثانوي</p><p>٦١</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

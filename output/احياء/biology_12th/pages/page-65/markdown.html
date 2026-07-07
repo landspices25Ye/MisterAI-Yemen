@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>جدول (١) طرق التكاثر الخضري الطبيعي</h1><p>|  العضو | المثال | وصف العضو | آلية التكاثر  |
+| --- | --- | --- | --- |
+|  الساق الجارية Runner Stem | الفراولة | ساق تنمو أفقياً فوق سطح التربة. | تنمو من البراعم التي توجد عند العقد سيقان وجذور وتتكون نباتات جديدة.  |
+|  الريزوم Rhizome | النجيل والنعناع | ساق أرضية تنمو أفقية تحت سطح الأرض. | تنشط البراعم في أنماط الأوراق الحرشقية التي تحتويها عقدة الريزوم وتنمو إلى نبات جديد وتتكون له أفرع هوائية.  |
+|  الساق الدرنية Tuber Stem | البطاطس | جزء منتفخ من ساق أرضية وتنتج من تخزين المواد النشوية فيها. | تنمو البراعم الجانبية في كل عين لتكون نبات جديد.  |
+|  الكورمه Corn | القلقاس | قاعدة أرضية منتفخة لساق هوائية. | ينمو البرعم الطرفي مكوناً أفرعاً هوائية، وتنمو البراعم الجانبية لتكون نباتات بكورومات جديدة.  |
+|  البصلة Bulb | البصل والثوم | انتفاخ تحت سطح الأرض مكون من أوراق منتفخة بمواد غذائية ترتكز على ساق قرصية قصيرة ويحيط بهذه الأوراق برعم طرفي وبراعم جانبية. | الأوراق الخضراء التي توجد فوق سطح التربة تصنع الغذاء الذي ينتقل إلى قواعدها للتخزين وتنمو البراعم الجانبية لتكون نباتاً وإبصالاً جديدة.  |
+|  الفسيلة Offset | النخيل والموز | فرع قصير ينمو من براعم عرضية عند قاعدة الساق الأصلية (غالباً تحت سطح التربة). | ينمو الفرع القصير جانباً ليكون نباتاً جديداً ملتصقاً بالام يمكن أن يفصل بعد سنتين من النمو ويزرع ليكون نباتاً جديداً.  |
+|  الورقة Leaf | نبات كالنشو | ورقة لحمية مخزنة للغذاء تحمل طاقتها نتوءات تنشأ منها براعم صغيرة. | عندما تصل البراعم حجماً معيناً تسقط على التربة لتعطي نباتاً جديداً.  |</p><p>٦٥</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

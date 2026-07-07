@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>٥- تزداد شدة الحزمة الضوئية الكائنة بين المرأتين حتى تبلغ حداً معيناً ينفذ منها نسبة معينة إلى الخارج من خلال المرآة النصف شفافة، وبذلك تنبعث حزمة متوازية من أشعة الليزر ذات شدة عالية موحدة التردد (f)، أي موحدة الطول الموجي (λ) الذي مقداره ٦٩٤٣ أنجستروم، والذي يعطي لوناً أحمر، انظر الشكلين (١٧) و (١٩). والذرات التي انتقلت بالحث من المستوى (طام) إلى المستوى الأرضي (طام) يُعاد إثارتها ثانية بواسطة مصباح الزيتون إلى المستويين العلويين طام، طام، لتكمل دورة جديدة وهكذا يستمر توليد أشعة الليزر.
+تلاحظ في مخطط مستويات الطاقة لعنصر الكروم (شكل ١٨) أن المستوى الشبه مستقر (طام) هو عبارة عن مستويين رمزنا لهما بالرمزين طام، طام وبالتالي فإن الإشعاع الليزري يعطي في الحقيقة طولين موجيين مناظرين للانتقالين التاليين:</p><p>$‫\text{طام} = \frac{\lambda}{\lambda} = ٦٩٤٣ \text{ (A)} \text{ طام} \text{ طام} \text{ طام} = \frac{\lambda}{\lambda} = ٦٤٢٨ \text{ (A)} \text{ طام}‬$</p><h3>خصائص أشعة الليزر ومجالات استخداماتها :</h3><p>أبرز خصائص أشعة الليزر أنها أشعة بالغة الشدة وتردداتها متقاربة ومتحدة في الطور، وتنتشر في خطوط مستقيمة متوازية. وبسبب هذه الخاصية يمكن توجيهها بحيث تقطع مسافات طويلة جداً محتفظة بشدتها دون أن تتشتت أو تتباعد خطوطها. ولأشعة الليزر استخدامات واسعة في مجالات مختلفة منها:</p><p>١- مجال الطب : في العمليات الجراحية الدقيقة كعمليات جراحة العيون أو الجملة العصبية وفي التشخيص والعلاج، كما أن ليزر الياقوت يستخدم في إزالة الوشم من الجلد والبقع السوداء من جلد المسنين.
+٢- مجال الأبحاث : تستخدم كأداة دقيقة للحصول على أفضل النتائج، التي لم يكن الحصول عليها ممكناً بالوسائل التقليدية.
+٣- في مجال الصناعة : تستخدم في عمليات قص وثقب المعادن وتشكيلها وشق الأنفاق وحفر المناجم بفضل قدرتها على تليين الصخور الصلبة وتفتيتها مثل ليزر ثاني أكسيد الكربون.
+٤- مجال الملاحة الجوية : إذ تزود الطائرات بأجهزة قادرة على استقبال إشارات الليزر الصادرة من الأرض لتحديد أهدافها.
+٥- مجالات الاتصالات ونقل المعلومات والصناعات الحربية، إذ تصنع أسلحة فتاكة توجه بالليزر فتصيب أهدافها إصابات دقيقة.</p><p>١٧٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

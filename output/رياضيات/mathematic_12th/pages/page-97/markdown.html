@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الاحتمالات</p><h1>مثال (٣ - ١٤)</h1><p>أطلق صياد ٣ رصاصات على هدف ، فإذا كان احتمال إصابة الهدف هو ٠,٦ ؛ أوجد احتمال :</p><p>١) إصابة الهدف ثلاث مرات .
+٢) إصابة الهدف مرة واحدة فقط .
+٣) عدم إصابة الهدف مرة واحدة فقط .
+٤) إصابة الهدف مرتين على الأقل .</p><h1>الحل :</h1><p>لاحظ أن شروط استخدام قانون الاحتمال الثنائي متوفرة ، و = ٣ ( عدد مرات إجراء المحاولات ) .</p><p>نفرض أن احتمال النجاح هو إصابة الهدف فيكون :</p><p>$‫ح = ٠,٦ \Leftarrow ف = ١ - ح = ١ - ٠,٦ = ٠,٤‬$‫</p><p>١) احتمال إصابة الهدف ثلاث مرات ( أي س = ٣ )</p><p>‬$‫\therefore \text{حا (س = ٣)} = ٣ \text{ و} \times ٠,٦ \times ٣ \times ٠,٤ \times ١ = ١ \times ٠,٦ \times ٣ \times ١ = ٠,٢١٦‬$‫</p><p>٢) احتمال إصابة الهدف مرة واحدة فقط ( أي س = ١ )</p><p>‬$‫\therefore \text{حا (س = ١)} = ٣ \text{ و} \times ٠,٦ \times ٣ \times ٠,٤ \times ٢ = ٠,١٦ \times ٠,٦ \times ٣ = ٠,٢٨٨‬$‫</p><p>٣) احتمال عدم إصابة الهدف مرة واحدة فقط ( أي س = ٢ ) .</p><p>‬$‫\therefore \text{حا (س = ٢)} = ٣ \text{ و} \times ٠,٦ \times ٢ \times ٠,٤ \times ٢ = ٠,٤ \times ٢ \times ١ \times ٢ = ٠,٤٦ \times ٠,٣٦ \times \frac{٢ \times ٣}{١ \times ٢} = ٠,٤٣٢‬$‫</p><p>٤) احتمال إصابة الهدف مرتين على الأقل ( أي س = ٢ أو ٣ )</p><p>‬$‫\therefore \text{حا (س = ٢)} = ٣ \text{ و} \times ٠,٦ \times ٢ \times ٠,٤ \times ٢ = ٠,٤ \times ٢ \times ٠,٦ \times ٢ = ٠,٤٣٢ + ٠,٢١٦ = ٠,٦٤٨‬$‫</p><h1>مثال (٣ - ١٥)</h1><p>ألقي حجر نرد متجانس عشوائياً ٧ مرات متتالية، واعتبر أن النجاح هو الحصول على الرقمين ٥ أو ٦ في الرمية الواحدة. أوجد احتمالات الحوادث التالية :</p><p>١) الحصول على الرقمين ٥ أو ٦ ثلاث مرات بالضبط .
+٢) عدم الحصول على الرقمين ٥ أو ٦
+٣) الحصول على الرقمين ٥ أو ٦ مرة واحدة على الأقل .</p><h1>الحل :</h1><p>‬$‫\therefore \text{ع} = \{ ١, ٢, ٣, ٤, ٥, ٦ \} \text{ للرمية الواحدة .}‬$‫</p><p>‬$‫و = ٧ , \text{ ح} = \text{حا} \{ ٦, ٥ \} = \frac{٢}{٦} = \frac{١}{٣} .‬$</p><p>٩٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

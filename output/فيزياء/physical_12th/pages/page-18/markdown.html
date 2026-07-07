@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-14.jpeg" alt="img-14.jpeg" /><p>الخارجي لعدم وجود وسط مادي يقاوم حركته.</p><p>والصواريخ التي استخدمت في إطلاق الأقمار الصناعية التي تدور حول الأرض تعمل على مراحل حيث تشتعل كل مرحلة من المراحل لتقوم بدورها لمدة دقائق معينة أثناء صعوده، ثم تنفصل وتبدأ المرحلة التي تليها بالاشتعال لتؤدي دورها في دفع الصاروخ أنظر الشكل (٦). ولحساب كمية التحرك للصاروخ نطبق قانون حفظ كمية التحرك كما يلي :</p><p>التغيير في كمية التحرك</p><img src="img-15.jpeg" alt="img-15.jpeg" /><p>شكل (٦)</p><p>للصاروخ = التغيير في كمية تحرك الغازات بالاتجاه المعاكس أي أن :</p><p>$‫\Delta \text{ كت للصاروخ} = - \Delta \text{ كت للغازات} \quad (١) \dots\dots\dots‬$‫</p><p>وحيث أن : دفع محرك الصاروخ = ‬$\Delta$‫ كت للصاروخ، دفع الغازات = ‬$\Delta$‫ كت للغازات</p><p>‬$‫\therefore \text{ دفع محرك الصاروخ} = - (\text{ دفع الغازات}) \quad (٢) \dots\dots\dots‬$‫</p><p>ومن تعريف الدفع بأنه يساوي حاصل ضرب القوة المؤثرة في زمن تأثيرها أي أن :</p><p>‬$‫\text{الدفع} = \text{ق} \times \Delta \text{ ز}‬$‫</p><p>‬$‫\therefore \text{ق}_{\text{محرك}} \times \Delta \text{ ز} = - \Delta \text{ كت}_{\text{غازات}}‬$‫</p><p>حيث ق محرك هي قوة دفع محرك الصاروخ، ‬$\Delta$ ز هي الفترة الزمنية بين لحظة احتراق الغازات وبدء حركة الصاروخ.</p><h3>مثال (٣)</h3><p>صاروخ يقذف غازات ساخنة من محركه بمعدل ١٣٠٠ كجم في الثانية وكانت سرعة حركة جزيئات الغازات بالنسبة للصاروخ ١٠ × ٥٠ م³/ث . أحسب</p><p>أ - قوة دفع محرك الصاروخ ؟</p><p>ب - التغيير في كمية تحرك الصاروخ خلال الثانية الأولى من بدء حركته .</p><p>١٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

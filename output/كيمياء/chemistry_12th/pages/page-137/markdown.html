@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>- راجع الجدول (٢-٧)، وحدّد أهم نواحٍ تكرير النفط المستخدمة كوقود.
+- ماذا سيحدث - برأيك - إذا اختفت هذه المواد ولم تعد موجودة كمصدر للطاقة؟
+- قارن وضع اليمن قبل أربعين عاماً في مجال استهلاك الوقود وبين وضعها في الوقت الراهن، هل زاد استهلاك الوقود، أم تناقص؟ لماذا؟
+- ما الحلول التي تقترحها لترشيد استهلاك الوقود المعتمد على النفط؟</p><img src="img-123.jpeg" alt="img-123.jpeg" /><p>شكل (٥-٧) استخدام الجازولين كوقود للسيارات</p><h3>النفط كمصدر للمنتجات الصناعية:</h3><p>يستهلك العالم كميات هائلة من النفط يومياً، إما على هيئة وقود لتسيير وسائل النقل (سيارات، طائرات، سفن، ...)، وإما على هيئة وقود للتدفئة أو الطبخ، كما يتم استهلاك كمية من النفط في إنتاج مواد جديدة تتطلبها الحياة المعاصرة، ويطلق على هذه الصناعات بالصناعات البتروكيميائية، أي المواد الكيميائية المشتقة من البترول والتي تدخل في صناعة الكثير من المواد.</p><img src="img-124.jpeg" alt="img-124.jpeg" /><p>شكل (٦-٧) نسب استهلاك البترول الخام في الدول الصناعية المتقدمة</p><p>- انظر الشكل (٦-٧)، علام تدل النسب؟
+- هل تنطبق هذه النسب على الوضع في اليمن وفي العالم العربي؟ لماذا؟
+- أيهما - من وجهة نظرك - أكثر أهمية: استخدام مشتقات البترول كوقود، أم استخدامها لإنتاج وتصنيع مواد جديدة؟</p><p>١٣٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

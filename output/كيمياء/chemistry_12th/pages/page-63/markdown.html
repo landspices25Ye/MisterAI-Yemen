@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>٢) نوع مادة القطب :</h1><p>قد يكون جهد اختزال مادة القطب الأنود أقل من جهد اختزال أيونات المذاب السالبة أو أقل من الماء، وفي هذه الحالة تتأكسد الذرات المكونة لمادة القطب وتذوب في المحلول.</p><h1>٣) درجة تركيز المحلول :</h1><p>تزداد جهود الاختزال للأيونات الموجبة بزيادة تركيز المحلول وتقل بنقص التركيز، ويقل جهد الاختزال للأيونات السالبة بزيادة التركيز ويزداد بنقص التركيز.</p><h1>تطبيقات على التحليل الكهربائي للمحاليل الإلكترونية:</h1><p>١ - تحضير هيدروكسيد الصوديوم (NaOH) : ويتم بالتحليل الكهربائي لمحلول مائي مشبع من كلوريد الصوديوم باستخدام قطبين من الكربون.
+يتفكك كلوريد الصوديوم في الماء طبقاً للمعادلة الآتية :</p><p>$‫\text{NaCl}_{(s)} \xrightarrow{\text{H}_2\text{O}} \text{Na}^+_{(\text{aq})} + \text{Cl}^-_{(\text{aq})}‬$‫</p><p>عند إمرار التيار الكهربائي تتجه الأيونات نحو الأقطاب المخالفة لها في الشحنة.
+عند الكاثود (المهبط) : تتجه أيونات الصوديوم ‬$\text{Na}^+$‫ والماء ‬$\text{H}_2\text{O}$‫، وتفاعلات الاختزال المحتملة هي :</p><p>‬$‫1) \text{Na}^+_{(\text{aq})} + \text{e}^- \longrightarrow \text{Na}_{(\text{s})} \quad \text{جهد الاختزال } E^\circ = 2.71 \text{ فولت}‬$‫</p><p>‬$‫2) 2\text{H}_2\text{O} + 2\text{e}^- \longrightarrow 2\text{OH}^-_{(\text{aq})} + \text{H}_2\uparrow_{(\text{g})} \quad \text{جهد الاختزال } E^\circ = 0.83 \text{ فولت}‬$‫</p><p>وبما أن جهد اختزال الماء أكبر من جهد اختزال الصوديوم تكون المعادلة (٢) أكثر حدوثاً ويتصاعد غاز الهيدروجين.</p><p>عند الأنود (المصعد) : تتجه أيونات الكلور ‬$\text{Cl}^-$‫ والماء ‬$\text{H}_2\text{O}$‫.
+وتفاعلات الأكسدة المحتملة هي :</p><p>‬$‫3) 2\text{Cl}^-_{(\text{aq})} \longrightarrow \text{Cl}_2 + 2\text{e}^- \quad \text{جهد الاختزال } E^\circ = 1.36 \text{ فولت}‬$‫</p><p>‬$‫4) 2\text{H}_2\text{O}_{(\text{l})} \longrightarrow \text{O}_2 + 4\text{H}^+ + 4\text{e}^- \quad \text{جهد الاختزال } E^\circ = 1.23 \text{ فولت}‬$</p><p>وبما أن جهد اختزال الماء أقل؛ فالذي نتوقعه أن يتم أكسدة للماء، إلا أن ما يحدث عملياً هو أن أيونات الكلور السالبة هي التي تتأكسد، ويرجع سبب ذلك إلى أن الأكسجين الناتج من عملية أكسدة الماء يستقطب على قطب الكربون ويتطلب ذلك زيادة في فرق الجهد لإزالة الاستقطاب، مما يرفع جهد اختزال الماء إلى قيمة أعلى</p><p>٦١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

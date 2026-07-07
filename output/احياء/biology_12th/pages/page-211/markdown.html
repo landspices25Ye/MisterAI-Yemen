@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-166.jpeg" alt="img-166.jpeg" /><p>الشكل (٣٠) أحفورة سمكة الاستراكوديرم</p><img src="img-167.jpeg" alt="img-167.jpeg" /><p>الشكل (٣١) سمكة بلاكوديرم الصخرية</p><img src="img-168.jpeg" alt="img-168.jpeg" /><p>الشكل (٣٢) أحافير أسنان أسماك غضرفية</p><img src="img-169.jpeg" alt="img-169.jpeg" /><p>الشكل (٣٣) نباتات لازهرية (وعائية)</p><p>في الديفوني وعرفت أحافيرها باسم الاستراكوديرم كما في (الشكل - ٣٠). وفي بداية العصر الديفوني ظهرت وازدهرت الأسماك ذات الفكوك والزعانف المزدوجة (البلاكوديرم)، (الشكل - ٣١) وهي ذات حجوم صغيرة تعيش في المياه العذبة.</p><p>أما الأسماك الغضروفية التي ميزت أحافير العصر الكربوني والبرمي، فقد تحفرت أسنانها كما في الشكل (٣٢). وفي أواخر هذه الحقبة ظهرت البرمائيات، أما الزواحف فظهرت في نهاية هذه الحقبة في أواخر العصر الكربوني وبداية البرمي.</p><h1>- الحياة النباتية:</h1><p>في بداية الحقبة اقتصرت الحياة النباتية على الأعشاب البحرية وخاصة الطحالب ذات الهياكل الكلسية مما ساعد على الاحتفاظ بها كحافير، وفي العصر الديفوني بدأ ظهور السرخسيات (نباتات لازهرية) وانتشرت في العصر الكربوني في بيئة المستنقعات وكونت غابات كثيفة من الأشجار الضخمة. انظر (الشكل - ٣٣) والتي نتج عن تراكمها ودقتها الفحم الحجري.</p><p>الأحياء للصف الثالث الثانوي</p><p>٢١١</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

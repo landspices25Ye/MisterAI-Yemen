@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-52.jpeg" alt="img-52.jpeg" /><h2>أسئلة وتدريبات</h2><p>١- أين أكمل الشاعر دراساته العليا ؟
+٢- اذكر ثلاثة مناصب مما تقلده الشاعر، وثلاثة دواوين من شعره.
+٣- تتمثل الوحدة العضوية في النص بشكل بارز، وضح ذلك.
+٤- من المقصود بقوله: «عشاق النهار» ؟ ولم أردف بعد ذلك بقوله «نبكي، نحب» ؟
+٥- ماذا يعني الشاعر بالجدار ؟ وما فائدة كلمة (وجه) في قوله: «أو متنا على وجه الجدار» ؟
+٦- لم نفي الشاعر اليأس والملل عن المعاول ؟
+٧- ورد في النص ذكر ثلاثة فصول من فصول السنة، لماذا ؟
+٨- اختر الإجابة الصحيحة من بين الأقواس :
+- نوع الصورة في قوله: (حبلى) : (كناية - استعارة - مجاز مرسل).
+- تقديم الظرف في قوله: «وغداً يكون الانتصار» غرضه: (التخصيص - التشويق - الاهتمام).
+- الألف كتبت في قوله: (نحيا) بهذه الصورة لأنها جاءت : (رابعة - رابعة بعد ياء - أصلها واو)
+٩- «إن أجدبت سحب الخريف، وفات في الصيف القطار» اشرح الجملتين مبيناً ما فيهما من صور بلاغية.
+١٠- إلام رمز الشاعر بهذه الكلمات: (النهار - الأشباح - النور - الجذب) ؟</p><p>١٤٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

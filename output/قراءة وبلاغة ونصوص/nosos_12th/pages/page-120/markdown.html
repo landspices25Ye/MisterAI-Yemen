@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-42.jpeg" alt="img-42.jpeg" /><p>والجانون فنحن، والزمان براء من كل ما نعمل أو لا نعمل.</p><p>إني لأعتر بالإنسانية تتوصل بذكائها إلى حد أن تكاد تتحكم في التراب وما ينبتته التراب من بذور وأشجار.</p><p>وأعتر بالإنسانية تتجنح أرجلها، وتُرهف مسامعها، وتتجلى أبصارها إلى حد أن تركب الماء والهواء وتسمع في المشرق ما يقوله المغرب، وتبصر ما تحجب في أعماق اللجة.</p><p>ولكنني أحجل حتى الانسحاق بتلك الإنسانية عينها، تهذي ليلها ونهارها بالسلم وبالحرية وبالإخاء وبالاتعناق من الفقر والخوف والوجع وهي تعمل نهارها وليلها على بذر الحرب والعبودية والشقاق والفقر والخوف والوجع في قلوب بنيها.</p><p>فكأنها ما تعلمت بعد، أن بذار القلوب حري بالعناية والتأصيل والغربلة كبذار الحبوب سواء بسواء، وأن تربة القلوب جديرة بالحرارة الفنية وبالتمهيد والتنقية، وبالري والتغذية كتراب الأرض سواء بسواء.</p><h2>معاني المفردات والتراكيب اللغوية</h2><p>تصرّم: مضي، <strong>الكهولة</strong>: مرحلة العمر بين الثلاثين والخمسين، <strong>رمس</strong>: قبر، <strong>رُفات</strong>: حطام، <strong>حري</strong>: خليق وجدير ومناسب، <strong>القطرب</strong>: نبات شائك يحمل حباً يلتصق بمن يمر به، <strong>العوسج</strong>: نبات شوكي، <strong>تتجنح الأرجل</strong>: تصير لها أجنحة والمقصود الطيران، <strong>تُرهف</strong>: الإرهاف الإنصات بتركيز، <strong>اللجة</strong>: معظم الماء، <strong>تهذي</strong>: الهذيان الكلام غير الواعي والمقصود تتكلم بلا رابط، <strong>الاتعناق</strong>: التحرر والخلاص، <strong>الغربلة</strong>: من غربل الشيء إذا نخله.</p><h2>إضاءة</h2><p>يشتمل النص على فكرتين: للتجارب أثرها في حياة صاحبها، وإيجابيات وسلبيات الإنسانية.</p><p>يقول «نعيمة»: لا أفكر في حياتي وفي تفاصيل ماضي وحاضري ومستقبلي، فما عملته – كأي إنسان – هو زرع لابد أن أحصده كيفما كان. إن الزمان شاهد يسجل، فمن يعمل شراً لا يجني الخير.</p><p>١١٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

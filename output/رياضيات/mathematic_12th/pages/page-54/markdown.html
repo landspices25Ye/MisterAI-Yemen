@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-43.jpeg" alt="img-43.jpeg" /><p>الوحدة الثانية</p><p>$‫\therefore \frac{56}{56-2} = 56‬$‫</p><p>‬$‫\frac{56-2-1}{56-2} \leftarrow \frac{56-2-1}{56-2} \leftarrow‬$‫</p><p>‬$$‫\frac{56-2-1}{56-2} \leftarrow \frac{56-2-1}{56-2} \leftarrow‬$$‫</p><p>‬$‫\frac{56-2-1}{56-2} \leftarrow \frac{56-2-1}{56-2} \leftarrow‬$‫</p><p>‬$‫\frac{56-2-1}{56-2} \leftarrow \frac{56-2-1}{56-2} \leftarrow \frac{56-2-1}{56-2} \text{ أما }‬$‫</p><p>‬$‫\frac{56-2-1}{56-2} \leftarrow \frac{56-2-1}{56-2} \leftarrow \frac{56-2-1}{56-2} \text{ أو }‬$‫</p><p>‬$‫\therefore \frac{56-2-1}{56-2} = 8‬$‫</p><p>‬$‫\frac{56-2-1}{56-2} = 7‬$‫</p><p>‬$‫\frac{56-2-1}{56-2} \times \frac{\frac{56-2-1}{56-2}}{\frac{56-2-1}{56-2}} \therefore‬$‫</p><p>‬$‫\frac{56-2-1}{56-2} \times \frac{\frac{56-2-1}{56-2}}{\frac{56-2-1}{56-2}} \leftarrow‬$‫</p><p>‬$‫\frac{56-2-1}{56-2} \leftarrow \frac{56-2-1}{56-2} \leftarrow 7‬$‫</p><h1><strong>مثال (٢ - ٨)</strong></h1><p>غرفة اجتماعات فيها أحد عشر مقعداً، بكم طريقة يستطيع خمسة أشخاص الجلوس على استقامة واحدة؟</p><h1><strong>الحل :</strong></h1><p>إن طريقة الجلوس تتغير نتيجة تبديل أماكن جلوسهم. وعليه يكون عدد الطرق الممكنة للجلوس مساوياً عدد تبديل أحد عشر مقعداً مأخوذ خمسة خمسة.</p><p>أي أن عدد الطرق الممكنة للجلوس = ‬$5^11 = 11 \times 10 \times 9 \times 8 \times 7 = 55440$‫ طريقة.</p><h1><strong>مثال (٢ - ٩)</strong></h1><p>كم عدد تباديل جلوس ٧ أشخاص في الحالتين التاليتين :</p><p>أ) في صف مستقيم.
+ب) حول طاولة مستديرة.</p><h1><strong>الحل :</strong></h1><p>أ) عدد تباديل جلوس ٧ أشخاص في صف مستقيم = ‬$7^7 = 7$‫.</p><p>‬$‫5.040 = 1 \times 2 \times 3 \times 4 \times 5 \times 6 \times 7 = 5.040 \text{ تبديلة.}‬$</p><p>٥٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

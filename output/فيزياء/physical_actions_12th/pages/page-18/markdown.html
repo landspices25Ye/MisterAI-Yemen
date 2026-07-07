@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="e-learning" alt="LOGO" /><p>|   |  |  |  | فرق الجهد (ج) (فولت)  |
+| --- | --- | --- | --- | --- |
+|   |  |  |  | شدة التيار (ت) (ميكرو أمبير)  |</p><p>٤- ارسم علاقة بيانية - من الجدول الأول، بيّن فرق الجهد مثلاً على المحور الأفقي، وشدة التيار بالمللي أمبير مثلاً على المحور الرأسي.
+٥- ارسم علاقة بيانية من الجدول الثاني. بيّن فرق الجهد مثلاً على المحور الأفقي وشدة التيار بالميكرو أمبير مثلاً على المحور الرأسي.
+- من الرسم البياني حاول الإجابة عن السؤال الآتي:
+تخيّر قيمة معيّنة لفرق الجهد في الحالتين، وقارن بين شدّتي التيار الكهربائي في دائرة الوصلة الثنائية.
+- ماذا تلاحظ؟
+- ماذا تستنتج؟</p><h1>الاستنتاج</h1><img src="img-14.jpeg" alt="img-14.jpeg" /><p>١٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

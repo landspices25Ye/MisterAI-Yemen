@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-27.jpeg" alt="img-27.jpeg" /><p>في لوح الورق وهذا يدل على عدم
+قدرة أشعة ألفا على النفاذ ،
+والاختراق خلال المواد .</p><p>٥- استبدل مصدر ألفا المشع بالمصدر
+الثاني الذي يشع أشعة بيتا .</p><p>٦- ضع هذا المصدر على نفس المسافة .
+- سجّل عدد أشعة بيتا التي
+تصل الكشاف في فترة زمنية معينة
+(٤-٥ دقائق) .</p><p>٧- ضع لوحاً رقيقاً من الورق بين المصدر
+والكشاف .</p><p>- لاحظ أن تأثيره في تقليل عدد
+الإشعاعات التي تخترقه ليس كبيراً
+مثل تأثيره في حالة إشعاعات ألفا .</p><p>٨- استبدل اللوح الورقي بألواح مختلفة
+السمك من مادة الألومنيوم .</p><p>- لاحظ أنه كلما زاد السمك قلّت
+الإشعاعات التي تخترقه بنسبة
+كبيرة؛ حيث تُمتصّ في ألواح
+الألومنيوم من ذلك .</p><p>- يُستنتج من ذلك أن أشعة بيتا لها
+قدرة على النفاذ خلال المواد أكبر
+من تلك التي تتميز بها أشعة ألفا .</p><p>٦- استبدل مصدر بيتا المشع بالمصدر
+الثالث الذي تنبعث منه أشعة جاما .</p><p>- لاحظ عدم فاعلية الألومنيوم في
+امتصاص أشعة جاما .</p><p>٧- استبدل ألواح الألومنيوم بألواح من
+الرصاص ذات سمك مختلف .</p><p>- لاحظ فاعليتها في تقليل نسبة
+إشعاعات جاما التي تنفذ منها .</p><p>- ماذا تلاحظ ؟</p><p>- ماذا تستنتج ؟</p><h1>الاستنتاج</h1><img src="img-28.jpeg" alt="img-28.jpeg" /><p>٣٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

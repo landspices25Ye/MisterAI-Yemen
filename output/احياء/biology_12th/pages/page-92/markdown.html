@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>جدول (١٠) أجزاء المشيمة ووصفها</h1><p>|  أجزاء المشيمة | الوصف  |
+| --- | --- |
+|  الرحمي (الامي) | ينتشر به جيوب كثيرة تمتلئ دماً من أفرع شريانية من الأم، ويعود الدم فيها إلى الأم بأفرع وريدية.  |
+|  الجنيني | يتكون من خملات من الكوريون تمتد في كل حملة شعيرات دموية دقيقة ناتجة عن تفرعات الأوعية الدموية للحبل السري.  |</p><img src="img-72.jpeg" alt="img-72.jpeg" /><p>عرفت سابقاً
+أن دم الأم لا
+يختلط بدم
+الجنين، فكيف
+يتم مرور المواد
+بينهما؟
+يحدث
+تبادل بين دم الأم
+ودم الجنين عن
+طريق الانتشار
+عبر المشيمة.
+يأخذ الجنين المواد
+الغذائية
+والأكسجين</p><p>الشكل (٢٥) الأغشية الجنينية
+من دم الأم، ويتخلص من ثاني أكسيد الكربون والمواد الإخراجية النيتروجينية.</p><p>■ ابحث في موضوع مراحل المخاض (الولادة).</p><p>قضية البحث</p><p>٩٢</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

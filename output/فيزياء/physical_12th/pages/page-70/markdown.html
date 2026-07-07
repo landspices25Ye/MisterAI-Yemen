@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-66.jpeg" alt="img-66.jpeg" /><p>نتيجة لذلك فرق جهد في المنطقة القريبة من التلامس يتزايد تدريجياً حتى يصل إلى حد معين – يكفي لمنع عبور المزيد من الإلكترونات من البلورة السالبة إلى البلورة الموجبة وهذا الفرق في الجهد يسمى ( حاجز الجهد الداخلي ) Internal Potential Barrier أو الجهد الحاجز وتكون قيمته بين ( ٠,١ ، ١ فولت ) وقيمته عملياً بالنسبة للجرمانيوم تساوي ٠,٣ فولت، وللسيليكون ٠,٧ فولت في درجة الحرارة الاعتيادية، ويتغير مقدار فرق الجهد هذا بتغير درجة الحرارة ونسبة الشوائب المضافة.</p><h3>مرور التيار الكهربائي عبر الوصلة الثنائية:</h3>
+Flow of Electric Current Across P-N Junction</p><img src="img-67.jpeg" alt="img-67.jpeg" /><p>الشكل (٧)</p><p>انظر إلى الشكل (٧) الذي يبين توصيل الوصلة الثنائية بمصدر للتيار الكهربائي (بطارية) بحيث يتصل القطب السالب للبطارية بالبلورة السالبة والقطب الموجب للبطارية بالبلورة الموجبة. في هذه الحالة هل زادت منطقة حاجز الجهد أم قلت عن المنطقة المعينة في الشكل (٦)؟ وما سبب ذلك؟</p><p>انظر إلى الشكل (٨) الذي يبين توصيل الوصلة الثنائية بمصدر التيار الكهربائي (بطارية) بحيث يتصل القطب السالب للبطارية بالبلورة الموجبة والقطب الموجب للبطارية بالبلورة السالبة.</p><p>في هذه الحالة، هل تتوقع زيادة منطقة حاجز الجهد أم نقصانها عن المنطقة المعينة الموضحة في الشكل (٦)؟</p><p>لاحظ أنه في أي من هاتين الطريقتين، فإن الوصلة الثنائية لا تسمح للتيار الكهربائي بالمرور خلالها إلا إذا أمكن التغلب على الجهد الحاجز لها. ففي أية حالة من هاتين الحالتين يمر التيار الكهربائي عبر الوصلة الثنائية بشكل أكبر؟</p><p>إذا أرجعت النظر إلى الشكلين (٧) و (٨) ستجد أن دمج (ربط) الوصلة الثنائية في الدوائر الكهربائية يتم بإحدى الطريقتين الآتيتين:</p><p>٦٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

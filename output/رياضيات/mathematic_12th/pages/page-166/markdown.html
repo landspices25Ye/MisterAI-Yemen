@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-146.jpeg" alt="img-146.jpeg" /><p>الوحدة السادسة</p><p>وبالتعويض عن قيمة ع نجد أن :</p><p>$‫\frac{ص}{س} = ٤ \text{ س} (٢ - ٢) \text{ .}‬$‫</p><h1><strong>مثال (٦ - ٨)</strong></h1><p>إذا كانت ص = (٤ س ٢ + ٢ س ٢ + ٦) ، فوجد ‬$\frac{ص}{س}$‫ .</p><p><strong>الحل :</strong></p><p>‬$‫\text{نضع ع} = ٤ \text{ س} ٢ + ٢ \text{ س} ٢ + ٦ \Leftarrow \text{ص} = ٩ \text{ ع}‬$‫</p><p>‬$‫\therefore \frac{ص}{س} = \frac{ص}{ع} \times \frac{ع}{ع} \times \frac{ع}{ع} \text{ .}‬$‫</p><p>‬$‫\therefore \frac{ص}{س} = ٩ \text{ ع} \text{ ع} = ٩ (٤ س ٢ + ٢ س ٢ + ٦) (١٢ س ٢ + ٤ س) \text{ .}‬$‫</p><p>‬$‫= ٣٦ \text{ س} (٣ س ١ + ١) (٤ س ٢ + ٢ س ٢ + ٦)‬$‫</p><p><strong>نتيجة (١) :</strong></p><p>إذا كانت الدالة د قابلة للاشتقاق عند س ، وكان ص = [د(س) هـ] ، فإن :</p><p>‬$‫\frac{ص}{س} = [د(س) هـ] - ١ \text{ د} (س) \text{ .}‬$‫</p><h1><strong>مثال (٦ - ٩)</strong></h1><p>أوجد مشتقة الدالتين التاليتين :</p><p>‬$‫(أ) \text{ ص} = (س ٤ + ٢ س - ٥) \text{ ، } (ب) \text{ ص} = \frac{٢}{(س ٢ + ٢)}‬$‫</p><p><strong>الحل :</strong></p><p>‬$‫(أ) \frac{ص}{س} = \frac{٢}{٥} (س ٤ + ٢ س - ٥) \times ١ - \frac{٢}{٥} (س ٤ + ٢ س - ٥)‬$‫</p><p>‬$‫= \frac{٢}{٥} (س ٤ + ٢ س - ٥) \times \frac{٣}{٥} (٤ س ٢ + ٢ س - ٥) \times \frac{٤}{٥} (١ + ٢ س ٢) \times \frac{٤}{٥} (٥ - ٢ + ٤ س)‬$‫</p><p>‬$‫(ب) \text{ بوضع ع} = ٣ + ٢ س \text{ ص} = \frac{٢}{٢} \text{ ع} = ٢ \text{ ع}‬$‫</p><p>‬$‫\frac{ص}{س} = - ٤ \text{ ع} \text{ ع} = (٤ - ٤) \text{ ع} = (٢ - ٨) \text{ س} = - ٨ \text{ س} \text{ ع} = ٨ - ٨ \text{ س} \times \frac{١}{٢} \text{ ع} = \frac{٨ - ٨}{(س ٢ + ٢)}‬$</p><p>١٦٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

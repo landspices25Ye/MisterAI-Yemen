@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-31.jpeg" alt="img-31.jpeg" /><h2>أسئلة وتدريبات</h2><p>١ - ما الذي منع الرافعي عن مواصلة دراسته النظامية؟ وكيف تعلّم؟
+٢ - اذكر بعض مواقفه في معاركه الأدبية تجاه الدين واللغة.
+٣ - قصة الإسراء والمعراج توضح العلاقة القوية بين الكعبة والمسجد الأقصى. أين تجد ذلك في النص؟
+٤ - بم استدل الكاتب على معجزة الرسول -صلى الله عليه وسلم- ليلة أسري به؟
+٥ - سخرت للرسول -صلى الله عليه وسلم- قوتان عظيمتان ليلة الإسراء والمعراج، فما هما؟
+٦ - لكل مسلم درس في الإسراء والمعراج. ما مضمون ذلك الدرس وفق ما جاء في النص؟
+٧ - ما غرض الاستفهامين في قوله: (فهل في ذلك من عجيب) وقوله: (كيف يستوطئ المسلمون العجز)؟
+٨ - اختر الإجابة الصحيحة من بين الأقواس فيما يأتي:
+- صلى رسول الله بالأنبياء -عليه وعليهم الصلاة والسلام- إماماً ليلة الإسراء في: (مكة - المدينة - القدس)
+- معنى قوله: (آداب القرآن) في النص: (كتبه الأدبية - أساليبه ومعانيه - أمثاله وقصصه).
+- وردت آيات المعراج في سورة: (النجم - الإسراء - الشمس).
+- الغرض من الاستفهام في قوله: (كيف لا يحملون النور للعالم): (النفي - السخرية - الإنكار).
+- الفعل (تَحَجَّب) يأتي المصدر منه على وزن: (تفعيل - تفعل - تفاعل).
+٩ - كيف استدل الرافعي من كلمة «البراق» على السرعة الكبيرة التي صاحبت الإسراء والمعراج؟
+١٠ - ما الهدف الذي يريد الكاتب تحقيقه من خلال هذا النص؟
+١١ - قال الرافعي (وما ذُلَّتْ لُغَةُ شَعْبٍ إِلَّا ذُلٌّ)، بم توحي هذه العبارة؟ وكيف تذل اللغة؟
+١٢ - لم كتبت الهمزة على هذه الصورة في الكلمات: (يضيء - لم تَجِئ - ملاءمة - ملائكية)؟</p><p>٧٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

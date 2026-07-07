@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>ويطلق على مكافئ المفاعلة الحثية للملف، والمفاعلة السعوية للمكثف والمقاومة الأومية اسم المعاوقة Impedance ويرمز لها بالرمز (م) وتقاس بوحدة الأوم.</p><p><strong>حساب المعاوقة لدائرة مترددة موصل معها (م ، م ، م ، م) على التوالي:</strong></p><p>نفترض أننا وصلنا مع مصدر تيار متردد مقاومة أومية وملفاً حثيّاً ومكثفاً على التوالي كما يوضحه الشكل السابق، وجهد المصدر المتردد يتغير جيبياً مع الزمن وأن الجهد اللحظي يعطي بالعلاقة:</p><p>$‫\text{ج} = \text{ج} \times \text{ج} \times \text{ج} \dots \dots \dots (1).‬$‫</p><p>والذي يساوي مجموع فروق الجهد اللحظية بين طرفي كل من م ، م ، م أي إن:</p><p>‬$‫\text{ج} = \text{ج} \times \text{ج} + \text{ج} \times \text{ج} \dots \dots \dots (2).‬$‫</p><p>بينما التيار المار في أية لحظة بهذه العناصر الثلاثة يساوي تيار المصدر لأن العناصر الثلاثة متصلة على التوالي مع مصدر التيار المتردد.</p><p>وفرق الجهد بين أطراف العناصر الثلاثة السابقة المتصلة في الدائرة على التوالي تختلف في زاوية الطور كما يأتي:</p><p>فرق الجهد بين طرفي المقاومة (ج) متفق في الطور مع شدة التيار المار في</p><img src="img-48.jpeg" alt="img-48.jpeg" /><p>شكل (١٣)</p><p>المقاومة (ت) ، وفرق الجهد بين طرفي الملف الحثي (ج) يسبق شدة التيار المار في الملف الحثي (ت) بزاوية طور قدرها (‬$\frac{\pi}{2}$‫) راديان أي ٩٠، وفرق الجهد بين لوحي المكثف (ج) يتأخر عن التيار المار به (ت) بزاوية طور قدرها (‬$\frac{\pi}{2}$) راديان أي (٩٠) كما يوضحه الشكل (١٣).</p><p>ومن الرسم البياني الموضح بالشكل السابق يمكن استخدام العلاقة الطورية وكتابة فروق الجهد لكل من طرفي المقاومة والملف الحثي وطرفي المكثف كما يلي:</p><p>٤٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

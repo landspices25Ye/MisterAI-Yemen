@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>العلاقة بين حاسة الشم، وحاسة التذوق:</h2><p>- لماذا يقل إحساسك بالشم، وتفقد جزءاً كبيراً من القدرة على التذوق عندما تصاب بالزكام؟
+- عندما تقرب برتقالة من أنفك تميز رائحة البرتقالة وطعمها. كيف يحدث ذلك؟
+- تنتقل الغازات الطيارة من ثمرة البرتقال مع هواء الشهيق إلى داخل الأنف، وتذوب في المخاط بما يساعدك على تمييز الرائحة، وفي نفس الوقت تصل هذه الغازات إلى الفم عن طريق البلعوم حيث تذوب في اللعاب وبالتالي تؤثر على براعم التذوق فتشعر بطعم البرتقال، وعليه فهناك علاقة وطيدة بين الإحساس بالشم والتذوق، فكل منهما يقوي الآخر.
+- لماذا تشعر بمذاق الطعام الساخن أكثر من الطعام البارد عند شمه؟</p><h2>ثالثاً: المستقبلات الآلية Mechanoreceptors</h2><h3>أ: مستقبلات الصوت والتوازن Hearing and Balance Receptors</h3><p>- كيف ينتقل الصوت في الهواء؟</p><p>توجد مستقبلات الصوت، والتوازن في الأذنين. ومستقبلات الصوت تتأثر بالموجات الصوتية الناتجة من المنبه الصوتي (منبه آلي)؛ إذ يقوم المستقبل الصوتي بتحويل طاقة الصوت الآلية إلى طاقة كهروكيميائية على هيئة جهد فعل يسري بشكل سيال عصبي في أنابيب العصب السمعي التوازني إلى مركز السمع في الدماغ؛ حيث يتم ترجمته وإدراكه.</p><h3>تركيب الأذن في الإنسان:</h3><p>ادرس الشكل (٢١)، وتعرف على أجزاء الأذن ومحتوياتها.</p><p>- ما أسماء الأجزاء الرئيسية الثلاثة التي تتركب منها الأذن؟</p><p>- ما وظيفة كل جزء منها؟
+- ما مكونات كل من الأذن الوسطى والأذن الداخلية؟</p><img src="img-23.jpeg" alt="img-23.jpeg" /><p>الشكل (٢١) تركيب أذن الإنسان</p><p>٣٢</p><p>الأحياء: النصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

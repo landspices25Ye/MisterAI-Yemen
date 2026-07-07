@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-41.jpeg" alt="img-41.jpeg" /><p>الوحدة الثانية</p><h2>تمارين ومسائل (٢-١)</h2><p>[١] حديقة لها أربعة أبواب ، ما عدد الطرق التي يمكن بواسطتها لشخص أن يدخل الحديقة من أحد الأبواب</p><p>ويخرج من باب آخر ؟</p><p>[٢] ألقي حجر نرد مرتين ، ما هو عدد النتائج الممكنة ؟</p><p>[٣] رمينا قطعة نقود ثلاث مرات وحجر نرد مرة واحدة ، ما هو عدد النتائج الممكنة ؟</p><p>[٤] كم عدداً مكوناً من رقمين يمكن تكوينه من أرقام المجموعة { ١ ، ٢ ، ٥ ، ٦ ، ٩ } ؟ علماً بأنه :</p><p>أ ) يمكن تكرار الأرقام . ب ) بدون تكرار الأرقام .</p><p>[٥] كم عدد التطبيقات التي يمكن تكوينها من س إلى ص إذا كانت :</p><p>س = { ٢ ، ٣ ، ٥ } ، ص = { ١ ، ب ، ج ، و ، هـ } ؟</p><p>[٦] كم عدداً مؤلفاً من أربعة أرقام يمكن تشكيله من مجموعة الأرقام التالية :</p><p>١ ) { ٢ ، ٣ ، ٥ ، ٧ } . ٢ ) { ٢ ، ٣ ، ٤ ، ٦ } .</p><p>في كل من الحالتين التاليتين :</p><p>أ ) التكرار ممكناً ؟ ب ) التكرار غير ممكن ؟</p><p>[٧] كم عدد طرق تكوين عدد يقبل القسمة على ٥ ، مكون من ثلاثة أرقام من المجموعة { ٢ ، ٤ ، ٥ ، ٦ }</p><p>مع إمكانية التكرار مرة ، وعدم إمكانية التكرار مرة أخرى ؟</p><p>[٨] كم عدد أرقام الهاتف السداسية التي يمكن تشكيلها إذا كانت المنزلة الأخيرة إما ٣ أو ٤ ؟</p><p>[٩] من المجموعة { ١ ، ٢ ، ٣ ، ٤ ، ٥ ، ٦ } كم عدداً يمكن تكوينه إذا كان العدد :</p><p>أ ) مكوناً من ثلاثة أرقام وأكبر من ٣٠٠ مع عدم إمكانية التكرار للأرقام ؟</p><p>ب ) زوجياً ومكوناً من أربعة أرقام مع إمكانية التكرار مرة ، وعدم إمكانية التكرار مرة أخرى ؟</p><p>[١٠] يحوي أحد رفوف مكتبة ٧ كتب عربية مختلفة ، ٥ كتب إنجليزية مختلفة ، ٤ كتب فرنسية مختلفة ،</p><p>بكم طريقة يستطيع أحد الأشخاص اختيار ثلاثة كتب إحداها باللغة العربية ، والثاني بالإنجليزية ، والثالث</p><p>بالفرنسية ؟</p><p>[١١] كم عدداً زوجياً يمكن تكوينه من ثلاثة أرقام من المجموعة { ٢ ، ٣ ، ١ ، ٢ ، ٥ } ، بحيث يكون رقم</p><p>عشرائه فردياً مع إمكانية التكرار ؟</p><p>[١٢] لدينا نوعان من التلفزيونات و ثلاثة أنواع من الفيديوهات ، أوجد عدد الطرق الممكنة لاختيار تلفزيون</p><p>وفيديو موضحاً ذلك بالخطط الشجري .</p><p>٤٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

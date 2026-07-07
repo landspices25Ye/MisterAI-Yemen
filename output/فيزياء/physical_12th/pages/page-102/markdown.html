@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><p>شبكة الإرسال التلفازي؟ وكيف تتم عملية الإرسال؟</p><p>تبدأ عملية الإرسال التلفازي، بأخذ صورة للمنظر أو المشهد المراد إرساله تلفزيونياً، وذلك بواسطة آلات (كاميرات) التصوير التلفازي، ومن أنواع الكاميرات التلفزيونية، الكاميرا التي تسمى الإيكونوسكوب <strong>Iconoscope</strong>، والتي تتكون من أربعة أجزاء أساسية (انظر الشكل «١١») هي:</p><p>١ – أنبوبة التصوير: وهي عبارة عن أنبوبة مظلمة مخلخلة من الهواء لها نافذة زجاجية في مقدمتها مجموعة من العدسات.</p><p>٢ – لوح الصورة (أو لوح الإشارات)، ويوجد داخل أنبوبة التصوير، وتتكون من لوح رقيق جداً من الميكا <strong>Mica</strong> (الميكا مادة شبه زجاجية، يمكن أن تشطر إلى رقاقات وتستعمل عازلاً كهربائياً)، يغطي سطح لوح الميكا المقابل للعدسات عدة آلاف من الخلايا الكهروضوئية المعزولة بعضها عن بعض، وكل خلية عبارة عن حبيبة صغيرة جداً من الفضة تغطيها طبقة من السيزيوم، إذا سقطت عليها أشعة ضوئية فإنها تبعث بإلكترونات، ويسمى اللوح بلوح الموزاييك (<strong>Mosaic</strong>) ويغطي السطح الآخر للوح الميكا <strong>Mica</strong> صفيحة معدنية رقيقة متصلة بمكبر تيار الصورة.</p><p>٣ – بندقية إلكترونية (:<strong>Electrons Gun</strong>) عبارة عن إسطوانة ضيقة تحتوي في طرفها الخارجي على كاثود (مهبط) باعث للإلكترونات، وتحيط به شبكة حاكمة للتحكم في عدد وتركيز الإلكترونات المتجهة من الكاثود إلى لوح</p><p>الصورة، ويوجد أمام الشبكة أنود (مصعد) يُحمل بجهد موجب (أي جهده موجب)، تزداد قيمة هذا الجهد من طرف الأنود القريب من الشبكة إلى طرفه القريب من لوح الصورة بالتدريج.</p><img src="img-100.jpeg" alt="img-100.jpeg" /><p>شكل (١١) الإيكونوسكوب</p><p>١٠٠</p><p><http://www.e-learning-moe.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

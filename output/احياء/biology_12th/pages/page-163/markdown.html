@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>البيئة ومشكلاتنا</h2><p>– ما المقصود بالبيئة؟</p><p>– كيف تطورت علاقة الإنسان بالبيئة التي يعيش فيها؟</p><p>– البيئة هي الإطار الذي يعيش فيه الإنسان مع بقية الكائنات الحية الأخرى ويحصل منها على ما يحتاج إليه من مقومات الحياة المختلفة كالغذاء والماء والكساء، ومصادر الطاقة المتنوعة التي تعد من أهم مقومات حياة الإنسان الحديث.</p><p>– اذكر بعض مصادر الطاقة في البيئة؟</p><p>كان النظام البيئي حتى عهد قريب متوازناً وزاخراً بعناصره الحية وغير الحية بأعداد وكميات ثابتة ومستقرة. وقد استمر الإنسان، منذ أن خلقه الله سبحانه وتعالى على هذه الأرض، في التفاعل مع بيئته التي يعيش فيها دون أن تحدث المشكلات التي تعاني منها البيئة هذه الأيام، ويمكن توضيح المراحل التي مر بها الإنسان في علاقته مع البيئة التي يعيش فيها كما يأتي:</p><p>١- مرحلة الجمع والالتقاط:</p><p>حيث كان يحصل على محتاجاته الغذائية عن طريق التقاط وجمع ثمار الأشجار والنباتات من البيئة التي يعيش فيها.</p><p>٢- مرحلة القنص والصيد:</p><p>وقد وصل الإنسان إلى هذه المرحلة بعد أن ابتكر بعض الأدوات من الصخور والعظام لاستخدامها في صيد الحيوانات للحصول على غذائه أو للدفاع عن نفسه.</p><p>٣- مرحلة الرعي واستئناس الحيوانات:</p><p>وهي الفترة التي استطاع الإنسان فيها أن يستأنس بعض الحيوانات ليرعاها فيحصل منها على الغذاء وبعض حاجاته الأخرى.</p><p>٤- مرحلة الزراعة والاستقرار:</p><p>وهي الفترة التي بدأت باكتشاف الإنسان للزراعة واستصلاح الأرض لإنتاج النباتات للحصول على الغذاء وحاجاته الأخرى، ويقدر العلماء أن الإنسان بدأ زراعة الأرض قبل حوالي (١٢) ألف عام، وتعد هذه الفترة فترة الاستقرار للإنسان وظهور التجمعات السكانية وحضارات الإنسان الأولى وخاصة في مناطق تواجد الأنهار ومصادر المياه مثل: وادي الرافدين، ووادي النيل، وخزن مياه الأمطار في السدود كما في الحضارات اليمنية القديمة.</p><p>١٦٣</p><p>الأحياء الصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

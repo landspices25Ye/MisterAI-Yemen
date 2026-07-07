@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-152.jpeg" alt="img-152.jpeg" /><p>الوحدة السادسة</p><p>ب) باستخدام قاعدة الاشتقاق للدالة الكسرية نجد أن :</p><p>$‫\hat{x}(m) = \frac{(\text{جنا س}) \times (\text{جنا س}) \times \text{جنا س}}{m^2} = \frac{-m \text{ جنا س} - \text{جنا س}}{m^2} \quad , \quad m \neq 0‬$‫</p><h1><strong>مثال (٦ - ٢٣)</strong></h1><p>أوجد معادلتي المماس والناظم لمنحنى الدالة : ‬$x(m) = 2m + \text{جنا س}$‫ ، عند النقطة ‬$(m, 2, n)$‫</p><p><strong>الحل :</strong></p><p>∴ نقطة التماس هي : ‬$(m, 2, n)$‫ ، ‬$\hat{x}(m) = 2 + \text{جنا س}$‫</p><p>‬$‫\therefore \hat{x}(m) = 2 + \text{جنا س} = 2 - 1 = 1‬$‫</p><p>وبالتعويض عن نقطة التماس المعطاة والميل في معادلة المماس نجد أن :</p><p>‬$‫\text{ص} - x(m) = \hat{x}(m) (m - n) \iff \text{ص} - 2 = 1 \times (m - n)‬$‫</p><p>‬$‫\text{ص} - m = n‬$‫</p><p>وبالاستفادة من خاصية التعامد بين الناظم والمماس عند النقطة ‬$(m, 2, n)$‫ فإن معادلة الناظم هي :</p><p>‬$‫\text{ص} - x(m) = - \frac{1}{\hat{x}(m)} (m - n) \iff \text{ص} - 2 = 1 \times (m - n)‬$‫</p><p>‬$‫\text{ص} + m = 3 = 0‬$‫</p><h1><strong>مثال (٦ - ٢٤)</strong></h1><p>إذا كانت ‬$x(m) = \text{ظا س}$‫ ، ‬$m \neq \frac{n}{2} + \text{ك} \cdot \text{ك} \cdot \text{ص}$‫</p><p>فأثبت أن : ‬$\hat{x}(m) = \text{قا}^2 m$‫</p><p><strong>الحل :</strong></p><p>‬$‫\therefore \text{ظا س} = \frac{\text{جنا س}}{\text{جنا س}} \quad , \quad \text{جنا س} \neq 0‬$‫</p><p>وبتطبيق قاعدة الاشتقاق للدالة الكسرية نجد أن :</p><p>‬$‫\hat{x}(m) = (\text{ظا س}) = \frac{\text{جنا}^2 m + \text{جا}^2 m}{\text{جنا}^2 m} = \frac{1}{\text{جنا}^2 m} = \text{قا}^2 m = 1 + \text{ظا}^2 m‬$</p><p>١٧٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

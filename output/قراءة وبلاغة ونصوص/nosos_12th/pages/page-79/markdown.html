@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>الرجولة</h1><p>أحمد أمين</p><h2>التعريف بالكاتب</h2><p>باحث مؤرخ، ومفكر مصلح، وأديب ناقد، ولد في القاهرة عام ١٨٨٦م.
+كان أحمد أمين غزير الإنتاج، ينتمي إلى ذلك الجيل الذي عرف بجيل الرواد أو العملاقة، ويقصد بهم أولئك المفكرون والعلماء والأدباء والشعراء والفنانون الذين شهد النصف الأول من القرن العشرين قمة نشاطهم وأروع إبداعاتهم.</p><p>اشتغل أحمد أمين بالتدريس في مختلف مستوياته، وعمل بالقضاء وفي إدارة الشؤون الثقافية، وكتب البحوث العلمية ونشر الكتب القديمة، وألف للمدارس وترك ثروة هائلة من المقالات حول القضايا العامة، وترجم لعدد من زعماء الإصلاح، وخلف ترجمة ذاتية، وأرخ للأدب والفلسفة، وكتب في النقد الأدبي.</p><p>اشترك في الحركة الوطنية التي تفجرت في مصر سنة ١٩١٩م فأحيل بسبب ذلك إلى المعاش، ثم أعيد ليعمل في القضاء.</p><p>ولحبه التدريس عاد ليعمل مدرساً في كلية الآداب، وكان ذلك تمهيداً لأعظم مشروع علمي في حياته، فقد شجعه طه حسين على أن يدرس الحياة الإسلامية من الناحية العقلية، وبعد عامين من العمل الدائب ظهر (فجر الإسلام)، فلقي من الاهتمام ما شجع مؤلفه على المضي في إخراج هذه السلسلة، فأخرج بعد ذلك (ضحى الإسلام) في ثلاثة أجزاء، ثم (ظهر الإسلام) في أربعة أجزاء، ثم (يوم الإسلام).</p><p>ومن مؤلفاته كتاب (في النقد الأدبي) وكتاب (حياتي) الذي ضمنه ترجمته الذاتية، وكتب في الوصايا كتابه المسمى (إلى ولدي)، و(فيض الخاطر) الذي جاء في عشرة أجزاء، جمعت فيه مقالاته التي اشتهر بكتابتها ومثلت أغزر إنتاجه الأدبي.
+عانى في أواخر أيامه من ضعف البصر وداء السكر فالشلل النصفي، وقد لازمته طبيعته الدائبة المثابرة المكبة على العمل إلى أن توفي -رحمه الله- سنة ١٩٥٤م عن ثمانية وستين عاماً والنص الآتي من مقالة له في (فيض الخاطر).</p><p>٧٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

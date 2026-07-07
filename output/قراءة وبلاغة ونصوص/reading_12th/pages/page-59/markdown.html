@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>لكنها تأتي مجردة من الحياة، ومنهم من لا يرون في الألفاظ سوى رئائها، فيؤلفون أحياناً رقيقة، إنما لا جمال فيها ولا بيان، فقيمة ما يكتبه وينظمه هؤلاء تقاس بقدر ما يُسَدُّ من هذه الحاجة أو تلك من حاجاتنا الروحية، لكنَّ منهم من جمع إلى دقة الإفصاح جمال التركيب، فأثار هؤلاء تقاس بحاجتين، ومنهم من ضَمَّ إلى دقة الإفصاح وجمال التركيب عذوبة الرِّئة، فأثار هؤلاء تقاس بثلاث حاجات، ومنهم - وهم قليل - من جمع بين دقة الإفصاح، وجمال التركيب، وعذوبة الوقع، وحلاوة الحقيقة، فقيمة ما يكتبه أو ينظمه هؤلاء لا تكاد تُحَدُّ.</p><p>ولابدَّ لي هنا من كلمة عن مقاييسنا العربية بنوع خاص، فبلاؤنا ليس بغياب المقاييس لدينا ولكن لعدم وجود من يحسن استعمال هذه المقاييس، وتطبيق الأدب عليها. فمن سوء طالعنا أننا وكلنا شؤوننا الأدبية إلى جرائدنا ومجلاتنا في الغالب، وهي تقيس الأدب بعدد مشتركيها، ومناصريها، وأعمدتها، وحقولها.. ومن كان ذلك شأنه فحاجاته الروحية معدودة محدودة، فأتى له أن يقيس حاجات أمة أو أم؟ وإذا قاسها فبحاجاته وحسب.</p><p>لست أدري كيف تُزْهِر آدابنا وتثمر مادامت مقاييسها في أيد لا تعرف من الأدب كُوعَه من بُوعِه؟</p><p>ولا أعلم كيف وصلنا إلى هذا الحد من الهبوط، وعندنا من الآثار الأدبية ما لو قيست بأدق المقاييس لكان راجحاً.</p><p>إنَّ حاجتنا ليست إلى مقاييس أدبية ثابتة، فهي وافرة لدينا، إنما الحاجة إلى مَنْ يُحْسِنُونَ استعمال هذه المقاييس، لا سيما في دورنا الحالي؛ لأنه دور انتقال، حاجتنا إلى شعراء وكُتَّاب يقيسون ما ينظمون ويكتبون بهذه المقاييس، فيسيرون وتسير معهم آدابنا في الصراط القويم، وإلى ناقدين مُحَصِّصِينَ يميزون بين غثِّ الأدب وسمينِه، فلا يحسبون الأصداف دُرَرًا، ولا الحُبَّاح كواكب.</p><p>٥٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

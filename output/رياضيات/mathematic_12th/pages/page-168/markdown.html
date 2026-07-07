@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-147.jpeg" alt="img-147.jpeg" /><p>الوحدة السادسة</p><p>[٢] أوجد $‫\frac{ص}{س^2}‬$ لكل من الدوال التالية :</p><p>أ) ص = ٣ + ٢ + ٦ ع ، ع = ٢ + ٢ س .</p><p>ب) ص = (٢ + ٣ س) ٣ ج) ص = (١٠ + ٥ س) ١٢</p><p>[٣] إذا كانت ص (س) = ٢ - ٣ س + ٥ ، ع = ٣ س . فأوجد :</p><p>أ) ص (ع) ب) $‫\frac{ص}{س^2}‬$ (ص (ع) )</p><p>[٤] أوجد مشتقة الدوال التالية :</p><p>أ) ص = $‫\sqrt{٢ - ٢ س + ٢ س}‬$ ب) ص = $‫\frac{١}{٢ - ٢ س + ٢ س}‬$</p><p>ج) ص = (٢ + ٢ س + ٦) ٣ د) ص = $‫\frac{٣}{٢}‬$ (س + ١ س) ٢</p><p>هـ) د (س) = $‫\frac{١}{\sqrt{٢ - ٢ س^2}}‬$ و) ص = $‫\sqrt{\frac{١ - ١}{١ + س}}‬$</p><h2>مشتقة الدالة الضمنية</h2><p>٦ - ٤</p><p>تأمل الدالة ص = ٢ + ٣ س + ١ ، فإن مشتقتها هي ص = ٢ س + ٣ ، وذلك كونها دالة صريحة . أما بالنسبة للدالة : ص ٢ + ص ٢ = ٥ س فهناك صعوبة في التعبير عن ص بدلالة س مباشرة ، لأن المتغير ص يمثل دالة غير معرّفة بالنسبة لـ س بالصورة ص = د(س) تسمى هذه الدالة غير الصريحة بالدالة الضمنية ، حيث نعيد تعريفها ضمنياً على النحو التالي :</p><p>س [د(س)] + [د(س)] = ٥ س .</p><p>لذلك فإن عملية الاشتقاق للدالة الضمنية يتطلب اشتقاق كل من طرفي المعادلة وفقاً لقاعدة التسلسل بالنسبة لـ س ، وتجميع المقادير التي تحوي $‫\frac{ص}{س^2}‬$ بأحد أطراف المعادلة والأخرى بالطرف الآخر أي أن :</p><p>$‫\frac{ص}{س^2}‬$ (س ٢ ص) + $‫\frac{ص}{س^2}‬$ (ص ٢) = $‫\frac{ص}{س^2}‬$ (٥ س)</p><p>$‫\Leftarrow‬$ س ٢ × $‫\frac{ص}{س^2}‬$ + ص ٢ × ص + $‫\frac{ص}{س^2}‬$ × ٢ س</p><p>$‫\Leftarrow‬$ س ٢ - ٥ = $‫\frac{ص}{س^2}‬$ (س ٢ + ٢ س) $‫\Leftarrow‬$ س ٢ - ٥ = $‫\frac{ص}{س^2}‬$ (س ٢ + ٢ س) $‫\Leftarrow‬$</p><p>$‫\Leftarrow‬$ $‫\frac{ص}{س^2} = \frac{٥ - ٢ س ص}{س^2 + ٢ س}‬$</p><p>١٦٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>سادساً : تلوث التربة:</h2><p>تعرضت التربة إلى التلوث نتيجة لأنشطة الإنسان المختلفة، والنمو السكاني الزائد الذي تبعه زيادة نسبة الأرض المزروعة لتوفير الغذاء، وزيادة استغلال الموارد الطبيعية، وقد أدى ذلك إلى تغيير مكونات التربة الأساسية واستنفاد بعض عناصرها أو زيادة ملوحتها؛ نتيجة الاستعمال غير الجيد لمياه الري، والاستخدام العشوائي للأسمدة الكيميائية والمبيدات.</p><img src="img-131.jpeg" alt="img-131.jpeg" /><p>الشكل (١١) آثار المبيدات الحشرية</p><p>كما أدى الاستنزاف غير الواعي للكساء الأخضر من نباتات وأشجار إلى كشف التربة مما جعلها معرضة للتعرية والانجراف بتأثير عوامل الرياح والعواصف والأمطار. وقد أدت الزيادة الكبيرة في السكان والأنشطة الإنسانية المختلفة من زراعة وصناعة واستهلاك .. وغيرها إلى إنتاج ملايين الأطنان من النفايات الصلبة سنوياً، والتي تطرح في البيئة من خلال مقابل القمامة أو الأراضي الزراعية، مما أدى إلى استغلال مساحة شاسعة من التربة لهذه النفايات، إضافة إلى تلوث التربة بسبب طرح كثير من النفايات المنزلية الضارة كالعلب الفارغة وصناديق الكرتون والزجاج والأثاث المستهلك</p><img src="img-132.jpeg" alt="img-132.jpeg" /><p>الشكل (١٢) الكساء الأخضر يحفظ التربة</p><p>وبقايا الصناعات الحديدية. وأهم من ذلك المواد المصنعة من البلاستيك مثل الأكواب والأطباق وقوارير المياه والاستخدام العشوائي لأكياس النايلون وجميعها لا تتحلل بسهولة، وكل ذلك أدى إلى إتلاف التربة وزيادة مساحة الأراضي الملوثة مقابل نقصان مساحة الأراضي الصالحة للسكن والزراعة. كما أدت المبيدات المستعملة في</p><p>١٨٠</p><p>الأحياء للصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

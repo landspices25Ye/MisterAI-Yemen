@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>تكوين طبقة أخرى جديدة فوقها مختلفة عنها، وهكذا وباستمرار تراكم كثير من الطبقات وتصخرها في أثناء الزمن الجيولوجي يتكون التعاقب الطبقي.</p><p>فإذا تفحصت طبقتين متعاقبتين في الشكل (١) أو في الطبيعة، فإنك حتماً ستكتشف السبب الذي جعلهما طبقتين وليس طبقة واحدة، الاختلاف وقد يكون الآتي:</p><p>١- التركيب المعدني للطبقات، كالصخر الجيري والصخر الرملي أو الصخر الطيني.</p><img src="img-139.jpeg" alt="img-139.jpeg" /><p>٢- حجم الحبيبات المكونة لكل طبقة.</p><p>٣- شكل الحبيبات المكونة لكل طبقة.</p><p>٤- ترتيب الحبيبات المكونة لكل طبقة.</p><p>٥- نوع المادة اللاحمة للفتات الصخري لكل طبقة.</p><p>٦- وجود مادة أخرى غير متجانسة بين الطبقتين.</p><p>فمثلاً إذا تفحصت صفائح صخور الطفل (Shale) المتجانسة (شكل ٢) ترى أن التطبيق بين هذه الصفائح سببه وجود رقائق من الميكا مرصوفة فيما بينها.</p><h2>النقاط (١)</h2><p>• قم بزيارة وزملاؤك إلى منطقة قريبة من المدرسة بها تتابع طبقي للصخور الرسوبية للتعرف على الطبقات وتحديد مميزات (خصائص) كل طبقة، ثم قدم تقريراً بملاحظاتك مدعماً بالرسم المقطع في الطبقات.</p><h3>- التوافق وعدم التوافق في الطبقات Conformity & Unconformity:</h3><p>التوافق هو أن تكون الطبقات المترسبة أفقية موازية لبعضها البعض ومستمرة؛ بحيث تكون أسطح الطبقات المتعاقبة متوازية ومتتالية، مثل هذه الطبقات تسمى الطبقات المتوافقة كما يظهر في الشكل (١)، ويدل التوافق على استمرار الترسيب. إلا أننا لا نجد هذا في الطبيعة دائماً وإنما نجد الآتي:</p><p>- طبقات أفقية يلاحظ فيها عدم اكتمال مجموعة من الطبقات أو حتى غيابها.
+- طبقات مائلة تعلوها طبقات أفقية.</p><p>وهذا يعني وجود عدم التوافق، مما يدل على وجود توقف في الترسيب لحقيقة زمنية. ما أنواع عدم التوافق؟ وما المقصود بسطح عدم التوافق؟</p><p>١٨٩</p><p>الأحياء الصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

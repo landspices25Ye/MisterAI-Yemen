@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-98.jpeg" alt="img-98.jpeg" /><p>الوحدة الرابعة</p><h1><strong>مثال (٤ - ١٥)</strong></h1><p>حدّد محوري القطع الزائد ٩ س² - ١٦ ص² = ١٤٤ ، ثم عيّن إحداثيات رأسيه ، بؤرته ، تخالفه المركزي ، وارسم القطع .</p><h1><strong>الحل :</strong></h1><p>بقسمة طرفي المعادلة على ١٤٤ نجد أن :</p><p>$‫س^2 / ١٦ = ١ = \frac{ص^2}{٩} = ١‬$‫ ، وبالتالي يكون</p><img src="img-99.jpeg" alt="img-99.jpeg" /><p>شكل (٤ - ٢١)</p><p>١ = ٤ ، ب = ٣ ، ج² = ٢ + ب² = ٢٥ ، س = ٥ ، ومنه ج = ٥ .</p><p>وعليه ينطبق المحور القاطع على محور السينات ، والمحور المرافق على محور الصادات ؛ والرأسان هما النقطتان ( ٠ ، ٤ ± ٠ ) ، والبؤرتان هما النقطتان ( ٠ ، ٥ ± ٠ )</p><p>والتخالف المركزي ‬$‫\frac{ج}{١} = \frac{ج}{٤}‬$‫ .</p><p>والشكل ( ٤ - ٢١ ) يوضح القطع الزائد .</p><h1><strong>مثال (٤ - ١٦)</strong></h1><p>أوجد معادلة القطع الزائد الذي رأسه ( ٠ ، ٥ ± ٠ ) وبؤرتاه ( ٠ ، ٧ ± ٠ ) ، ثم أوجد معادلتي مستقيميه المقاربين .</p><h1><strong>الحل :</strong></h1><p>من المعطيات نجد أن : ١ = ٥ ، ج = ٧ ⇐ ب² = ج² - ٢ + ٤٩ - ٢٥ = ٢٤ .</p><p>بما أن الرأسين على محور السينات فإن معادلة القطع الزائد هي : ‬$‫س^2 / ٢٥ = ١‬$‫ .</p><p>المستقيمان المقاربان هما : ص = ‬$‫\pm \frac{٦}{٥} \sqrt{٢}‬$‫ س .</p><h1><strong>مثال (٤ - ١٧)</strong></h1><p>أوجد معادلة القطع الزائد إذا كانت بؤرتاه هما ( ٠ ، ٦ ± ٠ ) وأحد دليليه هو المستقيم س = ٣ .</p><h1><strong>الحل :</strong></h1><p>من المعطيات : ج = ٦ ، س = ‬$‫\frac{٢}{٣}‬$‫ .</p><p>∴ ١٨ = ٢ . ب² = ج² - ٢ + ٣٦ - ١٨ = ١٨ .</p><p>المعادلة المطلوبة هي : ‬$‫س^2 / ١٨ = ١ = \frac{ص^2}{١٨} = ٢‬$ ⇐ س² - ص² = ١٨ .</p><p>١٢٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

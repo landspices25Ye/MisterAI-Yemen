@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-210.jpeg" alt="img-210.jpeg" /><h2>تقويم الوحدة</h2><p>س ١) ضع علامة (✓) أمام العبارة الصحيحة وعلامة (X) أمام العبارة الخاطئة في كل مما يلي :</p><p>١- حدث الانفجار العظيم عندما كان قطر الكرة الكونية مساوياً ١٠ مرات قطر الشمس ( ).</p><p>٢- الكون في بدايته كان مكوناً من ذرات الهيدروجين ( ).</p><p>٣- سرعة تباعد الحرات عن بعضها تتناسب طردياً مع المسافة بينها ( ).</p><p>٤- يعود اختلاف لمعان النجوم إلى حجمها ودرجة حرارتها ( ).</p><p>س ٢) اختر الإجابة الصحيحة :</p><p>١- مجرة درب التبانة هي مجرة من النوع :</p><p>أ - الحلزوني ، ب - الكروي ،
+ج - غير المنتظم ، د - لا شيء مما ذكر .</p><p>٢- ما نراه في السماء الصافية ليلاً عبارة عن :</p><p>أ - مجرات ، ب - كوكبات ، ج - سدم ، د - كل ما ذكر .</p><p>٣- يدل اختلاف أشكال الحرات على :</p><p>أ - عدد النجوم ، ب - مراحل تطورها ،</p><p>ج - سدها ، د - مادتها .</p><p>٤- النجوم التي تكون صوراً أو أشكالاً تعرف بـ :</p><p>أ - الكوكبات ، ب - الأبراج ، ج - السدم ، د - (أ + ب) .</p><p>٥- يبدأ تكون النجوم عند :</p><p>أ - بدء حدوث الاندماج النووي . ب - تفاعل الهيدروجين مع الهليوم .</p><p>ج - اندماج ذرات الهيدروجين . د - حدوث الانفجار العظيم .</p><p>س ٣) صف مراحل تكوين النجم .</p><p>س ٤) ما نظرية الانفجار العظيم ؟</p><p>س ٥) قارن بين نظريات بدء تكون الكون ، وما أكثرها قبولاً من وجهة نظرك ؟</p><p>س ٦) ارسم أشكال الحرات الثلاثة ثم قارن بينها .</p><p>٢١٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التفاصيل</p><h1>مثال (٦-١٦)</h1><p>أوجد ميل المماس للمنحنى س = ص ٢ - ٤ ص عند نقاط تقاطعه مع محور الصادات .</p><h1>الحل :</h1><p>نقاط التقاطع مع محور الصادات عندما س = ٠ ،</p><p>أي أن : ص ٢ - ٤ ص = ٠ ⇐ ص (ص - ٤) = ٠</p><p>اما ص = ٠ ، أو ص = ٤ ، إذن توجد نقطتان هما (٠ ، ٠) ، (٤ ، ٠) عندئذ يمكن إيجاد</p><p>$‫\frac{ص}{س} (الميل) \text{ ضمنياً حيث } ١ = ٢ ص \frac{ص}{س} - ٤ \frac{ص}{س}‬$‫</p><p>‬$‫\frac{ص}{س} (٢ ص - ٤) \frac{ص}{س} \Leftarrow \frac{ص}{س} (٤ - ص) = ١ \Leftarrow‬$‫</p><p>∴ ميل المماس لمنحنى الدالة عند النقطتين (٠ ، ٠) ، (٤ ، ٠) هما :</p><p>‬$‫\frac{ص}{س} (٠ ، ٠) = \frac{١ - ١}{٤} \quad , \quad \frac{ص}{س} (٤ ، ٠) = \frac{١}{٤ - ٨} = \frac{١}{٤}‬$‫</p><h1>مثال (٦-١٧)</h1><p>أوجد نقاط المنحنى (ص - ٤) = س + ٢ ، التي عندها المماس يوازي المستقيم</p><p>٣ س + ٦ ص + ٢ = ٠ .</p><h1>الحل :</h1><p>∴ ٣ س + ٦ ص + ٢ = ٠ ⇐ ٦ ص = ٣ س - ٢</p><p>‬$‫\therefore ص = \frac{٣ - ٦}{٦} س - \frac{٢}{٦} \Leftarrow ص = \frac{٣ - ٦}{٦} - \frac{١}{٢} \quad (\text{ميل المستقيم}) .‬$‫</p><p>‬$‫\therefore ٢ (ص - ٤) (\frac{ص}{س}) = ١‬$‫</p><p>‬$‫\therefore \frac{ص}{س} = \frac{١}{(٢ - ٤) - ٢} \quad (\text{ميل المماس للمنحنى})‬$‫</p><p>‬$‫\therefore \frac{ص}{س} = \frac{١}{٢} - \frac{١}{٢} \quad , \quad \therefore \text{المماس يوازي المستقيم}‬$‫</p><p>‬$‫\therefore \frac{ص}{س} = \frac{١}{٢} - ٢ = (٢ - ٤) - ٢ \Leftarrow \frac{ص}{٢} (٢ - ٤) - ٢ \Leftarrow ص = ٣‬$</p><p>لذا فإن : (٣ - ٤) = س + ٢ ⇐ س = ١ - ، إذن النقطة هي (١ - ٣) .</p><p>١٦٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

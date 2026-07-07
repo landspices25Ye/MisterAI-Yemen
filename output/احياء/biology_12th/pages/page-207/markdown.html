@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>- التقسيم الحديث للسجل الجيولوجي :</h1><p>لقد اعتمد العلماء أسساً محددة في تقسيم السلم الزمني للسجل الجيولوجي متمثلة بالأحداث الجيولوجية التي كان لها تأثير شامل وواسع في القشرة الأرضية، مثل ظهور أنواع من الكائنات الحية، وانقراض أنواع معينة منها لعدم قدرتها على التكيف مع الظروف البيئية المستجدة، وكذلك طغيان البحر على القارات وما ينتج عنه من ترسيب للصخور وحفظ الأحافير، وانحسار البحر عن اليابسة وما ينتج عنه من تعرية الصخور وإزالة جزء من الرواسب وإعادة ترسيبها.</p><p>ويعد العصر الكمبري المفتاح في ترتيب السلم الزمني للسجل الجيولوجي، إذ يفصل بين الزمن الجيولوجي الذي كانت فيه الحياة بدائية تفتقر إلى الهياكل الصلبة، والزمن الجيولوجي الذي ظهرت فيه كائنات ذات هياكل صلبة أعطت أحافير كان لاكتشافها أول أثر مهم في التاريخ الجيولوجي. وعلى أساس هذا التغير الكبير في قصة الحياة قبل الكمبري وبعده قسم السجل الجيولوجي إلى قسمين كبيرين، سمي كل منهما دهرًا أو أبدًا (Eon) وهما:</p><p>١- دهر الحياة المعروفة (Phanerozoic Eon) (ما بعد الكمبري)، وهو يشمل التاريخ الجيولوجي بدءًا بالعصر الكمبري. وأمده الزمني حوالي (٦٠٠) مليون سنة حسب القياسات النووية.</p><p>٢- دهر الحياة الخفية: (Cryptozoic Eon) وهو يشمل التاريخ الجيولوجي ما قبل الكمبري. وأمده الزمني أكثر من ٤٠٠٠ مليون سنة، حسب القياسات النووية.</p><p>ومن ثم قسم دهر الحياة المعروفة، إلى أقسام زمنية أصغر سمي الواحد منها حقبة (Era)، والحقبة إلى أقسام زمنية أصغر، سمي الواحد منها عصرًا (Period).</p><p>والعصر إلى أقسام زمنية أصغر، سمي الواحد منها حينًا (Epoch). وقسم الحين إلى أقسام زمنية أصغر، سمي الواحد منها أوانًا أو عمرًا (Age). انظر الجدول (٢) الذي يوضح أقسام السجل الجيولوجي وسلمه الزمني وأجب عن الآتي:</p><p>- إلى كم حقبة قُسِّمَ دهر الحياة المعروفة ؟ سمها ؟ وما أمد كل حقبة ؟</p><p>- إلى كم عصرًا قسمت حقبة الحياة القديمة ؟ سمها ؟</p><p>- إلى كم عصرًا قسمت حقبة الحياة المتوسطة ؟ سمها ؟</p><p>- إلى كم عصرًا قسمت حقبة الحياة الحديثة ؟ سمها ؟</p><p>- إلى كم حينًا قسم عصر الثلاثي ؟ وماهي ؟</p><p>- إلى كم حقبة قسم دهر الحياة الخفية أو ما قبل الكمبري ؟ وكم أمده من تاريخ الأرض ؟</p><p>الأحياء الصنف الثالث الثانوي</p><p>٢٠٧</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

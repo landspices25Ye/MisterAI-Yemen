@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>|  Continuous spectrum | الطيف المتصل  |
+| --- | --- |
+|  Continuous X-rays spectrum | طيف الأشعة السينية المتصل  |
+|  Deflection | الملفات الحارقة  |
+|  Diffuse Radiation | الإشعاع المنتشر  |
+|  Direct Radiation | الإشعاع المباشر  |
+|  Electric Conduction in gases | التوصيل الكهربائي في الغازات  |
+|  Electric Generator | مولد التيار الكهربائي  |
+|  Electrons gun | بندقية الإلكترونات  |
+|  Electronic Devices | الأجهزة الإلكترونية  |
+|  Electron Volt | إلكترون فولت (أ.ف)  |
+|  Elephical Galaxies | المجرات الأهلليجية  |
+|  Emission | انبعاث  |
+|  Emitter | الباعث  |
+|  Escape velocity | سرعة الإفلات  |
+|  Excitation | إثارة  |
+|  Extended Universe Filter | مرشح الكون الممتد  |
+|  Flourescent pions | النقاط الفلوريسية  |
+|  Forbidden orbitals | المدارات المحرمة  |
+|  Forward bias conductions | التوصيل الأمامي  |
+|  Galaxy | مجرة  |
+|  Gamma Rays | أشعة جاما  |
+|  Geiger counter tube | كشاف جيجر  |
+|  Half - life | عمر النصف  |
+|  Hotwire Ameter | الأميتر الحراري  |
+|  Hydrogen atomic spectrum | طيف ذرة الهيروجين  |
+|  Hydrogen bomb | القنبلة الهيدروجينية  |
+|  Impedance | معاوقة  |
+|  Impure Semiconductors | أشباه الموصلات غير النقية  |
+|  Enduced | مستحث  |
+|  Enduction Coil | ملف حثي  |
+|  Infrared Rays | الأشعة تحت الحمراء  |</p><p>٢١٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

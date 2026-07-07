@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>٨- ينقسم العصر الرباعي إلى الحينين:</p><p>- أ - البليوسين والإيوسين.
+- ب - البليستوسين والحديث.
+- ج - البليوسين والبليستوسين.
+- د - البليستوسين والإيوسين.</p><p>٩- تقسم حقبة الحياة المتوسطة إلى العصور:</p><p>- أ - الترياسي، والجوراسي، والكريتاسي.
+- ب - الترياسي، والبليوسين، والجوراسي.
+- ج - الجوراسي، والترياسي، والبرمي.
+- د - الكريتاسي، والجوراسي، والبرمي.</p><p>١٠- ظهرت الأسماك عديمة الفكوك في حقبة:</p><p>- أ - الحياة الحديثة.
+- ب - ما قبل الكمبري.
+- ج - الحياة القديمة.
+- د - الحياة المتوسطة.</p><h2>ثانياً: علل لما يأتي:</h2><p>- ١- تكون التتابع الطبقي في الصخور الرسوبية.
+- ٢- ندرة وجود أحافير من الكائنات التي كانت تعيش على اليابسة.
+- ٣- عدم وجود أحافير في الطبقات الرسوبية شديدة المسامية.
+- ٤- عدم وجود أحفورة الترابلوبيت ضمن صخور الجوراسي.
+- ٥- يعد عصر الكمبري حجر الأساس في تقسيم سلم الزمن الجيولوجي.</p><h2>ثالثاً: أجب عن الأسئلة التالية:</h2><p>١- وضح المقصود بكل من:</p><p>- الطبقة.
+- سطح عدم التوافق.
+- الأحافير.
+- المضاهاة.
+- السجل الجيولوجي.
+- الأحفورة المرشدة.
+- عمر النصف.</p><p>٢- وضح الشروط اللازمة لتكون الأحافير؟</p><p>٣- ما الفرق بين كل من:</p><p>- أ - التوافق وعدم التوافق في الطبقات.
+- ب - التصخير بالإحلال والتمعدن.
+- ج - المضاهاة الصخرية والمضاهاة الأحفورية.
+- د - القالب والنموذج.</p><p>٤- في أي حقبة ظهرت كل من الآتي ثم رتبها حسب زمن ظهورها من الأقدم إلى الأحدث.</p><p>- الديناصورات.
+- الأركيوبتركس.
+- الترابلوبيت.
+- الجرابتوليت.
+- النباتات الزهرية.
+- الثدييات.
+- الأسماك.
+- الكائنات الحية بدائية النوى.</p><p>٥- بعد كم سنة يتحلل ١ كجم من الكربون (١٤) ليغطي ٧٥٠ جرام من النيتروجين</p><p>(١٤) إذا علمت أن فترة نصف العمر للكربون (١٤) تساوي ٥٧٣٠ سنة؟</p><p>الأحياء للصف الثالث الثانوي</p><p>٢٢١</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

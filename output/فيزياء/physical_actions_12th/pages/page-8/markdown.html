@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>e-learning</p><h1>التيار الكهربائي المتردد</h1><h1>التجربة الأولى</h1><h1>الأهداف</h1><p>١- تنفّذ تجربة تحصل من خلالها على تيار كهربائي متردّد .
+٢- تثبت ظاهرة الحث الكهرومغناطيسي .</p><h1>الأدوات والمواد المطلوبة</h1><p>تحتاج لتنفيذ هذه التجربة الأدوات والمواد الآتية :</p><p>- مغناطيس على شكل حدوة الفرس أو على شكل حرف (u) - سلك موصل للكهرباء - جلفانومتر حسّاسة - سلك سميك من النحاس .</p><img src="img-4.jpeg" alt="img-4.jpeg" /><p>مغناطيس على شكل حدوة الفرس لتوليد التيار الكهربائي</p><h1>خطوات تنفيذ التجربة</h1><p>١- ضع المغناطيس على سطح منضدة خشبية .
+٢- صل طرفي سلك النحاس السميك بالجلفانومتر الحسّاس بواسطة أسلاك توصيل كما يوضّحه الشكل .
+٣- أمسك السلك بيدك وحرّكه للأعلى والأسفل بين قطبي المغناطيس بسرعة معيّنة، مع ملاحظة مؤشر الجلفانومتر</p><p>٤- أوقف حركة السلك بين قطبي المغناطيس .</p><p>- لاحظ ما يحدث لمؤشر الجلفانومتر الحسّاس .</p><p>- ماذا تستنتج من هذه التجربة .</p><p>٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

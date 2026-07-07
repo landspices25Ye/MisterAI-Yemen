@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>تقويم الوحدة</h2><p>س ١) أكمل الفراغات الآتية بما يناسبها:</p><p>- اكتشف العالم بلوكر بأنه عند ضغط منخفض مقداره حوالي ١,٣ × ١٠⁻⁴ ضغط جوي يبعث الكاثود الذي في أنبوبة التفريغ بأشعة غير مرئية تسرى خلال الأنبوبة وتسمى ... أو ...
+- عملية الانبعاث الإلكتروني الثانوي، هي عملية انبعاث ... من سطح الكاثود عندما تصطدم به ... ذات الطاقة الحركية العالية .
+- من المعروف أن الكاثود يمكنه أن يبعث إلكترونات عند تسخينه إلى درجة عالية وتسمى هذه الإلكترونات بالإلكترونات ...
+- يُغطى الطرف المتسع لأنبوبة أشعة الكاثود بمادة ... مثل ...
+- يعتمد لون الضوء الذي تشعه الشاشة على نوع المادة ... وعلى ... الإلكترونات .
+- يتركب الأسيلوسكوب من ...
+- إن أساس عمل الرادار يقوم على ظاهرة ... الكهربائي والحصول على ... كهرومغناطيسي .
+- وظيفة كاشف الذبذبات في الرادار هي تحديد ... و ... وسرعة الهدف .
+- عملية الإرسال الإذاعي، هي عملية بث ... من محطة الإذاعة إلى الجو بعد تحويلها إلى ... كهربائية .
+- يتركب جهاز (أو شبكة) الإرسال الإذاعي من ... و ... و ...
+- تقوم الدائرة المهتزة بتوليد تيارات كهربائية عالية التردد تسمى بالتيارات ...
+- يتم في هوائي الإرسال الإذاعي تحويل التيارات المعدلة إلى ...
+- يتركب جهاز الاستقبال الإذاعي (الراديو) من ... و ... و ...</p><p>١٠٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

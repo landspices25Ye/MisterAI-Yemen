@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>وفي البيت الرابع استخدم الأسلوب الإنشائي النهي ( لا تحاول أن تنكر الشجو ) لغرض النصح لمن يشك فيما سبق، ليوفر على نفسه الجهد في المحاولة، ثم يؤكد له الخبر بعد ذلك بمؤكدين: ( إنَّ - قد ) لإزالة الشك في خبرة الشاعر ( إني قد خبرت الحياة )، ومنع أي اعتراض متوقع!</p><p>وفي الفكرة الثانية يبدأ بإخبارنا أنه سأل الحياة سؤالاً طالب علم يريد كشف جهله عن صفحتي الفرح والحزن في الحياة ( في البيت الخامس ) ليتوصل إلى الإجابة من الحياة ذاتها، فيكون في ذلك إقناع بصدق الخبر من مصدره.</p><p>وفي البيت السادس قوله: ( فسمعت الحياة في هيكل الأحزان تشدو ) وهي شهادة من الشاعر بحاسة السمع أن الحياة كلها مقيمة في معبد الأحزان، ثم يأتي جواب الحياة المقنع في الأبيات الثلاثة: ( ٧-٩ ) بأسلوب القصر، بواسطة النفي والاستثناء: « ما سكوت السماء إلا وجوم - ما نشيد الصباح غير نحيب » الذي يفيد الاختصاص والتأكيد بهدف الإقناع. وكذلك « ليس في الدهر طائر يتغنى.. غير كئيب » وهو أكثر تعميماً من سابقه، وفي قوله « خضب الاكتئاب أجنحة الأيام » تعميم للحزن في كل شيء؛ إذ أصبح ظرفاً يمد رواقه على الحياة والأحياء أجمعين، بل يلفهم ويحيط بهم من كل اتجاه.</p><p>وفيه صورتان بلاغيتان ( خضب الاكتئاب ) و ( أجنحة الأيام ) إذ شبه الاكتئاب بإنسان يعقل؛ ليجسد المعنى ويبرزه، وشبه الأيام بالطيور، وهي من أجمل الصور التي بعثت الحياة والحركة في المعنى على سبيل الاستعارة المكنية.</p><p>وهناك صور بيانية كثيرة من هذا النوع مثل: مزقت - شغاف الليالي - مهجة الظلام - صراخ القلوب / سكوت السماء - نشيد الصباح - نغمة الفجر - وجمة المساء ) بعثت في النص الحيوية والحياة مجسدة المعاني بشكل يساعد على إيصال أحاسيس الشاعر إلى الآخرين.</p><p>ومن المحسنات البديعية قوله: ( نغمة الفجر - وجمة المساء )، و ( سكوت - نشيد ) و ( يفرح - بحزنها ) وهي مقابلات غير متكلفة أضفت على النص جمالاً لفظياً ومعنوياً، ومن المحسنات اللفظية: ( الدمع - الدم ) جناس ناقص حسن الجرس الصوتي بوصفه مثيراً للانتباه.</p><p>٩٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

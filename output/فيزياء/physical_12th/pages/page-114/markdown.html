@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-110.jpeg" alt="img-110.jpeg" /><p>١٦- تسمى اللوحة التي تتجمع عليها حزم الإلكترونات في التلفاز الملون :</p><p>أ) قناع الظل . ب) لوح الخلايا .</p><p>ج) لوح الموزاييك . د) الشاشة .</p><p>س٤) عرف الآتي: الأشعة المهبطية، الانبعاثات الإلكترونية الثانوي والحراري، التفريغ الكهربائي في الغازات، النقطة المضيئة، الأسيلوسكوب، دائرة المسح، التيار الحامل، التيار المعدل، أنبوبة التصوير التلفازي، المرشح الضوئي.</p><p>س٥) علل الآتي:</p><p>١ - الغازات الساخنة توصل التيار الكهربائي .
+٢ - يغطي الطرف المتسع لأنبوبة أشعة الكاثود بمادة فلوريسية .
+٣ - وجود ملفات أو ألواح حارفة في أنبوبة أشعة الكاثود .
+٤ - يوجد ضمن مكونات شاشة أنبوبة أشعة الكاثود طبقة من مستحلب الكربون المتصل بالكاثود .
+٥ - عندما تتحرك النقطة المضيئة على الشاشة تبدو وكأنها خطأ مستقيماً مضيئاً .
+٦ - تستطيع الإلكترونات أن تهتز بترددات عالية وترددات منخفضة .
+٧ - شكل كل من المرسل والمستقبل في الرادار قطع مكافئ .
+٨ - يستخدم في الرادار الحديث هوائي واحد يوصل بالمرسل والمستقبل .
+٩ - تحمل التيارات الكهربائية المعبرة عن الصوت والصورة على تيارات حاملة .
+١٠ - التيار المعبر عن الصوت لا يمكن أن يعطي موجات لاسلكية .
+١١ - تستخدم محطات الإذاعة عدداً من دوائر الترانزستور .
+١٢ - يستخدم في جهاز الاستقبال عدد من دوائر الترانزستور .
+١٣ - تغطي الخلايا الكهروضوئية بطبقة من السيزيوم .
+١٤ - في البندقية الإلكترونية يحاط الكاثود بشبكة حاكمة .
+١٥ - تبدو الصورة على شاشة جهاز الاستقبال التلفازي طبيعية .
+١٦ - في جهاز الإرسال التلفازي يبدأ المسح أولاً بالصفوف الفردية ، ثم الزوجية .
+١٧ - تحوي أنبوبة أشعة الكاثود في التلفاز ثلاثة مدافع إلكترونية .</p><p>١١٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

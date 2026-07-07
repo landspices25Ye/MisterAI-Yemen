@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><p>والتَّرفيه، بالصوت والصورة الثابتة والمتحركة، وتستوعب كل أشكال التواصل بين البشر.</p><p>إنَّ الفكرة الذهبية الكامنة وراء التطور المذهل الذي حققته شبكة الإنترنت في زمن قصير للغاية تتمثل في أنَّ التكنولوجيا لا تحقق أهدافها إلاَّ إذا انصهرت في الكيان المجتمعي، وأصبحت متاحة لجميع الأفراد على اختلاف أعمارهم وقدراتهم، وسبيلها إلى تحقيق ذلك فتح قنوات الاتصال إلى أقصاها. وهو ما قامت به الإنترنت.</p><p>ولاريب في أنَّ شبكة الإنترنت تُعدُّ اليوم إحدى العجائب العلمية المثيرة، ولذلك يصفها كثير من علماء تكنولوجيا المعلومات بأنها «شبكة الشبكات»، أو الشبكة الأم التي طوت في جوفها مئات الآلاف من شبكات تبادل المعلومات، سواء أكانت عالمية، أم إقليمية، أم محلية. إنها تلك الغابة الكثيفة من مراكز تبادل المعلومات التي تختزن وتستقبل وتُبثُّ جميع أنواع المعلومات في شتى فروع المعرفة، وفي جوانب الحياة كافة. وعلى الرغم من كل هذه الضخامة، وتلك السُّطوة، فإنه لا يمكننا تجاهل حقيقة أنَّ شبكة الإنترنت هي في جوهرها كيان طُفيلي؛ فهي تطفو فوق موارد مادية وغير مادية من شبكات، ومعدات، وبرامج، وقواعد بيانات ليست ملكاً لها، بل ملكاً لغيرها.</p><p>وتكمن جاذبية شبكة الإنترنت في سهولة نشر المعلومات عليها، واسترجاعها منها عند الحاجة، وفي كونها وسيلة اتصال تفاعلية تُمكِّن المستخدم من حرية التَّصفُّح لمواقعها، وإبداء رأيه، واختيار ما يريده من معلومات. ولا غرو أن تغدو شبكة الإنترنت – بهذه الخصائص والإمكانات الهائلة – نافذة الإنسان على عالمه الصاخب المضطرب، ووسيطه الجديد الذي يرى من خلاله واقعه، ويتعامل معه، ويمارس فيه عن بُعد معظم أنشطته العملية والذهنية، فقد استطاعت هذه الشبكة العنكبوتية خلال مدة وجيزة من إنشائها أن تُشَيِّد عوالم وفضاءات رحبة فسيحة من المعلومات والمعارف لم تكن مطروقة من قبل، يُطلُّ الإنسان من خلالها على عالمه المترامي بكل تموُّجاته وأحداثه وصراعاته، وسيلته في ذلك ما تقدمه له شبكة الإنترنت من خدمات جليلة متنوعة مثل: البريد الإلكتروني، والنشر الإلكتروني، والاتصال بالهاتف عن طريق الشبكة، والمشاركة في الندوات الإلكترونية، وغير ذلك من الخدمات.</p><p>٣٦</p><p><http://www.e-learning-moe.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

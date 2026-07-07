@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الكلور ($‫\text{Cl}^-‬$)، وعند مرور التيار الكهربائي في الخلية تتحرك أيونات الصوديوم نحو الكاثود (قطب من الجرافيت) حيث تختزل إلى ذرات متعادلة، بينما تتحرك أيونات الكلور إلى الأنود (قطب من الجرافيت)، حيث يتم أكسدتها إلى ذرات الكلور المتعادلة التي تتصاعد على هيئة غاز.</p><p>تفاعلات الخلية:</p><p>$‫2\text{Na}^+ + 2\text{e}^- \longrightarrow 2\text{Na}_{(s)} \text{ يطفو على السطح} : \text{ عند الكاثود (المهبط)}‬$‫</p><p>‬$‫2\text{Cl}^- \longrightarrow \text{Cl}_2\uparrow_{(g)} + 2\text{e}^- : \text{ عند الأنود (المصعد)}‬$‫</p><p>‬$‫2\text{NaCl} \xrightarrow[\text{كهربائي}]{\text{تحليل}} 2\text{Na}_{(s)} + \text{Cl}_2\uparrow_{(g)} : \text{ التفاعل الكلي}‬$‫</p><p>٢ - التحليل الكهربائي للمحاليل الإلكترونية: إن التحليل الكهربائي للمحاليل الإلكترونية المائية أكثر تعقيداً من المصاهير، وذلك لأن الماء يدخل في التفاعل وقد يتأكسد أو يختزل.</p><p>(أ) يتأكسد الماء وفقاً للمعادلة الآتية:</p><p>‬$‫2\text{H}_2\text{O}_{(l)} \longrightarrow \text{O}_2 + 4\text{H}^+(aq) + 4\text{e}^- : \text{ جهد الاختزال } E^\circ = 1.23 \text{ فولت}‬$‫</p><p>(ب) يختزل وفقاً للمعادلة الآتية:</p><p>‬$‫2\text{H}_2\text{O} + 2\text{e}^- \longrightarrow \text{H}_2 + 2\text{OH}^-(aq) : \text{ جهد الاختزال } E^\circ = 0.83 \text{ فولت}‬$</p><p>نشاط (٣-٤)</p><p>نفذ تجربة التحليل الكهربائي للماء.</p><p>العوامل التي تتوقف عليها نواتج التحليل الكهربائي لمحاليل الإلكتروليتات:</p><p>(١) جهود الاختزال القطبية للأنواع:</p><p>- أ - تحدث الأكسدة عند الأنود (المصعد)، والنوع الذي جهد اختزاله أقل يتأكسد أولاً.
+- ب - يحدث الاختزال عند الكاثود (المهبط) والنوع الذي جهد اختزاله أعلى يختزل أولاً.</p><p>٦٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

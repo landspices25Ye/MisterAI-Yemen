@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>المقدمة</h2><p>الحمد لله رب العالمين والصلاة والسلام على خاتم المرسلين وآله وصحبه وسلم .
+إن إعادة النظر في مناهج الرياضيات وكتبها المدرسية أمر ضروري تحتمه مواكبة التطور العلمي ،
+وتحديث تربويات الرياضيات إضافة إلى مسايرة التغيرات الاجتماعية .</p><p>واستجابة لذلك يأتي هذا الكتاب « كتاب الرياضيات للصف الثالث الثانوي – القسم العلمي »
+كحلقة ضمن سلسلة متكاملة على مرحلتين : الأساسية ( ١ – ٩ ) ، والثانوية من ( الأول الثانوي إلى
+الثالث الثانوي ) .</p><p>وقد عُرضت مواضيع الكتاب في تماسك وتكامل وفق تسلسل علمي ونفسي تربوي ، ومراعاة للفروق
+الفردية ، وتم تقديم المادة الدراسية بأسلوب سلس واضح لأغموض فيه ولاتعقيد ؛ حيث أوردنا قدراً كافياً
+من الأمثلة بعد العرض النظري وأتبعنا ذلك بعدد من التمارين والمسائل آملين إتاحة فرص كثيرة للتعامل مع
+المادة ؛ ليكون الطالب محور التعلم معتمداً على النشاط بدافع ذاتي محققاً بذلك الأهداف المرجوة .</p><p>واتساقاً مع كتابي الصف الأول الثانوي والثاني الثانوي والمواد المرافقة لهما ؛ فإن هذا الكتاب وما
+يرافقه من كتاب التمارين ، ودليل المعلم يهتم اهتماماً كبيراً بالمفاهيم الأساسية إلى جانب تقديمه معارف
+سليمة ومراعاته انسجام الموضوعات مع عمليات التعلم الطبيعي للطلبة كما يحفز المدرسين على ابتكار
+أساليب تدريس جديدة بما يضمن لطلبتهم تعلماً فاعلاً .</p><p>ومن أهم أهداف وزارة التربية والتعليم أن يظل التطوير مستمراً ، ومواكباً كل جديد في تدريس
+الرياضيات وهذا لا يتأتى إلا بالاستفادة من واقع التطبيق في الميدان التدريسي . فإذا راعينا كل المبادئ
+المذكورة أعلاه بقدر ما وفقنا المولى عز وجل بإعداد هذه المواد التربوية في ضوء استراتيجيات تهدف إلى
+تقديم الأجود ( مادة وطريقة ) ؛ فإننا ننظر بشوق بالغ أن يوافينا كافة ذوي العلاقة بملاحظاتهم بغية
+الاستفادة منها .</p><p>نسأل المولى العلي القدير أن نكون قد وفقنا في كل ما نصبو إليه فهو ولي التوفيق والهادي إلى سواء
+السبيل .</p><p>المؤلف</p><p>٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

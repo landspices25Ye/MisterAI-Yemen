@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>في هذه الوحدة سنستعرض بعضاً من الأجهزة الإلكترونية المستخدمة في الحياة مثل الرادار والراديو والتلفاز العادي والملون، والتي تُعد بعضاً من التطبيقات لما درسته في الوحدة السابقة مثل الوصلة الثنائية والترانزستور ودوائر التكبير الخاصة به، ولكن قبل التطرق إلى دراسة هذه الأجهزة الإلكترونية، يتحتم علينا إعطاء نبذة علمية عن التوصيل الكهربائي خلال الغازات (أي التفريغ الكهربائي في الغازات). لقد تعرفت من خلال دراستك للوحدة السابقة، أن هناك مواداً جيدة التوصيل للكهرباء ومواداً رديئة التوصيل للكهرباء وأن هناك مواداً لا تعد جيدة التوصيل وفي الوقت نفسه لا تُعد مواد رديئة التوصيل وهي أشباه الموصلات. بمعنى آخر، إن المواد صنفت من حيث توصيلها للتيار الكهربائي إلى ثلاثة أصناف. فإلى أي صنف من هذه التصنيفات تنتمي الغازات من حيث التوصيل الكهربائي؟ للتعرف على ذلك نفذ النشاط الآتي:</p><h2>نشاط (١)</h2><img src="img-85.jpeg" alt="img-85.jpeg" /><p>شكل (١)</p><p>- احضر كشافاً كهربائياً واشحن قرصه بشحنات كهربائية (موجبة أو سالبة) متبعاً في ذلك ما تعلمته في الصفوف الدراسية السابقة.
+- لاحظ ورقتي الكشاف - ماذا يحدث لهما؟ لماذا انفرجتا؟
+- قرب من قرص الكشاف الكهربائي، شمعة مشتعلة، ولاحظ الورقتين.. ماذا يحدث لهما؟ علام يدل زوال انفراج الورقتين؟ شكل (١).
+- ماذا تستنتج من هذا النشاط؟
+في الظروف الاعتيادية تكون ذرات أو جزيئات الغازات (الهواء المحيط بقرص الكشاف) متعادلة كهربائياً (أي متعادلة الشحنة). لذلك تُعد الغازات مواداً عازلة كهربائياً في الظروف الاعتيادية، ولكن بسبب التسخين (وخاصة التسخين الشديد)، فإن قسماً من ذرات أو جزيئات الغازات، تتأين أي تتحلل إلى الكترونات وأيونات موجبة.. وأحياناً تتكون في الغازات المتأينة أيونات سالبة بسبب اكتساب الذرات المتعادلة للإلكترونات.</p><p>٨٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

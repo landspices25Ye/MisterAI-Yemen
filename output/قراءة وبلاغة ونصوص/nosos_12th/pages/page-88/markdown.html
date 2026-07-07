@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-34.jpeg" alt="img-34.jpeg" /><h2>أسئلة وتدريبات</h2><p>١ - ما العوامل التي أدت إلى ظهور الرومانسية العربية ؟ اذكر تياراتها .</p><p>٢ - لم يُعد الشاعر مطران رائد الرومانسية الأول ؟</p><p>٣ - علل ما يأتي :</p><p>أ - حافظ الشاعر مطران على شيء من خصائص الكلاسيكية .</p><p>ب - ظهور مسحة الحزن والألم والتشاؤم عند شعراء الرومانسية .</p><p>ج - التسمية ( أبولو - الديوان - المهجر ) .</p><p>٤ - واحدة مما يأتي ليست من الخصائص الفنية للرومانسية :</p><p>- الاهتمام بالعاطفة أكثر من اهتمامها بالعقل .</p><p>- الاتجاه إلى الذات الإنسانية .</p><p>- الاهتمام بالناحية البيانية وجمال الصياغة .</p><p>- البعد عن غريب الألفاظ .</p><p>٥ - اختر الإجابة الصحيحة من بين الأقواس :</p><p>- تجمّع روّاد الرومانسية على طريق : ( المحاكاة - الإحياء - التجديد ) .</p><p>- إعلان الثورة على شعراء مدرسة الإحياء برز بشدة عند جماعة : ( الديوان</p><p>- أبولو - المهجر ) .</p><p>- خالفت التيارات الرومانسية رائد المدرسة « مطران » في محافظته على</p><p>( وحدة البيت - غرابة الألفاظ - الوزن والقافية ) .</p><p>- الذهنية الفلسفية خاصية برزت عند شعراء ( أبولو - الديوان -</p><p>المهجر ) .</p><p>٦ - ما المراد بوحدة البيت في الشعر القديم ووحدة القصيدة عند الرومانسيين ؟</p><p>٧ - قارن بين الكلاسيكية الجديدة والرومانسية من حيث :</p><p>الأفكار - الموضوعات - الخيال - الموسيقى - العاطفة .</p><p>٨٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

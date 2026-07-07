@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>مفهوم التلوُّث:</h2><p>في المراحل الأولى لحياة الإنسان على هذه الأرض اتَّجه نشاطه إلى توفير المأكل والملبس والمأوى، وعندما استحدث الإنسان الطاقة بدأت مشكلات تلوُّث البيئة ولكن الأرض لم تكن مكتنزة في تلك الآونة، ومع تزايد سكان الأرض ازداد معدل استعمال الطاقة، فلم تُعدُّ قاصرة على التدفئة وإعداد الطعام بل امتدت إلى اختراع الآلة البخارية واستخدامها في النقل والصناعة، إلى أن وصل استخدام البترول والغاز وغيرها من مصادر الطاقة، والتي أدَّى استخدامها إلى تأثير البيئة بالكثير من الملوثات الكيميائية.</p><h2>الملوثات:</h2><p>هي المواد التي تخلُّ بأنظمة التوازن البيئي وتخلُّ بعناصر البيئة الحية منها (الإنسان، والحيوان، والنبات)، وغير الحية (الهواء، والتربة، والبحار، وغيرها)، وتلوُّث البيئة قد يكون مادياً كتلوُّث الهواء والماء والتربة، وقد يكون غير مادي كالتلوُّث الكهرومغناطيسي والتلوُّث الضوضائي.</p><h2>ملوثات الهواء:</h2><p>تتعدد أشكال المواد المسببة لتلوُّث الهواء وأغلبها عوامل مستحدثة صاحبت التقدم الصناعي للإنسان، وصاحب هذا التقدم استخدام كميات هائلة من الوقود مثل (الفحم، والغاز الطبيعي، والبترول، وخلافه)، والتي عند احتراقها في المصانع أو محركات السيارات تنتج كميات هائلة من الغازات ($‫\text{NO}_2, \text{CO}_2, \text{CO}, \text{SO}_2‬$) التي تتصاعد إلى الهواء على هيئة دخان محمَّل بالرماد وبكثير من الشوائب مما يُسمَّى الملوثات الأولية، ثم تتَّحد هذه الملوثات مع أكسجين الهواء لتكوين ما يُسمَّى بالملوثات الثانوية ($‫\text{H}_2\text{SO}_4, \text{HNO}_3, \text{O}_3‬$)، ومن هذه الملوثات ما يأتي:</p><p>١ - أكسيد الكربون ($‫\text{CO}_x‬$):</p><p>يشكِّل غاز ثاني أكسيد الكربون حوالي (٠.٣٥٪) من مكونات الهواء الجوي،</p><p>١٦٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

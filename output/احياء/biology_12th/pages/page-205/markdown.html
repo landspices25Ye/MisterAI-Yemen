@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الحل: يجمع كمية العنصر المشع (البورانيوم)، والعنصر المستقر (الرصاص) تحصل على كمية تعادل ١٠٠ جم ثم يمرور الزمن ويعد نصف العمر الأول تتحلل نصف عدد ذرات العنصر المشع ويعد نصف العمر الثاني يكون نصف الباقي، أي يتبقى ربع النظير المشع .. وهكذا، ويعد نصف العمر الخامس يتبقى (٣,١٢٥ جم) من العنصر المشع ويحساب الكمية نجد أن دورات نصف العمر عددها خمس دورات فيكون عمر الصخر = ٥ × ٧٠٤ = ٣٥٢٠ مليون سنة.</p><h3>- استعمال النشاط الإشعاعي في الصخور:</h3><p>أ - أسهل الصخور استعمالاً في التاريخ الإشعاعي هي الصخور النارية التي تشكلت فيها كل البلورات المعدنية بالتبول من الماجما في الوقت نفسه تقريباً. وإن التاريخ الإشعاعي الذي يسجله القياس الإشعاعي هو التاريخ البلوري لبدء نشأة الصخر، حيث تبدأ الساعات النووية (الإشعاعية) بالعدد بعد حدوث التبول.</p><p>ب - أما في الصخور المتحولة التي يحدث فيها تبول جديد للمعادن بسبب عوامل التحول من حرارة وضغط، فإن التاريخ الإشعاعي يؤرخ لعملية التحول وليس لعملية (نشأة الصخر الناري) التي قد أوقفت وبدأت من جديد بالعدد؛ حيث إنه عندما يتعرض الصخر للحرارة العالية يصبح غير مغلق إزاء كسب أو فقد كل من العنصر المشع والعنصر المستقر، فقد يهرب (يفقد) العنصر المستقر الناتج من التحلل من المعدن الأصلي، أو قد يدخله إليه (يكتسبه)، وكذلك قد يحدث هذا بالنسبة للعنصر المشع. لهذا تبدأ الساعة الإشعاعية بالعدد من جديد لتؤرخ لحادثة التحول.</p><p>ومن الأمثلة على الانحلال الإشعاعي الذي يعاد تسجيله بدءاً من عملية التحول لا - النشأة - للصخر قبل التحول، انحلال البوتاسيوم إلى أرجون؛ حيث يخرج الأرجون من الصخر لأنه غاز عند درجة حرارة أقل كثيراً من درجة الحرارة التي تبول المعدن عليها عند نشأته.</p><p>جـ - أما بالنسبة لاستعمال التاريخ الإشعاعي في الصخور الرسوبية فإنه يصعب استعمال هذا التاريخ إذا كانت صخور فتاتية، لأن حبيبات معادنها كانت في الأصل تتبع الصخور الأصلية، وقد جرى عليها عملية حث وتعرية وترسيب،</p><p>الأحياء للصف الثالث الثانوي</p><p>٢٠٥</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

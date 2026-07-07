@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>أن تستمر، والسبب بسيط هو أننا لن نخسر أكثر مما خسرنا، ثم إن كرامتنا تأبى علينا أن نستسلم على طول الخط.. سنخسر رجالاً وسيخسرون، وستعرض لمزيد من الضغط والعسف، هذا أقصى ما يستطيعونه..</p><p>قالت في شيء من السخرية:</p><p>– وهل هناك مصائب أكثر من ذلك؟</p><p>قال في حدة:</p><p>– أجل..</p><p>– ماذا؟؟</p><p>– أن نرضى بالهوان!..</p><p>وتركها قاصداً الأزهر.. وقد كان المسجد الكبير في تلك الأيام قلب الأمة النابض، فيه يلتقي الدين بالدنيا، وتتبلور آمال الشعب وأفكاره، فهو بوتقة الماضي والحاضر – كما يقول البشتيلي –، ومجلس شورى الأمة، التنظيم الوحيد الذي يشع بنوره الوهاج في شتى الأرجاء.. وكان لشيخ العلم (السادات) مكانة طيبة، دعمها عدم اشتراكه في عضوية الديوان الذي كونه نابليون ليحكم من خلاله، وليتجنب الكثير من المشاكل، تحت زيف الشعارات الخادعة.</p><p>وفي داخل الأزهر الواسع الجليل، شعر البشتيلي – كعادته – باطمئنان غريب، ذلك الاطمئنان الذي يخالج قائداً هماماً وقد أوى إلى قلعة حصينة لا تستطيع أية قوة أن تتخطى أسوارها، أو تقتحم حماها.. عشرات من الرجال يستعدون للثورة الشاملة، ولم تكن القيادة لنوع واحد من الرجال، فقد كان هناك التجار والأعيان وصغار أرباب الحرف والمهن المختلفة، ولم يكن لقب «عالم» وقفاً على رجال بعينهم تخصصوا في دراسة الدين والعلم، بل كان العلم مشاعاً، فكثير من التجار أو أصحاب الحرف يتناوبون خطب الجمعة في الأزهر الشريف.</p><p>وتطلع البشتيلي إلى الوجوه الكثيرة التي تشرق بالثقة والأمل، يقرأ في العيون رغبة أكيدة في التضحية والصبر عليه، وأن الفرنسيين تجري عليهم سنن النصر والهزيمة كما تجري</p><p>١٦٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

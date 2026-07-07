@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>مناسبة النص</h2><p>النص الآتي من قصيدة قيلت في حفلة أقيمت لإعانة منكوبي سوريا بمسرح حديقة الأزبكية في يناير ١٩٢٦م، بعد أن قصف الفرنسيون مدينة دمشق وخلفوا فيها الدمار. والنص من بحر الوافر.</p><h2>النص</h2><p>١ - سَلَامٌ مِنْ صَبَا «بَرْدَى» أَرْقُ
+٢ - لَحَّاهَا اللَّهُ أَنْبَاءَ تَوَالَتْ
+٣ - يَفْصُلُهَا إِلَى الدُّنْيَا بَرِيدٌ
+٤ - وَقِيلَ مَعَالِمُ التَّارِيخِ دُكَّتْ
+٥ - وَلِلْمُسْتَعْمِرِينَ - وَإِنْ أَلَا نَوَا -
+٦ - دَمُ الشُّوَارِ تَعْرِفُهُ (فَرَنْسَا)
+٧ - وَلِلْأَوْطَانِ فِي دَمِ كُلِّ حُسْرٍ
+٨ - وَمَنْ يَسْقِي وَيَشْرَبُ بِالنَّبَاءِ؟
+٩ - فَفِي الْقَتْلَى لِأَجْيَالٍ حَيَاةٌ
+١٠ - وَلِلْحُرِّيَّةِ الْحَمْرَاءِ بَابٌ
+وَدَمْعٌ لَا يُكْفَكُفُ يَا دِمَشْقُ
+عَلَى سَمْعِ الْوَلِيِّ بِمَا يَشْقُ
+وَيُحْمِلُهَا إِلَى الْأَقْسَاقِ بَرْقُ
+وَقِيلَ أَصَابَهَا تَلَفٌ وَحَرْقُ
+قُلُوبٌ كَالْحِجَارَةِ لَا تَرْقُ
+وَتَعْلَمُ أَنَّهُ نُورٌ وَحَقُّ
+يَدٌ سَلَفَتْ وَدِينٌ مُسْتَحَقُّ
+إِذَا الْأَحْرَارُ لَمْ يُسْقَوْا وَيَسْقَوْا
+وَفِي الْأَسْرَى فَدَى لَهُمْ وَعِتْقُ
+بِكُلِّ يَدٍ مَضْرَجَةٌ يُدْقُ</p><h2>معاني المفردات والتراكيب اللغوية</h2><p>الصبا: رياح تهب من جهة الشرق، بردى: النهر المعروف بسورية، لحاها الله: قبحها الله، الولي: الحب الصديق، البريد: ناقل الرسائل والأخبار، فدى: تضحية، عتق: تحرر من العبودية، مضرجة: مخضبة بالدماء.</p><h2>إضاءة</h2><p>تتضمن الأبيات العشرة تحية واستياء لأحداث قصف دمشق من قبل الفرنسيين، وتؤكد قيمة التضحية والفداء والاستشهاد في سبيل الحق. يقول شوقي: حملت لنا رياح بردى سلاماً رقيقاً ودمعاً لا يتوقف، فقبح الله مثل هذه الأخبار التي تؤذي محبي</p><p>٤٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

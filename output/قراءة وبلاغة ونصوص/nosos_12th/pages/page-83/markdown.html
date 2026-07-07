@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>وقد يأتي السجع (عفو الخاطر) كما في قوله: «صوت ضميره ونداء شعوره، تشيع بين أفراد الأمة الرجولة وتكثر فيهم البطولة...».</p><p>وبعض الصور القليلة، كالكناية في قوله: «لا يعبأ بتصفيق المصفقين»، أو الاستعارة في قوله: «في الرجولة متسع للجميع».</p><p>وبشكل عام الصور قليلة وعادية مستهلكة، فالكاتب لا هدف له إلا توضيح فكرته، ويريد إيصالها للعامة والخاصة على السواء...</p><p>ويتسم النص بالدقة والوضوح، وقوة الإقناع، والواقعية.
+ونحن في غنى عن القول إن الكاتب لا يتحدث عن الرجولة بمعنى الذكورة، إنما عن الرجولة بوصفها قيمة معنوية، ومن ثم ينطبق كلامه على الرجال والنساء.</p><h2>أسئلة وتدريبات</h2><p>1- ما المجالات التي اهتم بها الكاتب؟
+2- ما أهم الأفكار الجزئية التي اشتمل عليها النص؟
+3- اختر الإجابة الصحيحة من بين الأقواس:
+   - النص ينتمي إلى المقالة: (الصحفية، الذاتية، الاجتماعية).
+   - الأسلوب في النص: (علمي متأدب، علمي، أدبي).
+   - أبرز المحسنات التي في النص: (الجناس، الطباق، السجع).
+4- اكتب بأسلوبك تعريفاً للرجولة.
+5- ما البرنامج الذي يطلب به الكاتب؟ وما رأيك فيه؟
+6- استخرج من النص ثلاثة محسنات بديعية، وسمها.</p><p>٨١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

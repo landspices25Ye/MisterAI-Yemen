@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>لاحظ أن الأذن تتكون من :</p><p>١- الأذن الخارجية التي تتكون من صوان الأذن، والقناة السمعية والطبلية، كما تحتوي الأذن الخارجية على عدد تفرز مادة شمعية لحماية الأذن الوسطى.</p><p>٢- الأذن الوسطى :</p><p>عبارة عن تجويف يقع خلف الطبلية، ويتصل بتجويف البلعوم بواسطة قناة استاكيوس المسؤولة عن تعادل الضغط الجوي على جانبي غشاء الطبلية، وتوجد في الأذن الوسطى ثلاث عظيمات سمعية. ما هي؟</p><p>٣- الأذن الداخلية : عبارة عن تجويف مملوء بسائل شفاف تؤدي حركته إلى تنبيه مستقبلات الصوت، أو التوازن. تتكون من :</p><p>- القوقعة Cochlea التي تحتوي على مستقبلات الصوت، وتتكون هذه المستقبلات من خلايا شعرية كما يوجد بها عضو كورني.</p><p>- القنوات الهلالية (Semicircular Canals) التي تحتوي على مستقبلات التوازن.</p><h1>آلية السمع :</h1><p>- كيف يسمع الإنسان الأصوات ويميزها؟</p><p>تقوم الأذن الخارجية بتجميع الأمواج الصوتية بواسطة صوان الأذن، ومن ثم نقلها عبر القناة السمعية إلى الطبلية، فتهتز الطبلية. شكل (٢٢).</p><img src="img-24.jpeg" alt="img-24.jpeg" /><p>الشكل (٢٢) قطاع في القوقعة.</p><p>الأحياء للصف الثالث الثانوي</p><p>٣٣</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

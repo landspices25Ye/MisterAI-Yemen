@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الأعداد المركبة</p><h1>مثال (١ - ١٥)</h1><p>اكتب كلا من الأعداد المركبة التالية بالصورة القطبية :</p><p>أ) ١ + ت . ب) ١ - . ج) ت .</p><p>الحل :</p><p>أ) ∴ الصورة القطبية للعدد ع = م (جتا ه + ت جا ه) .</p><p>$‫\sqrt{2} = \sqrt{2(1) + 2(1)} = |ت + 1| = م‬$‫</p><p>‬$‫\therefore \text{جتا ه} = \frac{1}{\sqrt{2}} = \frac{1}{\sqrt{2}} \text{ ، جا ه} = \frac{1}{\sqrt{2}} = \frac{1}{\sqrt{2}} .‬$‫</p><p>∴ جتا ه < ٠ ، جا ه < ٠ ، ه تقع في الربع الأول .</p><p>‬$‫\therefore \frac{\pi}{4} = ه .‬$‫</p><p>الصورة القطبية للعدد (١ + ت) = 2√ (جتا 1/4 + ت جا 1/4) أو 1 + ت = [ 2√ ، 1/4 ] .</p><p>ب) ∴ ع = ١ - ص = ١ - ص = ٠ .</p><p>‬$‫\therefore \sqrt{2} = \sqrt{2 + 1} = \sqrt{2 + 2} = 1‬$‫</p><p>‬$‫\text{جتا ه} = \frac{1}{\sqrt{2}} = \frac{1}{\sqrt{2}} = 1 - \text{،}‬$‫</p><p>‬$‫\text{جا ه} = \frac{1}{\sqrt{2}} = \frac{1}{\sqrt{2}} = 0‬$‫</p><p>ه تنطبق على محور السينات السالب ، ∴ ه = π</p><p>‬$‫\sqrt{2} = (\text{جتا } \pi + \text{ت جا } \pi) = [ \pi \text{ ، } 1 ]‬$‫</p><p>وباعتبار (س ، ص) = (٠ ، ١ - ) ، ∴ ه = π</p><p>من تمثيلها البياني [ انظر شكل (١ - ٨) ] .</p><p>ج) ع = ت ⇐ س = ٠ ، ص = ١ .</p><p>‬$$‫\therefore \sqrt{2} = \sqrt{2 + 1} = \sqrt{2 + 2} = 1‬$$‫</p><p>‬$‫\text{جتا ه} = \frac{1}{\sqrt{2}} = \frac{1}{\sqrt{2}} = 0‬$‫</p><p>‬$‫\text{جا ه} = \frac{1}{\sqrt{2}} = \frac{1}{\sqrt{2}} = 1‬$</p><img src="img-24.jpeg" alt="img-24.jpeg" /><p>شكل (١ - ٨)</p><p>٢٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

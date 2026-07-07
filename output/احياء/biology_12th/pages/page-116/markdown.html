@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>ثانياً: السيادة المشتركة : Co - Dominance</h2><p>لاحظ العلماء في حالات توارث بعض الصفات ان الفرد الهجين يختلف شكله الظاهري عن الفرد النقي ويكون شكله وسطاً بين شكلي الابوين النقيين .</p><h3>■ مثال ( ١ )</h3><p>توارث لون شعر الجلد في ابقار الشورت هورن .</p><p>عندما يتواوح فردان نقيان : أحدهما يحمل لون الشعر الأحمر وتركيبه الجيني (RR) والآخر يحمل لون الشعر الأبيض وتركيبه الجيني (WW) ، فتظهر افراد الجيل الأول كلها طوبية بينما افراد الجيل الثاني تتوزع في ثلاثة اشكال مظهرية هي : الأبيض والطوبي والأحمر بنسبة ١ : ٢ : ١</p><img src="img-88.jpeg" alt="img-88.jpeg" /><p>تلاحظ كلا من جيني اللون الأحمر والأبيض يظهر أثره، أي ظهور شعرة حمراء وشعرة بيضاء .</p><h3>■ مثال ( ٢ )</h3><p>وتظهر السيادة المشتركة أيضاً في توارث إحدى فصائل الدم في الإنسان حيث تشترك $‫I^B I^A‬$ في إظهار الفصيلة الدموية AB - ما فصائل الدم المختلفة في الإنسان ؟
+- كيف يتم توارث فصائل الدم في الإنسان ؟</p><p>الشكل ( ١٣ ) توارث اللون في ابقار الشورت هورن</p><p>صنفت فصائل الدم في الإنسان إلى أربع فصائل هي فصيلة (A) وفصيلة (B) وفصيلة (AB) وفصيلة (O) ، وكل شخص يحمل دمه إحدى هذه الفصائل .</p><p>١١٦</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

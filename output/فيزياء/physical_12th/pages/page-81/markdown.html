@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>إن أكبر مجال لاستعمال الدوائر المتكاملة هو صناعة الحاسبات والساعات والصواريخ الموجهة، فهي أسرع بكثير من الدوائر المنفصلة (بسبب ملفات الحث المرتبطة بالدوائر المنفصلة)، وهناك فوائد أخرى توفرها الدوائر المتكاملة لمصنعي الحاسبات الإلكترونية والتلفاز، فهي تقلل مبالغ التجميع التي تصرف على الدوائر المنفصلة التي تحتاج إلى عمل يدوي، وتحتل حيزاً صغيراً جداً مقارنة بالأجهزة القديمة.</p><p>للاستزادة من المعلومات حول موضوع الترانزستورات نفذ الآتي:</p><p>- قم بزيارة إلى أقرب ورشة لصيانة الأجهزة الإلكترونية في منطقتك أو حيك.
+- قابل المهندس أو الفني المتخصص، وأطلب منه ما يلي:
+- أن يطلعك على... أشكال الترانزستورات وحجومها، وكذلك الدوائر المتكاملة.
+- أن يطلعك على بعض الدوائر الكهربائية التي يدخل الترانزستور في تركيبها، أي التي يستخدم فيها الترانزستور كجزء من الدائرة الكهربائية.
+- أن يطلعك على بعض الرسومات التوضيحية لتلك الدوائر الكهربائية مبيناً كيفية إدماج الترانزستورات والوصلات الثنائية (الدايودات الثنائية) في هذه الدوائر.</p><p>٧٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

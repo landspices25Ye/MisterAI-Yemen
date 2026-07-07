@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><h2>مقدمة</h2><p>الحمد لله رب العالمين والصلاة والسلام على أشرف المرسلين وعلى آله وصحبه أجمعين وبعد:</p><p>هذا هو كتاب الكيمياء للصف الثالث الثانوي، وقد تم تأليفه مصحوباً بكتاب الأنشطة والتجارب العملية وكذا دليل المعلم. وقد بذلنا قصارى جهدنا في إخراجها بالصورة التي هي عليه الآن مستفيدين من خبرات عربية وعالمية وقد حرصنا على تقديم المفاهيم بطريقة مشوقة للطالب والمعلم، بحيث يسهل تعلم هذه المفاهيم ذاتياً، إذ تنوعت الخبرات والمعلومات وتم التركيز على الأنشطة التي يسهل تنفيذها؛ حيث إنها تشمل على مواد يمكن الحصول عليها من خامات البيئة المحلية، وحرصنا على أن تكون الأمثلة ملامسة لحياة الطالب اليومية، ونتوقع من هذا الكتاب أن يلبي طموحاتنا الكبيرة التي نتمنى أن يتسلح بها الجيل الجديد خاصة وأن التطورات في هذا المجال متسارعة ومتلاحقة، إذ أننا نعيش عصر الانفجار المعرفي.</p><p>إن علم الكيمياء يهتم بالدرجة الأولى على دراسة مكونات المادة وخصائصها الفيزيائية والكيميائية وسلوك العناصر وتفاعلاتها المختلفة؛ حيث إن هذا العلم يهتم بتفسير الظواهر الكيميائية تفسيراً علمياً مستنداً على النظريات والقوانين المرتبطة بهذا العلم الذي تم تسخير تطبيقاته المتعددة والمتنوعة لصالح الإنسانية، إضافة إلى ذلك فإن علم الكيمياء يعد مصدراً أساسياً للمعرفة ومجالاً هاماً للتطبيق العملي لجميع فروع العلوم الطبيعية.</p><p>وقد احتوى هذا الكتاب على تسع وحدات دراسية مختلفة، حيث تعالج الوحدة الأولى العناصر الانتقالية كآخر دراسة لعناصر الجدول الدوري، وفيها سيتعرف الطالب على موقع العناصر الانتقالية في الجدول الدوري، وعلى أوجه الشبه بينها وبين عناصر (المجموعة الأولى (A) والفرعية (B)). وسيتعرف أيضاً على مفهوم العنصر الانتقالي، كما سيقوم الطالب بعد دراسة هذه الوحدة بتصنيف هذه العناصر إلى الفئات أو المسلمات الأولى والثانية والثالثة. كما</p><p>٤</p><p><http://www.e-learning-moe.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

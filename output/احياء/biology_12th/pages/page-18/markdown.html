@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-12.jpeg" alt="img-12.jpeg" /><p>فحدوث زوال
+استقطاب في نقطة ما
+للمية عصبية يعتبر مثيراً
+للنقطة المجاورة فيؤدي إلى
+فتح قنوات الصوديوم في
+تلك النقطة، فيحدث
+زوال الاستقطاب، وتعود
+النقطة السابقة إلى حالة
+الاستقطاب.</p><p>الشكل (١٠) انتقال السيل العصبي في المية المبلينة بطريقة القفز.
+وهكذا تسري موجة من زوال الاستقطاب، وإعادته خلال المية. ولكن في المية
+العصبية المبلينة ينتقل زوال الاستقطاب من عقدة رافعة إلى أخرى، ويسمى النقل
+القفزي. الشكل (١٠)، والانتقال بهذه الطريقة أسرع وأقل استهلاكية للطاقة من
+النقل بطريقة التأثير الموضعي.</p><h1>■ آلية انتقال السيل العصبي خلال التشابك العصبي :</h1><p>- كيف ينتقل السيل العصبي من خلية عصبية إلى أخرى؟</p><p>ينتقل السيل العصبي المتكون في خلية عصبية إلى أخرى حتى يصل إلى عضو
+استجابة بواسطة نواقل كيميائية عبر شق يسمى الشق التشابكي Synaptic Cleft.</p><p>ولنتعرف على كيفية هذا الانتقال، ادرس الشكل (١١) الذي يبين تكون
+التشابك العصبي. من الغشاء قبل التشابكي والغشاء بعد التشابكي وبينهما فراغ
+يدعى الشق التشابكي. يحتوي الغشاء قبل التشابكي على العديد من الحويصلات
+التشابكية تحوي مواد كيميائية تدعى النواقل العصبية، وكذلك يحتوي على قنوات
+لأيونات الكالسيوم التي توجد بتركيز عال خارج الغشاء قبل التشابكي مقارنة
+بداخله. أما الغشاء بعد التشابكي فإنه يحتوي على مستقبلات للنواقل العصبية
+ترتبط معها قنوات بروتينية للأيونات المختلفة.</p><p>- ما التغيرات التي تحدث عند دخول السيل العصبي إلى الغشاء قبل التشابكي؟
+إن هذه التغيرات يمكن إجمائها بالآتي:</p><p>١- فتح قنوات الكالسيوم لتنتشر أيونات الكالسيوم إلى داخل الغشاء قبل
+التشابكي.</p><p>١٨</p><p>الأحياء: النصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

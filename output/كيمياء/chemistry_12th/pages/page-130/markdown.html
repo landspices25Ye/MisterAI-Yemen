@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-117.jpeg" alt="img-117.jpeg" /><p>تؤكد نظرية الأصل الحي أن مصدر النفط هو الحيوانات البحرية أو النباتات التي تحوّلت عبر ملايين السنين إلى نفط نتيجة لارتفاع درجة الحرارة والضغط في باطن الأرض.</p><h2>نشاط (٢-٧)</h2><p><strong>قضية للبحث:</strong> استعن بالمراجع المتوفرة في مكتبة المدرسة أو المراجع التي سيدلك عليها مدرسك للبحث عن بعض النظريات التي تفسّر أصل النفط وطريقة تكوينه في باطن الأرض، وناقش النتائج التي ستتوصل إليها مع زملائك في الصف موضحين من وجهة نظركم النظرية التي ترون أنها منطقية، وتعرض أدلة وشواهد مقبولة من الناحية العلمية.</p><h2>الكشف عن وجود النفط:</h2><p>هناك طرق عديدة يمكن بواسطتها الاستدلال على أماكن تواجد النفط، فمثلاً بعض الحقول النفطية تندفع منها بعض البقع الزيتية وتظهر على سطح الأرض أو فوق سطح الماء فيستدل منها على وجود النفط، كما أن بعض الحقول النفطية يتسرب منها الغاز الطبيعي من خلال بعض الشقوق فيكون ذلك دليلاً على إمكانية وجود النفط في طبقات قريبة من الطبقات التي تحوي الغاز الطبيعي.</p><p>في بعض الحالات يلجأ العلماء إلى جمع بعض الحفريات الجيولوجية في محاولة لإيجاد بعض المتحجرات التي تدل على الصخور الحاوية للنفط، إلا أن هذه الطرق لا تصلح لاستكشاف النفط الذي يوجد في حقول عميقة وفي مصايد صخرية محكمة، ولذلك طور العلماء طرقاً حديثة لاستكشاف النفط، ومنها:</p><h3>١ - قياس الجاذبية الأرضية:</h3><p>إذ وجد أن الجاذبية الأرضية على سطح القشرة الأرضية تتناسب طردياً مع كثافة الصخور الموجودة في باطن الأرض، ولما كانت الصخور المترسبة تحت طبقة النفط قليلة الكثافة فبالإمكان تحديد أماكن وجود النفط عن طريق قياس الجاذبية على سطح الأرض عدة مرات، وعمل خرائط توضح الأماكن التي تنخفض فيها الجاذبية والتي تتخذ مؤشراً لوجود الصخور المترسبة تحت طبقة النفط.</p><p>١٢٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

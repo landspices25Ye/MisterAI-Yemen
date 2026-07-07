@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>- ادرس الجدول (٢) الذي يبين ذلك.</p><h1>جدول (٢) الوظائف المتأثرة لأعضاء الجهازين التناسليين لذكر وأنثى الجراد</h1><p>|  الجنس | إنتاج الخلايا التناسلية | مكان تخزين الإنتاج | منطقة توصيل الإنتاج إلى الفتحة التناسلية | منطقة نقل الخلايا التناسلية إلى الخارج  |
+| --- | --- | --- | --- | --- |
+|  الذكر | الخصيتان | الحوصلتان المنويتان | الوعاءان الناقلان والقناة القاذفة | طرف القضيب  |
+|  الأنثى | المبيضان | المبيضان لتخزين البيض والكيس المنوي لتخزين الحيوانات المنوية الواردة من الذكر. | قناة المبيض الجانبيتان وقناة البيض المشتركة والمهبل وقناة الكيس المنوي. | المهبل  |</p><p>بعد الإخصاب تضع الأنثى البيض على شكل كتلة في حفرة طويلة في الرمل وهي ملتصقة بمادة غروية، ثم تغطى الحفرة بمادة غروية، وبعد فترة تخرج من البيض أجنة تسمى الحوريات كما في الجراد والصراصير.</p><h3>التكاثر في الإنسان : Reproduction In Human</h3><p>يشترك الجهازان التناسليان الذكري والأنثوي في الإنسان لإنتاج النسل، وتقوم أعضاء هذين الجهازين بتكوين الأمشاج ونقلها إلى مكان الإخصاب، وتفرز هذه الأعضاء الهرمونات الجنسية التي تنظم عملية التكاثر.
+- اذكر بعض الهرمونات الجنسية ووظيفة كل منها ؟</p><h3>الجهاز التناسلي الذكري Male Reproductive System</h3><p>لاحظ الشكل (١٨-١) وتعرف على مكونات هذا الجهاز، حيث يتكون مما يأتي:</p><h4>١- الأعضاء التناسلية الأساسية وتشمل:</h4><p>الخصيتين: توجد كل خصية داخل كيس يدعى كيس الصقن، وتتكون الخصية من عدد من الفصوص، وفي كل فحص عدد من الأنابيب المنوية الدقيقة، المبطنة بنسيج طلائي يحتوي على نوعين من الخلايا (الشكل ١٨-ج) هما:</p><h4>- خلايا سرقولي : Sertoli Cells</h4><p>تعمل على تدعيم الحيوانات المنوية وتغذيتها.</p><p>٨٠</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

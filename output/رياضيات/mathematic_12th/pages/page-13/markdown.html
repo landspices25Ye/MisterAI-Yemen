@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الأعداد المركبة</p><h1>تعريف (١-٢)</h1><p>يقال للعددين المركبين (س₁ + ت ص₁)، (س₂ + ت ص₂) بأنهما متساويان إذا وفقط إذا كان س₁ = س₂، ص₁ = ص₂</p><p>أي أن: (س₁ + ت ص₁) = (س₂ + ت ص₂) ⇔ س₁ = س₂ × ص₁ = ص₂</p><h1>مثال (١-٥)</h1><p>أوجد قيم س، ص إذا كان: ٥ س + ٤ ت ص = ١٥ + ت (س - ١).</p><h1>الحل:</h1><p>٥ س + ٤ ت ص = ١٥ + ت (س - ١)</p><p>ومن التعريف (١-٢) نحصل على:</p><p>٥ س = ١٥ ⇔ س = ٣،</p><p>٤ ص = س - ١، وبالتعويض عن قيمة س نحصل على:</p><p>٤ ص = ٣ - ١ = ٢ ⇔ ص = ١/٢.</p><h1>تمارين ومماثل (١-١)</h1><p>[١] بسط كلما يأتي:</p><p>- أ) ت⁹.
+- ب) ت³⁴².
+- ج) ت⁶³⁻.
+- د) ت³ + ١/٢.
+- هـ) ت³⁷ + ١/٦٧.
+- و) ت⁵ - ت⁶.
+- ز) ٥/٧.
+- ح) ت + ٢ + ٣ + ٤ + ٣ + ٤.
+- ط) (١-٧) ٤٥.
+- ي) ت¹⁰⁴ + ت¹⁰⁹ + ت¹¹⁴ + ت¹¹⁹.</p><p>[٢] اكتب الجزء الحقيقي والجزء التخيلي للأعداد المركبة التالية:</p><p>- أ) ٤ - ٣ + ٣.
+- ب) ٣ + ٥ - ٧.
+- ج) ٧ - ٤٩ - ٧.
+- د) ٣ - ٣.
+- هـ) ٢ - ٢ + ٢ - ٢.
+- و) ١/٢ - ٣/٤.
+- ز) ٧ - ١٦٩ - ١١.</p><p>[٣] اكتب ناتج ما يلي باستخدام الصورة الجبرية للأعداد المركبة:</p><p>- أ) ٧ - ٧/٤ - ١ - ٧/٧.
+- ب) ٥ - ٢ - ٧ × ٣ - ١٨.</p><p>١١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

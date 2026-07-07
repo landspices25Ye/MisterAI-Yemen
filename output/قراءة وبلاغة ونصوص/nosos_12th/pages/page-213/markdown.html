@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>يختلفون؛ فمنهم من يقول: إن (الرواية) جنس سردي نثري أقرب إلى الحكاية الخيالية، ومنهم من يقول: إن (الرواية) مرتبطة بالتاريخ، وليس هناك تناقض؛ فهناك روايات تاريخية مثل: رواية (مواكب الأحرار) للكيلاني التي أخذنا منها نص (إشعاعات الأزهر) لدراسته، وتبيين ملامحه الفنية ضمن هذا الكتاب، وهناك روايات يغلب عليها الخيال. أما الروايات أو القصص الواقعية فالمقصود أن أحداثها يمكن أن تجري في الواقع، ولا يعني ذلك أنها نقل ميكانيكي لهذا الواقع.</p><p>ولا يقتصر تنوع الرواية على الخيال والتاريخ الواقعية فحسب، بل تتنوع الرواية كما سبق الحديث عن القصة.</p><p>والرواية – أولاً وأخيراً – عمل أدبي فني عميق المدلول، نافع الوظيفة من الناحية الاجتماعية والسياسية والثقافية، إذ غدت من وسائل التشويق والترفيه وتهذيب الطباع، وترقيق العواطف وصقلها، دون أن تكون – بالضرورة – مما يندرج ضمن الأدب التعليمي.</p><h3>٣- القصة القصيرة أو الأقصوصة:</h3><h4>تعريفها:</h4><p>تعرف القصة القصيرة بأنها تصوير لحادثة خاصة أو موقف معين أو حالة شعورية، أو هي تناول لقطاع أو شريحة أو موقف من الحياة. إنها اقتناص لحظة حياتية مهمة في عيني القاص ووجدانه، لا بد من تسجيلها قبل أن تنسرب وتضيع.</p><p>كما يشترط في القصة القصيرة أن تكون ألفاظها منتقاة ولغتها مكثفة، يتجنب فيها الكاتب الخوض في التفاصيل، معتمداً على الإيحاء في المقام الأول.</p><p>إن كاتب القصة القصيرة إنما يهتم بتصوير موقف معين في حياة فرد أو أكثر، لا بتصوير الحياة بأكملها. فالذي يعنيه هو أن يجلو هذا الموقف، أي أن يستشف منه معنى معيناً يريد إبرازه للقارئ. ولذلك فإن النهاية في القصة القصيرة تكتسب أهمية خاصة، فهي النقطة التي تنتهي إليها خيوط الحدث. ولذلك سُميت لحظة التنوير.</p><p>والقصة القصيرة تروي خبراً، وليس كل خبر قصة ما لم تتوافر فيه خصائص معينة، منها: أن يكون له أثر أو معنى كلي، أي أن تتصل تفاصيله أو أجزاؤه ببعضها، كما يجب أن يكون للخبر بداية ووسط ونهاية، بمعنى أن يصور ما نسميه بالحدث، وتصبح القصة مختلة البناء إذا لم تقم الأحداث والشخصيات على خدمة المعنى من أول القصة إلى آخرها.</p><p>٢١١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

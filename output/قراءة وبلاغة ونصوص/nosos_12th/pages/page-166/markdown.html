@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-60.jpeg" alt="img-60.jpeg" /><p>على غيرهم.. ويدور الحديث عن الضرائب الكثيرة التي أرهقت المواطنين، وتفتيش المنازل، وكسر الدكاكين، واستخراج الخبايا والودائع، والفديات التي تؤخذ من ذوي النفوذ والمراكز، والقروض الإجبارية من أهل الحرف..</p><p>وتذكر البشتيلي - وهو يمرق وسط هذه الحشود - كيف كان الضابط الفرنسي (برتلمي) يقطع رؤوس الوطنيين، ويطوف بها في الشوارع لبث الرعب في القلوب.. وتذكر السجون وما فيها من رهائن ومسجونين، وقسوة بالغة البشاعة.. ثم عاد ينظر إلى ما حوله من مظاهر حية، فتمتم: (ولو.. إن هذا الشعب لن يموت ولن يستسلم، ولو تحول كل الفرنسيين جميعهم إلى أنماط متشابهة على صورة برتلمي اللعين)..</p><p>ويعضي البشتيلي في طريقه، ويشتد به العجب وهو يرى ألواناً شتى من أبناء الدول العربية: مغاربة وشوام وسودانيين وعينيين وحجازيين وعراقيين.. إنهم جميعاً يهتمون بالأمر وكأنه يعينهم بالدرجة الأولى، ويلتقون مع إخوانهم المصريين في جدل صاخب، ويبدون رغبتهم بالمشاركة في البذل والتضحية..</p><p>ورأى البشتيلي أفواجاً من لاسي الأردية القروية يزحفون نحو الأزهر، وينتشرون في ردهاته الكثيرة الواسعة ضمن الفئات الأخرى، ثم همس لنفسه:</p><p>«مستحيل أن تُخذل تلك الإرادة الجبارة.. إرادة الحق الذي ينطلق في مواجهة الشر، برغم اتساع الفارق بينهما من حيث القوة المادية»..</p><p>والتقى البشتيلي بإخوانه الثوار، وعلى رأسهم (الشيخ السادات)، وبعد دراسة الأمر من كافة نواحيه، قال الشيخ:</p><p>- «سيروا على بركة الله» «ولينصرن الله من ينصره».</p><p>وزحف الثوار خارج المسجد الكبير.. كانت الحوانيت في الشوارع مغلقة، وتجمعات الناس تلفت النظر في الميادين والشوارع، تلك التجمعات تأخذ في التلاحم لتكون كتلاً من البشر أضخم وأكبر.. وهدير كالرعد يصمُّ الآذان، وصاح رجل من غمار الناس لا يعرفه أحد، وإن كان صوته قوياً واضحاً:</p><p>١٦٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

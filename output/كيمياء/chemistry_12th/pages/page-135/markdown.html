@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-121.jpeg" alt="img-121.jpeg" /><p>شكل (٧-٤) استخدامات النفط</p><h1>ملاحظة</h1><p>الجازولين والكيروسين من أهم نواتج عمليات التقطير التجزيئي إلا إنهما يحتويان على بعض الشوائب من الكبريت ومركباته والتي تحد من فعاليتها كوقود، وتعمل على تآكل أجزاء الحركات التي تدور بواسطة حرق وقود الجازولين أو الكيروسين، ولذلك يتم تنقية هاتين المادتين بخلطهما بحمض الكبريتيك المركز، ثم يخض المزيج جيداً ويغسل بعد ذلك بالماء، وبحلول NaOH للتخلص من آثار حموض الكبريت.</p><h1>زيادة إنتاج الجازولين:</h1><p>نظراً للتطور الجاري في وسائل المواصلات مثل السيارات والطائرات؛ تزايد الطلب على مادة الجازولين المستخدمة كوقود، ونظراً لأن عملية التقطير التجزيئي المباشرة لا تعطي سوى ٢٠٪ من النواتج كجازولين، لذلك جرى في السنوات الأخيرة من القرن الماضي تطوير طرق جديدة تم بواسطتها الحصول على المزيد من الجازولين عن طريق تكسير الجزيئات الكبيرة إلى جازولين، وذلك باستخدام الطرق الآتية:</p><p>١٣٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

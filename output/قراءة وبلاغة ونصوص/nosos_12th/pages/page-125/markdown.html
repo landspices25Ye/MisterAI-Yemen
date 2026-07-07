@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>أن لديها القدرة على التجديد، وامتصاص ما في التجارب الأخرى من عناصر صائبة.
+٢ - أنها تتسم في تطورها بالخصوصية، ولم تقتصر على الماضي بل امتدت لتحتضن إنتاج الغد، وذلك لما تحتويه من نزعة مستقبلية أصيلة.</p><p>٣ - أنها أضحت منهجاً حراً في الإبداع الأدبي لا يُقَيِّدُ من حريته التزامه بواقعه؛ فإن الإبداع الأدبي وفقاً لهذه الرؤية يساير الواقع، ومن ثم فإن الواقعية تتطور تاريخياً مجارياً واقع الإنسان ومستقبله.</p><p>٤ - ارتبطت الواقعية في كثير من نصوصها الشعرية بالشكل الشعري الجديد (شعر التفعيلة). وكان هذا التطور الشكلي ناتجاً عن تطور آخر في المضمون. فحيث تحرر الشعراء الواقعيون من أحلام الرومانسية وخيالاتها وقرروا أن يواجهوا الواقع كما هو، ولا يهربون منه، فقد رأوا أن يصاحب هذا التطور في المضمون تطور في الشكل، فتحرر كثير منهم في بعض إنتاجه الشعري من نظام تساوي شطري البيت الواحد في عدد التفعيلات كما هو شأن القصيدة العمودية، واتجهوا نحو اعتماد وحدة موسيقية تتكرر دون ارتباط بعدد محدود ومتساوٍ من التفعيلات، كما سيتضح في عدد من القصائد التي تتبع هذا النظام مثل قصيدة محمود درويش وقصيدة المقالح، وقصيدة السياب، ونازك الملائكة، وغيرهم.
+يقول درويش من قصيدته (بطاقة بلا هوية):</p><p>سجل</p><p>أنا عربي</p><p>ورقم بطاقتي خمسون ألف</p><p>وأطفالي ثمانية</p><p>وتاسعهم.. سيأتي بعد صيف!</p><p>فهل تغضب</p><p>٥ - التجديد في بناء القصيدة الواقعية من حيث الألفاظ واستخدام اللغة الحية والاهتمام بتوظيف الرمز والأسطورة كتشخيص الليل وتصويره ساكناً، وتشخيص الأثاث، وتصوير صداها، وتصوير الحزن وتدفقه وغيرها من الصور التي جعلت المعنوي محسوساً، ولونته بألوان مختلفة، يقول درويش:</p><p>الطلقة الأولى أزاحت عن جبين الليل.</p><p>قبعة الظلام.</p><p>١٢٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

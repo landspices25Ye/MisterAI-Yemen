@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>٣ - تستخدم في مجال الصناعة كدراسة البناء البلوري للعناصر والكشف عن الشقوق في الفلزات كهياكل الطائرات أو الأنابيب المعدنية .
+٤ - تستخدم في المطارات للكشف عن وجود الأجسام الصلبة في أمتعة المسافرين دون فتحها .</p><h2>الخطر : Laser</h2><p>قليل من الاكتشافات التي كان لها وقع خاص عند اكتشافها مثلما كان لاكتشاف الليزر وخاصة في مجال البصريات . والمصطلح ليزر (laser) يمثل الأحرف الأولى للعبارة الإنجليزية التالية :</p><h3>Light Amplification by Stimulated Emission of Radiation .</h3><p>والتي تعني بالعربية تضخيم الضوء بواسطة الانبعاث المستحث للإشعاع . وقبل عام (١٩١٧م) لا أحد كان يعتقد بأن الضوء يمكن أن يضخم مثلما يضخم الصوت حين طرح إينشتين أفكاره . ولم تلق هذه الأفكار الاهتمام التي تستحقه في الأوساط العلمية في ذلك الوقت . وفي عام ١٩٥٤م ، بدأ تطبيق أفكار إينشتين وذلك بتطوير جهاز لتضخيم الأمواج القصيرة غير المرئية (الميكروية) سمي بالليزر (Maser) وهذه اللفظة مشتقة من الأحرف الأولى للكلمات الإنجليزية للمصطلح الآتي :</p><h3>Microwave Amplification by Stimulated Emission of Radiation .</h3><p>ويعني هذا المصطلح بالعربية : تضخيم الأمواج القصيرة بواسطة الانبعاث المستحث للإشعاع . أما جهاز الليزر فكان يتعلق بالأمواج الضوئية المرئية وقد بدأ تطويره عام ١٩٥٨م . وكان أول جهاز لتوليد أشعة الليزر هو من تصميم العالم الأمريكي ثيودور ميمان عام ١٩٦٠م . الذي استخدم لذلك الغرض بلورة الياقوت . ويوجد في الوقت الحاضر أنواع عدة من الليزرات لمواد الحالة الصلبة - والغازية - والسائلة ، تولد أطوال موجية مختلفة ( من تحت الحمراء حتى فوق البنفسجية من ضمنها أشعة الميزر ) .</p><p>ولفهم عمل أجهزة الليزر لابد لنا أولاً من التعرف على المبادئ الأساسية التي تقوم عليها عملية توليد الأشعة الليزرية .</p><p>١٦٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

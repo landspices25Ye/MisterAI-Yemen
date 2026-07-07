@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-55.jpeg" alt="img-55.jpeg" /><p>الوحدة الثالثة</p><p>$‫\therefore (1) = 5 \text{ نقاط (حوادث أولية بسيطة)} \quad \therefore (2) = 6 \text{ نقاط}‬$‫
+$\therefore \text{حا}(1) = \frac{(1)}{\text{حا}(2)} \quad \therefore \text{حا}(1) = \frac{5}{6}‬$$‫</p><h1><strong>مثال (٣ - ٥)</strong></h1><p>اختبر عشوائياً عدد صحيح (س) حيث : ‬$1 \geq m \geq 50$‫ .</p><p>أوجد احتمال أن يكون العدد المختار :</p><p>- (١) فردياً .
+- (٢) يقبل القسمة على (١٣) .
+- (٣) ليس مربعاً كاملاً .
+- (٤) لا يقبل القسمة على (١٠) .</p><h1><strong>الحل :</strong></h1><p>‬$‫\text{ع} = \{1, 2, 3, \dots, 50\}‬$‫
+$\therefore (2) = 50‬$$‫</p><p>(١) نفرض أن : ‬$1$‫ هي حادثة العدد المختار فردياً .</p><p>‬$‫\therefore 1 = \{1, 3, 5, 7, \dots, 49\} \quad \Leftarrow (1) = 25‬$‫</p><p>‬$‫\therefore \text{حا}(1) = \frac{(1)}{\text{حا}(2)} \quad \therefore \text{حا}(1) = \frac{25}{50} = \frac{1}{2}‬$‫</p><p>(٢) نفرض أن : ‬$x$‫ هي حادثة العدد المختار يقبل القسمة على «١٣»</p><p>‬$‫\therefore x = \{13, 26, 39\} \quad \Leftarrow (x) = 3‬$‫</p><p>‬$‫\therefore \text{حا}(x) = \frac{(x)}{\text{حا}(2)} \quad \therefore \text{حا}(x) = \frac{3}{50}‬$‫</p><p>(٣) نفرض أن : ‬$n$‫ هي حادثة العدد المختار ليس مربعاً كاملاً ، فتكون المتممة ‬$n$‫ هي : حادثة العدد المختار مربعاً كاملاً .</p><p>‬$‫\therefore \bar{n} = \{1, 4, 9, 16, 25, 36, 49\} \quad \Leftarrow (\bar{n}) = 7‬$‫</p><p>‬$‫\therefore \text{حا}(\bar{n}) = \frac{\text{حا}(\bar{n})}{\text{حا}(\bar{n})} \quad \therefore \text{حا}(\bar{n}) = \frac{7}{50}‬$‫</p><p>وحيث أن : ‬$\text{حا}(\bar{n}) = 1 - \text{حا}(n)$‫</p><p>‬$‫\therefore \text{حا}(n) = 1 - \text{حا}(\bar{n}) = 1 - \frac{7}{50} = \frac{43}{50}‬$</p><p>٨٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

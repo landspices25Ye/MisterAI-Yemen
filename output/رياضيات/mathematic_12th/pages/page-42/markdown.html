@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-36.jpeg" alt="img-36.jpeg" /><p>الوحدة الأولى</p><p>[٧] حل كلا من المعادلات الآتية حيث ع = م :</p><p>أ) ع³ = ت . ب) ع³ = ٣/٢ + ت . ج) ع⁴ = -١ + ٣/٢ ت .
+د) ع³ + ٨ = ٠ . هـ) ع³ - ٢٧ = ٠ . و) ع⁵ = ١ .
+[٨] إذا كان √[٣/٢ + ١٧/٢] = ١ + ب ت ، حيث ١ ، ب = ح . فأوجد ١ ، ب .</p><p>[٩] أوجد قيمة س ، ص التي تحقق كلا من المعادلات الآتية :</p><p>أ) (س + ت ص)² = ٤٥ - ٢٨ ت .
+ب) (س + ت ص)² (ت - ٣) = ٥ (٣ - ١) .
+ج) (س + ت ص)² + (١/٢ - ١) = ١٥ + ٠ .
+د) (س + ت ص)² = ٣٦ - ٢/٢ = ٣ + ٢ .
+هـ) (س + ت ص)² - (١ + ت)² (٣ - ٢) = ٠ .</p><p>[١٠] لتكن ع = ٥ (جناها - ت جاها) ، ع = ٦ (جناها ٢ ه + ت جاها) ، حيث ه = [٠ ، ٢/٢]</p><p>ظاه = ٣/٤ . أوجد ع² ، ع١ ، ع٢ بالصيغتين القطبية والجبرية .</p><p>[١١] لتكن س = (١/٢ - ١) ، ص = (١/٢ - ١) ، أوجد قيمة ٥/٢ س = ٣ ص .</p><h2>حل المعادلة من الدرجة الثانية</h2><p>٦ - ١</p><p>المعادلة ١/٢ + ب ع + ج = ٠ ، ١ = ٠ قابلة للحل دائماً في مجموعة الأعداد المركبة ، وباستخدام قانون حل المعادلات التربيعية نجد أن :</p><p>ع = -ب ± ΔV / ١٢ حيث Δ = ب² - ١٤ ج .</p><p>وتعرف أن :</p><p>مجموع الجذرين = -ب / ١ وحاصل ضربهما = ج / ١ .</p><p>٤٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

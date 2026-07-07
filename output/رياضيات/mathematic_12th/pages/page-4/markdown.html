@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-6.jpeg" alt="img-6.jpeg" /><img src="img-7.jpeg" alt="img-7.jpeg" /><p>المصدر: قانون رقم (٢٦) لسنة ٢٠٠٦م بشأن السلام الجمهوري ونشيد الدولة الوطني للجمهورية اليمنية</p><h1>أعضاء اللجنة العليا للمناهج</h1><p>أ.د. عبدالرزاق يحيى الأشول.</p><p>د. عبدالله عبده الحامدي. أ/ علي حسين الحيمي.
+د/ صالح ناصر الصوفي. د/ أحمد علي المعمري.
+أ.د/ محمد عبدالله الصوفي. أ.د/ صالح عوض عرم.
+أ/ عبدالكريم محمد الجنداري. د/ إبراهيم محمد الحوشي.
+د/ عبدالله علي أبو حورية. د/ شكيب محمد باجرش.
+د/ عبدالله الملس. أ.د/ داوود عبدالمالك الحدابي.
+أ/ منصور علي مقبل. أ/ محمد هادي طواف.
+أ/ أحمد عبدالله أحمد. أ.د/ أنيس أحمد عبدالله طائع.
+أ.د/ محمد سرحان سعيد الخلافي. أ/ محمد عبدالله زيارة.
+أ.د/ محمد حاتم الخلافي. أ/ عبدالله علي إسماعيل.
+د/ عبدالله سلطان الصلاحي.</p><p>قررت اللجنة العليا للمناهج طباعة هذا الكتاب .</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

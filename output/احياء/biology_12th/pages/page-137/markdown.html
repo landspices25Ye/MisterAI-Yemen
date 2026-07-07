@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>١- الحمض النووي الرايبوزي الراسل Messenger RNA ويرمز له mRNA .
+٢- الحمض النووي الرايبوزي الناقل Transfer RNA ويرمز له tRNA .
+٣- الحمض النووي الرايبوزي الرايبوسومي Ribosomal RNA ويرمز له rRNA .</p><img src="img-103.jpeg" alt="img-103.jpeg" /><p>الشكل (٦) نسخ حمض DNA الراسل</p><p>وبين الشكل (٦) كيفية نسخ حمض DNA الراسل من حمض DNA .</p><p>قارن في هذا الشكل شريط DNA المستنسخ بشريط DNA غير الفعال في عملية النسخ من حيث نوعية القواعد النيتروجينية وتسلسلها، ماذا تلاحظ؟</p><p>يعتبر اكتشاف حمض RNA خطوة مهمة في معرفة كيفية نقل المعلومات الوراثية من الحمض النووي الرايبوزي منقوص الأكسجين وترجمتها إلى بروتينات؟</p><p>إلا أنه ينبغي أن نتساءل كيف أن هناك أربعة قواعد نيتروجينية في الحموض النووية بينما يعمل عدد الحموض الأمينية في البروتينات إلى (٢٠) حمضاً أمينياً. فكيف تعمل هذه القواعد النيتروجينية على تحديد هوية الحموض الأمينية ووضعها في تسلسل معين لبناء جزئيه البروتين؟</p><p>- لقد ساعد اكتشاف الشيفرة الوراثية العلماء في التوصل للإجابة على هذا السؤال .</p><h3>الشفرة الوراثية The Genetic Code :</h3><p>إذا افترضنا أن لكل حمض أميني قاعدة نيتروجينية تحدد هويته، فإن القواعد الأربعة لا تحدد أكثر من هوية أربعة حموض أمينية فقط. دعنا نفترض أن بالإمكان تحديد هوية الحمض الأميني بقاعدتين نيتروجينتين فإن هذا يعني إمكانية وجود $‫n = 4^2 = 16‬$ احتمالاً، وبالتالي تحديد هوية (١٦) حمضاً أمينياً فقط. وبين الجدول (١) الاحتمالات الستة عشر.</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p><p>١٣٧</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

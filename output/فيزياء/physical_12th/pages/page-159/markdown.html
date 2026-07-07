@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>الأشعة السينية :</h2><p>اكتشف العالم الألماني رونتجن بطريق الصدفة عام ١٨٩٥م أنه عندما تصطدم حزمة من الإلكترونات – أو من أية جسيمات مشحونة ذات طاقة حركية كبيرة – بسطح فلزي ثقيل موجود داخل أنبوب مفرغ من الهواء ، فإنه تنبعث من الفلز أشعة ذات طاقة عالية ( تردد عال ، وطول موجي قصير ) . وكانت طبيعة هذه الأشعة في البداية غير معروفة فأطلق عليها العالم رونتجن اسم الأشعة السينية مثلما يستخدم الرمز ( س ) لتمثيل أي مجهول في الجبر . ونحن نعلم الآن بأنها عبارة عن إشعاع كهرومغناطيسي أطوال موجاته تتراوح بين ( ١ ، ١٠٠ ) أنجستروم .</p><p>يتم توليد الأشعة السينية في المختبر بواسطة أنبوب زجاجي مفرغ من الهواء تقريباً يسمى أنبوب الأشعة السينية ، ويحوي هذا الأنبوب عند أحد طرفيه مهبطاً ( C ) باعثاً للإلكترونات يسخن بشكل غير مباشر بواسطة فتيل ( ل ) موصل ببطارية ( ي ) . وفي طرفه الآخر مصعد ( A ) من فلز ثقيل صلب مثل ( عنصر التنجستن ) . يسلط بين طرفي الأنبوب فرق جهد ( ج ) عال تتراوح قيمته بين ( ١٠ - ١٠ ) فولت ، كما هو مبين في الشكل ( ١٢ ) .</p><img src="img-153.jpeg" alt="img-153.jpeg" /><p>شكل ( ١٢ )</p><p>١٥٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

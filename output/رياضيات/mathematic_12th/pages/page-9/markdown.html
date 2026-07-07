@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الوحدة الأولى</p><p>الأعداد المركبة</p><h1>العدد المركب</h1><p>١ - ١</p><p>عرفت فيما سبق أن هناك مجموعات عددية مختلفة، منها :
+مجموعة الأعداد الطبيعية (ط) ، ومجموعة الأعداد
+الصحيحة (ص) ، والنسبية (س) ، والحقيقية (ح) .
+ولاشك أنك تتذكر العلاقة بينها. تأمل الشكل (١ - ١) ؛
+تلاحظ أن : ط ⬜ ⬜ ⬜ ⬜ ⬜ .
+ح = س ⬜ (س) مجموعة الأعداد غير النسبية</p><img src="img-9.jpeg" alt="img-9.jpeg" /><p>شكل (١ - ١)</p><h1>تدريب (١ - ١)</h1><p>أوجد حلول المعادلات التالية ، وأذكر إلى أي مجموعة تنتمي هذه الحلول :</p><p>س + ٢ = ٨ ، س = ١ ، س = ٢ ، س = ١ + ٠ .</p><p>من حل التدريب تلاحظ : س + ٢ = ٨ ← س = ٦ ، س = ٦ - ٦ ،</p><p>لكن ٦ - ٦ = ٦ ؛ أي أن هذه المعادلة ليس لها حل في ط ، ولها حل في ص .</p><p>والمعادلة س = ١ ← س = ١/٢ ، ليس لها حل في ص ، ولكن لها حل في س .</p><p>أما المعادلة س = ٢ ← س = ٢/٢ ليس لها حل في س ؛ وإنما لها حل في ح .</p><p>وعند حل المعادلة : س = ١ + ٠ نجد أن :</p><p>س = ١ + ٠ ← س = ١ - ٢ ← س = ١ - ٢ . فما قيمة ١ - ٢ ؟</p><p>تعلم أنه لا يوجد عدد حقيقي مربعه = ١ - ١ .</p><p>إذن ليس للمعادلة الأخيرة حل في ح ؛ وللوصول إلى حل مثل هذه المعادلات جاءت الحاجة إلى توسيع
+مجموعة الأعداد الحقيقية ، بحيث تكون كل معادلة من الدرجة الثانية قابلة للحل في هذه المجموعة ؛ ونطلق على
+هذه المجموعة مجموعة الأعداد المركبة .</p><p>بما أن الجذور التربيعية للأعداد السالبة لا يمكن أن تكون أعداداً حقيقية ، لذا تسمى أعداداً تخيلية ، يرمز لها
+بالرمز ت (الحرف الأول من كلمة تخيلي) ليدل على الجذر التربيعية للعدد ١ - ١ ، أي :</p><p>ت = ١ - ٢</p><p>ت × ت = ١ - ٢ × ١ - ٢ = ١ - ٢ أي أن : ت = ١ - ٢</p><p>ت = ٢ × ت = ١ - ٢ × ت = ١ - ٢ .</p><p>٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الموضوع</p><p>الصفحة</p><h1>الوحدة الرابعة : الأجهزة الإلكترونية</h1><p>- ٨٥ التوصيل الكهربائي في الغازات
+- ٨٧ أنبوبة أشعة الكاثود
+- ٨٩ كاشف الذبذبات (الأسيلوسكوب)
+- ٩٠ الرادار
+- ٩٢ إرسال واستقبال الموجات اللاسلكية (الموجات الراديوية)
+- ٩٥ إرسال الموجات اللاسلكية (الإرسال الإذاعي)
+- ٩٥ استقبال الموجات اللاسلكية (الاستقبال الإذاعي)
+- ٩٦ التلفاز (التلفزيون)
+- ٩٩ عملية إرسال الصور تلفازياً
+- ١٠١ التلفاز الملون
+- ١٠٥ تقويم الوحدة</p><h1>الوحدة الخامسة : الفيزياء الذرية</h1><p>- ١١٤ نظرية دالتون الذرية
+- ١١٥ نموذج تومسون
+- ١١٦ إثارة العناصر الكيميائية
+- ١١٧ طيف المصادر الضوئية
+- ١١٩ طيف ذرة الهيدروجين
+- ١٢١ نموذج رذرفورد
+- ١٢٣ إشعاع الجسم الأسود
+- ١٢٤ مبدأ بلانك في تكميم الطاقة
+- ١٢٥ نظرية بوهر لذرة الهيدروجين
+- ١٣١ مخطط مستوى الطاقة
+- ١٤٢ تقويم الوحدة</p><h1>الوحدة السادسة : الإشعاع والمادة</h1><p>- ١٤٤ الظاهرة الكهروضوئية
+- ١٤٥ الخلية الكهروضوئية
+- ١٤٦ تجربة مليكان لدراسة الظاهرة الكهروضوئية
+- ١٤٧ تفسير إنشتاين (النظرية الكمية)
+- ١٥٢ استخدامات الخلية الكهروضوئية</p><p>٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الاحتمالات</p><h1>مثال (٣ - ٢٠)</h1><p>صندوق يحتوي على ٣ كرات بيضاوات وكرتين حمراوين ؛ سُحبت - عشوائياً - كرتان ، دون إعادة .</p><p>احسب احتمال أن تكون :</p><p>١) الأولى بيضاء والأخرى حمراء .
+٢) إحداهما بيضاء والأخرى حمراء .</p><h1>الحل :</h1><p>١) نفرض أن : أ هي حادثة سحب كرتين الأولى بيضاء والأخرى حمراء .</p><p>$‫\therefore \text{حا (أ)} = \frac{3}{5} \times \frac{2}{4} = \frac{3}{10}‬$‫</p><p>٢) نفرض أن : ب هي حادثة سحب كرتين أحدهما بيضاء والأخرى حمراء .</p><p>‬$‫\therefore \text{حا (ب)} = \frac{3}{5} \times \frac{2}{5} = \frac{6}{10}‬$</p><h1>تمارين ومسائل (٣ - ٥)</h1><p>[١] صندوق يحتوي على ١٠ كرات حمراوات ، ٥ كرات سوداوات ، سُحبت - عشوائياً - كرتان من الصندوق :</p><p>ولتكن الحادثة أ : هي الحصول على كرتين حمراوين ، الحادثة ب : هي الأولى حمراء والأخرى سوداء ، الحادثة ج : هي واحدة حمراء وأخرى سوداء .</p><p>احسب احتمال كل من الحوادث أ ، ب ، ج في كل من الحالتين التاليتين :</p><p>١) مع الإعادة .</p><p>٢) بدون إعادة .</p><p>[٢] صندوق يحتوي على ١٥ مصباحاً منها ٥ مصابيح غير سليمة ، سُحبت - عشوائياً - ٣ مصابيح ، والحادثتان أ ، ب معرفتان كالتالي :</p><p>أ : المصابيح الثلاثة سليمة ب : فقط مصباحاً واحداً غير سليم .</p><p>احسب احتمال كل من الحادثتين أ ، ب في الحالتين التاليتين :</p><p>١) السحب مع الإعادة .
+٢) السحب بدون إعادة .</p><p>[٣] صندوق يحتوي على ٩ كرات متجانسة ، منها ٥ كرات بيضاوات والباقي سوداوات سُحبت - عشوائياً -</p><p>٣ كرات من الصندوق . ما احتمال أن تكون كرة سوداء وكرتين بيضاوين ؟</p><p>١٠١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

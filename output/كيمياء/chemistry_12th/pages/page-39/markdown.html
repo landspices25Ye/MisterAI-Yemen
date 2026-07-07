@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>١ - وجود صعوبة لقياس حرارة التفاعل بطرق مباشرة عند الظروف القياسية (٢٥م، واحد ضغط جوي).</p><p>٢ - وجود بعض المواد المتفاعلة أو الناتجة مختلطة بمواد أخرى.</p><p>٣ - وجود مخاطر عند قياس حرارة التفاعل بطرق تجريبية.</p><p>ومن الطرق غير المباشرة والشائعة المستخدمة لحساب حرارة التفاعل ما يلي:</p><p>١) استخدام حرارة التكوين $‫\Delta H_f^\circ‬$:</p><p>عرفت سابقاً بأن حرارة التكوين القياسية لجميع العناصر تساوي صفراً عند درجة حرارة ٢٥م وضغط جوي ١.</p><p>∴ حرارة التفاعل ($‫\Delta H^\circ‬$) = مجموع المحتوى الحراري للناتج - مجموع المحتوى الحراري للمتفاعلات
+وباستبدال المحتوى الحراري للمركبات ($‫\Delta H^\circ‬$) بحرارة التكوين $‫\Delta H_f^\circ‬$، فإن المعادلة السابقة تصبح:</p><p>$‫\Delta H^\circ‬$ = مجموع حرارة التكوين للمواد الناتجة - مجموع حرارة التكوين للمواد المتفاعلة</p><p>ويمكن استخدام هذه المعادلة لحساب حرارة التفاعل، على النحو الآتي:</p><p>■ مثال (١): احسب حرارة التفاعل الآتي:</p><p>$‫2\text{Al}_{(s)} + \text{Fe}_2\text{O}_3 \longrightarrow \text{Al}_2\text{O}_3 + 2\text{Fe}_{(s)}‬$‫</p><p>إذا علمت أن حرارة تكوين أكسيد الحديد (III) القياسية = ٨٢٢,٢ كيلو جول / مول، وحرارة تكوين أكسيد الألومنيوم القياسية = ١٦٦٩,٨ كيلو جول / مول. فهل هذا التفاعل ماص أم طارد للحرارة.</p><p>■ الحل:</p><p>∴ حرارة تكوين عنصر الألومنيوم والحديد يساوي صفراً.</p><p>∴ حرارة التفاعل ‬$\Delta H^\circ$‫ = مجموع حرارة تكوين الناتج - مجموع حرارة تكوين المتفاعلات</p><p>‬$= [ (١ \times ٨ - ١٦٦٩,٨) + (٢ \times صفر) ] - [ (٢ \times صفر) + (١ \times ٨ - ١٦٦٩,٨) ]$‫</p><p>‬$= [ ٨٢٢,٢ + ١٦٦٩,٨ ] = ٨٤٧,٦ - \text{كيلو جول} .$‫</p><p>∴ إشارة ‬$\Delta H^\circ$‫ سالبة، فالتفاعل طارد للحرارة.</p><p>■ مثال (٢) باستعمال جدول (٢-٢):</p><p>احسب حرارة التفاعل (‬$\Delta H^\circ$‫) لتفاعل أول أكسيد الكربون (CO) في حالته الغازية مع الأكسجين (‬$\text{O}_2(g)$‫) في حالته الغازية لتكوين غاز ثاني أكسيد الكربون (‬$\text{CO}_2(g)$)،</p><p>٣٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

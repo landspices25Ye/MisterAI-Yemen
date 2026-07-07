@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-42.jpeg" alt="img-42.jpeg" /><p>الوحدة الثانية</p><p>عدد الطرق التي يمكن أن يجلس بها الطالب الثالث = ٣ طرق .</p><p>عدد الطرق التي يمكن أن يجلس بها الطالب الرابع = طريقتان .</p><p>عدد الطرق التي يمكن أن يجلس بها الطالب الخامس = طريقة واحدة .</p><p>إذن عدد الطرق ( التباديل ) = ١٢٠ = ١ × ٢ × ٣ × ٤ × ٥ = ٥ طريقة .</p><p>كل طريقة من هذه الطرق التي عددها ١٢٠ تسمى تبديل خمسة عناصر مأخوذة كلها ، ونرمز لذلك بالرمز ٥ .</p><h3>ثانياً : تباديل و من العناصر مأخوذة م في كل مرة :</h3><p>في كثير من الأحيان نحتاج إلى اختيار وترتيب عدد معين من عناصر مجموعة ما ، كان نختار مثلاً م عنصراً من و عنصراً ، ثم نرتب هذه العناصر المختارة ، ولكن سؤالنا هو : بكم طريقة يمكننا عمل ذلك . وللإجابة عن ذلك نورد التالي :</p><p>إذا أردنا عمل علم مكون من ثلاثة ألوان وكان لدينا خمسة ألوان هي : الأحمر ، الأخضر ، الأبيض ، الأزرق ، الأسود ، بكم طريقة يمكن تركيب ألوان العلم ؟</p><p>في هذه الحالة نبحث عن اختيار الألوان الثلاثة المكونة للعلم ، وفي الوقت نفسه يهمننا ترتيب هذه الألوان . ويكون لدينا خمسة ألوان يراد اختيار ثلاثة منها . يمكن وضع لون واحد من الألوان الخمسة في الموضع الأول ، وبذلك يكون لدينا ٥ خيارات ومجرد تحديد اللون الذي سيشغل الموضع الأول تبقى أربعة ألوان ، يمكن أن يشغل واحد منها الموضع الثاني ، أي يمكن اختيار اللون الثاني بأربع خيارات ، وبالتالي يبقى ثلاثة خيارات لشغل الموضع الثالث وحسب مبدأ العد يكون :</p><p>عدد الطرق التي يمكن بها عمل العلم = ٦٠ = ٣ × ٤ × ٥ = ٥ طريقة .</p><p>كل علم من الستين علماً يسمى تبديلاً خمسة عناصر مأخوذة ثلاثة في كل مرة ( أي أجرينا تبديلاً على خمسة عناصر مأخوذة ثلاثة ) .</p><p>ونرمز لذلك بالصورة ٥ ( وتقرأ ٥ تبديل ٣ )
+٥ = ٦٠ = ٣ × ٤ × ٥ = ٥ .</p><h3>تعريف ( ٢ - ٣ )</h3><p>٥ = ( و - ١ ) ( و - ٢ ) ... ( و - ١ + ) ، حيث م ≥ و ، م ≥ ص + .</p><p>فمثلاً : ٧ = حاصل ضرب ٦ أعداد متتالية تبدأ بالعدد ٧ ، وكل عدد ينقص واحداً عن سابقة .</p><p>أي أن : ٧ = ٢ × ٣ × ٤ × ٥ × ٦ × ٧ =</p><p>لاحظ أن العدد الأخير = ٢ = ( ١ + ٦ - ٧ )</p><p>ويمكن التعبير عن ٥ باستخدام المضروب وذلك بضرب البسط والمقام في ٥ - ٧ على النحو التالي :</p><p>٥٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

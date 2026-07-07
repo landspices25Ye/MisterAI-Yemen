@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-1.jpeg" alt="img-1.jpeg" /><img src="img-2.jpeg" alt="img-2.jpeg" /><p>الجمهورية اليمنية</p><p>وزارة التربية والتعليم
+قطاع المناهج والتوجيه
+الإدارة العامة للمناهج</p><h1>الأنشطة والتجارب العملية</h1>
+<h1>الفيزياء</h1><p>للصف الثالث الثانوي</p><h2>تأليف</h2><p>أ. د/ داؤود عبد الملك الحدابي / رئيساً
+أ / عمر فضل بافضل / منسقاً</p><p>|  أ. د. عمر صالح بابقي | أ. أم السعد محمد عبد الحي  |
+| --- | --- |
+|  د. هزاع عبده الحميدي | أ. محفوظ محمد سلام  |
+|  أ. جميل أسعد محمد | أ. رمضان سالم النجار  |</p><h2>فريق المراجعة:</h2><p>أ. عبد السلام محمد النقيب
+أ. سري مكرد ناشر
+أ. عبد القوي علي الشباطي
+أ. مصطفى أحمد الأسعد</p><p>تنسيق: أ. محمد علي ثابت
+تدقيق: د. عبد الله الشامي</p><h2>الإخراج الفني</h2><p>الرسم: محمد حسين الذماري
+التصميم: خالد أحمد العلفي
+التعديلات: عبد الرحمن حسين المهرس</p><p>التدقيق الفني: حامد عبد العالم الشيباني</p><p>١٤٣٨هـ - ٢٠١٧م</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

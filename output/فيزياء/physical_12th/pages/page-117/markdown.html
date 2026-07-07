@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>لقد نمت وتطورت العلوم الفيزيائية التقليدية (الكلاسيكية) كعلم الميكانيكا والديناميكا الحرارية والكهرومغناطيسية منذ زمن جاليلو ونيوتن حتى أواخر القرن التاسع عشر، واستطاعت بكفاءة عالية تفسير الظواهر الطبيعية للأنظمة العيانية (أي للأشياء التي في متناول حواسنا).</p><p>أما معظم مجالات الفيزياء التي تطورت خلال القرن العشرين فتدعى الفيزياء الحديثة، كمجالات الفيزياء الذرية والنووية والنسبية وميكانيك الكم التي تفسر سلوك الجسيمات (الأنظمة المجهرية) كالإلكترونات والبروتونات، وغيرها من جسيمات عالم الصغائر، وهو عالم لا يرى ولا يسمع وعند تطبيق قوانين الفيزياء التقليدية على هذه الظواهر لا تحصل على نتائج دقيقة. وتشكل هذه الوحدة مدخلاً لعلم الفيزياء الذرية.</p><h3>نظرية دالتون الذرية (Dalton's Atomic Theory)</h3><p>كانت الانطلاقة الأولى نحو فكرة الذرة من خلال الملاحظات والتجارب الكيميائية التي نتج عنها مبدأ حفظ المادة (الذي استبدله اينشتين فيما بعد بمبدأ حفظ الطاقة) وقانون النسب المتضاعفة، واتحاد الحجم، وعدد أفوجادرو، وغيرها من القوانين الكيميائية. هذه القوانين أدت بالكيميائي الإنجليزي جون دالتون عام (١٨٠٣م) إلى إعلان أول نظرية ذرية تنص على أن: المادة تتكون من ذرات غير قابلة للهدم أو الانقسام.</p><p>إلا أن التجارب العديدة التي أجراها العلماء فيما بعد، والاكتشافات الجديدة التي قادت إليها كاكتشاف الإلكترونات ذات الشحنة السالبة والأيونات ذات الشحنة الموجبة وخصائصهما أظهرت بأن الإلكترون هو جزء من الذرة، الأمر الذي أبطل الادعاء بأن الذرة لا يمكن تقسيمها، وبالتالي ألغي الشق الثاني من نظرية دالتون الذرية.</p><h3>أول نموذج للذرة (نموذج تومسون) : The Thomson Model of the Atom</h3><p>الحقائق العلمية التجريبية والمعلومات الجديدة في معرفة تركيب الذرة جعلت العالم الإنجليزي جوزيف تومسون يتوصل إلى النتائج التالية (في غاز الهيدروجين).</p><p>١١٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

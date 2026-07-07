@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التكامل</p><h1>تطبيقات التكامل غير المحدد:</h1><p>تعلم من التفاضل أن د (س) هو ميل المماس لمنحنى دالة عند النقطة (س ، ص) وباستخدام التكامل يمكن إيجاد معادلة منحنى دالة إذا علم ميل المماس (دالة ميل المماس) عند أي نقطة على المنحنى وكان المنحنى يمر بالنقطة (س ، ص) كما في الأمثلة:</p><h1>مثال (٧ - ٩)</h1><p>أوجد الدالة الأصلية للدالة د (س) = ٢ س² - ٢ س + ٣ س² + ٥ ، إذا كان المنحنى يمر بالنقطة (٣ ، ٧) .</p><h1>الحل :</h1><p>ل (س) = [ (٢ س² - ٢ س + ٣ س² + ٥) و س = ٣ س² - ٣ س² - ٣ س² + ٥ س + ث ]</p><p>المنحنى يمر بالنقطة (٣ ، ٧) إذن فهي تحقق معادلته أي أن :</p><p>ل (٣) = ٣ س² - ٣ س² - ٥ س² + ٥ س² + ث = ٧</p><p>$‫\Leftarrow \text{ث} = ٧ - ١٨ + ٩ - ١٤ = ١٦ -‬$‫</p><p>‬$‫\therefore \text{ل (س)} = ٣ س² - ٣ س² - ٣ س² + ٥ س - ١٦‬$‫</p><h1>مثال (٧ - ١٠)</h1><p>أوجد معادلة المنحنى الذي يمر بالنقطة (٢ ، ٣) ، وميل المماس له عند أي نقطة عليه معطى بالعلاقة :</p><p>‬$‫\frac{ص}{س} = \frac{ص^2 - ٣}{ص^2 - ١}‬$‫</p><p>الحل : (٢ ص - ١) و ص = (٢ س + ٣) و س</p><p>‬$‫\therefore [ (٢ ص - ١) و ص = ] (٢ س + ٣) و س \Leftarrow ص - ٢ ص = ٢ س + ٣ س + ث‬$‫</p><p>المنحنى يمر بالنقطة (٢ ، ٣) ‬$‫\therefore ٩ - ٣ = ٤ + ٦ + ث \Leftarrow ث = ٤ -‬$</p><p>إذن معادلة المنحنى هي : ص - ٢ ص = ٢ س + ٣ س - ٤</p><p>٢٢٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

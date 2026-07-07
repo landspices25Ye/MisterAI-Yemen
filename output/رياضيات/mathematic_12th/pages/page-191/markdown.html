@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التفاصيل</p><p>|  س | ∞ + | ٢ | ٠ | ∞ -  |
+| --- | --- | --- | --- | --- |
+|  دَ (س) | - | ٠ | + | ٠  |
+|  د (س) | ٤ | ٠ | ٠ | ٠  |</p><p>جدول (٦-٢)</p><h1>مثال (٦-٣٤)</h1><p>حدد فترات تزايد وتناقص الدالة د(س) = س³ + س² - س .</p><h1>الحل :</h1><p>د(س) = س³ + س² - س متصلة وقابلة للاشتقاق على ح لأنها كثيرة حدود .
+دَ (س) = س³ + س² + س - ١
+بوضع دَ (س) = ٠
+م = ٠ = ٣ س² + ٢ س - ١ = ٠
+م = (٣ س - ١) (س + ١) = ٠</p><p>إما س = ١ - ، أو س = ١/٣</p><p>لمعرفة فترات التزايد والتناقص نكون الجدول (٦-٣) التالي :</p><p>|  س | ∞ + | ١/٣ | ١- | ∞ -  |
+| --- | --- | --- | --- | --- |
+|  دَ (س) | + | ٠ | - | ٠  |
+|  د (س) | ٥/٢٧ | ١ | ١ | ١  |</p><p>جدول (٦-٣)</p><p>من الجدول (٦-٣) نلاحظ أن :</p><p>* الدالة تزايدية على الفترة [ ١- ، ∞ - ] [ ١/٣ ، ∞ ]</p><p>* الدالة تناقصية على الفترة [ ١- ، ١/٣ ]</p><h1>تدريب (٦-٣)</h1><p>بين أن الدالة د(س) = ١/س تناقصية على الفترة [ ٠ ، ٣ ]</p><p>١٨٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

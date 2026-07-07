@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>- اطلب منه كذلك أن يشرح لك - باختصار - عملية الاستقبال الإذاعي (أي استقبال الأصوات الصادرة من محطة الإذاعة) بواسطة جهاز الراديو، وكذلك المراحل التي تمر بها هذه العملية حتى تسمع تلك الأصوات.
+إن عملية الاستقبال الإذاعي: هي عملية استلام الموجات اللاسلكية (الراديوية) من قبل جهاز الاستقبال (جهاز الراديو) وتحويلها إلى تيارات كهربائية تأثيرية ومن ثم إلى موجات صوتية سمعية لها تردد وخصائص الصوت الموجه إلى الميكروفون.</p><h3>تركيب جهاز الاستقبال الإذاعي (جهاز الراديو): Radio Structure</h3><p>يتركب جهاز الراديو من الدوائر الرئيسية الآتية:</p><p>- دائرة الهوائي Antenna Circuit
+- دائرة الرنين (ضبط الموجه) Tunning Circuit
+- دائرة السماعة Audio Circuit</p><p>عملية استقبال الموجات اللاسلكية الراديوية (عملية الاستقبال الإذاعي):</p><p>إن عملية الاستقبال الإذاعي (أي عملية استقبال الأصوات من محطة الإذاعة بواسطة جهاز الاستقبال الراديو) تتلخص في النقاط الآتية:</p><p>- عندما تصل الموجات اللاسلكية (الكهرومغناطيسية) التي تبثها المحطة إلى هوائي جهاز الاستقبال (Antenna)، فإن الهوائي يقوم بتحويلها إلى تيارات كهربائية تأثيرية مختلفة التردد.</p><img src="img-97.jpeg" alt="img-97.jpeg" /><p>شكل (٩): عملية استقبال الموجات اللاسلكية الراديوية</p><p>٩٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

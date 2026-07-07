@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>[LOGO]</p><h1>لماذا أهوى القراءة *</h1><p>أعلم فيما أعهده من تجاربي أنني قد أقرأ كتباً كثيرة لا أقصد الكتابة في
+موضوعاتها على الإطلاق، وأذكر من ذلك أنَّ أديباً زارني، فوجد على مكتبي بعض
+المجلدات في غرائز الحشرات، فقال مستغرباً: مالك أنت والحشرات؟.. إنك تكتب في
+الأدب وما إليه، فأيَّة علاقة للحشرات بالشعر، والنقد، والاجتماع؟!</p><p>الحقيقة - كما قلت مراراً - أنَّ في الأحياء الدنيا من أسرار الخلق والتكوين التي
+تتراءى فيها وحدانية الخالق وبديع صنعه ما لا نجده في غيرها من الأحياء الأخرى. فإذا
+اطَّلع القارئ على كتاب في الحشرات، فليس من اللازم الأرب أن يطلع عليه ليكتب
+في موضوعه، ولكنه يطلع عليه لينفذ إلى بواطن الطبائع وأصولها الأولى، ويعرف من
+ثمَّ كيف نشأ هذا الإحساس، أو ذاك الإحساس، فيقترب بذلك من صدق الحس
+وصدق التعبير، ولو في غير هذا الموضوع.</p><p>كذلك لا أحب أن أجيب عن السؤال كما أجاب قارئ التاريخ في البيت
+المشهور:</p><p>وَمَنْ وَعَى التَّارِيخَ فِي صَدْرِهِ</p><p>أضاف أعماراً إلى عُمْرِهِ</p><p>فليست إضافة أعمار إلى العُمْر بالشيء المهمِّ إلاَّ على اعتبار واحد، وهو أن
+يكون العمر المضاف مقداراً من الحياة لا مقداراً من السنين، أو مقداراً من مادة الحس
+والفكر والخيال، لا مقداراً من أخبار الوقائع وعدد السنين التي وقعت فيها. فإنَّ ساعة
+من الحس والفكر والخيال تساوي مائة سنة، أو مئات من السنين، ليس فيها إلاَّ أنَّها</p><p>* مقالة من كتاب «أنا» للأديب عباس محمود العقاد، بتصرف.</p><p>٢٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

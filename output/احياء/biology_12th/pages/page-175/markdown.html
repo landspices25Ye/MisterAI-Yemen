@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>وأحياناً لفترات قصيرة.</p><p>وتظهر تأثيرات هذا الضجيج على الإنسان بعدة صور منها:</p><p>١- التأثيرات النفسية، وتظهر على شكل اكتئاب وقلق نفسيين يحدان من قدرة الإنسان على التركيز والإنتاج.</p><img src="img-128.jpeg" alt="img-128.jpeg" /><p>الشكل (٨) الضجيج يحيط بالإنسان</p><p>٢- التأثيرات العصبية، تظهر على شكل توتر عصبي، وقد يشكو البعض من آثار الضجيج الذي يعانون منه في مكان العمل والذي يستمر تأثيره من بعد مغادرتهم العمل لمنازلهم على شكل طنين مستمر.</p><p>٣- التأثيرات على السمع، إذ يؤدي الضجيج المستمر - في حالة عدم توفر الحماية</p><p>الكاملة للأذن - إلى تدهور تدريجي في حاسة السمع قد يصل إلى الصمم التام (فقدان السمع)، كما تؤدي الانفجارات إلى توليد أصوات شديدة تزيد شدتها عن (١١٥) ديسيبل تعمل على تمزيق غشاء الطبل، والإصابة بفقدان السمع.</p><h3>مكافحة الضجيج :</h3><p>تهدف مكافحة الضجيج إلى التوصل لأقل مستوى منه عبر اتباع أفضل الوسائل الممكنة، أو اتخاذ الإجراءات اللازمة للحد منه مثل الآتي:</p><p>١- تخطيط المدن الصناعية وبناء المدارس والمستشفيات في أماكن بعيدة عن الأسواق والأماكن العامة الأخرى لحمايتها من الضجيج، مع وضع الإرشادات المناسبة بجانبها، وخاصة التي تمنع استخدام المنبهات الخاصة بوسائل النقل والمحددة للسرعة وأماكن عبور المشاة.</p><p>٢- إبعاد المطارات عن المدن الرئيسية.</p><p>٣- إخراج المصانع والورش من الأحياء السكنية داخل المدن إلى مناطق صناعية منعزلة وبعيدة عن المساكن.</p><p>٤- نشر الوعي الثقافي عن الضجيج وتأثيراته بين المواطنين بطريقة تكفل منع خروج الضجيج الناتج عن الأجهزة الكهربائية من المنازل والحد من استخدام مكبرات الصوت والمسجلات بشكل مزعج في محلات بيع وشراء الأشرطة المسجلة وأثناء المناسبات والحفلات، وخاصة حفلات الزفاف.</p><p>الأحياء للصف الثالث الثانوي</p><p>١٧٥</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

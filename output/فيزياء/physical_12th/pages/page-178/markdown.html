@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><h2>جسيمات ألفا : Alpha Particles ($‫\alpha‬$)</h2><p>وهي جسيمات مشحونة تتكون من أنوية ذرات الهليوم $‫{}_{2}^{4}\text{He}‬$‫ وتحمل شحنة كهربية موجبة تساوي ضعف شحنة الإلكترون، وكل نواة من أنوية ذرات الهليوم تحتوي على عدد ٢ بروتون وعدد ٢ نيوترون. أي أن عددها الذري هو ٢ وعددها الكتلي هو ٤.</p><p>فماذا يحدث للأنوية المشعة عند انبعاث جسيمات ألفا (‬$$‫{}_{2}^{4}\text{He}‬$$‫) ؟</p><p>للإجابة عن هذا التساؤل سنأخذ مثلاً انبعاث جسيم ألفا من نواة عنصر يشع جسيمات ألفا وليكن عنصر الراديوم ‬$‫{}_{88}^{226}\text{Ra}‬$‫، ونلاحظ ماذا يحدث لها بعد إشعاعها لجسيم ألفا:</p><p>‬$‫{}_{88}^{226}\text{Ra} \longrightarrow {}_{86}^{222}\text{Rn} + {}_{2}^{4}\text{He}‬$‫</p><p>تلاحظ من المعادلة السابقة أن نواة عنصر الراديوم ‬$$‫{}_{88}^{226}\text{Ra}‬$$‫ تحولت إلى نواة غاز الرادون ‬$‫{}_{86}^{222}\text{Rn}‬$‫ الحامل. أي إن انبعاث جسيم ألفا (‬$‫\alpha‬$‫) من نواة عنصر مشع يؤدي إلى أن كتلة النواة (العدد الكتلي) تنقص بمقدار (٤) وشحنتها (عددها الذري) يقل بمقدار (٢). وتمتلك جسيمات ألفا خواصاً تميزها عن غيرها من مكونات النشاط الإشعاعي الأخرى في أنها ذات قدرة ضعيفة على اختراق الأجسام، حيث يمكن لورقة أن تحجزها وتنحرف عند مرورها في المجالين الكهربائي والمغناطيسي.</p><h2>جسيمات بيتا : Beta Particles (‬$\beta$‫)</h2><p>وهي دقائق صغيرة مشحونة بشحنة مساوية لشحنة الإلكترون، وقد تكون هذه الشحنة سالبة وتسمى في هذه الحالة دقائق بيتا السالبة (‬$‫\beta^{-}‬$‫ الإلكترون)، أو تكون الشحنة موجبة وتسمى في هذه الحالة دقائق بيتا الموجبة (‬$‫\beta^{+}‬$‫ بوزيترون).</p><p>ينتج جسيم بيتا السالب (‬$$‫\beta^{-}‬$$‫ من تحلل النيوترون إلى بروتون داخل النواة غير المستقرة كما يأتي : ‬$‫\text{الـ} + \text{e}^{-0} + \text{p}^{1} \longrightarrow \text{n}^{1} \text{سي}‬$‫ حيث: (‬$‫\text{الـ}‬$‫ يسمى النيوترينو يحمل زخماً وليس له كتلة، و ‬$‫{}_{-1}^{0}\text{e}‬$‫ الكترون سالب يمثل جسيم (‬$‫\beta^{-}‬$‫). ويلاحظ من المعادلة السابقة أن انبعاث (‬$$‫\beta^{-}‬$$ يؤدي إلى زيادة العدد الذري للنواة الوليدة مع بقاء عددها الكتلي مساوياً للعدد الكتلي للنواة الأم. لماذا ؟</p><p>١٧٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

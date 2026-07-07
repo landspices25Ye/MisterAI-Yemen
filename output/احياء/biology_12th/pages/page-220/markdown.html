@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>تقويم الوحدة</h1><p>أولاً: ضع دائرة حول رمز الإجابة الصحيحة لكل عبارة مما يأتي:</p><p>١- أي تعاقب رسوبي أفقي لم يتعرض لقوى تكتونية:</p><p>- أ - تكون كل طبقة أقدم من التي أسفلها وأحدث من التي تعلوها.
+- ب - تكون أعلى طبقة في التعاقب أقدمها عمراً.
+- ج - كل طبقة أحدث من التي أسفلها وأقدم من التي تعلوها.
+- د - كل الطبقات لها العمر نفسه.</p><p>٢- اعتمد العلماء مبادئ التاريخ النسبي كأساس لوضع التقويم الجيولوجي:</p><p>- أ - قبل اكتشاف ظاهرة النشاط الإشعاعي.
+- ب - بعد اكتشاف ظاهرة النشاط الإشعاعي.
+- ج - في القرن السابع عشر.
+- د - (ب، ج) معاً.</p><p>٣- كان أول ظهور واسع للأحافير:</p><p>- أ - قبل حوالي (٣٠٠٠) مليون سنة.
+- ب - قبل حوالي (٢٥٠٠) مليون سنة.
+- ج - منذ حوالي (٥٧٠) مليون نسمة.
+- د - منذ حوالي (١٥٠٠) مليون سنة.</p><p>٤- يتم تحفيز الخشب بطريقة:</p><p>- أ - الإحلال.
+- ب - التمعدن.
+- ج - التفحم.
+- د - (أ، ب) معاً.</p><p>٥- يقدر العلماء عمر الأرض منذ نشأتها إلى عصرنا الحاضر بنحو:</p><p>- أ - (٦٤٠٠٠) مليون سنة.
+- ب - (٤٦٠٠) مليون سنة.
+- ج - (٦٤٠٠) مليون سنة.
+- د - (٤٦٠٠٠) مليون سنة.</p><p>٦- أحفورة الترابلوبيت من الأحافير المرشدة إلى العصر:</p><p>- أ - الترياسي.
+- ب - السيلوري.
+- ج - الكمبري.
+- د - الجوراسي.</p><p>٧- ساد المرجان السداسي في العصر:</p><p>- أ - الترياسي.
+- ب - الكمبري.
+- ج - البرمي.
+- د - السيلوري.</p><p>٢٢</p><p>الأحياء: النصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

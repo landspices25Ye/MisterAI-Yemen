@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-8.jpeg" alt="img-8.jpeg" /><h1>معاني المفردات والتراكيب اللغوية</h1><p>|  الكلمة | معناها  |
+| --- | --- |
+|  الآكام | جمع أكمة ، وهي التل .  |
+|  تترهل | تتورم، وتفقد جمالها .  |
+|  العتيق | القديم .  |
+|  غائلة الغزاة | هلاكهم وتدميرهم .  |
+|  شغف غامض | حب وتعلق شديد .  |
+|  بهاء العمارة | حسنها وجمالها .  |
+|  شواخص | جمع شاخصة، والمقصود به الشيء المائل، والعلامة البارزة .  |
+|  تنشه | تفشيه وتنشره .  |
+|  الهجين | الخليط ، المشوه .  |
+|  السماسر | جمع سمسرة، وهي مبانٍ ضخمة تستخدم ساحاتها وكالات ومحالٍّ لبيع السلع وخزنها، وتستخدم طوابقها العليا فنادق واستراحات للغرباء .  |
+|  تُوارِب النوافذ | تفتحها قليلاً .  |</p><h1>المناقشة</h1><p>١ - ما الفكرة التي يتحدث عنها الكاتب في الفقرة الأولى من هذا المقال ؟
+٢ - بمَ تتميز مدينة صنعاء في موقعها الجغرافي ؟ وبمَ يشعر الزائر عند دخوله إلى هذه المدينة ؟
+٣ - جبل «نقم» من أبرز المعالم المحيطة بصنعاء القديمة من جهة الشرق . فما اسمه القديم ؟ وما سبب تسميته بنقم ؟</p><p>٢٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

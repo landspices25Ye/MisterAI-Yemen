@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التفاصيل</p><h2>ثانياً : اتصال الدوال المثلثية :</h2>
+تذكر أن :</p><p>١) الدالة د تكون متصلة عند س = ١ ⇔ نُهْجَا د (س) = د (١) .</p><p>٢) إذا كانت الدالة د معرّفة على فترة أو أكثر فالدالة د تكون متصلة إذا وفقط إذا كانت متصلة عند كل نقطة من نقاط مجموعة تعريفها .</p><p>فمثلاً : نُهْجَا = جتا س = جتا ١ ، نُهْجَا = جتا س = جتا ١ ، والتساؤل هنا : هل نهاية كل من الدالتين جتا س ، جتا س تساوي قيمتها لتكون متصلة عند النقطة ١ ، وجميع النقاط لمجموعة تعريفها ؟
+وللإجابة عن هذا التساؤل نستخدم علاقة الفرق بين دالتي جيب التمام بالصورة :</p><p>جتا س - جتا ١ = ٢ - جتا ١ + س/٢ = جتا ١ - س/٢
+وبأخذ النهاية للطرفين نجد أن :</p><p>نُهْجَا (جتا س - جتا ١) = ٢ - نُهْجَا = جتا س + ١ + س/٢ × نُهْجَا = جتا س - ١ + س/٢
+عندئذٍ نلاحظ أن الطرف الأيسر يمثل جداء دالتين هما :</p><p>الأولى : محدودة بالصورة | ٢ جتا ١ + س/٢ | ≥ ٢ عندما س ← ١ .</p><p>الثانية : | جتا س - ١ + س/٢ | < ٠ عندما س ← ١ ، [ واستناداً إلى المبرهنة (٦ - ٢) ]
+فإن الطرف الأيسر ← ٠ .</p><p>∴ نُهْجَا (جتا س - جتا ١) = ٠ ⇔ نُهْجَا = جتا س = جتا ١ ... (١) ...
+س ← ١</p><p>وبالمثل يمكن إثبات أن : نُهْجَا = جتا س = جتا ١ ... (٢) ...</p><p>ومن (١) ، (٢) نستنتج أن نهاية كل من الدالتين جتا س ، جتا س تساوي قيمتها ، وهذا ما يوضح أن كلًا منهما دالة متصلة على مجموعة تعريفها .</p><img src="img-142.jpeg" alt="img-142.jpeg" /><p>شكل (٦ - ١)</p><p>١٥٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

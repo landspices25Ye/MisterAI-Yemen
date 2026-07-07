@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>هذه المجرة حول محور يمر بمركزها، وتقع المجموعة الشمسية عند ثلثي المسافة تقريباً من مركز المجرة. وتتكون هذه المجرة من ملايين من النجوم، والشمس تعتبر واحدة من نجوم هذه المجرة، ويلزم شمسنا ٢٠٠ مليون سنة لكي تكمل دورة واحدة حول مركز المجرة علماً أن سرعة الشمس المدارية ٢٥٠ كم/ث. وتظهر هذه المجرة كشريط من النجوم يعرف بدرب التبانة، أو الطريق اللبني، أي أنه شريط متلألئ وتظهر النجوم على شكل مجموعات متقاربة من الصور تعرف بالكوكبات، وتعرف هذه الكوكبات (مجموعة من النجوم) وهي ليست في الحقيقة متقاربة بل إنها تبعد عن بعضها بمئات السنين الضوئية، وأقرب مجرة لمجرتنا هي مجرة المرأة المقيدة بالسلاسل التي تبعد عن مجرتنا بحوالي ٦٥٠ سنة ضوئية. ولزيد من التعرف على الكوكبات، والتي تسمى بالإبراج أيضاً، دعنا نسأل الأسئلة الآتية:</p><p>- لماذا أشكال النجوم التي تظهر في السماء تختلف من فصل إلى آخر؟
+للإجابة على هذا السؤال انظر إلى الشكل (٤):</p><p>كما تعلم أن الأرض تدور حول الشمس دورة واحدة في السنة، ونتيجة لهذا الدوران تكون الأرض مرت بأربعة فصول مختلفة، ويكون موقعها حول الشمس في كل مرة مختلفاً، وأن الجزء المظلم من الأرض يواجه اتجاهات مختلفة،</p><img src="img-206.jpeg" alt="img-206.jpeg" /><p>شكل (٤)</p><p>ونتيجة لذلك تظهر لنا كوكبات مختلفة، ففي الشتاء يمكن مشاهدة مجموعة من النجوم الساطعة المعروفة بالجبار أو الصياد الجبار وهذه المجموعة من النجوم تظهر وكأنها صياد عملاق في الأفق.</p><p>- سم مجموعة الكوكبات الأخرى التي تظهر في الشكل.</p><h2>النجوم : Stars</h2><p>النجوم عبارة عن أجسام سماوية مضيئة تنتج طاقتها من داخلها وتبعث إشعاعات مختلفة الأطوال الموجية، وهذا يفسر سبب ظهور النجوم بألوان مختلفة، ولأن النجوم تبعث طاقة فإن كتلتها لا بد وأن تكون في تغير مستمر.</p><p>٢٠٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

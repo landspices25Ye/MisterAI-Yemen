@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-159.jpeg" alt="img-159.jpeg" /><h1>ملوثات المياه:</h1><p>١ - الملوثات التي تؤثر على كمية الأكسجين في الماء:</p><p>وتشمل المركبات العضوية التي يتطلب تحللها البيولوجي بعض الأكسجين، ومن أمثلتها المركبات الموجودة في مخلفات الصرف الصحي المنزلي، ويزداد ضررها بزيادة عدد السكان، حيث إن زيادتها تتطلب زيادة في كمية الأكسجين اللازم لتكسيرها وتحللها بواسطة الجراثيم وبالتالي تؤدي إلى هبوط نسبة الأكسجين في الماء.</p><p>٢ - الملوثات الحرارية:</p><p>التدفقات الحرارية: وذلك بواسطة شبكات التبريد المستخدمة في المصانع ومولدات الطاقة، فالمياه المستخدمة للتبريد ترجع إلى مصادرها ولكن مع ارتفاع درجة الحرارة بحوالي ٥ أم فإن هذه الزيادة تسبب انخفاض نسبة الأكسجين في الماء كما أنها تتسبب في القضاء على الكائنات الحية، ونمو الطحالب الملوثة.</p><p>٣ - الملوثات الكيميائية:</p><p>- مثل تسرب البترول والزيوت من الناقلات إلى مياه البحار والمحيطات مما يؤدي إلى قتل الأحياء المائية.
+- المنظفات المنزلية: والتي تنتقل مع مياه الصرف الصحي المنزلي إلى أماكن تصريف هذه المياه في البحار أو المحيطات.
+- المبيدات الحشرية: والتي تنجرف مع مياه الأمطار والسيول إلى مصادر المياه السطحية.
+- الأسمدة النباتية: والتي تحتوي على مواد نيتروجينية وفوسفاتية والتي تنجرف مع المياه وتؤدي إلى نمو الأعشاب والطحالب بصورة وبائية.
+- المخلفات الصناعية: وتشمل القواعد والحموض مثل: حمض الكبريتيك وحمض النيتريك، وتأتي هذه الملوثات بطريقة مباشرة أو عن طريق الأمطار الحمضية وتؤدي إلى تغير قيمة pH للماء وبالتالي موت الأسماك. وهناك ملوثات أخرى من المعادن الثقيلة مثل: الزئبق والكادميوم والرصاص، وغالباً ما تأتي من مخلفات المناجم والمصانع، وهي مواد شديدة السمية، فالزئبق يؤدي إلى إتلاف خلايا الدماغ مسبباً بله عقلي. والزئبق سام في حالته العنصرية الغازية وسام جداً في مركباته العضوية مثل ميثيل الزئبق، ولكنه أقل سمية في حالته السائلة. والزئبق لا يميل للتحول إلى الأيون $‫\text{Hg}_2^{2+}‬$ أو $‫\text{Hg}^+‬$ ولكن الأحياء الدقيقة تحول هذه الأيونات إلى أيون ميثيل الزئبق السام $‫\text{CH}_3\text{Hg}^+‬$.</p><p>١٧٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

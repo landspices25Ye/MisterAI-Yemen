@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-205.jpeg" alt="img-205.jpeg" /><p>الوحدة السابعة</p><h2>تطبيقات التكامل</h2><p>٦ - ٧</p><p>تأتي أهمية استخدام التكامل في تطبيقات كثيرة ، وفي هذا البند نتناول تطبيقين هندسيين للتكامل الأول يتعلق بحساب مساحة المناطق المستوية والآخر بحساب الحجم الدورانية .</p><h2>حساب مساحات المناطق المستوية</h2><p>١ - ٦ - ٧</p><img src="img-206.jpeg" alt="img-206.jpeg" /><p>تعرفت فيما سبق أن مساحة المنطقة التي تقع تحت بيان دالة متصلة $‫x \in [1, 2, 3]‬$ ، وفوق محور السينات كما في الشكل (٧ - ٣) هي :</p><p>$‫\text{سط } x = \frac{1}{2} \cdot x \text{ (س) و س} .‬$‫</p><p>مثال (٧ - ٢٨)</p><p>احسب مساحة المنطقة المحصورة بين منحنى الدالة :  
+ص = ٤ س - س² والمستقيمات س = ١ ،  
+س = ٣ ، ص = ٠ .</p><h3>الحل :</h3><p>لإيجاد نقاط تقاطع المنحنى مع محور السينات نضع ص = ٠  
+‬$\leftarrow 4 \text{ س} - \text{س}^2 = 0 \leftarrow \text{س} (4 - \text{س}) = 0$‫   
+‬$\leftarrow \text{س} = 0$‫ ، س = ٤ ، [٣، ١] [٤، ٠] .  
+∴ فترة التكامل هي [٣، ١] ، ومن الشكل (٧ - ٤)</p><p>نجد أن : ‬$\text{سط } \frac{3}{2} = \frac{1}{2} (4 \text{ س} - \text{س}^2) \text{ و س} = (2 \text{ س}^2 - \frac{3}{2}) \frac{3}{2} = \frac{22}{3}$‫ وحدة مربعة .</p><p>مثال (٧ - ٢٩)</p><p>احسب مساحة المنطقة المحددة بالقطع المكافئ :  
+س = ٤ - ص² والمستقيم س = ٠ .</p><h3>الحل :</h3><p>بوضع س = ٠ ‬$\leftarrow$‫ ص = ٢ ‬$\pm$</p><p>لاحظ المتغير ص من الدرجة الثانية وفترات التكامل على محور الصادات هي : [٢، ٠] ، [٠، ٢] .</p><img src="img-207.jpeg" alt="img-207.jpeg" /><p>٢٤٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-157.jpeg" alt="img-157.jpeg" /><p>الوحدة السادسة</p><p>أي أن :</p><p>$‫\begin{aligned} \text{دُ (س)} &= \text{ميل م} \quad \text{م} \quad \text{م} \quad \text{م} \quad \text{م} \quad \text{م} \quad \text{م} \quad \text{م} \quad \text{م} \quad \text{م} \quad \text{م} \quad \text{م} \quad \text{م} \quad \text{م} \quad \text{م} \quad \text{م} \quad \text{م} \\ [ (\text{د (ب)}) = \text{د (ب) } ] \\ \text{وبالمثل دُ (س) = دُ (س) = .} \end{aligned}‬$‫</p><h1><strong>مثال (٦ - ٣٠)</strong></h1><p>بيّن فيما إذا كانت الدالة د (س) = ٣ س - س‬$^{٣}$‫ تحقق شروط مبرهنة رول على الفترة [١ - ٢] وفي حالة استيفاء الدالة الشروط أوجد قيم ج التي تعينها المبرهنة .</p><h1><strong>الحل :</strong></h1><p>نتأكد من تحقق الشروط الثلاثة لمبرهنة رول وذلك على النحو التالي :</p><p>(١) الدالة د متصلة ‬$\forall$‫ س ‬$‫\supseteq‬$‫ ح . أي أنها متصلة على الفترة [١ - ٢] لأنها كثيرة حدود .</p><p>(٢) ‬$‫\therefore‬$‫ دُ (س) = ٣ - ٣ س‬$‫^{٢}‬$‫ $\forall‬$ س $‫\supseteq‬$ ح</p><p>∴ الدالة د قابلة للاشتقاق على الفترة [١ - ٢] لأنها كثيرة حدود .</p><p>(٣) $‫\therefore‬$ د (١ - ١) = ٣ × (١ - ١) - (١ - ٣) = ٢ ، $‫\therefore‬$ د (٢) = ٣ × ٢ - (٢) = ٢ - ٢</p><p>∴ د (١ - ١) = د (٢) .</p><p>إذن الدالة د تحقق شروط مبرهنة رول على الفترة [١ - ٢] .</p><p>وبالتالي فإنه يوجد عدد واحد على الأقل ج $\supseteq$ [١ - ٢] ، بحيث أن : دُ (ج) = .</p><p>$‫\therefore‬$ دُ (ج) = ٣ - ٣ ج$‫^{٢}‬$ ، $\therefore$ ٣ - ٣ ج$‫^{٢}‬$ = .</p><p>$‫\Leftarrow‬$ ج$^{٢}$ = ١ $‫\Leftarrow‬$ ج = ١ $‫\Leftarrow‬$</p><p>∴ ج = ١ تحقق المبرهنة لأن [١ - ٢] ،</p><p>أما ج = ١ (مرفوضة لأن [١ - ٢] ، [١ - ٢] ) .</p><h1><strong>مثال (٦ - ٣١)</strong></h1><p>بيّن أن منحنى الدالة د (س) = ٤ ج ٢ س مماساً أفقياً واحداً على الأقل على الفترة [١ - ٢] ، ثم أوجد قيم س التي ينشأ عندها مثل هذا المماس .</p><p>١٨٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

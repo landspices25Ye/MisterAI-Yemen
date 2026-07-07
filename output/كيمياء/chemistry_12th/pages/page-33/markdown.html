@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>أنواع التغيرات الحرارية</h2><p>عرفت سابقاً أن التغيرات التي تحدث للمادة قد تكون فيزيائية وقد تكون كيميائية.
+- ما الفرق بين التغيرات الكيميائية والفيزيائية؟</p><p>وعرفت أيضاً أن التغيرات الكيميائية والفيزيائية تكون مصحوبة أيضاً بتغيرات حرارية، ولذلك يمكن أن نقسم التغيرات الحرارية إلى قسمين وفقاً لنوع التغير الذي يحدث للمادة، وذلك على النحو الآتي:</p><h3>١) تغيرات حرارية فيزيائية :</h3><p>وتشمل: حرارة الذوبان وحرارة التبخير، والتكثيف، والتي سيتم مناقشتها باختصار على النحو الآتي:</p><p>أ) حرارة الذوبان Heat of Solution: وهي عبارة عن كمية الحرارة المطلقة أو الممتصة عند إذابة مول واحد من المادة في كمية من المذيب تكفي للحصول على محلول مشبع.</p><h1>■ مثال:</h1><p>تذوب نيترات الأمونيوم ($‫\text{NH}_4\text{NO}_3‬$) في الماء وتكون هذه العملية مصحوبة بامتصاص كمية من الحرارة من الوسط، مما يؤدي إلى انخفاض حرارة المحلول، ولذلك فإن إتمام عملية الذوبان للوصول بالمحلول إلى درجة التشبع فلا بد من تسخين المحلول، ويوصف هذا التغير بأنه ماص للحرارة.</p><p>$‫\text{NH}_4\text{NO}_{3(s)} \xrightarrow{\text{H}_2\text{O}_{(l)}} \text{NH}_{4(aq)}^+ + \text{NO}_{3(aq)}^- \quad \Delta H = + 25.7 \text{ KJ / mole}‬$‫</p><p>وهناك مواد أخرى مثل هيدروكسيد الصوديوم يكون ذوبانها مصحوباً بانطلاق حرارة، مما يؤدي إلى ارتفاع درجة حرارة المحلول، ولذلك نقوم بتبريد المحلول للوصول إلى المحلول المشبع.</p><p>‬$‫\text{NaOH}_{(s)} \xrightarrow{\text{H}_2\text{O}_{(l)}} \text{Na}^+ + \text{OH}^-_{(aq)} \quad \Delta H = - 445.1 \text{ KJ / mole}‬$</p><h3>نشاط (٢-١)</h3><p>نفذ النشاط الخاص بحرارة الذوبان.</p><p>٣١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

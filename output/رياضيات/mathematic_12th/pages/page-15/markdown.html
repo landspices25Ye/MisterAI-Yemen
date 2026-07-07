@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الأعداد المركبة</p><h1>مثال (١ - ٦)</h1><p>أوجد ناتج ما يلي :</p><p>أ) (٢ + ٦ ت) + (٦ - ٨ ت) .
+ب) (١/٢ - ٣/٤ ت) + (٢/٥ - ١/٥ ت) .
+ج) (٨/١ + ١٢/٢ ت) - (٣٢/١ + ٢٧/٢ ت) .</p><p>الحل :</p><p>أ) (٢ + ٦ ت) + (٦ - ٨ ت)</p><p>= (٢ + ٦) + (٦ - ٨) ت</p><p>= ٨ + (٢ - ٢) ت = ٨ - ٢ ت</p><p>[ تعريف (١ - ٣) ]</p><p>ب) (١/٢ - ٣/٤ ت) + (٢/٥ - ١/٥ ت) = (٢/٥ - ١/٢) + (٣/٤ - ١/٥ ت) [ تعريف (١ - ٣) ]</p><p>= (٤ - ٥/١٠) + (٤ + ١٥/٢٠) ت = ١/١٠ + (١١/٢٠) ت = ١/١٠ - ١١/٢٠ ت .</p><p>ج) (٨/١ + ١٢/٢ ت) - (٣٢/١ + ٢٧/٢ ت) = (٨/١ - ٣٢/٢) + (١٢/٢ - ٢٧/٢) ت</p><p>[ تعريف (١ - ٣) ]</p><p>= (٢/٢ - ٢/٤) + (٢/٢ - ٣/٢) ت = (٢/٢ - ٢/٤) + (٣/٢ - ٣/٢) ت = ٢/٢ - ٣/٢ .</p><h1>مثال (١ - ٧)</h1><p>لتكن ع₁ = ٣ + ت ، ع₂ = ٢ + ٣ ت ؛ أوجد ناتج ما يلي ومثله هندسياً :</p><p>أ) ع₁ + ع₂ . ب) ع₁ - ع₂ .</p><p>الحل :</p><p>أ) ع₁ + ع₂ = (س₁ + س₂) + ت (ص₁ + ص₂)</p><p>= (٣ + ٢) + (١ + ٣) ت</p><p>= ٥ + ٤ ت .</p><img src="img-14.jpeg" alt="img-14.jpeg" /><p>١٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

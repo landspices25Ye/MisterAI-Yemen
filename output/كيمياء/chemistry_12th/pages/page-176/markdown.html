@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><p>الأكسجين أيضاً مع جزئيات الأكسجين لتكوين الأوزون.</p><p>$‫\text{NO}_2 + \text{Energy} \longrightarrow \text{NO}_2 + \text{O}‬$‫</p><p>‬$‫\text{O}_2 + \text{O}_2 \longrightarrow \text{O}_3‬$‫</p><p>ومركب الأوزون عامل مؤكسد قوي وله رائحة مهيجة وكريهة وله تأثيرات مدمرة على النباتات والخلايا الحيوانية. ويتفكك الأوزون في وجود الطاقة الناتجة من الشمس إلى غاز الأكسجين والأكسجين الذري.</p><p>‬$‫\text{O}_3 + \text{Energy} \longrightarrow \text{O}_2 + \text{O}‬$</p><h4>٤ - المركبات الهيدروكربونية:</h4><p>يُعد البترول ومشتقاته مثل السولار والجازولين المصدر الرئيس للهيدروكربونات الملوثة للهواء الجوي، وذلك كناتج لعمليات التبخير والاحتراق الداخلي، والتي تتكون عوادمها من الهيدروكربونات المؤكسدة وغير كاملة الاحتراق، ويوضح الشكل (٩-٣) مصادر انبعاث الهيدروكربونات بسبب النشاطات البشرية والتي تؤدي إلى التلوث البيئي.</p><img src="img-156.jpeg" alt="img-156.jpeg" /><p>شكل (٩-٣) التلوث البيئي</p><p>١٧٤</p><p><http://www.e-learning-moe.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

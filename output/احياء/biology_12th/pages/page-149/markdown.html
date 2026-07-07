@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-111.jpeg" alt="img-111.jpeg" /><p>شكل (٤) أوعية إنتاج اللبن الرائب في الريف اليمني</p><p>٥- بعد التأكد من تعقيم الحليب وخلوه من الكائنات الحية الدقيقة، وخاصة البكتيريا الضارة، يتم إضافة مخلوط يحتوي على بكتيريا التخمر إلى الحليب. ويحتوي المخلوط عادة على بكتيريا الاستريتوكوكاس ثيرمونيولومس وبكتيريا الاكتوباسيلوس بولي بكوس.</p><p>- ما الدور الذي تقوم به هذه البكتيريا في عملية التخمير؟</p><p>٦- تثبيت درجة حرارة الحليب، حيث تتم عملية التخمير في أفضل حالاتها عند درجة حرارة ٤٦ درجة مئوية.</p><p>٧- تبدأ بكتيريا التخمر بتكسير سكر اللاكتوز في الحليب وتحويله إلى حمض اللاكتيك. كما في المعادلة الآتية:</p><p>$‫C_{12}H_{22}O_{11} + H_2O \longrightarrow 4CH_3CHOHCOOH‬$
+لاكتوز ماء حمض اللاكتيك</p><p>- لماذا يكون مذاق الزبادي لاذعاً؟</p><p>٨- يعمل حمض اللاكتيك على تجميع بروتين الكازائين في الحليب وتحويل شكل الحليب إلى الشكل المكثف، حيث يتجمع بروتين الكازائين في كتلة واحدة، بينما يتجمع الماء بشكل منفصل في الإناء ليتم التخلص منه ويبقى الشكل المكثف الذي يعرف بالزبادي.</p><p>٩- بعد التأكد من إنتاج الزبادي يتم تخفيض درجة الحرارة في المنتج إلى ٥ درجات مئوية، لإيقاف نشاط بكتيريا التخمر عن العمل.</p><p>- ما الذي يحدث إذا استمرت البكتيريا في عملية التخمير؟</p><h2>النشاط (٢)</h2><p>- قم بزيارة مصنع لإنتاج الزبادي في منطقتك أو متى أتيحت لك فرصة لذلك.</p><p>الأحياء للصف الثالث الثانوي</p><p>١٤٩</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

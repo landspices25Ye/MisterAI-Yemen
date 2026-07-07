@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>– ما مراحل تكوين الحيوانات المنوية؟
+– صف أحداث كل مرحلة.
+تركيب الحيوانات المنوية:</p><p>الحيوان المنوي خلية يبلغ طولها نحو (60) ميكرون (0.06) ملم، ولتتعرف على تركيبه ادرس الجدول (٥):</p><p>جدول (٥) أجزاء الحيوان المنوي ووصفها</p><p>|  أجزاء الحيوان المنوي | وصف الأجزاء  |
+| --- | --- |
+|  غشاء خلوي نواة التراث | تتضمن نواة أحادية المجموعة الكروموسومية (n) ويوجد في مقدمته الجسم القمي يحتوي على إنزيمات هاضمة.  |
+|  ميتوكوندريا المقدمة الوسطى | تحتوي على عدد من الميتوكوندريا لإنتاج الطاقة على شكل ATP واللازمة لحركة الحيوان المنوي.  |
+|  الذيل | زائدة تمثل امتداداً للغشاء الخلوي وله النمط التركيبى للأهداب والزوائد (2+9) وهو المحرك الذي يدفع الحيوان المنوي دفعاً نشيطاً إلى الأمام.  |</p><p>– ما الأجزاء الرئيسية للحيوان المنوي؟</p><p>– ما أهمية الآتي: الجسم القمي، الميتوكوندريا، الذيل.</p><h2>الجهاز التناسلي الأنثوي Female Reproductive System</h2><p>ما دور الجهاز التناسلي الأنثوي في الإنسان؟</p><p>يقوم الجهاز التناسلي في أنثى الإنسان بإنتاج البويضات، وفي حالة إخصاب البويضة يتطور فيه الجنين وينمو حتى الميلاد.</p><p>– متى يكون هذا الجهاز؟</p><p>تعرف على أجزاء الجهاز التناسلي الأنثوي في الشكل (١٩) وكيف يتكون من أعضاء تناسلية أساسية وأعضاء تناسلية ثانوية (مساعدة) وذلك كما يأتي:</p><p>١- الأعضاء التناسلية الأساسية وهي: المبيضان، لاحظ موقعهما على جانبي الرحم. ويرتبط المبيض بكل من الرحم وقناة قالوب بواسطة نسيج ضام، ويوجد في المنطقة الخارجية من المبيض حويصلات مختلفة</p><p>٨٤</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

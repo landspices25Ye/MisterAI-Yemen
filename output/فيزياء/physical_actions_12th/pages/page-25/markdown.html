@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>جمع واستغلال الطاقة الشمسية</h1><h1>التجربة الثامنة</h1><h1>الأهداف</h1><p>١- توضِّح كيف تجمع الطاقة الشمسية، وكيف يتمُّ خزنها.
+٢- تتعرَّف على بعض طرق استغلال الطاقة الشمسية مثل التدفئة.</p><h1>الأدوات والمواد المطلوبة</h1><p>تحتاج لتنفيذ هذه التجربة الأدوات والمواد الآتية :
+- صندوق صغير من الخشب ، بحيث يكون له غطاءان أحدهما من الزجاج الشفاف، والآخر به مرآة مستوية، كما في الشكل .</p><h1>خطوات تنفيذ التجربة</h1><p>١- ضع في الصندوق كمية من الماء .
+٢- اغمس في الصندوق مقياس حرارة ( ثرمومتر ) .
+٣- اجعل الصندوق مفتوحاً طول النهار</p><p>ومعرضاً لأشعة الشمس المباشرة .</p><p>- لاحظ قراءة الثرمومتر ، من وقت لآخر ، موضِّحاً سبب اختلاف القراءات .
+- ماذا تلاحظ ؟
+- ماذا تستنتج ؟</p><img src="img-22.jpeg" alt="img-22.jpeg" /><p>خرن الطاقة الشمسية</p><h1>الاستنتاج</h1><p>٢٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

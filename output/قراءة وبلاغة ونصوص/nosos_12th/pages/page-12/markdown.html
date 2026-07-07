@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-8.jpeg" alt="img-8.jpeg" /><h2>الحياة الاجتماعية والفكرية:</h2><p>اعتزل العرب السياسة في هذا العصر، وانصرفوا إلى الزراعة والصناعة وكسب العيش، وتركوا أمور السياسة للأجانب، وفي مقدمتهم المماليك. وكان في جملة ما انصرفوا إليه العلم والأدب.</p><p>وقد تضافرت جملة من الأسباب لكي يشهد هذا العصر نشاطاً في التأليف وإظهاراً لكتب جامعة في كل علم، من ذلك غيرة العلماء على العلم والدين واللغة، ورغبتهم في إعادة مجد الإسلام، وحاجة ملوك هذا العصر إلى مآثر يذكرون بها، فقد اهتم المماليك باللغة والأدب، لأنهم لم يكونوا يعرفون تاريخاً يتعصبون له، ولا أدباً يسعون لنشره، ولأنهم يحكمون شعباً عربياً يعتز بإسلامه ولغته.</p><p>ولن ينسى لهم التاريخ أن القاهرة في عهدهم أصبحت موئل العلماء والأدباء الذين هاجروا إليها من الشرق فراراً من عسف التتار، أو من الغرب بعد أن دب الضعف في جسم الخلافة الإسلامية في الأندلس، وأدى إلى سقوط غرناطة سنة (٨٩٧هـ/١٤٩٢م).</p><p>ولعل المماليك شعروا بأنهم أصبحوا -بعد سقوط بغداد- حماة الإسلام، وأن من واجبهم المحافظة على تراثه، فشجعوا العلماء، ولقي الأدباء في عهدهم ما كانوا يلقونه من خلفاء الفاطميين وملوك بني أيوب من تقدير، وخصصوا رواتب شهرية للعلماء والشعراء تضمن استقرار حياتهم، وإعادة ديوان الإنشاء، مع الإبقاء على اللغة العربية لغة رسمية للبلاد.</p><p>فاتسم هذا العصر بإنشاء المكتبات والخزانات التي تضم أنواع المؤلفات، وكان عصر إنشاء الموسوعات الجامعة لمختلف أنواع المعارف، وكان الاهتمام أكبر بجمع الخطوطات، وإعادة كتابة ما ضاع من كتب بسبب إحراق مكتبة بغداد، فكثرت المؤلفات في علوم القرآن والحديث والفقه والتفسير والأصول، واللغة وعلومها، وغير ذلك من الموسوعات الأدبية، وكتب التاريخ والجغرافيا وبقية العلوم.</p><p>ولكن البلاد في عهدهم لم تسلم من الصراع بينهم على الحكم، ومن المظالم والضرائب الفادحة التي أرهقت الشعب، وقد ظهر أثر ذلك كله في الحياة، كما ظهر في الأدب الذي مال إلى الضعف، وغلب عليه طابع التقليد، والاهتمام الواضح بالصنعة.</p><p>١٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

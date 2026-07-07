@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>مبدأ العد ومبرهنة ذات الحدين</p><h1>نتيجة ( ١ ) :</h1><p>$‫\text{م}' = \text{م}' + \text{م}' - 1‬$‫</p><p>البرهان :</p><p>‬$‫\therefore \text{الطرف الأيمن} = \text{م}' + \text{م}' - 1 = \frac{\text{م}'}{\text{م}' - \text{م}' + \text{م}' - 1}‬$‫</p><p>‬$‫= \frac{\text{م}'}{\text{م}' - \text{م}' + \text{م}' - 1} + \frac{\text{م}'}{\text{م}' - \text{م}' + \text{م}' - 1}‬$‫</p><p>‬$‫= \frac{\text{م}' + \text{م}' - 1}{\text{م}' - \text{م}' + \text{م}' - 1} = \frac{\text{م}' + \text{م}' - 1}{\text{م}' - \text{م}' + \text{م}' - 1} = \frac{\text{م}' + \text{م}' - 1}{\text{م}' - \text{م}' + \text{م}' - 1}‬$‫</p><p>‬$‫= \frac{\text{م}' + \text{م}' - 1}{\text{م}' - \text{م}' + \text{م}' - 1} = \frac{\text{م}' + \text{م}' - 1}{\text{م}' - \text{م}' + \text{م}' - 1}‬$‫</p><p>‬$‫= \text{م}' + \text{م}' = \text{الطرف الأيسر}‬$‫</p><p>‬$‫\therefore \text{م}' + \text{م}' - 1 = \text{م}' + \text{م}'‬$‫</p><p>وتسمى هذه العلاقة « علاقة الكرخي » .</p><p>خواص التوافق :</p><p>‬$‫1 - \text{م}' = \text{م}' - \text{م}'‬$‫</p><p>‬$‫2 - \text{إذا كان م}' = \text{م}' + \text{م}' - 1‬$ ، فإما م' = م' ، أو م' = م' + م' = م' .</p><h1>تدريب ( ٢ - ٤ )</h1><p>تحقق من صحة الخاصيتين أعلاه .</p><p>٥٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

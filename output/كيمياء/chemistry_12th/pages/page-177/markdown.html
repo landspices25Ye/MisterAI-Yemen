@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>ومن الهيدروكربونات الموجودة في الهواء غازات (إيزوبنتان، بيوتان، طولوين، بروبان، إيثيلين)، والتي تتأكسد في ظل وجود الأكسجين وشق الهيدروكسيل الناتج بطريقة غير مباشرة من تفاعلات الأوزون.</p><p>$‫\text{O} + \text{H}_2\text{O} \longrightarrow 2\text{OH}^-‬$‫
+(أكسجين حر)</p><p>وتتأكسد الهيدروكربونات الموجودة في الهواء الجوي وفقاً للمعادلة العامة:</p><p>‬$‫\text{RH} + \text{O}_2 + \text{OH}^- \longrightarrow \text{RO}_2 + \text{H}_2\text{O}‬$‫
+(هيدروكربون)</p><p>والخطوة التالية تتضمن إنتاج الألدهيد أو الكيتون في ظل وجود أكاسيد النيتروجين.</p><p>‬$‫\text{RO}_2 + \text{NO} \longrightarrow (\text{aldehyde \& Ketones}) + \text{NO}_2 + \text{H}_2\text{O}_2‬$
+(فوق أكسيد الهيدروجين)</p><p>ومن ثم فإن مركبات الألدهيد في ظل وجود شقوق الهيدروكسيل والأكسجين وأكاسيد النيتروجين تُنتج مركباً يُسمى (بيروكسي أسيل نيترات PAN) والذي يعتبر من أهم مصادر الضباب الدخاني.</p><p>أما مادة البنزوبيرين Benzopyrene والناتجة عن احتراق الأوراق الجافة والألياف الجافة ودخان السجائر، فهي مادة مسرطنة (مسببة للسرطان).</p><h4>الجسيمات العالقة:</h4><p>وهي عبارة عن دقائق أو جسيمات مادية غاية في الصغر لدرجة أنها تظل معلقة في الهواء، وقد تكون صلبة أو سائلة وتكون مصاحبة للأبخرة والغبار، وكلما صغر حجمها زاد خطرها على البيئة وعلى الإنسان، فهي قد تدخل إلى رئة الإنسان مسببة له مشاكل صحية خطيرة، وتؤثر على النباتات والأشجار فتؤدي إلى تساقط أوراقها مسببة تعرية وانجراف التربة وتعرضها للتصحر.</p><p>وتعتبر دقائق معدن الرصاص العالقة في الهواء من أكثر المعادن انتشاراً وخطراً على الإنسان، وترجع سميته إلى تراكمه في الجسم، ولأن معدل إخراجه من الجسم بطيء جداً. ومن مصادر التلوث بالرصاص الغازات المنبعثة من عوادم السيارات نظراً لإضافة رابع إيثيل الرصاص إلى الجازولين لتحسينه.</p><p>١٧٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

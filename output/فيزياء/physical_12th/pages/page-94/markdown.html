@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-92.jpeg" alt="img-92.jpeg" /><p>الرادار Radar</p><p>الرادار كلمة مركبة من أوائل حروف الكلمات الإنجليزية الآتية:</p><p>Radio Detection and Ranging فكلمتي Radio Detection تعني الكشف بالموجات الراديوية (أي بالموجات اللاسلكية) وكلمة (Ranging) تعني تحديد -أو تعيين- المدى، وبشكل عام فإن كلمة «الرادار» يقصد بها الكشف عن الأجسام وتعيين بعدها وسرعتها واتجاهها بواسطة موجات لاسلكية قصيرة جداً.</p><p>ويستخدم الرادار في الكشف عن الأجسام الموجودة في الجو مثل الطائرات والصواريخ وفي تحديد ارتفاعها ومواضعها وسرعتها واتجاهها ليلاً ونهاراً، كما تستخدمه الطائرات والسفن للكشف عما قد يعترض طريقها ليلاً أو في حالة وجود الضباب، كما يستخدم في الكشف عن الغواصات والطربيدات في أعماق البحار والمحيطات.</p><p>إن أساس عمل الرادار يقوم على ظاهرة الاهتزاز الكهربائي (الموجات الكهرومغناطيسية) والحصول على صدى كهرومغناطيسي، فهو يرسل حزمة من الموجات اللاسلكية (الموجات الكهرومغناطيسية) عالية التردد (يبلغ ترددها حوالي ٨١٠ - ٩١٠ هرتز).</p><p>وتحرك هذه الحزمة لتمسح المنطقة التي يحتمل تواجد الهدف فيها، حتى إذا قابلت هدفاً، فإنها تصطدم به وتنعكس مرتدة ليستقبلها جهاز معد لذلك، ويتصل هذا الجهاز بكاشف ذبذبات وظيفته تحديد ارتفاع الهدف واتجاهه وسرعته.</p><h3>محطة الرادار (وحدة الرادار) Radar Station</h3><p>تتكون محطة الرادار من الأجزاء الآتية:</p><p>مرسل، ومستقبل، وكاشف. أنظر الشكل (٦).</p><p><strong>المرسل:</strong> عبارة عن جهاز كهربائي يولد تيارات متذبذبة عالية التردد متصلة بملف موضوع في بؤرة هوائي (صحن) على شكل قطع مكافئ سطحه عاكس.. يقوم بإرسال حزمة متوازية من الموجات اللاسلكية القصيرة (موجات كهرومغناطيسية). والهوائي (أو الصحن) قابل للحركة في اتجاهات مختلفة</p><p>٩٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

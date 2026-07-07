@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الأعداد المركبة</p><h1><strong>مثال (١-١٢)</strong></h1><p>إذا كان العددان $‫ع_1‬$ ، $‫ع_2‬$ مركبين مترافقين ، أثبت أن العددين : $‫ع_1^2‬$ ، $‫ع_2^2‬$ مترافقان .</p><p><strong>الحل :</strong> ليكن $‫ع_1 = س + ت‬$ ص</p><p>$‫\therefore‬$ $‫ع_1‬$ ، $‫ع_2‬$ مترافقان .</p><p>$‫\therefore‬$ $‫ع_2 = س - ت‬$ ص</p><p>ومنه $‫ع_1^2 = (س + ت ص)^2 = (س^2 - ص^2) + 2‬$ ت س ص</p><p>، $‫ع_2^2 = (س - ت ص)^2 = (س^2 - ص^2) - 2‬$ ت س ص</p><p>$‫\therefore‬$ $‫ع_1^2‬$ ، $‫ع_2^2‬$ مترافقان .</p><p><strong>ثانياً : قسمة الأعداد المركبة :</strong></p><p>إذا كان $‫ع_1 = س_1 + ت‬$ ص ، $‫ع_2 = س_2 + ت‬$ ص ، فإن :</p><p>$‫\frac{ع_1}{ع_2} = ع_1 \times \frac{1}{ع_2} \quad (ع_2 \approx 0)‬$‫</p><p>‬$= ع_1 \times$‫ النظير الضربي للعدد ‬$ع_2$‫</p><p>‬$‫= (س_1 + ت ص_1) \left( \frac{س_2}{س_1^2 + ص_2^2} + ت \frac{ص_2}{س_1^2 + ص_2^2} \right) = \frac{(س_1 + ت ص_1) (س_2 - ت ص_2)}{س_1^2 + ص_2^2}‬$‫</p><p>وهذه النتيجة يمكن الوصول إليها مباشرة بضرب كل من البسط والمقام في ‬$ع_2$‫ ( مرافق العدد ‬$ع_2$‫ )</p><p>‬$‫\text{أي أن } \frac{ع_1}{ع_2} = \frac{ع_1}{ع_2} \times \frac{\frac{ع_2}{ع_1}}{\frac{ع_1}{ع_2}} = \frac{(س_1 + ت ص_1) (س_2 - ت ص_2)}{(س_1^2 + ت ص_1^2) (س_2^2 - ت ص_2^2)}‬$‫</p><p>‬$‫= \frac{(س_1 + ت ص_1) (س_2 - ت ص_2)}{س_1^2 + ص_2^2}‬$‫</p><p>وبذلك نتوصل إلى القاعدة التالية :</p><p>عند قسمة عدد مركب على آخر نضرب كلا من البسط والمقام في العدد المرافق للمقام .</p><h1><strong>مثال (١-١٣)</strong></h1><p>بسط ما يلي :</p><p>أ) ‬$\frac{5}{5+2}$‫ . ب) ‬$\frac{3+2}{5-2}$‫ . ج) ‬$\frac{(2+3)(1-2)}{(1+3)(3-2)}$‫ .</p><p><strong>الحل :</strong></p><p>أ) ‬$\frac{5}{5+2} = \frac{5(2-2)}{(2+3)(2-2)}$ [ ضرب البسط والمقام في مرافق المقام ]</p><p>٢١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

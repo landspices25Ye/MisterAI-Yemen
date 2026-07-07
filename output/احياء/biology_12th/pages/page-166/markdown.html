@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>– ما تأثيرات أكاسيد الكبريت؟</p><p>تتمثل تأثيرات أكاسيد الكبريت مثل ثاني أكسيد الكبريت $‫SO_2‬$ بما يأتي:</p><p>أ – زيادة معدلات أمراض الجهاز التنفسي مثل (الربو المزمن – الالتهاب الرئوي – انتفاخ الرئة).</p><p>ب – إزالة مادة الكلوروفيل (اللون الأخضر) من أوراق النباتات ويؤدي ذلك إلى خفض معدل عملية البناء الضوئي فيها.</p><p>ج – يتحول $‫SO_2‬$ في الجو إلى $‫SO_3‬$ في وجود الأشعة الشمسية، ويتحول هذا الأخير إلى جزئيات سائلة دقيقة من حمض $‫H_2SO_4‬$ الذي يؤثر على الجهاز التنفسي في الإنسان، ويختلط مع ماء المطر على شكل مطر حمضي، وتأتي خطورة هذا</p><img src="img-124.jpeg" alt="img-124.jpeg" /><p>الشكل (٤) تأثير المطر الحمضي على الأشجار</p><p>المطر عندما ينتقل في الهواء بعيداً عن مصدره ليسقط في مناطق مختلفة مسبباً مشكلات كبيرة مثل:</p><p>١ – إتلاف الغابات والنباتات.</p><p>الشكل (٤).</p><p>٢ – الإضرار بمواد البناء والهياكل المعدنية والآثار.</p><p>٣ – تهديد حياة الأحياء المائية في الأنهار والبحيرات.</p><p>ولأكاسيد النيتروجين تأثيرات ضارة ومشابهة لتأثيرات أكاسيد الكبريت مثل:</p><p>أ – إعاقة نمو النبات وانخفاض محصوله من الثمار.</p><p>ب – زيادة معدلات الإصابة بالتهاب شعب الجهاز التنفسي خاصة بين الأطفال وتلاميذ المدارس.</p><p>ج – يسهم $‫NO_2‬$ مع الهيدروكربونات في وجود الأشعة الشمسية لتشكيل الضباب الدخاني الملاحظ في ساحة الصباح الباكر في المدن الكبرى.</p><p>د – ارتفاع معدلات نسبة $‫NO_2‬$ يؤدي إلى تأثيرات مماثلة لغاز ثاني أكسيد الكبريت. كيف يختلف معدل انبعاث أكاسيد الكبريت عن معدل أكاسيد النيتروجين من</p><p>مصادر التلوث المختلفة؟</p><p>١٦٦</p><p>الأحياء الصنف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

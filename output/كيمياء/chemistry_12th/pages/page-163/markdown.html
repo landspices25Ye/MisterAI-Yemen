@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الهيدروكلوريك، وذلك للحصول على كلوريد الإلكيل، ثم بعد ذلك يتم إضافة أمين ثلاثي فينتج المنظف الكاتيوني، وفقاً للمعادلات الآتية:</p><p>$‫\begin{array}{c} \text{CH}_3(\text{CH}_2)_{10} - \text{CH}_2\text{OH} + \text{HCl} \longrightarrow \text{CH}_3 - (\text{CH}_2)_{10} - \text{CH}_2\text{Cl} + \text{H}_2\text{O} \\ \downarrow \text{CH}_3 \\ \text{CH}_3 - \text{N} \\ \text{CH}_3 \\ \text{CH}_3 - (\text{CH}_2)_{10} - \text{CH}_2 - \text{N}^+ \\ \text{CH}_3 \quad \text{CH}_3 \\ \text{CH}_3 \end{array}‬$‫
+(منظف صناعي كاتيوني)</p><h1>ملاحظة</h1><p>المنظفات الصناعية الكاتيونية لا تستخدم في أغراض التنظيف المنزلي، ولكنها تستخدم بكثرة في مصانع النسيج وفي المستشفيات نظراً لقدرتها الفائقة على التنظيف.</p><p>ج- المنظفات الصناعية غير الأيونية Non-ionic Detergents : يُعدُّ هذا النوع من المنظفات مختلفاً تماماً عن المنظفات التي تحوي شحنة سالبة أو موجبة، حيث أنها لا تحوي أي شحنة، ويتكون هذا المنظف عادة من سلسلة هيدروكربونية طويلة تنتهي بمجموعة هيدروكسيل ذات رابطة هيدروجينية قوية، مما يجعل هذا الطرف محباً للماء ويذوب فيه مثل باقي المنظفات.</p><p>ويمكن الحصول على المنظفات الصناعية غير الأيونية عن طريق تفاعل كحول ذي سلسلة هيدروكربونية طويلة مع كمية كبيرة من أكسيد الإيثيلين، كما في المعادلة الآتية:</p><p>‬$‫\begin{array}{c} \text{CH}_3(\text{CH}_2)_{10} - \text{CH}_2\text{OH} + 10 \text{CH}_2 - \text{CH}_2 \\ \text{كحول لوريلي} \quad \text{أكسيد الإيثيلين} \\ \text{CH}_3 - (\text{CH}_2)_{10} - \text{CH}_2 - (\text{O} - \text{CH}_2 - \text{CH}_2)_{10} - \text{OH} \\ \text{منظف صناعي غير أيوني} \end{array}‬$</p><p>١٦١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

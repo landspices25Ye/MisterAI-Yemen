@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>٣- عندما تصبح زاوية دوران الملف = ١٨٠° فهل قيمة (ق . د . ك) المتولدة تزداد أم تقل ؟ وما مقدارها عند هذه اللحظة ؟</p><p>٤- إذا أصبحت قيمة زاوية دوران الملف ( $‫\omega‬$ ) = ٢٧٠°، فهل تزداد قيمة (ق . د . ك) المتولدة عند هذه اللحظة أم تقل ؟ وما قيمتها ؟</p><p>٥- إذا استكمل ملف المولد دورة كاملة وصنع زاوية مقدارها = ٣٦٠° فهل قيمة (ق . د . ك) المتولدة تزداد أم تقل ؟ وما قيمتها عند هذه اللحظة ؟</p><p>* عليك الاعتماد على العلاقة (٧) والشكل (٢) الممثل للمنحنى الجيبي للتيار المتردد. أجب عن الأسئلة السابقة الواردة في النشاط ، وقدمها مدرسك للتأكد من صحة الإجابة .</p><p>من خلال إجابتك الصحيحة للأسئلة السابقة فإن القيم الواردة في الأسئلة الخمسة السابقة تتكرر في كل دورة من دورات ملف المولد ، ونتيجة لذلك تتغير شدة واتجاه التيار الكهربائي المتولد، وكذلك تتغير قيمة واتجاه القوة الدافعة الكهربائية بنفس الكيفية .</p><h2>مفاهيم متعلقة بالتيار المتردد</h2><h3>- الذبذبة الكاملة للتيار المتردد :</h3><p>هي التغير الذي يحدث لشدة التيار المتردد خلال دورة كاملة لملف الدينامو المولد له .</p><h3>- زمن الذبذبة الكاملة للتيار المتردد (الزمن الدوري) :</h3><p>هو الزمن اللازم لحدوث دورة كاملة لملف الدينامو أو حدوث ذبذبة كاملة للتيار المتردد .</p><h3>التردد ( f ) Frequency</h3><p>هو عدد الذبذبات التي يحدثها التيار المتردد في الثانية الواحدة ، ويساوي نفس عدد دورات الملف المولد له في الثانية الواحدة ، أي أن :</p><p>$‫\text{التردد ( f )} = \frac{\text{عدد الدورات}}{\text{الزمن بالثواني}}‬$‫</p><p>ويرتبط التردد بالسرعة الزاوية ( ‬$\omega$‫ ) من خلال العلاقة :</p><p>‬$‫\omega = f \pi r^2 \text{ ومنها } \frac{\omega}{\pi r^2} = f \text{ ووحدة قياسه هي دورة/ثانية أو هيرتز (Hz)}‬$</p><p>٣٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

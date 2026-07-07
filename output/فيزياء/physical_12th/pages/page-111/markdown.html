@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>٥ - الموجات التي يرسلها الرادار هي موجات لاسلكية منخفضة التردد. ( )</p><p>٦ - الكاشف في الرادار عبارة عن أنبوبة أشعة الكاثود تسمى الكينوسكوب. ( )</p><p>٧ - من الممكن تحديد بعد الهدف عن الرادار بالعلاقة:</p><p>( بعد الهدف = نصف السرعة X الزمن ) . ( )</p><p>٨ - تقوم الدائرة المهتزة بتوليد التيارات الحاملة. ( )</p><p>٩ - عند اختلاط التيار المعبر عن الصوت مع التيار المعدل ينتج التيار الحامل. ( )</p><p>١٠ - هوائي الإرسال يقوم بتحويل الموجات اللاسلكية إلى تيارات كهربائية تأثيرية. ( )</p><p>١١ - كاميرا التصوير التلفازي تسمى الأسيلوسكوب. ( )</p><p>١٢ - الخلية الكهروضوئية في التلفاز عبارة عن حبيبة صغيرة من الفضة مغطاة بطبقة من السيزيوم. ( )</p><p>١٣ - تبدأ عملية المسح التلفازي بتحرك الشعاع الإلكتروني من اليمين إلى اليسار. ( )</p><p>١٤ - زمن مسح الصورة في التلفاز يساوي $‫\frac{1}{25}‬$ من الثانية. ( )</p><p>١٥ - الملفات الحارقة تولد مجالاً كهربائياً، بينما تولد الألواح الحارقة مجالاً مغناطيسياً. ( )</p><p>١٦ - الذي يجعل الصورة على الشاشة في جهاز الاستقبال التلفازي تبدو غير متقطعة هو أنها تظهر على الشاشة بمعدل ٢٥ مرة في الثانية. ( )</p><p>١٧ - الألوان الأساسية في التلفاز الملون هي الأسود والأبيض والأصفر. ( )</p><p>١٨ - مرشح الألوان عبارة عن غشاء رقيق ملون لا يسمح بنفاذ الضوء خلاله إلا للضوء الذي يماثله في اللون. ( )</p><p>١٠٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

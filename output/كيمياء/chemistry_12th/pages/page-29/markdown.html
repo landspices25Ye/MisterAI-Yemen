@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>■ مثال:</p><p>قطعة من النحاس كتلتها ٩٥,٤٩ جم امتصت كمية من الحرارة مقدارها ٨٤٩ جول فزادت درجة حرارتها من ٢٥°م إلى ٤٨°م، أوجد الحرارة النوعية للنحاس.</p><p>■ الحل:</p><p>$‫\frac{\text{الطاقة الحرارية المكتسبة}}{\text{كتلة النحاس} \times \text{التغير في درجة الحرارة}} = \text{الحرارة النوعية للنحاس}‬$‫
+$= \frac{٨٤٩ \text{ جول}}{٩٥,٤٩ \text{ جم} (٨٤°م - ٢٥°م)}‬$$‫
+$= \frac{٨٤٩ \text{ جول}}{٩٥,٤٩ \text{ جم} \times ٢٣°م}‬$$‫
+$= ٠,٣٨٧ \text{ جول} / \text{جم} \times ٠,٠٠٠ \text{م}‬$$</p><h1>التفاعلات الكيميائية وحرارة التفاعل</h1><p>عرفت سابقاً أنه عند تفاعل المواد الداخلة في التفاعل تنتج مواد جديدة تُسمَّى بالمواد الناتجة، ويصاحب ذلك إما امتصاص للطاقة الحرارية أو انطلاقها. ويعتمد انطلاق الطاقة الحرارية أو امتصاصها على طبيعة المواد الداخلة والناتجة من التفاعل وعلى كمية الطاقة المخزونة في هذه المواد أو ما يُسمَّى بالمحتوى الحراري للمادة (Heat Content).</p><p>المحتوى الحراري للمادة: هو كمية الحرارة المخزونة في المادة عند تكوينها ويرمز له بالرمز H.</p><p>فعند حدوث التفاعل الكيميائي يكون مصحوباً بتغير في الطاقة الحرارية والتي يمكن من خلالها التوصل إلى ما يُسمَّى بحرارة التفاعل (Heat of Reaction).</p><p>حرارة التفاعل: هي كمية الحرارة المنطلقة أو الممتصة عند تفاعل المواد الداخلة في التفاعل بشكل تام، لتكوين النواتج ويرمز لها بالرمز (ΔH).</p><p>٢٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

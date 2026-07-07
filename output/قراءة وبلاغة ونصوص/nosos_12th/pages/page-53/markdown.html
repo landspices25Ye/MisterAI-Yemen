@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>ما كنتُ أحسبُ أني سوف أبكيه وأن شعري إلى الدنيا سيعنيه
+وكنتُ أحرصُ لو أني أموتُ له وحدي فداءً ويبقى كل أهليه
+ثم يعود الشاعر إلى مصر بعد ثورة ١٩٥٢م، ويعود إليه التفاؤل بعد أن صار
+للأحرار كافة من أبناء اليمن منبر في إذاعة صوت العرب.</p><p>وهكذا تقلّبت الحياة بالزبيري من شاعر إلى صحفيّ إلى وزير إلى مهاجر إلى زعيم
+سياسي، وهو في كل موقف منها ذلك الوطني الجسور، الثائر الزاهد، وقد تحققت
+آماله، فقامت ثورة ٢٦ سبتمبر، وانحسر ظلام الحكم الإمامي.</p><p>وبعد غياب طويل عاد الزبيري إلى وطنه وزيراً للتربية، ونائباً لرئيس الوزراء
+لشؤون الإعلام والتربية.</p><p>وفي عام ١٩٦٥م توجت حياته النضالية بالشهادة، حين استقرّت رصاصة غدر في
+قلبه الكبير لتضع حداً لطموح شاعر كبير، ومناضل جسور، ولتحقق حلماً قديماً، ظلّ
+يراود الشاعر، فقد سقط ليقبل أرضه، ولفظ آخر أنفاسه، وهو يردد آخر بيت شعر بقوله:</p><p>بحتُ عن هبةٍ أحبوك يا وطني فلم أجسد لك إلا قلبي الدامي</p><p>وهكذا خلّف الزبيري ثورة من المبادئ، كما خلّف آثاراً أدبية منها:
+ثورة الشعر «ديوان»، صلاة الجحيم «ديوان»، مأساة واق الواق «رواية» والنصّ
+الآتي من قصيدته التي تُعدّ الصيحة الأولى للثورة، وهي من بحر المتقارب.</p><h2>النص</h2><p>١) خرجنا من السجن ثمّ الأنوف
+كما تخرج الأسد من غابها
+٢) نمرّ على شفرات السيوف
+ونأتي المنية من بابها
+٣) ونأبى الحياة إذا دُست
+يعسف الطغاة وإرهابها
+٤) ونعلم أن القضا واقع
+وأن الأمور بأسبابها
+٥) ستعلم أمتنا أننا
+ركبنا الخطوب حنانا بها
+٦) فإن نحن فزنا فيا طالما
+تذل الصعاب لطلابها
+٧) وإن نلقى حنفاً فيا حبذا
+المنايا مجيء خطا بها
+٨) فيا ملكاً لج في بطشه
+وداس البلاد وأخنى بها
+٩) ستلقى مغبة ما قد صنعت
+وتجني الخالب من غابها</p><p>٥١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

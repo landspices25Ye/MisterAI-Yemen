@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-15.jpeg" alt="img-15.jpeg" /><img src="img-16.jpeg" alt="img-16.jpeg" /><p>شكل (٢-٢)
+تفاعل البوتاسيوم مع الماء</p><img src="img-17.jpeg" alt="img-17.jpeg" /><p>شكل (٢-٣) تحلل نيترات
+الأمونيوم بالحرارة</p><p>عرفت في دراستك السابقة أهمية الطاقة للإنسان
+وكيف أن علم الكيمياء يسهم إسهاماً كبيراً في دراسة
+التغيرات الكيميائية وما يصاحبها من تغيرات في الطاقة،
+حيث أن هناك تغيرات كيميائية تحدث نتيجة للتفاعل
+بين الذرات أو الجزيئات، وتكون مصحوبة إما بامتصاص
+أو انطلاق طاقة حرارية، ومثال ذلك تفاعل البوتاسيوم مع
+الماء والذي يكون مصحوباً بانطلاق كمية من الحرارة
+والضوء، كما هو موضح في الشكل (٢-٢).</p><p>- اكتب معادلة تفاعل البوتاسيوم مع الماء موضحاً
+سبب الاشتعال الذي يحدث أثناء التفاعل.</p><p>لعلك أدركت من خلال دراستك السابقة أن هناك
+بعض التفاعلات التي لا يمكن أن تحدث إلا عند امتصاص
+كمية من الحرارة، ومثال ذلك: تحلل نيترات الأمونيوم
+(NH₄NO₃) إلى غاز أكسيد النيتروز (N₂O) وبخار
+الماء، كما هو موضح في الشكل (٢-٣).</p><p>- اكتب معادلة التفاعل التي توضح انحلال نترات
+الأمونيوم بالحرارة.</p><p>وسوف يتم دراسة بعض العلاقات بين صور الطاقة في وحدات أخرى من هذا الكتاب.</p><p>الكيمياء الحرارية: هو العلم الذي يهتم بدراسة التغيرات الحرارية المصاحبة
+للتغيرات الكيميائية والفيزيائية.</p><p>- ما علاقة حدوث التفاعل الكيميائي بالطاقة؟</p><p>للإجابة عن هذا السؤال يمكنك الرجوع إلى ما سبق لك دراسته من تفاعلات
+كيميائية في المراحل السابقة، وستلاحظ أن معظم التفاعلات الكيميائية تكون
+مصحوبة بتغيرات في الطاقة، حيث إن أغلب التفاعلات الكيميائية تكون إما طاردة
+للحرارة، أو ماصة لها. ففي حالة التفاعلات الطاردة للحرارة تنتقل الطاقة من النظام
+(System) إلى الوسط المحيط، بينما نجد أنه في التفاعلات الماصة للحرارة يقوم النظام
+بامتصاص الطاقة من الوسط المحيط.</p><p>٢٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

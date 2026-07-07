@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>$‫\therefore \text{كتلة النحاس المترسبة (س)} = \frac{0.25 \times 63.54}{2} = 7.9 \text{ جم}‬$‫</p><p>■ <strong>مثال (٢):</strong> مررت كمية من الكهرباء في خليتين إلكتروليتين متصلتين على التوالي، الأولى أقطابها من الفضة في محلول يحتوي على ‬$Ag^+$‫ والأخرى أقطابها من النحاس في محلول يحتوي على ‬$Cu^{2+}$‫، فترسب ٢.٢٧ جم من النحاس. احسب كتلة الفضة المترسبة، علماً بأن الكتل الذرية هي: ‬$Ag = 0.108$‫ ، ‬$Cu = 63.5$‫.</p><p>■ <strong>الحل:</strong>
+‬$‫\text{الكتلة المكافئة للعنصر} = \frac{\text{الكتلة الذرية للعنصر}}{\text{تكافؤ العنصر}}‬$‫</p><p>‬$‫\text{الكتلة المكافئة للفضة} = \frac{0.108}{1} = 108‬$‫</p><p>‬$‫\text{الكتلة المكافئة للنحاس} = \frac{63.5}{2} = 31.75‬$‫</p><p>‬$‫\frac{\text{كتلة الفضة المترسبة}}{\text{كتلة النحاس المترسبة}} = \frac{\text{الكتلة المكافئة للفضة}}{\text{الكتلة المكافئة للنحاس}}‬$‫
+$\frac{\text{س}}{2.27} = \frac{108}{31.75}‬$$</p><p>س (كتلة الفضة المترسبة) = ٧.٧٢ جم</p><h3>تفاعلات غير مرغوبة للتأكسد (التآكل):</h3><p>هناك الكثير من تفاعلات الأكسدة تحدث في حياتنا اليومية وهي تفاعلات غير مرغوب فيها لما تسببه من مخاطر صحية وخسائر كبيرة بالأفراد أو بالمجتمع، وتضر كثيراً بالاقتصاد الوطني.</p><p>من أهم وأوضح هذه التفاعلات تأكسد المعادن (التآكل)، وأخطرها هو تآكل الحديد (الصدأ)، وتعود أكثر أنواع التآكل إلى فعل الوسط الذي يوجد فيه المعدن سواء كان هذا الوسط هواءً جافاً أو رطباً، أو وسطاً مائياً، أو التربة.</p><p>إن توفر أي منظومة تؤلف خلية كهروكيميائية، ويمثل الحديد فيها دور الأنود (المصعد) ستؤدي إلى التآكل، وهذه الخلية قد تكون غير مألوفة، وتوجد عادة في البيئة وقد تتكون هذه الخلية من معدن معين (أو كربون) يمكن أن يشكل</p><p>٦٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

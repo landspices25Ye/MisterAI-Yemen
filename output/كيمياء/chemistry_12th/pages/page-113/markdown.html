@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>يجعله أفضل الأغذية للأطفال، (فسبحان الله الذي هيأ حليب الأم كغذاء مناسب للطفل). والشكل (٦-٣) يوضّح الصيغة التركيبية لسكر اللبن كمثال عن هذه المجموعة.</p><h1>تكوّن السكريات الثنائية:</h1><p>تتكون السكريات الثنائية نتيجة لتكاثف وحدتين من السكر الأحادي، وذلك عن طريق فقد جزيء ماء، كما في المعادلة الآتية:</p><img src="img-102.jpeg" alt="img-102.jpeg" /><h1>خواص السكريات الثنائية:</h1><p>- تتحلل مائياً بواسطة الحموض المعدنية والانزيمات مكونة وحدتين من السكر الأحادي.
+- بعض السكريات مثل المالتوز واللاكتوز تختزل محلول فهلنج وبعضها لا تختزله مثل السكروز.</p><h1>ملاحظة</h1><p>السكروز هو السكر المعتاد الذي يستخدم يومياً عند تحضير الشاي أو القهوة أو الحلويات.</p><h1>نشاط (٦-٣)</h1><p>ميّز عملياً بين المالتوز والسكروز.</p><h1>٣- السكريات العديدة Polysaccharides</h1><p>وتتكون من عدد من وحدات السكر الأحادية، حيث إنها عبارة عن بوليمرات ناتجة عن تكاثف أكثر من عشرة جزيئات من السكر الأحادي، وصيغتها العامة هي:</p><p>$‫(C_6H_{10}O_5)_n‬$</p><p>١١١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

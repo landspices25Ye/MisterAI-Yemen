@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>الجهاز العصبي في الكائن الحي</h2><p>– لماذا يتفاعل الكائن الحي مع المؤثرات البيئية؟</p><p>يتفاعل الكائن الحي مع المؤثرات البيئية للحفاظ على ثبات توازنه الداخلي، وتعتبر هذه الخاصية من أوضح مظاهر الحياة التي تميز الكائن الحي، سواء أكان من الكائنات البسيطة، أم الكائنات الراقية، ففي الحيوانات الراقية والإنسان نجد أن السيطرة والتنظيم للمحافظة على ثبات وضعها الداخلي يتمان بواسطة الجهازين العصبي والهرموني، والتنظيم عن طريق الأعصاب يكون عادة أسرع من التنظيم عن طريق الهرمونات.</p><h3>أولاً: الإحساس في الكائنات وحيدة الخلية:</h3><p>إن الإحساس خاصية من خواص بروتوبلازم الكائن الحي، لهذا نجد مثلاً الطلائعيات الأولية مثل الأميبا تحس بالمؤثرات في الوسط الذي تعيش فيه عن طريق بروتوبلازم خليتها؛ وبهذا نجد أنها تتحرك نحو الغذاء، وتنفذ من الضوء الشديد وتبتعد عن المواد الكيميائية عالية التركيز، وفي الطلائعيات الهدبية كالبراميسوم الشكل (١)، تتصل أهدابها بحبيبات قاعدية مغمورة في بروتوبلازم البراميسوم، وتتصل هذه الحبيبات ببعضها بخيوط دقيقة، وخلال هذه الخيوط تنتقل المؤثرات الحسية إلى الحبيبات التي تتصل بدورها بالأهداب فتسبب حركتها، ويطلق على هذه الخيوط (الخيوط العصبية) يتضح من ذلك عدم وجود جهاز عصبي متخصص في الكائنات وحيدة الخلية.</p><h3>ثانياً: الجهاز العصبي في الحيوان:</h3><p>تختلف الحيوانات في مستوى التنظيم العصبي بحسب موقعها في ممالك الكائنات الحية، ومن الملاحظ أن صورة بناء التنظيم العصبي في الحيوانات المختلفة يكون أكثر رقياً وقدرة على إتقان العمل كلما اتجهنا نحو الأنواع الراقية من الحيوانات. ويتمثل هذا الاتجاه بتجميع الخلايا العصبية في جهاز عصبي مركزي، وذلك لزيادة القدرة على السيطرة، والتنظيم، والتنسيق، ورقي مستوى الاستجابة للمؤثرات البيئية، مما يساعد الكائن الحي في الحفاظ على اتزان بيئته الداخلية.</p><img src="img-3.jpeg" alt="img-3.jpeg" /><p>الشكل (١) الخيوط العصبية في البراميسوم.</p><p>٩</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

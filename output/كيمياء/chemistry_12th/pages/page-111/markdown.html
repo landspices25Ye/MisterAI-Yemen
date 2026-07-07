@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>- انظر إلى الصيغة المفتوحة للجلوكوز والفركتوز، وحدد نوع المجموعة الوظيفية التي تميّز كلًّا منهما.
+- انظر إلى الصيغة المغلقة للجلوكوز والفركتوز، وحدّد الاختلاف الذي يمكن من خلاله أن تميّز بين الجلوكوز والفركتوز الحلقي.</p><h1>ملاحظة</h1><p>يُعدُّ الجلوكوز المصدر المهم للطاقة في جسم الكائن الحي، وصيغته $‫C_6H_{12}O_6‬$، وعندما اكتشف العلماء هذه الصيغة لأول مرة كان العلماء يميلون لكتابة الصيغة على النحو الآتي: $‫C_6(H_2O)_6‬$ معتقدين أن هناك رابطة كيميائية بين الكربون والماء، ولذلك وضعوا التسمية (كربو - هيدريت) لتدل على الماء المحتوي على رابطة بذرة الكربون. وعلى الرغم من أن العلماء يدركون حاليًّا أن جزيء الماء لا وجود له في المركبات الكربوهيدراتية إلا أن الاسم القديم لا زال هو الشائع.</p><h1>الخواص الفيزيائية:</h1><p>السكريات الأحادية عبارة عن مواد بلورية حلوة المذاق وتذوب بسهولة في الماء لكنها لا تذوب في المذيبات العضوية.</p><h1>الخواص الكيميائية:</h1><p>بما أن بعض السكريات الأحادية تحتوي على مجموعة ألدهيد مثل الجلوكوز فيمكن أن تسري عليها تفاعلات الأكسدة والاختزال، حيث يمكن أكسدة مجموعة الألدهيد إلى مجموعة كربوكسيل، كما يمكن اختزالها إلى كحول أولي، وذلك على النحو الآتي:</p><img src="img-99.jpeg" alt="img-99.jpeg" /><p>وبالنسبة للسكريات الأحادية التي تحتوي على مجموعة الكيتون مثل الفركتوز، فيمكن أكسدتها باستخدام العوامل المؤكسدة القوية مثل حمض فوق الأيوديك $‫HIO_4‬$ الذي يؤدي إلى كسر السلسلة الكربونية وتكوين حموض تحتوي على أعداد قليلة من ذرات الكربون، وذلك على النحو الآتي:</p><p>١٠٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

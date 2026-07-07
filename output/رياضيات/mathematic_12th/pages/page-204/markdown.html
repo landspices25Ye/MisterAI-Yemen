@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-177.jpeg" alt="img-177.jpeg" /><p>الوحدة السادسة</p><h1>٢ - المستقيم المقارب الرأسي (الموازي محور الصادات) :</h1><h1>تعريف (٦ - ٥)</h1><p>إذا كانت مجموعة تعريف الدالة ص = د(س) ، من الشكل ح / {ج} ، وكانت :
+نَهَى د(س) = ±∞ ، فإن المستقيم س = ج مستقيم مقارب رأسي موازي محور الصادات .
+س ← ج</p><p>ملاحظات على التعريف :</p><p>١) عندما تكون م . ت = ح لا يوجد للدالة د
+مستقيمات مقاربة رأسية .</p><p>٢) عندما تكون م . ت = ح / {ج}</p><p>وكانت نَهَى د(س) = ±∞ ،
+س ← ج</p><p>فإن س = ج مستقيم مقارب رأسي .</p><p>٣) عندما س - ج > ٠ يكون منحنى الدالة</p><p>يسار المستقيم المقارب ، وعندما س - ج > ٠</p><p>يكون منحنى الدالة يمين المستقيم المقارب كما هو موضح في الشكل (٦ - ١٦) . الشكل (٦ - ١٦)</p><h1>٣ - المستقيم المقارب المائل :</h1><h1>تعريف (٦ - ٦)</h1><p>إذا كانت مجموعة تعريف الدالة ص = د(س) من الشكل [١ ، ∞] ، أو [٢ ، ∞] ،
+وكانت نَهَى د(س) = ±∞ فيكون المستقيم ص = س + ب مستقيماً مقارباً مائلاً إذا وجدت
+كل من ١ ، ب حيث ١ = نَهَى د(س) / س → ح ، ب = نَهَى د(س) - س → ح .</p><p>ملاحظة على التعريف :</p><p>إذا كانت د(س) = هـ(س) / م(س) حيث الدالتان هـ ، م كثيراً حدود ، م(س) = ٠ ، ودرجة
+الدالة هـ تزيد عن درجة الدالة م بدرجة واحدة ولا يمكن تحويل الدالة د إلى كثيرة حدود .
+وكان د(س) ← ±∞ عندما س ← ±∞ ، فإن للدالة مستقيماً مقارباً مائلاً .</p><p>٢٠٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

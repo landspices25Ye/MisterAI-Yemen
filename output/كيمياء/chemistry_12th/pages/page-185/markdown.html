@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>تقويم الوحدة</h2><p>١ - وضّح المقصود بالآتي :</p><p>أ - التلوث .</p><p>ب - الملوثات الأولية .</p><p>ج - ظاهرة الاحتباس الحراري .</p><p>٢ - وضّح كيف يتكوّن المطر الحمضي، وبيّن أثره على البيئة؟</p><p>٣ - ناقش ما يلي :</p><p>أ - أثر وجود المجمعات الصناعية بالقرب من التجمعات السكنية والأراضي الزراعية .</p><p>ب - إعادة تدوير المخلفات الصلبة له بعد بيئي وبعد اقتصادي .</p><p>ج - إنشاء البيارات في المدن يؤثر على صلاحية مياه الشرب .</p><p>د - الآثار الناجمة عن عوادم السيارات المستخدمة للديل .</p><p>٤ - ما الدور الذي يقوم به :</p><p>أ - أكسيد الكالسيوم في شكمنات السيارات .</p><p>ب - ثالث أكسيد الكبريت في تآكل واجهات المباني .</p><p>ج - الأسمدة في التلوث البيئي .</p><p>٥ - اذكر بعضاً من الحلول المقترحة للحد من تلوث المياه .</p><p>٦ - اكتب المعادلات الكيميائية المعبّرة عن الآتي :</p><p>أ - الاحتراق التام للجازولين ( $‫C_8H_{18}‬$ ) .</p><p>ب - الاحتراق غير التام للجازولين .</p><p>ج - تحوّل أكاسيد النيتروجين الموجودة في الهواء الجوي إلى أمطار حمضية .</p><p>د - إزالة الكبريت من زيت البترول أثناء عملية التكرير .</p><p>٧ - علّل ما يأتي :</p><p>أ - تزايد نسبة غاز $‫CO_2‬$ يؤدي إلى حدوث ظاهرة الاحتباس الحراري .</p><p>ب - الجسيمات الدقيقة العالقة في الهواء خطرها شديد على الإنسان والحيوان .</p><p>ج - موت الأسماك في البحيرات القريبة من المدن الصناعية .</p><p>د - توجد ظاهرة الضباب الدخاني في كثير من المدن المزدحمة .</p><p>١٨٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

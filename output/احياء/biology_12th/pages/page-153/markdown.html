@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-115.jpeg" alt="img-115.jpeg" /><p>شكل (٨) تأثير البنسلين على البكتيريا</p><p>إنتاج المضادات الحيوية والهرمونات والأدوية بكميات كبيرة، وذات نوعيات فاعلة مما كان لها أكبر الأثر في مكافحة كثير من الأمراض ورفع المستوى الصحي للإنسان. لاحظ الشكل (٨):</p><p>- ما سبب وجود منطقة خالية من البكتيريا؟</p><p>- كيف يعمل المضاد الحيوي على الشفاء من المرض بإذن الله؟</p><p>والمضادات الحيوية المتنوعة عبارة عن مواد كيميائية يتم إنتاجها بواسطة كائنات حية دقيقة تعمل على مقاومة البكتيريا الممرضة عند دخولها جسم الإنسان، وشل حركتها ونشاطها، حتى يتم من القضاء عليها. ويكون تأثير بعض المضادات الحيوية مثل البنسلين محدوداً بينما البعض الآخر من المضادات الحيوية مثل الكلورامفنيكول يكون مدى تأثيرها واسعاً في وقف نشاط أنواع متعددة من البكتيريا الممرضة. وعلى الرغم من اكتشاف ما يقرب من (٥٠٠٠) مضاد حيوي إلا أن حوالي (١٠٠) منها فقط تستخدم بفاعلية في معالجة الأمراض والتهابات البكتيريا المعدية.</p><p>ويتم إنتاج المضادات الحيوية في معامل الإنتاج المخصصة لذلك، وفقاً لشروط ومعايير محددة. فمثلاً في إنتاج البنسلين يوضع مخلوط الفطريات المكونة من فطر بنسليوم ناتانوم وبنسيوليوم كريسوجينوم في أوعية خاصة تحت ظروف محددة، مثل درجة حرارة (٢٤ درجة مئوية)، وإمداد مناسب من الأكسجين، ووسط يميل قليلاً إلى القاعدية، حيث تبدأ الفطريات في إنتاج البنسلين بعد حوالي (٣٠) ساعة ويصل أقصى حد للإنتاج بعد حوالي أربعة أيام، ثم يبدأ بالتناقص حتى يتوقف بعد حوالي ستة أيام، وبعد ذلك يتم ترشيح المخلوط لتجميع السائل في وعاء خاص، ويكون محتوياً على البنسلين الذي يتم تنقيته باتباع بعض العمليات الكيميائية، ليصبح بعد ذلك جاهزاً للاستخدام.</p><p>١٥٣</p><p>الأحياء للصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

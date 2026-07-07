@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>أعزائهم دون مبالاة، إن صوت الإخاء موجود في جميع العروق، سواء عروق المحبين أو الهاربين من دعوى الحب، إنه يهمس في كل قلب حي، ليجمع شمل المتفرقين، ويجتذب قلوب الأشقياء والسعداء على السواء.</p><h2>تحليل وتذوق</h2><p>النص من النصوص ذات الغرض الاجتماعي، وينتمي إلى المدرسة الواقعية، وهو من الشعر الحديث الذي تعد الشاعرة أحد رواده، وقد جاءت ألفاظه سهلة، وأسلوبه واضحاً، ومعانيه عميقة تتغلغل في أعماق النفس.</p><p>بُدئ النص بأسلوب إنشائي، ثم التزمت الشاعرة الأسلوب الخبري، ليُختم النص بالجملة التي بدأ بها: (لنكن أصدقاء)، والغرض من الأمر النصح والإرشاد، لتخبرنا عن ذلك الصوت الذي في الدماء، ولكنه صوت خفي كما تدل على ذلك كلمة (وراء).</p><p>ويبدو خيال الشاعرة تصويرياً، اعتمد على صور متفرقة جاءت حسية حركية، بعضها تقليدية مقتبسة كالاستعارة المكنية في قولها: (تساقوا كؤوس العداء)، وتوحي بالسخرية، وبعضها مصدره التفاعل الاجتماعي للشاعرة، كالتشبيه في قولها: (كالثملين) الذي يصور غياب العقل عن (يطعنون الرجاء) وهي صورة أخرى جعلت من الرجاء شخصاً يُطعن، للتنفير من وحشية هذا الفعل..</p><p>واعتمد النص على التشخيص، كما هو الحال في تشخيص صوت الإخاء، بإسناد الظرف (وراء) إليه أو وصفه بالهامس، أو إسناد الفعلين: (يجمع) و(يشد) إليه وهي صور جديدة مبتكرة، تعمق الفكرة وتهيج النفس.</p><p>أما الألفاظ فقصيحة ومأنوسة، تحمل دلالات وإيحاءات، من ذلك كلمة (العروق) التي توحي بتجذر صفة الأخوة في النفوس، وللغرض نفسه استعملت كلمة (الدماء) الذي لا حياة بدونه، وكلمة (صوت) الموحية بالإلحاح في الدعوة، وأكثر منها دفئاً كلمة (نداء) بما توحي به من التواصل. ومن تلك الكلمات: (باسمين - الحنين - هامساً - قرارة - خفوق - الضاحكين).</p><p>والتراكيب متفاوتة في الطول والقصر، وكلها تتصف بالوضوح وسلامة الأسلوب. ويكاد النص يخلو من المحسنات، لولا بعض المطابقات التي جاءت عفوية، كقولها:</p><p>١٣٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

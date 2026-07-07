@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>|  التركيب الجيني :  |   |   |   |
+| --- | --- | --- | --- |
+|  rr | Rr | Rr | RR  |
+|  ويضاء | وردية نقية | وردية هجينة | وردية هجينة  |
+|  ١ | ١ | ١ | ١  |
+|  الشكل الظاهري : ٣ وردية اللون : ١ بيضاء  |   |   |   |</p><p>الشكل (٩)</p><p>لا بد أنك توصلت إلى أن ألوان أزهار أفراد جيل الأبناء في تركيبها الجيني وأشكالها الظاهرية موضحة كما في الشكل (٩) :
+- ما الذي ينتج عند حدوث تلقيح ذاتي للنباتات ذات الأزهار البيضاء؟</p><h3>النقاط (٣)</h3><p>استخدم مربع بونيت للتوصل إلى احتمالات ظهور صفة طول ساق نبات البازلاء وقصره في الجيل الأول والثاني للأبناء إذا علمت أن التركيب الجيني لصفة طول الساق النقية (TT) والتركيب الجيني لصفة قصر الساق (tt).</p><h3>تطبيقات لقانون مندل الأول :</h3><p>توصل علماء الوراثة إلى أن كثير من الصفات الوراثية في الكائنات الحية المختلفة تنتقل من جيل إلى جيل طبقاً لقانون مندل الأول الخاص بانعزال الصفات الوراثية والسيادة والتنحي لها؛ حيث إن إحدى الصفتين تسود سيادة كاملة وتظهر في جميع أفراد الجيل البنوي الأول. فمثلاً تسود صفة اللون الرمادي على اللون الأبيض في الفئران، ويسود لون الجلد الأسود على الأحمر في الماشية، وتسود صفة عدم وجود القرون على وجود القرون فيها، وفي الخيل يسود اللون الأسود على البني، وفي القطط يسود الشعر القصير على الشعر الطويل، وفي الإنسان يسود لون العين العسلي على اللون الرمادي أو الأزرق، ويسود لون الجلد الأصفر على الجلد الأبيض، وتسود صفة الأنف المدببة على الأنف المفلطحة.</p><p>- ابحث عن صفات أخرى في الكائنات الحية يتم توارثها طبقاً لقانون مندل الأول.</p><h3>النقاط (٤)</h3><p>استخدم مربع بونيت للتوصل إلى احتمالات ظهور صفة اللون الرمادي واللون الأبيض للفأر في الجيل البنوي الأول والجيل الثاني إذا علمت أن التركيب الجيني لصفة اللون الرمادي النقية هو (GG) بينما التركيب الجيني لصفة اللون الأبيض هو (gg).</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p><p>١٠٧</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

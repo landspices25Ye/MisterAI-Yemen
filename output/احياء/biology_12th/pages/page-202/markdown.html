@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>●- مبدأ القاطع والمقطوع:</h1><p>(القاطع أحدث من المقطوع)</p><p>إن الجسم الصخري الناري أو المعلم الجيولوجي، مثل القاطع أو الصدع الذي يقطع جسماً أو معلماً آخر، هو أحدث من المقطوع وأقدم من الذي لا يقطعه. انظر الشكل (٢٣) تلاحظ أن الصخر (ج) اندفع خلال الصخر (ب) وكلاهما قطع الصخر (أ).</p><img src="img-161.jpeg" alt="img-161.jpeg" /><p>الشكل (٢٤) القاطع أحدث من المقطوع</p><p>ما أقدم الصخور هنا؟ ماذا يسمى الصخر (ج)؟</p><p>وفي الشكل (٢٥) تلاحظ تعاقباً صخرياً (أ، ب، ج) تعرض لحركات تكتونية أدت إلى قطعه بالصدع (س)، ثم تعرض التعاقب لعملية التعرية، ومن ثم ترسبت الطبقات (د، هـ) في وضع أفقي فوقه.</p><img src="img-162.jpeg" alt="img-162.jpeg" /><p>الشكل (٢٥) القاطع أحدث من المقطوع</p><p>- رتب الأحداث الجيولوجية من الأقدم إلى الأحدث؟</p><h1>النشاط (٢)</h1><p>● نفذ النشاط الخاص باستخدام مبادئ التاريخ النسبي في قراءة التاريخ الجيولوجي لمنطقة ما في كتاب الأنشطة.</p><h1>ثانياً- التاريخ المطلق للصخور بواسطة النشاط الإشعاعي:</h1><p>يستخدم النشاط الإشعاعي في إعطاء أعمار محددة للمعادن والصخور، وهو ما يشار إليه بالأعمار المطلقة (Absolute Ages) فقد لاحظ العالم هنري بكزل في العام ١٨٩٦م، أن بعض المعادن في الصخور تحتوي على عناصر ذات نشاط إشعاعي (Radioactivity) فما هو النشاط الإشعاعي؟ وكيف يمكن حساب أعمار الصخور؟ النشاط الإشعاعي هو انحلال تلقائي لنواة العنصر الكيميائي عن طريق انبعاث</p><p>٢٠٢</p><p>الأحياء: النصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

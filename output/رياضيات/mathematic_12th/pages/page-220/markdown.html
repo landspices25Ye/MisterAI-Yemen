@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-189.jpeg" alt="img-189.jpeg" /><p>الوحدة السابعة</p><h1>مبرهنة (٧ - ٥) :</h1><p>١- إذا كانت د قابلة للتكامل على [١، ب] ، وكانت د(س) ≥ ٠ ≠ س ⊆ [١، ب] فإن:</p><p>$‫\text{أ} \quad \text{ب} \quad \text{د} (\text{س}) \text{ وس} \geq ٠‬$‫</p><p>٢- إذا كانت د₁ ، د₂ قابلتين للتكامل على [١، ب] ، د₁(س) ≥ د₂(س) ≠ س ⊆ [١، ب]</p><p>‬$‫\text{فإن} \quad \text{أ} \quad \text{ب} \quad \text{د} (\text{س}) \text{ وس} \geq \text{أ} \quad \text{ب} \quad \text{د} (\text{س}) \text{ وس}‬$‫</p><h1>مثال (٧ - ٦)</h1><p>أثبت مايلي :</p><p>‬$‫\begin{aligned} \text{أ} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \end{aligned}‬$‫</p><p>الحل :</p><p>‬$‫\begin{aligned} \text{أ} \quad ١ \geq ٣ \geq ١ \geq ١ \geq ٩ \geq ٠ \geq ١ \geq ٨ \geq ١ \geq ٠ \geq ١ \geq ٠ \geq ٠ \\ \therefore \quad \text{أ} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \end{aligned}‬$‫</p><p>‬$‫\begin{aligned} \text{ب} \quad ٠ \geq ١ \geq ٠ \geq ٠ \geq ١ \geq ٠ \geq ٣ \geq ٢ \geq ٠ \geq ١ \geq ٣ \geq ٠ \geq ٠ \\ \therefore \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \end{aligned}‬$‫</p><p>‬$‫\text{وبالمثل : } ٠ \geq ١ \geq ٠ \geq ٠ \leq ١ \geq ٠ \geq ٠‬$‫</p><p>‬$‫\therefore \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب}‬$‫</p><p>‬$‫\text{ج} \quad \text{نضع } ٠ - ٢ = ٠ - ١‬$‫</p><p>‬$‫\therefore ١ \geq ٤ \geq ٠ \geq ٠ \leq ٠ \leq ٠‬$‫</p><p>‬$‫\text{كما أن : } ١ - ١ \leq ٠ - ٤ \leq ٠ \leq ١ - ١ \leq ٣ \leq ٠ \geq ١ - ١‬$‫</p><p>‬$‫\therefore ٠ - ٢ = ٠ - ١‬$‫</p><p>‬$‫\therefore \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب} \quad \text{ب}‬$</p><p>٢١٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

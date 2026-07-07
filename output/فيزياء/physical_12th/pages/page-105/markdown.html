@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>الاستقبال التلفازي Television Waves Reception</h2><p>تحتاج عملية الاستقبال التلفازي إلى جهاز استقبال (شبكة استقبال)، فماذا يقصد بعملية الاستقبال التلفازي؟ وممّ يتركب جهاز الاستقبال؟ وكيف تتم عملية الاستقبال التلفازي؟ لكي تتعرف على ذلك نفذ الآتي:</p><p>- قم بزيارة إلى أقرب ورشة إلكترونية متخصصة في صيانة الأجهزة الإلكترونية وبالذات أجهزة التلفاز.
+- قابل المهندس أو الفني المتخصص، واطلب منه ما يأتي:
+- أن يشرح لك - باختصار - كيفية استقبال الإرسال التلفازي بواسطة جهاز الاستقبال - مستعيناً في ذلك - برسم تخطيطي مبسط لمراحل الاستقبال التلفازي.
+- أن يتركب كلاً من دائرة الرنين (دائرة التوليف) <strong>Tunning</strong> ودائرة التكبير والشاشة (أنبوبة أشعة الكاثود) وزوجي الملفات الحارقة المحيطة بأنبوبة الكاثود من الخارج.</p><p><strong>تحذير:</strong> لا تفتح أي جهاز تلفاز: لأن في ذلك خطورة عليك - حيث تُخزّن أجهزة التلفاز شحنات كثيرة وفولتات عالية أثناء تشغيله وبعد غلقه]</p><p>يقصد بعملية الاستقبال التلفازي، بأنها عملية استلام الموجات الكهرومغناطيسية المرسلة من محطة الإرسال، وتحويلها إلى طاقة كهربائية ومن ثم تحويل هذه الطاقة الكهربائية إلى طاقة ضوئية (صورة ضوئية)، وذلك بواسطة شبكة الاستقبال التلفازي (جهاز الاستقبال).</p><h2>جهاز الاستقبال التلفازي (شبكة الاستقبال التلفازي)</h2>
+TV Receiver Set</p><img src="img-104.jpeg" alt="img-104.jpeg" /><p>شكل (١٤)</p><p>يتركب جهاز الاستقبال التلفازي، كما هو موضح في الشكل (١٤) في أبسط صورة له من الأجزاء الأساسية الآتية:</p><p>- دائرة هوائي الاستقبال.
+- دائرة الرنين.
+- دائرة التقويم والتكبير.
+- أنبوبة أشعة الكاثود قاعدتها المخروطية تسمى الشاشة وتغطي الشاشة من الداخل</p><p>١٠٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

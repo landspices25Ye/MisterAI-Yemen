@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الهندسة الفضائية</p><h2>تمارين ومسائل (٥-٢)</h2><p>[١] بَجَّ ، جَوَّ مستقيمان متعامدان في ج ، بَ ا لَ ، حيث ا و ا ؛ أثبت أن : جَوَّ ا لَ جَ .</p><p>[٢] ا بَ ا لَ ، و ، و نقطتان في ج ، ا و ا = ا و ا ؛ أثبت أن : ا ب و ا = ا ب و ا .</p><p>[٣] ا ب ج مثلث قائم في ب ، و ا ل المستوى ( ا ب ج ) . أثبت أن :</p><p>أولاً : ا و ج = ا و ا + ا ب + ا ب ج = ا . ثانياً : جَبَ ا و ب .</p><p>[٤] ا ب ج و مربع طول ضلعه ٦ سم ، أقمنا و م عموداً على مستواه من مركزه ( م ) ، ه منتصف</p><p>ا ب ، ا م و ا = ٤ سم ؛</p><p>أولاً : أثبت أن ا بَ ا و ه .</p><p>ثانياً : أثبت أن ا و ا = ا و ب .</p><p>ثالثاً : أوجد طول و ه ، ثم أوجد مساحة كل من المثلثات و م ه ، ا ب و ، ا ب م .</p><p>[٥] ب ج و مثلث قائم في ج ؛ أقمنا من ب العمود ا بَ على مستواه ؛ بحيث ا ب ا = ا و ج = ا ب ج .</p><p>أثبت أن : ا و ا = ا ب ج .</p><p>[٦] بَجَّ ، جَوَّ مستقيمان متعامدان في المستوى ج ، ا و ج ، ا ج ل ج و ،</p><p>ا بَ ا ل ب ج . أثبت أن ا بَ ا لَ .</p><h2>الزاوية الزوجية</h2><p>٥-٣</p><p>عرفت أن هناك أربعة أوضاع نسبية للمستويين س ، س ؛ ومن هذه الأوضاع أن يكون المستويان متقاطعين في ل [شكل (٥-١٩) ] . والجزء من الفراغ المحدد بنصفي المستويين س ، س والمستقيم ل تسمى بالزاوية الزوجية (الثنائية) .</p><h3>تعريف (٥-٢)</h3><p>الزاوية الزوجية هي اتحاد نصفي مستويين س ، س بجبهة مشتركة ل ؛ تسمى الجبهة المشتركة بحرف الزاوية الزوجية ، ويسمى كل من نصفي المستويين س ، س وجهي الزاوية الزوجية .</p><img src="img-130.jpeg" alt="img-130.jpeg" /><p>شكل (٥-١٩)</p><p>١٤٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

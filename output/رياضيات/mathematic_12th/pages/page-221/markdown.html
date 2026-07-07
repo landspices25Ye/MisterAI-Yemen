@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التكامل</p><h1>مبرهنة (٧ - ٦) : « مبرهنة الحدين الأعلى والأدنى لقيمة التكامل » :</h1><p>إذا كان ك ، ل عددين حقيقيين ، وكان ك ≥ د(س) ≥ ل ≥ س ≥ [١] ، ب وكانت د قابلة للتكامل على الفترة [١] ، ب ، فإن : ك (ب - ١) ≥ ١ د(س) و س ≥ ل (ب - ١) .</p><p>البرهان : بفرض أن : د₁(س) = ك ، د₂(س) = ل .</p><p>∴ ك ≥ د(س) ≥ ل ⇐ د₁(س) ≥ د(س) ≥ د₂(س) .</p><p>∴ د₁(س) و س ≥ د₂(س) و س ≥ د₂(س) و س .</p><p>∴ د₁(س) = ك .</p><p>∴ د₁(س) و س = ك و س = ٢ (٧ - ٢) .</p><p>∴ د₁(س) و س = ك (ب - ١)</p><p>وبالمثل : د₂(س) و س = ل (ب - ١) .</p><p>∴ ك (ب - ١) ≥ د₂(س) و س ≥ ل (ب - ١) .</p><p>ملاحظة : يُسمّى ك (ب - ١) بالحد الأدنى لقيمة التكامل ، ل (ب - ١) بالحد الأعلى لقيمة التكامل .</p><h1>مثال (٧ - ٧)</h1><p>أوجد الحدين الأدنى والأعلى لقيم التكاملات التالية :</p><p>أ) د₁(س) + ٢ و س . ب) د₂(س) + ٢ و س .</p><p>ج) د₁(س) + ٢ و س . د) د₂(س) + ٢ و س .</p><h1>الحل :</h1><p>أ) ∴ ١ ≥ س ≥ ٣ ⇐ ٢ ≥ س + ١ ≥ ٤ ⇐ ١/٢ ≤ ١/١ + ١/٤ ≤ ١/٤ .</p><p>١/٢ ≤ ١/١ + ١/٢ ≥ ١ [ إستناداً إلى المبرهنة (٧ - ٦) ] .</p><p>∴ ١/٢ (١ - ٣) ≥ ١/١ + ٢/١ + ١/٢ و س ≥ ١ (١ - ٣) .</p><p>٢١٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

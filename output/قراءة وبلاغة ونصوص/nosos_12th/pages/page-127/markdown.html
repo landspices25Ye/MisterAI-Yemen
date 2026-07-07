@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>اليوم الموعود</h1><h2>لطفي جعفر أمان</h2><h3>التعريف بالشاعر</h3><p>لطفي جعفر أمان من رواد الشعر الرومانسي المعاصر في اليمن، إلا أن بعض قصائده تنسب إلى المدرسة الواقعية ومنها النص الذي بين أيدينا.</p><p>ولد الشاعر في عدن سنة ١٩٢٨م، وتلقى تعليمه الأولي فيها، ثم أرسل في بعثة دراسية إلى السودان أكمل فيها التعليم الثانوي، ثم الجامعي، ونال «الليسانس» من جامعة الخرطوم عام ١٩٤٩م، وعاد إلى عدن في عام ١٩٥١م، حيث عمل مدرساً، ثم شغل منصب ضابط المعارف المسؤول عن الطباعة والنشر، ثم سافر إلى لندن لمواصلة دراسته العليا. توفي سنة ١٩٧١م، وله دواوين شعرية أهمها: (بقايا نغم، والدرب الأخضر، وكانت لنا أيام، وليل إلى متى).</p><p>أطلع لطفي أمان على روائع الأدب الإنجليزي في أصوله ولغته، وهي ميزة لم تتوفر لكثير من الشعراء الرومانسيين العرب الذين قرؤوا جزءاً من هذا الأدب مترجماً إلى لغتهم بعد أن أفقدته الترجمة قدراً من فخامته وروعة إيحائه.</p><p>وكان وثيق الصلة بالأدب العربي قديمه وحديثه، لكن إعجابه ظل مقصوراً على الرومانسية الحديثة، فتأثر بإبراهيم ناجي، والشابي، والتيجاني، وعلي محمود طه، وقد ترك هذا الأخير على أشعاره آثاراً بارزة، سواء من حيث المضمون، أم من حيث الأسلوب الغنائي.</p><p>وقد نأى الشاعر بأسلوبه عن المباشرة والتقريرية، واستخدم الرمزية لإبراز المعاني السامية للنص، واعتمد على الصور الجزئية، مطلقاً العنان لخياله بدون حدود، مستخدماً الألفاظ الموحية التي تسير بسلاسة ويسر.</p><p>وصل أمان بالقصيدة الرومانسية في اليمن إلى آخر أشواطها شكلاً ومضموناً. وقد جمع الشاعر بين الرومانسية الحاملة، والنزعة الثورية في قصائده بل تحوّل – في بعض قصائده – إلى داعية أمل ومواجهة يعكس الواقع، وما يحمله من تحولات سياسية واجتماعية. ويعد النص الآتي من بحر (المتقارب).</p><p>١٢٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

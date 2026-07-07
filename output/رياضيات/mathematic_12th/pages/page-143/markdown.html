@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الهندسة الفضائية</p><img src="img-119.jpeg" alt="img-119.jpeg" /><p>شكل (٥-١١)</p><p>البرهان : $‫\Delta \cdot \mu \cdot \nu‬$ قائم في $‫\mu‬$</p><p>$‫\therefore \mu \cdot \mu \cdot \nu \cdot \nu‬$ (١)</p><p>$‫\therefore \mu \cdot \mu \cdot \nu \cdot \nu‬$ المستوى (١ ب ج)</p><p>$‫\therefore \mu \cdot \mu \cdot \nu \cdot \nu‬$ (٢)</p><p>من (١) ، (٢) ينتج أن :</p><p>$‫\mu \cdot \mu \cdot \nu‬$ المستوى (١ ب ج)</p><p>وهو المطلوب .</p><h3>تمارين ومسائل (٥-١)</h3><p>[١] أكمل العبارات التالية :</p><p>أ) المستقيم العمودي على أحد مستقيمين متوازيين ...</p><p>ب) المستقيم العمودي على مستقيمين متقاطعين ...</p><p>ج) إذا كان $‫\mu \cdot \mu \cdot \nu‬$ فإن $‫\mu \cdot \mu‬$ عمودي على ...</p><p>د) المستوى العمودي على أحد مستقيمين متوازيين ...</p><p>هـ) المستويان العموديان على مستقيم واحد ...</p><p>و) المستقيمات العمودية على مستوى واحد ...</p><p>ز) إذا توازي مستقيمان ، وكان أحدهما عمودياً على مستويك فإن المستقيم الآخر ...</p><p>ح) جميع المستقيمات المرسومة من نقطة واحدة وعمودية على مستقيم مفروض تقع في ...</p><p>ط) يتعامد المستقيم $‫\mu \cdot \mu‬$ والمستوى $‫\nu‬$ إذا كان ...</p><p>[٢] أثبت أن كل مستقيم من ثلاثة مستقيمات متعامدة عمودي على مستوى المستقيمين الآخرين .</p><p>[٣] ك ، ك ، ك مستوى متوازيان فرضت النقطتان ١ ، ب في المستوى ك ، ثم رسم العمودان $‫\mu \cdot \mu‬$ ،</p><p>ب على المستوى ك . أثبت أن الشكل $‫\mu \cdot \mu‬$ مستطيل .</p><p>[٤] $‫\mu \cdot \mu‬$ ، مستقيمان متوازيان ، نقطة خارج مستويهما ؛ أنزل العمود $‫\mu \cdot \mu‬$ على $‫\mu \cdot \mu‬$ ، ومن</p><p>ب رسم $‫\mu \cdot \mu‬$ عمودياً على $‫\mu \cdot \mu‬$ ، أثبت أن $‫\mu \cdot \mu \cdot \nu‬$ .</p><p>[٥] ب ، ج ، و ثلاث نقاط على الدائرة م ، أقيم $‫\mu \cdot \mu‬$ عمودياً على مستوى الدائرة . أثبت أن</p><p>$‫\mu \cdot \mu = |\mu \cdot \mu| = |\mu \cdot \mu|‬$ .</p><p>[٦] ب ج ، ب ج مثلثان لا يجمعهما مستوى واحد بحيث $‫\mu \cdot (\mu \cdot \mu \cdot \nu) = |\mu \cdot \mu| = |\mu \cdot \mu|‬$ ،</p><p>$‫\mu \cdot \mu = |\mu \cdot \mu|‬$ ، أثبت أن $‫\mu \cdot \mu = |\mu \cdot \mu|‬$ .</p><p>١٤١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

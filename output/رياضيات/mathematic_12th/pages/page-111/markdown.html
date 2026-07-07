@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>القطع الخروطية</p><h1><strong>مثال (٤ - ٣)</strong></h1><p>أوجد معادلة القطع المكافئ الذي رأسه نقطة الأصل ومعادلة دليله ص = ٢ .</p><h1><strong>الحل :</strong></h1><p>بما أن ص = ٢ ، ورأس القطع ( ٠ ، ٠ ) فالقطع في وضع قياسي . إذن الدليل موازٍ محور السينات ، وعليه فإن محور القطع المكافئ هو محور الصادات ، والبؤرة هي النقطة ( ٠ ، ٢ - ) ، ٢ = ١ .</p><p>معادلته من الشكل ص = ٢ - ٤ ص</p><p>∴ المعادلة المطلوبة : ص = ٢ - ٨ ص ، [ شكل ( ٤ - ١٠ ) ] .</p><h1><strong>مثال (٤ - ٤)</strong></h1><p>أوجد معادلة القطع المكافئ الذي رأسه نقطة الأصل ومحوره هو محور السينات ويمر بالنقطة ( ٢ ، ٣ ) .</p><h1><strong>الحل :</strong></h1><p>معادلة القطع المكافئ على الصورة : ص = ٢ - ٤ س</p><p>بما أن النقطة ( ٢ ، ٣ ) ، تقع على القطع فهي تحقق معادلته .</p><p>$‫\therefore ٩ = ١٨ \Leftarrow ١ = \frac{٩}{٨} .‬$‫</p><p>إذن المعادلة هي : ص = ٢ - ٤ ( ‬$\frac{٩}{٨}$‫ ) س ⇐ ص = ٢ - ٩ س .</p><h1><strong>مثال (٤ - ٥)</strong></h1><p>أوجد معادلة القطع المكافئ الذي يؤرثه ( ٢ ، ٣ ) ، ومعادلة دليله ص = ٤ - .</p><p><strong>الحل :</strong> ∴ البؤرة ( ٢ ، ٣ ) ، ∴ القطع في وضع غير قياسي وبالتالي نستخدم التعريف .</p><p>لتكن ( ص ، ص ) نقطة على القطع المكافئ :</p><p>‬$‫\therefore \text{يُعدها عن البؤرة} = \sqrt{(ص - ٢)^2 + (ص - ٢)^2}‬$‫</p><p>‬$‫\text{ويُعدها عن الدليل} = \left| \frac{١ + \text{ص}}{٢} \right| = \left| \frac{١ + \text{ص}}{٢} \right| \quad (\text{يُعد نقطة عن مستقيم}) .‬$‫</p><p>‬$‫\therefore \sqrt{(ص - ٢)^2 + (ص - ٢)^2} = \left| \frac{١ + \text{ص}}{٢} \right|‬$‫</p><p>‬$‫\Leftarrow (ص - ٢)^2 + (ص - ٢)^2 = (ص + ٤)^2‬$‫</p><p>‬$‫\Leftarrow ص - ٢ - ٦ س + ٩ + ص - ٢ - ٤ ص + ٤ = ص - ٢ + ٨ س + ١٦‬$‫</p><p>‬$‫\Leftarrow ص - ٢ - ٤ ص - ١٤ س - ٣ = ٠ . \quad \text{وهي المعادلة المطلوبة .}‬$</p><p>١٠٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-91.jpeg" alt="img-91.jpeg" /><p>الوحدة الرابعة</p><h2>القطع الزائد</h2><p>٤ - ٤</p><p>تأمل الشكل (٤ - ١٧ أ) : $‫A_1‬$ ، $‫A_2‬$ نقطتان ثابتتان ؛ النقطة و تتحرك في مستوى يحوي هاتين النقطتين بحيث $‫|A_1| - |A_2|‬$ (أو $‫|A_1| - |A_2|‬$) طولاً ثابتاً وليكن ١٢ .
+إذن النقطة و ترسم منحنياً ذا فرعين : الفرع الأيسر يظهر من الإشارة الموجبة ، والفرع الأيمن يظهر من الإشارة السالبة ويسمى قطعاً زائداً [ الشكل (٤ - ١٧ ب) ] .</p><img src="img-92.jpeg" alt="img-92.jpeg" /><p>(ب)</p><img src="img-93.jpeg" alt="img-93.jpeg" /><p>(أ)</p><p>شكل (٤ - ١٧)</p><h3>تعريف (٤ - ٥)</h3><p>القطع الزائد هو مجموعة كل النقاط في المستوى التي الفرق بين بُعديها عن نقطتين ثابتتين في المستوى يساوي طولاً ثابتاً . تسمى النقطتان الثابتتان <strong>بؤرتي القطع الزائد</strong> .</p><h3>معادلة القطع الزائد :</h3><p>لتكن $‫A_1‬$ ، $‫A_2‬$ بؤرتي القطع الزائد، $‫|A_1| = |A_2| = 2\text{ج}‬$ .
+ومحور السينات ماراً بالنقطتين $‫A_1‬$ ، $‫A_2‬$ ،
+ومحور الصادات المنصف العمودي للقطعة $‫A_1‬$ ، $‫A_2‬$
+في و ، فتكون البؤرتان هما :
+$‫A_1‬$ (ج ، ٠) ، $‫A_2‬$ (ج ، ٠) ، وإذا فرضنا أن
+النقطة المتحركة و (س ، ص) هي التي ترسم
+منحنى القطع، [ أنظر الشكل (٤ - ١٨) ] :</p><img src="img-94.jpeg" alt="img-94.jpeg" /><p>شكل (٤ - ١٨)</p><p>$‫|A_1| = |A_2| - |A_1|‬$‫</p><p>‬$‫\therefore \sqrt{(m + \text{ج})^2 + (m^2 - \text{ج})^2} = 12‬$‫</p><p>‬$$‫\therefore \sqrt{(m + \text{ج})^2 + (m^2 - \text{ج})^2} = 12‬$$</p><p>ويتربع الطرفين نحصل على :</p><p>١١٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

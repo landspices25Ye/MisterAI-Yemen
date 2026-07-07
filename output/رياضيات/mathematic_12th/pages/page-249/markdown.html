@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التكامل</p><h1><strong>تمارين وسائل (٥-٧)</strong></h1><p>احسب التكاملات الآتية :</p><p>$‫[١] \left[ \frac{\text{س و س}}{\text{س}^2 - ٣ \text{ س} - ٤} \right.‬$‫</p><p>‬$‫[٢] \left[ \frac{\text{س و س}}{\text{س}^2 - ١ \text{ س} - ٢} \right.‬$‫</p><p>‬$‫[٣] \left[ \frac{\text{س و س}}{\text{س}^2 - ١ \text{ س} - ٢} \right.‬$‫</p><p>‬$‫[٥] \left[ \frac{\text{س و س}}{\text{س}^2 - ٢ \text{ س} - ٢} \right.‬$‫</p><p>‬$‫[٦] \left[ \frac{\text{س و س}}{\text{س}^2 - ٢ \text{ س} - ٢} \right.‬$‫</p><p>‬$‫[٧] \left[ \frac{\text{س و س}}{\text{س}^2 - ١ \text{ س} - ٢} \right.‬$‫</p><p>‬$‫[٨] \left[ \frac{\text{س و س}}{\text{س}^2 - ٢ \text{ س} - ٢} \right.‬$‫</p><p>‬$‫[٩] \left[ \frac{\text{س و س}}{\text{س}^2 - ١ \text{ س} - ٢} \right.‬$‫</p><p>‬$‫[٢٠] \left[ \frac{\text{س و س}}{\text{س}^2 - ١ \text{ س} - ٣} \right.‬$‫</p><p>‬$‫[٤] \left[ \frac{\text{س و س}}{\text{س}^2 - ٩ \text{ س} - ٢} \right.‬$‫</p><p>‬$$‫[٦] \left[ \frac{\text{س و س}}{\text{س}^2 - ٢ \text{ س} - ٢} \right.‬$$‫</p><p>‬$$‫[٨] \left[ \frac{\text{س و س}}{\text{س}^2 - ٢ \text{ س} - ٢} \right.‬$$‫</p><p>‬$‫[١٠] \left[ \frac{\text{س و س}}{\text{س}^2 - ٢ \text{ س} - ٢} \right.‬$‫</p><p>‬$‫[١٢] \left[ \frac{\text{س و س}}{\text{س}^2 - ٣ \text{ س} - ٢ \text{ س} - ٣ \text{ س} - ٢ \text{ س} - ٢ \text{ س} - ٣ \text{ س} - ٢ \text{ س} - ٢ \text{ س} - ٣ \text{ س} - ٢ \text{ س} - ٢ \text{ س} - ٣ \text{ س} - ٢ \text{ س} - ٢ \text{ س} - ٣ \text{ س} - ٢ \text{ س} - ٢ \text{ س} - ٣ \text{ س} - ٢ \text{ س} - ٢ \text{ س} - ٣ \text{ س} - ٢ \text{ س} - ٢ \text{ m} - ٢ \text{ m} - ٢ \text{ m} - ٢ \text{ m} - ٢ \text{ m} - ٢ \text{ m} - ٢ \text{ m} - ٢ \text{ m} - ٢ \text{ m} - ٢ \text{ m} - ٢ \text{ m} - ٢ \text{ m} - ٢ \text{ m} - 1‬$‫</p><p>‬$‫[١٤] \left[ \frac{\text{س و س}}{\text{س}^2 - ١ \text{ س} - ٢ \text{ س} - ١ \text{ س} - ٢ \text{ س} - ١ \text{ س} - ٢ \text{ س} - ١ \text{ س} - ٢ \text{ س} - ١ \text{ س} - ٢ \text{ س} - ١ \text{ س} - ٢ \text{ س} - ١ \text{ س} - ٢ \text{ س} - ١ \text{ m} - ٢ \text{ m} - ٢ \text{ m} - ١ \text{ m} - ٢ \text{ m} - ١ \text{ m} - ٢ \text{ m} - ١ \text{ m} - ٢ \text{ m} - ١ \text{ m} - ٢ \text{ m} - ١ \text{ m} - ٢ \text{ m} - 1‬$</p><p>٢٤٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

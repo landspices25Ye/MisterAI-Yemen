@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>٢- تبدأ عملية تضاعف الحمض النووي من نقاط منشأ التضاعف العديدة وتستمر في اتجاهين متضادين على كل نقطة، ويبين الشكل (٤) هذه العملية كما تحدث في منشأ تضاعف واحد.</p><p>٣- تستمر عملية التضاعف في جميع نقاط المنشأ إلى أن يكتمل تضاعف جزيء حمض DNA، علماً بأن عملية التضاعف تتم بفعل إنزيمات بلمرة حمض DNA</p><img src="img-101.jpeg" alt="img-101.jpeg" /><p>الشكل (٤) حمض DNA أثناء التضاعف</p><p>ويمثل الشكل (٤) شريطي الحمض النووي DNA أثناء عملية التضاعف. ولاحظ أن شريطي الحمض النووي DNA الأصليين (باللون الأزرق) يمثلان قاليين يعمل كل منهما على بناء شريط جديد (باللون الأصفر).</p><h1><strong>النقاط (١)</strong></h1><p>• قارن تسلسل القواعد النيتروجينية على الشريطين الجديدين بتسلسلهما على الشريطين الأصليين. فماذا تلاحظ؟</p><h1><strong>دور حمض DNA في نقل الصفات الوراثية:</strong></h1><p>أوضحت نتائج العديد من الدراسات في الوراثة الجزيئية أن جزيء حمض DNA يحمل الشفرات التي تحتوي على التعليمات الخاصة بتركيب ووظائف مكونات الكائن الحي. إضافة إلى ذلك، توصل العلماء إلى أن هذه التعليمات تحملها حموض نووية أخرى ليتم في ضوئها بناء وتركيب المكونات المختلفة لجسم الكائن الحي مثل الحموض الأمينية في البروتينات.</p><p>- هل تذكرت اسم الحمض النووي الآخر ورمزه؟
+- كيف يمكن لحمض DNA بقواعده النيتروجينية الأربع أن يحدد تسلسل الحموض الأمينية التي يبلغ عددها عشرين في جزيء البروتين؟
+- لقد اتضح أن الحمض النووي الآخر الذي يقوم بهذا العمل هو الحمض النووي الرايبوزي RNA.</p><p>الأحياء للصف الثالث الثانوي</p><p>١٣٥</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>جدول (٨) الطبقات الجنينية والأعضاء والأجهزة التي تنشأ منها</h1><p>|  الطبقة الجنينية | الأعضاء والأجهزة التي تنشأ منها  |
+| --- | --- |
+|  الطبقة الخارجية | الجهاز العصبي والجلد ومشتقاته كالشعر.  |
+|  الوسطى | الجهاز العضلي، والنقل والإخراج والتناسلي والطبقات الخارجية لجهازي التنفس والهضم.  |
+|  الداخلية | الأنسجة الطلائية المبطنة للقناة الهضمية والقناة التنفسية والغدد الملحقة بها والأنسجة الطلائية المبطنة للمثانة البولية.  |</p><p>- انظر الشكل (٢٥)، ولاحظ الأغشية التي تحيط بالجنين؟ سمّ كلا منها؟ حدد دورها؟
+- استعن بالجدول (٩).</p><h1>جدول (٩) الأغشية الجنينية ودورها.</h1><p>|  الغشاء الجنيني | دوره  |
+| --- | --- |
+|  كيس المح | تكون خلايا الدم في المرحلة الجنينية الأولى ويشترك جزء منه في تكوين أنبوب القناة الهضمية الجنينية.  |
+|  المبار | يكون خلايا الدم.  |
+|  الكوريون | له علاقة بالتغذية والتنفس والإخراج بين الأم والجنين.  |
+|  الرمل / أمنيون | ملوء بسائل أمنيوتي يحمي الجنين من الصدمات ويسهل حركته والمحافظة على ثبات درجة حرارته.  |</p><h1>تغذية الجنين:</h1><p>كيف يحصل الجنين على المواد الغذائية اللازمة لنموه؟
+تُمن الشكل (٢٥) ولاحظ أن المشيمة تسبح متخصص يتكون من بطانة الرحم في الأم، وغشاء الكوريون في الجنين، ويتصل الجنين بالمشيمة بواسطة الحبل السري الذي يحتوي على شريانين سريين يحملان الدم من الجنين إلى المشيمة، ووريد سري يحمل الدم من المشيمة إلى الجنين.
+لتتعرف على أجزاء المشيمة ومميزات كل جزء أدرس الجدول (١٠).</p><p>٩١</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-25.jpeg" alt="img-25.jpeg" /><p>الوحدة الأولى</p><p>∴ هـ تنطبق على محور الصادات الموجب .</p><p>$‫\frac{\pi}{2} = \text{هـ}‬$‫</p><img src="img-26.jpeg" alt="img-26.jpeg" /><p>شكل (١ - ٩)</p><p>∴ الصورة القطبية للعدد ت = ١ (جتا ‬$\frac{\pi}{2}$‫ + ت جا ‬$\frac{\pi}{2}$‫ )</p><p>أو ت = [ ‬$\frac{\pi}{2}$‫ , ١] .</p><p>وباعتبار (س ، ص) = (١ ، ٠) ، ∴ هـ = ‬$\frac{\pi}{2}$‫</p><p>من تمثيلها البياني [انظر شكل (١ - ٩) ] .</p><h1><strong>مثال (١ - ١٦)</strong></h1><p>اكتب العددين المركبين التاليين بالصورة الجبرية :</p><p>أ) ع ٤ = (جتا ٦٠ + ت جا ٦٠) . ب) ع ٢ = (جتا ١٥٠ + ت جا ١٥٠) .</p><h1><strong>الحل :</strong></h1><p>أ) ع ٤ = (جتا ٦٠ + ت جا ٦٠) = ٤ ( ‬$\frac{\sqrt{3}}{2}$‫ + ١) ت = ٢ + ٢√٣ ت .</p><p>ب) ع ٢ = (جتا ١٥٠ + ت جا ١٥٠) = ٢ (- جتا ٣٠ + ت جا ٣٠) = ٢ (- ‬$\frac{\sqrt{3}}{2}$‫ + ١) ت =</p><p>‬$‫= - \sqrt{3} + \text{ت} .‬$</p><h1><strong>مقياس وسعة حاصل ضرب أو خارج قسمة عددين مركبين :</strong></h1><p>أولاً : مقياس وسعة حاصل ضرب عددين مركبين :</p><p>بفرض ع ١ = م ١ (جتا هـ + ت جا هـ) ، ع ٢ = م ٢ (جتا هـ + ت جا هـ) .</p><p>∴ ع ١ = م ١ (جتا هـ + ت جا هـ) [ م ٢ (جتا هـ + ت جا هـ) ]</p><p>= م ١ م ٢ (جتا هـ + ت جا هـ) (جتا هـ + ت جا هـ)</p><p>= م ١ م ٢ (جتا هـ + ت جا هـ) + ت جا هـ + ت جا هـ + ت جا هـ + ت جا هـ + ت جا هـ</p><p>= م ١ م ٢ (جتا هـ + ت جا هـ) - جا هـ + ت جا هـ + ت جا هـ + ت جا هـ ]</p><p>= م ١ م ٢ [ جتا هـ + هـ + ت جا هـ + هـ ]</p><p>لأن جتا هـ + هـ = جتا هـ + ت جا هـ + ت جا هـ + ت جا هـ + ت جا هـ + ت جا هـ .</p><p>∴ مقياس (ع ١ ع ٢) = | ع ١ ع ٢ | = م ١ م ٢ = | ع ١ | | ع ٢ | .</p><p>∴ سعة (ع ١ ع ٢) = هـ + هـ .</p><p>مقياس حاصل ضرب عددين مركبين يساوي حاصل ضرب مقياسيهما .
+وسعة حاصل ضرب عددين مركبين يساوي مجموع سعتيهما .</p><p>٢٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

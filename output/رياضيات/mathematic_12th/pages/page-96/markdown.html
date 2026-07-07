@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-63.jpeg" alt="img-63.jpeg" /><p>الوحدة الثالثة</p><h1><strong>مثال (٣ - ١٣)</strong></h1><p>أُلقيت قطعة نقود متجانسة عشوائياً ٦ مرات متتالية، ولوحظ الوجه الظاهر عليها عند استقرارها على الأرض، أوجد احتمال الحوادث التالية :</p><p>١) ظهور صورتين بالضبط .
+٢) ظهور أربع صور على الأقل .
+٣) عدم ظهور الصورة .
+٤) ظهور صورة واحدة على الأقل .</p><h1><strong>الحل :</strong></h1><p>بما أن التجربة تنطوي على ثنائية إما ظهور صورة أو كتابة ، ومتكررة ست مرات بصورة مستقلة فهي تتبع التوزيع الثنائي ؛ وبما أن قطعة النقود متجانسة ، ونعد ظهور الصورة يمثل « نجاحاً » .</p><p>$‫\therefore \text{و} = ٦ \text{ ، } \text{ح} = ١‬$‫</p><p>١) نفرض أن : ١ هي حادثة ظهور صورتين بالضبط (أي س = ٢) وحيث المطلوب هو حا (س = ٢) = حا (١) (للتبسيط)</p><p>‬$‫\therefore \text{حا (١)} = ١ \text{ و} \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢‬$‫</p><p>٢) نفرض أن : ب هي حادثة ظهور أربع صور على الأقل وكلمة على الأقل تشير إلى أن التوزيع هنا متراكم أي س ≤ ٤ (أي س = ٤ أو ٥ أو ٦) ، وحيث المطلوب هو حا (س ≤ ٤) = حا (ب) .</p><p>‬$‫\therefore \text{حا (ب)} = ١ \text{ و} \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢‬$‫</p><p>‬$‫= ١ \text{ و} \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢ \times ٢‬$‫</p><p>‬$‫= \frac{١١}{٣٤} \times \frac{٥ \times ٦}{١ \times ٢} + ٦ + ١ = \frac{٢٢}{٦٤} = \frac{١١}{٣٢}‬$‫</p><p>٣) نفرض أن : ج هي حادثة عدم ظهور الصورة تكافئ الفشل في جميع الرميات = ف</p><p>‬$‫\therefore \text{حا (ج)} = ف = \frac{١}{٦٤} = \frac{١}{٦٤}‬$‫</p><p>٤) نفرض أن : و هي حادثة ظهور صورة واحدة على الأقل</p><p>‬$‫\therefore \text{حا (و)} = ١ - \text{حا (ج)}‬$‫</p><p>‬$‫\therefore \text{حا (و)} = ١ - ف = ١ - \frac{١}{٦٤} = \frac{٦٣}{٦٤}‬$</p><p>٩٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

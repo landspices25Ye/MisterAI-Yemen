@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>أ) يتم أكسدة الإيثانول بعامل مؤكسد إلى أسيتالدهيد، كما في المعادلة (٢) الموضحة أدناه.</p><p>ب) يتم أكسدة الأسيتالدهيد الناتج في المعادلة (٢) إلى حمض الأسيتيك، كما في المعادلة (٣) الموضحة أدناه.</p><p>ج) يتم أكسدة حمض الأسيتيك بشكل تام إلى ثاني أكسيد الكربون والماء، كما في المعادلة (٤) الموضحة أدناه.</p><p>2) $‫\text{CH}_3\text{CH}_2\text{OH} + \frac{1}{2}\text{O}_{2(g)} \longrightarrow \text{CH}_3\text{CHO} + \text{H}_2\text{O}_{(l)}, \Delta H = -175 \text{ KJ/mole}‬$</p><p>3) $‫\text{CH}_3\text{CHO} + \frac{1}{2}\text{O}_{2(g)} \longrightarrow \text{CH}_3\text{COOH}_{(l)}, \Delta H = -320 \text{ KJ/mole}‬$</p><p>4) $‫\text{CH}_3\text{COOH} + 2\text{O}_{2(g)} \longrightarrow 2\text{CO}_2 + 2\text{H}_2\text{O}_{(l)}, \Delta H = -872 \text{ KJ/mole}‬$</p><p>وبجمع المعادلات (٢، ٣، ٤) ينتج المعادلة العامة (٥) الآتية:</p><p>5) $‫\text{CH}_3\text{CH}_2\text{OH} + 3\text{O}_{2(g)} \longrightarrow 2\text{CO}_2 + 3\text{H}_2\text{O}_{(l)}, \Delta H = -1367 \text{ KJ/mole}‬$</p><p>وعند مقارنة التفاعل الذي تم في خطوة واحدة والموضح في المعادلة (١) وناتج جمع التفاعلات التي تمت في عدة خطوات والتي نتج عنها المعادلة (٥)، نلاحظ أن قيمة التغير في المحتوى الحراري هو مقدار ثابت ويساوي (-١٣٦٧ كيلو جول/مول). ومن ذلك نستنتج ما يأتي:</p><p>التغير في المحتوى الحراري لأي تفاعل كيميائي تحت ضغط ثابت يساوي كمية ثابتة سواء تم هذا التفاعل في خطوة واحدة أو في عدة خطوات.</p><p>والاستنتاج السابق هو ما توصل إليه العالم "هس" وقد سُمِّي هذا القانون بقانون هس (نسبة إليه).</p><p>وهذا القانون هو أحد نتائج قانون حفظ الطاقة، وذلك لأن التغير في المحتوى الحراري ($‫\Delta H‬$) لأي تفاعل يعتمد على الحالة الابتدائية والنهائية ولا يتأثر بالخطوات الوسيطة التي يسلكها التفاعل.</p><p>ويُعد قانون هس من القوانين المهمة في الكيمياء الحرارية، وذلك لأنه يمكننا التعامل مع المعادلات الكيميائية وكأنها معادلات جبرية يمكن جمعها وطرحها وضربها في معامل ثابت. ولذلك فإن هذا القانون يفيدنا في حساب حرارة التفاعلات الخطرة أو المعقدة التي لا يمكن قياسها بطرق تجريبية مباشرة.</p><p>٣٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

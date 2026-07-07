@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>• الصورة في البيت الأخير استعارة حيث شبه الحرية بقلعة لا يدق بابها ولا ينفتح إلا بدماء الفداء. وفي البيت أيضاً كناية عن سيلان الدم في اللفظ «مضرجة».</p><h2>أسئلة وتدريبات</h2><p>١ - متى بدأ شوقي الشعر؟
+٢ - لماذا نفي شوقي إلى الأندلس؟
+٣ - ما الذي جعل شوقي يتحول إلى شاعر الشعب؟
+٤ - وضح الصورة «يحملها إلى الآفاق برق».
+٥ - ماذا يقصد بـ: (معالم التاريخ) (دم الثوار)؟
+٦ - علل قوله: «دم الثوار نور».
+٧ - اشرح البيت السابع شرحاً أدبياً.
+٨ - لماذا بني الفعلان «يُسْقَوْا وَيُسْقَوْا» للمجهول والمعلوم على التوالي؟
+٩ - وضح أي اللفظين أكثر دلالة على المعنى «مضرجة، ملطخة»؟
+١٠ - اختر الإجابة الصحيحة من بين القوسين:
+• كانت تركيا في الحرب الأولى: (مع النازيين، مع الحلفاء، مستقلة، تقوم بالوساطة).
+• مبايعة شوقي بإمارة الشعر تعني: (الاعتراف بمكانته الشعرية، تعزيز تحوله نحو الشعب، التقدير لكبر سنه، صفاء العلاقة مع القصر).
+• تعرب كلمة «أنباء» في البيت الثاني: (حالاً، مفعولاً مطلقاً، مفعولاً به، تمييزاً).
+• جملة «إن ألنوا»: (مصدرية، خبرية، اعتراضية).</p><p>٤٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

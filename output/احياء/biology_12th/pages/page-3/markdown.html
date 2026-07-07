@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p><h1>تَصْدِيرٌ</h1><p>الحمد لله رب العالمين وصلى الله وسلم على سيدنا محمد وآله الطاهرين ورضي الله عن صحابته المنتجبين وعنا معهم برحمتك يا أرحم الراحمين</p><p>وبعد :</p><p>تحرص وزارة التربية والتعليم والبحث العلمي على تجويد وتطوير العملية التعليمية من خلال إرساء قواعد منظومة تعليمية متكاملة تلبي احتياجات البيئة اليمنية وتتناسب مع هويتها الإيمانية.</p><p>وبعد مراجعة النظام التعليمي وقياس مستوى أدائه، وتحديد أهم التحديات التي تواجهه، قامت وزارة التربية والتعليم والبحث العلمي بإعادة أولوياتها، وتنظيم جهودها لإحداث التطوير بما يتماشى مع توجهات الدولة ورؤيتها المستقبلية؛ حيث أصبحت تعنى بالمتعلم باعتباره محور العملية التعليمية التعلمية.</p><p>إن النقلة النوعية التي نشهدها حاليًا أحدثت الكثير من المتغيرات الجلوية، فجاءت الكتب الدراسية متسمة بالحداثة والمرونة، والتوافق في موضوعاتها مع مستويات أبنائنا الطلبة والطالبات، وخصائص نموهم العقلي والنفسي، وثقافتهم الاجتماعية، واهتمت بالجوانب المهارية والفنية؛ تحقيقًا لمبدأ أصيل من مبادئ فلسفة التربية وبناء الشخصية المتكاملة للفرد، وعززت دور المتعلم في عملية التعليم من خلال إكسابه مهارات التعلم الذاتي والتعلم التعاوني، ولم يعد الكتاب المدرسي إلا دليلًا يسترشد به الطالب للوصول إلى ما تختزنه مصادر المعلومات المختلفة، كالمراجع المكتبية، ومصادر التعلم الإلكترونية الأخرى وعلى الطالب القيام بعملية البحث والتقصي للوصول إلى ما هو أعمق وأشمل.</p><p>وستظل الوزارة بإذن الله في سعي مستمر لتطوير العملية التعليمية بما يحقق البناء المنشود ويواكب متطلبات التنمية.</p><p>والله ولي الهداية والتوفيق ؟؟؟</p><p>وزارة التربية والتعليم والبحث العلمي</p><p>٣</p><p>الأحياء الصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

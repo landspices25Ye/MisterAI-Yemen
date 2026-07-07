@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>٨ - اذكر نجاحات وإخفاقات نظرية بوهر .
+٩ - ارسم مخطط مستوى الطاقة لكل من سلاسل ليمان وبالمر وباشن وبراكيت لذرة الهيدروجين .
+١٠ - احسب طول موجة الضوء المنبعث من ذرة الهيدروجين عندما ينتقل الإلكترون من المستوى المناظر لـ $‫r = 4‬$ إلى المستوى النهائي الموافق لـ $‫r = 2‬$ ، علماً بأن ثابت ريدبيرج $‫R_H = 1.09677,6‬$‫ سم‬$‫^{-1}‬$ .
+١١ - احسب أقصر الأطوال الموجية وأطولها في سلسلة باشن مع العلم أن: $‫R_H = 1.09677,6‬$ سم$‫^{-1}‬$ .
+١٢ - إذا كان أطول الأمواج لسلسلة ليمان هو $‫1216 \times 10^{-8}‬$ سم$‫^{-1}‬$ . أوجد قيمة ثابت ريدبيرج $‫R_H‬$ .
+١٣ - إذا كان نصف قطر بوهر (نصف قطر المدار الأول للإلكترون) في ذرة الهيدروجين $‫R_H = 0.528 \times 10^{-8}‬$ سم$‫^{-1}‬$ ، وسرعته على هذا المدار $‫r = 2.2 \times 10^{-8}‬$ سم$‫^{-1}‬$ / ث ، وطاقته $‫R_H = 13,6‬$ (إف) ، احسب كلاً من: نصف قطره (نق) وسرعته ($‫r$) وطاقته (‬$R_H$‫) على المدار الخامس .
+١٤ - أثرت ذرة الهيدروجين بامتصاص شعاع ضوئي طاقته ‬$R_H = (12,75)$‫ إلكترون فولت ، وما لبثت أن أطلقته على شكل ضوء ذي أطوال موجية مختلفة، احسب ما يلي:
+- طاقة المستوى المثار (‬$R_H$‫) .
+- العدد الكمي الرئيسي الموافق لهذا المستوى (ن)
+- ارسم مخطط طاقة الأطوال الموجية لسلسلة بالمر المنبعثة نتيجة لهذه الإثارة . علماً بأن طاقة المستوى الأرضي (‬$R_H = 13,6$‫ (إف) و ‬$R_H = 1.09677,6$ سم$^{-1}$) .
+١٥ - ارسم المدارات الممكنة في نموذج بوهر - سمر فيدل من أجل ن = 4 .</p><p>١٤٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

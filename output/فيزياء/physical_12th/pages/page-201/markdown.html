@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>في هذه الوحدة سنحاول التعرف على مفهوم الكون ومكوناته وما يمكن مشاهدته فيه إما بالعين المجردة أو باستخدام التلسكوبات المتطورة (المناظير الفلكية)، كما سنتطرق إلى كيفية بدء أو نشوء الكون في ضوء النظريات التي تتحدث عن ذلك، كما سنتعرف على المجرات وهم تتكون وعلى المسافات بين المجرات، كما سنتوسع قليلاً في التحدث عن نشوء وتطور النجوم وأنواع النجوم والفرق بينها وماهية الثقوب السوداء. كما سنذكر المجرة التي تقع فيها الأرض، وكيف تمثل مجموعتنا الشمسية في هذه المجرة.</p><h3>الكون : The Universe</h3><p>يمكن أن نبدأ حديثنا عن الكون بالنشاط العقلي الآتي :</p><h3>نشاط (١)</h3><p>في ليلة صافية غير قمرية، وفي أي فصل من فصول السنة اخرج بعيداً عن أضواء المدينة إن كنت تعيش في مدينة، وإن كنت تعيش في الريف اصعد إلى سقف البيت وتطلع إلى السماء.</p><p>- ماذا تلاحظ في السماء ؟</p><p>- ماذا تشاهد في المساحات الكبيرة والهائلة في الفضاء ؟</p><p>- باستخدام خيالك ما الأشكال الهندسية أو الصور التي رأيتها ؟</p><p>- هل رأيت الدب الأكبر ؟ ربما رأيت التوأم ! هل رأيت النجم سهيل ؟</p><p>- هل رأيت شكلاً يمثل إمرأة مقيدة بالسلاسل ؟!</p><p>- ربما رأيت نجماً متلألئاً في اتجاه الشمال الجغرافي للأرض !</p><p>من المتوقع أنك تشاهد مساحات كبيرة وهائلة من الفضاء، وتبدو أن هذه المساحات مطرزة بنجوم متلألئة مضيئة، وستجد أن بعض النجوم تبدو وكأنها في أماكن ثابتة، والبعض الآخر قد تحرك قليلاً من مكانه بعد مرور وقت طويل من الليل، وستلاحظ أن أشكالاً هندسية بين النجوم قد تكونت لديك، أو أن صوراً لحيوانات قد رسمت في خيالك.</p><p>١٩٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

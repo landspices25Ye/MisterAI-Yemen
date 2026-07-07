@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><h2>المسافات بين النجوم: Distance to Stars</h2><img src="img-209.jpeg" alt="img-209.jpeg" /><p>شكل (٦)</p><p>إذا شاهدت السماء في ليلة صافية ستشاهد أشكالاً وصوراً هندسية مختلفة بين النجوم وسيبدو لك أن النجوم تبعد مسافات متساوية من الأرض، إلا أن ذلك ليس صحيحاً، فالفلكيون أثبتوا أن النجوم ليست ذات أبعاد (مسافات) متساوية من الأرض. انظر إلى الشكل (٦) الذي يمثل كوكبة ذات الكرسي التي تتكون من مجموعة من النجوم حيث تبدو للنظر أنها على مسافات متساوية من الأرض، إلا أنها في الحقيقة ليست على أبعاد متساوية بل تبعد ملايين الكيلومترات عن بعضها. وسبحان الله العظيم القائل:</p><p>﴿فَلَا أُقْسِمُ بِمَوَاقِعِ النُّجُومِ ۝٧٥ وَإِنَّهُ لَقَسَمٌ لَّوَتَعْلَمُونَ عَظِيمٌ﴾</p><p>سورة (الواقعة آية ٧٥)</p><h3>قياس المسافات بين النجوم :</h3><p>لقياس المسافات بين النجوم والكواكب يلزم استخدام وحدات خاصة لهذا الغرض، لأن استخدام وحدة الكيلومتر غير مناسب نتيجة لصغرها. وتسمى هذه الوحدة بالوحدة الفلكية وهي تعادل المسافة بين مركز الأرض والشمس وتساوي ١٥٠ مليون كيلومتر، وبالتالي فإن الأرض تبعد عن الشمس بمقدار وحدة فلكية واحدة. وحيث أن المسافات بين النجوم من الصعب معرفتها باستخدام الوحدة الفلكية أيضاً، فقد استخدمت وحدة أخرى تسمى بوحدة السنة الضوئية التي تقاس بها المسافات بين النجوم، وذلك نسبة إلى سرعة الضوء التي تبلغ (٣٠٠,٠٠٠) كم/ث، إذ يقطع الضوء مسافة ١٠×٣ كم في ثانية واحدة، وبذلك فإن السنة الضوئية عبارة عن ٩,٤٦٠,٨٠٠,٠٠٠,٠٠٠ كم.</p><p>٢٠٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

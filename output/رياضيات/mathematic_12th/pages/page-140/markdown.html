@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-114.jpeg" alt="img-114.jpeg" /><p>الوحدة الخامسة</p><h1><strong>مبرهنة (٥ - ٤)</strong></h1><p>المستوى العمودي على أحد مستقيمين متوازيين عمودي على الآخر .</p><p>المعطيات : ل / ل ، ل / ل [ شكل (٥ - ٧) ]</p><p>المطلوب : إثبات أن ل / ل .</p><p>البرهان : نرسم في المستوى  $‫\leq‬$  مستقيمين غير</p><p>متوازيين ق ، ق .</p><p>ل / ل .</p><p>ل / ق ، ل / ق .</p><p>ل / ل (معطي)</p><p>ل / ق ، ل / ق .</p><p>ل / ل (وهو المطلوب) .</p><img src="img-115.jpeg" alt="img-115.jpeg" /><p>شكل (٥ - ٧)</p><h1><strong>نتائج :</strong></h1><p>(٢) من نقطة ب لا يمكن رسم سوى مستوى واحد عمودي على مستقيم مفروض ل .</p><p>(٣) إذا كان ل مستقيماً عمودياً على  $‫\leq‬$  ، ب  $‫\leq‬$  ، فإن جميع المستقيمات المارة</p><p>بالنقطة ب وعمودية على ل تقع في  $‫\leq‬$  .</p><p>(٤) جميع المستقيمات المرسومة من نقطة واحدة وعمودية على مستقيم ل تقع في مستوى</p><p>واحد عمودي على المستقيم ل .</p><p>(٥) من نقطة ب لا يمكن رسم سوى مستقيم واحد عمودي على المستوى  $‫\leq‬$  (نقطة ب قد تنتمي</p><p>للمستوى  $‫\leq‬$  وقد تقع خارجه) .</p><h1><strong>مبرهنة (٥ - ٥)</strong></h1><p>المستقيمان العموديان على مستوى واحد متوازيان .</p><p>المعطيات : ل / ل ، ل / ل [ شكل (٥ - ٨) ]</p><p>المطلوب : إثبات أن ل / ل .</p><p>البرهان : نفرض ل / ل .</p><p>١٣٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

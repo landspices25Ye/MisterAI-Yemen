@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>بذار السنين</h1><h2>ميخائيل نعيمة</h2><h3>التعريف بالكاتب</h3><p>ولد ميخائيل نعيمة سنة ١٨٨٩م، في بلدة « بسكنتا » بجبل لبنان. وفي الثامنة عشرة من عمره سافر إلى مدينة الناصرة بفلسطين، والتحق بمدرسة المعلمين الروسية، ثم بعثته المدرسة إلى روسيا لتحصيل العلم، وهناك قضى خمس سنوات، ثم توجه عام ١٩١١م، إلى الولايات المتحدة الأمريكية، ودرس الحقوق والآداب. وفي أمريكا أسس مع جبران « الرابطة القلمية » سنة ١٩٢٠م، ثم عاد إلى لبنان سنة ١٩٣٢م.</p><p>وميخائيل نعيمة شاعر وأديب مجدد، وكاتب مشهور، له مؤلفات عديدة تشمل المقالة والقصة والمخاطرة. من مؤلفاته: النور والديجور، الآباء والبنون، زاد المعاد، همس الجفون، البيادر، نجوى الغروب. وله كتابان شهيران في النقد هما « الغربال » و « الغربال الجديد ».</p><p>ومن كتاب « النور والديجور » أخذنا النص الآتي:</p><h3>النص</h3><p>علمتني الأعوام ألا أبكي عهداً مضى، ولا أضحك لعهد يأتي. وأن لا أعد خطواتي على رمال الزمان، فلا أندم على صبا تحجب وشباب تصرم، ولا أجزع من كهولة تفضي إلى شيخوخة وشيخوخة تنتهي إلى رمس، ورمس إذ اتسع لرفاتي لن يتسع لكل ما فكرت واشتهيت وقلت وعملت. والذي فكرته واشتهيته وقلته وعملته هو بذاري أودعته ذمة الزمان، وأنا حري بأن أستغله قبل أن يستغله سواي، وللزمان ذمة لا تخون.</p><p>وعلمتني الأعوام أن الحياة زرع دائم وحصاد دائم، وأن من يزرع القطرب لا يحصد القمح، ومن يغرس العوسج لا يجني العنب. أما الزمان فلا يزرع ولا يغرس، ولا يحصد ولا يجني، ولا هو يحمل البذار والغرس، ولكنه شاهد لا أكثر.</p><p>وأما البذار فمنا وفينا، وكذلك الغرس منا وفينا، وأما الزارعون والغارسون، والحاصدون</p><p>١١٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

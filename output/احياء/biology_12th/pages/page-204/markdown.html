@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>- الساعات النووية:</h1><p>يطلق على العناصر المشعة التي تستعمل لقياس أعمار الصخور اسم الساعات النووية، وقد أمكن استخدامها في تحديد العمر المطلق للصخور بجميع أنواعها بشكل دقيق للغاية، وذلك في حالة تحقيق شرطين هامين هما:</p><p>١- أن يتم الانحلال بمعدل ثابت.
+٢- أن لا تفقد ولا تكسب العناصر ذات النشاط الإشعاعي نواتج الانحلال الأخرى، ويمكن قياس زمن معدن للتعرف على عمره بإجراء الآتي:
+١- تحليل كيميائي لعينة من المعدن لتعيين كمية كل من النظير المشع والعنصر الناتج من الانحلال، مثل تعيين كميتي اليورانيوم والرصاص.
+٢- تعيين الكمية النسبية لكل من النظائر الثابتة، إذا كان هناك أكثر من نظير واحد.
+ويبين الجدول (١) عمر النصف لبعض النظائر المشعة التي يعتمد عليها في تحديد العمر المطلق للصخور وبعض المواد الجيولوجية.</p><p>جدول (١) النظائر المشعة لبعض العناصر المستخدمة في تاريخ الصخور</p><p>|  العنصر المشع الأصلي | العنصر الثابت الناتج من الانحلال الإشعاعي | عمر النصف  |
+| --- | --- | --- |
+|  اليورانيوم 93 U 239 | رصاص 206 82 Pb 207 | ٤٤٦٧ مليون سنة  |
+|  اليورانيوم 92 U 40 | رصاص 82 Pb 207 | ٧٠٤ مليون سنة  |
+|  البوتاسيوم 49 K 19 | أرجون 40 Ar 18 | ١١٩٣ مليون سنة  |
+|  الروبيديوم 87 Rb 37 | سترونشيوم 87 Sr 38 | ٤٨٨٠٠ مليون سنة  |
+|  الكربون 14 C 6 | نتروجين 14 N 7 | ٥٧٣٠ سنة  |</p><h1>مثال محلول:</h1><p>عند فحص عينة صخرية وجد أن كمية اليورانيوم ٢٣٥ تعادل ٣,١٢٥ جم، وكمية الرصاص ٢٠٧ تعادل ٩٦,٨٧٥ جم، مع العلم بأن نصف العمر لليورانيوم ٢٣٥ يساوي ٧٠٤ مليون سنة، احسب كم عمر الصخر؟</p><p>٢٠٤</p><p>الأحياء النصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

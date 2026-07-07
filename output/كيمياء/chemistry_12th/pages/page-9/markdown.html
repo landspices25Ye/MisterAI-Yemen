@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>المحتويات</h1><p>الصفحة</p><p>الموضوع</p><p>١١ الوحدة الأولى : العناصر الانتقالية</p><p>١٢ موقع العناصر في الجدول</p><p>١٢ الخواص العامة</p><p>١٤ التركيب الإلكتروني وحالات التاكسد</p><p>١٦ الحديد</p><p>٢١ تقويم الوحدة</p><p>٢٢ الوحدة الثانية : الطاقة الحرارية المصاحبة لتغيرات المادة</p><p>٢٣ صور الطاقة وتحولاتها</p><p>٢٦ السعة الحرارية والحرارة النوعية</p><p>٢٧ التفاعلات الكيميائية وحرارة التفاعل</p><p>٣١ أنواع التغيرات الحرارية</p><p>٣٥ حرارة التكوين القياسية</p><p>٣٥ علاقة حرارة التكوين القياسية بثبات المركب</p><p>٣٦ حساب حرارة التفاعل</p><p>٤٠ تقويم الوحدة</p><p>٤٢ الوحدة الثالثة : الطاقة الكهربائية وتفاعلات الأكسدة والاختزال</p><p>٤٣ الأكسدة والاختزال</p><p>٤٦ تفاعلات الأكسدة والاختزال</p><p>٤٧ الخلايا الكهروكيميائية</p><p>٤٨ الخلايا الجلفانية</p><p>٥٣ مزايا السلسلة الكهروكيميائية</p><p>٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

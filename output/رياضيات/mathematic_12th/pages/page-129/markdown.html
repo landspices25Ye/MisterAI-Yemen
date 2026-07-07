@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>القطع الخروطية</p><p>مثال (٤ - ٢٠)</p><p>أثبت أن المعادلة $‫4\text{ س}^2 + 9\text{ س}^2 + 8\text{ س} + 36\text{ س} + 4 = 0‬$ تمثل قطعاً ناقصاً، ثم أوجد:</p><p>أ) تخالفه المركزي ب) إحداثي رأسيه</p><p>ج) إحداثي بؤرته د) معادلتي دليليه</p><p>الحل:</p><p>$‫4\text{ س}^2 + 9\text{ س}^2 + 8\text{ س} + 36\text{ س} + 4 = 0‬$ ، بإكمال المربع لكل من س، ص نجد أن:</p><p>$‫4(\text{ س}^2 + 2\text{ س} + 1) + 9(\text{ ص}^2 + 4\text{ ص} + 4) = 4 - 4 + 36‬$</p><p>∴ $‫4(\text{ س} + 1)^2 + 9(\text{ ص} + 2)^2 = 36‬$ ، بقسمة طرفي المعادلة على ٣٦ نحصل على:</p><p>$‫\frac{(\text{ س} + 1)^2}{9} + \frac{(\text{ ص} + 2)^2}{4} = 1‬$‫ ، بوضع س = س + 1 ، ص = ص + 2 [معادلتا الانسحاب]</p><p>‬$‫\text{نحصل على المعادلة القياسية } \frac{\text{ س}^2}{9} + \frac{\text{ ص}^2}{4} = 1‬$‫</p><p>وهي معادلة قطع ناقص، حيث ٣ = ١ ، ب = ٢</p><p>∴ ج = ‬$\sqrt{3} - \sqrt{9} = \sqrt{9 - 4} = 5$‫ ، وعليه فإن:</p><p>أ) تخالفه المركزي (ى) = ‬$\frac{\text{ ج}}{3} = \frac{\text{ ج}}{3}$‫ .</p><p>ب) إحداثيات رأس القطع (س = ١ ± ١ ، ص = ٠) أي أن (س = ٣ ± ١ ، ص = ٠) .</p><p>ولكن س = س + ١ ← ٣ ± ١ س + ١ ← ٢ ± ١ س = ٤ - ١ ،</p><p>ص = ص + ٢ ← ٢ + ص = ٠ ← ٢ + ص = ٢ - ١</p><p>∴ رأس القطع هما (٢ - ٢) ، (٤ - ٢) .</p><p>ج) إحداثيات بؤرتي القطع (س = ١ ± ١ ، ص = ٠) . أي (س = ٥ ± ١ ، ص = ٠) .</p><p>‬$‫\text{ولكن } \text{ س} = 5 \pm 1 \text{ س} \Leftarrow \text{ س} = 1 - 5 \pm 1‬$‫</p><p>‬$‫\text{بؤرتا القطع هما } (1 - 5 \pm 1) \text{ ، } (2 - 1) \text{ ، } (3 - 1) \text{ ، } (4 - 1)‬$‫</p><p>د) معادلتا الدليلين س = ١ ± ١ = ‬$\frac{9}{5} \pm$‫</p><p>‬$‫\text{ س} = 1 + \text{ س} \Leftarrow \frac{9}{5} \pm \text{ س} + 1‬$‫</p><p>∴ الدليلان هما المستقيمان س = ١ - ٩ = ‬$\frac{9}{5} \pm$</p><p>١٢٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

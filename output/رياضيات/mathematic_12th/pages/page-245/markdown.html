@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التكامل</p><p>وهنا نستخدم طريقة التكامل بالتجزئة .</p><p>$‫\text{نضع ف} = \text{ع} \quad \Leftarrow \quad \text{وف} = \text{وع} \\ \text{وف} = \text{هـ} \quad \Leftarrow \quad \text{ف} = \text{هـ} \quad \text{ع} \quad \text{ع}‬$‫</p><p>‬$‫\therefore \text{ل} = \frac{1}{3} \text{ع} \quad \text{هـ} - \frac{1}{3} \text{هـ} \quad \text{ع} \quad \text{ع}‬$‫</p><p>‬$‫= \frac{1}{3} \text{ع} \quad \text{هـ} - \frac{1}{3} \text{هـ} + \text{ث}‬$‫</p><p>وبالتعويض عن ع = س³ نجد أن :</p><p>‬$‫\text{س} \text{هـ} \text{وس} = \frac{1}{3} \text{س} \text{هـ} - \frac{1}{3} \text{هـ} + \text{ث}‬$‫</p><p>‬$‫\therefore \text{س} \text{هـ} \text{وس} = \frac{1}{3} \text{هـ} (\text{س} - 1) + \text{ث}‬$</p><h2>تمارين ومسائل (٧ - ٤)</h2><p>احسب التكاملات الآتية :</p><p>|  [١] | س² جاس وس | [٢] | س² جاس جثاس وس  |
+| --- | --- | --- | --- |
+|  [٣] | س جثا² وس وس | [٤] | س (٤ + ٤) جثا² وس وس  |
+|  [٥] | س (٦ + ١) جثا² وس وس | [٦] | لوس وس  |
+|  [٧] | س (٢ - ١) جاس وس | [٨] | جثا² وس وس «بالتجزئة»  |
+|  [٩] | هـ جثاس وس | [١٠] | س² جثاس وس  |
+|  [١١] | س (٢ + س) هـ وس | [١٢] | س² جاس² وس  |
+|  [١٣] | جثا² وس | [١٤] | لوس² وس  |
+|  [١٥] | س قثا² وس | [١٦] | س² هـ وس  |
+|  [١٧] | س² لو² وس | [١٨] | س قثا² وس  |</p><p>٢٤٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

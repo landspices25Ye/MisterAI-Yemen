@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-66.jpeg" alt="img-66.jpeg" /><p>يوجد النيتروجين في كثير من المركبات العضوية، والمركبات ذات العلاقة بالعمليات الحيوية في الكائنات الحية. وفي هذه المركبات يتحد النيتروجين مع بعض العناصر الأخرى مكوناً مجموعات فاعلة، فمثلاً يتحد مع الكربون مكوناً مجموعة السيانيد (CN)، ومع الأكسجين مكوناً مجموعة النيترو (NO₂)، كما يتحد مع الهيدروجين مكوناً مجموعة الأمينو (NH₂).</p><p>وتتكون أصناف لا حصر لها من المركبات العضوية المحتوية على النيتروجين باتحاد هذه المجموعات (CN, NO₂, NH₂) مع الهيدروكربونات الأليفاتية والأروماتية.</p><p>وستتعرض هنا لدراسة بعض هذه المركبات، وهي:</p><p>١ - الأمينات.
+٢ - الأميدات.
+٣ - النيتريلات والحموض الأمينية.</p><h2>أولاً: الأمينات: Amines</h2><p>الأمينات هي مجموعة من المركبات العضوية التي تحتوي على الكربون والهيدروجين والنيتروجين فقط، وهي بذلك تُعد مشتقات للأمونيا؛ حيث تستبدل ذرة هيدروجين أو ذرتين أو ثلاث في جزيء الأمونيا بمجموعة الكيل أو أريل وبعد ذلك نحصل على أصناف الأمينات الثلاثة. (R هي مجموعة الكيل أو أريل).</p><img src="img-67.jpeg" alt="img-67.jpeg" /><p>أمين ثالثي (3)
+Tertiary Amine</p><img src="img-68.jpeg" alt="img-68.jpeg" /><p>أمين ثانوي (2)
+Secondary Amine</p><img src="img-69.jpeg" alt="img-69.jpeg" /><p>أمين أولى (1)
+Primary Amine</p><img src="img-70.jpeg" alt="img-70.jpeg" /><p>أمونيا (نشادر)</p><h2>التسمية: Nomenclature</h2><p>تُسمى الأمينات إما بأن نذكر أسماء المجموعات المتصلة بذرة النيتروجين متبوعة بكلمة «أمين»، أو بأن نعتبر ذرة النيتروجين وما تحمله مجموعة بديلة على المركب ويمكن اعتبارها الطريقة الأعم لأنها الوحيدة التي تصلح لتسمية مركب لا نجد لإحدى مجموعاته تبسيطاً، ومن أمثلة ذلك ما يأتي:</p><p>٩٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

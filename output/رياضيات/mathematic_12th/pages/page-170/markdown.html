@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-148.jpeg" alt="img-148.jpeg" /><p>الوحدة السادسة</p><p>كما يمكن حل المثال السابق وغيره من الأمثلة لمشتقات الدوال الضمنية باستخدام القاعدة التالية :</p><p>$‫\frac{ص}{س} = \frac{س - (مشتقة المعادلة على أساس أن ص ثابت)}{مشتقة المعادلة على أساس أن س ثابت}‬$‫</p><p>بشرط أن نضع كل الحدود في طرف واحد من المعادلة بالصورة س ص ٢ - ص ٤ - س - ٤ = ٠.</p><p>‬$‫\therefore \frac{ص ٢ - ص ١}{ص ٢ - ص ١} = \frac{ص ٢ - (ص ١ - ٢)}{ص ٢ - ص ١} = \frac{ص ٢ - ص ١}{ص ٢ - ص ١} \text{ وهي نفس النتيجة السابقة .}‬$‫</p><h1><strong>ملاحظة :</strong></h1><p>تعلم من دراستك السابقة أن معادلتي المماس والناظم (العمودي عليه ) لمنحنى الدالة د عند نقطة معينة
+ولتكن (t ، د(t) ) هما :
+معادلة المماس :</p><p>‬$‫ص - د(t) = د(t) (س - t)‬$‫</p><p>حيث د(t) هو ميل المماس عند س = t .
+ومعادلة الناظم :</p><p>‬$‫ص - د(t) = - \frac{1}{د(t)} (س - t) .‬$‫</p><h1><strong>مثال (٦ - ١٥)</strong></h1><p>إذا كانت الدالة ٤ س ص = ٢٥ ، وكان ميل المماس لمنحنى الدالة هو (١- ) أوجد قيم س التي تحقق ذلك .</p><h1><strong>الحل :</strong></h1><p>‬$‫\begin{aligned} \therefore \text{ص} &= \frac{٢٥}{٤} \text{ س} \\ &= \frac{٢٥ \times ٤}{١٦} = \frac{٢٥ \times ٤}{١٦} \\ &= \frac{٢٥}{٤} \text{ س} \\ &\therefore \frac{٢٥}{٤} = \text{ص} \\ &= ١ - \frac{٢٥}{٤} \\ &= ٢ \text{ س} \\ &= ٢٥ = ٤ \text{ س} \\ &= ٢ \text{ س} \\ &= \pm \frac{٥}{٢} \end{aligned}‬$</p><h1><strong>تدريب (٦ - ٢)</strong></h1><p>أوجد معادلة الناظم لمنحنى الدالة : ص ٢ - ص ٤ - ص ١ = ١ ، عند النقطة (٢- ، ١) .</p><p>١٦٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

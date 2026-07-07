@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-37.jpeg" alt="img-37.jpeg" /><p>الوحدة الأولى</p><p>$‫\therefore \text{ع}_1 = \frac{5 + 7 \text{ت} + (1 + 1 \text{ت})}{2} = \frac{8 + 6 \text{ت}}{2} = 3 + 4 \text{ت}‬$‫</p><p>‬$‫\text{ع}_2 = \frac{5 + 7 \text{ت} - (1 + 1 \text{ت})}{2} = \frac{6 + 4 \text{ت}}{2} = 2 + 3 \text{ت} .‬$‫</p><h1><strong>مثال (١ - ٢٩)</strong></h1><p>حل المعادلتين التاليتين :</p><p>أ) ع³ - ٢٧ ت = ٠ . ب) ع² + ٢ ع̄ + ١ = ٠ .</p><h1><strong>الحل :</strong></h1><p>أ) تكتب المعادلة ع³ - ٢٧ ت = ٠ . بالصورة ع³ + ٢٧ ت³ = ٠ . [ بالتحليل ] .</p><p>‬$‫\Leftarrow (\text{ع} + 3 \text{ت}) (\text{ع}^2 - 3 \text{ع} + 9 \text{ت}^2) = ٠‬$‫</p><p>‬$‫\text{أما ع} + 3 \text{ت} = ٠ \Leftarrow \text{ع} = -3 \text{ت} .‬$‫</p><p>أو ع² - ٣ ع² + ٩ ع² = ٠ . وهذه معادلة من الدرجة الثانية يمكن حلها كما سبق في المثال</p><p>السابق وينتج أن جذريها ‬$‫\frac{3\sqrt{3} + 3\sqrt{3}}{2} = \frac{3\sqrt{3} + 3\sqrt{3}}{2}‬$‫ .</p><p>ب) ع² + ٢ ع̄ + ١ = ٠ .</p><p>بوضع ع = س + ت ص ⇐ ع̄ = س - ت ص في المعادلة السابقة ينتج أن :</p><p>‬$‫(س + ت ص)^2 + 2 (س - ت ص) + 1 = ٠‬$‫</p><p>‬$‫س^2 + 2 س ص + ت^2 ص^2 + 2 س - 2 ت ص + 1 = ٠ \text{ [تعريف تساوي عددين مركبين]}‬$‫</p><p>‬$‫س^2 - ص^2 + 2 س + 1 = ٠ \quad (١) \dots\dots\dots‬$‫</p><p>‬$‫2 س ص - 2 ص = ٠ \quad (٢) \dots\dots\dots‬$‫</p><p>‬$‫\text{من (٢) ينتج أن : } 2 ص (س - 1) = ٠ \Leftarrow 2 ص = ٠ \text{ أو } س - 1 = ٠‬$‫</p><p>‬$‫\Leftarrow ص = ٠ \text{ أو } س = 1 .‬$‫</p><p>أولاً : عندما ص = ٠ .</p><p>‬$‫\text{من (١) ينتج أن : } س^2 - 0 + 2 س + 1 = ٠ \Leftarrow (س + 1)^2 = ٠ \Leftarrow س = -1 .‬$‫</p><p>‬$‫\therefore \text{ع} = س + ت ص = -1 + (0) ت = -1‬$‫</p><p>ثانياً : عندما س = ١</p><p>‬$‫\text{من (١) ينتج أن : } 1 - ص^2 + 2 + 1 = ٠ \Leftarrow 4 - ص^2 = ٠ \Leftarrow ص = 2 \pm 1‬$‫</p><p>‬$‫\therefore \text{ع} = س + ص ت = 1 \pm 2 \text{ت} , \text{مجموعة الحل} = \{ -1, 1 \pm 2 \text{ت} \} .‬$</p><p>٤٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

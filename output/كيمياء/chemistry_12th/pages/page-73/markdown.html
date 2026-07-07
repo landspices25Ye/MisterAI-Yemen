@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>اكتشاف النظائر</h2><p>وجد العلماء أن التشابه في الخواص الكيميائية لذرات العنصر الواحد يدلّ على أن هذه الذرات تحمل الشحنة نفسها؛ بمعنى أنها تملك عدداً ذرياً واحداً.</p><p>ولكن هل ذرات العنصر الواحد متساوية الكتلة؟</p><p>حاول العلماء البحث عن إجابة لهذا التساؤل، وقد استندوا على الفرضية التي تقول بأن الذرة غير قابلة للانقسام، وهذا يستدعي بأن تكون الكتل الذرية لجميع العناصر عبارة عن أعداد صحيحة. ولكن عند قياس الكتل الذرية لبعض العناصر بطرق دقيقة لوحظ أنها عبارة عن قيم كسرية، فمثلاً الكتلة الذرية للأكسجين (١٥,٩٩٩٤)، والبورون (١٠,٨١١).</p><p>وقد حاول العلماء إيجاد تفسير منطقي لوجود الكسور في الأعداد الكتلية للعنصر الواحد، وقادهم ذلك إلى الافتراض أن ذرات العنصر الواحد قد لا تكون متساوية في الكتلة.</p><img src="img-52.jpeg" alt="img-52.jpeg" /><p>شكل (٤-١) مطياف الكتلة</p><p>ولذلك بدأ التفكير بإيجاد طريقة لفصل الذرات على أساس اختلاف كتلتها، وقد تمكّن آستون As-ton عام ١٩١٩م من بناء أول جهاز لفصل الذرات، وسُمّي بمطياف الكتلة</p><p>(Mass Spectrometer)، وتمّ تطويره وتزويده بأجهزة أكثر حساسية على يد العالم «بين بردج Bain Bridge» عام ١٩٢٣م، كما يوضّحه الشكل (٤-١). وباستخدام هذا الجهاز وأجهزة أخرى، تمكّن العلماء من التعرّف على عدد نظائر العنصر الواحد، وكذلك إيجاد كتلة كل نظير، ومن ثمّ الوصول إلى تفسير سبب وجود الكسور في الكتل الذرية للعناصر.</p><p>٧١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

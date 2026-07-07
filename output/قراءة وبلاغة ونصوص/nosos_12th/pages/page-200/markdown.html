@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-74.jpeg" alt="img-74.jpeg" /><p>وصف بعض النقاد القدماء المتنبي بأنه شاعر يتفلسف، ومن خلال الأبيات السابقة نلمح فلسفته تلك، ولكن فلسفة المتنبي تختلف عن الفلسفة التي نجدها في كتب الفلسفة، وتختلف عن تلك الأبيات المنظومة التي تحتوي على نظرات صائبة في الحياة والناس ولكنها تخلو من العاطفة. بعكس الأبيات السابقة التي نحس فيها بطراوة العاطفة وقوة التأثير، فالشاعر بدأ يهيئ وجدانا لاستقبال أفكاره فقال: لقد عاش قبلنا خلق كثير، وكان يعينهم ما يعيننا ويهمهم ما يهمنا ثم رحلوا غير راضين عن الزمان وإن جاءت لحظات شعروا فيها بالسرور. والدهر يدهم الإنسان بمصائبه ولكن الإنسان يأبى إلا أن يعينه فيزيد مصائبه بنفسه، لكن الرجل الحق هو من يصبر على الموت ولا يصبر على الذل والهوان.</p><h3>الوجدان في التجربة الشعرية</h3><h3>ثانياً</h3><p>الوجدان هو الشعور النفسي الذي يتكون عند الإنسان من مجموعة التجارب التي يمر بها، وينفعل بها الشاعر فيؤثر في المتلقي.</p><p>والمقطع الآتي للسياب من قصيدته (رسالة من مقبرة) التي أهداها إلى المجاهدين الجزائريين إبان كفاحهم الذي بدأ في نوفمبر ١٩٥٤م للخلاص من المستعمر:</p><p>يقول السياب:</p><p>من قاع قبري أصيح</p><p>حتى تئن القبور</p><p>من رجع صوتي وهو رمل وريح</p><p>من عالم في حفرتي يستريح</p><p>مر كومة في جانبيه القصور</p><p>وفيه ما في سواه</p><p>إلا دبيب الحياة</p><p>حتى الأغاني فيه، حتى الزهور</p><p>والشمس إلا أنها لا تدور</p><p>والدود نخار بها في ضريح</p><p>من عالم في قاع قبري أصيح</p><p>لا تيأسوا من مولد أو نشور</p><p>١٩٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

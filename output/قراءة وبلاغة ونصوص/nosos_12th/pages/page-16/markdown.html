@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="e-learning" alt="LOGO" /><h1>في رثاء بغداد</h1><p>شمس الدين الكوفي</p><h2>التعريف بالشاعر</h2><p>شمس الدين محمود الكوفي، عالم فقيه، من شعراء عصر المماليك توفي سنة ٦٧٦هـ على وجه التقريب.</p><p>له شعر رقيق يميل إلى الحنين والاتعاظ. من ذلك قوله:</p><p>حمامة الدوح في الأغصان نائحةً كما تنوح فنحكيها وتحكينا
+تشجو وتندب من شوقٍ لمن فقدت ومن فقدنا فنشجيها وتشجينا
+وعندما اجتاح التتار بغداد سنة ٦٥٦هـ - الموافق ١٢٥٨م دمروها، وهدموا كثيراً من معالمها الحضارية، وأحرقوا خزائن الكتب فيها، وأفنوا تراثها الأدبي والعلمي، فكان للشعراء دور مهم في التعبير عن ألم المأساة، والحدث الذي نزل ببغداد، وبالخلافة العباسية. وفي هذا الصدد نرى الكوفي باكياً في أكثر من قصيدة خص بها بغداد. وذكر مآثر أهلها. تلك المراثي التي مثلت حس العالم والفقيه الذي يرقب دمار بلده ولا يستطيع أن يعمل لها شيئاً.</p><p>ومن نونيته في رثاء بغداد - وهي من بحر الكامل - اخترنا الأبيات الآتية:</p><h2>النص</h2><p>١- إن لم تُقَرِّحْ أدمُعي أجفاني من بعد هجركم فما أجفاني!
+٢- إنسانٌ عيني مُدَّ تناءت داركم ما راقه نظر إلى إنسان
+٣- يا ليتني قد مُتُّ قبل فراقكم ولساعة التوديع لا أحياني
+٤- مالي ولأيامٍ شَتَّتْ خطبُها شَملي وخلاني بلا خلان
+٥- ما للمنازل أصبحت لا أهلها أهلي ولا جيرانها جيران
+٦- وحياتكم ما حلَّها من بعدكم غيرُ البلى والهدم والنيران
+٧- ولقد قصدت الدار بعد رحيلكم ووقفت فيها وقفة الحيران</p><p>١٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

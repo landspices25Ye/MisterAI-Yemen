@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>ب - المقالة الموضوعية: يتوارى فيها الجانب الذاتي فيما يتضح الجانب الموضوعي، فالكتاب يحاول إخفاء أفكاره الذاتية وعواطفه، لأن هدفه نقل الحقائق كما هي وتحليلها وشرحها، وحشد الأدلة ومناقشتها، والإلمام الكامل بكل جزئيات الموضوع. على أن المقال الموضوعي لا يخلو خلواً تاماً من التأثير الوجداني، وإلا لأصبح علماً صرفاً، وهذا ما لا يجعله مقبولاً لدى القارئ.</p><p>وتتناول المقالة الموضوعية فكرة من الأفكار العامة أو حقيقة من الحقائق العلمية، أو دعوة إلى قضية من القضايا العامة، أو مناقشة مشكلة من مشكلات الحياة والمجتمع. والمقالة تتنوع بتنوع موضوعاتها. فهناك المقالة الفلسفية، والأدبية ومنها النقدية، والاقتصادية والسياسية والعلمية بجوانبها المتعددة، كالتاريخ والجغرافيا والكيمياء والفيزياء، والتربية وقوانين التعليم .. إلخ.</p><p>وليست هناك حدود فاصلة للتفريق بين نوعي المقالة، فرما اجتمع النوعان في مقالة واحدة، ومع ذلك فإن المقالة توصف بالجانب الغالب فيها.</p><h3>السمات الفنية العامة للمقالة:</h3><p>تتجسد في المقال بمختلف أنواعه الخصائص الفنية الآتية:</p><p>1- ترابط الأفكار وانسجامها مع إحكام الترتيب والتنسيق والتناول.
+2- الإقناع: عن طريق سلامة الفكر ودقته ووضوحه.
+3- الإمتاع: بالعرض الشائق الجذاب.
+4- القصر: بحيث لا يتجاوز بضع صفحات.
+5- تنوع الأسلوب: حتى لا يشعر القارئ بالملل.
+6- بروز شخصية الكاتب ورأيه في تصوير المواقف والتجارب.</p><h3>السمات الأسلوبية المشتركة في المقالة:</h3><p>1- وضوح الأسلوب: وذلك بأن يتجنب الكاتب غريب الألفاظ ويترفع عن الألفاظ العامة، ويبتعد عن الكنايات البعيدة والمجازات الغامضة التي تؤدي إلى غموض المعاني وإدخالها في مجال الإلغاز.
+2- صحة الأسلوب: بخلوه من الأخطاء النحوية، أو تنافر الحروف، وقلق العبارات والتطويل في الجمل.
+3- جمال الأسلوب: باختيار اللفظ الملائم للمعنى والصور الجميلة الواضحة.</p><p>٢٢٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

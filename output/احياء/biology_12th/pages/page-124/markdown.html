@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>• توصل إلى احتمالات ظهور عمى الألوان لدى الأبناء
+لأب مصاب وأم تحمل المرض.</p><p>النشاط (١١)</p><p>ثالثاً: توارث الصفات المتأثرة بالجنس:</p><p>وهي الصفات التي تحمل جيناتها
+على الكروموسومات الجسدية ولكن
+ظهور الصفة أو عدم ظهورها يعتمد
+على الهرمونات الجنسية. ومن أمثلة هذه
+الصفات وجود أو عدم وجود القرون
+لدى الأغنام، كما تعتبر صفة الصلع في
+الإنسان من الصفات المتأثرة بالجنس؛
+حيث يظهر الصلع الوراثي في الإنسان
+بتأثير زوج من الجينات المحمولة على
+الكروموسومات الجسدية، كما في
+الشكل (١٨)، ويرمز إلى صفة الصلع
+بالرمز (b) ولوجود الشعر بالرمز (b+)
+وتعمل الهرمونات الجنسية الذكورية
+على إعطاء السيادة للجنين (b) على
+الجنين (b+) في الذكور الذين يكون</p><img src="img-93.jpeg" alt="img-93.jpeg" /><p>تركيبهم الجيني (b+ b)، وهذا يعني أن جنين الصلع يكون سائداً في حالة الذكور
+ويكون متبعياً في حالة الأنثى، أي أنه لا بد من وجود الجينين (bb) في الأنثى لإظهار
+صفة الصلع، وهذا يفسر سبب انتشار ظاهرة الصلع بين الرجال ونذرة وجود هذه
+الصفة بين النساء.</p><p>ادرس الشكل (١٨) ثم أجب عن الأسئلة الآتية:
+- ما التركيب الجيني للرجل الأصلع؟
+- ما التركيب الجيني للرجل الذي لا يصاب بالصلع؟
+- ما التركيب الجيني للمرأة التي تصاب بالصلع؟
+- ما احتمال إصابة الرجل بالصلع؟
+- ما احتمال إصابة المرأة بالصلع؟</p><p>١٢٤</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

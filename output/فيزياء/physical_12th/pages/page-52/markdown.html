@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-50.jpeg" alt="img-50.jpeg" /><p>ومن الرسم السابق: نجد أن :</p><p>$‫\begin{aligned} \text{ج} &= \sqrt{(\text{ج} \cdot \text{م})^2 + (\text{ج} \cdot \text{ح} - \text{ج} \cdot \text{س})^2} \\ \text{ت} &= \sqrt{\text{ت} \times \text{م}^2 + (\text{ت} \times \text{م} - \text{ت} \times \text{م}^2)^2} \\ \text{ت} &= \text{ت} \times \text{م}^2 \\ \text{ت} &= \text{ت} \times \sqrt{\text{ت} \times \text{م}^2 + (\text{م} \cdot \text{ح} - \text{م}^2)^2} \\ \therefore \text{م}^2 &= \sqrt{\text{م}^2 + (\text{م} \cdot \text{ح} - \text{م}^2)^2} \end{aligned}‬$‫</p><p>والعناصر الثلاثة (المقاومة، الملف الحثي والمكثف) المتصلة بالدائرة الكهربائية المترددة تعيق وتقانع مرور التيار المتردد، ومكافئ المقاومة الأومية والمفاعلة الحثية والمفاعلة السعوية تسمى المعاوقة Impedance</p><p>ويكتب قانون أوم لهذه الدائرة على الصورة: ج = ت × م</p><p>حساب زاوية الطور ( ‬$\phi$‫ ) بين شدة التيار وفرق جهد المصدر المتردد :</p><p>من الشكل (١٤هـ) تحسب قيمة زاوية الطور ( ‬$\phi$‫ ) من العلاقة التالية :</p><p>‬$‫\text{ظال} = \frac{\text{ج} \cdot \text{ح} - \text{ج} \cdot \text{س}}{\text{ج} \cdot \text{م}} \quad \text{أو} \quad \text{ظال} = \frac{\text{م} \cdot \text{ح} - \text{م} \cdot \text{س}}{\text{م}}‬$‫</p><h1>❖ - ملحوظة (١) :</h1><p>عند تمثيل الجهد والتيار بمتجه دوار في دوائر التيار المتردد :</p><p>نفترض أن القيمة العظمى لفرق الجهد (ج) والزاوية ( ‬$\phi$‫ ) هي زاوية فرق الطور بين الجهد والتيار حيث :</p><p>1. ١- إذا كان ‬$\phi =$‫ صفرًا، هذا يعني أن الجهد والتيار يتفقان في الطور كما في دائرة المقاومة الأومية.
+2. ٢- إذا كان ‬$\phi >$‫ صفرًا، هذا يعني أن الجهد متقدم عن التيار بالزاوية ( ‬$\phi$‫ ) كما في دائرة الملف الحثي.
+3. ٣- إذا كان ‬$\phi >$‫ صفر، فيعني أن الجهد متأخرًا عن التيار بالزاوية ( ‬$\phi$ ) كما في دائرة المكثف.</p><p>٥٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

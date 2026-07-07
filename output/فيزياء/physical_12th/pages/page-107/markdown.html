@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>Coloured Television التلفاز الملون</h2><p>في التلفاز الملون يتم إرسال الصور واستقبالها بالألوان الثلاثة الأساسية (أو الأولية) وهي الأحمر Red، والأخضر Green، والأزرق Blue، كما يتم التصوير خلال مرشحات لهذه الألوان. انظر الشكل « ١٥ ».</p><p>إن الضوء المنعكس من الجسم أو المنظر المراد تصويره بواسطة كاميرا التلفاز الملون يحلل أو يقسم بواسطة مرشحات إلى ثلاثة ألوان أولية هي الأحمر، والأخضر والأزرق وتستخدم لذلك أنواع خاصة من المرايا والمرشحات (يقصد بالمرشح بأنه عبارة عن غشاء رقيق ملون لا يسمح بنفاذ الضوء من خلاله إلا للضوء الذي يماثله في اللون)، ثم يرسل كل لون إلى أنبوبة مستقلة موجودة في كاميرا التصوير،</p><img src="img-106.jpeg" alt="img-106.jpeg" /><p>شكل (١٥)</p><p>من هذه الألوان إشارة تلفازية مستقلة.</p><p>بعد ذلك، ترسل هذه الإشارات (الموجات) إلى ثلاث بندقيات للإلكترونات (قاذفات الإلكترونات) أو مدافع إلكترونية موجودة في أنبوبة أشعة الكاثود التي في جهاز الاستقبال التلفازي، يعطي كل منها حزمة من الإلكترونات (شعاع إلكتروني)، تتجمع على لوحة فيها عدد كبير من الثقوب تسمى «قناع الظل» ويليهما ستارة</p><p>١٠٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

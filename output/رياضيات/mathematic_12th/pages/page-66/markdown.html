@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الوحدة الثانية</p><p>[١٤] بكم طريقة يمكن انتخاب لجنة بها ثمانية أعضاء من بين ثمان مدرسات وخمس عشرة طالبة بحيث تتكون اللجنة من خمس طالبات وثلاث مدرسات ؟</p><p>[١٥] أراد مدرس التربية الرياضية تقسيم طلبة الصف وعددهم عشرون طالباً إلى ثلاث فرق رياضية : فريق كرة السلة وعددهم خمسة لاعبين ، وفريق كرة القدم وعددهم أحد عشر لاعباً ، وفريق الجمباز وعددهم أربعة لاعبين فيكم طريقة يمكن إجراء ذلك ؟</p><p>[١٦] من بين عشرة مدرسين ، وعشرين طالباً نريد اختيار مدرسين اثنين ، وثلاثة طلاب لتمثيل المدرسة في إحدى المهرجانات . فيكم طريقة يمكننا ذلك ؟</p><p>[١٧] كم عدد الطرق التي يمكن بها اختيار عشرة عمال للعمل في أحد المصانع من بين اثني عشر متقدماً للعمل في هذا المصنع في الحالات التالية :</p><p>أ) بدون أي شرط ؟</p><p>ب) بشرط اختيار شخص معين من المتقدمين ؟</p><p>ج) بشرط استبعاد شخص معين من المتقدمين ؟</p><p>[١٨] أثبت صحة العلاقات التالية :</p><p>$‫\text{أ) } \text{م} + 2 \text{ م} - 1 + \text{م} - 2 = \text{م}^2 + \text{م}‬$‫</p><p>‬$‫\text{ب) } \text{م} + 1 + 2 \text{ م} + \text{م} - 1 = \text{م}^2 + \text{م} + 1‬$</p><p>٦٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

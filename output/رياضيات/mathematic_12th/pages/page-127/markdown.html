@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>القطوع الخروطة</p><p>مثال (٤ - ١٨)</p><p>بين نوع المنحنى الذي تمثله المعادلات التالية :</p><p>أ) س² + ٣ ص² + ٨ س + ١٢ ص + ٥ = ٠
+ب) ٣ س² + ٢ ص² + ٦ س + ٤ ص + ١ = ٠
+ج) ٣ س² + ٢ ص² + ٦ س + ٤ ص - ١ = ٠
+د) ٢ س² + ٤ س - ص + ٣ = ٠</p><h1><strong>الحل :</strong></h1><p>أ) بمقارنة المعادلة المعطاة مع المعادلة : س² + ج ص² + ه س + ح ص + ط = ٠ ، نجد أن ١ ، ج لهما الإشارة نفسها . وبالتالي فالمعادلة تمثل إما قطعاً ناقصاً ، أو دائرة ، أو نقطة ، أو مجموعة خالية . ولعرفة ذلك نكتب المعادلة بالصورة : (س² + ٨ س) + ٣ (ص² + ٤ ص) = ٥
+وبإكمال المربع تأخذ المعادلة الأخيرة الصورة :</p><p>$‫(س² + ٨ س + ١٦) + ٣ (ص² + ٤ ص + ٤) = ٥ - ١٦ + ١٢‬$‫</p><p>‬$‫\Leftarrow (س + ٤) + ٣ (ص + ٢) = ٢٣‬$‫</p><p>‬$‫\Leftarrow \frac{(س + ٤) + ٢}{(س + ٢) + ٢٣} = ١‬$‫</p><p>بوضع س = س + ٤ ، ص = ص + ٢ ، أي نسحب المحاور للنقطة (٤ - ٢) فتأخذ</p><p>المعادلة الصورة : ‬$‫\frac{س^2}{٢٣} + \frac{ص^2}{٢٣} = ١‬$‫ وهذه معادلة قطع ناقص .</p><p>ب) المعادلة المعطاة تمثل قطعاً زائداً أو مستقيمين متقاطعين لأن ١ ، ج لهما إشارتان مختلفتان . لمعرفة ذلك يمكن كتابة المعادلة بالشكل :</p><p>‬$‫(ص + ٤ ص) - ٣ (س - ٢ س) = ١ -‬$‫</p><p>‬$‫\Leftarrow (ص + ٤ ص + ٤) - ٣ (س - ٢ س + ١) = ١ - ٤ - ٣‬$‫</p><p>‬$‫\Leftarrow (ص + ٢) - ٣ (س - ١) = ٠‬$‫</p><p>‬$‫\Leftarrow (ص + ٢) = ٣ (س - ١)‬$‫</p><p>‬$‫\Leftarrow ص + ٢ = \sqrt[٣]{٣} (س - ١) \Leftarrow ص = \sqrt[٣]{٣} س حيث ص = ص + ٢ ، س = س - ١‬$</p><p>∴ المعادلة تمثل مستقيمين متقاطعين .</p><p>١٢٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

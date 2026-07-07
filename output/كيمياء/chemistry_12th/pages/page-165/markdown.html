@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>أ - الطلاء المائي:</h1><p>يتكون الطلاء المائي من مزيج من مادتي الإستيرين (Styrene) (CH = CH₂) والبيوتادين، وهما عبارة عن بوليمرات تمتاز مع بعضها مكونة مستحلباً لزجاً، ويضاف الماء كمذيب، كما تضاف مادة أخرى تساعد على جعل قطرات المستحلب غير الأيونية من مادتي الإستيرين والبيوتادين تذوب في الماء وتمتاز معه مكونة مستحلباً رقيقاً صالحاً لطلاء الجدران والسطوح. وهناك مادة أخرى يمكن أن تصنع</p><p>منها مادة الطلاء وهي مادة عضوية تُسمَّى بولي (O) فينيل أسيتات "Poly Vinyl Acetate" (CH₂ = CH - O - C - CH₃) إلا أن أسعارها مرتفعة نسبياً لكنها تمتاز بتكوين طلاء لزوجته عالية ويلتصق على السطوح بقوة ولا يحدث للون أي تغيير بسهولة مع مرور الزمن. وبالنسبة للسطوح المعرضة لضوء الشمس، مثل السطوح الخارجية للمنازل، فيستخدم نوع آخر من الطلاء يدخل في تركيبه مادة الأكريليك، وهي عبارة عن بوليمر يتم تكوينه من تفاعل (البلمرة بالإضافة) لمركب أكريلونيتريل Acrylonitrile، (CH₂ = CHCN) ويمتاز الطلاء الأكريليكي بقدرته العالية على الالتصاق بالسطوح ومقاومته للصدأ وتأثير الضوء.</p><h1>المادة الملوثة في الطلاء:</h1><p>تضاف بعض أكاسيد الفلزات لإكساب اللون المميز للطلاء، فمثلاً يمكن إضافة ثاني أكسيد التيتانيوم TiO₂ لإكساب الطلاء اللون الأبيض. ومن السابق كانت مركبات الرصاص تستخدم على نطاق واسع لتكوين الطلاء الأبيض، ومن أهم هذه المركبات كربونات الرصاص وهيدروكسيد الرصاص وكبريتات الرصاص [Pb(OH)₂, PbCO₃, PbSO₄]، إلا أنه ثبت في نهاية السبعينات من القرن الماضي أن هذه المواد شديدة السمية، وتؤدي إلى إصابة الأطفال بالذات بالتخلف العقلي وبتأثيرات خطيرة قد تؤدي إلى الموت إذا ابتلع الطفل كميات كبيرة منها، ولذلك حرم استخدامها من عام ١٩٧٧م في كثير من دول العالم.</p><p>وهناك مركبات أخرى تضاف إلى الطلاء لإكسابه لوناً مميزاً مثل كبريتات الباريوم وكبريتيد الباريوم وكبريتيد التيتانيوم.</p><h1>ب) الطلاء الزيتي:</h1><p>جميع أنواع الطلاء الزيتي تتكون أساساً من البوليمرات التي سبق ذكرها مثل</p><p>١٦٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

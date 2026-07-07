@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>١- الغدة النخامية : Pituitary Gland</h2><p>ادرس الشكل (٨)، والجدول (٣)، واجب عما يأتي:</p><img src="img-38.jpeg" alt="img-38.jpeg" /><p>الشكل (٨) الغدة النخامية.</p><p>- أين تقع الغدة النخامية ؟
+- ما تتكون الغدة النخامية ؟
+- ما الهرمونات التي تفرزها ؟
+- اذكر وظيفة كل هرمون ؟
+- لماذا تسيطر الغدة النخامية على عمل معظم غدد الجسم الصماء ؟
+ومن المهم معرفة أن الغدة النخامية تعتبر من أهم الغدد الصماء في جسم الإنسان؛ لأنها تسيطر على معظم النشاطات الحيوية إضافة إلى نشاطات الغدد الصماء الأخرى عن طريق إفراز مجموعة من الهرمونات التي تنظم هذه النشاطات.
+- لماذا تسمى الغدة النخامية ملكة غدد جسم الإنسان ؟</p><h3>العلاقة بين تحت المهاد والغدة النخامية :</h3><p>درست سابقاً التنظيم العصبي، وعرفت أن تحت المهاد طبقة الهيبوثالامس (الحصين) جزء من الدماغ يعمل على تنظيم البيئة الداخلية، مثل تنظيم نبض القلب، بالإضافة إلى السيطرة على إفرازات الغدة النخامية . انظر الشكل (٩).
+- كيف تنظم الهيبوثالامس «تحت المهاد» إفراز هرمونات الغدة النخامية ؟
+تقع الغدة النخامية بقاع الجمجمة أسفل (تحت المهاد)، وتتكون في الإنسان من فصين أمامي وخلفي . شكل (٩).
+وفي (تحت المهاد) توجد مجموعتان من الخلايا العصبية الفارزة، تصل محاور المجموعة الأولى منها إلى الفص الخلفي للغدة النخامية، تتفرز هرمونين هما هرمون الفازوبرسين (Vasopressin) أو ADH الذي ينظم التوازن المائي للجسم</p><p>٥١</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

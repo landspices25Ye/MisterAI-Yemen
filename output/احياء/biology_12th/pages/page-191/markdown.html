@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>ويوضح هذا السطح حدوث تعرية أو انقطاع في الترسيب يصاحبه حركات أرضية أو يليها، ويمثل فترة زمنية ضائعة بين المجموعتين، أي الفترة بين ترسيب الطبقات الأقدم وترسيب الطبقات الأحدث فوقها.</p><p>والتعرف على سطح عدم التوافق ميدانياً عن طريق الملاحظة المباشرة في أغلب الأحيان يكون صعباً. فلو أنك لاحظت طبقات أفقية متوازية، فلا يكفي للحكم على عدم وجود سطح عدم التوافق، إذ لا بد من معرفة أعمار الطبقات بمعرفة محتواها الأحفوري.</p><h2>● ثانياً: الأحافير (Fossils) :</h2><p>ما المقصود بالأحافير؟ وكيف تم حفظها؟ وما فوائدها؟
+الأحافير هي بقايا أو آثار كائنات حية عاشت في أزمنة جيولوجية مختلفة تدل على نوع الكائن الحي في تلك الأزمنة، وغالباً ما توجد محفوظة في الصخور الرسوبية، أو على شكل نماذج أو قوالب أو طبعات وغيرها. وفي حالات نادرة تحفظ بقايا الكائن الحي دون تغير في تركيبه الكيميائي.</p><h2>- كيفية حفظ الأحافير:</h2><p>تسمى عملية حفظ كائنات الأحافير في الصخور الرسوبية أو الثلوج أو في الكهرمان (صمغ نبات قديم) بالتحقر (Fossilization). وحتى تتكون الأحافير لا بد من أن تتوافر شروط معينة أهمها:</p><p>1. ١- أن يكون للكائن الحي هيكل صلب أو صدفة صلبة، مثل عظام الحيوانات وأصداف الرخويات وأشواك الأسفنجيات والقشريات ومادة السليلوز في الخشب ومادة الكيتين في الحشرات. ويندر حفظ أحافير ليس لها هيكل صلب إلا إذا صادفتها ظروف خاصة تساعد على حفظها كأن تدفن مثلاً في الثلج أو في مواد إسفلتية أو صمغية.
+2. ٢- الدفن السريع للكائن بعد موته في رواسب تحميه من التحلل. وتعد أحافير الكائنات البحرية أكثر شيوعاً وانتشاراً من الكائنات البرية التي تكون فرصة تحقرها نادرة، نظراً لأن البيئات البحرية أكثر ملاءمة للدفن السريع، كما أن عوامل التحلل أكثر نشاطاً على اليابسة منها في المناطق المغطاة بالماء كالبحار، وأيضاً محدودة وسائل الدفن السريع على اليابسة وندرتها.
+3. ٣- أن تحفظ الأحافير في طبقات غير مسامية لا تسمح للمياه الأرضية بالتسرب، وإذابة الأحفورة أو محو آثارها.</p><p>١٩١</p><p>الأحياء للصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

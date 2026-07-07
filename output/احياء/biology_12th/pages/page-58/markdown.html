@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>٧- هرمونات المناسل:</h2><p>– لماذا يعتبر كل من الخصية والمبيض غداً صماء؟</p><p>المناسل عبارة عن الخصية في الذكر، والمبيض في الأنثى وتقوم هذه الأعضاء بوظائف عدة أهمها:</p><p>١- تكوين الأمشاج الذكرية، والأنثوية.</p><p>٢- إفراز الهرمونات الجنسية.</p><p>– ما الهرمون الذي يفرز من الخصية؟ وما وظيفته؟</p><p>– ما الهرمون الذي يفرز من المبيض؟ وما وظيفته؟</p><p>– يوضح الجدول (٦) بعض هرمونات الغدد التناسلية وأماكن إفرازها وتأثيرها.</p><img src="img-45.jpeg" alt="img-45.jpeg" /><p>الشكل (١٤) قطاع عرضي في الخصية بين الخلايا البيئية.</p><p>جدول (٦) هرمونات الغدد التناسلية</p><p>|  الهرمون | مكان الإفراز | الوظيفة  |
+| --- | --- | --- |
+|  التستوستيرون Testosterone | الخصية (الخلايا البيئية) شكل (١٤) | – تساهم في بناء الجسم وتبرز في الفتى مظاهر الرجولة. – تعمل على استكمال نمو الجهاز التناسلي الذكري.  |
+|  الاستروجين Estrogen | المبيض، (الخلايا البيئية) | – يعمل على استكمال نمو الجهاز التناسلي الأنثوي ويظهر الصفات الجنسية الأنثوية.  |
+|  البروجسترون Progesterone | – الجسم الأصفر في المبيض | – تهيئة الرحم للحمل، واستقبال البويضة الخصبة. – يمنع تكوين بويضات جديدة.  |</p><h2>أمراض الجهاز الهرموني وصحته:</h2><h3>أ- أمراض الغدد الصماء:</h3><p>١- تضخم الغدة الدرقية:</p><p>– الأعراض: تضخم الغدة الدرقية وزيادة حجمها.</p><p>– أسبابه: نقص اليود في الغذاء.</p><p>– الوقاية منه: إضافة اليود إلى ملح الطعام ومياه الشرب.</p><p>٥٨</p><p>الأحياء: النصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

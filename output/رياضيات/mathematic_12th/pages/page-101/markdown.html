@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الاحتمالات</p><p>مثال (٣ - ١٨)</p><p>صندوق به ١٠ كرات حمراوات ، ٥ كرات سوداوات . سحبت منه - عشوائياً - كرتان مع الإعادة .
+احسب احتمال كل من الحوادث التالية :</p><p>١) الحصول على كرتين حمراوين .
+٢) الأولى حمراء والأخرى سوداء .
+٣) واحدة حمراء وواحدة سوداء .
+٤) الكرتان من لون واحد .
+٥) واحدة على الأكثر سوداء .
+٦) واحدة على الأقل سوداء .</p><h1>الحل :</h1><p>نفرض أن : ط هي حادثة سحب كرة حمراء تمثل « نجاحاً » ، وأن ك هي حادثة سحب كرة سوداء .</p><p>$‫\therefore \text{ح} = \text{حا (ط)} = \frac{10}{15} = \frac{2}{3}‬$‫</p><p>‬$‫\Leftarrow \text{ف} = 1 - \text{ح} = 1 - \frac{2}{3} = \frac{1}{3} \text{ ، ويمثل احتمال سحب كرة سوداء} \Leftarrow \text{حا (ك)} = \frac{1}{3} \text{ .}‬$‫</p><p>١) نفرض أن : ا هي حادثة الحصول على كرتين حمراوين (أي س = ٢) ،</p><p>‬$‫\therefore \text{حا (أ)} = 2 \text{ و} \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2‬$‫</p><p>٢) نفرض أن : ب هي حادثة سحب الكرة الأولى حمراء والأخرى سوداء ، وعليه يكون : ب = ( ط ، ك ) .</p><p>‬$‫\therefore \text{حا (ب)} = \text{حا (ط)} \times \text{حا (ك)} = \frac{2}{3} \times \frac{2}{3} = \frac{2}{9}‬$‫</p><p>٣) نفرض أن : ج هي حادثة سحب كرة واحدة حمراء وواحدة سوداء تكافئ سحب الكرتين من لونين مختلفين .</p><p>وعليه يكون : ج = ( ط ، ك ) أو ( ك ، ط )</p><p>‬$‫\therefore \text{حا (ج)} = \text{حا (ط)} \times \text{حا (ك)} + \text{حا (ك)} \times \text{حا (ط)} = \frac{2}{3} \times \frac{2}{3} + \frac{2}{3} \times \frac{2}{3} = \frac{4}{9}‬$‫</p><p>٤) نفرض أن : و هي حادثة سحب الكرتين من لون واحد تكافئ إما الكرتين حمراوين ، أو الكرتين سوداوين .</p><p>وعليه يكون : و = ( ط ، ط ) أو ( ك ، ك )</p><p>‬$‫\therefore \text{حا (و)} = \text{حا (ط)} \times \text{حا (ط)} + \text{حا (ك)} \times \text{حا (ك)} = \frac{2}{3} \times \frac{2}{3} + \frac{2}{3} \times \frac{2}{3} = \frac{4}{9} + \frac{4}{9} = \frac{5}{9}‬$‫</p><p>٥) نفرض أن : هـ هي حادثة سحب فيها على الأكثر كرة سوداء (أي س = ١ أو ٢)</p><p>‬$‫\therefore \text{حا (هـ)} = 2 \text{ و} \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2‬$‫</p><p>٦) نفرض أن : و هي حادثة سحب كرة واحدة على الأقل سوداء تكافئ إما أن نحصل على كرة واحدة سوداء</p><p>(أي س = ١) أو نحصل على كرتين سوداوين (أي س = ٠) وعليه يكون :</p><p>‬$‫\text{حا (و)} = 2 \text{ و} \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2‬$‫</p><p>‬$‫= 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2‬$</p><p>٩٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>وباستمرار التفاعلين السابقين تزداد أيونات الكبريتات $‫SO_4^{2-}‬$ في نصف خلية النحاس، وتزداد أيونات الخارصين الموجبة $‫Zn^{2+}‬$ في نصف خلية الخارصين، وحتى يستمر مرور التيار الكهربائي عبر سلك التوصيل، تتحرك الأيونات في محلولي نصف الخلية عبر القنطرة الملحية، فأيونات الخارصين الموجبة الزائدة في محلول نصف خلية الخارصين تتعادل مع عدد مساوٍ من أيونات الكبريتات السالبة التي تخرج من القنطرة الملحية وتدخل محلول نصف خلية الخارصين، مما يؤدي إلى زيادة كاتيونات البوتاسيوم $‫K^+‬$ في القنطرة الملحية والتي يتم معادلتها إما بدخول بعضها إلى نصف خلية النحاس المحتوية على زيادة من أيونات الكبريتات، أو بدخول بعض أيونات الكبريتات الزائدة من نصف خلية النحاس إلى القنطرة الملحية.</p><p>وتكتب معادلة التفاعل الكلي على النحو التالي:</p><p>$‫Zn + Cu^{2+} \xrightarrow{(aq)} Zn^{2+} + Cu_{(s)}‬$‫</p><p>ويمكن وصف أو تمثيل الخلية الجلفانية بالرمز الآتي:</p><p>‬$‫Zn / Zn^{2+} // Cu^{2+} / Cu‬$‫
+الحالة الصلبة الحالة السائلة الحالة السائلة الحالة الصلبة
+المصعد «الأنود» المهبط «الكاثود»</p><p>الرمز / للفصل بين حالتي المادة والرمز // للقنطرة الملحية</p><p>تفاعل الأكسدة في اليسار عند المصعد (الأنود).</p><p>تفاعل الاختزال في اليمين عند المهبط (الكاثود).</p><p>في حالة أن نصف الخلية في نفس الإناء ومفصولان بواسطة حاجز مسامي فإننا نستبدل رمز القنطرة الملحية (//) بالرمز (/) (خط متقطع).</p><h3>نشاط (٢-٣)</h3><p>قم بتركيب خلية جلفانية وقس جهدها.</p><h3>جهود الاختزال القطبية:</h3><p>في الخلية الجلفانية المكونة من النحاس والخارصين يوجد لدينا محلول يحتوي على أيونات الخارصين الموجبة (‬$Zn^{2+}$‫) حول قطب مفرد من فلز الخارصين، ومحلول يحتوي على أيونات النحاس (‬$Cu^{2+}$) حول قطب مفرد من النحاس، ولكل من أيونات الخارصين والنحاس ميل معين لاكتساب الإلكترونات من أقطابها ويعرف هذا</p><p>٥٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

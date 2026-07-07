@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الميل بجهد الاختزال، وكلما كبر ميل هذه الأيونات لاكتساب الإلكترونات زادت قيمة جهد الاختزال، ولا يحدث اختزال لنوعي الأيونات في نفس الوقت ولكن الأيونات ذات جهد الاختزال الأكبر هي التي تختزل ($‫Cu^{2+}‬$) وذرات الخارصين $‫Zn‬$ هي التي تتأكسد، ويمكن قياس جهد هذه الخلية باستخدام المعادلة الآتية:</p><p>$‫\therefore \text{جهد الخلية} = \text{جهد المهبط} - \text{جهد المصعد}‬$‫</p><p>‬$‫= \text{جهد اختزال النحاس} - \text{جهد اختزال الخارصين}‬$‫</p><p>والآن كيف يمكننا قياس جهد الاختزال لأي نصف خلية مفردة؟</p><p>بما إنه لا يمكننا قياس جهد اختزال نصف خلية معزولة، لذا فمن الضروري أن نقارنه مع جهد اختزال نصف خلية معلوم جهدها، وقد اتفق العلماء على استخدام نصف خلية الهيدروجين القياسية واعتبار جهد اختزالها القياسي صفراً.</p><p>‬$‫2H^+ + 2e^- \rightleftharpoons H_{2(g)} \quad (2-3) \text{، انظر الجدول}‬$‫</p><p>فمثلاً لإيجاد جهد الاختزال القياسي لنصف خلية النحاس ‬$Cu^{2+} / Cu$‫ فإننا نكون خلية جلفانية، نصفها خلية النحاس والنصف الآخر خلية الهيدروجين القياسية، ونقيس فرق الجهد بين القطبين ويكون مساوياً لجهد خلية النحاس ووجد أنه يساوي ٠,٣٤ فولت، بينما جهد اختزال الخارصين يساوي (٠,٧٦-)</p><img src="img-36.jpeg" alt="img-36.jpeg" /><p>شكل (٣-٤) خلية الهيدروجين القياسية</p><p>فولت)، وهذا يعني أن جهد اختزال الخارصين أقل من جهد اختزال الهيدروجين وبالتالي يكون الخارصين أصعب اختزالاً من الهيدروجين. لذا يمكننا حساب فرق جهد خلية النحاس والخارصين (القوة الدافعة الكهربائية للخلية)، انظر شكل (٣-٤).</p><p>∴ القوة الدافعة الكهربائية لخلية النحاس والخارصين = جهد اختزال النحاس - جهد اختزال الخارصين</p><p>‬$‫= 0,34 - (-0,76) = 1,1 \text{ فولت}‬$</p><p>٥١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

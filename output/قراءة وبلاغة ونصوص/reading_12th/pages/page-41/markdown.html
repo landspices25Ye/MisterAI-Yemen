@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>٨ - أين تكمن - في نظرك - خطورة شبكة الإنترنت؟ اذكر أمثلة من الموضوع توضح بها مخاطر استخدام هذه الشبكة.</p><p>٩ - هل ترى لشبكة الإنترنت مخاطر أخرى؟</p><p>١٠ - كيف يمكننا أن نتجنب مخاطر شبكة الإنترنت؟</p><h2>التدريبات اللغوية</h2><p>١ - وضح معاني الكلمات الآتية مستعيناً بأحد المعاجم اللغوية:</p><p>(تَكَلَّلَ - تَطْفُو - وَسِيطَ - تَدْنِيسَ).</p><p>٢ - بم يوحي قول الكاتب «الإنترنت كيان طفيلي»؟</p><p>٣ - اقرأ الفقرة الآتية، ثم أجب عن الأسئلة التي تليها:</p><p>«والإنترنت ثورة عالمية تضاهي - إن لم تفق - الثورة الصناعية، وهي عبارة عن شبكة اتصال عالمية، أنشئت في أواخر الستينيات من القرن الماضي، ضماناً للنقل الآمن للمعلومات، ولسرعة الاتصالات بين مراكز البحوث الأمريكية في حال قيام الخصم السوفيتي - آنذاك - بشن حرب نووية مفاجئة على الولايات المتحدة الأمريكية».</p><p>أ - أجب عن المطلوب فيما يأتي:</p><p>- مرادف (تضاهي) ...</p><p>- ضد (أواخر) ...</p><p>- جمع (الخصم) ...</p><p>ب - ماذا أفاد وصف شبكة الإنترنت بأنها «ثورة عالمية»؟</p><p>ج - اذكر نوع الاسم المشتق ووزنه فيما يأتي:</p><p>(الآمن - مراكز - مفاجئة - المتحدة).</p><p>د - ما سبب كتابة الهمزة المتوسطة على هذه الصورة في كلمتي (أنشئت) و(مفاجئة)؟</p><p>هـ - أعرب ما تحته خط في الفقرة السابقة.</p><p>٤ - وضح معنى كلمة (كُلفة) في كل جملة مما يأتي، ثم هات الجمع منها:</p><p>- إنَّ كلفة إغفالنا لمخاطر شبكة الإنترنت قد تكون باهظة.</p><p>- رفعت الصداقة الكلفة بين الصديقين.</p><p>٣٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

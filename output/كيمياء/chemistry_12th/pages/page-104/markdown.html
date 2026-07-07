@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>٢ - تتفاعل حموض $‫\alpha‬$ - الأمينية مع حمض النيتروز مكونة حموضاً هيدروكسيلية، ويتصاعد النيتروجين حسب معادلة التفاعل الآتية:</p><p>$‫\text{H}_2\text{N}-\text{CH}_2-\text{COOH} + \text{HO}-\text{N}-\text{O} \rightarrow \text{HO}-\text{CH}_2-\text{COOH} + \text{H}_2\text{O} + \text{N}_2‬$‫
+حمض الجليكوليك حمض النيتروز جلايسين</p><p>يستخدم هذا التفاعل في تحليل البروتينات لتقدير كمية النيتروجين فيها.</p><p>ثانياً: تفاعلات مجموعة الكربوكسيل:</p><p>١ - تتفاعل الحموض ‬$\alpha$‫ - الأمينية مع الكحولات مكونة أستراليا مثل تفاعل الجلايسين مع الميثانول في وسط حمضي لتوفير كمية كبيرة من مجموعات الكربوكسيل اللازمة للاسترة.</p><p>‬$‫\text{H}_2\text{N}-\text{CH}_2-\text{CO}(\text{OH}) + \text{CH}_3-\text{OH} \rightarrow \text{H}_2\text{N}-\text{CH}_2-\text{COOCH}_3 + \text{H}_2\text{O}‬$‫
+جلايسين ميثانول أسيتات ميثيل أمينو</p><p>٢ - تتفاعل الحموض الأمينية مع هيدروكسيد الباريوم لتكوين أمينات أولية:</p><p>‬$‫\text{R}-\underset{\text{NH}_2}{\overset{\text{H}}{\text{C}}}-\underset{\text{OH}}{\overset{\text{O}}{\text{C}}}-\text{OH} \xrightarrow[\text{Ba(OH)}]{\Delta} \text{R}-\underset{\text{NH}_2}{\overset{\text{CH}_2}{\text{CH}_2}} + \text{CO}_2 \uparrow‬$‫</p><p>ثالثاً: تفاعلات المجموعة ‬$(-\text{NH}_2)$‫ والمجموعة ‬$(-\text{COOH})$‫ معاً:</p><p>تتفاعل الحموض ‬$\alpha$‫ - الأمينية مع أيونات النحاس ‬$\text{II}$‫ في المحلول المائي مكونة ملح النحاس ‬$\text{II}$‫ للحمض الأميني ذي اللون الأزرق الغامق.</p><p>‬$‫\text{H}_2\text{N}-\text{CH}_2-\underset{\text{OH}}{\overset{\text{OH}}{\text{C}}}=\text{O} + \text{Cu}^{\text{II}} \rightarrow \text{H}_2\text{C}-\underset{\text{H}}{\overset{\text{O}}{\text{C}}}-\text{N}-\text{N}^+-\text{Cu} \xleftarrow{\text{NH}_2-\text{CH}_2} \text{O}-\text{C}=\text{O} + \text{H}_2‬$‫
+جلايسين نحاسيك</p><p>رابعاً: الخاصية الأمفوتيرية:</p><p>للحموض ‬$\alpha$‫ - الأمينية خواص أمفوتيرية لاحتوائها على مجموعة حمضية ومجموعة قاعدية. فتتفاعل مع كل من الحموض والقواعد مكونة أملاحاً.</p><p>١ - مع حمض الهيدروكلوريك (حمض):</p><p>‬$‫\text{H}_2\text{N}-\text{CH}_2-\text{COOH} + \text{HCl} \rightarrow \text{NH}_2-\text{CH}_2-\text{COCl} + \text{H}_2\text{O}‬$‫</p><p>٢ - مع محلول هيدروكسيد الصوديوم (قاعدة):</p><p>‬$‫\text{H}_2\text{N}-\text{CH}_2-\text{COOH} + \text{NaOH} \rightarrow \text{NH}_2-\text{CH}_2-\text{COONa} + \text{H}_2\text{O}‬$</p><p>١٠٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

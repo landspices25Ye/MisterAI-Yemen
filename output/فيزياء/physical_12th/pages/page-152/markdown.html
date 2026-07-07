@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>من هذه العلاقة يمكن تعيين سرعة وطاقة حركة أسرع الإلكترونات وتسمى العلاقة البيانية في الشكل (٥) بين فرق جهد الخلية وشدة تيارها (ت) عند شدة ضوئية معينة (ش) بالمنحنى المميز للخلية.</p><p>٣ - دراسة علاقة جهد الإيقاف (ج) بشدة الضوء الساقط على الخلية (ش) :
+إذا استخدم نفس الضوء ولكن أسقطناه بثلاث شدات مختلفة (بأن نجعل المصباح الضوئي على مسافات مختلفة من المهبط) نحصل على نفس جهد الإيقاف (ج) ولكن بتيارات تشبع مختلفة تتناسب قيمة كل منها مع الشدة الضوئية الساقطة ، انظر الشكل (٦) .</p><img src="img-146.jpeg" alt="img-146.jpeg" /><p>شكل (٦)</p><p>وهذا يعني أن القيمة العظمى للطاقة الحركية للإلكترونات الضوئية المنبعثة من سطح المهبط لا تتعلق بالشدة الضوئية كما يوضحه الشكل (٦) والمعادلة (١) .</p><p>٤ - دراسة علاقة تردد الضوء الساقط بجهد الإيقاف (ج) :</p><p>إذا ثبتت الشدة الضوئية فإن القيمة العظمى للطاقة الحركية للإلكترونات المنبعثة تعتمد على تردد الضوء الساقط، ويتضح ذلك من الشكل (٧) الذي يبين أن جهد الإيقاف (ج) يختلف باختلاف تردد الضوء الساقط وكذلك الطاقة الحركية</p><img src="img-147.jpeg" alt="img-147.jpeg" /><p>شكل (٧)</p><p>١٥٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-69.jpeg" alt="img-69.jpeg" /><p>الوحدة الثالثة</p><p>[٤] لدينا ٥٢ ورقة من ورق اللعب العادي. سُحبت من بينها ورقتان – عشوائياً – أوجد :</p><p>(١) عدد الحالات الممكنة لسحب هاتين الورقتين .</p><p>(٢) احتمال أن تكون الورقتان إحداهما بنت والأخرى عشرة .</p><p>[٥] صندوق يحتوي على ٦ كرات بيضاوات ، ٩ كرات سوداوات . سُحبت – عشوائياً – ٣ كرات من</p><p>الصندوق . لتكن الحادثتان ١ ، ب على النحو التالي :</p><p>١ : الكرات المسحوبة من نفس اللون .</p><p>ب : إحدى الكرات المسحوبة سوداء .</p><p>احسب احتمال كل من الحادثتين ١ ، ب في كل من الحالتين التاليتين :</p><p>(١) مع الإعادة .</p><p>(٢) بدون إعادة .</p><p>[٦] أخذت ٣ فتران من مجموعة مكونة من ٥ فتران بيضاء اللون ، ٤ بنية اللون لاستخدامها في تجربة معينة .</p><p>احسب احتمال كل من الحوادث التالية :</p><p>١ : جميع الفتران المختارة بيضاء اللون .</p><p>ب : جميع الفتران المختارة بنية اللون .</p><p>ج : فار لونه بني وفاران لونهما أبيض .</p><p>[٧] وجد أن مجلس إحدى الإدارات التعليمية يتكون من ٩ أشخاص ذكور ، ٥ إناث . اختير من بينهم شخصان</p><p>لتمثيل الإدارة . احسب احتمال أن يكون :</p><p>(١) كل من الشخصين المختارين ذكراً .</p><p>(٢) أحد الشخصين المختارين على الأقل ذكراً .</p><p>(٣) أحد الشخصين المختارين ذكراً ، والآخر أنثى .</p><p>[٨] صندوق يحتوي على ٦ كرات حمراء ، ٥ كرات بيضاء ، ٣ كرات صفراء ، سُحبت – عشوائياً – كرتان</p><p>ما احتمال أن تكونا :</p><p>(١) من نفس اللون ؟</p><p>(٢) من لونين مختلفين ؟</p><p>١٠٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

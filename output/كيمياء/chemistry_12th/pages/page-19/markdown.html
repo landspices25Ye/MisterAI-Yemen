@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>٢ - أكسيد الحديد الأمائي: ويُسمَّى أكسيد الحديد هنا بالهيماتيت، ويكون الحديد فيه على شكل أكسيد الحديد (III) الأحمر ($‫\text{Fe}_2\text{O}_3‬$). وتتراوح نسبة الحديد فيه ما بين ٤٥-٥٠٪، واستخراج الحديد من هذا الأكسيد يُعدُّ اقتصادياً أكثر من استخراجه من الخامات الأخرى، مثل: الماجنيتايت؛ لأنه من السهل اختزال الخامات الحمراء منه.</p><p>٣ - أكسيد الحديد المائي: وصيغته الكيميائية هي ($‫\text{Fe}_2\text{O}_3 \cdot n\text{H}_2\text{O}‬$)، حيث يحتوي هذا المركب على كمية من الماء، ويُسمَّى (بالليمونايت) نسبة إلى لونه الأصفر، ويحتوي غالباً على ٥٧,١٤٪ من فلز الحديد، و ٢٥,٥٣٪ ماء، وهذا الأكسيد المميأ هو الصدأ (Rust).</p><p>أما خامات الحديد الأخرى فيكون نسبة الحديد فيها ما بين ٢٥-٥٠٪.</p><h4>تعدين الحديد:</h4><p>يستخرج الحديد من خاماته وذلك عن طريق الاختزال، ولأن الحديد ينتج بكميات كبيرة فإن المادة المُخْتَرِلة يجب أن تكون رخيصة الثمن وأقل تكلفة. ومن أرخص هذه المواد الكربون (على شكل فحم الكوك) الذي ينتج من الفحم الحجري بعد تسخينه إلى درجات حرارة مرتفعة بمعزل عن الهواء. وتؤدي هذه المعالجة إلى طرد المواد المتطايرة الموجودة في الفحم الحجري (والتي يتم منها اشتقاق مواد كيميائية أخرى مهمة) مُخَلَّفَةً وراءها كربوناً نقياً إلى حد ما. وتتم عملية اختزال الحديد في الفرن العالي (اللافح) كما يأتي:</p><p>- يضاف إلى الفرن مزيج من الخامات تُسمَّى بالشحنة (Charge) والتي تتألف من حجر جيري وفحم الكوك وخام الحديد، الذي يحتوي غالباً على $‫\text{Fe}_2\text{O}_3‬$ مخلوطاً ببعض الشوائب مثل $‫\text{SiO}_2‬$ (أي رمل، حوالي ١٠٪)، وكميات ضئيلة من مركبات أخرى محتوية على الكبريت والفوسفور الألومينيوم والمنجنيز. وبعد ذلك يُدفع إلى داخل الفرن هواء ساخن مضغوط أو أكسجين نقي، كما في شكل (١-١)، حيث يتفاعل الأكسجين مع الكربون منتجاً غاز ثاني أكسيد الكربون مصحوباً بانطلاق حرارة عالية، حسب المعادلة الآتية:</p><p>$‫\text{C}_{(s)} + \text{O}_{2(g)} \longrightarrow \text{CO}_{2(g)} \quad \Delta H = -394 \text{ KJ/mole}‬$</p><p>١٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

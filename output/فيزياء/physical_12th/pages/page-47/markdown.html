@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>حيث (حث) يرمز إلى معامل الحث الذاتي للملف ويقاس بوحدة الهزي والإشارة السالبة تدل على أن (ق.د.ك) المتولدة في الملف تعاكس القوة الدافعة لمصدر التيار المتردد (ق).</p><p>وبفرض أن الملف مهمل المقاومة الأومية فإن القوة الدافعة المتولدة بالحث الذاتي (ق.د.ك) تساوي في المقدار وتضاد في الاتجاه القوة الدافعة للمصدر (ق).</p><p>$‫\therefore \text{ق} = - (\text{ق.د.ك}) \dots\dots\dots (3)‬$‫</p><p>ومن هذه العلاقة فإن قيمة (ق) تصبح كما يلي :</p><p>‬$‫\text{ق} = \text{حث} \frac{\text{ت}_\text{ل}}{\text{ز}} \dots\dots\dots (4)‬$‫</p><p>وبالتعويض عن قيمة (ت) من العلاقة (١) تصبح كما يلي :</p><p>‬$‫\text{ق} = \text{ج}_\text{ل} = \text{حث} \frac{\text{ت}_\text{ع} \times \text{جا} \text{ج}_\text{ز}}{\text{ز}} \dots\dots\dots (5)‬$‫</p><p>حيث (ج) هو الجهد اللحظي للمصدر. وعند اشتقاق (٥) نجد أن :</p><p>‬$‫\text{ج}_\text{ل} = \text{حث} \text{ج}_\text{ع} \times \text{جتا} \text{ج}_\text{ز} \dots\dots\dots (6)‬$‫</p><p>وإذا أصبحت قيمة جتا ج = ١ ، فإن فرق الجهد (ج) تصبح قيمته عظمى (ج) والعلاقة (٦) تكتب كما يلي :</p><p>‬$‫\text{ج}_\text{ع} = \text{ج}_\text{ع} \times \text{حث} \text{ت}_\text{ع} \dots\dots\dots (7)‬$‫ ، ومن العلاقتين (٦ ، ٧) نجد أن :</p><p>‬$‫\text{ج}_\text{ع} = \text{ج}_\text{ع} \times \text{جتا} \text{ج}_\text{ز} \dots\dots\dots (8)‬$‫ حيث أن (ج) الجهد عند أية لحظة.</p><p>وبتعويض قيمة جتا ج بصورتها المثلثية نجد أن :</p><p>‬$‫\text{ج}_\text{ع} = \text{ج}_\text{ع} \times \text{جا} (\text{ج}_\text{ز} + \frac{\pi}{2}) \dots\dots\dots (9)‬$‫</p><p>‬$‫\text{حيث أن جتا ج = جتا ج}_\text{ز} + \frac{\pi}{2} + \text{ج}_\text{ع}‬$</p><p>ويلاحظ من هذه العلاقة أن التغير في الجهد يتبع دالة جيب التمام بينما التغير في التيار يتبع دالة الجيب، وبذلك يكون هناك فرق في زاوية</p><img src="img-46.jpeg" alt="img-46.jpeg" /><p>شكل (١١)</p><p>٤٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

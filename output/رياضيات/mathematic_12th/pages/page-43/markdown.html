@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الأعداد المركبة</p><h1>مثال (١ - ٢٨)</h1><p>حل المعادلتين التاليتين :</p><p>أ)  $‫ع^2 - ٢ع + ٥ = ٠‬$ .</p><p>ب)  $‫ع^2 - (٥ + ٧)ت + (٦ - ١٧)ت = ٠‬$ .</p><p>الحل :</p><p>أ)  $‫ع^2 - ٢ع + ٥ = ٠‬$ .</p><p>ب = ١ = ١ ، ب = ٢ - ٥ ، ج = ٥ .</p><p>$‫\Delta = ٢ - ١٤ج = ٤ - ٢٠ = ١٦‬$</p><p>$‫\therefore ع = \frac{\overline{\Delta} \sqrt{١٦ - ٢}}{٢} = \frac{\overline{\Delta} \sqrt{١٦ - ٢}}{٢} = ١ \pm ٢ت‬$ .</p><p>$‫ع_1 = ١ + ٢ت‬$ ، $‫ع_2 = ١ - ٢ت‬$ .</p><p>ب)  $‫ع^2 - (٥ + ٧)ت + (٦ - ١٧)ت = ٠‬$ .</p><p>$‫١ = ١‬$ ، ب =  $‫٢ - (٥ + ٧)ت‬$ ، ج = ٦ - ١٧ + ٦ت .</p><p>$‫\Delta = ٢ - ١٤ج = (٥ + ٧)ت^2 - ٤(٦ - ١٧)ت = ٢ت‬$ .</p><p>$‫\therefore ع = \frac{\overline{\Delta} \sqrt{١٦ - ٢}}{٢} = \frac{\overline{\Delta} \sqrt{١٦ - ٢}}{٢}‬$ .</p><p>ولايجاد $‫\sqrt{٢}‬$ت</p><p>نفرض أن:  $‫\sqrt{٢}ت = س + صت‬$  وبتربيع الطرفين نجد أن :</p><p>$‫٢ت = س^2 - ص^2 + ٢س صت‬$ .</p><p>$‫س^2 - ص^2 = ٠‬$ ... (١) ، ٢س ص = ٢ ... (٢)</p><p>بحل المعادلتين نجد أن  $‫س = \pm ١‬$ ،  $‫ص = \pm ١‬$ .</p><p>وبما أن حاصل ضرب س في ص موجب</p><p>$‫\therefore \sqrt{٢}ت = \pm (١ + ت)‬$ ، وبالتعويض في القانون العام نجد أن :</p><p>٤١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

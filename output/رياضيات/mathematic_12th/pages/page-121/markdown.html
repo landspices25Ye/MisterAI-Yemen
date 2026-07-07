@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>القطع الخروطية</p><p>$‫(س + ج) + ص = (س - ج) + ص + ١٤ + ١٤ \sqrt{ (س - ج) + ص} \div ٢‬$‫</p><p>‬$‫\therefore ٤ \text{ جس} - ١٤ = ١٤ \sqrt{ (س - ج) + ص}‬$‫</p><p>‬$‫(ج - ١) = \sqrt{ (س - ج) + ص}‬$‫</p><p>وبتربيع الطرفين مرة أخرى نحصل على :</p><p>‬$‫ج - ٢ \text{ جس} + ٢ = (س - ج) + ص‬$‫</p><p>‬$‫\therefore \left( \frac{ج - ٢}{٢} - ص - ٢ \right) = ج - ٢‬$‫</p><p>وبقسمة الطرفين على ‬$‫(ج - ٢)‬$‫ :</p><p>‬$‫١ = \frac{ص - ٢}{ج - ٢} - \frac{ص}{٢}‬$‫</p><p>للتبسيط نضع : ‬$‫ج - ٢ = ب‬$‫ ، حيث ‬$‫ج < ١‬$‫ ، فتكون معادلة القطع الزائد هي :</p><p>‬$‫(٧ - ٤) \dots \dots \dots‬$‫</p><p>‬$‫١ = \frac{ص - ٢}{ب} - \frac{ص}{٢}‬$</p><p>تسمى المعادلة (٤ - ٧) بالصورة القياسية لمعادلة القطع الزائد .</p><p>[ انظر شكل (٤ - ١٩) ] .</p><img src="img-95.jpeg" alt="img-95.jpeg" /><p>شكل (٤ - ١٩)</p><p>١١٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

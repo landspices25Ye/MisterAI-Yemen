@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>وفي هذا التفاعل يعاد ترتيب هيكل الجزيء مروراً بعدة مركبات بسيطة إلى أن تتكون أيزوسيانات الفينيل الذي يعطي الأمين بتفاعله مع الماء.</p><p>٢ - التحلل بالماء: تتفاعل الأميدات مع الماء في وسط حمضي أو قاعدي، وتكون النتيجة ظهور الحمض الكربوكسيلي، أو ملحه، وملح الأمونيوم.</p><p>$‫\text{cyclohexane} \xrightarrow{\text{O}} \text{NH}-\text{C}(=\text{O})-\text{CH}_3 + \text{H}_2\text{O}(\text{H}^+) \xrightarrow{\Delta} \text{cyclohexane}-\text{NH}_3 + \text{CH}_3-\text{C}(=\text{O})-\text{OH}‬$‫
+وسط حمضي
+‬$‫\text{cyclohexane}-\text{NH}-\text{C}(=\text{O})-\text{CH}_3 + \text{Na}^+\text{OH}^- \longrightarrow \text{cyclohexane}-\text{NH}_2 + \text{CH}_3-\text{C}(=\text{O})-\text{ONa}‬$‫</p><p>٣ - ينزع الماء: ينزع الماء من الأميدات غير المستبدلة إذا سُخنت هذه الأميدات بحضور خماسي أكسيد الفوسفور، وتكون النيتريل المرافق، ويتم الحذف من المزيج (Tautomer) الأقل ثباتاً.</p><p>‬$‫\text{R}-\text{C}(=\text{O})-\text{N}-\text{H} \rightleftharpoons \text{R}-\text{C}(=\text{O})-\text{N}-\text{H} \xrightarrow{-\text{H}_2\text{O}} \text{R}-\text{C} \equiv \text{N}‬$‫</p><h3>ثالثاً: النيتريلات: Nitriles</h3><p>تعتبر النيتريلات، من مشتقات الأميدات بعد نزع جزيء الماء منها، كما في المعادلة الآتية:</p><p>‬$‫\text{R}-\text{C}(=\text{O})-\text{N}-\text{H} \xrightarrow{-\text{H}_2\text{O}} \text{R}-\text{C} \equiv \text{N}‬$‫</p><p>وبالتعويض عن مجموعة (R) بـ (CH₃) على سبيل المثال ينتج الآتي:</p><p>‬$‫\text{CH}_3-\text{C}(=\text{O})-\text{N}-\text{H} \xrightarrow{-\text{H}_2\text{O}} \text{CH}_3-\text{C} \equiv \text{N}‬$
+أسيتا أميد أسيتو نيتريل</p><h3>رابعاً: الحموض الأمينية: Amino Acids</h3><p>الحموض الأمينية هي الوحدات التي تتألف منها الببتيدات والبروتينات، وهي أنواع كثيرة ولكن هناك عشرين نوعاً من الحموض الأمينية لها أهمية في البروتينات.</p><p>٩٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![LOGO]</p><h1>التعبير</h1><h3>١- التعبير الشفهي</h3><p>قدّم الرعيل الأول من جيل الصحابة الكرام نماذج رائعة في الثبات على العقيدة والذود عنها والدعوة إليها، تناقش مع معلمك وزملائك عمّا قرأته من روائع البطولة وعظيم التضحية لأولئك الثلة من صحابة رسول الله صلى الله عليه وسلم.</p><h3>٢- التعبير الكتابي</h3><p>قرأت قصة عن بطل من أبطال الدعوة الإسلامية في العصر الحديث. اكتب تلك القصة بأسلوبك.</p><h3>نشاط ذاتي</h3><p>ارجع إلى كتاب «رجال حول الرسول» للكاتب الإسلامي خالد محمد خالد، ثم اكتب ملخصاً موجزاً لسيرة أحد الصحابة ممن تحدث عنهم الكتاب، واعرض الملخص على زملائك ومعلمك في الفصل.</p><p>١٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-155.jpeg" alt="img-155.jpeg" /><h1>٢ - أكاسيد الكبريت : SOₓ</h1><p>يدخل الكبريت في أغلب المواد المستخدمة كوقود للمصانع والسيارات، فكميته في الفحم تصل إلى حوالي ٦٪. وتقل هذه النسبة قليلاً في زيت البترول، وعند إحراق هذا الوقود يتأكسد ما به من كبريت إلى ثاني أكسيد الكبريت (SO₂) الذي ينطلق في الهواء الجوي ويتأكسد بدوره إلى ثالث أكسيد الكبريت (SO₃) الذي يتحد مع بخار الماء ليكون حمض الكبريتيك، وأيضاً يتفاعل ثاني أكسيد الكبريت مع بخار الماء لتكوين حمض الكبريتيك.</p><p>$‫\text{ثاني أكسيد الكبريت} \xrightarrow{\Delta} \text{SO}_{2(\text{g})} \text{S} + \text{O}_2‬$‫</p><p>‬$‫\text{ثالث أكسيد الكبريت} \xrightarrow{2\text{SO}_{2(\text{g})} + \text{O}_{2(\text{g})}} 2\text{SO}_{3(\text{g})}‬$‫</p><p>‬$‫\text{حمض الكبريتيك} \longrightarrow \text{H}_2\text{SO}_3 \longrightarrow \text{SO}_2 + \text{H}_2\text{O}‬$‫</p><p>‬$‫\text{حمض الكبريتيك} \longrightarrow \text{H}_2\text{SO}_4 \longrightarrow \text{SO}_3 + \text{H}_2\text{O}‬$‫</p><p>كما أن أكاسيد الكبريت تظهر كناتج ثانوي في بعض الصناعات المتعلقة باستخلاص بعض الفلزات من خاماتها:</p><p>‬$‫2\text{Cu}_2\text{S} + 3\text{O}_2 \longrightarrow 2\text{Cu}_2\text{O} + 2\text{SO}_2‬$‫</p><p>‬$‫2\text{Ag}_2\text{S} + 3\text{O}_2 \longrightarrow 2\text{Ag}_2\text{O} + 2\text{SO}_2‬$‫</p><p>‬$‫\text{HgS} + \text{O}_2 \longrightarrow \text{Hg} + \text{SO}_2‬$</p><h1>٣ - أكاسيد النيتروجين : NOₓ</h1><p>يشكّل النيتروجين حوالي ٧٨٪ من حجم الهواء الجوي، وتتواجد أكاسيد النيتروجين في الهواء الجوي كملوثات إما بسبب النشاط البركاني، أو أثناء (البرق) أو نتيجة للنشاط البكتيري أو بسبب أنشطة الإنسان مثل احتراق الفحم: (٥١٪) من</p><p>١٧٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التفاصيل</p><p>وهكذا بالطريقة نفسها يمكن إثبات صحة العلاقات التالية :</p><p>$‫(١) \frac{s}{m} (ظنا س) = - قنا س = - \frac{1}{جا س} = - (1 + ظنا س)‬$‫</p><p>‬$‫(٢) \frac{s}{m} (قاس) = قاس ظاس‬$‫</p><p>‬$‫(٣) \frac{s}{m} (قتاس) = - قنا س ظنا س‬$‫</p><h1>نتائج (٤) :</h1><p>‬$‫(١) إذا كانت ص = جا س‬$‫</p><p>‬$‫(٢) إذا كانت ص = ا جا س‬$‫</p><p>‬$‫(٣) إذا كانت ص = جا [د(س)]‬$‫</p><p>‬$‫(٤) إذا كانت ص = جا س‬$‫</p><p>‬$‫(٥) إذا كانت ص = ا جنا س‬$‫</p><p>‬$‫(٦) إذا كانت ص = جنا س‬$‫</p><p>‬$‫(٧) إذا كانت ص = جنا [د(س)]‬$‫</p><p>‬$‫(٨) إذا كانت ص = جنا س‬$‫</p><p>‬$‫فإن ص = ا جنا س‬$‫</p><p>‬$$‫فإن ص = ا جنا س‬$$‫</p><p>‬$‫فإن ص = جنا [د(س)] [د(س)]‬$‫</p><p>‬$‫فإن ص = و جا س - جنا س‬$‫</p><p>‬$‫فإن ص = - ا جا س‬$‫</p><p>‬$$‫فإن ص = - ا جا س‬$$‫</p><p>‬$‫فإن ص = - جا [د(س)] [د(س)]‬$‫</p><p>‬$‫فإن ص = - و جنا س - جنا س‬$‫</p><h1>مثال (٦ - ٢٥)</h1><p>أوجد ‬$\frac{s}{m}$‫ لكل من الدوال التالية :</p><p>‬$‫(أ) ص = جا \sqrt{س}‬$‫</p><p>‬$‫(ب) ص = جا \frac{1}{س}‬$‫</p><p>‬$‫(د) ص = جنا ٢ س‬$‫</p><p>‬$‫(هـ) ص = ٢ جا س جنا س‬$‫</p><p>‬$‫(ز) ص = جا ٣ س‬$‫</p><p>‬$‫(ح) ص = جنا ٣ (ا س + ب)‬$‫</p><p>‬$‫(ط) ص جا س + س ص ٢ = س‬$‫</p><p>‬$‫(ي) ص ٢ = جنا (س + ص)‬$‫</p><h1>الحل :</h1><p>‬$‫(أ) ص = (جا \sqrt{س}) = جنا \sqrt{س} \times (\sqrt{س}) = جنا \sqrt{س} \times \frac{1}{2} \times \frac{1}{2} = \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \)</p><p>‬$(ب) ص = (جا \frac{1}{س}) = جنا \frac{1}{س} \times (\frac{1}{س}) = جنا \frac{1}{س} \times \frac{1}{2} \times \frac{1}{2} = - \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \)</p><p>١٧٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

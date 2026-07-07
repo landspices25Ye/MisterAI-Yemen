@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>١- استخدامها كوقود.</p><p>٢- استخدامها في البناء.</p><p>٣- استخدامها في الصناعات، كالصناعات الورقية.</p><p>٤- للحصول على أراض زراعية جديدة.</p><p>٥- للتوسع العمراني وشق الطرق.</p><p>٦- قد تموت بفعل الأمطار الحمضية.</p><p>٧- قد تنتهي بفعل الحرائق في الغابات.</p><p>- ما أهمية الغابات والأشجار للحياة؟</p><p>الثروة النباتية مهمة جداً للحياة على الأرض، إذ لا يمكن استمرار الحياة بدونها؛ فهي في غاية الأهمية، وما يقوم به الإنسان من تدمير واستنزاف لهذه الثروة فإنما يهدد الحياة وبقاءها على سطح الأرض. وترجع أهمية الأشجار والغابات إلى ما يأتي:</p><p>١- تُعد مصدراً للغذاء للإنسان والحيوان.</p><p>٢- تعمل على بقاء غاز الأوكسجين وغاز ثاني أوكسيد الكربون بنسب ثابتة في الهواء الجوي.</p><p>٣- تحافظ على التربة الزراعية وتعمل على تماسكها.</p><p>٤- تشكل بيئات ومواطن لمعيشة أنواع مختلفة من الكائنات الحية.</p><p>٥- تمنع حركة الكثبات الرملية وتوقف زحف التصحر.</p><p>٦- يحصل منها الإنسان على الأخشاب والأوراق ومنتجات صناعية ودوائية أخرى لا حصر لها.</p><p>٧- مصدر مهم للطاقة.</p><p>٨- تبعث في النفس الراحة والبهجة والسعادة.</p><h2>النقاط (٥)</h2><p>• زيارة منطقة غابات أو أحراج، وكتابة تقرير عنها.</p><p>الأحياء الصف الثالث الثانوي</p><p>١٨٥</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

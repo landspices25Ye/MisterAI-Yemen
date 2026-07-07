@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-131.jpeg" alt="img-131.jpeg" /><p>الوحدة الخامسة</p><p>يرمز للزاوية الزوجية بين س م ، س م بالرمز ( س م ، س م ) ، كما يرمز لها بالرمز ( ل ) ، وإذا اخترنا النقطة ج على المستقيم ( ل ) ورسمنا منها ( ج ج ، ج ل ) ، بحيث ( ج ج ، ج س ) ، ثم نرسم ( ج ج ، ج ل ) ، بحيث ( ج ج ، ج س ) سنحصل على زاوية مستوية هي ( ج ج ) ؛ تسمى هذه الزاوية بالزاوية الخطية للزاوية الزوجية ( س م ، س م ) ، ويمكن اختيار النقطة ج في أي موضع من ( ل ) ، فنجد أن : ( ج ج ، ج و ) = ( ج ج ، ج و ) .</p><h1>تعريف ( ٥ - ٣ )</h1><p>الزاوية الخطية هي زاوية مستوية مرسومة في وجهي الزاوية الزوجية بحيث يكون ضلعاها عمودين على حرف الزاوية الزوجية .
+قياس الزاوية الزوجية هو قياس زاويتها الخطية .</p><h1>مثال ( ٥ - ٩ )</h1><p>ب ج و مثلث قائم في ج ، نقطة خارجة عن مستواه ، بحيث ( ج ج ، ج ل ) . أثبت أن ( ج ج ) هي الزاوية الخطية للزاوية الزوجية بين المستويين ( ب ج و ) ، ( ب ج ) .</p><p>المعطيات : ب ج و مثلث قائم في ج ، ( ج ج ، ج ل ) [ شكل ( ٥ - ٢٠ ) ] .</p><p>المطلوب : إثبات أن ( ج ج ) هي الزاوية الخطية للزاوية الزوجية بين المستويين ( ب ج و ) ، ( ب ج )</p><p>البرهان : المستوى ( ب ج و ) المستوى ( ب ج ) = ب ج</p><p>ب ج ، ج ل ، ج ل ، ج ل ، ج ل ، ج ل ، ج ل ( معطى )</p><p>ب ج ( ج ج ) هي الزاوية الخطية للزاوية الزوجية بين</p><p>المستويين ( ب ج و ) ، ( ب ج ) [ تعريف ( ٥ - ٤ ) ] .</p><img src="img-132.jpeg" alt="img-132.jpeg" /><p>شكل ( ٥ - ٢٠ )</p><h1>مثال ( ٥ - ١٠ )</h1><p>ب ج و مثلث قائم في ج ، ( ب ج ) = ( ج ج ) = ١٠ سم ،</p><p>( ج ج ، ج ل ) المستوى ( ب ج و ) . احسب قياس الزاوية الزوجية بين</p><p>المستويين ( ب ج و ) ، ( ج ب و ) ، إذا علمت أن ( ج ج ) = ( ج ج ) سم .</p><p>المعطيات : ب ج و قائم في ج .</p><p>( ب ج ) = ( ج ج ) = ١٠ سم ،</p><p>( ج ج ، ج ل ) المستوى ( ب ج و )</p><p>( ج ج ) = ( ج ج ) سم [ شكل ( ٥ - ٢١ ) ]</p><img src="img-133.jpeg" alt="img-133.jpeg" /><p>شكل ( ٥ - ٢١ )</p><p>١٤٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

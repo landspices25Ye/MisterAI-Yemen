@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التفاصيل</p><h1>تعريف (٦ - ٢)</h1><p>يقال للنقطة (ب ، د (ب) ) نقطة انعطاف لبيان الدالة د إذا تحقق ما يلي :</p><p>(١) دَّ (ب) = ٠ ، أو دَّ (ب) غير موجودة .</p><p>(٢) دَّ (س) تغير إشارتها جوار العدد ب .</p><h1>مثال (٦ - ٤٠)</h1><p>أوجد فترات التقعر ونقاط الانعطاف للدالة د (س) = ٦ س³ - س⁴</p><h1>الحل :</h1><p>دَّ (س) = ١٨ س² - ٤ س³ ، دَّ (س) = ٣٦ س - ١٢ س²</p><p>نضع دَّ (س) = ٠ ← ٣٦ س - ١٢ س² = ٠</p><p>← ١٢ س (٣ - س) = ٠</p><p>إما س = ٠ ، أو س = ٣</p><p>نبحث عن إشارة دَّ (س) ، وفق الجدول التالي :</p><p>|  س | ∞ + | ٣ | ٠ | ∞ -  |
+| --- | --- | --- | --- | --- |
+|  دَّ (س) |  | ٠ | ٠ |   |
+|  د (س) | مقعر للأسفل | ٨١ | مقعر للأعلى | مقعر للأسفل  |</p><p>جدول (٦ - ٦)</p><p>من الجدول (٦ - ٦) نلاحظ أن :</p><p>(١) في الفترة [ ٣ ، ٠ ] منحنى الدالة مقعراً نحو الأعلى .</p><p>(٢) في الفترة [ ∞ ، ٠ ] ، [ ∞ ، ٣ ] ، [ ∞ ] منحنى الدالة مقعر نحو الأسفل .</p><p>(٣) النقطتين ( ٠ ، ٠ ) ، ( ٨١ ، ٣ ) نقاط انعطاف .</p><h1>رابعاً : تطبيقات على القيم القصوى :</h1><p>في الكثير من المسائل الحياتية نحتاج عادة إلى معرفة أكبر قيمة أو أصغر قيمة ككميات متغيرة ونقوم عند حلها بتحويلها من مسائل لفظية إلى معادلات أو دوال لإيجاد القيم المطلوبة .</p><p>١٩٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

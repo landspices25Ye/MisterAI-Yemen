@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الهندسة الفضائية</p><h1>مبرهنة (٥ - ١)</h1><p>المستقيم العمودي على مستقيمين غير متوازيين من المستوى  $‫\angle‬$  عمودي على  $‫\angle‬$ .</p><p>المعطيات :  $‫\vec{a} \subset \angle‬$  ،  $‫\vec{a} \subset \angle‬$  ،  $‫\vec{b} \subset \angle = \{ \vec{r} \}‬$  .</p><p>$‫\vec{a} \parallel \vec{a}‬$ ،  $‫\vec{b} \perp \vec{a}‬$ ،  $‫\vec{b} \perp \vec{a}‬$ ،</p><p>شكل (٥ - ٣)</p><p>المطلوب : إثبات أن :</p><p>$‫\vec{b} \perp \angle‬$ .</p><p>فكرة البرهان : إثبات أن  $‫\vec{b}‬$  عمودي</p><p>على أي مستقيم آخر في المستوى  $‫\angle‬$</p><p>وليكن  $‫\vec{a} \subset \angle‬$  .</p><p>البرهان : نرسم  $‫\vec{r} \parallel \vec{a}‬$  ،</p><p>$‫\vec{r} \parallel \vec{a}‬$ ،  $‫\vec{r} \parallel \vec{a}‬$ ،</p><p>ثم نأخذ على  $‫\vec{b}‬$  النقطتين  $‫\vec{r}‬$ ، بحيث</p><p>يكون  $‫|\vec{r}| = |\vec{r}|‬$ .</p><p>$‫\therefore \vec{r}‬$ متوسط وارتفاع في المثلث  $‫\vec{r}‬$ .</p><p>$‫\therefore |\vec{r}| = |\vec{r}|‬$  وأيضاً بالمثل نجد  $‫|\vec{r}| = |\vec{r}|‬$ .</p><p>$‫\therefore \vec{a} \perp \vec{r} \parallel \vec{a} \parallel \vec{r}‬$  (بثلاثة اضلاع) .</p><p>$‫\therefore \vec{a} (\vec{r} \parallel \vec{r}) = \vec{a} (\vec{r} \parallel \vec{r})‬$ .</p><p>$‫\therefore \vec{a} \perp \vec{r} \parallel \vec{a} \parallel \vec{r}‬$  (بضلعين وزاوية محصورة بينهما) .</p><p>$‫\therefore |\vec{r}| = |\vec{r}|‬$ .</p><p>$‫\therefore \vec{r}‬$ منتصف  $‫\vec{r}‬$ .</p><p>$‫\therefore \vec{r} \parallel‬$ ارتفاع في المثلث  $‫\vec{r}‬$ .</p><p>$‫\therefore \vec{b} \perp \vec{r} \parallel \vec{r}‬$ ،  $‫\vec{r} \parallel \vec{a}‬$  ،</p><p>$‫\therefore \vec{b} \perp \angle‬$ .</p><p>$‫\vec{r} \perp \perp \vec{r}‬$ .</p><p>$‫\vec{b} \perp \vec{a}‬$ .</p><p>وهو المطلوب .</p><img src="img-110.jpeg" alt="img-110.jpeg" /><p>شكل (٥ - ٣)</p><p>١٣٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

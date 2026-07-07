@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><img src="img-11.jpeg" alt="img-11.jpeg" /><p>شكل (١-١) الفرن العالي (اللافح)</p><p>– وتؤدي كمية الحرارة المرتفعة المتولدة في هذا القسم من الفرن إلى رفع درجة الحرارة إلى ما يقارب ١٩٠٠م، وفي أثناء تصاعد الغازات الساخنة يتفاعل $‫CO_2‬$ مع كميات إضافية من الكربون في تفاعل ماص للحرارة ليكون أول أكسيد الكربون الذي يعتبر عامل الاختزال الفعال في الفرن.</p><p>$‫CO_2 + C \longrightarrow 2CO \quad \Delta H = +173 \text{ Kj}‬$‫</p><p>وتحدث عملية اختزال خام الحديد في سلسلة من الخطوات، انظر الشكل (١-١) نجد أنه بقرب قمة الفرن يتم اختزال ‬$Fe_2O_3$‫ إلى ‬$Fe_3O_4$‫، كما في المعادلة الآتية:</p><p>‬$‫3Fe_2O_3 + CO \longrightarrow 2Fe_3O_4 + CO_2‬$‫</p><p>وإلى أسفل من ذلك بقليل، في منطقة أكثر حرارة من الفرن، يختزل ‬$Fe_3O_4$‫ إلى ‬$FeO$‫، حسب المعادلة الآتية:</p><p>‬$‫Fe_3O_4 + CO \longrightarrow 3FeO + CO_2‬$‫</p><p>وأخيراً تختزل ‬$FeO$‫ إلى الفلز تحت المنطقة السابقة – أيضاً – ويكون الفلز عند درجات الحرارة العالية منصهراً، فينساب إلى الأسفل مكوناً بركة من الفلز المصهور في قاعدة البرج.</p><p>‬$‫FeO + CO \longrightarrow Fe + CO_2‬$‫</p><p>ووظيفة الحجر الجيري في الفرن تتمثل في تزويد وسط قاعدي تتفاعل معه الأكاسيد الحمضية، مثل: ‬$SiO_2$‫ و ‬$P_2O_5$‫، أو الأكاسيد الأمفوتيرية مثل ‬$Al_2O_3$.</p><p>١٨</p><p><http://www.e-learning-moe.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

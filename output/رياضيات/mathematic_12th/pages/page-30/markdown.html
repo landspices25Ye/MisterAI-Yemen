@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-27.jpeg" alt="img-27.jpeg" /><p>الوحدة الأولى</p><h1>الحل :</h1><p>أ) ع = [م ، ه] = م (جتا ه + ت جا ه)</p><p>- ع = م (جتا ه + ت جا ه)</p><p>= م (جتا ه - ت جا ه)</p><p>= م [جتا (ه + π) + ت جا (ه + π)]</p><p>= [م ، ه + π] [انظر الشكل (١ - ١٠)]</p><p>كما سبق نلاحظ أن : | ع | = | ع | = م</p><p>سعة العدد (ع) = ه + π .</p><p>أي أن للعدد المركب (ع) ونظيره الجمعي (ع) المقياس نفسه ، بينما تزيد سعة النظير الجمعي بمقدار π .</p><p>ب) ع = م (جتا ه + ت جا ه)</p><p>∴ ع = م (جتا ه - ت جا ه)</p><p>ع = م [جتا (π ٢ - ه) + ت جا (π ٢ - ه)]</p><p>أو ع = م [جتا (ه - ه) + ت جا (ه - ه)]</p><p>[انظر الشكل (١ - ١١)]</p><p>ونلاحظ أن :</p><p>| ع | = | ع | = م .</p><p>سعة (ع) = π ٢ - ه = ه</p><p>أي أن العددين المترافقين ، لهما المقياس نفسه ويختلفان في إشارة سعتيهما .</p><p>ج) ع = م (جتا ه + ت جا ه)</p><p>∴ 1/ع = م (جتا ه + ت جا ه) / م (جتا ه - ت جا ه) [الضرب في (جتا ه - ت جا ه)]</p><p>= (جتا ه - ت جا ه) / م (جتا ه + ت جا ه) (جتا ه - ت جا ه)</p><p>= 1/م × (جتا ه - ت جا ه) / (جتا ه + جتا ه) (جتا ه - ت جا ه)</p><p>= 1/م (جتا (π ٢ - ه) + ت جا (π ٢ - ه)) [انظر الشكل (١ - ١٢)]</p><p>نلاحظ أن : | ع | = 1/م ، سعة (1/ع) = سعة (ع) = π ٢ - ه أو ه .</p><p>أي أن مقياس النظير الضريبي للعدد المركب (ع) هو 1/م بينما سعته تساوي سعة مرافق العدد المركب (ع) .</p><img src="img-28.jpeg" alt="img-28.jpeg" /><img src="img-29.jpeg" alt="img-29.jpeg" /><p>شكل (١ - ١١)</p><img src="img-30.jpeg" alt="img-30.jpeg" /><p>شكل (١ - ١٢)</p><p>٢٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-47.jpeg" alt="img-47.jpeg" /><p>شكل (٣-١٢) الطلاء بالكهرباء</p><p>$‫Ag^+ + e^- \longrightarrow Ag_{(s)}‬$‫
+$Ag_{(s)} \longrightarrow Ag^+ + e^-‬$$‫
+عند الكاثود ( المهبط )
+عند الأنود ( المصعد )</p><p>قانون فارادي للتحليل الكهربائي :</p><p>قام العالم فارادي عام ١٨٣٢م باكتشاف العلاقة بين كمية الكهرباء المارة في المحلول أو المصهور وكمية المواد المتكوّنة عند الأقطاب، ولخّص هذه العلاقة في قانونين سُمّيا باسمه .</p><p>قانون فارادي الأول : « تتناسب كتل المواد المتكوّنة عند أي قطب أثناء عملية التحليل الكهربائي تناسباً طردياً مع كمية الكهرباء المارة في المحلول أو المصهور » .</p><p>‬$$‫Ag^+ + e^- \longrightarrow Ag_{(s)}‬$$
+لو نظرنا إلى المعادلة الآتية :</p><p>نلاحظ أن مولاً واحداً من الإلكترونات ( ٢٢٠٥ × ١٠٣) إلكتروناً يتفاعل مع أيونات الفضة ليرسب مولاً واحداً من الفضة ( ١٠٧,٨٨ جم )، وبالمثل فإن تفاعل مولين من الإلكترونات يرسب مولين من الفضة ... وهكذا .</p><p>ويطلق على كمية الكهرباء اللازمة لخلية إلكتروليتية للحصول على مول واحد من الإلكترونات لإحداث تفاعل أكسدة أو اختزال اسم الفارادي .</p><p>١ فارادي = ١ مول من الإلكترونات .</p><p>٦٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

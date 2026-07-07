@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-161.jpeg" alt="img-161.jpeg" /><p>الوحدة السادسة</p><p><strong>البرهان :</strong> بما أن الدالة تحقق شرطي مبرهنة القيمة المتوسطة على الفترة [ ! ، ب ] .</p><p>إذن $‫\forall m_1, m_2 \subseteq [ ! , n ]‬$ الدالة تحقق مبرهنة القيمة المتوسطة على الفترة $‫[ m_1, m_2 ]‬$ .
+عندئذ يوجد على الأقل عدد $‫ج \subseteq [ m_1, m_2 ]‬$ ، بحيث يكون :</p><p>$‫\text{د (ج)} = \frac{\text{د (س) - د (س)}}{\text{س - س}}‬$‫</p><p>عندما ‬$\text{د (س)} > 0$‫ ، ‬$\forall m \subseteq [ m_1, m_2 ]$‫</p><p>‬$‫\therefore \frac{\text{د (س) - د (س)}}{\text{س - س}} < 0 \quad \Leftarrow \quad \text{د (س) } > \text{د (س)}‬$‫</p><p>إذن الدالة تزايدية على الفترة [ ! ، ب ] .</p><h3>تعريف (٦-١)</h3><p>إذا كانت الدالة د معرفة على الفترة ف ، ب ‬$\subseteq$‫ ف ، فإن للدالة عند س = ب <strong>نقطة حرجة</strong>
+إذا كانت د (ب) = ٠ أو د (ب) غير موجودة .</p><h3>مثال (٦-٣٣)</h3><p>إذا كانت د (س) = ٣ س - س ٣ ، ‬$\forall m \subseteq \text{ح}$‫ . أوجد فترات تزايد الدالة وتناقصها .</p><h3>الحل :</h3><p>(١) د : دالة متصلة وقابلة للاشتقاق على ح ، د (س) = ٦ س - ٣ س ٢ .</p><p>(٢) نبحث عن النقاط التي تجعل د (س) = ٠ وذلك بوضع د (س) = ٠ ‬$\Leftarrow$‫ ٦ س - ٣ س ٢ = ٠ ‬$\Leftarrow$‫ ٣ س (٢ - س) = ٠ أي عند : س = ٠ ، س = ٢ توجد للدالة نقطتان حرجتان .</p><p>(٣) نبحث عن إشارة د (س) في كل من الفترات [ -∞ ، ٠ ، ٢ ، ٠ ، ٢ ، ∞ ] كما يلي :
+والجدول (٦-٢) يوضح ذلك حيث الرمز ( ‬$\text{م}$‫ ) يدل على تزايد الدالة والرمز ( ‬$\text{د}$‫ ) يدل على تناقصها .</p><p>- ■ ‬$\forall m \subseteq [ -\infty , 0, \infty ]$‫ ، د (س) > ٠ ؛ لذا فإن الدالة د تناقصية على الفترة [ -∞ ، ٠ ، ٢ .
+- ■ ‬$\forall m \subseteq [ 0, 2, 0 ]$‫ ، د (س) > ٠ ؛ لذا فإن الدالة د تزايدية على الفترة [ 0, 2 , 0 .
+- ■ ‬$\forall m \subseteq [ 2, 0, 0 ]$ ، د (س) > ٠ ، لذا فإن الدالة د تناقصية على الفترة [ 0, 2 , 0 .</p><p>١٨٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

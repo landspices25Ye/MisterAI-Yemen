@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-20.jpeg" alt="img-20.jpeg" /><h2>كمية التحرك الزاوي : Angular Momentum</h2><p>عرفت مما سبق كمية التحرك الخطي وهنا ستتعرف على كمية التحرك الزاوي التي لا تختلف كثيراً عن كمية التحرك الخطي. فبدلاً من دراسة الجسم وهو يتحرك في حركة خطية سندرسه وهو في حالة حركة دورانية. وحيث إن كمية التحرك الخطي كمية متجهة ولها مقدار واتجاه فإن كمية التحرك الزاوي كمية متجهة لها مقدار واتجاه.</p><p>وبما أن كمية التحرك الخطي تُعطى بالعلاقة ك ع فإن كمية التحرك الزاوي تعطى بالعلاقة $‫\omega I‬$ ؛ أي إن كمية التحرك الزاوي = $‫\omega I‬$ حيث $‫I$ عزم القصور الذاتي ويساوي (‬$\text{ك نق}^2$‫)، ‬$\omega$‫ السرعة الزاوية وتساوي ‬$\frac{\text{ع}}{\text{نق}}$‫ وبهذا تعرف كمية التحرك الزاوي بأنها عبارة عن حاصل ضرب عزم القصور الذاتي الدوراني في السرعة الزاوية وتساوي (‬$\text{ك ع X نق}$‫). حيث (‬$\text{ك}$‫) هي كتلة الجسم و (‬$\text{ع}$‫) سرعته الخطية و (‬$\text{نق}$) نصف قطر الدوران. وكما أن خاصية القصور الذاتي هي عبارة عن مقاومة الجسم للتغير في حالة الحركة الخطية، فإن القصور الذاتي الدوراني هو عبارة عن مقاومة الجسم لعزم القوة التي تحاول إحداث تغير في حالة حركة الجسم الدورانية. أما السرعة الزاوية – كما عرفت – فهي معدل تغير الإزاحة الزاوية بالنسبة للزمن.</p><h3>قانون حفظ كمية التحرك الزاوي : Conservation of Angular Momentum</h3><p>يصاغ قانون حفظ كمية التحرك الزاوي كالآتي:</p><p>تظل كمية التحرك الزاوي لجسم ثابتة مالم تؤثر عليها عزوم دوران خارجية. هذا يعني أنه بدون عزم خارجي فإن حاصل ضرب عزم القصور الدوراني في السرعة الزاوية عند أية لحظة يظل ثابتاً.</p><p>لتوضيح هذا المبدأ قم بالنشاط الآتي:</p><h3>نشاط (٣)</h3><p>حاول أن تحصل على الجهاز الموضح في شكل (١٠) وقم بتدوير الإطار حول محورها.</p><p>- بماذا تشعر عند إدارة الإطار ؟
+- استمر في تدويره بقوة وحاول إيقافه.
+- هل من السهل إيقافه ؟</p><p>٢٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

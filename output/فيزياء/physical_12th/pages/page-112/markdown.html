@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-109.jpeg" alt="img-109.jpeg" /><p>س ٣) اختر الإجابة الصحيحة لكل عبارة من العبارات الآتية:</p><p>١ - عند تسخين الكاثود إلى درجة حرارة عالية فإنه يبعث من سطحه :</p><p>أ) إلكترونات . ب) بروتونات .</p><p>ج) نيترونات . د) بيزوترونات .</p><p>٢ - يغطي الطرف المتسع لأنبوبة أشعة الكاثود بمادة فلوريسية مثل كبريتيد :</p><p>أ) الهيدروجين . ب) الخارصين .</p><p>ج) الألومنيوم . د) الحديد .</p><p>٣ - تتكون المجموعة الحارقة في أنبوبة أشعة الكاثود من ملفات عددها :</p><p>أ) ثمانية . ب) ستة .</p><p>ج) أربعة . د) اثنين .</p><p>٤ - عندما تصطدم الإلكترونات المنطلقة من البندقية الإلكترونية بالشاشة</p><p>فإن الشاشة تشع ضوءاً ذا لون معين يعتمد على :</p><p>أ) كتلة المادة الفلوريسية وكتلة الإلكترونات .</p><p>ب) حجم المادة الفلوريسية وحجم الإلكترونات .</p><p>ج) سمك المادة الفلوريسية وشحنة الإلكترونات .</p><p>د) نوع المادة الفلوريسية وطاقة الإلكترونات .</p><p>٥ - تعني كلمة رادار الكشف عن الأجسام وتحديد بعدها وسرعتها</p><p>واتجاهها بواسطة موجات لاسلكية :</p><p>أ) طويلة . ب) طويلة جداً .</p><p>ج) قصيرة . د) قصيرة جداً .</p><p>٦ - يطلق على كاميرا التلفاز :</p><p>أ) الكينوسكوب . ب) الأسيلوسكوب .</p><p>ج) الأيكونوسكوب . د) التليسكوب .</p><p>٧ - الدائرة التي تقوم بتحويل الموجات الصوتية إلى تيارات كهربائية معبرة</p><p>عن الصوت هي دائرة :</p><p>أ) هوائي الإرسال . ب) الاهتزاز .</p><p>ج) المكرفون . د) السماعة .</p><p>١١٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

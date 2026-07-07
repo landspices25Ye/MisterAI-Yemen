@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-125.jpeg" alt="img-125.jpeg" /><h1>ملاحظة</h1><p>الصناعات البتروكيميائية ينتج عنها مواد عديدة لا يستغني عنها الإنسان في وقتنا الراهن، وتشمل:</p><p>١ - البلاستيك: وتدخل في صناعة الملابس، والإطارات، وعوازل الأسلاك الكهربائية، والأجهزة الكهربائية، وفي صناعة لعب الأطفال، وأدوات الزينة ... وغيرها.
+٢ - الألياف الصناعية: وتدخل في صناعة الملابس، والجلد الصناعي، والعوازل، ومواد البناء.
+٣ - اللدائن: وتدخل في صناعة لعب الأطفال، وأدوات وأواني الطبخ، والأثاث، والمفروشات، وأجزاء الأدوات والمحركات.
+٤ - الكحولات: وتدخل في صناعة المذيبات، والكثير من المواد الكيميائية، وأدوات الزينة.
+٥ - الأدوية: الإسبرين، والمضادات، وعقاقير السلفا.
+٦ - العطور والأصباغ والمتفجرات.</p><p>وهناك المزيد من الصناعات التي تعتمد على النفط، وسوف يتم مناقشتها في الوحدة الثامنة من هذا الكتاب.</p><h1>نشاط (٧ - ٤)</h1><h1>قضية للبحث:</h1><p>مستعيناً بالمراجع العلمية المتوفرة في مكتبة المدرسة وفي بيئتك المحلية ونشرات الأخبار الاقتصادية في الإذاعة والتلفزيون، اكتب تقريراً عن أهم منتجات النفط المستخدمة كوقود، وكمواد أولية للكثير من الصناعات البتروكيميائية، وضمن التقرير معلومات عن أسعار برميل النفط، وهل هذه الأسعار تعكس قيمته الفعلية من وجهة نظرك، وناقش ذلك مع معلمك وزملائك في الصف.</p><p>١٣٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

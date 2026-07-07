@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-155.jpeg" alt="img-155.jpeg" /><p>الوحدة السادسة</p><p>[٤] أوجد المشتقة النونية لكل من الدوال التالية :</p><p>(١) ص = س و س
+(٢) ص = س و + ب ، ب عدد ثابت و ج ص + ،</p><p>(٣) ص = ١/س ، س ج ٠
+(٤) ص = ١/ب + ج س ، س ج ب ج ، ج ج ٠</p><p>(٥) ص = ١/١ + ٤ س ٢ - ٤ س ١
+(٦) ص = س ج ت س</p><p>(٧) ص = ١/(١ س + ب)
+(٨) ص = ج ا س</p><p>(٩) ص = ب س
+(١٠) ص = ل و س</p><p>[٥] إذا كانت د (س) = ١ + هـ ، تا (س) = ل و س فوجد :</p><p>أ) د (س)</p><p>ب) ت (س)</p><p>ج) د (ت) ت (س)</p><p>د) ت (ت) د (س)</p><p>هـ) ت (ت) د (٠)</p><p>١٨٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

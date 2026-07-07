@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>عن جسم الخلية حيث يتفرع جانبياً، ويعطي أفرعاً دقيقة عدة تنتهي بنهايات منتفخة تسمى الأزرار التشابكية Synaptic Knobs.</p><p>تصنف الخلايا العصبية على أساس عدد الزوائد الخارجة من جسم الخلية إلى ثلاثة أنواع هي:</p><p>١- خلايا عصبية أحادية القطب، ومنها يخرج من جسم الخلية زائدة واحدة قد تنقسم إلى فرعين أحدهما محور، والآخر زائدة شجيرية، مثل الخلايا الحسية.
+٢- خلايا عصبية ثنائية القطب، ويخرج من جسم الخلية زائدتان، مثل خلايا شبكية العين.
+٣- خلايا عصبية عديدة الأقطاب، وهي أكثر الخلايا انتشاراً في الجهاز العصبي، مثل الخلايا العصبية الحركية.</p><img src="img-7.jpeg" alt="img-7.jpeg" /><p>- لاحظ الشكل (٥) الذي يبين تصنيف الخلايا العصبية وظيفياً.</p><p>- سمّ الخلية العصبية التي تستقبل المؤثرات من البيئة المحيطة، وتنقلها إلى الجهاز العصبي المركزي.</p><p>- ما الخلية العصبية التي تنقل السيل العصبي من الجهاز العصبي المركزي إلى أعضاء الاستجابة؟</p><p>لاحظ أن الخلية التي توجد في الجهاز العصبي المركزي، وتصل بين</p><p>الشكل (٥) أنواع الخلايا العصبية حسب الوظيفة. الخليتين الحسية، والحركية تدعى الخلية البينية Inter Neuron.</p><h3>خلايا الغراء العصبي : Neuroglia</h3><p>ما أنواع خلايا الغراء العصبي؟ وما وظيفتها؟</p><p>تشكل هذه الخلايا غالبية خلايا الجهاز العصبي ولها القدرة على الانقسام. ولكي تتعرف على أنواعها، لاحظ الجدول: (٢).</p><p>الأحياء للصف الثالث الثانوي</p><p>١٣</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

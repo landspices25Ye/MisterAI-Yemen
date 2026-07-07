@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الهليوم، ويصاحبه نقص في الكتلة يعادل ٠,٠٢٩ و.ك.ذ، أي ما يعادل ٢٧,٠٣٥ مليون إلكترون فولت، يتحول هذا القدر من الطاقة إلى طاقة إشعاعية هائلة، ولعلك تتخيل كم من ذرات الهيدروجين التي تتحول أنويتها إلى أنوية لذرات الهليوم وكم الطاقة التي ستنتج. وينتقل من هذه الطاقة إلى الأرض جزء بسيط جداً بدون وجود وسط مادي بسرعة تصل إلى ( ١٠ × ٣ ) متر/ث.</p><p>وقد ثبت أن ( ٧٠٪ ) من كتلة الشمس هيدروجين، ( ٢٨٪ ) من كتلتها هليوم، ( ٢٪ ) من كتلتها عناصر أخرى.</p><h3>متوسط الطاقة الشمسية على وحدة المساحات من سطح الأرض :</h3><p>تأمل الشكل ( ٢ ) ولاحظ أن الطاقة الشمسية التي تصل إلى الأرض لا تمتص</p><img src="img-184.jpeg" alt="img-184.jpeg" /><p>شكل ( ٢ )</p><p>كلها ولكن حوالي ( ٤٧٪ ) فقط من الإشعاع الشمسي تمتصه الأرض يومياً في اليابسة والمسطحات المائية، ويتحول إلى طاقة داخلية مخزونة تدفئ الأرض، وجزء من هذه الطاقة يشع راجعاً إلى الفضاء ليلاً في صورة أشعة تحت الحمراء، فيبرد سطح الأرض ليلاً عنه</p><p>نهاراً، كما أن حوالي ( ٣٤٪ ) من ذلك الإشعاع ينعكس مرتداً إلى الفضاء الخارجي، و ( ١٩٪ ) يمتص في الغلاف الجوي المحيط بالأرض.</p><p>ويعمل الإشعاع النافذ والذي قدره ٤٧٪ من الإشعاع الشمسي الواصل إلى الأرض على تدفئة الأرض، وتبخير مياه البحار والمحيطات ويتصاعد في صورة بخار ماء مكوناً السحب.</p><p>ولقد وجد أن ( ١ سم² ) من سطح الأرض يستقبل في المتوسط ( ٢ ) سعر في الدقيقة.</p><p>∴ متوسط الطاقة الشمسية الساقطة على وحدة المساحات في الثانية =</p><p>$‫\frac{4,18 \times 2}{60} = 0,14 \text{ جول / الثانية. سم}^2‬$</p><p>إذاً يمكننا حساب الطاقة الإشعاعية الكلية الصادرة عن الشمس في الثانية، وذلك</p><p>١٨٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

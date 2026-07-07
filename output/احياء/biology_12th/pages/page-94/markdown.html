@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>٤- وضع بإيجاز الطرق التي يمكن استخدامها للحصول على:
+- أفضل عقلة من نبات الورد وتكثيرها.
+- ثمار عذرية.</p><p>٥- ما وظيفة الآتي:</p><p>- مبيض اثني الإنسان. - البربخ. - المحصيتان في الإنسان.</p><p>٦- قارن بين اثنين في كل فقرة مما يأتي:</p><p>أ - الدورة الجنسية واللاجنسية في طفيل بلازموديوم الملاريا من حيث عددها، ومكان حدوثها.</p><p>ب - الطور المشيجي، والبوغي في الفيوناريا من حيث المجموعة الكروموسومية.
+ج - التطعيم بالبرعم، والتطعيم بالقلم من حيث آلية التحضير للطعم والأصل، وآلية وضع الطعم في الأصل.</p><p>٧- ادرس الشكل اللاحق الذي يوضح العلاقة في تركيز الهرمونات لدورة الحيض والمطلوب تحديد أثر الآتي:</p><p>أ - الزيادة المفاجئة في تركيز LH.</p><p>ب - إقرار الجسم الأصفر هرمون البروجيسترون بعد اليوم الرابع عشر من الدورة.
+ج - هرمونات:</p><p>- FSH على حوصلة جراف.</p><p>- البروجيسترون والإستيروجيين على الرحم في دورة الحيض.</p><img src="img-74.jpeg" alt="img-74.jpeg" /><p>٩٤</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

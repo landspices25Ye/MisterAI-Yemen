@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-83.jpeg" alt="img-83.jpeg" /><p>س ٧: ما الأسباب التي جعلت حجوم الأجهزة الإلكترونية تصغر كثيراً عما كانت عليه في السابق.</p><p>س ٨: في طريقة التكبير بالقاعدة المشتركة باستخدام ترانزستور من نوع (P-N-P)، وضح السبب الذي يجعل الجزء الأكبر من تيار الباعث يمر باتجاه الجمع بدلاً من مروره باتجاه القاعدة.</p><p>س ٩: مستعيناً بالرسم، اشرح طريقة تستخدم فيها الوصلة الثنائية في تقويم التيار المتردد.</p><p>س ١٠: وضح كيف يتكون الجهد الحاجز في الوصلة الثنائية.</p><p>س ١١: وضح بالرسم تركيب الترانزستور.. ونوعيه، والرموز الفيزيائية لهما.</p><p>س ١٢: ارسم دائرة كهربائية تحتوي على ترانزستور من نوع (P-N-P) بحيث يوصل الباعث بالقاعدة توصيلاً أمامياً، وتوصل القاعدة بالجمع توصيلاً خلفياً (عكسياً).</p><p>س ١٣: في دائرة كهربائية ذات قاعدة مشتركة كانت مقاومة دائرة الباعث تساوي (٤٠) أوم ومقاومة دائرة المجمع (١٣٠) كيلو أوم، فإذا كان تيار المخرج يساوي (٤٠) ميكرو أمبير، وتيار المدخل يساوي (٥٠) ميكرو أمبير فاحسب:</p><p>أ - معامل تكبير التيار.</p><p>ب - معامل تكبير الجهد.</p><p>ج - معامل تكبير القدرة.</p><p>س ١٤: في دائرة باعث مشترك، كان تيار القاعدة (١٠ ميكرو أمبير) وتيار المجمع (١) مللي أمبير، احسب معامل تكبير التيار، ومعامل تكبير القدرة، إذا علمت أن مقاومة مدخل الدائرة (١) كيلو أوم ومقاومة مخرجها (٢٥) كيلو أوم.</p><p>٨٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

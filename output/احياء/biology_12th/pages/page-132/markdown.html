@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>الوراثة الجزيئية Molecular Genetics</h2><p>عرفت أن العالم مندل هو أول من وضع أسس علم الوراثة؛ حيث أوضح أن الصفات الوراثية تنتقل من الآباء إلى الأبناء عبر الأمشاج الذكورية والأنثوية. وهذا الأمر ينطبق على جميع الكائنات الحية التي تتكاثر جنسياً. مستعيناً بما درسته في الوحدات السابقة، أجب عن الأسئلة الآتية:</p><p>- كيف توصل مندل إلى النتائج التي حصل عليها؟
+- كيف تنتقل الصفات الوراثية عبر الأمشاج؟
+- ما المقصود بالصفة السائدة والصفة المتنحية؟
+- ما المقصود بالوراثة غير المتدلية؟</p><p>علمت بأن مندل عندما وضع أسس علم الوراثة لم تكن هناك معلومات حول الكروموسومات والجينات. وعند اكتشافها أمكن تفسير الأسس الوراثية على ضوئها. ومع التطور المتسارع في علم الوراثة ظهر علم الوراثة الجزيئية الذي يركز على الكروموسومات ومكوناتها من الحموض النووية والجينات. وقد ساعد هذا العلم على فهم كيفية توارث الصفات بل وكيفية توريث الصفات المرغوبة عن طريق الهندسة الوراثية.</p><h3>الكروموسومات والجينات:</h3><p>علمت أثناء دراستك في الصف الأول الثانوي أن الخلية الحية تحتوي على نواة توجد فيها تراكيب خيطية تسمى الكروموسومات Chromosomes، وإن هذه الكروموسومات تتكون من حموض نووية تحمل الجينات Genes المسؤولة عن نقل الصفات الوراثية. وهناك نوعان من الحموض النووية في خلايا الكائنات الحية، الأول هو الحمض النووي الرايبوزي منقوص الأكسجين DNA.</p><p>- ما اسم الحمض النووي الآخر؟ وماذا يرمز له؟
+- ما الفرق بينه وبين الحمض DNA؟</p><p>وقد تمكن علماء الوراثة من معرفة دور حمض DNA في تركيب الكروموسومات، وأهمية هذا الحمض كمادة وراثية في الأربعينيات من القرن الماضي. أما اليوم فقد أصبح بالإمكان تصنيع الحمض النووي DNA في المختبرات العلمية أو إجراء تعديلات عليه وإدخاله إلى خلايا حية وبالتالي تغيير خصائصها الوراثية.</p><p>١٣٢</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

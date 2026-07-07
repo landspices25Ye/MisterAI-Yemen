@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>القطع الخروطية</p><p>فالمعادلة (٤ - ١) هي معادلة قطع مكافئ تقع بؤرته في النقطة (١ ، ٠) ، ومعادلة دليله هي س = ١ ، ومحوره هو محور السينات ورأس القطع هي نقطة الأصل .</p><p>وإذا بادنا موضعي البؤرة والدليل فإن معادلة القطع تتغير تبعاً لذلك ويمكن أن تأخذ الصور التالية التي يمكن استنتاجها بسهولة من التعريف :</p><img src="img-76.jpeg" alt="img-76.jpeg" /><p>(١) عندما تكون بؤرة القطع هي م (٠ ، ١) ، الدليل ل معادلته س = ١ كما في [شكل (٤ - ٥) ] ورأس القطع هي نقطة الأصل ، فإن معادلة القطع هي :</p><p>ص = ٢ = ٤ س ، ١ < ٠ ... (٤ - ٢)</p><img src="img-77.jpeg" alt="img-77.jpeg" /><p>(٢) عندما تكون البؤرة هي م (٠ ، ١) ومعادلة الدليل ل هي ص = ١ ورأسه نقطة الأصل ، فإن معادلة القطع هي :</p><p>س = ٢ = ٤ ص ، ١ < ٠ ... (٤ - ٣)</p><p>ومحور الصادات هو محور ثمانته [ شكل (٤ - ٦) ] .</p><img src="img-78.jpeg" alt="img-78.jpeg" /><p>(٣) كذلك إذا كانت البؤرة م (٠ ، ١) ومعادلة الدليل ل هي ص = ١ ورأسه نقطة الأصل [شكل (٤ - ٧) ] فإن معادلة القطع هي :</p><p>س = ٢ = ٤ ص ، ١ < ٠ ... (٤ - ٤)</p><p><strong>ملاحظة :</strong> تُسمى المعادلات من (٤ - ١) إلى (٤ - ٤) بالمعادلات القياسية للقطع المكافئ .</p><p>وبمقارنة الصور المختلفة لمعادلة القطع المكافئ والأشكال البيانية المرافقة لها نلاحظ أنه إذا أخذت معادلة القطع الصورة : ص = ٢ = ٤ س ، تكون فتحة القطع وفق الاتجاه الموجب (اليمين) أو الاتجاه السالب (اليسار) محور السينات تبعاً لإشارة المقدار ٤ س موجبة أو سالبة [انظر الشكلين (٤ - ٣) و (٤ - ٥) ] .</p><p>وإذا أخذت معادلة القطع المكافئ الصورة س = ٢ = ٤ ص تكون فتحته وفق الاتجاه الموجب (أعلى) أو الاتجاه السالب (أسفل) محور الصادات تبعاً لإشارة المقدار ٤ ص موجبة أو سالبة [انظر الشكلين (٤ - ٦) و (٤ - ٧) ] .</p><p>١٠٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

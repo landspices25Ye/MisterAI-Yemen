@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>e-learning</p><h1>التحقق من أن التيار الكهربائي المتردد يمر في الدوائر الكهربائية التي تحتوي على مكثف بينما التيار المستمر لا يمر</h1><h1>التجربة الثانية</h1><h1>الأهداف</h1><p>- تتحقق من مرور التيار الكهربائي المتردد في الدوائر الكهربائية التي تحتوي على مكثف كهربائي.
+- تتحقق من أن التيار الكهربائي المستمر لا يمر في الدوائر الكهربائية التي تحتوي على مكثف كهربائي.</p><p>متردد باستخدام محوّل خافض للجهد، لتحصل على ٦ فولت كما يوضّحه الشكل (٢).
+٤- أقفل الدائرة بواسطة المفتاح.
+- لاحظ ما يحدث.
+- ماذا تستنتج؟</p><h1>الأدوات والمواد المطلوبة</h1><p>تحتاج لتنفيذ هذه التجربة إلى الأدوات الآتية:
+- مكثف كهربائي ذو سعة محدّدة ولتكن ١٠٠ ميكروفاراد.
+- مصباح كهربائي صغير يشتغل على جهد ٣ فولت.
+- بطارية قوّتها الدافعة حوالي ٦ فولت.
+- أميتر حراري.
+- مفتاح كهربائي.
+- قاعدة مصباح.</p><img src="img-6.jpeg" alt="img-6.jpeg" /><h1>خطوات تنفيذ التجربة</h1><p>١- صل الأدوات السابقة معاً على التوالي كما يوضّحها الشكل (١).
+٢- أقفل الدائرة الكهربائية بواسطة المفتاح.
+- لاحظ ما يحدث.
+٣- استبدل البطارية السابقة بمصدر تيار</p><img src="img-7.jpeg" alt="img-7.jpeg" /><p>٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

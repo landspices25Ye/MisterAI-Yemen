@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>ملاحظة</h2><p>أثبتت الدراسات أن الحشرات قد طورت من مقاومتها لهذا المبيد (D.D.T.) بالإضافة إلى ذلك هناك مؤشرات تدل على أن استخدام هذا المبيد له علاقة بأمراض الكبد والسرطان؛ ولذلك حرّمت كثير من الدول استخدامه تلافياً لهذه الأضرار، ولتأثيره السلبي على البيئة وعلى بعض الطيور والأسماك.</p><p>ب- مركب BHC (Benzene Hexa Chloride) :</p><p>ويعرف هذا المبيد باسم (B.H.C.) "لندان" نسبة إلى مكتشفه، وهو الكيميائي الهولندي فاندير ليندان (Vander Linden)، وهذا المركب هالوجيني، إذ إنه يتكون من حلقة بنزين أضيفت إليها ست ذرات من الكلور.</p><img src="img-133.jpeg" alt="img-133.jpeg" /><img src="img-134.jpeg" alt="img-134.jpeg" /><p>ولهذا المركب تسع هيئات فراغية، وواحدة منها لها قدرة عالية على قتل الحشرات وتسمى (أيزومرجاما).</p><h2>ملاحظة</h2><p>هناك مجموعة أخرى من المبيدات المشتقة من الكلور مثل (النوكسافين، والكلوردان، وهبتا كلور، والألدرين، والأندرين) وهي من أقوى المبيدات الحشرية، إلا أنه ثبت أن لها أضراراً على الإنسان والحيوان على المدى البعيد، وذلك لأنها تتراكم في جسم الحيوان والإنسان والطيور، ويصعب التخلص منها وتؤدي في النهاية إلى آثار مدمرة على جسم الكائن الحي.</p><p>١٤٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

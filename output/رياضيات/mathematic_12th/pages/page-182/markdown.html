@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-154.jpeg" alt="img-154.jpeg" /><p>الوحدة السادسة</p><h1><strong>مثال (٦ - ٢٧)</strong></h1><p>إذا كانت ص = جاس + جتاس ، فاثبت أن :</p><p>أ) ص = - ص
+ب) (ص²) + ص² = ٢</p><p><strong>الحل :</strong></p><p>أ) ص = جتاس - جاس</p><p>ص = - جاس - جتاس = - (جاس + جتاس) = - ص</p><p>ب) ص = جاس + جتاس ، ص = ج²س + ج²س + ٢جاس جتاس = ١ + ج²س ... (١)</p><p>ص = جتاس - جاس ، ص = ج²س + ج²س - ٢جاس جتاس = ١ - ج²س ... (٢)</p><p>من (١) ، (٢) نجد أن :</p><p>(ص²) + ص² = (١ - ج²س) + (١ + ج²س) = ٢</p><h1><strong>مثال (٦ - ٢٨)</strong> لتكن ص = هاس ، ثابت . أوجد ص (٥)</h1><p><strong>الحل :</strong></p><p>ص = هاس</p><p>ص = هاس × هاس = هاس</p><p>ص = هاس × هاس × هاس = هاس</p><p>ص (٥) = هاس × هاس × هاس = هاس
+(٥ مرة)</p><h1><strong>مثال (٦ - ٢٩)</strong></h1><p>أوجد المشتقة النونية للدالة : ص = جاس</p><p>ص = جتاس = جا (س + π/2)</p><p>ص = - جاس = جا (س + π/2)</p><p>ص = - جتاس = جا (س + π/2)</p><p>ص (٥) = جا (س + π/2)</p><p>١٨٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

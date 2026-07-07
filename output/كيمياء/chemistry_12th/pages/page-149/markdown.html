@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>صناعة الأسمدة غير الأساسية (الدقيقة) :</h2><p>يحتاج النبات إلى كميات ضئيلة من بعض العناصر غير الأساسية، إلا أن هذه العناصر رغم ضالة نسبها تُعدُّ مهمة لتكوين بعض أجزاء النبات، فمثلاً عنصر الحديد يُعدُّ مهماً لحفز النبات على تشكيل مادة الكلوروفيل التي تعطي البلاستيدات اللون الأخضر، وعندما تفتقر التربة لعنصر الحديد يكون لون أوراق النبات مائلاً إلى الأصفر.</p><p>ومن أمثلة العناصر التي يحتاجها النبات بكميات ضئيلة هي : البورون B ، والكلور Cl ، والنحاس Cu ، والحديد Fe .</p><p>– استخدم الجدول (١-٨) للتعرف على العناصر التي يحتاجها النبات بكميات ضئيلة والمسماة بالأسمدة الدقيقة، ثم ضع أمثلة للمركبات التي تشمل على هذه العناصر.</p><h3>ملاحظة</h3><p>تحتوي التربة غالباً على العناصر الدقيقة بكميات تكفي غالباً لفترة طويلة، ولكن نتيجة للزراعة المكثفة قد يحدث نقص لبعض هذه العناصر، فيحتاج المزارعون إلى استشارة المختصين لمعالجة هذا النقص.</p><h2>صناعات كيميائية لمكافحة الحشرات الضارة:</h2><p>توجد في البيئة أعداد هائلة من الحشرات بعضها نافع والبعض الآخر ضار بالإنسان والحيوان والنبات. فمثلاً يتعرض الإنسان للعديد من الأمراض التي تنقلها الحشرات مثل الملاريا والتيفوئيد وأمراض العيون وغيرها من الأمراض الخطيرة.</p><p>كما أن الحشرات تفتك بالعديد من الأشجار ذات المردود الاقتصادي كأشجار الفاكهة، وكذلك تقضي على الخضراوات والثمار والحبوب؛ فتسبب خسائر بالغة للإنسان وتقضي على أهم مصادر الغذاء والدخل التي يعتمد عليها أبناء المجتمع. ولا يتوقف الأمر على ذلك، بل إن بعض الحشرات تقوم بنقل الأمراض لقطعان الماشية والحيوانات ذات المردود الاقتصادي، فتزداد معاناة المزارعين نتيجة لذلك. ونتيجة للمعركة الدائرة بين الحشرات والإنسان، لم يتوقف بنو البشر منذ العصور القديمة عن تجريب العديد من المواد والمركبات التي قد تساعدهم في حماية أنفسهم وممتلكاتهم من الحشرات. ومع تطور علم الكيمياء تطورت العديد من المركبات التي سميت بالمبيدات.</p><p>١٤٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-53.jpeg" alt="img-53.jpeg" /><p>(حاصر حصارك، وبطاقة هوية، وأمل، وقمر الشتاء، وحنين إلى الضوء) ومن ثم نلمح من شعره حرصه على استمرار المقاومة، فلا يسأم أن يردد لا للذل لا للمساومة، نعم للتضحية، نعم للصمود من ذلك قوله:</p><p>لا تدفنونا بالنشيد</p><p>وخلّدونا بالصمود</p><p>لا لا تذلوا</p><p>يا كفر قاسم لن ننام وفيك مقبرة وليل</p><p>وصية الدَّم لا تسامو</p><p>ووصية الدَّم، تستغيث بأن نقاوم</p><p>عاش منتقلاً بين العواصم العربية والأوروبية، لأن فلسطين لا تزال تُثْنٍ تحت نير الاحتلال، ولأن فلسطينيي الشتات لا يزالون خارج وطنهم، حالت بينه وبينهم الجسور والجدران الواقية. وهذا النص جزء من قصيدة بعنوان «الجسر» ضمن ديوانه الصادر عام ١٩٧٠م بعنوان (حبيبتي تنهض من نومها)، توفي محمود درويش عام ٢٠١٢م.</p><h2>النص</h2><p>مشياً على الأقدام</p><p>أو زحفاً على الأيدي نعودُ</p><p>قالوا</p><p>وكان الصخرُ يضمُرُ</p><p>والمساءُ يداً تقودُ</p><p>لم يعرفوا أن الطريقَ إلى الطريقِ</p><p>دَمٌ، ومَصِيدَةٌ، وبيدُ</p><p>كل القوافل قبلهم غاصتْ</p><p>١٤٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>ويضطر القلب إلى رفع معدل نبضاته، وكذلك الجهاز التنفسي، وهذا يؤدي إلى توتر وإجهاد شديدين، وينتج عن ذلك أمراض القلب والصدر، وخاصة أمراض الجهاز التنفسي وفقر الدم.</p><h3>٣- المركبات الهيدروكربونية:</h3><p>تنبعث هذه المركبات أثناء الاحتراق غير الكامل للوقود في المصانع والمركبات وتبخر المواد البترولية. ومن هذه المواد: الميثان $‫CH_4‬$ والإيثان $‫C_2H_6‬$ والإيثيلين $‫C_2H_4‬$ والبنزوبيرين Benzoperene.</p><p>- ما تأثير المواد الهيدروكربونية؟</p><p>تكمن خطورة هذه المواد فيما يأتي:</p><p>أ - تشترك في تكوين الضباب الدخاني (Smog).</p><p>ب - يعمل الإيثيلين على تكوين مادة الفورمالداهيد المهيجة للدموع.</p><p>ج - تؤكد أبحاث العلماء أن مركب البنزوبيرين Benzoperene أهم المواد المسببة للسرطان.</p><p>وينتج مركب البنزوبيرين نتيجة لأنشطة مختلفة للإنسان مثل:</p><p>- الاحتراق غير الكامل للغاز.</p><p>- نيران الزيوت البترولية.</p><p>- صناعة المطاط.</p><p>- دخان السجائر.</p><p>• ابحث في موضوع تأثيرات التدخين الضارة على الفرد والبيئة.</p><p>قضية البحث</p><h3>٤ - الجسيمات:</h3><p>يحمل الهواء أجساماً صلبة أو سائلة مثل الغبار، والدخان (Smog)، والضباب، السناج. ما طبيعة هذه الجسيمات، وما تأثيراتها؟</p><p>ادرس الجدول (٢) وتعرف على ذلك ثم أجب عن الأسئلة التي تليه:</p><p>١٦٨</p><p>الأحياء: النصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

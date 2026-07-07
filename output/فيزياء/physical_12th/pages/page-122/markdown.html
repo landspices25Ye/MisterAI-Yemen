@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-120.jpeg" alt="img-120.jpeg" /><p>من هذه السلاسل يمكن أن تعبر عن هذه الخطوط. وفي عام ١٨٨٥م نجح مدرس ثانوي سويسري يدعى (جوهن بالمر) بعد كثير من الجهد والدراسة أن يضع صيغة رياضية تجريبية يمكنها أن تحسب بدقة أطوال أمواج خطوط الطيف المرئي لذرة الهيدروجين المقاسة تجريبياً وهذه الصيغة هي :</p><p>$‫(١) \dots \dots \dots (\frac{1}{10} - \frac{1}{10}) R_H = \frac{1}{\lambda}‬$‫</p><p>حيث (‬$\lambda$‫) هو الطول الموجي للخط الطيفي ومقلوبه (‬$\frac{1}{\lambda}$‫) يسمى العدد الموجي ووحدة قياسه هو مقلوب وحدة الطول، و (ن) عدد صحيح موجب يساوي ٣ ، ٤ ، ٥ ، ٦ ، ٧ ، ٨ و (‬$R_H$‫) ثابت يسمى ثابت (ريد بيرج)، تكريماً للعالم السويدي (جوهن ريدبيرج) الذي ساهم في تطوير صيغة بالمر وقيمته للهيدروجين ‬$R_H = 0.9747,58 \text{ سم}^{-1}$‫ ووحدة قياسه هو مقلوب وحدة الطول. عندما ‬$R_H = 0, 4, 3$‫ نحصل على الخط الأول والثاني والثالث على التوالي التي تظهر في الطيف المرئي لذرات الهيدروجين وهكذا فيإعطاء (ن) قيماً صحيحة (ن ‬$\leq 3$‫) نحصل على جميع خطوط سلسلة الطيف المرئي لذرة الهيدروجين التي يرمزها بالرموز :</p><p>‬$H_\alpha$‫ ، ‬$H_\beta$‫ ، ‬$H_\gamma$‫ ، ‬$H_\delta$‫ ، ... ، ‬$H_\infty$‫ على التوالي، انظر الشكل (٧).</p><p>تلاحظ أنه كلما زادت قيمة (ن) تصبح هذه الخطوط، أي هذه الأطوال الموجية، متقاربة أكثر فأكثر مندمجة في النهاية في خط واحد عندما (ن = ‬$\infty$‫) الذي يناظر الطول الموجي ‬$A^3 3646$‫ (أجستروم) (حيث ‬$A = 10^{-10}$ متر)، ويسمى هذا الطول الموجي بنهاية السلسلة. وقد سميت هذه السلسلة بسلسلة (بالمر) تكريماً للعالم الفيزيائي (بالمر).</p><p>لم تستطع الفيزياء التقليدية تفسير الصيغة الرياضية (١) لهذه السلسلة وبقيت بدون تفسير نظري وظلت عبارة عن علاقة رياضية تجريبية لاتعطينا أية فكرة عن البنية الداخلية لذرة الهيدروجين. ولكن بلا شك قد تساهم في الإيحاء لإيجاد نموذج جديد للذرة أقرب إلى الحقيقة.</p><h3>عيوب نموذج تومسون :</h3><p>لم يستطع هذا النموذج تفسير الطيف الخطي المشاهد لسلسلة بالمر لذرة الهيدروجين، ولا تفسير تشتت جسيمات ألفا الساقطة على صفيحة معدنية رقيقة من الذهب.</p><p>١٢٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

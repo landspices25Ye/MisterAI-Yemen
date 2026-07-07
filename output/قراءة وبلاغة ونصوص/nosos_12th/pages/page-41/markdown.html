@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>واستمرت رحلة الفن القصصي في اليمن إلى أن اشتهر محمد عبد الولي وزيد مطيع دماج. من أعمال محمد عبد الولي رواية «يموتون غرباء»، ومن أعمال زيد مطيع دماج رواية «الرهينة» المترجمة إلى الفرنسية والإنجليزية، ونشرت في مشروع «كتاب في جريدة».</p><h3>المسرحية:</h3><p>يمكننا القول إن المسرحية النثرية من ألوان القصص والحكايات. غير أن العصر الحديث قد حدد مسمى «المسرحية» بأنها لون حكائي قصصي يغلب عليه الحوار وتؤدي تمثيلاً على خشبة المسرح.</p><p>وتعد المسرحية - كالقصة - فناً وافداً على الأدب العربي، رغم أن العرب في العصر العباسي قد عرفوا شكلاً من الأشكال المسرحية، وهو مسرح خيال الظل.</p><p>وبداية ظهور المسرحيات أو المسرح التمثيلي هو دخول الحملة الفرنسية مصر ١٧٩٨م. فلقد أقاموا في الأزبكية حينذاك مسرحاً لهم يمثلون على خشبته مسرحيات تمثيلية أعدوا لها العدة، إذ أحضروا معهم الممثلين والمخرجين والكتاب، وكل ما يتطلب هذا العمل الفني. وهكذا عرف الفن المسرحي في مصر.</p><p>في الشام كانت البداية بواسطة «مارون نقاش» اللبناني، الذي كان تاجراً محباً للثقافة، فقدم مسرحية «البخيل» لموليير في بيته في بيروت ١٨٤٧م.</p><p>وجاء بعد مارون نقاش جورج أبيض الذي انتقل من لبنان إلى مصر ليواصل رحلة المسرح العربي الوليد.</p><p>بعد ذلك اشتهر كتاب مسرحيون شهرة عالية مثل: نعمان عاشور، والفريد فرج وتوفيق الحكيم في مصر، وسعد الله ونوس في سوريا.</p><h3>الخاطرة:</h3><p>هي مقالة انفعالية، لا تقريرية كالمقال العادي. إنها خاطرة شعورية، استرسلت بها مشاعر الكاتب، لا فكرة ذات قضية يراد بحثها.</p><p>وإذا احتوت الخاطرة فكرة فلا تكون فكرة ذهنية تطرحها الكتابة للبحث والنقاش. والخاطرة في النثر تقابل القصيدة الغنائية في الشعر، وتؤدي وظيفتها في عرض التجارب الشعورية التي تناسبها.</p><p>٣٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

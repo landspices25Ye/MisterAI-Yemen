@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>القطع الخروطية</p><p>وإذا أخذنا محور الصادات ماراً ببؤرتي القطع ، فعندئذ تكون هاتان البؤرتان هما $‫A_{\text{أ}}‬$ (ج ، ٠) ، $‫A_{\text{ب}}‬$ (ج - ٠) وتصبح معادلة القطع هي :</p><p>$‫1 = \frac{\text{ص}^2}{\text{ب}^2} + \frac{\text{ص}^2}{\text{ب}^2} = 1 \quad \dots \quad (4-6)‬$‫</p><p>حيث ‬$ب^2 = 1 - ج^2$‫ ، ‬$1 < \text{ب}$‫ .</p><p>فإن القطع الناقص كما في [شكل (4-14) ] ، أي أن المحور الأكبر على محور الصادات والمحور الأصغر على محور السينات ، وأن رأسي القطع هما النقطتين (٠ ، ١) ، (١-٠) ، ومعادلتين دليلية هما</p><p>ص = ‬$\pm \frac{1}{\text{ب}} = \pm \frac{1}{\text{ج}}$‫ ؛ وبؤرتاه هما (٠ ، ١) ، وبؤرتاه هما (٠ ، ١) .</p><p>وهكذا نرى أن للقطع الناقص وضعين : الأول كما في شكل (4-13) والآخر كما في شكل (4-14) .</p><h1>مثال (4-6)</h1><p>أوجد طولي محوري القطع الناقص الذي معادلته :</p><p>س ١٦ = ٢٥ + ٢ ، ثم أوجد تخالفه المركزي وإحداثيات بؤرتيه ورأسيه ومعادلتين دليلية .</p><p>‬$‫\text{الحل} : \quad 16 \text{ س} 2 + 25 \text{ ص} 2 = 400 \quad \Leftarrow \quad 1 = \frac{\text{ص}^2}{25} + \frac{\text{ص}^2}{16} = 1‬$‫</p><p>وهي معادلة على الصورة :</p><p>‬$‫\frac{\text{ص}^2}{\text{ب}^2} + \frac{\text{ص}^2}{\text{ب}^2} = 1 \quad \text{حيث } 1 = 5 \text{ ، } \text{ب} = 4 \text{ .}‬$‫</p><p>‬$‫\therefore \text{ج} = \sqrt{16 - 25} = \sqrt{16 - 25} = 3‬$‫</p><p>‬$‫\text{طول المحور الأكبر} = 12 = 10‬$‫</p><p>‬$‫\text{طول المحور الأصغر} = 2 \text{ ب} = 8‬$‫</p><p>‬$‫\text{التخالف المركزي } \text{ي} = \frac{\text{ج}}{1} = \frac{3}{5} \text{ .}‬$‫</p><p>إحداثيات البؤرتين (ج ، ٠) هما النقطتان (٠ ، ٣) .</p><p>إحداثيات الرأسين (٠ ، ١) هما النقطتان (٠ ، ٥) .</p><p>‬$‫\text{معادلتان دليلية} : \quad \text{س} = \pm \frac{1}{\text{ي}} \quad \Leftarrow \quad \text{س} = \pm \frac{25}{3} \text{ .}‬$</p><p>١١٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

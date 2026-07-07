@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-62.jpeg" alt="img-62.jpeg" /><p>الوحدة الثالثة</p><p>[٥] صندوق يحتوي على ٧ كرات حمراوات ، ٣ كرات بيضاوات . سُحبت ٣ كرات من الصندوق عشوائياً واحدة تلو الآخر ، فما احتمال أن تكون : الأولى والثانية حمراوان والثالثة بيضاء ؟</p><p>[٦] إذا كانت ١ ، ب حادثتين مستقلتين فاثبت أن :</p><p>(١) ١ ، ب مستقلتان . (٢) ١ ، ب مستقلتان . (٣) ١ ، ب مستقلتان .</p><p>[٧] احتمال أن يصيب هشام الهدف = ١/٤ ، واحتمال أن يصيب محمد الهدف = ٢/٥ ؛ ما احتمال إصابة الهدف إذا صوَّب كلٌّ من هشام ومحمد نحو الهدف في آن واحد ؟</p><p>[٨] صندوقان متجانسان يحتوي الأول على ٩ بطاقات مرقمة من ١ إلى ٩ ، ويحتوي الثاني على ٥ بطاقات مرقمة من ١ إلى ٥ . اختير صندوق – عشوائياً – وسحبت منه بطاقة – عشوائياً – وإذا كان رقم البطاقة المسحوبة زوجياً ؛ فما احتمال أن تكون من الصندوق الأول ؟</p><p>[٩] وجد في إحدى اختبارات الثانوية العامة أن ٢٥٪ من الطلبة قد رسبوا في مادة الرياضيات ، ١٥٪ رسبوا في الكيمياء ، ١٠٪ رسبوا في الرياضيات والكيمياء . اختير – عشوائياً – طالب . فما احتمال أن يكون :</p><p>(١) راسباً في الرياضيات ، علماً بأنه راسب في الكيمياء ؟</p><p>(٢) راسباً في الكيمياء ، علماً بأنه راسب في الرياضيات ؟</p><p>[١٠] ألقي حجر ترد منتظم عشوائياً ، ولوحظ الوجه العلوي الظاهر عند استقراره على الأرض . فإذا كان :</p><p>١ هي حادثة ظهور العدد « ٤ » ، ب هي حادثة ظهور عدد زوجي ،</p><p>ج هي حادثة ظهور عدد أصغر من « ٣ » .</p><p>أوجد : (١) حا (ب ج) . (٢) حا (١ | ب) .</p><p>(٣) حا (ب | ج) . (٤) بيّن أيّاً من الحوادث ١ ، ب ، ج مستقلة مثنى مثنى .</p><p>[١١] تسابق ٣ طلاب في الجري هم ١ ، ب ، ج ؛ فإذا كان احتمال فوز ١ = ١/٢ ، واحتمال فوز</p><p>ب = ١/٣ ، واحتمال فوز ج = ١/٦ . إذا تسابق الطلاب في الجري مرتين معاً ؛ فأوجد :</p><p>(١) فضاء العينة للسباق مرتين .</p><p>(٢) احتمال فوز الطالب « ج » بالسباق الأول ، « ١ » بالسباق الثاني .</p><p>[١٢] لدينا ثلاثة صناديق متجانسة ، يحتوي الأول على ٣ كرات حمراوات ، ٥ كرات بيضاوات ، ويحتوي الثاني على كرتين حمراوين وكره بيضاء ، ويحتوي الثالث على كرتين حمراوين ، ٣ كرات بيضاوات . اختير صندوق عشوائياً وسحبت منه – عشوائياً – كرة ، ووجد أن الكرة المسحوبة منه كانت حمراء . فما احتمال أن تكون تلك الكرة من الصندوق الأول ؟</p><p>٩٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

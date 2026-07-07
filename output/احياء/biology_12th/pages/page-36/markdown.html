@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-26.jpeg" alt="img-26.jpeg" /><p>الشكل (٢٤) المستقبلات الحسية في الجلد.</p><p>تتكون طبقة الأدمة في الجلد من نسيج ضام وتحتوي على أوعية دموية، وبصيلات شعرية وغدد عرقية، ودهنية، وأعصاب حسية تحوي مستقبلات الأحاسيس العامة، وهي متعددة الأشكال والأحجام، والوظائف. ومن المستقبلات الآلية الآتي :</p><p>١- مستقبلات اللمس : Touch Receptors</p><p>وتسمى حويصلات ميسنر Meissner's Corpuscles، وهي بيضاوية الشكل، وتحتوي كل حويصلة على ليفة عصبية حسية تنتهي أفرعها بأزرار حسية صغيرة، تقوم بوظيفة الإحساس باللمس وكذلك أقراص ميركل تقوم بنفس الوظيفة.</p><p>٢- مستقبلات الحرارة : Heat Receptors وهي منتشرة في الجلد، وتتأثر بالتغيرات الحرارية لسطح الجلد، ومن مستقبلات الحرارة نهايات روفيني للسخونة</p><p>■ اكتب بحثاً عن أحد أمراض أعضاء الحس في منطقتك وطرق الوقاية من هذا المرض، مستعيناً بالمراجع الموجودة في مكتبة مدرستك.</p><p>قضية البحث</p><p>٣٦</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![LOGO]</p><h2>المفاعلات النووية السلمية : Nuclear Reactors</h2><p>وفيها يتم التحكم في الطاقة النووية الناتجة من الانشطار المتسلسل وتستخدم في أغراض سلمية متعددة، منها الحصول على الطاقة الكهربائية، أو في الاستخدامات الطبية للقضاء على بعض الأمراض مثل السرطان، أو في الزراعة، حيث يتم تحسين الأنواع بواسطة تعريضها لإشعاعات نووية مخففة.</p><img src="img-179.jpeg" alt="img-179.jpeg" /><p>شكل (٤) مفاعل نووي مستخدم للأغراض السلمية.</p><p>ومن أهم التطبيقات على استخدام الطاقة النووية استخداماً سلمياً:</p><p>١- الحصول على طاقة كهربائية وذلك باستخدام الطاقة النووية الناتجة في المفاعل النووي التي تؤدي إلى تسخين مياه البحر وغليانها والحصول على طاقة البخار لإدارة توربين ومولد الطاقة الكهربائية.
+٢- تحلية مياه البحر إذ نحصل من بخار الماء الناتج من تسخين مياه البحر على مياه عذبة تستخدم في الشرب.
+٣- تستخدم بعض النظائر المشعة الناتجة من المفاعل النووي في الزراعة من أجل اكتشاف درجة الامتصاص للأملاح الكلسية من التربة أو في القضاء على الحشرات الضارة.
+٤- في الطب تستخدم الإشعاعات النووية المخففة بشدة في معالجة أمراض السرطان وكذلك استخدمت في تشخيص بعض الأمراض.</p><p>١٨٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

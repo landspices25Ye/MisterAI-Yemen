@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><h2>استخدامات الخلية الكهروضوئية :</h2><p>يستفاد من دائرة الخلية الكهروضوئية في كثير من الاستخدامات العملية، فهي تستخدم بشكل رئيسي كمفتاح ضمن دائرتها لدائرة كهربية أخرى. فعلى سبيل المثال - دائرة جرس الإنذار ضد اللصوص كما هو مبين مخططها في الشكل (١٠) حيث توجد دائرتان: الأولى دائرة الخلية الكهروضوئية تحوي خلية كهروضوئية، بطارية، ومغناطيس كهربائي، شكل (١٠ أ)، والدائرة الثانية هي دائرة جرس الإنذار وتتكون من ساق معدني يتحرك حول محور ثابت مربوط بنابض حلزوني، بطارية، جرس إنذار وتماس كهربائي شكل (١٠ ب).</p><p>تضاء عادة الخلية الكهروضوئية في أجهزة أجراس الإنذار بحزمة ضوئية غير مرئية من الأشعة فوق البنفسجية التي تؤدي إلى نشوء تيار كهربائي في دائرة الخلية، ينتج عنه تفتنط المغناطيس الكهربائي الذي بدوره يجذب إليه الساق المعدنية للدائرة الثانية، دائرة جرس الإنذار، فيؤدي إلى فتحها شكل (١٠ ب).</p><p>وعند اعتراض جسم أو شخص طريق الأشعة ينعدم تيار الخلية الكهروضوئية وبالتالي يزول تفتنط المغناطيس ويصبح من السهل على النابض الحلزوني جذب الساق المعدنية من المغناطيس إلى التماس الكهربائي في دائرة الجرس كما هو مبين في الشكل (١١) مما يؤدي إلى إغلاقها وإصدار صوت للجرس.</p><p>ومن الاستخدامات الأخرى للخلية الكهروضوئية، مقياس شدة الإضاءة في آلات التصوير، وفتح الأبواب تلقائياً في الفنادق والمستشفيات الكبيرة وغيرها من</p><p>البنايات الحديثة، وكذلك إضاءة أنوار الشوارع بطريقة آلية عند غروب الشمس، وإطفائها عند الشروق.</p><img src="img-151.jpeg" alt="img-151.jpeg" /><p>شكل (١٠)</p><img src="img-152.jpeg" alt="img-152.jpeg" /><p>شكل (١١)</p><p>١٥٦</p><p><http://www.e-learning-moe.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

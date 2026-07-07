@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>معاني المفردات اللغوية</p><p><strong>القار:</strong> شيء أسود يُذاب من شجر يُسمَّى الصُّعُد ويطلق على الزفت، <strong>الفولاذ:</strong> الحديد الصلب، <strong>الضجر:</strong> السام، <strong>فأتلق:</strong> ألمع أو أنير، <strong>الأفق:</strong> ماظهر من أطراف الأرض، <strong>الخواء:</strong> الفراغ، <strong>جيكور:</strong> قرية في العراق تقع جنوب شرق البصرة، <strong>حفيف:</strong> صوت أوراق الشجر عند حركتها، <strong>هدّه:</strong> أوهنه، <strong>يرجف:</strong> يضطرب بشدة، <strong>الألق:</strong> اللمعان، <strong>يحشو:</strong> ينشر، <strong>تنشر:</strong> تبسط والنشر ضد الطي، <strong>الغيش:</strong> ظلمة الليل قبيل بزوغ الفجر.</p><h3>إضافة</h3><p>يتناول النص فكرتين تردان في كل من المقطعين: التضجر من المدينة، وتذكر دفء الماضي في جيكور.</p><p>يشكو الشاعر من الغربة التي يشعر بها في بغداد، فيقول: إني أعيش في دنيا قاسية كئيبة، كل ما فيها مباني خرسانية عالية وبُرد وآلات وزفت وضجر، ليس فيها شمس يطير فيها الخيال، أو أفق يتيح انطلاق النظر، أو نار تدني خيالي من قريتي جيكور فأجني ثمار نخلها، بل أجد النار ولا أجد السمر، لا أجد إلا أحاديث تأتيني من الماضي ضعيفة واهنة.</p><p>ويقول: إن جوانب الأرض -الآن- مسدودة أمامي، وكان بصري يسافر حراً طليقاً في جيكور، حيث النهر هناك، والمراكب الشراعية وقت المغيب، والفراشات تخترق الظلمة نحو الفوانيس لتخترق فراشة تلو أخرى. إنه عالم من الانطلاق.</p><h3>تحليل وتذوق</h3><p>يبدأ النص ببناء النداء يطلقها الشاعر كالزفرة (يا غربة الروح)، والمراد من النداء هنا التضجر وإظهار الأسى، من دنيا عبر عنها بقوله: (دنيا من الحجر) وعطف عليها (الثلج والقار والفولاذ والضجر) وهي رموز يستخدمها، فالحجر رمز للقسوة، والثلج لبرودة المشاعر والفتور في العلاقات بين الناس، والقار أراد به السواد الذي يرمز للحزن والكآبة، والفولاذ هو أقسى أنواع الحديد، رمز به للآلة التي توارى خلفها الإنسان وطبعته بطابعها في حركته ومشاعره، فهي عالم من الضجر، عالم جامد، خال من الأحاسيس الإنسانية، وهو هنا يكني عن بغداد.</p><p>١٣١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

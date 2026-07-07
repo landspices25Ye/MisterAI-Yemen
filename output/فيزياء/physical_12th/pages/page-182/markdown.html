@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-177.jpeg" alt="img-177.jpeg" /><h2>طاقة الربط النووية : Neuclear Binding Energy</h2><p>لوحظ أن مجموع كتل الجسيمات المكونة للنواة منفردة (البروتونات والنيوترونات) يزيد على كتلة النواة المكونة من هذه الجسيمات مجتمعة.</p><p>فإذا أخذنا مكونات ذرة الهليوم مثلاً فإن :</p><p>عدد البروتونات في ذرة الهليوم = ٢ بروتون</p><p>كتلة البروتونات في نواة الهليوم = ٢ × ١,٠٠٧٨ = ٢,٠١٥٦ و.ك.ذ (وحدة كتلة ذرية)</p><p>عدد النيوترونات في نواة الهليوم = ٢ نيوترونات</p><p>كتلة النيوترونات في نواة الهليوم = ٢ × ١,٠٠٨٧ = ٢,٠١٧٤ و.ك.ذ</p><p>كتلة نواة الهليوم مجتمعة = ٤,٠٠٢٦ و.ك.د</p><p>مجموع كتل مكونات النواة = ٤,٠٣٣٠ و.ك.د</p><p>حيث : (و.ك.ذ) = ١,٦٦ × ١٠⁻²٧ كيلو جرام.</p><p>وهذا يعني وجود فرق في كتلة مكونات النواة مجتمعة ومجموع كتلها منفردة. وقادت الدراسة إلى أن هذا الفرق في الكتلة قد تحول إلى طاقة ربط بين مكونات النواة حيث تسمى هذه الطاقة بطاقة الربط النووية، وتحسب من علاقة التكافؤ بين الكتلة والطاقة لإينشتاين كمايلي :</p><p>طاقة الربط النووية = Δ ك × ع²</p><p>حيث (Δ ك) هي فارق الكتلة بين كتلة النواة مجتمعة ومجموع كتلها منفردة، و (ع) هي سرعة الضوء.</p><h2>الانشطار النووي : Neuclear Fission</h2><p>إذا قُذفت نواة ذرة اليورانيوم U₂ₛ/₉₂ بواسطة نيوترون حراري بطيء جداً فإن النيوترون يعمل على انشطار نواة ذرة اليورانيوم إلى نواتي الباريوم والكربتون، وكل منهما له عدداً ذرياً أقل من العدد الذري لنواة اليورانيوم، وتسمى هذه العملية بعملية الانشطار النووي.</p><p>١٨٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

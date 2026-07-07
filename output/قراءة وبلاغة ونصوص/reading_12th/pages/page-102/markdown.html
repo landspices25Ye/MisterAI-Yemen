@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><p>٤ - يرى الكاتب أن البنت أكثر حناناً وحباً وبراً بأبيها من الولد. فهل توافقه في ذلك؟ بين سبب ما تقول.</p><p>٥ - الحياة لا تخلو من سرور أو حزن. فما دور المرأة في مسرات الحياة وأحزانها؟</p><p>٦ - يرى الكاتب أننا نعامل المرأة في مجتمعنا معاملة فيها امتهان لكرامتها، وتقييد لحريتها. فهل كان على صواب في هذا الرأي؟ فسر سبب ما تقول.</p><p>٧ - قال شاعر النيل حافظ إبراهيم:</p><p>أنا لا أقول دَعُوا النساء سوافراً بين الرجال يَجُلُّن في الأسواق  
+كلاً ولا أدعوكُمْ أن تُسرفوا في الحجب والتضبييق والإرهاق  
+فتوسطوا في الحالتين وأنصفوا فالشرف في التقيد والإطلاق  
+رُبُّوا البنات على الفضيلة إنها في الموقفين لَهْنُ خَيْرٍ وَثاق</p><p>هات من الموضوع فكرة الكاتب التي تتفق مع مضمون هذه الأبيات.</p><p>٨ - وضح ما تتفق فيه مع الكاتب وما تختلف معه من الآراء والأفكار التي عرضها في الموضوع، مع بيان السبب.</p><h2>التدريبات اللغوية</h2><p>١ - وضح معاني الكلمات الآتية مستعيناً بأحد المعاجم اللغوية:</p><p>(قَوَّامُونَ - الجادة - نكبة - الخدر - الزلات).</p><p>٢ - هات المعنى المضاد لكل كلمة من الكلمات الآتية:</p><p>(ضَنَّ - الدأب - المبسوطة - مسرات - العفة).</p><p>٣ - يقول الكاتب: «لا يستطيع الأب أن يحمل بين جانحتيه لطفله الصغير عواطف الأم؛ فهي التي تحوطه بعنايتها ورعايتها، وتبسط عليه جناح رحمتها ورأفتها،</p><p>١٠٠</p><p><http://www.e-learning-moe.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

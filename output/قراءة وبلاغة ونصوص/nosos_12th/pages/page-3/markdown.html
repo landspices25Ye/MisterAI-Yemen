@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-2.jpeg" alt="img-2.jpeg" /><img src="img-3.jpeg" alt="img-3.jpeg" /><p>الجمهورية اليمنية</p><p>وزارة التربية والتعليم
+قطاع المناهج والتوجيه
+الإدارة العامة للمناهج</p><h1>الأدب والنصوص والنقد</h1><h2>للصف الثالث الثانوي</h2><h3>تأليف</h3><p>د. أمة الرزاق علي حمد / رئيساً</p><p>د. أحمد قاسم الزمر
+أ. خالد محمد ملهي
+أ. محمد عبدالله محسن
+أ. أحمد هادي جمال الدين
+أ. ليلى عبد الخالق ناجي
+أ. محمد مشى الخبيراني
+أ. نصرة عبدالله الخضر</p><h3>فريق المراجعة:</h3><p>أ. إسماعيل صالح الغياثي
+أ. ليلى عبد الخالق ناجي
+أ. محمد عبد الرحمن الكمالي
+أ. محمد لطف صبار</p><p>تنسيق: أ/ فائز صالح منصور شاطر</p><p>تدقيق: د. صالح علي النهاري</p><h3>الإخراج الفني</h3><p>الصف والتصميم: عادل عبده قاسم العفيفي
+بسام أحمد محمد العامر
+أحمد محمد علي العوامي</p><p>أشرف على التصميم: حامد عبدالعالم الشيباني</p><p>١٤٣٨هـ - ٢٠١٧م</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

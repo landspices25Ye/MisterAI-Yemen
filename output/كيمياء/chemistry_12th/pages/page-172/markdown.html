@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>وذلك ضمن نظام التوازن الطبيعي الذي وضعه الله للكون، وفي ظله يُفترض أن تبقى نسب مكونات الهواء ثابتة. ويتمثل هذا النظام في استهلاك النباتات لـ $‫CO_2‬$ لصنع غذائها واستكمال نموها، وظهر $‫CO_2‬$ كناتج طبيعي لتنفس الحيوانات واحتراق المواد العضوية في الهواء.</p><p>$‫C_6H_{12}O_6 + 6O_2 \rightleftharpoons 6CO_2 + 6H_2O + heat‬$‫</p><p>لكن الاستهلاك المتزايد لموارد الطاقة الطبيعية (الفحم، والبترول، والغاز) في المصانع أو كوقود للسيارات يؤدي إلى رفع نسبة ‬$CO_2$‫ في الجو، وسنورد بعض الأمثلة على الاحتراق التام لبعض المواد العضوية المستخدمة في الصناعة أو كوقود للسيارات.</p><p>‬$‫C_{(s)} + O_{2(g)} \longrightarrow CO_{2(g)} \quad - \text{احتراق الفحم}‬$‫</p><p>‬$‫CH_{4(g)} + 2O_{2(g)} \longrightarrow CO_{2(g)} + 2H_2O_{(g)} \quad - \text{احتراق الغاز الطبيعي}‬$‫</p><p>‬$‫2C_8H_{18(l)} + 2SO_{2(g)} \longrightarrow 16CO_{2(g)} + 18H_2O_{(g)} \quad - \text{احتراق الجازولين}‬$‫</p><p>‬$‫C_{15}H_{32(l)} + 2SO_{2(g)} \longrightarrow 15CO_{2(g)} + 16H_2O_{(g)} \quad - \text{احتراق الديزل}‬$‫</p><p>ولك أن تتصور كمية ‬$CO_2$‫ الناتجة عن حرق أطنان من الوقود يومياً في الهواء إما صناعياً أو في محركات الوقود، مما يؤدي إلى اختلال في التوازن البيئي، وعلى الرغم من أن النباتات تستهلك جزءاً من ناتج ‬$CO_2$‫ ويذوب جزء كبير منه في البحار، ولذلك فإن هذه العمليات مجتمعة لم تعد قادرة على التخلص من الزيادة في كمية ‬$CO_2$‫ في الجو.</p><p>ماذا ينتج عن زيادة كمية ‬$CO_2$ في الغلاف الجوي؟</p><p>من المعلوم أن الأرض تمتص الحرارة القادمة من الشمس، وعادة ما تعكس معظم تلك الحرارة إلى الطبقات العليا من الجو على هيئة أشعة تحت حمراء، ولأن جزيئات</p><p>١٧٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

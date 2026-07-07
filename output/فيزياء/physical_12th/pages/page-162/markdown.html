@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-157.jpeg" alt="img-157.jpeg" /><p>حيث $‫f$ هو أكبر تردد لطيف الأشعة السينية المنبعثة .</p><p>وحيث أن : ‬$f = \frac{\mu}{\lambda}$‫ إذا بالتعويض في العلاقة (٦) نجد أن :</p><p>‬$‫\lambda = \frac{\mu}{\lambda} \left[ \frac{h_{\text{ص}}}{e^{\mu}} \right] = \frac{h_{\text{ص}}}{e^{\mu}} \dots \dots \dots (٨)‬$‫</p><p>حيث (‬$\lambda$‫) هو أقصر طول موجي للطيف المتصل للأشعة السينية المنبعثة .</p><p>نلاحظ من العلاقتين (٧)، (٨) أن طول موجة الإشعاع المنبعث (‬$\lambda$‫) أو تردده (‬$f$‫) يعتمد على فرق الجهد (‬$\mu$‫) المسلط بين طرفي أنبوب الأشعة السينية وليس على مادة الهدف . والشكل (١٤ ب) يمثل الطيف المتصل لعنصر التنجستن عند فروق جهد مختلفة .</p><h3>ملاحظة :</h3><p>عرفت أن الطيف المتصل للأشعة السينية ناتج عن الإشعاع الذي يبعثه الإلكترون المقذوف بسبب تباطؤه (أي تناقص عجلته) ولذلك لا يمكن أن يكون هناك إشعاع منبعث طاقته أكبر من طاقة الإلكترون المقذوف .</p><p>ولهذا لا يبدأ انبعاث الأشعة السينية إلا ابتداء من طول موجي معين وهو أقصر الأطوال الموجية لطيف الأشعة السينية المتصل (‬$\lambda$‫)، أي من تردد معين طاقته الإشعاعية أصغر من أو تساوي طاقة الإلكترون المقذوف، انظر الشكل (١٤) ويمكن أن يحسب من العلاقة (٧) .</p><h3>مثال (٢)</h3><p>احسب فرق الجهد (‬$\mu$‫) الذي يجب أن يتعجل به إلكترون في أنبوب الأشعة السينية بحيث يكون أقصر الأطوال الموجية (‬$\lambda$‫) في طيف الأشعة السينية يساوي واحد أنجستروم، علماً بأن قيم ثابت بلانك (‬$h$‫) وسرعة الضوء (‬$\mu$‫) وشحنة الإلكترون (‬$\mu$‫) هي على التوالي :</p><p>‬$‫h = 6.625 \times 10^{-34} \text{ جول. ث، } \mu = 3 \times 10^{-8} \text{ م/ث، } \mu = 1.6 \times 10^{-19} \text{ كولوم}‬$‫</p><p>وأن (واحد) أنجستروم = ‬$10^{-10}$ (متر)</p><p>١٦٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

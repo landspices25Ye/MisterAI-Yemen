@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>تخصها هذه الأحافير، وذلك بواسطة عمر النصف لنظير $‫C_{6}^{14}‬$ والذي يساوي (٥٧١٥ سنة).</p><h2>٢- عملية التحوّل النووي الصناعي:</h2><p>هي عملية صناعية تحدث للعنصر غير المُشع عن طريق قذف نواة العنصر بقذيفة مناسبة ويتحوّل العنصر إلى عنصر آخر.</p><p>● القذائف المستخدمة في التفاعلات النووية:</p><p>|  $‫\beta^0‬$ | – جسيمات بيتا | $‫\text{He}^4‬$ | – جسيمات ألفا  |
+| --- | --- | --- | --- |
+|  $‫\text{P}^1‬$ | – البروتونات | $‫\gamma‬$ | – أشعة جاما  |
+|  $‫\text{H}^2‬$ | – الديوترونات | $‫\text{n}^1‬$ | – النيوترونات  |</p><p>ويُفضّل استخدام النيوترونات لأنها متعادلة ولا تتأثر بالإلكترونات التي تصادفها، وبذلك لا تفقد طاقتها.</p><p>العوامل التي تؤثر في نواحج التفاعلات النووية:</p><p>١ - نوع القذيفة المستخدمة: لها دور مهم في تحديد نوعية النواحج؛ فعلى سبيل المثال الألومنيوم عند قذفه بجسيمات ألفا فإن الناحج هو الفوسفور. بينما عند قذفه بنيوترون فإن الناحج هو الصوديوم.</p><p>$‫\begin{array}{c} \text{Al}^{27} + \text{He}^4 \longrightarrow \text{P}^{30} + \text{n}^1 \\ \text{Al}^{27} + \text{n}^1 \longrightarrow \text{Na}^{24} + \text{He}^4 \end{array}‬$‫</p><p>٢ - سرعة القذيفة المستخدمة: تختلف النواحج باختلاف سرعة القذيفة المستخدمة، ومثال ذلك تحويل الألومنيوم العادي إلى ألومنيوم مُشع باستخدام نيوترون بطيء، ويمكن تحويل الألومنيوم العادي إلى نظير الصوديوم المُشع باستخدام النيوترون السريع.</p><p>‬$‫\begin{array}{c} \text{Al}^{27} + \text{n}^1 \quad (\text{بطيء}) \longrightarrow \text{Al}^{28} \quad (\text{radioactive}) \quad \text{مشع} + \gamma \\ \text{Al}^{27} + \text{n}^1 \quad (\text{سريع}) \longrightarrow \text{Na}^{24} + \text{He}^4 \\ \text{Al}^{27} + \text{n}^1 \quad (\text{rapid}) \end{array}‬$</p><p>٨٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-19.jpeg" alt="img-19.jpeg" /><h2>أسئلة وتدريبات</h2><p>١ - ما أهمية النشر؟
+٢ - وازن بين حال النشر في العصر العباسي وحاله في العصرين المملوكي والعثماني.
+٣ - اذكر رواد التجديد في الكتابة النثرية في العصر الحديث.
+٤ - لماذا آثر رواد التجديد طريقة ابن خلدون؟
+٥ - بم اتسم تيار الإحياء العربي في الكتابة النثرية؟
+٦ - ما سمات الكتابة النثرية عند تيار الثقافة الغربية؟
+٧ - ما الفنون النثرية في العصر الحديث؟
+٨ - المقالة وليد شرعي لظهور «الصحافة». وضح هذا القول.
+٩ - أين ظهرت الصحافة العربية في البداية؟ وما أسباب هذه الأولوية؟
+١٠ - ما علاقة القصة في تراثنا بمصطلح القصة في العصر الحديث؟
+١١ - ظهرت القصة العربية على مرحلتين. وضح ذلك.
+١٢ - اختر الإجابة الصحيحة من بين القوسين:
+• المخاطرة مقالة: (ذاتية، اجتماعية، صحفية).
+• يعد المسرح العربي فناً: (أصيلاً، وافداً، مبتدعاً).
+• تقوم القصة على (السرد والحوار، السرد والوصف والحوار، الحوار).</p><p>٤٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

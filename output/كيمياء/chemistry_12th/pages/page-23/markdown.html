@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>نشاط (١-١)</p><p>الكشف عن الحديد في أملاحه: قم بتنفيذ التجارب الخاصة بالكشف عن الحديد في أملاحه في كتاب الأنشطة والتجارب العملية المرفق بهذا الكتاب.</p><h1>تقويم الوحدة</h1><p>١ - حدِّد موقع العناصر الانتقالية في الجدول الدوري.
+٢ - ما الفروق الرئيسة بين الفلزات الرئيسة والفلزات الانتقالية؟
+٣ - ما المقصود بالعنصر الانتقالي؟
+٤ - ما الخواص العامة للعناصر الانتقالية؟ ارسم جدولاً من تصميمك محدِّداً فيه هذه الخواص.
+٥ - بيِّن علام يعتمد تصنيف عناصر الفئة (d) إلى السلسلات الانتقالية الأولى والثانية والثالثة؟
+٦ - لماذا تُعدُّ عناصر الفئة (f) من العناصر الانتقالية الداخلية؟
+٧ - لاكاسيد الحديد أسماء وصيغ كيميائية مختلفة. ما أسماء هذه الأكاسيد، وما صيغها الكيميائية؟
+٨ - وضِّح بالرسم كيف تتمُّ عملية اختزال الحديد في القرن العالي (اللافح) مدعماً إجابتك بالمعادلات الكيميائية.
+٩ - أين يقع عنصر الحديد من بين العناصر الانتقالية الأخرى في الجدول الدوري؟
+١٠ - كيف يمكن الكشف عن الحديد في أملاحه؟
+١١ - علِّل:
+    أ - لا يتأثر الحديد بحمض الكبريتيك وحمض النيتريك المركزين.
+    ب - يعتبر الحديد من المواد المختزلة.
+    ج - يضاف الحجر الجيري إلى المزيج المسمَّى بالشُّحنة عند استخراج الحديد من خاماته.
+    د - الحديد من أكثر الفلزات الانتقالية استخداماً.
+    هـ - توضع سلسلتي اللانثانيدان والاكتينيدات أسفل الجدول.</p><p>٢١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

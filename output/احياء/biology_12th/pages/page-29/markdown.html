@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>تحتوي الخلايا العصبية على صبغة الرودوسين Rhodopsin الحساسة للضوء مما يمكنها من الاستجابة للضوء بسهولة، وإن كان خافتاً، فعندما تسقط الموجات الضوئية على هذه الصبغة فإنه يتحول إلى صورة أقل تماسكاً مما يسبب تفككه إلى نواتج كيميائية مختلفة تسمى ريتينال وأوبسين، وتسبب هذه التحللات الكيميائية المتعاقبة تغيرات في فرق الجهد الكهربائي لخشاء الخلايا العصبية مما يسبب نشوء جهد فعل يسري على هيئة</p><img src="img-21.jpeg" alt="img-21.jpeg" /><p>الشكل (١٩) آلية الرؤية في العين</p><p>سيالات عصبية تنقل عبر العصب البصري إلى الدماغ. وعادة يتم إعادة صبغ الرودوسين بسرعة من نواتج التحلل السابقة حيث يكون قادراً على استقبال موجات ضوئية جديدة. شكل (١٩). وتستمر عملية تحلل الصبغ، وإعادة مرة أخرى ما دامت عملية الإبصار مستمرة. ويعد الصبغ الشبكي Retinal</p><p>أحد مكونات الرودوسين الأساسية، ويمكن الحصول عليه في الجسم من فيتامين (A).
+- كيف يمكن التمييز بين الألوان المختلفة؟</p><p>تحتوي الخلايا المخروطية على صبغات بصرية خاصة (البودوسين Iodopsin) تعمل بصورة مشابهة لطريقة عمل الرودوسين في الخلايا العصبية، وتستطيع التمييز بين الأطوال المختلفة للأمواج الضوئية مما يسهل عملية تمييز الألوان، ورؤية تفاصيل الأشياء، وهي تكثر في البقعة الصفراء من الشبكية، كما أن شدة تأثير البودوسين بالأطوال الموجية المختلفة يتبعه اختلافات في السيالات العصبية الصادرة من كل منها، ويستطيع الدماغ تحليل السيالات العصبية المختلفة، ومنها يتعرف على ألوان الطيف الضوئي (المرئي) التي من خلالها يتم إدراك ألوان صورة الجسم المرئي وأي خلل وراثي في الخلايا المخروطية قد ينتج عنه عدم القدرة على تمييز الألوان فيكون الشخص مصاباً بمرض عمى الألوان.</p><p>■ اكتب تقريراً عن مرض عمى الألوان.</p><p>قضية البحث</p><p>الأحياء الصف الثالث الثانوي</p><p>٢٩</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>ب- التحوُّل النووي المصحوب بفقدان بوزيترون $‫\beta_{i+1}^0‬$ :
+ويحدث في الأنوية الواقعة أسفل حزام الاستقرار.</p><p>$‫\text{Na}_{11}^{22} \longrightarrow \text{Ne}_{10}^{22} + \beta_{i+1}^0‬$‫</p><p>ج- التحوُّل النووي المصحوب باكتساب جسيم بيتا ‬$\beta_{i-1}^0$‫ :
+ويحدث في الأنوية الواقعة أسفل حزام الاستقرار، وفيه تلجأ النواة لامتصاص إلكترون من الطبقة الإلكترونية الأولى فيتحوَّل البروتون إلى نيوترون، ويطلق على هذه العملية الأسر الإلكترونية (Electron Capture).</p><p>‬$‫\text{Al}_{13}^{26} + \text{e}_{-1}^{0} \longrightarrow \text{Mg}_{12}^{26}‬$‫</p><p>‬$‫\text{Cl}_{17}^{36} + \text{e}_{-1}^{0} \longrightarrow \text{S}_{16}^{36}‬$‫</p><p>د- التحوُّل النووي المصحوب بفقدان جسيم ألفا (‬$\alpha$‫) :</p><p>‬$‫\text{U}_{92}^{238} \longrightarrow \text{Th}_{90}^{234} + \text{He}_2^4‬$‫</p><p>هـ- التحوُّل النووي المصحوب بانطلاق أشعة جاما (‬$\gamma$‫) :</p><p>وهي عادة ما تحدث مصاحبة للتفاعلات السابقة :</p><p>‬$‫\text{Co}_{27}^{60} \longrightarrow \text{Ni}_{28}^{60} + \beta_{i-1}^0 + \gamma‬$</p><p>– ما التغيرات التي حدثت للعدد الذري والعدد الكتلي لكل نواة في التفاعلات السابقة؟ وضِّح ذلك بجدول في كراستك.</p><p>التطبيقات على التحوُّل النووي الذاتي :</p><p>تعتمد هذه التطبيقات على مفهوم عمر النصف لعينة مشعة.</p><p>عمر النصف : هو الزمن اللازم لتحلُّل نصف كمية العينة المشعة.</p><p>وقد أمكن الاستفادة منه في :</p><p>١ – تقدير عمر الأرض من خلال النشاط الإشعاعي لعينات من اليورانيوم.
+٢ – تقدير عمر الأحافير بتحديد الزمن الذي انقضى على موت الكائنات التي</p><p>٨١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

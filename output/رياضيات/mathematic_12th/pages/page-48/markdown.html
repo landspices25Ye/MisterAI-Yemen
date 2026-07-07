@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-40.jpeg" alt="img-40.jpeg" /><p>الوحدة الثانية</p><p>كما سبق نجد أنه إذا تمت عملية من خطوتين مستقلتين ، أي إذا كان عدد طرق إجراء الخطوة الأولى و طريقة وعدد طرق إجراء الخطوة الأخرى م طريقة ، فإن : عدد الطرق الممكنة لإجراء العملية المركبة كاملة هو و × م طريقة .
+ويعمم أسلوب عدد الطرق في قاعدة عامة تسمى المبدأ الأساسي للعدد :</p><p>في عملية تتكون من م خطوة مستقلة ، إذا كان عدد طرق إجراء الخطوة الأولى و ، وعدد طرق إجراء الخطوة الثانية و ، وعدد طرق إجراء الخطوة الثالثة و ، ، وعدد طرق إجراء الخطوة الأخيرة و ، فإن عدد الطرق الممكنة لإجراء العملية كاملة هو : و × و × و × × × ×</p><h1>مثال (٢ - ١)</h1><p>كم عدد الطرق التي يمكن بها ترتيب ٤ أشخاص في صف مستقيم ؟</p><h1>الحل :</h1><p>- عدد الطرق الممكنة لترتيب الشخص الأول = ٤ طرق ،
+- عدد الطرق الممكنة لترتيب الشخص الثاني = ٣ طرق ،
+- عدد الطرق الممكنة لترتيب الشخص الثالث = طريقتان ،
+- عدد الطرق الممكنة لترتيب الشخص الرابع ( الأخير ) = طريقة واحدة .
+- إذن عدد الطرق الممكنة لترتيب الأشخاص الأربعة = ٢٤ × ١ × ٢ × ٣ × ٤ = طريقة .
+- تسمى الصورة ١ × ٢ × ٣ × ٤ مضروب العدد ٤ ، ويرمز له بالرمز لـ ١٤ أو ١٤ .</p><h1>تعريف (٢ - ١)</h1><p>مضروب عدد صحيح غير سالب و هو :</p><p>لـ = و (١ - و) (٢ - و) × ١ × ٢ × ٣ × ٤ × ١ × ٢ × ٣ × ٤ × ١ × ٢ × ٣ × ٤ × ١ × ٢ × ٣ × ٤ × ١ × ٢ × ٣ × ٤ × ١ × ٢ × ٣ × ٤ × ١ × ٢ × ٣ × ٤ × ١ × ٢ × ٣ × ٤ × ١ × ٢ × ٣ × ٤ × ١ ×</p><h1>مثال (٢ - ٢)</h1><p>أوجد قيمة كل ما يأتي :</p><p>- أ) لـ .</p><h1>الحل :</h1><p>- أ) لـ = ١ × ٢ × ٣ × ٤ × ٥ = ١٢٠ .
+- ب) لـ = ١ × ٢ × ٣ × ٤ × ٥ × ٦ × ٧ × ٨ = ٤٠٣٢٠ .</p><p>٤٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

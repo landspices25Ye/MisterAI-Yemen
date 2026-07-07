@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><p>(لوحة) عليها عدد كبير أيضاً من النقاط الفلوريسية يساوي عدد الثقوب على اللوحة متجمعة في ثلاث مجموعات مرتبة في ترتيب معين : انظر الشكل (١٦).</p><p>فعندما تقوم الإلكترونات بتحفيز هذه النقاط، ترسل كل منها ضوءاً ملوناً بأحد الألوان الثلاثة المذكورة تختلف شدته باختلاف حزمة الإلكترونات (شدة الشعاع الإلكتروني) المسببة له.</p><p>وعندما تقوم حزم الإلكترونات بمسح قناع الظل كله، فإنها تتفرق عبر كل ثقب فتصطدم الحزمة الإلكترونية الحاملة لإشارة اللون الأحمر بالنقاط الفلوريسية المصدرة للون الأحمر، وذلك ضمن عملية تركيز بؤري دقيق تتكرر بالنسبة لبقية الألوان (الأضواء الملونة)، ومع تغير شدة الشعاع الإلكتروني لكل حزمة، يتغير اللون التابع لها، الأمر الذي يولد من جديد جميع الألوان الأساسية للمشهد أو المنظر المصور والمرسل تلفازياً.</p><img src="img-107.jpeg" alt="img-107.jpeg" /><p>شكل (١٦)</p><p>١٠٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

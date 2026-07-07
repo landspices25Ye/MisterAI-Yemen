@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>- تنقسم كل خلية بوغية ذكرية أم انقساماً منصفاً لينتج عنه أربع خلايا أحادية المجموعة الكروموسومية (n) وعند ما تنفصل عن بعضها تسمى كل منها بالبرغ الصغير (Micro-Spore (n))
+- تنقسم نواة البرغ الصغير انقساماً متساوياً لينتج عنه نواتان إحداهما أنبوبية (Tube Nucleus) والأخرى تناسلية (مولدة) (Generative Nucleus).
+- تمر خلية البرغ الصغير بعملية نمو وتمايز وتحاط بجدار داخلي رقيق وخارجي سميك يتخذ أشكالاً مختلفة يميز نوع النبات ويطلق عليها حبة اللقاح الناضجة.
+- تنفتح أكياس الملك، وتتناثر حبوب اللقاح لتنتقل إلى البويضة فكيف يتم ذلك؟</p><p>• ما آلية انفتاح أكياس حبوب اللقاح.</p><p>موضوع المناقشة</p><h1>النشاط (٨)</h1><p>- نفذ النشاط الخاص بفحص: مقطع عرضي من متك زهرة نبات، وتخصيصات جاهزة لخبوب لقاح من أزهار متنوعة متوفرة في بيتك في كتاب الأنشطة والتجارب العملية.</p><h1>ثانياً: تكوين البويضة:</h1><p>انظر الشكل (١٣) ولاحظ أن البويضة تنشأ في البداية بظهور ندوة في الجدار الداخلي للمبيض يسمى النيوسيلة (Nucellus) والتي تحاط بغلاف أو غلافين تخرج منهما قناة في القمة تسمى النقير، وتتميز إحدى خلايا</p><img src="img-58.jpeg" alt="img-58.jpeg" /><p>الشكل (١٣) نشؤ البويضة من جدار المبيض</p><p>النيوسيلة لتكون الخلية البوغية الأنثوية الأم (Megaspore Mother Cell(2n)). لاحظ الشكل (١٤) وتتبع خطوات تكوين البويضة الناضجة من الخلية البوغية الأنثوية الأم.</p><p>الأحياء للصف الثالث الثانوي</p><p>٧٥</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

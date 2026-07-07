@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-35.jpeg" alt="img-35.jpeg" /><p>الوحدة الأولى</p><p>$‫ك = ٣ \Leftarrow ع_٤ = ٢ (جنا \frac{\pi}{٦} + ت جا \frac{\pi}{٦}) = -\sqrt{٣} - ت‬$‫</p><p>‬$‫ك = ٤ \Leftarrow ع_٥ = ٢ (جنا \frac{\pi}{٢} + ت جا \frac{\pi}{٢}) = ٢ - ت‬$‫</p><p>‬$‫ك = ٥ \Leftarrow ع_٦ = ٢ (جنا \frac{\pi}{٦} + ت جا \frac{\pi}{٦}) = -\sqrt{٣} - ت .‬$</p><h3>تمارين ومسائل (١ - ٥)</h3><p>[١] أوجد ناتج ما يلي في أبسط صورة مستخدماً مبرهنة دي موافر :</p><p>أ) [٢ (جنا ١٥ + ت جا ١٥) ٣] . ب) [٢ (جنا ٣٠ + ت جا ٣٠) ٤] .</p><p>ج) [٥ (جنا ٢٠ + ت جا ٢٠) ٤] . د) (١ + ت) ٦) .</p><p>هـ) (١ - ٣ (٣ ت) ٥) . و) (٢ / (٣ - ١ - ٣ ت) ٤) .</p><p>[٢] بسط كلأ مما يأتي :</p><p>أ) (جنا هـ - ت جا هـ) ٢ / (جنا هـ - ت جا هـ) ٣) . ب) (جنا هـ - ت جا هـ) ٢٠ / (جنا هـ - ت جا هـ) ٢٢) .</p><p>ج) (جنا ٢ هـ + ت جا ٢ هـ) ٢ / (جنا هـ + ت جا هـ) ٤) . د) (٣ + ٤ ت) ٥ (١ - ت) ٤ / (٦ + ٨ ت) ٥) .</p><p>هـ) (١ + ت) ٢ / (١ - ت) ٢) . و) (جنا ٣٥ + ت جا ٣٥) ٨ / (جنا ١٩ + ت جا ١٩) ٧) .</p><p>٣٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

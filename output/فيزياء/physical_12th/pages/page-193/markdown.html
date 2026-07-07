@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>١- الإشعاع المباشر Direct Radiation :</h2><p>وهو الإشعاع الذي يصدر من الشمس ولم يتعرض لأي تغيير في اتجاه مساره سوى بعض ما يحدث له من انكسار في الغلاف الجوي .</p><h2>٢- الإشعاع المنتشر Diffused Radiation :</h2><p>هو الجزء من الإشعاع الشمسي المشتت في الجو بسبب الانعكاسات والانكسارات التي تحدث له، والذي يسقط على سطح ما من جميع الاتجاهات وتزداد كمية الأشعة المنتشرة بزيادة الغيوم والغبار في الجو .</p><h2>* تجميع الطاقة الشمسية والاستفادة منها ؟</h2><p>للطاقة الشمسية فوائد كبيرة حيث يتم استغلالها في ميادين عديدة، لذلك فهي تجمع باحدى الطريقتين التاليتين وذلك للاستفادة منها في بعض التطبيقات للطاقة الشمسية في الحياة، وهاتان الطريقتان هما :</p><h3>أ - المسطحات المستوية :</h3><p>عند سقوط أشعة الشمس على صندوق معتم من الداخل وله غطاء من الزجاج الشفاف يسمح بنفاذ الأشعة الشمسية إلى داخل الصندوق، ولكن لا يسمح بخروجها، فيمتص السطح الداخلي المعتم للصندوق هذه الأشعة، وتخزن في شكل طاقة حرارية في الهواء المحبوس بداخل الصندوق تنتقل بالتوصيل إلى أنابيب يمر فيها ماء مثبتة في قاع الصندوق فوق سطح معدني أسود فيسخن الماء ويستخدم لأغراض مختلفة مثل تدفئة الغرف، وتدفئة المياه المستخدمة للاستحمام .</p><h3>ب - المرايا المجمعة :</h3><p>وهي مرايا على شكل قطع مكافئ ولها أحجام مختلفة . وتقوم هذه المرايا بتجميع أشعة الشمس في بؤر متقاربة وعند نقاط معينة، فترتفع درجة الحرارة عند نقاط التجميع إلى حد كبير قد يصل إلى (٤٠٠٠م²)، حيث يتم تبخير الماء أو أي سائل آخر تكون درجة غليانه أقل من درجة غليان الماء ، ثم يوجه البخار ليستخدم في مجالات مختلفة مثل إدارة توربين أو إدارة ملف المولد الكهربائي .</p><p>١٩١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

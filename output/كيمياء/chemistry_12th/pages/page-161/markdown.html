@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-145.jpeg" alt="img-145.jpeg" /><img src="img-146.jpeg" alt="img-146.jpeg" /><p>شكل (٨-٨) يوضح آلية عمل الصابون
+مستحلب يحتوي على الأوساخ الدهنية وما يعلق بها من أتربة وجزئيات الصابون التي امتزجت بها، ويؤدي ذلك إلى تفكيك جزئيات الدهون وانفصالها عن الملابس، وبالتالي إزالتها بشكل نهائي عن الملابس، حيث يصعب على قطرات الدهن التماسك مع بعضها مرة أخرى بعد تفاعل الصابون معها.</p><h1>ملاحظة</h1><p>يفقد الصابون قدرته على التنظيف في الماء العسر، وذلك لأن الماء العسر يحتوي على أملاح الكالسيوم والمغنيسيوم التي تتفاعل مع الصابون وتكون راسباً لا يذوب في الماء.</p><h1>٢) المنظفات الصناعية:</h1><p>نظراً لأن إنتاج الصابون يحتاج إلى استهلاك كميات كبيرة من الدهون والزيوت والتي يحتاجها الإنسان للغذاء أو لأغراض أخرى، فقد ازداد الاحتياج إلى إنتاج نوع من الصابون لا يعتمد إنتاجه على الزيوت والدهون وتكون له قدرة على التنظيف حتى في الماء العسر.</p><p>وقد تمكن الألمان عام ١٩٣٠م من صناعة أول منظف صناعي سُمي «نيكال» Nekal، ثم انتشرت الفكرة، وتم التوصل عام ١٩٤٦م إلى صناعة صابون «تايد» Tide الذي انتشر استعماله في أنحاء العالم ويستخدم في آلات الغسيل، ولا زال هذا الصابون يستخدم حتى اليوم.</p><p>وتتكون المنظفات الصناعية من شقين أحدهما كاره للماء (سلسلة هيدروكربونية R -) وشق محب للماء، إلا أن الشق المحب للماء يختلف في تركيبه عن الشق الذي</p><p>١٥٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

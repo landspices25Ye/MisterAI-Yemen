@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-55.jpeg" alt="img-55.jpeg" /><h2>أسئلة وتدريبات</h2><p>١- متى ولد الشاعر ؟ ومتى هاجر من قريته ولماذا ؟
+٢- يعد محمود درويش شاعر القضية الفلسطينية الأبرز . ناقش هذه العبارة .
+٣- من قصائد محمود درويش « حاصر حصارك، وقمر الشتاء، حنين إلى الضوء »
+ما دلالة هذه العناوين ؟
+٤- بم توحي عبارة « دم، ومصيبة، وبيد ؟
+٥- اختر الإجابة الصحيحة من بين الأقواس فيما يأتي :
+أ - ينتمي الشاعر إلى المدرسة ( الرومنسية، الكلاسيكية، الواقعية )
+ب - من دواوين محمود درويش ( برقيات عاجلة إلى وطني، وحدي مع الأيام، عاشق من فلسطين )
+ج - أسلوب القصيدة ( سردي، متنوع، حواري )
+د - تعرب لفظة ( زحفاً ) في قوله « زحفاً على الأيدي نعوذ »
+( حالاً، مفعولاً به، مفعولاً مطلقاً ) .
+هـ - يُضَمَّرُ يرادفها ( يخفي ، ينكمش ، ينحاز )
+و - المفتت ( اسم فاعل، اسم مفعول، صيغة مبالغة )
+ز - المساء جمعه : ( مساءات، أمسية ، أمسيات )
+ح - تسول على وزن ( فَعَلَّلَ - تَعَلَّلَ ، تَفَعَّلَ )
+ط - تساوي عدد التفعيلات في شطري البيت الواحد يعني أن القصيدة تصنف شكلاً من قصائد الشعر ( الحر، العمودي، المنثور ) .</p><p>١٥٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

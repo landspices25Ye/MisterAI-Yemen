@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>كمية التحرك والمقذوفات</h1>
+Momentum and Projectiles</p><h1>الوحدة</h1>
+الأولى</p><img src="img-6.jpeg" alt="img-6.jpeg" /><p>صورة لمكوك الفضاء الأمريكي قبل انطلاقه بثوانٍ إلى الفضاء وتظهر غازات مصحوبة
+بضوء تنطلق من مؤخرة السفينة (المكوك)</p><h1>أهداف الوحدة</h1><p>يتوقع من الطالب بعد الانتهاء من دراسة هذه الوحدة أن يكون قادراً على أن :</p><p>١- يعرف المفاهيم الآتية:
+القمر الصناعي ، سرعة الإفلات من الجاذبية ، كمية التحرك الزاوي ، بقاء
+كمية التحرك الزاوي وحركة المقذوفات .
+٢- يوضح مفهوم التصادم في بعدين .
+٣- يستنتج قانون التصادم في بعدين .
+٤- يحسب سرعة القمر الصناعي اللازمة لاستمراره في مداره .
+٥- يوضح المقصود بالصواريخ ذاتية الدفع، وفيما تستخدم .
+٦- يبين معنى مفهوم سرعة الإفلات من الجاذبية الأرضية .
+٧- يذكر العلاقة بين عزم القصور الذاتي الدوراني والسرعة الزاوية .
+٨- يفرق بين نوعي الحركة التي تتحرك بها المقذوفات
+٩- يحل المسائل ذات العلاقة في هذه الوحدة .</p><p>٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

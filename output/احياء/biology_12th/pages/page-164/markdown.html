@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>٥- مرحلة الصناعة والتطورات التكنولوجية:</h2><p>وهي المرحلة الحديثة التي نعيشها، وتبدأ منذ اكتشاف الإنسان للطاقة البخارية ثم اختراع آلة الاحتراق الداخلي (الآلة التي تستخدم مشتقات النفط في تشغيلها) منذ</p><img src="img-121.jpeg" alt="img-121.jpeg" /><p>الشكل (١) مصنع سيارات</p><p>أكثر من ٢٠٠ عام. وقد تمكن الإنسان من خلال استخدام الآلات المبتكرة والمتطورة باستمرار من السيطرة على البيئة ومكوناتها من حوله، والحصول على الموارد الطبيعية واستغلالها بصورة شديدة لم يسبق لها مثيل.</p><p>وقد نتج عن التطورات الصناعية والتكنولوجية المتسارعة في عصرنا الحديث كثير من المشكلات البيئية</p><p>التي لم تكن معروفة في المراحل السابقة، ومن أهم المشكلات التي تتعرض لها البيئة وتغن من وطأتها مشكلات التلوث، ومشكلات استنزاف الموارد الطبيعية والتصحر وظاهرة الانحباس الحراري (ارتفاع درجة حرارة الجو)، وتآكل طبقة الأوزون، والأمطار الحمضية، والارتفاع الكبير في عدد سكان الأرض، وغيرها. وأهم المشكلات التي سيتم مناقشتها في هذه الوحدة ما يأتي:</p><h3>مشكلات التلوث لمكونات البيئة:</h3><p>يقصد بالتلوث حصول تغير كمي، أو نوعي، في أحد مكونات البيئة من هواء وماء وتربة وكائنات حية، مما يؤدي إلى خلخلة الاتزان في النظام البيئي وحدوث أضرار لهذه المكونات. فمثلاً: ارتفاع نسبة $‫CO_2‬$ في الهواء الجوي يعد تغيراً كمياً، لأن هذا الغاز موجود في النظام البيئي بنسبة ثابتة، إلا أن انبعاثه من المصانع وعوادم السيارات والحرائق أدى إلى الارتفاع المستمر في كميته في الهواء الجوي، مما جعله أحد الملوثات للبيئة. بينما تعد المواد الكيميائية التي ابتكرها الإنسان حديثاً مثل المبيدات الحشرية والمخلفات البلاستيكية، من الملوثات النوعية للبيئة ومكوناتها، لأنها مواد جديدة لم تعرفها البيئة من قبل. وتلوثات البيئة قد تكون ذات مصدر صناعي أو مصدر طبيعي كما هو موضح في الشكل (٢) الآتي:</p><p>١٦٤</p><p>الأحياء للصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

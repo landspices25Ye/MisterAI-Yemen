@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-49.jpeg" alt="img-49.jpeg" /><p>ويقول في قصيدة: «الفدائي.. الحلم.. والإنسان» مخاطباً الفارس الفلسطيني الشجاع الذي لولاه ما كانت للأمة قضية، ولا هوية:</p><p>« يا فارس النهار والمساءً</p><p>قبلك لم تكن لنا هوية ولا أسماءً</p><p>قبلك ما كانت لنا قضية »</p><p>والشاعر المقالح ينظم الشعر العمودي، ويعشقه، ويشيد بالجهد منه إلا أن كثيراً من شعره جاء على طريقة الشعر الحديث، أو ما يسمى «شعر التفعيلة» حتى أصبح معدوداً من رواده.</p><p>نال العديد من الجوائز الأدبية العربية والعالمية تقديراً لإبداعاته المتميزة، وإسهاماته الفنية الرائدة، ومكانته الأدبية المشار إليها.</p><p>من دواوينه الشعرية: «لا بد من صنعاء – مأرب يتكلم – رسائل إلى سيف بن ذي يزن – هوامش يمانية على تغريبة ابن زريق البغدادي – عودة وضاح اليمن، وغيرها». ومن كتاباته الأدبية والنقدية: «الأبعاد الموضوعية والفنية لحركة الشعر المعاصر في اليمن، وشعر العامية في اليمن دراسة تاريخية ونقدية، والزبيري ضمير اليمن الثقافي والوطني، وأوليات النقد الأدبي في اليمن، وأزمة القصيدة العربية، والشعر بين الرؤيا والتشكيل» وغيرها.</p><p>ونص القصيدة المختار من شعر التفعيلة.</p><p>١٣٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

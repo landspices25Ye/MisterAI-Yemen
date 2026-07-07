@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>أسئلة وتدريبات</h2><p>١ - أين نشأ الشاعر عمر أبو ريشة؟ ولم سافر إلى ما نشستر؟
+٢ - ماذا تعرف من صفاته وأعماله؟
+٣ - القصيدة التي اختير منها النص قيلت بعد نكبة فلسطين عام ٤٨م، فما تلك النكبة؟
+٤ - من أفكار النص «الأمة بين ماض مشرق وحاضر كئيب» أين تجد ذلك من الأبيات؟
+٥ - «وامعتصماه» مقولة مروية، وهي أسلوب استغاثة. من المستغيث؟ ومن المستغاث به؟ ولم أوردها الشاعر؟
+٦ - لم قرن الشاعر في البيت الأول بين السيف والقلم؟
+٧ - بم توحي الكلمات الآتية: (منبر - مُطرق - راعف)؟
+٨ - ما دلالة الاستفهام في قوله: (الإسرائيل تعلو راية) وفي (كيف أغضيت على الذل)؟
+٩ - ما السبيل إلى تحرير فلسطين في نظر الشاعر؟ وما الأبيات الدالة على ذلك؟
+١٠ - اختر الإجابة الصحيحة من بين الأقواس مما يأتي:
+    - في قوله: (أمتي) أسلوب: (خبري - إنشائي - تعجبي).
+    - الضمير في قوله: (أسماعهم) يعود على: (أبناء الأمة - زعماء الأمة - علماء الأمة).
+    - الاستفهام في قوله: (أي جرح..) يدل على: (الاستنكار - العتاب - الألم).
+    - معنى كلمة (الشمم): (الإباء - الرائحة - القمة).
+    - الخبر في قوله: (أين دنياك): (جائز التقديم - واجب التقديم - ليس مقدما).
+    - كلمة (أمتي) منادى: (واجب النصب - مبني على الضم - مبني على الكسر).
+    - كتبت الألف في كلمة (نجوى) ياء لأن: (أصلها ياء - جاءت ثالثة - جاءت رابعة).
+١١ - ما الصورة الأدبية التي يمكن أن تستخرجها من البيت الثالث؟
+١٢ - في البيت الأخير جملة دعائية، حددها، موضحاً هدف الشاعر من إيرادها.
+١٣ - اشرح البيتين (١٢-١٣) شرحاً أدبياً، مبيناً الأساليب البلاغية فيهما وإيحاءاتها.
+١٤ - زن الكلمات الآتية (المنصرم - المعتصم - المنتصر) مع تحديد حروف الزيادة.
+١٥ - لم كتبت الهمزة بهذه الصورة في الكلمات (ملء - يلتئم - يتلاءم)؟</p><p>٦٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

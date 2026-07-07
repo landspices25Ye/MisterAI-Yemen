@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-47.jpeg" alt="img-47.jpeg" /><p>الوحدة الثانية</p><p>$‫\frac{\text{الطرف الأيمن} - \text{أ} - \text{أ}}{\text{أ} - \text{أ}} \times \frac{\text{أ}}{\text{أ} - \text{أ}} = \frac{\text{أ}}{\text{أ} - \text{أ}}‬$‫</p><p>‬$‫= \frac{\text{أ} - \text{أ}}{\text{أ} - \text{أ}} = \frac{\text{أ} - \text{أ}}{\text{أ} - \text{أ}} = \text{الطرف الأيسر.}‬$‫</p><h1><strong>مثال (٢ - ١٩)</strong></h1><p>مجموعة مكونة من ٧ طلاب ، و ٤ طالبات ، بكم طريقة يمكن تشكيل لجنة مكونة من ٥ أشخاص في الحالات التالية :</p><p>- أ) بدون أي شرط؟
+- ب) تتكون اللجنة من رئيس وعضوين وعضوتين؟
+- ج) تتكون اللجنة من ثلاثة طلاب على الأقل؟</p><h1><strong>الحل :</strong></h1><p>‬$‫\text{أ) عدد الطرق} = \frac{11}{5} \times \frac{5}{5} = \frac{11 \times 10 \times 9 \times 8 \times 8 \times 8}{5 \times 1 \times 2 \times 3 \times 4 \times 5} = 462 \text{ طريقة.}‬$‫</p><p>‬$‫\text{ب) عدد الطرق} = \frac{7}{5} \times \frac{7}{5} \times \frac{7}{5} = \frac{7}{5} \times \frac{7}{5} \times \frac{7}{5} = 630 \text{ طريقة.}‬$‫</p><p>‬$‫\text{ج) عدد الطرق} = \frac{7}{5} \times \frac{7}{5} \times \frac{7}{5} + \frac{7}{5} \times \frac{7}{5} + \frac{7}{5} \times \frac{7}{5} = 630‬$‫</p><p>‬$‫= \frac{7}{5} \times \frac{7}{5} \times \frac{7}{5} + \frac{7}{5} \times \frac{7}{5} + \frac{7}{5} \times \frac{7}{5} = 310 + 140 + 21 = 371 \text{ طريقة.}‬$‫</p><h1><strong>مثال (٢ - ٢٠)</strong></h1><p>من بين خمس عشرة طالبة ، أريد تكوين لجنة مكونة من خمس طالبات ، فبكم طريقة يمكن تشكيل هذه اللجنة في الحالتين التاليتين :</p><p>- أ) بدون أي شرط ؟
+- ب) بشرط أن تتكون اللجنة من رئيس ونائب ومقرر وأمين سر وعضو؟</p><h1><strong>الحل :</strong></h1><p>‬$‫\text{أ) عدد الطرق} = \frac{15}{5} \times \frac{5}{5} = \frac{15}{5} \times \frac{5}{5} = \frac{15 \times 11 \times 12 \times 13 \times 14 \times 15}{5 \times 1 \times 2 \times 3 \times 4 \times 5} = 3003 \text{ طريقة.}‬$</p><p>٦٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

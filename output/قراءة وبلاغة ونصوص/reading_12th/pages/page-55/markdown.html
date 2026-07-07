@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>المهتمين بالشأن العالمي أن الأحرار في العالم – ومنهم العالم العربي والإسلامي – يمكن أن يُحَوِّلُوا بين البشر وبين الأخطار التي تهدد مستقبلهم . . .»</p><p>أ – املا الفراغ في كل مما يأتي بالكلمة المناسبة:</p><p>– مرادف كلمة (الشأن) : ( ... )</p><p>– ضد كلمة (تهدّد) : ( ... )</p><p>– مفرد كلمة (أضرار) : ( ... )</p><p>– جمع كلمة (النظام) : ( ... )</p><p>ب – هات الفعل الماضي من الكلمات الآتية:</p><p>( درعاً – سطوة – يحولوا ).</p><p>ج – كلمة ( درعاً ) وردت منصوبة، اجعلها مرفوعة ومجرورة في جمل من إنشائك.</p><h2>التعبير</h2><h3>١- التعبير الشفهي</h3><p>تحدث إلى زملائك عن الوسائل والحلول المختلفة التي ترى أنها كفيلة بتحقيق الأمن والسلام والتعايش السلمي بين شعوب العالم المعاصر بعيداً عن الحروب والهيمنة والاستغلال.</p><h3>٢- التعبير الكتابي</h3><p>اكتب عن الأضرار التي لحقت ببعض الشعوب العربية والإسلامية جراء اكتساح تيار العولمة بنظامها الربوي، محدداً البلد ونوع الضرر وآثاره.</p><h3>نشاط ذاتي</h3><p>صمم مطوية توزعها في حيك، تتضمن التأثيرات المختلفة للعولمة، وكيفية مواجهة آثارها السلبية.</p><p>٥٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

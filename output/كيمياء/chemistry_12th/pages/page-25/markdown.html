@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>مقدمة</h2><p>من المعلوم أن الطاقة توجد بأشكال عدة منها: الحرارية، والميكانيكية والكهربائية، والضوئية، والكيميائية، والاختلاف في أشكال الطاقة قد يوحي بأن كل شكل مستقل بذاته، إلا أن ذلك غير صحيح؛ لأنه يمكننا تحويل الطاقة من شكل إلى آخر. فمثلاً الطاقة الكيميائية المخزونة في وقود السيارات (خليط من المركبات الهيدروكربونية) جازولين يمكن تحويلها إلى طاقة ضوئية أو حركية. وهذا يقودنا إلى استنتاج أن الطاقة لا تفنى ولا تستحدث، وإنما تتحول من شكل إلى آخر، وهذا ما نص عليه القانون الآتي.</p><p><strong>قانون بقاء الطاقة:</strong> ينصُّ على أن الطاقة لا تفنى ولا تستحدث ضمن قدرة المخلوق، ولكن يمكن نقلها من مكان إلى آخر، أو تحويلها من شكل إلى آخر.</p><h2>صور الطاقة وتحولاتها:</h2><p>يوضح الشكل (٢-١) بعضاً من تحولات الطاقة وعلاقة الطاقة الكيميائية بأشكال الطاقة الأخرى.</p><img src="img-14.jpeg" alt="img-14.jpeg" /><p>شكل (٢-١) صور الطاقة وتحولاتها</p><p>- من الشكل السابق تتضح أهمية الطاقة الكيميائية، وضح ذلك.
+- هل يمكنك من خلال الشكل (٢-١) توضيح قانون بقاء الطاقة؟
+في دراستنا لهذه الوحدة سوف تتضح العلاقة بين الطاقة الكيميائية والطاقة الحرارية.
+<strong>الطاقة الكيميائية:</strong> هي طاقة مخزونة ضمن الوحدات التركيبية للمواد الكيميائية، لذلك تُسمَّى «طاقة الوضع الكيميائية»، وتختلف كمية الطاقة المخزونة في أي مادة طبقاً لنوع الذرات الداخلة في تركيب المادة ونظام ترتيبها.
+فوقود السيارات يحتوي على كمية كبيرة من طاقة الوضع الكيميائي، بينما لا يحتوي الماء على القدر نفسه من الطاقة.</p><p>- ما العلاقة بين نوع الذرات الداخلة في تكوين مركبي الماء والجازولين وبين الطاقة الكيميائية المخزونة في كل منهما؟</p><p>٢٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>تُعين الجدول الآتي الذي يبين اختلافات معدل كمية الغازات المنبعثة من مصادرها،</p><p>|  النسبة المئوية المساهمة |   | المصدر | ولاحظ إسهام ثاني أكسيد الكبريت التي تقل في نواتج الصناعة بينما يزيد معدل تكوين أكاسيد النيتروجين من استخدام محركات المركبات.  |
+| --- | --- | --- | --- |
+|  كاسي أكسيد الكبريت | كاسي الماييتروجين  |   |   |
+|  45 | 1 | محركات المركبات . |   |
+|  37 | 71 | محطات الطاقة . |   |
+|  12 | 19 | الصناعة . |   |
+|  3 | 5 | المنازل . |   |
+|  3 | 4 | مصادر أخرى . |   |</p><h2>٢- أكاسيد الكربون : وتشمل الأكاسيد الآتية:</h2><h3>أ - ثاني أكسيد الكربون $‫CO_2‬$ .</h3><p>- ما مصدر ثاني أكسيد الكربون؟</p><p>ينتج ثاني أكسيد الكربون من عملية تنفس الكائنات الحية، ومن احتراق الوقود الأحفوري في المصانع والمركبات، وينتج أيضاً من احتراق الغابات . ومن التأثيرات الناتجة عن ارتفاع معدل $‫CO_2‬$ في الهواء الجوي ما يأتي:</p><p>- يؤثر التركيز العالي منه على نسبة الأوكسجين في الأماكن قليلة التهوية، مما قد يؤدي إلى الاختناق .</p><p>- يؤدي زيادة نسبة $‫CO_2‬$ في الغلاف الجوي إلى تغير في الأحوال الجوية، وارتفاع درجة الحرارة في الجو، نتيجة لقدرته على تكوين غلاف محيط بالأرض يمنع خروج حرارة الأرض أثناء الليل، وهي الظاهرة المعروفة بـ (الأنحباس الحراري) .</p><p>- قد ينتج عن الزيادة العالية منه ظواهر طبيعية خطيرة مثل ارتفاع منسوب البحار .</p><h3>ب- أول أكسيد الكربون $‫CO‬$ .</h3><p>ينبعث أول أكسيد الكربون من السيارات وآلات الاحتراق الداخلي الأخرى نتيجة الاحتراق غير الكامل للوقود، ويعتبر أشد الملوثات سمية لأنه يتحد مع هيموجلوبين الدم مكوناً كاربوكسي هيموجلوبين، وهذا الأخير يتميز بعدم قدرته على الاتحاد مع الأوكسجين، مما قد يؤدي إلى الوفاة .</p><p>وقد وجد أن اتحاد الهيموجلوبين بأول أكسيد الكربون أشد من اتحاده بالأوكسجين بنحو (٢٥٠) مرة، مما يؤدي إلى نقص إمداد الجسم بالأوكسجين اللازم له،</p><p>الأحياء للصف الثالث الثانوي</p><p>١٦٧</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

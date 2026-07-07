@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-23.jpeg" alt="img-23.jpeg" /><p>وفي مثل هذه الحركة للأجسام فإننا نحلل سرعة المقذوف الإبتدائية (ع) إلى مركبتين:
+الأولى على المحور الأفقي (المحور السيني) ونرمز لها بالرمز (ع.س).</p><p>والثانية على المحور الرأسي (المحور الصادي) ونرمز لها بالرمز (ع.س) والمركبتين كما يأتي:</p><p>الأولى: ع.س = ع. جتا هـ (وهي مركبة السرعة الإبتدائية للمقذوف على المحور الأفقي)</p><p>الثانية: ع.س = ع. جا هـ (وهي مركبة السرعة الإبتدائية للمقذوف على المحور الرأسي)</p><p>إذاً حركة المقذوفات هي محصلة حركتين مستقلتين في وقت واحد وهما:</p><p>١- حركة في الإتجاه الأفقي (توازي المحور السيني) وتكون بسرعة ثابتة (العجلة تساوي الصفر) ومعادلات الحركة لها كما يلي:</p><p>ع.س = ع.س = ع. جتا هـ ... (١) ، ف.س = (ع. جتا هـ) ز ... (٢)</p><p>حيث (ع.س) السرعة الإبتدائية الموازية للمحور السيني، (ف.س) هي المسافة التي قطعها الجسم المقذوف في الإتجاه الأفقي حتى يصل إلى نقطة الهدف بعد قذفه من نقطة القذف (م).</p><p>٢- حركة في الاتجاه الرأسي (توازي المحور الصادي)، وتكون العجلة التي يتحرك بها المقذوف في هذه الحالة مساوية لعجلة الجاذبية الأرضية (و) = ٩.٨ م²/ث²، وسرعتها الإبتدائية مقدارها (ع. جا هـ).</p><p>معادلات حركة الجسم المقذوف في هذه الحالة هي نفس معادلات حركة السقوط الحر، ولكن نستبدل الرموز في معادلات الحركة الأخيرة بمركبات السرعة الإبتدائية (ع) على المحورين كما يأتي:</p><p>ع.س = ع. جا هـ (١)</p><p>ع.س = (ع. جا هـ) + ٢ ز (٢)</p><p>ف.س = (ع.س جا هـ) ز + ١/٢ و ز² (٣)</p><p>ع.س² = (ع. جا هـ)² + ٢ ف.س (٤)</p><p>- لحساب السرعة الرأسية للمقذوف عند أي زمن، أو زمن الوصول إلى أقصى ارتفاع نستخدم المعادلة (٢).</p><p>٢٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

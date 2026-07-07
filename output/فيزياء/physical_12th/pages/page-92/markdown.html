@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><p>تعمل المجموعة الحارقة عن طريق المجالات التي تولدها على انحراف الأشعة الإلكترونية مما يسبب حركة النقطة المضيئة على الشاشة في اتجاه معين حسب الغرض من استخدام أنبوبة أشعة الكاثود، ويتوقف على اتجاه المجالات المؤثرة عليها، وتبعاً لذلك تتحرك النقطة المضيئة. وتبطن جوانب المخروط من الداخل طبقة من مستحلب الكربون تعمل على إعادة الإلكترونات الساقطة على الشاشة إلى الكاثود وبذلك تمنع تراكم الإلكترونات على الشاشة.</p><h3>كاشف الذبذبات (الأسيلوسكوب) Oscilloscope</h3><img src="img-90.jpeg" alt="img-90.jpeg" /><p>شكل (٤)</p><p>يتركب كاشف الذبذبات من أنبوبة أشعة الكاثود، والمجموعة الحارقة فيها عبارة عن زوجين من الألواح المعدنية (س$‫_{١}‬$، س$‫_{٢}‬$) و (ص$‫_{١}‬$، ص$‫_{٢}‬$) يولدان مجالين كهربائيين متعامدين على بعضهما البعض وعلى مسار الشعاع الإلكتروني، انظر الشكل (٤).</p><p>فإذا وصل اللوحان الرأسيان</p><p>(س$‫_{١}‬$، س$‫_{٢}‬$) بمصدر للتيار المتردد يتولد بينهما مجال كهربائي يتغير بانتظام في اتجاه أفقي، ويتغير المجال الكهربائي يميناً ويساراً، مما يجعل النقطة المضيئة على الشاشة تتحرك يميناً ويساراً في خط مستقيم أفقي، فإذا كان تردد التيار أكثر من (١٦ ذ/ث) (هرتز)، فإن عين المشاهد ترى خطاً مستقيماً أفقياً مضيئاً بسبب ظاهرة مداومة الرؤية للعين. أما إذا وصل اللوحان الأفقيان (ص$‫_{١}‬$، ص$‫_{٢}‬$) بمصدر للتيار المتردد فإنهما يولدان مجالاً كهربائياً في اتجاه رأسي، ويتغير اتجاه المجال الكهربائي هذا إلى أعلى وإلى أسفل، مما يجعل النقطة المضيئة على الشاشة تتحرك إلى أعلى وإلى أسفل في خط مستقيم رأسي.</p><p>٩٠</p><p><http://www.e-learning-moe.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

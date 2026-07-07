@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-19.jpeg" alt="img-19.jpeg" /><p>أما درجة الحرارة (Temperature): فهي مقياس لشدة الحرارة أو البرودة، وتقاس باستخدام الترمومتر، ويعبر عنها بالدرجة المئوية، أو بالكلفن.</p><h3>السعة الحرارية والحرارة النوعية: Heat Capacity and Specific Heat</h3><p>السعة الحرارية Heat Capacity: هي كمية الطاقة اللازمة لرفع درجة حرارة
+كمية معينة من مادة درجة مئوية واحدة (م²). السعة الحرارية = $‫\frac{\text{كمية الحرارة}}{\text{التغير في درجة الحرارة}}‬$‫</p><p>أما الحرارة النوعية Specific Heat: فهي كمية الطاقة اللازمة لرفع درجة جرام واحد من المادة بمقدار درجة مئوية واحدة.</p><p>ويمكن حساب الحرارة النوعية من العلاقة الآتية:</p><p>‬$‫\text{الحرارة النوعية} = \frac{\text{الطاقة المكتسبة أو المفقودة}}{\text{الكتلة} \times \text{التغير في درجة الحرارة}} \quad \text{جول / جم. درجة مئوية}‬$</p><p>انظر الجدول (٢-١) الذي يتضمن بعض المواد الشائعة وحرارتها النوعية.</p><p>|  المادة | حالتها | حرارتها النوعية جول / جم × م²  |
+| --- | --- | --- |
+|  الماء | سائل | ٤,١٨  |
+|  الثلج | صلب | ٢,٠٦  |
+|  بخار الماء | غاز | ١,٨٧  |
+|  الأمونيا | غاز | ٢,٠٩  |
+|  البنزين | سائل | ١,٧٤  |
+|  الإيثانول | سائل | ٢,٤٤  |
+|  الألومنيوم | صلب | ٠,٨٩٧  |
+|  الحديد | صلب | ٠,٤٤٩  |
+|  الزئبق | سائل | ٠,١٤٠  |
+|  الرصاص | صلب | ٠,١٢٩  |</p><p>جدول (٢-١) الحرارة النوعية لبعض المواد الشائعة</p><h3>ملاحظة</h3><p>الحرارة النوعية للماء تساوي ٤,١٨ جول / جرام × م². إلا أنه وجد أن الحرارة النوعية لمعظم المواد الأخرى أقل من الحرارة النوعية للماء. فعلى سبيل المثال: الحرارة النوعية للحديد تساوي ٠,٤٤٩ جول / جرام × م². وهذا يعني أن كمية معينة من الحرارة يمكن أن ترفع درجة حرارة جرام واحد من الحديد بقدر أكبر مما ترفعه في الجرام الواحد من الماء.</p><p>- قارن بين الحرارة النوعية للماء وبقية المواد الموضحة في الجدول (٢-١). ماذا تلاحظ؟
+- عند تسخين جرام واحد من الرصاص، وجرام واحد من الحديد، فأي منهما يمكن أن ترتفع درجة حرارته بشكل أكبر؟ ولماذا؟</p><p>٢٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

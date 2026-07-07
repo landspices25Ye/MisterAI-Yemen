@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>- من أين يُفْرَز كلٌّ من الإيثيلين، وحمض الأيسيسك؟
+- ما وظيفة كل من الجبريليات والأوكسينات؟
+- بيّن دور السيتوكينينات في عملية الانقسام.</p><h1>النشاط (١)</h1><p>• نفّذ النشاط الخاص بتوضيح أثر هرمون الإيثيلين الموجود في كتاب الأنشطة.</p><h1>دور الهرمونات النباتية في النمو:</h1><p>تتأثر النباتات بالمفغيرات التي تحدث داخلها وخارجها، فعوامل البيئة المحيطة مثل أشعة الشمس تؤثر على سير بعض العمليات الحيوية التي تحدث داخل النباتات، وتظهر النباتات استجابة لهذه العوامل وتعد حركة النبات من أهم مظاهر الاستجابة، وتقتصر الحركة في النباتات الراقية على بعض الأجهزة والأعضاء، وبعد النمو نوعاً من الحركة، ويُعرف المؤثر الخارجي بالمثير Stimulus بينما يُعرف التغير الحادث من قبل النبات بالاستجابة Response، وقد تكون الحركة نحو المثير أو بعيداً عنه في عملية تسمى الانتحاء، مثل اتجاه النبات نحو الضوء، وقد لا تعتمد الحركة على اتجاه المثير وتسمى انتحاء حر، مثل تفتح بعض الأزهار، وتعد الحركة موجبة حينما ينتحي العضو تجاه المثير، وسالبة إذا ما انتحى في الاتجاه المعاكس، وبعد الانتحاء رد فعل حركي لعضو النبات، وتنظم هذه الحركة بواسطة الأوكسينات. وأهم أنواع الانتحاءات في النبات ما يأتي:</p><h1>١- الانتحاء الأرضي: Geotropism</h1><p>- هل تساءلت يوماً عن السبب الذي يجعل الساق في النبات ينمو إلى أعلى والجذور تنمو إلى أسفل؟
+- كيف تؤثر الهرمونات على هذه العمليات؟</p><p>تؤثر الجاذبية الأرضية على توجيه نمو النبات؛ وتعمل مع العوامل البيئية الأخرى على توزيع الأوكسينات أثناء الإنبات والنمو. فعند الزراعة توضع البذور في أي وضع داخل التربة، أما عند الإنبات والنمو فإن الساق تنمو إلى أعلى، والجذر إلى الأسفل في اتجاه الجاذبية الأرضية، فلو نبت الجذر ونما بشكل أفقي فإن الأوكسينات تتركز في الجانب السفلي من الجذر بسبب تأثير الجاذبية الأرضية، وزيادتها في</p><p>٤٣</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

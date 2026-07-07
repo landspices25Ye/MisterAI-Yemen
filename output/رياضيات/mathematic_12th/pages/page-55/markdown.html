@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>مبدأ العد ومبرهنة ذات الحدين</p><p>ب) إن عدد تباديل مجموعة ذات و عنصراً حول طاولة مستديرة (أي شكل مغلق) هو ١-٥ .
+لأنه لم يتم تثبيت نقطة البداية .</p><p>∴ عدد تباديل جلوس ٧ أشخاص حول طاولة مستديرة = ١-٧ .
+= ٦ = ٦ × ٥ × ٤ × ٣ × ٢ × ١ = ٧٢٠ تبديلة .</p><h1>تدريب (٢ - ٢)</h1><p>بكم طريقة يمكن أن يجلس ثلاثة طلاب وثلاث طالبات في صف مستقيم؟</p><h1>مثال (٢ - ١٠)</h1><p>صف به عشرون طالباً ؛ بكم طريقة يمكن تشكيل لجنة طلابية مؤلفة من : رئيس ومساعده وسكرتير ومسؤول مالي ؟</p><p>الحل :</p><p>عدد الطرق = ٢٠ ل ٤ = ٢٠ / ١٦ = ١٦ × ١٧ × ١٨ × ١٩ × ٢٠ = ١٦ طريقة ١١٦٢٨٠ .</p><p>٥٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

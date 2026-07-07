@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>مبدأ العد ومبرهنة ذات الحدين</p><h1>التباديل</h1><p>٢ - ٢</p><p>أولاً : تباديل و من العناصر مأخوذة جميعاً في كل مرة :</p><p>إن إمكانات ( طرق ) الحصول على عدد مكون من ثلاثة أرقام مختلفة باستخدام عناصر المجموعة س = { ٥ ، ٦ ، ٧ } يمكن معرفتها بالطريقة التالية :</p><p>عدد طرق وضع رقم الأحاد = ٣ طرق</p><p>عدد طرق وضع رقم العشرات = طريقتان</p><p>عدد طرق وضع رقم المئات = طريقة واحدة</p><p>وباستخدام المبدأ الأساسي للعد فإن :</p><p>عدد طرق الحصول على عدد مكون من ثلاثة أرقام مختلفة = ٣ × ٢ × ١ = ٦ طرق ، وهذه الأعداد المختلفة هي : ٧٦٥ ، ٦٧٥ ، ٧٥٦ ، ٥٧٦ ، ٦٥٧ ، ٥٦٧</p><p>والأعداد المختلفة بسبب تغير رقم كل منزلة من منازلها ، يسمى كل منها ترتيباً ، وحصلنا عليه بتبديل الأرقام السابقة ، فكل ترتيب يعتبر ( تبديلاً ) .</p><p>إذن عدد تباديل الأرقام الثلاثة السابقة = ٣ × ٢ × ١ = ٦ ، أي يساوي لـ ٣ .</p><p>وبالمثل إذا كان عدد عناصر المجموعة س هو ٤ عناصر ، فإن عدد التباديل الممكنة للحصول على عدد مكون من هذه الأرقام الأربعة هو : لـ ٤ = ٤ × ٣ × ٢ × ١ = ٢٤ .</p><h1>تعريف ( ٢ - ٢ )</h1><p>عدد تباديل و من العناصر المختلفة مأخوذة جميعاً في كل مرة هو :</p><p>لـ ٤ ، ويرمز له بالرمز لـ ٥ أو لـ ( و ، و ) حيث و عدد صحيح غير سالب .</p><p>لـ ٥ = لـ ٥ = و ( ١ - و ) ( ٢ - و ) ... ١ × ٢ × ٣ × ... .</p><h1>مثال ( ٢ - ٥ )</h1><p>بكم طريقة يمكن لخمسة طلاب الجلوس على خمسة كراسي موضوعة في صف مستقيم ؟</p><p>الحل :</p><p>عدد الطرق التي يمكن أن يجلس بها الطالب الأول = ٥ طرق .</p><p>عدد الطرق التي يمكن أن يجلس بها الطالب الثاني = ٤ طرق .</p><p>٤٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

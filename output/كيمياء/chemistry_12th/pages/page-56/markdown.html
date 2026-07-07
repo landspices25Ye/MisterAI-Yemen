@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'C' with the word 'e-learning' below it.]()</p><p>$‫\begin{array}{rcl} \text{Fe} & / & \text{Fe}^{3+} \quad // \quad 3\text{Ag}^+ / 3\text{Ag} \\ \text{Fe}_{(s)} & \longrightarrow & \text{Fe}^{3+}_{(aq)} + 3\text{e}^- \quad \text{فولت } 0.04 + = \text{E}^\circ \\ 3\text{Ag}^+ + 3\text{e}^- & \longrightarrow & 3\text{Ag}_{(s)} \quad \text{فولت } 0.80 + = \text{E}^\circ \\ \hline \text{Fe} + 3\text{Ag}^+ & \longrightarrow & 3\text{Ag} + \text{Fe}^{3+}_{(s)} \quad \text{فولت } 0.84 + = \Delta \text{E}^\circ \\ \text{Fe}_{(s)} + 3\text{Ag}^+ & \longrightarrow & \text{Fe}^{3+}_{(aq)} \quad \text{فولت } 0.84 + = \Delta \text{E}^\circ \end{array}‬$‫</p><p>• فرق جهد التفاعل موجب فالتفاعل يحدث تلقائياً.</p><h2>بعض الخلايا الجلفانية:</h2><h3>١) الخلايا الجافة (البطاريات الجافة):</h3><p>هذا النوع من الخلايا يستخدم لمرة واحدة، ويعطي هذا النوع من الخلايا تياراً كهربياً حتى يصل تفاعل الخلية إلى مرحلة التوازن، عندها لا يعود للخلية أي فائدة، وهناك ثلاثة أنواع من هذه الخلايا.</p><p>أ - خلية (بطارية) الخارصين - كربون: وتتكون هذه الخلية من وعاء غلافه الخارجي من الخارصين الذي يعمل أنوداً</p><p>ويغلف الوعاء من الداخل بعجينة رطبة من كلوريد الخارصين ‬$\text{ZnCl}_2$‫، وكلوريد الأمونيوم ‬$\text{NH}_4\text{Cl}$‫، وهذا الجزء يمثل نصف الخلية، أما نصفها الآخر فيتكون من</p><p>عمود من الجرافيت الذي يعمل كاثوداً ويحاط بعجينة رطبة من ثاني أكسيد المنجنيز ‬$\text{MnO}_2$‫، وكلوريد الأمونيوم ‬$\text{NH}_4\text{Cl}$‫.</p><p>وفرق الجهد أو القوة الدافعة الكهربائية لهذه الخلية يساوي ١.٥ فولت.</p><p>ويمكن تمثيل التفاعلات التي تحدث في هذه الخلية (البطارية) كما يلي:</p><p>عند الأنود (المصعد): ‬$\text{Zn} \longrightarrow \text{Zn}^{2+} + 2\text{e}^-$</p><img src="img-37.jpeg" alt="img-37.jpeg" /><p>شكل (٣-٥) بعض الخلايا الجلفانية</p><img src="img-38.jpeg" alt="img-38.jpeg" /><p>شكل (٣-٦) خلية الخارصين - كربون</p><p>٥٤</p><p><http://www.e-learning-moe.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

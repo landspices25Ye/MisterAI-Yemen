@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الاحتمالات</p><p>٤) نفرض أن: ج هي حادثة العدد المختار لا يقبل القسمة على «١٠» فتكون المتممة ج هي حادثة العدد المختار يقبل القسمة على (١٠).</p><p>$‫\therefore \text{ج} = \{ 50, 40, 30, 20, 10 \} \Leftarrow \text{ج} = 5‬$‫</p><p>‬$‫\therefore \text{حا (ج)} = \frac{\text{ج (ج)}}{\text{ج (ج)}} \quad \therefore \text{حا (ج)} = \frac{5}{10}‬$‫</p><p>وحيث إن: حا (ج) = ١ - حا (ج).</p><p>‬$‫\therefore \text{حا (ج)} = 1 - \text{حا (ج)} = 1 - \frac{1}{10} = \frac{9}{10}‬$</p><h1><strong>مثال (٣ - ٦)</strong></h1><p>وجد في أحد الأحياء أن احتمال إيجاب ولد يساوي احتمال إيجاب بنت. اختيرت عشوائياً أسرة من بين أسر ذلك الحي ووجد أن لديها ٣ أطفال.</p><p>١) حدد فضاء العينة المرتبط بالجنس، والترتيب في العمر لدى الأسرة المختارة.</p><p>٢) احسب احتمال الحادثتين التاليتين:</p><p>أ) أن يكون أطفال الأسرة المختارة بنتين وولد.</p><p>ب) أن يكون الطفل الأكبر للأسرة المختارة ولداً.</p><h1><strong>الحل:</strong></h1><p>نرمز للولد بالرمز «و» وللبنت بالرمز «ب».</p><p>١) لتحديد فضاء العينة نكتب التجربة على شكل شجرة بيانية كما في الشكل (٣ - ٢) التالي:</p><img src="img-56.jpeg" alt="img-56.jpeg" /><p>٨٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

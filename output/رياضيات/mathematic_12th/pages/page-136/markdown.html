@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-109.jpeg" alt="img-109.jpeg" /><p>الوحدة الخامسة</p><h1>حقيقة (٥ - ١) :</h1><p>« إذا كان لَّ عمودياً على جميع مستقيمات المستوى  $‫\geq‬$  ، فإنه عمودي على المستوى  $‫\geq‬$  .</p><p>من الواضح أن التحقق من تعامد مستقيم ومستوى بحسب هذه الحقيقة أمر شاق للغاية ، ولذا ينبغي أن نبحث عن شروط أيسر لضمان التعامد .</p><p>تأمل [ الشكل (٥ - ٢) ] .</p><p>فالشكل عبارة عن كتاب مفتوح موضوع على طاولة بحيث تركز عليها أوراق الكتاب ، كل ورقة في الكتاب تمثل مستويًا يقطع مستوى الطاولة  $‫\geq‬$  في مستقيم تمثله الحافة السفلى للورقة . إذا كانت  $‫\overline{أب}‬$  هي القطعة المستقيمة التي تلتقي عندها أوراق الكتاب [ المستطيلات ] فإن  $‫\overline{أب}‬$  عمودية على جميع هذه المستقيمات ، وذلك لأن أوراق الكتاب على شكل مستطيلات إذا قمنا بتحريك أوراق الكتاب حول  $‫\overline{أب}‬$  [ نعتبر  $‫\overline{أب}‬$  محورًا ] ؛ إذن سيبقى  $‫\overline{أب}‬$  عمودياً على كل مستقيم في  $‫\geq‬$  وماراً بالنقطة ب .</p><p>هذا يعني أن تعامد  $‫\overline{أب}‬$  والمستقيمين الممثلين بحافتي الغلافين السفليين يقتضي تعامد  $‫\overline{أب}‬$  مع جميع المستقيمات المحتواة في  $‫\geq‬$  وهذا يقودنا إلى عكس الحقيقة السابقة :</p><h1>عكس حقيقة (٥ - ١) :</h1><p>إذا كان لَّ عمودياً على مستوى  $‫\geq‬$  ، فإن لَّ عمودي على جميع مستقيمات المستوى  $‫\geq‬$  .</p><p>١٣٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

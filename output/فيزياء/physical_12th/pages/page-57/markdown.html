@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>المفاعلة السعوية للتيار المتردد في عدة مكثفات متصلة معاً :</h2>
+<h3>أولاً : توصيل المكثفات على التوالي :</h3><img src="img-55.jpeg" alt="img-55.jpeg" /><p>شكل (١٩)</p><p>نفترض أننا وصلنا ثلاثة مكثفات سعاتها (سع₁، سع₂، سع₃) على التوالي بدائرة كهربائية كما يوضحه الشكل (١٩) ، وعند توصيل قطبي مصدر جهد متردد</p><p>بطرفي الدائرة يمر تيار متساوي في جميع المكثفات، ولذلك تشحن جميعها بشحنات متساوية وليكن مقدار هذه الشحنة (س) كولوم.</p><p>ونفترض أن فروق الجهود بين طرفي كل مكثف هي (ج₁، ج₂، ج₃) فولت فإن (ج) الكلية لها = ج₁ + ج₂ + ج₃ ... (١)</p><p>$‫\therefore \text{ج} = \frac{\text{س}}{\text{سع}} \quad (٢) \dots \dots‬$‫</p><p>نعوض عن قيمة كل جهد لكل منها في العلاقة (١)</p><p>‬$‫(\text{ج}) \text{كلية} = \frac{\text{س}}{\text{سع}_1} + \frac{\text{س}}{\text{سع}_2} + \frac{\text{س}}{\text{سع}_3} + \dots \dots (٣)‬$‫</p><p>‬$‫\frac{\text{س}}{\text{سع}_1} = \text{س} \left( \frac{1}{\text{سع}_1} + \frac{1}{\text{سع}_2} + \dots \right) \text{ ، فإن هذه العلاقة تصبح}‬$‫</p><p>‬$‫\frac{1}{\text{سع}_2} = \frac{1}{\text{سع}_1} + \frac{1}{\text{سع}_2} + \frac{1}{\text{سع}_3} + \dots \dots (٤)‬$‫</p><p>وهذه العلاقة توضح السعة الكلية للمكثفات المتصلة معاً على التوالي في دائرة كهربائية وتحسب المفاعلة السعوية الكلية من العلاقة :</p><p>‬$‫\text{سع الكلية} = \frac{1}{\text{السعة الكلية} \times \text{السعة الكلية}} = \frac{1}{\text{سع} \times \text{السع}}‬$</p><img src="img-56.jpeg" alt="img-56.jpeg" /><p>شكل (٢٠)</p><p>٥٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

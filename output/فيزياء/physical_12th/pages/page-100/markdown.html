@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-98.jpeg" alt="img-98.jpeg" /><p>- ثم تمرر هذه التيارات التأثيرية مختلفة التردد على دائرة الرنين، حيث يتم انتقاء تردد المحطة المراد سماعها، وذلك بتغيير تردد دائرة الرنين حتى يتفق مع تردد موجات المحطة المطلوبة، وتسمى هذه العملية بعملية التوليف (Tunning).
+- يقوم التيار الذي تسمح بمروره دائرة الرنين ويكبر.
+- يفصل التيار الحامل عن التيار المعبر عن الصوت.
+- يمر التيار المعبر عن الصوت في السماعة، فيحدث صوتاً مشابه للصوت في استوديو محطة الإذاعة، أنظر إلى الشكل (٩).</p><h3>مكبر الصوت الديناميكي في الراديو :</h3><p>- وهو السماعة المستخدمة لتكبير الصوت في الراديو.
+- ثم يتركب ؟ لكي تتعرف على تركيبه.. نفذ الآتي:
+- قم بزيارة إلى أقرب ورشة فنية متخصصة في صيانة أجهزة الراديو واطلب من المختص أن يريك هذا المكبر ... .
+- تفحص شكله وتعرف على الأجزاء التي يتكون منها. ارسم واكتب تقريراً مختصراً عنه.</p><h3>تركيب مكبر الصوت :</h3><p>يتركب مكبر الصوت من ملف من سلك نحاسي معزول وملفوف حول إسطوانة صغيرة من الورق المقوى مثبتة عند رأس مخروط أجوف من الورق المقوى، وتثبت حافة قاعدة المخروط</p><img src="img-99.jpeg" alt="img-99.jpeg" /><p>في واجهة جهاز الراديو خلف جزء مشقب، بينما يقع الملف في فجوة إسطوانية بين قطبي مغناطيس عادي، أنظر الشكل (١٠-١) أو بين</p><p>شكل (١٠) : تركيب مكبر الصوت</p><p>٩٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

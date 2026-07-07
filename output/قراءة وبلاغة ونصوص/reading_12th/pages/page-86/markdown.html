@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-19.jpeg" alt="img-19.jpeg" /><h1>معاني المفردات والتراكيب اللغوية</h1><p>|  الكلمة | معناها  |
+| --- | --- |
+|  سَجِيل | حجارة نارية من جهنم.  |
+|  أَبَابِيل | جماعات متتابعة.  |
+|  بيارق | جمع بيرق، وهي الراية.  |
+|  بهاليل | جمع بهلول، وهو الرجل الضحوك، والمقصود هنا الشجعان.  |
+|  الصَّيْد | الشجعان الذين لا يلتفتون خوفاً من أحد لثقتهم في أنفسهم.  |
+|  عَزْرِيل | عزرائيل ملك الموت.  |
+|  مطلول | مخضب.  |
+|  العلج | الواحد من كفار العجم، والجمع علوج.  |
+|  إِكْلِيل | تاج.  |
+|  جحافلنا | الجحافل جمع جحفل، وهي الجيوش الكثيرة العدد.  |</p><h1>المناقشة</h1><p>١ - بِمَ وصف الشاعر فتية القدس، والأحجار التي يحملونها؟
+٢ - من أين ينطلق المجاهدون الفلسطينيون؟
+٣ - من الذين يحملون الموت للصهاينة؟
+٤ - القرآن والإنجيل يباركان القدس. ماذا يقصد الشاعر بذلك؟
+٥ - ما المقصود بالعروس في البيت الرابع عشر؟
+٦ - هناك من يتآمر على القدس وفلسطين. ما البيت الدال على ذلك؟ وكيف رد عليهم الشاعر؟
+٧ - ما بشائر النصر لاستعادة القدس؟ ومتى يكون قريباً حسب رأي الشاعر؟
+٨ - ما واجب العرب والمسلمين تجاه فلسطين والمقدسات الإسلامية السليبة؟</p><p>٨٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

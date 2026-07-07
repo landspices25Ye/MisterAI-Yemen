@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>١- معرفة البيئات الرسوبية القديمة (Palaeoenvironment):</h2><p>يقصد بها الأماكن التي عاشت فيها كائنات الأحافير. انظر الشكل (١٧) تلاحظ بيئات مختلفة لتكون أحافير عاشت في فترة زمنية واحدة.</p><img src="img-154.jpeg" alt="img-154.jpeg" /><p>الشكل (١٧) بيئات مختلفة لتكون أحافير عاشت في الفترة الزمنية نفسها</p><p>أ - <strong>بيئات بحرية:</strong> تشتمل على البحار والمحيطات المختلفة الأعماق من مناطق عميقة متوسطة وضحلة وتتميز البيئات البحرية القديمة بأنواع معينة من الأحافير.</p><p>فمثلاً الشعاب المرجانية تعيش في قيعان جيرية على عمق ضحل نسبياً، لذا فوجودها دليل على بيئة بحرية ضحلة .. وهكذا.</p><p>ب - <strong>بيئات قارية:</strong> تشتمل على مجاري الأنهار وضفافها، والصحاري، وحتى الجليديات القارية. وتتميز كل منها بأنواع خاصة من الكائنات، وبالتالي بأنواع معينة من الأحافير، وتسود النباتات معظم أنواع البيئات القارية.</p><p>ج - <strong>بيئات انتقالية:</strong> تشتمل على دنتا الأنهار والمناطق الشاطئية، وتتميز بأنواع محددة من الحياة، وبالتالي بأنواع معينة من الأحافير.</p><p>٢ - <strong>معرفة البيئات الحياتية القديمة (Palaeoecology):</strong> يقصد بها الظروف الحياتية القديمة التي كانت تحيط بالكائن الحي من درجة حرارة وضغط وملوحة وغذاء وغيرها. ولكل كائن ظروف مناسبة له.</p><p>فمثلاً الجلد شوكيات التي تعيش حالياً على الشواطئ الضحلة تحت ظروف حياتية معينة كدرجة الحرارة والضغط والملوحة والغذاء، إذ عثر على أحافيرها في صخور العصر الكرتياسي، فذلك يدل على أنها قد عاشت في ذلك العصر وفي بيئات بحرية ضحلة تماثل الظروف الحياتية السابقة الذكر.</p><h2>٣- الجغرافيا القديمة (Palacogeography):</h2><p>نظراً لأن الكائنات تنتشر في بيئات معينة، ذات شروط تناسب ظروفها المعيشية، فإن أحافير هذه الكائنات ترشدنا إلى معرفة حدود اليابسة والمحيطات القديمة وفي تحديد هذه العلاقة في مختلف العصور القديمة.</p><p>١٩٦</p><p>الأحياء للصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

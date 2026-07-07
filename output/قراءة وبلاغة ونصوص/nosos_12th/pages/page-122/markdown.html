@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-43.jpeg" alt="img-43.jpeg" /><p>مقدار التقدم البشري الكبير في مجال الحركة والسفر وفي غيره، ولا يكتفي بقوله:
+«أخجل» بل يضيف الجملة الاعتراضية «حتى الانسحاق» لتعكس صفاء وجدان
+تواق لصلاح البشرية. ويستخدم التوكيد المعنوي «عينها» لإظهار الهوة بين التقدم
+المادي والفقر الروحي.</p><h2>أسئلة وتدريبات</h2><p>١- متى وأين ولد ميخائيل نعيمة ؟
+٢- ما المقصود بالرابطة القلمية ؟
+٣- ما نوع الأسلوب «أما الزارعون فنحن» ؟ ولمَ استخدمه الكاتب ؟
+٤- بمَ توحي الكناية «ترهف البشرية مسامعها» ؟
+٥- إلام يرمز القطرب ؟
+٦- ما الفرق بين الحصد والجني، وبين الزرع والغرس ؟
+٧- بمَ يوحي العنوانان «نجوى الغروب، همس الجفون» ؟
+٨- وضح العلاقة بين مضمون النص وقول الشاعر:
+نعيب زماننا والعيب فينا وما لزماننا عيب سوانا
+٩- اختر الإجابة الصحيحة من بين القوسين:
+- «البيادر» أمكنة : (جمع الغلال، نزح الماء، بيات الماشية).
+- «أودعته ذمة الزمان» ذمة : (مفعول به، مفعول لأجله، مفعول مطلق).
+- ضد «الانعتاق» : (الخمول، الرفض، التكبيل).
+- ضد «الجزع» : (التسرع، رابطة الجأش، الطمع).</p><p>١٢٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

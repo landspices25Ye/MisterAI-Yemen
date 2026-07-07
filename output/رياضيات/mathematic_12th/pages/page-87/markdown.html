@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الاحتمالات</p><p>[٤] أُلقيت قطعة نقود متجانسة ثلاث مرات متتالية عشوائياً ولوحظ الوجه الظاهر عليها عند استقرارها على</p><p>الأرض في كل مرة:</p><p>أولاً: اكتب فضاء العينة (ع) لهذه التجربة .</p><p>ثانياً: احسب احتمال ظهور:</p><p>- أ) صورة واحدة على الأقل .
+- ب) صورتين على الأقل .
+- ج) كتابة واحدة على الأقل .
+- د) كتابتين متتاليتين .
+- هـ) صورتين فقط .
+- و) صورتين على الأكثر .</p><p>[٥] سُحبت – عشوائياً – بطاقة من بين ١٠٠ بطاقة مرقمة من ١ إلى ١٠٠</p><p>ما احتمال أن يكون العدد على البطاقة المسحوبة :</p><p>- أ) يقبل القسمة على « ١٠ » ؟
+- ب) يقبل القسمة على « ١٧ » ؟
+- ج) يقبل القسمة على « ١٠ » أو « ١٧ » ؟</p><p>[٦] أُلقي حجر نرد متجانس عشوائياً مرتين ، ولوحظ الوجه الظاهر عليه عند استقراره على الأرض ، احسب</p><p>احتمال كل من الحوادث التالية :</p><p>- أ) مجموع العددين في الرميتين = عدداً زوجياً .
+- ب) مجموع العددين = ٧
+- ج) الحصول على العدد (٤) في الرمية الأولى وعلى العدد (٣) في الرمية الثانية .</p><p>[٧] اختير – عشوائياً – عدد صحيح «س» حيث ١ ≥ س ≥ ٦٠ . أوجد احتمال أن يكون العدد المختار :</p><p>- أ) زوجياً .
+- ب) مربعاً كاملاً .
+- ج) يقبل القسمة على ٧
+- د) يقبل القسمة على ٧ أو ١٧</p><p>[٨] صندوقان يحتوي الأول على كرتين بيضاوين وكرة سوداء ، ويحتوي الثاني على كرة بيضاء وكرة</p><p>سوداء . سُحبت كرة – عشوائياً – من الصندوق الأول ووضعت في الصندوق الثاني وخلطت جميع الكرات في الصندوق الثاني ثم سحبت منه كرة عشوائياً .</p><p>١) كون النموذج الاحتمالي لهذه التجربة .</p><p>٢) ما احتمال أن تكون الكرة المسحوبة من الصندوق الثاني بيضاء ؟</p><p>[٩] سحبت ورقة – عشوائياً – من بين مجموعة أوراق اللعب العادي (عددها ٥٢ ورقة) محكمة الخلط .</p><p>احسب احتمال أن تكون الورقة المسحوبة :</p><p>- أ) صورة ولد أو صورة بنت .
+- ب) سوداء .
+- ج) سوداء أو صورة ولد .</p><p>[١٠] أُلقيت قطعة نقود متجانسة أربع مرات متتالية بشكل عشوائي ، ولوحظ الوجه الظاهر عليها عند استقرارها</p><p>على الأرض :</p><p>أولاً: اكتب فضاء العينة (ع) لهذه التجربة .</p><p>٨٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

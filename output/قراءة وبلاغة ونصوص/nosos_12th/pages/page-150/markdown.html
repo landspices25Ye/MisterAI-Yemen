@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-54.jpeg" alt="img-54.jpeg" /><h2>معاني المفردات والتراكيب اللغوية</h2><p><strong>يَضْمُرُ</strong>: من ضَمَّرَ بمعنى هَزَّل وانكمش وانضم بعضه إلى بعض، <strong>المصيدة</strong>: الآلة التي يصاد بها، والمراد هنا الوقوع في قبضة العدو، <strong>البيد</strong>: جمع بيداء وهي الصحراء والمراد هنا الهلاك، <strong>طقطقة البنادق</strong>: أصواتها، <strong>مقصلة</strong> (١): المقصلة أداة حادة كانوا يقطعون بها رقاب المحكوم عليهم بالقتل، جمعها مقاصل، <strong>وكالة غوث اللاجئين</strong>: وكالة تابعة للأمم المتحدة، هدفها إغاثة الشعوب المنكوبة بالاحتلال أو الكوارث الطبيعية.</p><h3>إضافة</h3><p>هذا النص يصور مأساة عائلة فلسطينية، اضطرتها العصابات الصهيونية عام النكبة إلى ترك وطنها، لكنها شعرت بحجم المأساة عقب وصولها إلى أرض المهجر، فقررت العودة إلى الوطن بأي حال مشياً أو زحفاً، وقد ذُلِّلَتْ لهم الطبيعة، فالصخور تنكمش وحتى الليل المظلم صار يداً تقودهم إلى طريق العودة.</p><p>لكنهم سرعان ما اكتشفوا أن طريق العودة محفوف بالمخاطر ففيه الدماء والسجون والتيه والهلاك، وهذا مصير كل العائدين فقد رأوا النهر يرمي على ضفتيه الشرقية والغربية لحماً مفتتاً من جثث العائدين.</p><p>أما قصة هذه العائلة فقد كانوا ثلاثة، شيخاً وابنته ورفيقاً لهما ثالثاً، وقبل الوصول إلى الجسر دار الحوار بين الشيخ وابنته حول منزلهم الذي تركوه منذ زمن، ويتساءلون هل فيه ماء، وتذكر الشيخ المفتاح الذي حمله معه على أمل العودة، وفي معمة الخيال المجنح، والفرحة الغامرة تلا الشيخ آية من القرآن، وردد دون وعي قول أبي تمام:</p><p>كم منزل في الأرض يألفه الفتى وحنينه أبداً لأول منزل</p><p>١ - مقصلة على وزن مقعلة اسم آلة.</p><p>١٤٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>٢- التكاثر في البلازموديوم: Reproduction In Plasmodium</h2><p>يشكل طفيل الملاريا Plasmodium خطراً كبيراً على صحة الإنسان وحياته، إذ يسبب حمى الملاريا التي تقتل عدة ملايين من البشر سنوياً في دول مختلفة ومنها بلادنا. ويقوم بنقل هذا المرض اثني بعرض الأنوفليس.
+- فابن يعيش بلازموديوم الملاريا؟ وكيف يتكاثر؟</p><p>أدرس الشكل (١٠)، ولاحظ أن دورة حياة بلازموديوم الملاريا من البعوضة إلى الإنسان تسير وفقاً للخطوات الآتية:</p><p>١- تلدغ البعوضة إنساناً مصاباً بالمرض وتمتص دمه الذي تحتوي خلايا الحمراء على الخلايا المكونة لأمشاج Gametocytes طفيل</p><p>البلازموديوم.</p><p>٢- تنضج الخلايا المكونة للأمشاج داخل البعوضة وتتحول إلى أمشاج مذكرة وأمشاج مؤنثة حيث تتحد الأمشاج مكونة اللاقحة، وتخترق اللاقحة جدار معدة البعوضة إلى الناحية المقابلة، وتتطور بالتكاثر اللاجنسي إلى الأبواغ sporozoite التي تنتقل إلى الغدد اللعابية للبوضة.
+٣- تلدغ البعوضة إنساناً آخر سليماً وتنتقل إلى دمه الأبواغ التي تتحرك إلى الكبد.
+٤- تتكاثر الأبواغ لاجنسياً في الكبد وتنتج الميروزويتات.
+٥- تدخل الميروزويتات مجرى الدم وتخترق خلايا الدم الحمراء وتتكاثر بها لاجنسياً، وينتج عن ذلك انفجارها وانطلاق ميروزويتات وخلايا مكونة الأمشاج، ومواداً سامة، وتؤدي عملية انفجار خلايا الدم الحمراء وانطلاق محتوياتها في الدم إلى ظهور أعراض حمى الملاريا بشكل دوري في جسم المريض.</p><p>٧١</p><p>الأحياء للصف الثالث الثانوي</p><p>http://E-learning-moe.edu.ye</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

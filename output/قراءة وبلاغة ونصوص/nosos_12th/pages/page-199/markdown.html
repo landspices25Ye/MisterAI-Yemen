@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>جاشت في نفس الشاعر، وليست الصور والأخيلة والموسيقا، ولكن كلها تكون وحدة متكاملة.</p><h2>الخلاصة</h2><p>التجربة الشعرية هي الصورة الكاملة النفسية أو الكونية التي يرسمها الشاعر حين يفكر في أمر من الأمور تفكيراً ينم عن عميق شعوره وإحساسه، يعبر فيها عما في نفسه من صراع داخلي سواء أكان تعبيره عن نفسه أم عن موقف إنساني عام تمثله.
+عناصر التجربة الشعرية هي: الفكر، والوجدان أو العاطفة، والصياغة الشعرية.
+والتجربة الشعرية جزء من التجربة الأدبية التي تعد بدورها جزءاً من التجربة الفنية.</p><h2>الفكر في التجربة الشعرية</h2><h2>أولاً</h2><p>تأتي الفكرة في التجربة الشعرية متمزجة بوجدان الأديب، وقد نظم كثير من العلماء من الحكم والفلسفة والعلوم المختلفة، ولكنهم لم يعدوا من الشعراء، إذ لابد أن يمتزج الفكر بالوجدان، أو بمعنى آخر يبرز الفكر من خلال وجدان الشاعر، فليس الشعر فكراً محضاً؛ ولهذا يختلف النقاد والقراء حول المعنى في النص بحسب اختلاف إدراكهم وحالاتهم النفسية، بل قد نجد في النص معاني لا يستطيع الشاعر نفسه أن يحددها، ولهذا كان المتنبي يقول: ابن جني أعلم بشعري مني.
+ومن جانب آخر ليس الشعر كلاماً جميلاً موقعاً، بل لابد أن يؤدي وظيفة في الحياة، ولولا ذلك لما احتفل به الناس عبر العصور.
+قال الشاعر:</p><p>يَمُوتُ رَدِيءُ الشِّعْرِ مِنْ قَبْلِ أَهْلِهِ وَجَيِّدُهُ يَبْقَى وَإِنْ مَاتَ قَائِلُهُ
+ومن جيد الشعر هذه الأبيات للمتنبي:
+صَحِبَ النَّاسُ قَبْلَنَا ذَا الزَّمَانَا وَعَنَاهُمْ مِنْ شَأْنِهِ مَا عَنَانَا
+وَتَوَلَّوْا بِغُصَّةٍ كُلِّهِمْ مِنْهُ وَإِنْ سَرَّ بَعْضُهُمْ أَحْيَانَا
+وَكَأَنَّا لَمْ يَرْضَ فِينَا بِرَبِّ الدَّهْرِ حَتَّى أَعَانَهُ مِنْ أَعَانَا
+كَلِمًا أَنْبَتَ الزَّمَانُ قِنَاءً رَكَّبَ الْمَرْءَ فِي الْقِنَاءِ سِنَانَا
+غَيْرَ أَنَّ الْفَتَى يُلَاقِي الْمَنَايَا كَالْحَسَاتِ وَلَا يُلَاقِي الْهَوَانَا</p><p>١٩٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

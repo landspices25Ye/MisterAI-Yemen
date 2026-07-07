@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>ويمكنك حسابها كالآتي :</p><p>السنة الضوئية = سرعة الضوء X الزمن</p><p>$‫= 300,000 \frac{\text{كم}}{\text{ث}} \times 365,25 \times 24 \times 60 \times 60 \text{ (ث)}‬$‫</p><p>‬$‫= 9,460,800,000,000 \text{ كم} .‬$</p><p>فإذا كانت الشمس تبعد عن الأرض ١٥٠ مليون كيلو متر ، فإن الضوء الذي يخرج منها يصل إلى الأرض بعد ٨,٣ دقائق، بينما أقرب النجوم إلينا وهو الظمان يبعد عنا حوالي ٤,٢ سنة، أي أن الضوء الذي يخرج من هذا النجم يصل إلينا بعد ٤,٢ سنة، وإذا كان النجم الذي يظهر دائماً فوق القطب الشمالي للأرض والذي نسميه نحن بالنجم القطبي نسبة إلى مكانه بالنسبة لقطب الأرض يبعد عنا مسافة ٤٠٠ سنة ضوئية، فالضوء المنبعث منه إلى الأرض يكون قد غادر النجم قبل ٤٠٠ سنة من رؤيتنا له، ولا ندري الآن ما مصير هذا النجم هل ما يزال موجوداً أم لا، فنحن نحتاج إلى ٤٠٠ سنة أخرى لمعرفة ذلك، وأنى للشخص منا أن يعمر مثل ذلك حتى يعرف ؟!!</p><p>إذا كيف يقيس الفلكيون المسافات بين النجوم والأرض؟</p><p>إن إحدى الطرق المستخدمة لقياس المسافات بين النجوم والأرض تسمى اختلاف المناظر، أو اختلاف مكان المشاهدة Parallaxes أي تعني النظر إلى الجسم من أماكن مختلفة من على الأرض، وهذه الطريقة تستخدم لتحديد المسافة لأقرب النجوم، حيث يرصد النجم من مكان ما على سطح الأرض، ثم بعد ٦ شهور يرصد هذا النجم فتكون الأرض قد قطعت مسافة ٣٠٠,٠٠٠,٠٠٠ كم من النقطة الأولى، ومن ثم يقوم الفلكيون بحساب التغير في المسافة وبالتالي يتوصلون إلى تعيين بُعد النجم عن الأرض كما في شكل (٦).</p><p>٢٠٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

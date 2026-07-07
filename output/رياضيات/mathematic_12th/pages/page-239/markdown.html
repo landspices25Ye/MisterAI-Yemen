@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التكامل</p><p>$‫\therefore \left[ \frac{\text{جا}^2 \text{ س}}{3 + \text{جتا}^2 \text{ س}} \right] \text{ وس} = \frac{1}{2} \left[ \frac{\text{غ}}{\text{غ}} \right] = \frac{1}{2} \text{ لو } |\text{غ}| + \text{ث} .‬$‫</p><p>‬$‫= \frac{1}{2} \text{ لو } (3 + \text{جتا}^2 \text{ س}) + \text{ث} .‬$‫</p><p>احسب مايلي :</p><p>مثال (٧ - ٢٠)</p><p>أ) [ جا‬$^4$‫ س وس ] ب) [ جتا‬$^5$‫ س وس .</p><p>الحل :</p><p>نلاحظ أنه لا توجد صيغة تعطي حساب التكامل للنسب جا ، جتا ، ظا ، ... ، إذا كان الأس أكبر من أو يساوي ٢ ، لذا سنستخدم الطريقة التالية في حالة أن الأس ‬$\leq 2$‫ للدالتين جا ، جتا .</p><p>أ) [ جا‬$^4$‫ س وس = [ (جا‬$^2$‫ س)‬$^2$‫ وس .</p><p>‬$‫\therefore \text{جا}^2 \text{ س} = \frac{1}{2} - \frac{1}{2} \text{ جتا}^2 \text{ س}‬$‫</p><p>‬$‫\therefore \text{ل} = \left[ \frac{1}{2} - \frac{1}{2} \text{ جتا}^2 \text{ س} \right] \text{ وس} = \left[ \frac{1}{4} - \frac{1}{2} \text{ جتا}^2 \text{ س} + \frac{1}{4} \text{ جتا}^2 \text{ س} \right] \text{ وس} .‬$‫</p><p>‬$‫= \frac{1}{4} \text{ س} - \frac{1}{4} \text{ جا}^2 \text{ س} + \frac{1}{4} \text{ [ جتا}^2 \text{ س وس}‬$‫</p><p>‬$‫\therefore \text{جتا}^2 \text{ س} = \frac{1}{2} + \frac{1}{2} \text{ جتا}^4 \text{ س}‬$‫</p><p>‬$‫\therefore \text{ل} = \frac{1}{4} \text{ س} - \frac{1}{4} \text{ جا}^2 \text{ س} + \frac{1}{4} \text{ [ } \frac{1}{2} + \frac{1}{2} \text{ جتا}^4 \text{ س} \text{ وس}‬$‫</p><p>‬$‫= \frac{1}{4} \text{ س} - \frac{1}{4} \text{ جا}^2 \text{ س} + \frac{1}{8} \text{ س} + \frac{1}{32} \text{ جا}^4 \text{ س} + \text{ث}‬$‫</p><p>‬$‫= \frac{3}{8} \text{ س} - \frac{1}{4} \text{ جا}^2 \text{ س} + \frac{1}{32} \text{ جا}^4 \text{ س} + \text{ث}‬$‫</p><p>ب) [ جتا‬$^5$‫ س وس = [ جتا‬$^4$‫ س جتا س وس ]</p><p>‬$‫= [ (\text{جتا}^2 \text{ س})^2 \text{ جتا س وس} = [ (1 - \text{جا}^2 \text{ س})^2 \text{ جتا س وس} ]‬$‫</p><p>‬$‫= [ (1 - 2 \text{ جا}^2 \text{ س} + \text{جا}^4 \text{ س}) \text{ جتا س وس} .‬$‫</p><p>‬$‫= [ \text{جتا س وس} - 2 \text{ [ جا}^2 \text{ س جتا س وس} + \text{ [ جا}^4 \text{ س جتا س وس} ]‬$‫</p><p>‬$‫= \text{جا س} - \frac{2}{3} \text{ جا}^3 \text{ س} + \frac{1}{5} \text{ جا}^5 \text{ س} + \text{ث} .‬$</p><p>٢٣٧</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

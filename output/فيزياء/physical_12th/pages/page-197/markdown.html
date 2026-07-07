@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>- البطاريات الشمسية :</h2><p>تعمل البطاريات الشمسية على تحويل الطاقة الشمسية إلى طاقة كهربائية بطريقة مباشرة ومن أنواع البطاريات الشمسية :</p><p>١- بطاريات تتكون من لوح نحاس أحد وجهيه مغطى بطبقة رقيقة من أكسيد النحاس، وهو مغطى بطبقة رقيقة من الذهب كما في الشكل (١١).</p><p>٢- بطاريات تتكون من لوح حديد أحد وجهيه مغطى بطبقة من السيلينيوم، وطبقة السيلينيوم مغطاة بطبقة رقيقة من الذهب لتسمح بنفاذ الضوء كما في الشكل (١٢).</p><p>ويتلخص عمل البطاريتين في أنه عند سقوط الضوء على طبقة الذهب ينفذ خلالها ويتسبب في إزاحة بعض الإلكترونات من طبقة أكسيد النحاس (في الأولى)</p><p>وطبقة السيلينيوم (في الثانية) نحو طبقة الذهب، فينشأ فرق في الجهد بين طبقة الذهب ولوح النحاس (في الأولى) أو لوح الحديد (في الثانية)، وبالتالي إذا وصلت طبقة الذهب الرقيقة، ولوح النحاس أو لوح الحديد بجلفانومتر حساس فإن تيار كهربائي يمر في دائرته، ويتحرك مؤشر الجلفانومتر، ويستمر مرور التيار باستمرار سقوط الضوء.</p><p>٣- البطارية الشمسية السيليكونية :</p><p>وتتكون من ست طبقات كما في الشكل (١٣) حيث تتكون القاعدة من طبقتين: واحدة تمثل القطب السالب للبطارية (للخلية)، والثانية تقع فوقها،</p><p>جلفا نومتر حساس</p><img src="img-194.jpeg" alt="img-194.jpeg" /><p>شكل (١١)</p><p>جلفا نومتر حساس</p><img src="img-195.jpeg" alt="img-195.jpeg" /><p>شكل (١٢)</p><p>١٩٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

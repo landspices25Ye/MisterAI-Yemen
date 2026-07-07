@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>مبدأ العد ومبرهنة ذات الحدين</p><p>$‫\frac{1 \times 2 \times 3 \times \dots (1 - \sqrt{2}) (\sqrt{2}) (1 + \sqrt{2}) \dots (2 - 3) (1 - 3) \sqrt{2}}{1 \times 2 \times 3 \times \dots (1 - \sqrt{2}) (\sqrt{2} - 3)}‬$‫</p><p>فيصبح التعريف (٢-٣) كما يلي :</p><p>‬$‫\text{ط} \supseteq \text{و} \text{،} \text{و} \geq \sqrt{2} \text{،} \quad \frac{\text{و}}{\sqrt{2} - \text{و}} = \text{ط}‬$‫</p><p>ومنه نجد أن : ‬$\text{ط} \supseteq \text{و} = \text{ط}$‫ ، ‬$\text{ط} \supseteq 1 = 1$‫</p><p>وبالمثل :</p><p>‬$‫\text{ط} \supseteq \frac{\text{و}}{\text{ن}} = \frac{\text{و}}{\text{ن}} \Rightarrow \frac{\text{و}}{\text{ن}} = 1 = 1‬$‫</p><p>∴ مضروب الصفر يساوي (١) .</p><h1><strong>مثال (٢ - ٦)</strong></h1><p>أوجد قيمة كل من : ‬$\text{ط} \supseteq \text{ن} \text{،} \text{ط} \supseteq \text{ن} \text{،} \text{ط} \supseteq \text{ن}$‫</p><p><strong>الحل :</strong></p><p>‬$‫\text{ط} \supseteq 5 \times 6 = 30‬$‫</p><p>‬$‫\text{أو } \text{ط} \supseteq \frac{\text{ن}}{\text{ن}} = \frac{\text{ن}}{\text{ن}} = \frac{\text{ن}}{\text{ن}} = \frac{\text{ن}}{\text{ن}} = 30‬$‫</p><p>‬$‫\text{ط} \supseteq \frac{\text{ن}}{\text{ن}} = \frac{\text{ن}}{\text{ن}} = 120 = 1 \times 2 \times 3 \times 4 \times 5 = \text{ن} = \frac{\text{ن}}{\text{ن}} = \frac{\text{ن}}{\text{ن}} = \text{ن} \text{}‬$‫</p><p>‬$‫\text{ط} \supseteq \frac{\text{ن}}{\text{ن}} = \frac{\text{ن}}{\text{ن}} = \frac{\text{ن}}{\text{ن}} = \frac{\text{ن}}{\text{ن}} = 840 = 4 \times 5 \times 6 \times 7 = \frac{\text{ن}}{\text{ن}} = \frac{\text{ن}}{\text{ن}} = \frac{\text{ن}}{\text{ن}} = 840‬$‫</p><h1><strong>مثال (٢ - ٧)</strong></h1><p>أوجد قيمة ‬$\text{و}$‫ في كل ما يأتي :</p><p>‬$‫\text{أ} \supseteq \text{ط} \supseteq 56 = \text{ط} \text{}‬$‫</p><p>‬$‫\text{ب} \supseteq \text{ط} \supseteq 1 + \text{ط} \text{‬$‫\frac{\text{و}}{\text{ن}} = 7‬$‫</p><p><strong>الحل :</strong></p><p>‬$‫\text{أ} \supseteq \text{ط} \supseteq 56 = \text{ط} \text{}‬$$</p><p>٥١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

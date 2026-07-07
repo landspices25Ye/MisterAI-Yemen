@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-116.jpeg" alt="img-116.jpeg" /><p>ومع زيادة مقاومة البكتيريا للمضادات الحيوية تابع العلماء بحشهم عن أنواع جديدة منها تكون أكثر فاعلية. وقد بدأ الاتجاه نحو الاستعانة بهندسة الجينات وتعديل جينات بعض الكائنات الحية، بحيث تصبح هذه الكائنات الحية المعدلة جينياً قادرة على إنتاج مضادات حيوية أكثر قوة وفاعلية، وقد ساعد ذلك في إنتاج مضادات أخرى غير البنسلين، مثل الاستربتومايسين والكلورامفينكول، وغيرها. وتستخدم ثقافة هندسة الجينات الآن في إعادة تشكيل الحمض النووي (DNA) للكائنات</p><p>شكل (٩) آلية إنتاج الهرمونات بواسطة الهندسة الوراثية الدقيقة - في إنتاج أنواع متعددة من الهرمونات، مثل هرمون النمو، وهرمون الإنسولين في خطوات محددة كما في الشكل (٩)، والذين كانا يستخلصان في السابق من أنسجة الحيوانات. فبالنسبة لإنتاج الأنسولين فإنه يؤخذ الجين المسؤول عن بناء الهرمون وإنتاجه في جسم الإنسان من الخلية البشرية وينقل إلى الحمض النووي (DNA) في الخلية البكتيرية كما في الشكل (٩) ثم يتم وضع الكائنات الدقيقة في أوعية خاصة تتعرض فيها لظروف ملائمة؛ حيث تتكاثر هذه الكائنات وتنتج الهرمون المطلوب، ثم يمر الهرمون بعدة عمليات معقدة لتنقيته، وجعله جاهزاً للاستخدام، ومن أهم الهرمونات التي يتم إنتاجها بهذه الطريقة هرمون الأنسولين الذي يستخدمه مرضى السكر، وهرمون النمو الذي يستخدم لمعالجة القزامة. كذلك يتم حالياً إنتاج بعض المركبات الهرمونية مثل الكورتيزون، والهرمونات التناسلية، مثل التيتستوستيرون والاستروجين.</p><p>كما يتم إنتاج الهرمونات التي تستخدم في زيادة الإنتاج الحيواني مثل هرمون البوفين سوماتوثرافين Bovine Somatotrophin (BST) الذي يعطى للإبقار لزيادة إنتاج الحليب منها.</p><p>١٥٤</p><p>الأحياء: النصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

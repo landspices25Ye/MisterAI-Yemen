@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-194.jpeg" alt="img-194.jpeg" /><p>الوحدة السابعة</p><p>من هذه المتراجحة نستنتج أنه يوجد عدد ك حيث د(س₁) ≥ ك ≥ د(س₂)</p><p>يحقق د(س) و س = ك (ب - 1).</p><p>∴ د(س₁) ≥ د(س) ≥ د(س₂) ، د(س₁) ≥ ك ≥ د(س₂).</p><p>∴ يوجد على الأقل عدد ج [1، ب] بحيث د(ج) = ك</p><p>إذن د(س) و س = د(ج) (ب - 1) وهو المطلوب.</p><h1>التفسير الهندسي لمبرهنة القيمة المتوسطة :</h1><p>إذا كانت الدالة د متصلة على [1، ب] ، ويقع بيانها فوق محور السينات كما في الشكل (٢ - ٧) ،</p><p>فإن : سط تكافئ مساحة المستطيل الذي بعده</p><p>(ب - 1) ، د(ج) حيث ج [1، ب] .</p><img src="img-195.jpeg" alt="img-195.jpeg" /><p>شكل (٢ - ٧)</p><h1>مثال (٧ - ١٣)</h1><p>أوجد قيمة ج التي تحقق مبرهنة القيمة المتوسطة للتكامل إذا كانت :</p><p>د(س) = س ، س ≥ [ ٩ ، ٠ ]</p><h1>الحل :</h1><p>د(س) و س = د(ج) (٩ - ٠)</p><p>د(س) و س = س ١/٢</p><p>د(س) و س = س ١/٢</p><p>د(س) و س = س ١/٢</p><p>∴ د(ج) = ٢</p><p>٢٢٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

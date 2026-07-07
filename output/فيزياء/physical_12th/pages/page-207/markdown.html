@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>نشوء وتطور النجوم : Formation of Stars</h2><p>تتكون النجوم عندما تكون المجرة التي تقع فيها النجوم في طور التكوين، إذ يعتقد العلماء أن مناطق في المجرة تبدأ في البرود والتكثف بسرعة كبيرة، فتكون مراكزاً لكتل كثيفة، تصبح هذه الكتلة الكثيفة نجوماً، إذ تتكثف الكتلة بسبب الجذاب المادة التي تتكون منها المجرة نحو مركز الكتلة، نتيجة قوى الجذب الداخلية للكتلة. وباستمرار التقلص أيضاً ترتفع درجة حرارة التجمع إلى أقصى حد حتى تصل إلى درجة التاين الكامل لجميع ذرات الهيدروجين، ويصبح التجمع ساخناً إلى درجة الإبيضاض وتسمى عندئذ (بلازما) والتي تتكون من بروتونات وإلكترونات وجسيمات أخرى تبدأ عملية الاندماج النووي، وهكذا يكون مولد النجم.</p><p>يحدث في باطن النجوم نوعان من التفاعلات الاندماجية النووية عند إنتاج الطاقة الضوئية، ففي النجوم مثل الشمس، أو النجوم القريبة كتلتها من كتلة الشمس، تنتج الطاقة من تحول جزء من كتلة الهيدروجين المتحولة إلى هليوم، حيث تتحول أربع ذرات هيدروجين إلى ذرة هليوم واحدة تكون كتلتها أقل من كتلة ذرات الهيدروجين الداخلة في التفاعل ويسمى هذا التفاعل بدورة البروتون بروتون.</p><p>أما في النجوم التي كتلتها أقل من كتلة الشمس فإن الطاقة تنتج من تحول أربع ذرات هيدروجين إلى ذرة هليوم واحدة تكون كتلتها أقل من كتلة ذرات الهيدروجين المتفاعل، وفرق الكتلة هذا يتحول إلى طاقة ضوئية وحرارية. إن هذا التفاعل يسمى بدورة الكربون – النيتروجين – الأكسجين حيث يدخل الكربون كعامل مساعد في التفاعل ويمثل الأكسجين والنيتروجين نواتج ثانوية.</p><h2>لون النجوم : Colour of Stars</h2><p>يعود لون النجوم إلى الأطوال الموجية التي تبعثها أو تشعها، فالنجم الأحمر يشع ضوءاً يحتوي على جميع الأطوال الموجية ولكن يشع ضوءاً أحمر أكثر من بقية الأضواء ذات الألوان الأخرى، وبعض النجوم تبعث ضوءها وطاقتها على شكل موجات لا تراها العين البشرية كالأشعة فوق البنفسجية.</p><p>من الشكل (٥) يلاحظ أنه عندما تكون درجة حرارة السطح الخارجي للنجم (٣٢٥٠م) يظهر</p><img src="img-207.jpeg" alt="img-207.jpeg" /><p>شكل (٥)</p><p>٢٠٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

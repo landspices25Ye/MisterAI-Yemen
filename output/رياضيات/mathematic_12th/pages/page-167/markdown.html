@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التفاصيل</p><h1>مثال (٦ - ١٠)</h1><p>إذا كانت ص = $‫\sqrt{5 + 2m}‬$ . أوجد ص</p><p>الحل :</p><p>$‫ص = (5 + 2m) \stackrel{\frac{1}{3}}{\Leftarrow} \stackrel{\frac{1}{3}}{\Leftarrow} (5 + 2m) \stackrel{\frac{1}{3}}{\Leftarrow} (2m) = \frac{2m}{\sqrt[3]{5 + 2m}}‬$‫</p><h1>مثال (٦ - ١١)</h1><p>أوجد ‬$\frac{5m}{5m}$‫ للدالة ص = (5 + 2m) مستخدماً قاعدة التسلسل .</p><p>الحل :</p><p>نضع ع = 5 + 2m = ص = 7ع</p><p>‬$‫\therefore \frac{5ع}{5m} = 2س \quad , \quad \frac{5ع}{5m} = 7ع‬$‫</p><p>‬$‫\therefore \frac{5ع}{5m} \times \frac{5ع}{5m} = \frac{5m}{5m} \Rightarrow‬$‫</p><p>‬$‫\therefore \frac{5ع}{5m} = 7 \times 2 \times 14 = 14 \times 14 = 14 \times (5 + 2m)‬$‫</p><h1>تمارين ومسائل (٦ - ٣)</h1><p>[١] أوجد (س) لكل مما يلي :</p><p>أ) س = 2 - س ، د (س) = 1 + س ، عند س = 1 -</p><p>ب) س = 2 - 4 ، د (س) = ‬$\frac{1}{2m}$‫ ، عند س = 1</p><p>ج) س = 2 ، د (س) = ‬$\sqrt{2m} + 1$‫ ، س ‬$\neq$‫ س</p><p>د) س = 2 ، د (س) = (1 - س) ، س ‬$\neq$ س</p><p>١٦٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

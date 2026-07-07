@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-50.jpeg" alt="img-50.jpeg" /><h1>الاحتمالات</h1><h1>الوحدة الثالثة</h1><h1>بعض المبرهنات الأساسية في الاحتمالات</h1><p>٣ - ١</p><p>سبق أن تعرّفت على بعض المفاهيم الأساسية في الاحتمالات ، مثل : التجربة العشوائية ، وفضاء العينة ، والحوادث العشوائية ، وبعض العمليات على الحوادث العشوائية ، والدالة الاحتمالية وخواصها . وفي هذا البند نذكرك بأهم تلك المفاهيم ، ومن ثم نعيد تناول خواص الدالة في صورة مبرهنات .</p><h1>مبرهنة (٣ - ١)</h1><p>احتمال وقوع الحادثة المستحيلة يساوي صفراً ، أي أن : حا ( $‫\emptyset‬$ ) = ٠ .</p><p>البرهان : $‫\therefore \emptyset \cup \emptyset = \emptyset‬$</p><p>(١)...</p><p>$‫\therefore‬$ حا ( $‫\emptyset \cup \emptyset‬$ ) = حا ( $‫\emptyset‬$ )</p><p>، $‫\emptyset‬$ ، حا ( $‫\emptyset‬$ ) حادثتان متنافيتان</p><p>(٢)...</p><p>حا ( $‫\emptyset \cup \emptyset‬$ ) = حا ( $‫\emptyset‬$ ) + حا ( $‫\emptyset‬$ )</p><p>من (١) ، (٢) نستنتج أن :</p><p>حا ( $‫\emptyset‬$ ) = حا ( $‫\emptyset‬$ ) + حا ( $‫\emptyset‬$ )</p><p>ومنها حا ( $‫\emptyset‬$ ) = ٠ .</p><h1>مبرهنة (٣ - ٢)</h1><p>إذا كانت $‫\bar{1}‬$ هي الحادثة المتممة للحادثة $‫1$ في فضاء العينة ( ‬$\emptyset$‫ ) فإن : حا ( ‬$\bar{1}$‫ ) = ١ - حا ( ‬$1$‫ ) .</p><p>البرهان : ‬$\therefore \emptyset = \bar{1} \cap \bar{1}$‫ ، ‬$\bar{1} \cap \bar{1} = \emptyset$</p><p>٧٤</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-86.jpeg" alt="img-86.jpeg" /><p>الوحدة الرابعة</p><p>[ أنظر شكل ( ٤ - ١٣ ) ]</p><img src="img-87.jpeg" alt="img-87.jpeg" /><p>شكل ( ٤ - ١٣ )</p><h1>تعريف ( ٤ - ٤ )</h1><p>١ - تُسمَّى القطعة المستقيمة هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ، هـ</p><h1>ملاحظات :</h1><p>في معادلة القطع الناقص $‫\frac{2m}{2} + \frac{2m}{2} = 1‬$‫ ، [ أنظر شكل ( ٤ - ١٣ ) ] تلاحظ أن :</p><p>١ - إذا استبدلنا ( س ) بـ ( - س ) فمعادلة القطع لا تتغير ، أي أن القطع الناقص متماثل حول محور السينات . كذلك القطع الناقص متماثل حول محور الصادات .
+٢ - طول المحور الأكبر يساوي ١٢ وطول المحور الأصغر يساوي ٢ ب .
+٣ - التخاليف المركزي ‬$‫\text{ي} = \frac{\text{ج}}{\text{أ}} = \sqrt{1 - \frac{\text{ب}}{\text{أ}}} \text{ حيث } \text{ي} > 1‬$‫
+٤ - بؤرتا القطع الناقص هما ( ± ١ ) ، ( ± ٠ ) ، ( ± ٠ ) .
+٥ - معادلنا دليلي القطع الناقص ‬$‫\text{س} = \pm \frac{\text{أ}}{\text{ج}} = \pm \frac{\text{أ}}{\text{ب}}‬$ .</p><p>١١٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-103.jpeg" alt="img-103.jpeg" /><p>توجد في الطبيعة بشكل واسع، ومن أمثلتها النشا والسليليوز، ومن خواصها:
+١- تتحلل مائياً بواسطة الحموض المعدنية أو الإنزيمات مكوناً عدداً كبيراً من السكريات الأحادية.
+٢- شحيحة الذوبان في الماء وتُكوّن محلول غروي.
+٣- ليس لها القدرة على الاختزال فهي لا تختزل محلول فهلنج مثلاً.
+وكمثال على هذه المجموعة يمكن مناقشة النشا كما يأتي.</p><h1>النشا Starch</h1><p>يوجد النشا في معظم النباتات مخزوناً في الحبوب على هيئة حبيبات بيضاء.</p><h1>خواصه الفيزيائية:</h1><p>قليل الذوبان في الماء البارد (تذوب ٢٠٪ منه) وعند تسخينه يكون محلولاً لزجاً لامعاً يتحول إلى مادة هلامية عند تبريده.</p><h1>خواصه الكيميائية:</h1><p>١- يتحلل مائياً عند تسخينه مع الحموض المعدنية على النحو الآتي:</p><p>نشا ← تخلل مائي → دكسترين ← تخلل مائي → مالتوز ← تخلل مائي → جلوكوز</p><p>٢- التفاعل مع اليود: يعطي النشا مع محلول اليود لوناً أزرقاً على البارد ويعتبر هذا التفاعل وسيلة للكشف عن وجود النشا.</p><h1>نشاط (٦-٤)</h1><p>اكشف عن النشا.</p><h1>ثانياً: البروتينات:</h1><p>تُعد البروتينات من أهم المكونات التي يحتاجها الإنسان في غذائه، حيث أنها تدخل في بناء الخلايا الحية، وتساعد على تنظيم عمليات الأيض الغذائي فيها.
+ويدخل البروتين في تركيب الجلد، والشعر، والأظافر، والعضلات، وغيرها.
+وتنقسم البروتينات إلى:</p><p>١- بروتينات حيوانية، وتوجد في اللحوم، والبيض، واللبن.
+٢- بروتينات نباتية: وتوجد في البقوليات مثل الفول والفاصوليا والبازلا وغيرها.</p><p>١١٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

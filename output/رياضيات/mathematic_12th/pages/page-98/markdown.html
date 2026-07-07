@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-64.jpeg" alt="img-64.jpeg" /><p>الوحدة الثالثة</p><p>$‫\frac{2}{3} = \frac{1}{3} - 1 = \text{ح} - 1 = \text{ف}‬$‫</p><p>(١) احتمال الحصول على الرقمين ٥ أو ٦ ثلاث مرات بالضبط (أي س = ٣)</p><p>‬$‫\therefore \text{حا} (س = ٣) = ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times 2‬$‫</p><p>(٢) احتمال عدم الحصول على الرقمين ٥ أو ٦ ‬$\equiv$‫ ف‬$^٥$‫ (الفشل في جميع المحاولات) (أي س = ٠)</p><p>‬$‫\therefore \text{حا} (س = ٠) = ١٢٨ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times 3‬$‫</p><p>(٣) احتمال الحصول على الرقمين ٥ أو ٦ مرة واحدة على الأقل = حا (س ‬$\leq ١$‫) = ١ - ف‬$^٥$‫</p><p>‬$‫\therefore \text{حا} (س \leq ١) = ١ - ١٢٨ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times ٣ \times 3‬$‫</p><h1><strong>مثال (٣-١٦)</strong></h1><p>ليكن احتمال مولود ذكر يساوي ‬$\frac{1}{2}$‫ ، واحتمال نوع الطفل مستقل من طفل إلى آخر .</p><p>فإذا كان لدى أسرة أربعة أطفال . فما احتمال أن يكون :</p><p>(١) جميعهم ذكوراً ؟ (٢) واحد منهم على الأقل ذكراً ؟</p><p>(٣) عدد الذكور يساوي عدد الإناث ؟</p><h1><strong>الحل :</strong></h1><p>‬$‫\text{و} = ٤ \text{ أطفال ، ح} = ١ \text{ ف} = ٢‬$‫</p><p>(١) نفرض أن : أ هي حادثة أن يكون جميعهم ذكوراً (أي س = ٤)</p><p>‬$‫\therefore \text{حا} (أ) = ٤ \times ٤ \times ٤ \times ٤ \times ٤ \times ٤ \times ٤ \times ٤ \times ٤ \times ٤ \times ٤ \times ٤ \times ٤ \times ٤ \times 4‬$‫</p><p>(٢) نفرض أن : ب هي حادثة أن يكون واحد من الأطفال على الأقل ذكراً ،</p><p>‬$‫\text{وحيث إن احتمال جميع الأطفال إناث} = ٤ \text{ ف} = ٤ \text{ ف} = ٤ \text{ ف} = ٤ \text{ ف} = ٤ \text{ ف} = ٤ \text{ ف} = ٤ \text{ ف} = ٤ \text{ ف} = ٤ \text{ ف} = ٤ \text{ ف} = ٤ \text{ ف} = ٤‬$</p><p>٩٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-26.jpeg" alt="img-26.jpeg" /><h1>ملاحظة</h1><p>الحالة القياسية للعنصر:</p><p>حالة وجود العنصر في الطبيعة عند درجة حرارة ٢٥°م، وضغط (١ جو).</p><p>|  المادة | الصيغة الكيميائية | حالتها الفيزيائية | حرارة التكوين القياسية كيلو جول / مول  |
+| --- | --- | --- | --- |
+|  الماء | H_{2}O | سائل | ٢٨٥,٨ -  |
+|  الماء | H_{2}O | بخار | ٢٤١,٨ -  |
+|  البروم* | Br_{2} | سائل | ٠٠,٠٠  |
+|  أكسيد الحديد III | Fe_{2}O_{3} | صلب | ٨٢٢,٢ -  |
+|  كلوريد الهيدروجين | HCl | غاز | ٩٢,٣ -  |
+|  الأمونيا | NH_{3} | غاز | ٤٦,١٩ -  |
+|  البنزين | C_{6}H_{6} | سائل | ٤٩,٤ +  |
+|  الكحول الميثيلي | CH_{3}OH | سائل | ٢٣٨,٦ -  |
+|  أكسيد الألومنيوم | Al_{2}O_{3} | صلب | ١٦٦٩,٨ -  |
+|  حمض الخليك | CH_{3}COOH | سائل | ٤٨٧,٠ -  |
+|  الكربون* | C | جرافيت | ٠٠,٠٠  |
+|  الكربون | C | ألماس | ١,٨٨ +  |
+|  كربونات الكالسيوم | CaCO_{3} | صلب | ١٢٠٧,٠ -  |
+|  أكسيد الكالسيوم | CaO | صلب | ٦٣٥,١ -  |
+|  هيدروكسيد الصوديوم | NaOH | صلب | ٤٢٦,٨ -  |
+|  أول أكسيد الكربون | CO | غاز | ١١٠,٥ -  |
+|  ثاني أكسيد الكربون | CO_{2} | غاز | ٣٩٣,٥ -  |
+|  أكسيد النيتريك | NO | غاز | ٩٠,٣٧ +  |
+|  ثاني أكسيد النيتروجين | NO_{2} | غاز | ٣٣,٩ +  |</p><p>جدول (٢-٢) حرارة التكوين القياسية لبعض المواد</p><h1>حساب حرارة التفاعل:</h1><p>يلجأ العلماء في كثير من الأحيان إلى طرق غير مباشرة للتعرف على حرارة التفاعل (ΔH)، للأسباب التالية:</p><p>* حرارة التكوين القياسية لجميع العناصر في حالتها القياسية تساوي صفراً.</p><p>٣٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

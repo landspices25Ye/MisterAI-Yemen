@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الهندسة الفضائية</p><h1>مبرهنة العمود والمائل</h1><h1>مبرهنة (٥ - ٧)</h1><p>إذا كان $‫\frac{1}{2}\pi \perp m‬$‫ ، ‬$‫\infty‬$‫ ، ‬$‫\infty‬$ نقطتين في $‫m$ ، فإن :</p><p>‬$‫(١) \quad | \pi \infty | > | \pi \infty | \Leftarrow | \infty | > | \infty |‬$‫</p><p>‬$‫(٢) \quad | \pi \infty | = | \pi \infty | \Leftrightarrow | \infty | = | \infty |‬$‫</p><img src="img-123.jpeg" alt="img-123.jpeg" /><p>شكل (٥ - ١٤)</p><p>المعطيات : ‬$\frac{1}{2}\pi \perp m$‫ ، ‬$\infty$‫ ، ‬$\infty$ ، $\infty$ ، $\infty$‫ ،</p><p>‬$‫| \pi \infty | > | \pi \infty | \text{ [شكل (٥ - ١٤) ]}‬$‫</p><p>المطلوب : إثبات أن ‬$| \infty | > | \infty |$‫ .</p><p>البرهان : ‬$\therefore | \pi \infty | > | \pi \infty |$‫ (بالتربيع) .</p><p>‬$‫\therefore | \pi \infty | > | \pi \infty |^2 \text{ (نضيف } | \pi |^2) .‬$‫</p><p>‬$‫\therefore | \pi \infty | + | \pi \infty | > | \pi \infty | + | \pi \infty |^2 .‬$‫</p><p>‬$‫\therefore | \infty | > | \infty |^2 \text{ (مبرهنة فيثاغورث) .}‬$‫</p><p>‬$‫\therefore | \infty | > | \infty |^2 \text{ (وهو المطلوب) .}‬$‫</p><h1>تدريب (٥ - ٢)</h1><p>أثبت الفقرة (٢) في مبرهنة (٥ - ٧) باستخدام تطابق المثلثات .</p><h1>مثال (٥ - ٥)</h1><p>ب ج و ه مربع طول ضلعه ٤ سم ، أقيم من</p><p>مركزه م عمود على مستواه ، نقطة على هذا</p><p>العمود [ شكل (٥ - ١٥) ] .</p><p>‬$‫(١) \text{ أثبت أن: } | \pi | = | \infty | = | \infty | = | \infty |‬$‫</p><p>‬$‫(٢) \text{ إذا كان } | \pi | = | \pi | \text{ ، أثبت أن } | \pi | = ٤ سم .‬$‫</p><p>المعطيات : ب ج و ه مربع ، | ب ج | = ٤ سم ،</p><p>‬$\frac{1}{2}\pi \perp$‫ المستوى (ب ج و ه) ،</p><p>‬$‫| \pi | = | \pi |‬$‫</p><p>المطلوب : إثبات أن : ‬$‫(١) | \pi | = | \infty | = | \infty | = | \infty |‬$</p><img src="img-124.jpeg" alt="img-124.jpeg" /><p>شكل (٥ - ١٥)</p><p>١٤٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

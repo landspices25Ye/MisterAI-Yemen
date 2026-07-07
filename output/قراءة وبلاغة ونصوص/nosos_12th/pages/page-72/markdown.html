@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>خلق للعالم الأرضي شمساً واحدة تنيره وتحييه وتتقلب عليه بليله ونهاره، بيد أنه ترك لكل إنسان أن يصنع لنفسه شمس قلبه وغماضها وسحائبها وما تسفر به وما تظلم فيه.</p><p>ولهذا سُمِّيَ القرآن نوراً لعمل آدابه في النفس، ووصف المؤمنون بأنهم:</p><p>﴿نُورُهُمْ يَسْعَىٰ بَيْنَ أَيْدِيهِمْ وَبِأَيْمَانِهِمْ﴾ (١)، وكان أثر الإيمان والتقوى - في تعبير القرآن الكريم - أن يجعل الله للمؤمنين نوراً يمشون به.</p><p>وقد حار المفسرون في حكمة ذكر (الليل) في آية (الإسراء) من قوله تعالى:</p><p>﴿سُبْحَانَ الَّذِي أَسْرَىٰ بِعَبْدِهِ لَيْلًا مِنَ الْمَسْجِدِ الْحَرَامِ إِلَى الْمَسْجِدِ الْأَقْصَا الَّذِي بَرَكْنَا حَوْلَهُ لِنُرِيَهُ مِنْ آيَاتِنَا إِنَّهُ هُوَ السَّمِيعُ الْبَصِيرُ﴾ (٢).</p><p>فإن السرى في لغة العرب لا تكون إلا ليلاً.</p><p>والحكمة هي الإشارة إلى أن القصة قصة (النجم) الإنساني العظيم الذي تحول من إنسانيته إلى نوره السماوي في هذه المعجزة، ويتم هذه العجيبة أن آيات المعراج لم تجيء إلا في سورة (النجم).</p><p>وعلى هذا .. تكون الآية برهان نفسها، وتكون في نسقها قد جاءت معجزة من المعجزات البيانية؛ فإذا قيل: إن نجماً دار في السماء، أو قطع ما تقطعه النجوم من المسافات التي تُعجز الحساب، فهل في ذلك من عجيب؟ وهل فيه شك أو نظر أو تردد؟ وهل هو إلا من بعض ما يُسبح الله بذكره؟ وهل يكون إلا آية اتصلت بالآيات التي نراها اتصال الوجود بعضه ببعض؟</p><p>وفي أساس القصة جبريل والبراق، وهما القوة الملائكية والقوة الطبيعية، أو الروح الملائكي والروح الطبيعي، ولم يوصف البراق بأنه دابة إلا رمزاً، إذ لا يتأتى للعرب أن يفهموا ما يراد منه، وعندنا أنه سُمِّيَ البراق من البرق، وما البرق إلا الكهربائية، وهذا هو المراد منه؛ فتلك قوة كهربائية متى نبضت جمعت أول العالم بأخره؛ وهذه هي الحكمة من أن آية الإسراء لم تذكر أنه كان محمولاً على شيء، إذ لم يكن محمولاً إلا على روح الأثير.</p><p>(١) التحريم آية: ١، (٢) الإسراء، آية: ١.</p><p>٧٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

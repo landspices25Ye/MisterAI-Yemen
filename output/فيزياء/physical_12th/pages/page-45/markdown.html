@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>المتردد بسبب زيادة مقاومته.</p><p>وهذه المقاومة التي يبديها المكثف لمرور التيار الكهربائي المتردد نتيجة لسعته نسميها : «المفاعلة السعوية».</p><h2>المفاعلة السعوية للمكثف Capacitive Reactance</h2><p>ما المقصود بالمفاعلة السعوية للمكثف ؟</p><p>هي الممانعة التي يلقاها التيار الكهربائي المتردد عند مروره في مكثف نتيجة لسعته.</p><p>هل هناك فرق بين المفاعلة السعوية وبين المقاومة الأومية ؟ بين الفرق بينهما.</p><p>المفاعلة السعوية للمكثف لا تحوّل أي جزء من الطاقة الكهربائية إلى طاقة حرارية، وإنما تخزن الطاقة الكهربائية في المكثف على شكل مجال كهربائي. بينما المقاومة الأومية تحوّل جزءاً من الطاقة الكهربائية إلى طاقة حرارية.</p><h3>حساب المفاعلة السعوية لمكثف :</h3><p>يمكن استنتاج علاقة رياضية لحساب المفاعلة السعوية لمكثف وذلك كنسبة أعلى قيمة لفرق الجهد ( $‫ج_{ع}‬$ ) بين لوحي المكثف إلى أعلى قيمة لشدة التيار المار في الدائرة ( $‫ت_{ع}‬$ ) أي أن :</p><p>$‫\text{المفاعلة السعوية للمكثف } \sigma_{\text{ع}} = \frac{\text{ج}_{ع}}{\text{ت}_{ع}} \dots \dots \dots (1)‬$‫</p><p>وبالتعويض عن قيمة ( ‬$ت_{ع}$‫ ) من العلاقة ( ٦ ) السابقة في هذه العلاقة، فإن :</p><p>‬$‫\therefore \sigma_{\text{ع}} = \frac{\text{ج}_{ع}}{\text{ج}_{\text{ع}}} \dots \dots \dots (2)‬$‫</p><p>‬$‫\therefore \sigma_{\text{ع}} = \frac{1}{\text{ج}_{\text{ع}}} \dots \dots \dots (3)‬$‫</p><p>وبما أن ‬$f \pi r = \omega$‫ حيث ( ‬$f$‫ ) تردد مصدر التيار الكهربائي المتردد.</p><p>‬$‫\text{وبالتعويض في العلاقة ( ٤ ) فإن : } \sigma_{\text{ع}} = \frac{1}{\text{ج}_{\text{ع}}} \dots \dots \dots (4)‬$‫</p><p>فإذا كانت ( ‬$\omega$‫ ) مقاسة بوحدة ( راديان / ث ) ، والسعة مقاسة بوحدة الفاراد، فإن المفاعلة السعوية ( ‬$\sigma_{\text{ع}}$ ) تقاس بوحدة الأوم.</p><p>والعلاقة ( ٤ ) تستخدمها لحساب المفاعلة السعوية للمكثف الكهربائي في دوائر التيار المتردد.</p><p>٤٣</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

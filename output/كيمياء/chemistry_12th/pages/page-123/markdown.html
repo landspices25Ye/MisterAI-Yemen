@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>تقويم الوحدة</h2><p>١ - ما المقصود بكلّ ما يأتي :</p><p>أ - السكريات الأحادية .</p><p>ب - الرابطة الببتيدية .</p><p>ج - الطبيعة المترددة للأحماض الأمينية .</p><p>د - الإنزيمات .</p><p>٢ - بيّن بالمعادلات ما يأتي :</p><p>أ - تأثير حمض فوق الأيوديك على الفركتوز .</p><p>ب - هلجنة الزيوت .</p><p>ج - تكاثف الجلايسين مع الآتين .</p><p>د - التحلل المائي للبيبدات .</p><p>هـ - أكسدة السكريات الأحادية .</p><p>و - تكوين السكريات الثنائية .</p><p>٣ - ضع علامة ( ✓ ) أمام العبارة الصحيحة، علامة ( ✕ ) أمام العبارة الخاطئة فيما يأتي .</p><p>أ - تذوب السكريات البسيطة في المذيبات العضوية . ( )</p><p>ب - تتكون السكريات الثنائية من تكاثف وحدتين من السكر</p><p>الأحادي مع فقد جزيء ماء . ( )</p><p>ج - تتكوّن الدهون من وفرة من الأحماض الدهنية غير المشبعة . ( )</p><p>د - تتحلّل الزيوت بفعل الأحماض القوية إلى جليسرول</p><p>وأحماض دهنية . ( )</p><p>هـ - الإنزيمات تزيد من الطاقة اللازمة لإنجاز التفاعل الحيوي . ( )</p><p>و - تخزن الفيتامينات الدهنية في الكبد . ( )</p><p>١٢١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

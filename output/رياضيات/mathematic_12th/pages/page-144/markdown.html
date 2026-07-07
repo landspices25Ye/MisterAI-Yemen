@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-120.jpeg" alt="img-120.jpeg" /><p>الوحدة الخامسة</p><h2>العمود والمائل</h2><p>٥ - ٢</p><p>تعلم أنه من نقطة ب الواقعة في المستوى ٥ ، تستطيع أن ترسم مستقيماً وحيداً عمودياً على المستوى ٥ ، وكل مستقيم آخر يمر بالنقطة ب غير المستقيم العمودي يكون مائلاً على المستوى [ شكل (٥ - ١٢) ] .</p><h3>تعريف (٥ - ١)</h3><p>المائل هو المستقيم القاطع لمستوى ، وليس عمودياً عليه</p><img src="img-121.jpeg" alt="img-121.jpeg" /><p>شكل (٥ - ١٢)</p><h3>(مبرهنة الأعمدة الثلاثة)</h3><h3>مبرهنة (٥ - ٦)</h3><p>إذا كان بَجَّ ، جَوَّ مستقيمين متعامدين واقعين في المستوى س ، وكان أَبَّ س م ؛ فإن وَجَّ أ جَّ أ .</p><p>المعطيات : بَجَّ أ جَوَّ ، بَجَّ ، جَوَّ واقعان في س ،</p><p>أَبَّ س م [ شكل (٥ - ١٣) ]</p><p>المطلوب : إثبات أن وَجَّ أ جَّ أ ،</p><p>البرهان : بَبَّ أ بَّ س م (معطى)</p><p>بَبَّ أ بَّ وَجَّ ... (١) ... [ حقيقته (٥ - ١) ]</p><p>بَجَّ وَجَّ بَجَّ ... (٢) ... (معطى)</p><p>بَجَّ وَجَّ أ المستوى (أ ب ج) [ مبرهنة (٥ - ١) ]</p><p>بَجَّ وَجَّ جَّ أ جَّ أ [ حقيقته (٥ - ١) ] (وهو المطلوب) .</p><img src="img-122.jpeg" alt="img-122.jpeg" /><p>شكل (٥ - ١٣)</p><h3>عكس المبرهنة (٥ - ٦) :</h3><p>إذا كان بَجَّ ، جَوَّ مستقيمين متعامدين واقعين في المستوى س ، أ ب س م ، أ جَّ أ جَوَّ ، أ بَّ بَجَّ ؛ فإن أَبَّ س م .</p><h3>تدريب (٥ - ١)</h3><p>برهن عكس مبرهنة (٥ - ٦) .</p><p>١٤٢</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

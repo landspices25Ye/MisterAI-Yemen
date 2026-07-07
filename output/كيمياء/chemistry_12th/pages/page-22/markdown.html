@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-12.jpeg" alt="img-12.jpeg" /><p>ومن أهم تفاعلات الحديد ما يلي:</p><p>١- تأثير الهواء على الحديد:</p><p>أ- لا يتأثر الحديد بالهواء الجاف عند درجة حرارة الغرفة.</p><p>ب- عند تسخين الحديد لدرجة الاحمرار فإنه يتفاعل مع الأكسجين، وكذلك مع بخار الماء مكوناً أكسيد الحديد المغناطيسي.</p><p>$‫3\text{Fe} + 2\text{O}_2 \xrightarrow{\Delta} \text{Fe}_3\text{O}_4‬$‫</p><p>‬$‫3\text{Fe} + 4\text{H}_2\text{O} \xrightarrow[\text{(g)}]{\Delta} \text{Fe}_3\text{O}_4 + 4\text{H}_2\uparrow‬$‫</p><p>ج- يتفاعل الحديد مع الهواء الرطب مكوناً طبقة من الصدأ، وهي طبقة هشة مسامية غير قادرة على وقاية الحديد من مواصلة التآكل، والتفاعل الإجمالي لتكوين الصدأ هو:</p><p>‬$‫4\text{Fe} + 2\text{H}_2\text{O} + 3\text{O}_2 \longrightarrow 2(\text{Fe}_2\text{O}_3 \cdot \text{H}_2\text{O})‬$‫</p><p>ولحماية الحديد من التآكل نستخدم عملية الجلفنة.</p><p>٢- تفاعل الحديد مع اللافلزات: يتحد الحديد مع كثير من اللافلزات في درجات الحرارة العالية، فمثلاً يكون مع الكلور كلوريد الحديد (III)، ومع الكبريت كبريتيد الحديد (II):</p><p>‬$‫2\text{Fe} + 3\text{Cl}_2 \xrightarrow{\Delta} 2\text{FeCl}_3‬$‫</p><p>‬$‫\text{Fe} + \text{S} \xrightarrow{\Delta} \text{FeS}‬$‫</p><p>٣- تفاعل الحديد مع الأحماض:</p><p>يتفاعل الحديد مع حمض الهيدروكلوريك المخفف أو المركز، وحمض الكبريتيك المخفف ليعطي أملاح الحديد المطابقة وغاز الهيدروجين.</p><p>‬$‫\text{Fe} + 2\text{HCl} \longrightarrow \text{FeCl}_2 + \text{H}_2\uparrow‬$‫</p><p>‬$‫\text{Fe} + \text{H}_2\text{SO}_4 \longrightarrow \text{FeSO}_4 + \text{H}_2\uparrow‬$‫</p><h1>ملاحظة</h1><p>لا يتأثر الحديد بحمض الكبريتيك وحمض النيتريك المركزين (تركيز عال)، ويرجع ذلك لتكوين طبقة رقيقة من أكسيد الحديد المغناطيسي (‬$\text{Fe}_3\text{O}_4$)، وهذه الطبقة تحمي فلز الحديد من استمرار التفاعل.</p><p>٢٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

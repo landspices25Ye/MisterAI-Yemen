@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>الطموحات الاجتماعية الخاصة والعامة دون تحريف أو انحراف.
+والأمة الإسلامية اليوم مدعوة لأن تحمل هذا العبء، وتقبل هذا التحدي؛ لما تتمتع به من وسطية في الكوكب الأرضي؛ موقعاً وثروة وديناً إسلامياً نقياً جعله الله رحمة للعالمين، وتراثاً حضارياً شاهداً على سعة الإسلام للبشر أجمعين.</p><h2>معاني المفردات والتراكيب اللغوية</h2><p>|  الكلمة | معناها  |
+| --- | --- |
+|  تَجُوبُ الْكَوْكَبُ | تَطُوفُ حَوْلَ كَوْكَبِ الْأَرْضِ.  |
+|  مُحَمَّدَة | صِفَةٌ تَحْمَدُ عَلَيْهَا.  |
+|  الشَّمَالُ الْغَنِيُّ | شَمَالُ الْكُرَةِ الْأَرْضِيَّةِ الَّذِي تَقْطُنُهُ الدُّوَلُ الْغَنِيَّةُ.  |
+|  الْجَنُوبُ الْفَقِيرُ | جَنُوبُ الْكُرَةِ الْأَرْضِيَّةِ الَّذِي تَقْطُنُهُ دُوَلُ الْعَالَمِ الثَّالِثُ الْفَقِيرَةُ.  |
+|  نَتَائِجُهَا الْكَارِثِيَّةُ | نَتَائِجُهَا الْمُفْجِعَةُ الْأَلِيمَةُ.  |
+|  قَسْرًا | إِجْبَارًا.  |
+|  الْمُضَارَبَاتُ النَّقْدِيَّةُ | عَمَلِيَّةُ بَيْعٍ أَوْ شِرَاءِ يَقُومُ بِهَا أَشْخَاصٌ لِقَصْدِ الْكَسْبِ السَّرِيعِ  |
+|  الْخَصْخَصَّةُ | غَيْرُ الْمُرْتَبِطِ بِالْإِنْتَاجِ الْمُفِيدِ لِلْآخَرِينَ.  |
+|  الْهَيْمَنَةُ | بَيْعُ الْمُؤَسَّسَاتِ الْخَدَمِيَّةِ الَّتِي تُدِيرُهَا الدَّوْلَةُ لِأَصْحَابِ رُؤُوسِ الْأَمْوَالِ.  |
+|   | بَسْطِ النُّفُوذِ.  |</p><h2>المناقشة</h2><p>1. متى ظهرت (العولمة)؟
+2. بعض المفكرين يرون في العولمة خطراً. اعرض بعض المؤشرات التي تدل على ذلك.
+3. من وسائل العولمة (عولمة الاقتصاد). فما معنى ذلك؟
+4. ما الدور الذي تقوم به منظمة التجارة العالمية في مجال العولمة؟
+5. ما الجوانب الإيجابية للعولمة - من وجهة نظرك - من خلال بعض المؤشرات في الموضوع؟
+6. كيف يستطيع المجتمع البشري تجنب أخطار العولمة؟</p><p>٥١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

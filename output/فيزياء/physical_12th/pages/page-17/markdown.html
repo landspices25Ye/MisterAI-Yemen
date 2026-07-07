@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-12.jpeg" alt="img-12.jpeg" /><p>غاز مندفع</p><p>شكل (٤)</p><p>والسؤال الآن هو كيف تُحمل الأقمار الصناعية إلى الفضاء الخارجي؟ إن من يحمل الأقمار الصناعية وغيرها من المسابر هي الصواريخ ذاتية الدفع (أو النفث) التي يمكنها التحرر من الجاذبية الأرضية.. وتعمل الصواريخ ذاتية الدفع طبقاً لقانون حفظ كمية التحرك الخطي باستمدادها قوة دفعها من رد الفعل الناتج من انطلاق كمية كبيرة من الغازات عالية السرعة من مؤخرة الصاروخ تتولد من احتراق الوقود في محرك الصاروخ كما هو موضح بالشكل (٤) ولعرفة فكرة عمل الصواريخ ذاتية الدفع نحتاج إلى إجراء النشاط الآتي:</p><h2>نشاط (١)</h2><p>- احضر بالونة مطاطية ثم انفخها لتمتلئ بالهواء.
+- اترك البالونة بعد نفخها حرة الحركة، شكل (٥).
+- ماذا تلاحظ؟
+- في أي اتجاه تحركت البالونة مقارنة باتجاه الهواء الخارج منها؟
+- على أي مبدأ تحركت البالونة؟</p><p>إذاً يندفع الصاروخ بقوة رد الفعل في اتجاه يعاكس اتجاه حركة الغازات وطبقاً لقانون نيوتن الثالث (الفعل</p><p>ورد الفعل) فإن جزئيات الغاز في هذه العملية تبذل قوة دفع إلى الأمام ونتيجة لذلك تتولد قوة رد فعل تؤثر على محرك الصاروخ دافعة الصاروخ إلى الأمام وصولاً إلى حيث ينعدم الهواء، وتحدث قوة الفعل ورد الفعل داخل المحرك النفاث نفسه ولا تؤثر على السفينة أي قوى خارجية وبالتالي فإن الصاروخ يعمل بطريقة أفضل في الفضاء</p><img src="img-13.jpeg" alt="img-13.jpeg" /><p>شكل (٥)</p><p>١٥</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

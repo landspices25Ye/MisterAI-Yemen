@@ -123,9 +123,9 @@ class ArabicMathProcessor {
      */
     processMarkdown(markdown, options = {}) {
         const {
-            convertNumerals = false,
+            convertNumerals = true,  //false
             preserveOriginal = true,
-            addMathJaxConfig = false
+            addMathJaxConfig = true //false
         } = options;
         
         const equations = this.extractMathEquations(markdown);
@@ -134,7 +134,7 @@ class ArabicMathProcessor {
             return {
                 processed: markdown,
                 equations: [],
-                hasMath: false
+                hasMath: true //false
             };
         }
         
@@ -169,9 +169,11 @@ class ArabicMathProcessor {
 
     /**
      * الحصول على إعدادات MathJax للغة العربية
+     * Based on https://github.com/OmarIthawi/arabic-mathjax
      */
     getMathJaxConfig() {
         return `<!-- MathJax Configuration for Arabic -->
+<link href='https://fonts.googleapis.com/css?family=Amiri' rel='stylesheet' type='text/css'>
 <script>
 window.MathJax = {
     tex: {
@@ -212,14 +214,16 @@ window.MathJax = {
     chtml: {
         displayAlign: 'center',
         displayIndent: '0em',
-        mtextInheritFont: true
+        mtextInheritFont: true,
+        fontURL: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2',
+        adaptiveCSS: true
     },
     // إعدادات خاصة باللغة العربية
     arabic: {
         rtl: true,
-        arabicNumerals: false, // تعيين إلى true لتحويل الأرقام إلى عربية
-        arabicMathTerms: true, // استخدام المصطلحات الرياضية العربية
-        preserveArabicText: true // الحفاظ على النص العربي داخل المعادلات
+        arabicNumerals: false,
+        arabicMathTerms: true,
+        preserveArabicText: true
     }
 };
 </script>`;

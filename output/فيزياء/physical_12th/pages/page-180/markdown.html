@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-174.jpeg" alt="img-174.jpeg" /><img src="img-175.jpeg" alt="img-175.jpeg" /><p>شكل (١) قوة إنحراف مكونات النشاط الإشعاعي في مجال مغناطيسي</p><p>ويمكن ملاحظة تأثير المجال المغناطيسي على مكونات النشاط الإشعاعي في الشكل (١) كما يأتي:</p><p>عند وضع عينة من مادة مشعة مثل الراديوم داخل صندوق مقفل من الرصاص به نافذة تسمح للجسيمات والأشعة الناتجة من العينة أن تمر خلال مجال مغناطيسي، ودراسة اتجاه انحراف كل من المكونات السابقة تبين أن انحراف أشعة ألفا الموجبة يكون عكس انحراف أشعة بيتا السالبة وبزاوية انحراف أقل.</p><p>ولا تنحرف أشعة جاما عند تعرضها</p><p>لمجال كهربائي أو مجال مغناطيسي، لأنها موجات كهرومغناطيسية متعادلة كهربياً. وتمتلك قدرة عالية جداً على اختراق الأجسام، أكبر من تلك التي تمتلكها جسيمات ألفا وبيتا.</p><p>ويمكن المقارنة بين خواص مكونات النشاط الإشعاعي كما في الجدول (١) الآتي:</p><p>|  خواصها نوع الأشعة | طبيعتها | شحنتها | قدرتها على الاختراق | تأثرها بالمجال الكهربائي أو المغناطيسي  |
+| --- | --- | --- | --- | --- |
+|  أشعة (ألفا) | هي أنوية ذرات الهليوم^{4}He | موجبة ضعف شحنة الإلكترون. | ضعيفة | تنحرف بقوة صغيرة.  |
+|  أشعة بيتا | هي إلكترونات سالبة أو موجبة | سالبة أو موجبة مساوية لشحنة الإلكترون. | عالية | تنحرف بقوة كبيرة.  |
+|  أشعة جاما | هي موجات كهرومغناطيسية ذات طاقة عالية وطول موجي قصير | متعادلة كهربياً | هائلة جداً | لا تنحرف لأنها موجات كهرومغناطيسية متعادلة  |</p><p>جدول (١) مقارنة بين مكونات النشاط الإشعاعي</p><h2>نشاط</h2><p>باستخدام مصادرك للمعلومات اكتب باختصار عن أهم الأضرار البيئية الناتجة عن الإشعاع النووي، واستعن بمفاعل شيرنوبل كمثال، وقنابل هيروشيما وناجازاكي أثناء الهجوم على اليابان في الحرب العالمية الثانية.</p><p>١٧٨</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

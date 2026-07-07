@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><p>حتى إذا كانت ن = ∞
+تكون ع = صفراً، وفي هذه
+الحالة يكون الإلكترون خارج
+الذرة وغير مرتبط بالنواة،
+والشكل (١٥) يبين
+القياسات النسبية للمدارات
+dالدائرية للإلكترون
+والسرعات المناظرة لها.
+والطاقة الكلية (ط) ل
+للإلكترون في مدار رقم (ن)
+تُعطى بالعلاقة الآتية :</p><img src="img-131.jpeg" alt="img-131.jpeg" /><p>شكل (١٥)</p><p>$‫ط_1 = - \frac{\sum_{i=1}^n \sum_{j=1}^n \frac{1}{n_i^2}}{n_i^2}‬$‫</p><p>عندما ن = ١ يكون الإلكترون في المدار الأول وهو أدنى مستوى طاقة له</p><p>‬$‫ط_2 = - \frac{\sum_{i=1}^n \sum_{j=1}^n \frac{1}{n_j^2}}{n_j^2}‬$‫</p><p>الكميات التي تدخل في هذه العلاقة هي ثوابت طبيعية، فبتعويض قيمها
+نجد قيمة ط1 التي تساوي:</p><p>‬$‫ط_1 = - 13,6 \text{ إلكترون فولت (إ.ف)}‬$‫</p><p>‬$‫(حيث أن 1 \text{ إ.ف}) = 1,6 \times 10^{-19} \text{ جول})‬$</p><p>وهذه القيمة النظرية تتفق مع القيمة التجريبية، ثم إن الإشارة السالبة التي
+تظهر في العلاقة (١١) تعني، وفقاً للميكانيكا التقليدية، أن الإلكترون مرتبط
+بالنواة في بئر جهد سالب.</p><p>١٣٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

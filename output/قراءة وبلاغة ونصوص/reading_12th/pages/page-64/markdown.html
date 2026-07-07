@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>![Logo of the e-learning, featuring a stylized 'e' and 'learning' text.]()</p><h2>سلامة الصدر من الأحقاد\*</h2><p>ليس أروح للمرء، ولا أطرد لهمومه، ولا أقرَّ لعينه من أن يعيش سليم القلب، مُبَرَّأً من وساوس الضغينة، وثوران الأحقاد، إذا رأى نعمة تنساق إلى أحدٍ رضي بها، وأحسَّ فضل الله فيها، وفقر عباده إليها، وإذا رأى أذى يلحق أحداً من خلق الله رثى له، ورجا الله أن يفرج كربه، ويغفر ذنبه. بذلك يعيش المسلم ناصع الصفحة، راضياً عن الله وعن الحياة، مستريح النفس من نزعات الحقد الأعمى، فإن فساد القلب بالضغائن داء عَيَاء، وما أسرع أن يتسرب الإيمان من القلب المغشوش كما يتسرب السائل من الإناء المثلوم!</p><p>ونظرة الإسلام إلى القلب خطيرة؛ فالقلب الأسود المظلم يفسد الأعمال الصالحة ويطمس بهجتها، ويُعَكِّر صفوها. أمَّا القلب المشرق فإنَّ الله يبارك في قليله وهو إليه بكل خير أسرع. عن عبدالله بن عمرو: « قيل: يا رسول الله، أي الناس أفضل؟ قال: كل مخموم القلب صدوق اللسان. قيل: صدوق اللسان نعرفه، فما مخموم القلب؟ قال: هو التَّقِيُّ النَّقِيُّ، لا إثم فيه ولا بغى، ولا غِلٌّ ولا حسد» (١). ومن ثمَّ كانت الجماعة المسلمة حقاً، هي التي تقوم على عواطف الحب المشترك، والود الشائع، والتعاون المتبادل، والمجاملة الرقيقة، لا مكان فيها للفردية المتسلطة الكنود.</p><p>إنَّ الخصومة إذا نمت، وغارت جذورها، وتفرَّعت أشواكها، شَلَّتْ زهرات الإيمان الغض، وأذَوَتْ ما يوحي به من حنان وسلام. وعندئذ لا يكون في أداء العبادات المفروضة خير، ولا تستفيد النفس منها عصمة. وكثيراً ما تطيش الخصومة بالباب ذويها، فتتدلى بهم إلى اقتراف الصغائر المُسَقَّطة للمروءة، والكبائر الموجبة للعنة، وعين السخط تنظر من زاوية داكنة؛ فهي تَعَمَّى عن الفضائل، وتُضَخِّمُ الرذائل، وقد يذهب بها الحقد إلى التخيل وافتراء الأكاذيب؛ وذلك كله مما يسخطه الإسلام ويحاذر وقوعه، ويرى منعه من أفضل القربات.</p><p>\* من كتاب 'خلق المسلم' لفضيلة الشيخ محمد الغزالي - رحمه الله تعالى - بتصرف.</p><p>٦٢</p><p><http://www.e-learning-moe.edu.ye/>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

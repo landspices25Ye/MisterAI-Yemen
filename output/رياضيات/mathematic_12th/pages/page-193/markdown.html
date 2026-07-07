@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>التفاصيل</p><p>٤) للدالة د قيمة صغرى محلية عند س r وهي : د(س r) وذلك لأنها أصغر من القيم التي حولها مع ملاحظة أن د(س r) هي أصغر قيم الدالة على الفترة [r, t] لذلك تسمى بالقيمة الصغرى المطلقة .</p><p>فمثلاً : يلاحظ من الشكل (٦-٦) لبيان الدالة د (الافتراضية) أن :</p><img src="img-164.jpeg" alt="img-164.jpeg" /><p>- النقطة (٢-٤) عظمى مطلقة
+- النقطة (١-٠) صغرى مطلقة
+- النقطة (٢,٠) عظمى محلية
+- النقطة (١,٠) صغرى مطلقة
+- النقطة (٢,٣) عظمى محلية</p><p>وعلى ذلك يمكن إيجاد القيم القصوى (عظمى أو صغرى) المحلية والمطلقة باستخدام اختبار المشتقة الأولى تبعاً لشروط المبرهنات التالية :</p><h1>مبرهنة (٦ - ٧)</h1><p>إذا كانت د دالة متصلة عند القيمة الحرجة س = ب ؛ فإن :</p><p>١) د (ب) قيمة عظمى محلية للدالة د إذا كانت د (س) ≥ ٠
+يسار العدد ب ، د (س) ≥ ٠ بين العدد ب
+٢) د (ب) قيمة صغرى محلية للدالة د إذا كانت د (س) ≥ ٠
+يسار العدد ب ، د (س) ≥ ٠ بين العدد ب</p><h1>مبرهنة (٦ - ٨)</h1><p>إذا كان للدالة د قيمة قصوى محلية عند س = ب فإن :
+د (ب) = ٠ ، أو د (ب) غير موجودة .</p><h1>عكس مبرهنة (٦ - ٨) :</h1><p>إذا كانت د (ب) = ٠ ، أو غير موجودة ، فإنه ليس بالضرورة أن تكون د (ب) قيمة قصوى محلية للدالة د .</p><p>١٩١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

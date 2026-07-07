@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-202.jpeg" alt="img-202.jpeg" /><p>إن الأشكال والصور التي بدت لك قد بدت للناس القدماء وقاموا بتسميتها بأسماء مختلفة كالدب الأكبر والدب الأصغر والشعري اليمانية والمرأة المسلسلة ، وغير ذلك من التسميات .</p><p>وما تراه من هذه الأشكال والصور ما هو إلا عبارة عن كوكبات أو بروج من النجوم المتواجدة مع بعضها يفرق بينها مسافات كبيرة، والبعض من هذه الأشكال مجرات وكواكب وسُدم ، ويعرف ما نشاهده باسم الكون، ولا أحد يعرف مدى سعة الكون ولا حدوده إلا الله، ويقدر العلماء الفلكيون أن عمر الكون ما بين ١٥ إلى ٢٥ مليار سنة.</p><p>قال تعالى ﴿تَبَارَكَ الَّذِي جَعَلَ فِي السَّمَاءِ بُرُوجًا وَجَعَلَ فِيهَا سِرَاجًا وَقَمَرًا مُّنِيرًا﴾</p><p>آية (٦١) سورة الفرقان .</p><h2>كيف بدأ الكون ؟</h2><p>للإجابة على هذا التساؤل دعنا نستعرض بعض النظريات التي تتحدث عن نشوء الكون، وكلها ترتكز على فكرة أن المجرات تتحرك بعيدة عن بعضها أو تنتشر بسرعة مذهلة ، لكن أكثر النظريات قبولاً هي نظرية الانفجار العظيم Big Bang Theory</p><img src="img-203.jpeg" alt="img-203.jpeg" /><p>شكل (١)</p><p>التي أول من اقترحها عام ١٩٢٧ العالم الفلكي البلغاري جيورجي لي مهتر والتي صاغها بحالتها الحالية العالم الروسي ج - جامو عام ١٩٤٨ م . هذه النظرية تصف بداية الكون بأنه نتيجة لانفجار عظيم،</p><p>وأن هذا الانفجار حدث عندما كانت المادة والطاقة مجتمعتين تكوّنان شيئاً واحداً هو عبارة عن كتلة على شكل كرة يبلغ قطرها قدر عشر مرات قطر الشمس تقريباً الذي يبلغ نحو (١٣٩٢٠٠٠) كيلو متر . وعندما انفجرت هذه الكتلة امتلأ الكون إشعاعاً وتمدد، وانخفضت درجة حرارته بعد أن كانت قبل الانفجار ١٠ درجة مئوية تقريباً. ومع انخفاض درجة الحرارة أصبحت الفرصة مواتية لتكوّن ذرات الهيدروجين التي تكاثفت فيما بعد وكونت مجرات ونجوماً.</p><p>٢٠٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

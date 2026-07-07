@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>التعبير</h1><h2>١- التعبير الشفهي</h2><p>الحسد رذيلة من الرذائل الخطيرة التي تؤدي إلى هلاك المجتمعات. تحاور مع معلمك وزملائك عن هذه الرذيلة وما تؤدي إليه من شتات وتمزق، مستعيناً بما ورد في الموضوع من أحاديث وأفكار...</p><h2>٢- التعبير الكتابي</h2><p>اكتب مقالة أدبية لأبناء مجتمعك تحثهم فيها على تطهير قلوبهم من الغل والحقد والحسد، وكل ما يعكر صفو حياتهم، مستفيداً بما تم مناقشته شفهياً، ومستشهداً بالآيات القرآنية، والأحاديث النبوية التي تدعو إلى ذلك.</p><h3>نشاط ذاتي</h3><p>ارجع إلى المصحف الشريف، واجمع ثلاث آيات تهتم بالقلب، وتدعو إلى تنقيته من الآثام، ثم اعرضها على معلمك وزملائك في الفصل.</p><p>٦٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

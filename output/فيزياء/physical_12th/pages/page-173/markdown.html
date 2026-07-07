@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>تقويم الوحدة</h2><p>اختر الإجابة الصحيحة :</p><p>١- عندما تسقط أشعة ضوئية على لوح معدني ما فإنه تنطلق من سطح المعدن .</p><p>- أ - فوتونات ضوئية
+- ب - إلكترونات ضوئية
+- ج - نترونات
+- د - أشعة سينية .</p><p>٢- إن أقصر طول موجي في الطيف المتصل للأشعة السينية يعتمد على :</p><p>- أ - نوع مادة سطح الهدف في أنبوب الأشعة السينية .
+- ب - فرق الجهد المطبق بين طرفي الأنبوب .
+- ج - تردد الضوء الساقط على مادة سطح مصعد الأنبوب .
+- د - شدة الضوء الساقط على مادة سطح مصعد الأنبوب .</p><p>٣- تعتمد شدة تيار الخلية الكهروضوئية على :</p><p>- أ - تردد الضوء الساقط عليها .
+- ب - نوع مادة سطح مهبط الخلية .
+- ج - شدة الضوء الساقط عليها .
+- د - دالة الشغل للمادة .</p><p>٤- ضع العلامة ( √ ) أمام العبارة الصحيحة والعلامة ( X ) أمام العبارة الخاطئة :</p><p>- طاقة أشعة ليزر الياقوت أكبر من طاقة الأشعة السينية .
+- سرعة أشعة الليزر أكبر من سرعة الأشعة السينية في الهواء .
+- في ليزر الياقوت عنصر الكروم هو المسؤول عن الانبعاث الليزري .
+- عنصر الكروم يشكل ٩٥% من بلورة الياقوت .
+- التردد الحرج يتعلق بنوع مادة سطح مهبط الخلية الكهروضوئية .
+- تيار الإشباع للخلية الكهروضوئية يعتمد على شدة الإشعاع الساقط عليها .
+- عملية الامتصاص هي عملية انتقال تلقائية من مستوى طاقة إلى مستوى طاقة أعلى .
+- جهد الإيقاف يتوقف على تردد الضوء الساقط على الخلية الكهروضوئية .
+- الانبعاث الليزري هو انبعاث مستحق .
+٥ - عند سقوط أشعة فوق البنفسجية على لوح من الزنك موجب الشحنة ، ماذا يحدث للشحنات ؟ ( إعط تفسيراً لجوابك ) .
+٦ - ماذا يحدث للفوتونات عندما تصطدم بسطح فلز .</p><p>١٧١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

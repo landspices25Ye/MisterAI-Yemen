@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-11.jpeg" alt="img-11.jpeg" /><p>الوحدة الأولى</p><img src="img-12.jpeg" alt="img-12.jpeg" /><p>شكل (١-٢)</p><p>وعند تمثيل الأعداد المركبة كأزواج مرتبة بنقاط في المستوى الديكارتي يُعدُّ المحور السيني هو المحور الحقيقي والمحور الصادي هو المحور التخيلي، وعلى هذا الأساس يمثل العدد (س + ت ص) بالنقطة (س ، ص) كما في الشكل (١-٢).</p><p>يدل هذا على أن هناك تقابلاً بين مجموعة الأعداد المركبة ومجموعة نقاط المستوى. بناءً على ذلك يسمى المستوى بالمستوى المركب أو مستوى أرجاند نسبة للعالم الذي اقترح هذا التمثيل.</p><p>نعرف أن كل زوج (س ، ص) يمثل متجهاً قياسياً، وعليه فإن العدد المركب (س + ت ص) يمثل متجهاً قياسياً، هو $‫\overline{أ} = (س ، ص)‬$‫ .</p><h1>مثال (١-٤)</h1><p>مثل الأعداد التالية في مستوى أرجاند، ثم مثل كلاً منها بمتجه قياسي :</p><p>أ) ٢ + ٥ ت ، ب) ٢ ت ، ج) ٤ ، د) ٤ - ٢ ت .</p><h1>الحل :</h1><p>أ) العدد ٢ + ٥ ت يمثل بالنقطة (٢ ، ٥) ويمثل بالمتجه ‬$‫\overline{أ}‬$‫ .</p><p>ب) العدد ٢ ت يمثل بالنقطة (٢ ، ٠) وبالمتجه ‬$‫\overline{ب}‬$‫ .</p><p>ج) العدد ٤ يمثل بالنقطة (٤ ، ٠) وبالمتجه ‬$‫\overline{ج}‬$‫ .</p><p>د) العدد ٤ - ٢ ت يمثل بالنقطة (٤ - ٢) ،</p><p>ويمثل بالمتجه ‬$‫\overline{د}‬$‫ [كما في الشكل (١-٣)].</p><h1>تساوي الأعداد المركبة :</h1><p>ليكن ‬$‫ع_١ = س_١ + ت ص_١ = (س_١ ، ص_١)‬$‫</p><p>‬$‫ع_٢ = س_٢ + ت ص_٢ = (س_٢ ، ص_٢)‬$‫</p><p>فإذا كان ‬$‫ع_١ = ع‬$‫ فإن (س ١ ، ص ١) = (س ٢ ، ص ٢) ، وهذا يؤدي إلى أن : ‬$‫س_١ = س ٢ ، ص ٨ = ص ٢‬$</p><p>لذا نعرف تساوي عددين مركبين كالتالي :</p><p>١٠</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

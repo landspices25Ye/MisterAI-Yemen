@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>تحدث عملية الانعكاس الحراري عندما تعلو طبقة من الهواء الدافئ طبقة من الهواء البارد؛ حيث إن الوضع الطبيعي هو انخفاض درجات الحرارة التي تقل بالارتفاع، ويترتب على الانعكاس الحراري احتجاز الضباب الدخاني دون تبدد في طبقة الهواء القريبة من سطح الأرض ويتركز أو يبقى الهواء ساكناً مما يترتب عليه ازدياد تلوثه وانعدام الرؤية أحياناً وينعكس ذلك على الجهاز التنفسي. وقد حدثت حالات الانعكاس الحراري في الأربعينيات والخمسينيات في بعض المدن الصناعية الكبرى، مثل لندن ونيويورك، أدت إلى موت آلاف الأشخاص.</p><h2>التحكم في ملوثات الهواء Control of Air Pollution</h2><p>هناك العديد من الوسائل التي يمكن بواسطتها التخلص من ملوثات الهواء الجوي أو على الأقل تخفيضها إلى حدود مناسبة، ومن هذه الطرق ما يأتي:</p><p>1- استخدام مصادر طاقة أفضل من الوقود الحالي مثل الطاقة الشمسية والكهرباء والغاز الطبيعي.
+2- استعمال الوسائل والأجهزة الخاصة بتنظيف الهواء والتقليل من مصادر تلوثه مثل:
+   أ - استخدام المرشحات لحجز المواد الصلبة من مداخن المصانع وأنابيب إخراج عوادم السيارات.
+   ب- إخراج الملوثات الصلبة في غرف متسعة لتقليل سرعتها وترسيبها بتأثير الجاذبية الأرضية.
+   ج- حرق الغازات قبل انطلاقها في الوسط المحيط.
+   د - إذابة الغازات الملوثة في الماء أو بعض المحاليل الكيميائية قبل إخراجها إلى الهواء الجوي.
+   هـ- إجراء تعديلات على المحركات لتحقيق الاحتراق الكامل.
+   و - صيانة المحركات بصفة دورية.</p><p>تطبق كثير من الدول بعض الإجراءات للحفاظ على سلامة الهواء. ابحث ذلك في ضوء دراستك السابقة، وضع بعض المقترحات للحفاظ على الهواء من التلوث مع دعم ذلك باقتراحات لازمة لتقليل تلوث الهواء في منطقتك.</p><p>قضية
+البحث</p><p>١٧٠</p><p>الأحياء: النصف الثالث الثانوي</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

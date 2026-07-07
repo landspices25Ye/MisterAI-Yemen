@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>التحليل الإشعاعي وعمر النصف Radioactivity Decay & Half-Life</h2><p>سبق أن أشرنا إلى أن النشاط الإشعاعي للمواد المشعة هو نتيجة لتحويل بعض الذرات إلى ذرات مادة أخرى أقل منها أو أكثر منها عدداً ذرياً وعدداً كتلياً بعد أن تُقذف بعدد من الجسيمات أو الأشعة، أي أن عدداً من أنوية هذه المادة المشعة ستتحلل وتقل عدد النيوكولونات فيها.</p><p>وتختلف سرعة انحلال العناصر بواسطة النشاط الإشعاعي من مادة إلى أخرى ويعبر عن ذلك التغير باستخدام تعبير عمر النصف.</p><p>* تعريف عمر النصف للعنصر المشع: هو عبارة عن الزمن اللازم لانحلال نصف كمية المادة المشعة.</p><p>ويتوقف عمر النصف لأي عنصر على عدده الكتلي ونشاطه الإشعاعي.</p><h3>قياس وحساب شدة النشاط الإشعاعي :</h3><p>يمكن قياس شدة النشاط الإشعاعي باستخدام جهاز يسمى عداد جيجر ويتركب كما في الشكل (٢) من :</p><img src="img-176.jpeg" alt="img-176.jpeg" /><p>شكل (٢)</p><p>إسطوانة معدنية مقفلة من الجانبين ويوجد بأحد وجهيها فتحة على شكل نافذة من الميكا تسمح بدخول الأشعة المنبعثة من المادة المشعة، وقلا الإسطوانة بغاز حامل عند ضغط منخفض، ويوجد</p><p>في محور الإسطوانة سلك معدني يتصل بقطب موجب لبطارية يعمل كآلود بينما يتصل جدار الأنبوبة بالقطب السالب للبطارية ويعمل ككاثود، ويوجد في الدائرة الخارجية مقاومة وعداد للنبضات الكهربائية.</p><h3>فكرة العمل :</h3><p>عند دخول الأشعة المنبعثة من العينة فإنها تعمل على تأين ذرات الغاز الحامل داخل الإسطوانة بدرجة تعتمد على شدة النشاط الإشعاعي للعينة، ويتولد عن ذلك عدد من الأيونات الموجبة والإلكترونات السالبة.</p><p>ويعمل الجهد الموجب للآلود على جذب الإلكترونات السالبة إليه، بينما تنجذب الأيونات الموجبة إلى الجهد السالب للكاثود، فتتكون نبضات كهربية في الدائرة الخارجية يعمل العداد على حساب عددها وبالتالي قياس شدة النشاط الإشعاعي.</p><p>١٧٩</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

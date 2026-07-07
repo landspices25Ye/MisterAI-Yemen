@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <h2>من المقالة الذاتية:</h2><p>نص « بذار السنين » لميخائيل نعيمة نتبين ما فيه من خصائص ذلك النوع.</p><p>– مقال يعرض لنا الكاتب فيه رأيه وخطرات نفسه من خلال تأمله في الحياة البشرية. وفي جانب من جوانبها. وقد برز ذلك بصورة فنية لافتة للنظر ومشوّقة من خلال عنوان هذا المقال « بذار السنين ».</p><p>– واتضحت عناصره من خلال:</p><p>المقدمة التي تلخص موضوعه، وتبين أساس فكرته، وهي مجملة في قوله: « والذي فكرته واشتهيته وقلته وعملته هو بذاري أودعته ذمة الزمان... وللزمان ذمة لا تخون » وذلك يشبه قولنا « ما تزرع من شيء تحصده ».</p><p>وكل ما جاء بعد ذلك في المقال هو شرح وتحليل للفكرة ذاتها، استعان الكاتب لتوضيحها ببعض الأمثلة من الحياة، وبعض معطياتها من التجارب الإنسانية التي تؤكد أن عمل الخير يأتي بالخير، والعكس صحيح، وأن ذلك من عمل الإنسان ولا دخل للزمان بذلك.</p><p>ثم يأتي ختام المقال مزيناً للقارئ عمل الخير، وتطهير القلوب من الأدران البشرية، وأن ذلك هو السبيل إلى السلام والحرية والقيم الجميلة.</p><p>وقد أراد الكاتب بهذه الخاتمة المزينة بالتمثيل والتشبيهات أن يفيد بها قارئه دون أن يلقنها له في صورة وعظية مباشرة.</p><p>– وإذا تأملنا أسلوب الكاتب في هذا المقال وجدنا فيه إيقاعاً موسيقياً ينفذ إلى النفس، معتمداً على التوازن الدقيق بين العبارات. ويأتي في بعض المواضع سجعاً غير متكلف. كما نجد الكاتب بارعاً في اختيار ألفاظه وفي تأليفها في وحي من انفعاله العاطفي وحسه الوجداني.</p><p>وهذا الانفعال العاطفي جعله يضع أفكاره في صور خيالية متنوعة.</p><p>إذن فالكاتب لم يُعن في مقاله بالحقائق من حيث هي، بل كما يراها من خلال نفسه ووجدانه، وأن شخصيته واضحة لك تماماً من خلال أفكاره وصوره التي يمزجها بإحساسه. لذا أعد المقال ذاتياً.</p><p>ولك أن تبحث في سمات المقالة من خلال: مذهبي في الحياة للزيّات، لماذا أهوى القراءة للعقاد، صنعاء في ذاكرة أديب للمقالح في موضوعات « كتاب القراءة » وغير ذلك من المقالات في كتاب الأدب والنصوص.</p><p>٢٢١</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <img src="img-111.jpeg" alt="img-111.jpeg" /><p>الوحدة الخامسة</p><h1>مثال (٥ - ١)</h1><p>ب ج و مثلث قائم في ب ، نقطة خارج المستوى (ب ج و) ،</p><p>ب ا ب ج . أثبت أن :</p><p>(١) جَبَ المستوى (ب و) .</p><p>(٢) جَبَ ا و .</p><p>المعطيات : ب ج و قائم في ب ، ب ا ب ج</p><p>[ شكل (٥ - ٤) ] .</p><p>المطلوب : إثبات أن :</p><p>(١) جَبَ المستوى (ب و) .</p><p>(٢) جَبَ ا و .</p><p>البرهان : (١) ب ج و قائم في ب ، ب ج ب ا ب و</p><p>ب ج ب ا ب (معطى) ، ب ج ب عمودي على مستويهما</p><p>ب ج ب ا المستوى (ب و) ( وهو المطلوب أولاً ) .</p><p>(٢) ب ا و المستوى (ب و) .</p><p>ب ج ب ا و</p><p>( وهو المطلوب ثانياً ) .</p><h1>مبرهنة (٥ - ٢)</h1><p>المستقيم العمودي على أحد مستويين متوازيين عمودي على الآخر .</p><p>المعطيات : س / س ، ل س س [ شكل (٥ - ٥) ]</p><p>المطلوب : إثبات أن ل س س .</p><p>البرهان : نرسم المستويين ص ، ص المتقاطعين في ل بحيث ص يقطع س ، س في ق ، ق ،</p><p>ص يقطع س ، س في ق ، ق .</p><p>ب س / س ، ص قاطع لهما في ق ، ق</p><p>١٣٦</p><p>http://www.e-learning-moe.edu.ye/</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>

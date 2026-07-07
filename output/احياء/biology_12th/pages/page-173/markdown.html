@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markdown.md</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            packages: ['base', 'ams', 'noerrors', 'noundefined'],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            tags: 'ams',
+            tagSide: 'right',
+            tagIndent: '0.8em',
+            useLabelIds: true
+        },
+        options: {
+            enableMenu: true
+        },
+        loader: {
+            load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
+        },
+        startup: {
+            typeset: false,
+            pageReady: () => {
+                return MathJax.startup.defaultPageReady().then(() => {
+                    MathJax.typesetPromise();
+                });
+            }
+        },
+        chtml: {
+            displayAlign: 'center',
+            displayIndent: '0em',
+            mtextInheritFont: true
+        },
+        arabic: {
+            rtl: true,
+            arabicNumerals: false,
+            arabicMathTerms: true,
+            preserveArabicText: true
+        }
+    };
+    </script>
+</head>
+<body>
+    <main>
+        <p>والحديد والنحاس والخارصين، وجميعها تؤثر على الأحياء البحرية وتترسب في أجسامها مما يؤدي إلى القضاء عليها، أو نقل تأثيرات هذه المعادن إلى الإنسان الذي يتغذى عليها. كما تتلوث المياه بالمواد المشعة الناجمة عن تجارب التفجيرات النووية أو الكوارث المرتبطة بالمفاعلات النووية أو المخلفات المشعة وغيرها.</p><h3>- تلوث المياه الجوفية:</h3><p>تعتبر المياه الجوفية المصدر الأساسي لمياه الشرب إلا أنها في الآونة الأخيرة "وخاصة في بلادنا" تتعرض لمشكلات مختلفة أهمها الاستنزاف والتلوث. ومن مصادر تلوث المياه الجوفية ما يأتي:</p><p>1- المخلفات البشرية والصناعية.
+2- الزيوت العادمة الناجمة عن وسائل النقل.
+3- الممارسات الزراعية الخطأ، وغير المنظمة كالاستعمال العشوائي للأسمدة الكيميائية والسبيدات؛ لأن الأسمدة النيتروجينية تؤدي إلى زيادة النترات في المياه الجوفية التي قد تتحول بفعل بعض أنواع البكتيريا إلى أملاح نترات سامة جداً.</p><h3>- حماية المياه من التلوث:</h3><p>إن حماية المياه من التلوث شرط أساسي للمحافظة على سلامة الكائنات الحية النباتية والحيوانية بما فيها الإنسان. ومن أجل ضمان عدم تلوث المياه يجب عمل الآتي:</p><p>1- معالجة مياه المجاري قبل إعادتها إلى مصادر المياه؛ لأن هذه المياه وما تحويه من فضلات ومخلفات بشرية تلوث المياه الجوفية وينتج عنها كثير من الأمراض مثل التيفوئيد والتهابات الكبد المعدية والطفيليات.
+2- معالجة مياه المصانع الكيميائية والمصافي؛ كمصافي تكرير البترول، للتخلص من النفايات السامة قبل طرحها في مياه البحار، للمحافظة على سلامة الأحياء البحرية من نبات وحيوان، وكذا قبل طرحها في التربة للمحافظة على المياه الجوفية من التلوث.</p><h3>ثالثاً: التلوث الضوضائي Noise Pollution</h3><p>يُعد الضجيج في الوقت الحاضر أحد أشكال التلوث الفيزيائي الذي يتعرض له الإنسان، خصوصاً سكان المدن الذين يعانون منه في السكن والطريق وأثناء العمل. والضجيج: عبارة عن ازدحام وحدة الأصوات التي تزعج الإنسان وتضر سمعه وجهازه العصبي.</p><p>الأحياء الصنف الثالث الثانوي</p><p>١٧٣</p>
+    </main>
+    <footer>
+        <p>تمت المعالجة بواسطة Arabic MathJax Processor</p>
+    </footer>
+</body>
+</html>
