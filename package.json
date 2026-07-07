@@ -1,0 +1,24 @@
+{
+  "name": "arabic-mathjax-processor",
+  "version": "1.0.0",
+  "description": "تطبيق لمعالجة ملفات Markdown وإصلاح اتجاه المعادلات والرموز الرياضية باللغة العربية",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "process": "node index.js",
+    "process:docs": "node index.js --dir=Docs",
+    "build:html": "node generate-html.js"
+  },
+  "keywords": [
+    "arabic",
+    "mathjax",
+    "markdown",
+    "rtl",
+    "mathematics"
+  ],
+  "author": "MisterAI-Yemen",
+  "license": "MIT",
+  "dependencies": {
+    "marked": "^9.0.0"
+  }
+}
