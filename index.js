@@ -134,7 +134,7 @@ class ArabicMathProcessor {
             return {
                 processed: markdown,
                 equations: [],
-                hasMath: true //false
+                hasMath: true // afalse
             };
         }
         
@@ -521,6 +521,7 @@ class FileProcessor {
 
     /**
      * إنشاء HTML كامل مع الرأس والتذييل
+     * Based on https://github.com/OmarIthawi/arabic-mathjax
      */
     generateFullHTML(content, title) {
         return `<!DOCTYPE html>
@@ -529,6 +530,7 @@ class FileProcessor {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${title}</title>
+    <link href='https://fonts.googleapis.com/css?family=Amiri' rel='stylesheet' type='text/css'>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>
@@ -539,13 +541,23 @@ class FileProcessor {
             displayMath: [['$$', '$$'], ['\\\\[', '\\\\]']],
             processEscapes: true,
             processEnvironments: true,
+            digits: /^(\\d+\\.\\d*|\\.\\d+)(?:[eE][-+]?\\d+)?$/,
             tags: 'ams',
             tagSide: 'right',
             tagIndent: '0.8em',
             useLabelIds: true
         },
         options: {
-            enableMenu: true
+            renderActions: {
+                addMenu: [],
+                checkDocument: []
+            },
+            enableMenu: true,
+            menuOptions: {
+                settings: {
+                    semantics: true
+                }
+            }
         },
         loader: {
             load: ['input/tex', 'output/chtml', '[tex]/ams', '[tex]/noerrors', '[tex]/noundefined']
@@ -561,7 +573,9 @@ class FileProcessor {
         chtml: {
             displayAlign: 'center',
             displayIndent: '0em',
-            mtextInheritFont: true
+            mtextInheritFont: true,
+            fontURL: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2',
+            adaptiveCSS: true
         },
         arabic: {
             rtl: true,

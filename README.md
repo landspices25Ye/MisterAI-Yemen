@@ -1,4 +1,4 @@
-# Arabic MathJax Processor
+o# Arabic MathJax Processor
 
 تطبيق لمعالجة ملفات Markdown وإصلاح اتجاه المعادلات والرموز الرياضية باللغة العربية.
 
